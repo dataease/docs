@@ -1,0 +1,98 @@
+.md-header {
+  background-color: #783887;
+}
+
+.md-footer {
+  background-color: #783887;
+}
+
+.md-tabs {
+  background-color: #783887;
+}
+
+.md-footer-nav__link {
+  padding-top: .8rem;
+}
+
+.md-main__inner {
+  margin-top: .8rem;
+}
+
+.progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: 700;
+  width: 100%;
+  margin: 0;
+  line-height: 1.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 1.2rem;
+  float: left;
+  background-color: #2979ff;
+}
+
+.progress {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  height: 1.2rem;
+  background-color: #eeeeee;
+  position: relative;
+}
+
+.progress.thin {
+  margin-top: 0.9rem;
+  height: 0.4rem;
+}
+
+.progress.thin .progress-label {
+  margin-top: -0.4rem;
+}
+
+.progress.thin .progress-bar {
+  height: 0.4rem;
+}
+
+.progress-100plus .progress-bar {
+  background-color: #00e676;
+}
+
+.progress-80plus .progress-bar {
+  background-color: #fbc02d;
+}
+
+.progress-60plus .progress-bar {
+  background-color: #ff9100;
+}
+
+.progress-40plus .progress-bar {
+  background-color: #ff5252;
+}
+
+.progress-20plus .progress-bar {
+  background-color: #ff1744;
+}
+
+.progress-0plus .progress-bar {
+  background-color: #f50057;
+}
+
+.md-typeset table:not([class]) td {
+  border: .05rem solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset table:not([class]) tr:first-child td {
+  border: .05rem solid var(--md-default-fg-color--lightest);
+}
+
+.lg-backdrop {
+  background-color: rgb(0 0 0 /0.8)
+}
+
+.lg-outer .lg-img-wrap {
+  padding: 80px
+}
