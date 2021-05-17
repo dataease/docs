@@ -28,7 +28,7 @@
 
 ![删除数据连接](../img/datasource_configuration/删除.png)
 
-## 删除数据连接
+## 翻页
 > 该区域记录连接总条数，当前页码；可点击下拉框，选择每页展示的连接条数；也可输入页码，展示该页码的连接信息。
 
 ![删除数据连接](../img/datasource_configuration/翻页.png)
