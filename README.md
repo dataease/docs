@@ -36,21 +36,21 @@ nav:
         - 系统设置: user_manual/system_management.md
         - 测试跟踪: user_manual/test_track.md
         # - 系统设置: 
-        #     - 模块说明: user_manual/system_management/intro.md
-        #     - 系统管理: user_manual/system_management/system.md
+        #     - 模块说明: user_manual/system_management/user.md
+        #     - 系统管理: user_manual/system_management/menu.md
         #     - 组织管理: user_manual/system_management/organization.md
-        #     - 工作空间管理: user_manual/system_management/workspace.md
-        #     - 项目管理: user_manual/system_management/project.md
-        #     - 个人信息管理: user_manual/system_management/personal.md
+        #     - 工作空间管理: user_manual/system_management/permission.md
+        #     - 项目管理: user_manual/system_management/module.md
+        #     - 个人信息管理: user_manual/system_management/role.md
         # - 测试跟踪: 
-        #     - 模块说明: user_manual/test_track/intro.md
+        #     - 模块说明: user_manual/test_track/user.md
         #     - 首页: user_manual/test_track/home.md
         #     - 测试用例: user_manual/test_track/test_case.md
         #     - 用例评审: user_manual/test_track/test_case_review.md
         #     - 测试计划: user_manual/test_track/test_plan.md
         #     - 报告: user_manual/test_track/test_report.md
         - 接口测试: 
-            - 模块说明: user_manual/api_test/intro.md
+            - 模块说明: user_manual/api_test/user.md
             - 首页: user_manual/api_test/home.md
             - 接口定义: user_manual/api_test/api_definition.md
             - 接口自动化: user_manual/api_test/api_automation.md
@@ -61,7 +61,7 @@ nav:
         - 接口测试（旧版）: user_manual/api_test.md
         - 性能测试: user_manual/performance_test.md
         # - 性能测试:
-        #     - 模块说明: user_manual/load_test/intro.md
+        #     - 模块说明: user_manual/load_test/user.md
         #     - 首页: user_manual/load_test/home.md
         #     - 性能测试: user_manual/load_test/api_definition.md
         #     - 测试报告: user_manual/load_test/test_report.md
