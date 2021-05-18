@@ -26,7 +26,8 @@ nav:
         - 离线安装: installation/offline_installation.md
         - 在线升级: installation/online_upgrade.md
         - 离线升级: installation/offline_upgrade.md
-    - 用户手册: 
+    - 用户手册:
+        - 通用功能: user_manual/general.md
         - 数据源: user_manual/datasource_configuration.md
         - 数据集: user_manual/dataset_configuration.md
         - 视图: user_manual/view_generation.md
