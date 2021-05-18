@@ -2,12 +2,10 @@ site_name: 'DataEase 文档'
 site_url: 'https://dataease.io'
 site_description: 'Document'
 site_author: 'yayanpei'
-google_analytics: ['UA-147297392-7', 'dataease.io']
 
 repo_name: 'DataEase Docs'
 repo_url: 'https://github.com/dataease/dataease'
 
-edit_uri: https://github.com/dataease/docs/edit/master/docs/
 theme:
     name: 'material'
     logo: 'img/logo-white.png'
@@ -17,8 +15,17 @@ theme:
     hljs_languages:
         - yaml
         - django
-    custom_dir: 'theme'
+
 nav:
+    - 项目介绍: index.md
+    - 快速开始: 
+        - 一键部署: quick_start/quick_start.md
+    - 系统架构: system_arch.md
+    - 安装部署: 
+        - 在线安装: installation/online_installation.md
+        - 离线安装: installation/offline_installation.md
+        - 在线升级: installation/online_upgrade.md
+        - 离线升级: installation/offline_upgrade.md
     - 用户手册: 
         - 数据源: user_manual/datasource_configuration.md
         - 数据集: user_manual/dataset_configuration.md
@@ -31,6 +38,15 @@ nav:
             - 角色管理: user_manual/system_management/role.md
             - 模版管理: user_manual/system_management/module.md
             - 权限管理: user_manual/system_management/permission.md
+    - 使用教程:
+        - 使用 DataEase 进行疫情数据分析: tutorial/epidemic_analysis.md
+    - 常见问题:
+        - 系统管理: faq/system_management.md
+    - 开发文档: dev_manual.md
+    - 关于:
+        - 更新说明: about/changelog.md
+        - 联系我们: about/contact.md
+
 markdown_extensions:
     - admonition
     - codehilite:
@@ -68,11 +84,7 @@ markdown_extensions:
 extra_css:
     - css/extra.css
 
-copyright: Copyright &copy; 2014-2020 <a href="https://www.fit2cloud.com">杭州飞致云信息科技有限公司</a>, All Rights Reserved. <a href="http://www.beian.miit.gov.cn" target="_blank">京ICP备15023818号</a>
+copyright: Copyright &copy; 2014-2021 <a href="https://www.fit2cloud.com">杭州飞致云信息科技有限公司</a>, All Rights Reserved. <a href="http://www.beian.miit.gov.cn" target="_blank">京ICP备15023818号</a>
 
 plugins:
     - search
-
-extra:
-    version:
-        method: mike

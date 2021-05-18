@@ -1,10 +1,10 @@
-本仓库保存了 [MeterSphere 项目]() 的 [官方文档](https://metersphere.io/docs/)，该文档使用 [MkDocs]() 文档框架下的 [Material for MkDocs]() 主题进行构建。
+本仓库保存了 [DataEase 项目]() 的 [官方文档](https://dataease.io/docs/)，该文档使用 [MkDocs]() 文档框架下的 [Material for MkDocs]() 主题进行构建。
 
 ## 本地开发
 
 ### 克隆本仓库
 ```bash
-git clone https://github.com/metersphere/docs.git
+git clone https://github.com/dataease/docs.git
 ```
 
 ### 安装依赖
@@ -18,73 +18,18 @@ pip install -r requirements/requirements.txt
 ```yaml
 ..........
 nav:
-    - 项目介绍: index.md
-    - 快速开始: 
-        - 一键部署: quick_start/quick_start.md
-        - 创建项目: quick_start/create_project.md
-        - 使用测试跟踪: quick_start/test_track.md
-        - 使用接口测试: quick_start/api_test.md
-        - 使用性能测试: quick_start/load_test.md
-    - 系统架构: system_arch.md
-    - 安装部署: 
-        - 在线安装: installation/online_installation.md
-        - 离线安装: installation/offline_installation.md
-        - 在线升级: installation/online_upgrade.md
-        - 离线升级: installation/offline_upgrade.md
     - 用户手册: 
-        - 通用功能: user_manual/general.md
-        - 系统设置: user_manual/system_management.md
-        - 测试跟踪: user_manual/test_track.md
-        # - 系统设置: 
-        #     - 模块说明: user_manual/system_management/user.md
-        #     - 系统管理: user_manual/system_management/menu.md
-        #     - 组织管理: user_manual/system_management/organization.md
-        #     - 工作空间管理: user_manual/system_management/permission.md
-        #     - 项目管理: user_manual/system_management/module.md
-        #     - 个人信息管理: user_manual/system_management/role.md
-        # - 测试跟踪: 
-        #     - 模块说明: user_manual/test_track/user.md
-        #     - 首页: user_manual/test_track/home.md
-        #     - 测试用例: user_manual/test_track/test_case.md
-        #     - 用例评审: user_manual/test_track/test_case_review.md
-        #     - 测试计划: user_manual/test_track/test_plan.md
-        #     - 报告: user_manual/test_track/test_report.md
-        - 接口测试: 
-            - 模块说明: user_manual/api_test/user.md
-            - 首页: user_manual/api_test/home.md
-            - 接口定义: user_manual/api_test/api_definition.md
-            - 接口自动化: user_manual/api_test/api_automation.md
-            - 测试报告: user_manual/api_test/test_report.md
-            - 用例步骤说明: user_manual/api_test/api_step.md
-            # - 接口详情说明: user_manual/api_test/api_detail.md
-            - 内置函数: user_manual/api_test/functions.md
-        - 接口测试（旧版）: user_manual/api_test.md
-        - 性能测试: user_manual/performance_test.md
-        # - 性能测试:
-        #     - 模块说明: user_manual/load_test/user.md
-        #     - 首页: user_manual/load_test/home.md
-        #     - 性能测试: user_manual/load_test/api_definition.md
-        #     - 测试报告: user_manual/load_test/test_report.md
-    - 使用教程:
-        - 使用 MeterSphere 进行 Dubbo 接口测试: tutorial/dubbo.md
-        - 使用 MeterSphere 进行场景化接口测试: tutorial/api_testing.md
-        - 使用预执行脚本功能生成接口认证签名: tutorial/pre_processor.md
-        - 【视频】MeterSphere 如何与 TAPD和 Jira 对接: https://www.bilibili.com/video/BV1jr4y1c7Lg/
-        - 【视频】MeterSphere 如何对接邮件、钉钉、企业微信: https://www.bilibili.com/video/BV1dp4y167ch/
-        - 【视频】如何在 MeterSphere 中做场景化的接口测试: https://www.bilibili.com/video/BV1vy4y1q7f7/
-        - 【视频】如何在 MeterSphere 中导入 Postman 脚本做接口测试: https://www.bilibili.com/video/BV1W54y1C7uY
-        - 【视频】如何在 MeterSphere 中导入 Swagger UI 脚本做接口测试: https://www.bilibili.com/video/BV1YK411A7E8/
-    - 常见问题: faq.md
-    - 开发文档: dev_manual.md
-    - 用户案例: 
-        - 88完美邮箱全面提升产品质量的落地指南: case_studies/88com.md
-        - 蔚澜环保基于MeterSphere的自动化测试实践: case_studies/weilanep.md
-        - 易盛信息MeterSphere接口测试使用经验: case_studies/esunny.md
-    - 关于:
-        - 更新说明: about/changelog.md
-        - 联系我们: about/contact.md
-    - JMeter 资源合集: awesome-jmeter.md
-    - 企业版试用: enterprise.md
+        - 数据源: user_manual/datasource_configuration.md
+        - 数据集: user_manual/dataset_configuration.md
+        - 视图: user_manual/view_generation.md
+        - 仪表盘: user_manual/dashboard_generation.md
+        - 系统管理:
+            - 用户管理: user_manual/system_management/user.md
+            - 菜单管理: user_manual/system_management/menu.md
+            - 组织管理: user_manual/system_management/organization.md
+            - 角色管理: user_manual/system_management/role.md
+            - 模版管理: user_manual/system_management/module.md
+            - 权限管理: user_manual/system_management/permission.md
 ..........
 ```
 
