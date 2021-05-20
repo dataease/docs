@@ -18,7 +18,17 @@ pip install -r requirements/requirements.txt
 ```yaml
 ..........
 nav:
-    - 用户手册: 
+    - 项目介绍: index.md
+    - 快速开始: 
+        - 一键部署: quick_start/quick_start.md
+    - 系统架构: system_arch.md
+    - 安装部署: 
+        - 在线安装: installation/online_installation.md
+        - 离线安装: installation/offline_installation.md
+        - 在线升级: installation/online_upgrade.md
+        - 离线升级: installation/offline_upgrade.md
+    - 用户手册:
+        - 通用功能: user_manual/general.md
         - 数据源: user_manual/datasource_configuration.md
         - 数据集: user_manual/dataset_configuration.md
         - 视图: user_manual/view_generation.md
@@ -30,6 +40,14 @@ nav:
             - 角色管理: user_manual/system_management/role.md
             - 模版管理: user_manual/system_management/module.md
             - 权限管理: user_manual/system_management/permission.md
+    - 使用教程:
+        - 使用 DataEase 进行销售仪表盘制作: manual_demo/sales_dashboard.md
+    - 常见问题:
+        - 系统管理: faq/system_management.md
+    - 开发文档: dev_manual.md
+    - 关于:
+        - 更新说明: about/changelog.md
+        - 联系我们: about/contact.md
 ..........
 ```
 
