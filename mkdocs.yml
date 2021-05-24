@@ -17,7 +17,7 @@ theme:
         - django
 
 nav:
-    - 项目介绍: index.md
+    - 产品介绍: index.md
     - 快速开始: 
         - 一键部署: quick_start/quick_start.md
     - 系统架构: system_arch.md
