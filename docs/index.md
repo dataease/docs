@@ -21,7 +21,7 @@ DataEase 是一站式开源智能化数据分析平台，涵盖了数据源配�
 	<tr>
 	    <td bgcolor=#3779d9 align="middle" style="font-weight:bold;color: white;width: 150px">功能模块</td>
 	    <td bgcolor=#3779d9 align="middle" style="font-weight:bold;color: white;width: 150px">功能</td>
-	    <td bgcolor=#3779d9 align="middle" style="font-weight:bold;color: white;width: 650px">功能描述</td>  
+	    <td bgcolor=#3779d9 align="middle" style="font-weight:bold;color: white;width: 750px">功能描述</td>  
 	</tr >
 	<tr >
 	    <td rowspan="3">数据源</td>
