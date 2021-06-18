@@ -130,7 +130,7 @@ DataEase 是开源的数据可视化分析工具，帮助用户分析数据、�
    <tr>
     <td rowspan="2">数据源</td>
     <td rowspan="2">数据源管理</td>
-    <td>支持 MySQL 和 SQL Server 类型的数据源</td>
+    <td>支持 MySQL 数据源</td>
    </tr>
    <tr>
     <td>支持对数据源有效性校验</td>
