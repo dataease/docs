@@ -2,6 +2,7 @@ site_name: 'DataEase 文档'
 site_url: 'https://dataease.io'
 site_description: 'Document'
 site_author: 'yayanpei'
+google_analytics: ['UA-147297392-11', 'dataease.io']
 
 repo_name: 'DataEase Docs'
 repo_url: 'https://github.com/dataease/dataease'
