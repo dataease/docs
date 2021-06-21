@@ -6,6 +6,7 @@ site_author: 'yayanpei'
 repo_name: 'DataEase Docs'
 repo_url: 'https://github.com/dataease/dataease'
 
+edit_uri: https://github.com/dataease/docs/edit/master/docs/
 theme:
     name: 'material'
     logo: 'img/logo-white.png'
@@ -15,6 +16,7 @@ theme:
     hljs_languages:
         - yaml
         - django
+    custom_dir: 'theme'
 
 nav:
     - 产品介绍: index.md
@@ -43,7 +45,6 @@ nav:
         - 使用 DataEase 进行销售仪表盘制作: manual_demo/sales_dashboard.md
     - 常见问题:
         - 系统管理: faq/system_management.md
-    - 开发文档: dev_manual.md
     - 关于:
         - 更新说明: about/changelog.md
         - 联系我们: about/contact.md
@@ -89,3 +90,7 @@ copyright: Copyright &copy; 2014-2021 <a href="https://www.fit2cloud.com">杭州
 
 plugins:
     - search
+
+extra:
+    version:
+        method: mike
