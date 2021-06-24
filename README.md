@@ -32,7 +32,7 @@ nav:
         - 数据源: user_manual/datasource_configuration.md
         - 数据集: user_manual/dataset_configuration.md
         - 视图: user_manual/view_generation.md
-        - 仪表盘: user_manual/dashboard_generation.md
+        - 仪表板: user_manual/dashboard_generation.md
         - 系统管理:
             - 用户管理: user_manual/system_management/user.md
             - 菜单管理: user_manual/system_management/menu.md
@@ -41,7 +41,7 @@ nav:
             - 模版管理: user_manual/system_management/module.md
             - 权限管理: user_manual/system_management/permission.md
     - 使用教程:
-        - 使用 DataEase 进行销售仪表盘制作: manual_demo/sales_dashboard.md
+        - 使用 DataEase 进行销售仪表板制作: manual_demo/sales_dashboard.md
     - 常见问题:
         - 系统管理: faq/system_management.md
     - 开发文档: dev_manual.md
