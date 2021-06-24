@@ -19,8 +19,6 @@ pip install -r requirements/requirements.txt
 ..........
 nav:
     - 项目介绍: index.md
-    - 快速开始: 
-        - 一键部署: quick_start/quick_start.md
     - 系统架构: system_arch.md
     - 安装部署: 
         - 在线安装: installation/online_installation.md
