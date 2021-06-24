@@ -2,7 +2,7 @@
 
 ![整体架构](./img/system-arch.png)
 
-### 组件说明
+## 组件说明
 
 - **[Frontend](https://github.com/dataease/dataease/tree/main/frontend)**: DataEase 的前端工程, 基于 Vue.js 进行开发
 - **[Backend](https://github.com/dataease/dataease/tree/main/backend)**: DataEase 的后端工程, 基于 Spring Boot 进行开发, 为 DataEase 的功能主体
@@ -13,9 +13,7 @@
 各个组件间的关系可参考下图
 ![组件说明](./img/components.png)
 
-
-
-## 概念说明
+## 关键术语
 
 DataEase 中有一些基本概念，下面是这些基本概念的说明。
 
@@ -24,7 +22,6 @@ DataEase 中有一些基本概念，下面是这些基本概念的说明。
 - **视图**: 可视化展示的最小单元，是组成仪表板的基本元素，可以是折线图、柱状图、饼状图等可视化图形
 - **仪表板**: 通过可视化效果展示具体数据常见的图形面板
 - **模板**: 可用来快速构建仪表板的数据及样式模板
-
     
 ## 技术栈
 
