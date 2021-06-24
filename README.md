@@ -39,7 +39,7 @@ nav:
             - 模版管理: user_manual/system_management/module.md
             - 权限管理: user_manual/system_management/permission.md
     - 使用教程:
-        - 使用 DataEase 进行销售仪表板制作: manual_demo/sales_dashboard.md
+        - 使用 DataEase 制作销售仪表板: manual_demo/sales_dashboard.md
     - 常见问题:
         - 系统管理: faq/system_management.md
     - 开发文档: dev_manual.md
