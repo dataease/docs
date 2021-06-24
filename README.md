@@ -35,7 +35,7 @@ nav:
         - 仪表板: user_manual/dashboard_generation.md
         - 系统管理:
             - 用户管理: user_manual/system_management/user.md
-            - 菜单管理: user_manual/system_management/menu.md
+            - 菜单管理: user_manual/system_management/display.md
             - 组织管理: user_manual/system_management/organization.md
             - 角色管理: user_manual/system_management/role.md
             - 模版管理: user_manual/system_management/module.md
