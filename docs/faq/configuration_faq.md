@@ -47,7 +47,23 @@ msctl reload
 ```
 
 3. 修改 DataEase MySQL 容器相关配置
-> 修改 /opt/dataease/docker-compose.yml，将 dataease 的 depends_on 里的 mysql 改为 mysql-de
+> 修改 /opt/dataease/docker-compose.yml，将 dataease 的 depends_on 里的 mysql 改为 mysql-de，例如：
+```yml
+  dataease:
+    image: registry.cn-qingdao.aliyuncs.com/dataease/dataease:v1.0.0
+    container_name: dataease
+    ports:
+      - 80:8081
+    mem_limit: 4096m
+    volumes:
+      - dataease-conf:/opt/dataease/conf
+      - dataease-logs:/opt/dataease/logs
+      - dataease-plugins:/opt/dataease/plugins/thirdpart
+      - dataease-kettle-data:/opt/dataease/data/kettle
+    depends_on:
+      mysql-de:
+        condition: service_healthy
+```
 > 修改 /opt/dataease/docker-compose-mysql.yml，将 mysql 相关的容器名改为 mysql-de，例如：
 ```yml
   mysql-de:
