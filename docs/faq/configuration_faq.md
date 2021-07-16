@@ -64,15 +64,30 @@ msctl reload
       mysql-de:
         condition: service_healthy
 ```
-> 修改 /opt/dataease/docker-compose-mysql.yml，将 mysql 相关的容器名改为 mysql-de，例如：
+> 修改 /opt/dataease/docker-compose-mysql.yml，将 mysql 相关的容器名改为 mysql-de，将 mysql 的运行端口改为 53306，例如：
 ```yml
   mysql-de:
     image: registry.cn-qingdao.aliyuncs.com/dataease/mysql:5.7.25
     container_name: mysql-de
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    env_file:
+      - ./conf/mysql.env
+    ports:
+      - 53306:3306
+    volumes:
+      - /opt/dataease/conf/my.cnf:/etc/mysql/conf.d/my.cnf
+      - /opt/dataease/bin/mysql:/docker-entrypoint-initdb.d/
+      - dataease-mysql-data:/var/lib/mysql
+    networks:
+      - dataease-network
 ```
 > 修改 /opt/dataease/conf/dataease.properties，将数据库 URL 信息改为如下：
 ```properties
-spring.datasource.url=jdbc:mysql://mysql-de:3306/dataease?autoReconnect=false&useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+spring.datasource.url=jdbc:mysql://mysql-de:53306/dataease?autoReconnect=false&useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
 ```
 
 4. 修改 DataEase 服务启动端口（可选）
