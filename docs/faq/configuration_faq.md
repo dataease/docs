@@ -90,3 +90,15 @@ spring.datasource.url=jdbc:mysql://mysql-de:3306/dataease?autoReconnect=false&us
 ```shell
 dectl reload
 ```
+
+## 服务无法完全启动，查看 dataease 日志，发现 docker 访问出现 Permission denied。
+
+>这种情况一般是由于 selinux 导致的，可以临时关闭 selinux 试试：
+```shell
+setenforce 0
+```
+>然后重启 DataEase 服务：
+```shell
+service dataease restart
+```
+

@@ -2,7 +2,7 @@
 
 !!! info "部署服务器要求"
     * 操作系统: CentOS 7.x
-    * CPU/内存: 4核16G
+    * CPU/内存: 4核8G
     * 磁盘空间: 200G
 
 ## 下载安装包
@@ -19,19 +19,44 @@
 ```sh
 cd /tmp
 # 解压安装包
-tar zxvf dataease-release-v1.0.0-offline.tar.gz
+tar zxvf dataease-release-v1.0.2-offline.tar.gz
+```
+
+## 设置安装参数（可选）
+
+从 v1.0.2 版本开始，DataEase 支持以配置文件的形式来设置安装参数，如安装目录、服务运行端口、数据库配置参数等，具体参数请参见安装包中的 install.conf 文件：
+```properties
+# 基础配置
+## 安装目录
+DE_BASE=/opt
+## Service 端口
+DE_PORT=80
+
+# 数据库配置
+## 是否使用外部数据库
+DE_EXTERNAL_MYSQL=false
+## 数据库地址
+DE_MYSQL_HOST=mysql
+## 数据库端口
+DE_MYSQL_PORT=3306
+## DataEase 数据库库名
+DE_MYSQL_DB=dataease
+## 数据库用户名
+DE_MYSQL_USER=root
+## 数据库密码
+DE_MYSQL_PASSWORD=Password123@mysql
+
 ```
 
 ## 执行安装脚本
 
 ```sh
 # 进入安装包目录
-cd dataease-release-v1.0.0-offline
+cd dataease-release-v1.0.2-offline
 # 运行安装脚本
 /bin/bash install.sh
 ```
 
-在安装的过程中，安装程序会提供安装选项，如"是否使用内建 MySQL"。安装程序默认使用内建 MySQL。
 
 !!! info "注意"
     如果使用外部数据库进行安装，推荐使用 MySQL 5.7 版本。同时 DataEase 对数据库部分配置项有要求，请参考下附的数据库配置，修改环境中的数据库配置文件
@@ -90,7 +115,7 @@ cd dataease-release-v1.0.0-offline
 安装成功后，通过浏览器访问如下页面登录 DataEase
 
 ```
-地址: http://目标服务器IP地址:80
+地址: http://目标服务器IP地址:服务运行端口
 用户名: admin
 密码: dataease
 ```
