@@ -42,6 +42,7 @@ nav:
         - 安装配置: faq/configuration_faq.md
         - 系统管理: faq/system_management.md
         - 数据集: faq/dataset_faq.md
+        - 企业版: faq/enterprise_faq.md
     - 关于:
         - 更新说明: about/changelog.md
         - 联系我们: about/contact.md
