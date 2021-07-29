@@ -36,6 +36,8 @@ nav:
         - 系统管理:
             - 用户管理: user_manual/system_management/user.md
             - 模版管理: user_manual/system_management/module.md
+            - 站内消息: user_manual/system_management/message.md
+            - 定时任务: user_manual/system_management/task.md
         - 命令行工具: user_manual/cli.md
     - 使用教程:
         - 使用 DataEase 制作销售仪表板: manual_demo/sales_dashboard.md
