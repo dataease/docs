@@ -87,7 +87,7 @@ msctl reload
 ```
 > 修改 /opt/dataease/conf/dataease.properties，将数据库 URL 信息改为如下：
 ```properties
-spring.datasource.url=jdbc:mysql://mysql-de:53306/dataease?autoReconnect=false&useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+spring.datasource.url=jdbc:mysql://mysql-de:3306/dataease?autoReconnect=false&useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
 ```
 
 4. 修改 DataEase 服务启动端口（可选）
