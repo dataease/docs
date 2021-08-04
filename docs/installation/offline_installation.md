@@ -19,12 +19,12 @@
 ```sh
 cd /tmp
 # 解压安装包
-tar zxvf dataease-release-v1.0.2-offline.tar.gz
+tar zxvf dataease-release-{{ dataease.version }}-offline.tar.gz
 ```
 
 ## 设置安装参数（可选）
 
-从 v1.0.2 版本开始，DataEase 支持以配置文件的形式来设置安装参数，如安装目录、服务运行端口、数据库配置参数等，具体参数请参见安装包中的 install.conf 文件：
+从 {{ dataease.version }} 版本开始，DataEase 支持以配置文件的形式来设置安装参数，如安装目录、服务运行端口、数据库配置参数等，具体参数请参见安装包中的 install.conf 文件：
 ```properties
 # 基础配置
 ## 安装目录
@@ -52,7 +52,7 @@ DE_MYSQL_PASSWORD=Password123@mysql
 
 ```sh
 # 进入安装包目录
-cd dataease-release-v1.0.2-offline
+cd dataease-release-{{ dataease.version }}-offline
 # 运行安装脚本
 /bin/bash install.sh
 ```

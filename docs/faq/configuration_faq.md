@@ -1,8 +1,8 @@
 ## 80 端口被占用了，如何修改为其他端口？
 
->v1.0.2 及以后的版本，支持配置文件方案管理 DataEase 服务的运行，可以在 DataEase 运行目录下（默认为 /opt/dataease）找到 .env 文件，修改文件里的 DE_PORT，保存后执行 dectl reload 即可。
+>{{ dataease.version }} 及以后的版本，支持配置文件方案管理 DataEase 服务的运行，可以在 DataEase 运行目录下（默认为 /opt/dataease）找到 .env 文件，修改文件里的 DE_PORT，保存后执行 dectl reload 即可。
 
->v1.0.2 以前的版本，可以登录到 DataEase 服务器上，在 /opt/dataease 目录下，找到 docker-compose.yml 文件，把 dataease 的运行端口 80 端口改为其他端口（注意，后端容器运行端口8081不能修改），然后执行 dectl reload 即可。
+>{{ dataease.version }} 以前的版本，可以登录到 DataEase 服务器上，在 /opt/dataease 目录下，找到 docker-compose.yml 文件，把 dataease 的运行端口 80 端口改为其他端口（注意，后端容器运行端口8081不能修改），然后执行 dectl reload 即可。
 
 ## 执行一键安装脚本时报错，提示脚本错误。
 >
