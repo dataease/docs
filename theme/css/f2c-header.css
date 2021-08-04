@@ -1,5 +1,10 @@
 .sticky{position: fixed;top: 0;right: 0;left: 0;z-index: 10;}
+/*! CSS Used from: https://metersphere.io/css/bootstrap.min.css */
 *,::after,::before{box-sizing:border-box;}
+h4,h5{margin-top:0;margin-bottom:.5rem;}
+p{margin-top:0;margin-bottom:1rem;}
+img{vertical-align:middle;border-style:none;}
+svg{overflow:hidden;vertical-align:middle;}
 button{border-radius:0;}
 button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color;}
 button{margin:0;font-family:inherit;font-size:inherit;line-height:inherit;}
@@ -7,26 +12,6 @@ button{overflow:visible;}
 button{text-transform:none;}
 [type=button],button{-webkit-appearance:button;}
 [type=button]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none;}
-.fade{transition:opacity .15s linear;}
-@media (prefers-reduced-motion:reduce){
-.fade{transition:none;}
-}
-.alert{position:relative;padding:.75rem 1.25rem;margin-bottom:1rem;border:1px solid transparent;border-radius:.25rem;}
-.alert-dismissible{padding-right:4rem;}
-.alert-dismissible .close{position:absolute;top:0;right:0;padding:.75rem 1.25rem;color:inherit;}
-.close{float:right;font-size:1.5rem;font-weight:700;line-height:1;color:#000;text-shadow:0 1px 0 #fff;opacity:.5;}
-.close:hover{color:#000;text-decoration:none;}
-button.close{padding:0;background-color:transparent;border:0;}
-.pr-4{padding-right:1.5rem!important;}
-.text-center{text-align:center!important;}
-@media print{
-*,::after,::before{text-shadow:none!important;box-shadow:none!important;}
-a:not(.btn){text-decoration:underline;}
-}
-h4,h5{margin-top:0;margin-bottom:.5rem;}
-p{margin-top:0;margin-bottom:1rem;}
-img{vertical-align:middle;border-style:none;}
-svg{overflow:hidden;vertical-align:middle;}
 h4,h5{margin-bottom:.5rem;font-weight:500;line-height:1.2;}
 h4{font-size:1.5rem;}
 h5{font-size:1.25rem;}
@@ -88,7 +73,9 @@ img{page-break-inside:avoid;}
 p{orphans:3;widows:3;}
 .container{min-width:992px!important;}
 }
+/*! CSS Used from: https://metersphere.io/css/magnific-popup.css */
 button::-moz-focus-inner{padding:0;border:0;}
+/*! CSS Used from: https://metersphere.io/css/mega.css */
 @media (max-width:767px){
 .visible-xs{display:block!important;}
 }
@@ -145,6 +132,7 @@ button::-moz-focus-inner{padding:0;border:0;}
 @media (min-width: 1200px){
 .mega-nav-sandbox .mega-nav-body-ct{width:1140px;}
 }
+/*! CSS Used from: https://metersphere.io/css/style.css */
 .text-muted{color:#8492a6!important;font-weight:600;}
 .rounded{border-radius:6px!important;}
 .card .card-body{padding:1.5rem;}
@@ -162,21 +150,14 @@ p{line-height:1.6;}
 .explore-feature .icon{height:80px;width:80px;line-height:80px;-webkit-transition:all 0.5s ease;transition:all 0.5s ease;}
 .explore-feature:hover{-webkit-box-shadow:0 10px 25px rgba(60, 72, 88, 0.15)!important;box-shadow:0 10px 25px rgba(60, 72, 88, 0.15)!important;}
 .explore-feature:hover .icon{color:#2f55d4!important;}
-.alert{padding:8px 15px;border-radius:6px;font-size:14px;}
-.alert.alert-dismissible{padding-right:30px;}
-.alert.alert-dismissible .close{top:-6px;right:-10px;font-size:16px!important;}
+/*! CSS Used from: https://metersphere.io/css/colors/default.css */
 .explore-feature:hover .icon{color:#783887!important;}
 ::selection{background-color:rgba(255, 91, 105, 0.9);}
-@media (max-width: 768px){
-.notice-phone{display:none!important;}
-}
-.btn-outline-release{padding:6px 12px;border:1px solid white;color:white;background-color:transparent;line-height:2.5;}
-.alert-release{padding:8px 16px;border-radius:0px;font-size:14px;margin-bottom:0px;background-color:rgba(120, 56, 135);color:#ffffff;border-color:rgba(120, 56, 135);}
+/*! CSS Used from: https://metersphere.io/css/index.css */
 p{font-family:-apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Helvetica Neue", ".PingFang SC", "PingFang SC", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;}
 h4,h5{font-family:-apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Helvetica Neue", ".PingFang SC", "PingFang SC", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;line-height:1.5;font-weight:300;margin-bottom:0;}
 .card{background:none;}
 @media (max-width: 768px){
-.notice-phone{display:none!important;}
 .mega-nav-sandbox .mega-nav-body{background-color:white;box-shadow:0 2px 16px rgba(79,99,122,0.2);color:black;margin:1em;padding:1em!important;}
 }
 .mega-nav-sandbox .mega-nav-body{background-color:white;box-shadow:0 2px 16px rgba(79,99,122,0.2);color:black;margin-top:1em;padding:1em;padding-left:100px;padding-right:100px;}
@@ -187,8 +168,6 @@ h4,h5{font-family:-apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro
 .explore-feature:hover .bg-ko{background-color:#fc6554;color:white!important;}
 .explore-feature:hover .bg-f2c{background-color:#00355d;color:white!important;}
 .card .header-card-body{padding:1rem!important;}
-.alert-release{padding:4px 16px;border-radius:0px;font-size:14px;margin-bottom:0px;background-color:rgba(120, 56, 135);color:#ffffff;border-color:rgba(120, 56, 135);}
-.btn-outline-release{padding:6px 12px;border:1px solid white;color:white;background-color:transparent;line-height:2.5;}
 /*! CSS Used fontfaces */
 @font-face{font-family:'Nunito';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v16/XRXW3I6Li01BKofAnsSUbOvISTs.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
 @font-face{font-family:'Nunito';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v16/XRXW3I6Li01BKofAnsSUZevISTs.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
@@ -211,27 +190,14 @@ h4,h5{font-family:-apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro
 @font-face{font-family:'Nunito';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v16/XRXW3I6Li01BKofAjsOUb-vISTs.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
 @font-face{font-family:'Nunito';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v16/XRXW3I6Li01BKofAjsOUYevI.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
 
-
-*,::after,::before{box-sizing:border-box;}
-section{display:block;}
-p{margin-top:0;margin-bottom:1rem;}
-a{color:#a4b1b2;text-decoration:none;background-color:transparent;}
-a:hover{color:#a4b1b2;text-decoration:underline;}
-.pr-1{padding-right:.25rem!important;}
-@media print{
-*,::after,::before{text-shadow:none!important;box-shadow:none!important;}
-a:not(.btn){text-decoration:underline;}
-p{orphans:3;widows:3;}
-}
-.mdi:before{display:inline-block;font:normal normal normal 24px/1 "Material Design Icons";font-size:inherit;text-rendering:auto;line-height:inherit;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
-.mdi-download::before{content:"\F01DA";}
-::-moz-selection{background:rgba(47, 85, 212, 0.9);color:#ffffff;}
-::selection{background:rgba(47, 85, 212, 0.9);color:#ffffff;}
-a{text-decoration:none!important;}
-p{line-height:1.6;}
-::selection{background-color:rgba(255, 91, 105, 0.9);}
-p{font-family:-apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Helvetica Neue", ".PingFang SC", "PingFang SC", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;}
-.footer-start-box{position:fixed;bottom:75px!important;right:30px!important;width:230px!important;height:45px!important;padding:13px;border-radius:20px;box-shadow:0 8px 16px 0 rgba(46,37,111,.32);background-image:linear-gradient(109deg,#783887,#7565ee);color:#fff;cursor:pointer;text-align:center;}
+.footer-start-box{position:fixed;bottom:75px!important;right:30px!important;width:100px!important;height:45px!important;padding:13px;border-radius:20px;box-shadow:0 8px 16px 0 rgba(46,37,111,.32);background-image:linear-gradient(109deg,#2b937c,#2b937c);color:#fff;cursor:pointer;text-align:center;}
 .footer-start-title{font-weight:600;}
-/*! CSS Used fontfaces */
-@font-face{font-family:"Material Design Icons";src:url("../fonts/materialdesignicons-webfont.woff2?v=5.3.45") format("woff2"),url("../fonts/materialdesignicons-webfont.woff?v=5.3.45") format("woff"),url("../fonts/materialdesignicons-webfont.ttf?v=5.3.45") format("truetype");font-weight:normal;font-style:normal;}
+
+@-webkit-keyframes mdx-heart{0%,40%,80%,to{transform:scale(1)}20%,60%{transform:scale(1.15)}}
+@keyframes mdx-heart{0%,40%,80%,to{transform:scale(1)}20%,60%{transform:scale(1.15)}}
+.mdx-content__footer{margin-top:1rem;text-align:center}
+.mdx-content__footer a{display:inline-block;color:#e91e63;transition:transform .25s cubic-bezier(.1,.7,.1,1),color 125ms}
+.mdx-content__footer a:focus,
+.mdx-content__footer a:hover{transform:scale(1.2)}
+.mdx-content__footer hr{display:inline-block;width:2rem;margin:1em;vertical-align:middle;background-color:currentColor;border:none}
+.mdx-heart{-webkit-animation:mdx-heart 1s infinite;animation:mdx-heart 1s infinite}
