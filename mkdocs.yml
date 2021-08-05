@@ -109,9 +109,9 @@ extra:
   dataease:
     version: v1.0.2
   search:
-  separator: '[\s\-\.]+'
-  language: 'zh'
-  Content-Encoding: gzip
+    separator: '[\s\-\.]+'
+    language: 'zh'
+    Content-Encoding: gzip
   generator: false
   version:
     default: master
