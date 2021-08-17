@@ -45,6 +45,8 @@ nav:
         - 安装配置: faq/configuration_faq.md
         - 系统管理: faq/system_management.md
         - 数据集: faq/dataset_faq.md
+        - 仪表板: faq/panel_faq.md
+        - 开发问题: faq/dev_faq.md
         - 企业版: faq/enterprise_faq.md
     - 开发文档: dev_manual/dev_manual.md
     - 关于:
