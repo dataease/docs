@@ -128,6 +128,18 @@ service dataease restart
 >解压后执行安装包里的安装脚本即可： bash install-docker.sh
 
 
+## 安装 DataEase 后内置 MySQL 的配置参数未生效
+
+>出于安全考虑，当 MySQL 配置文件 my.cnf 权限过高时，会被 MySQL 忽略加载。请确认配置文件目录(默认路径 /opt/dataease/conf)下的配置文件的访问权限为 644。
+
+>可以通过命令修改文件权限：
+```shell
+chmod 644 /opt/dataease/conf/*
+```
+
+>修改文件属性后，重启 DataEase 服务: service dataease restart
+
+
 ## 如何与 MeterSphere 安装在同一台服务器上？
 >DataEase 与 MeterSphere 安装在同一台服务器上时，有可能会发生以下冲突：
 >
