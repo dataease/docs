@@ -91,6 +91,16 @@ docker logs -n 30 -f dataease
 4. 重启 DataEase 服务： service dataease restart
 
 
+## 使用 DataEase 的时候提示 "Row 30153 was cut by GROUP_CONCAT()" 的错误
+
+>![mysql-concat](../img/faq/mysql-concat.png)
+>当出现类似上图的错误时，可以通过任选以下方式之一处理：
+
+1. 修改 my.cnf 文件的 group_concat_max_len 参数，如：group_concat_max_len=1024000，然后重启 MySQL 服务
+
+2. 进入 MySQL，执行 SET GLOBAL group_concat_max_len=1024000; 临时修改该参数的值
+
+
 ## <span id="migration">如何迁移已有的运行目录到其他路径上？</span>
 
 1. 修改 /usr/bin/dectl，将 DE_BASE 改为新的目标路径，如: /home/test
