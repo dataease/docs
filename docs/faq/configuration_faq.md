@@ -251,3 +251,10 @@ setenforce 0
 ```shell
 service dataease restart
 ```
+
+## 非 root 用户能不能安装 DataEase？
+
+>可以支持非 root 的 sudoer 用户，在执行安装脚本的时候，加上 sudo 执行即可，例如：
+```shell
+sudo bash install.sh
+```
