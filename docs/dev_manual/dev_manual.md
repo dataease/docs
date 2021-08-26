@@ -123,3 +123,127 @@ logger.level=INFO
 ![安装前端](../img/dev_manual/install-frontend.png)
 
 安装完成后，使用 npm run serve 命名启动前端,前端启动后即可通过 http://localhost:9528/ 地址访问
+
+
+## 本地运行 Kettle 和 Doris (可选)
+
+!!! info "注意"
+    若需要调试 Excel 和定时同步模式数据集的话，需要此支持
+
+### 准备运行环境
+
+1. 下载 installer 工程
+```shell
+git clone git@github.com:dataease/installer.git
+```
+
+2. 初始化目录
+```shell
+mkdir -p /opt/dataease/conf
+mkdir -p /opt/dataease/data/kettle
+mkdir -p /opt/dataease/data/fe
+mkdir -p /opt/dataease/data/be
+mkdir -p /opt/dataease/logs
+```
+
+3. 准备配置文件
+```shell
+cd installer/dataease/templates && cp -rp fe.conf be.conf dataease.properties .kettle /opt/dataease/conf && cd -
+cd installer/dataease && cp docker-compose-kettle-doris.yml /opt/dataease/ && cd -
+```
+
+4. 按实际情况修改配置文件
+fe.conf、be.conf、.kettle 一般情况下不需要修改，其他配置文件的修改可以参考下面示例：
+
+    修改 dataease.properties 文件，设置 MySQL、Kettle 和 Doris 的连接信息，以本机IP（192.168.1.9）为例:
+    ```properties
+    # 数据库配置
+    spring.datasource.url=jdbc:mysql://192.168.1.9:3306/dataease?autoReconnect=false&useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    spring.datasource.username=root
+    spring.datasource.password=Password123@mysql
+
+    carte.host=192.168.1.9
+    carte.port=18080
+    carte.user=cluster
+    carte.passwd=cluster
+
+    doris.db=dataease
+    doris.user=root
+    doris.password=Password123@doris
+    doris.host=192.168.1.9
+    doris.port=9030
+    doris.httpPort=8030
+
+    #新建用户初始密码
+    dataease.init_password=DataEase123456
+    #登录超时时间单位min  如果不设置 默认8小时也就是480
+    dataease.login_timeout=480
+
+    logger.level=INFO
+    ```
+
+    修改 docker-compose-kettle-doris.yml，将 ${DE_BASE} 替换为 /opt，将 doris-fe 和 kettle 的运行端口暴露出来:
+    ```yml
+    version: '2.1'
+    services:
+
+      doris-fe:
+        image: registry.cn-qingdao.aliyuncs.com/dataease/doris-init:0.14.0-611
+        container_name: doris-fe
+        ports:
+          - 8030:8030
+          - 9030:9030
+        environment:
+          - DORIS_ROLE=fe-leader
+        volumes:
+          - /opt/dataease/data/fe:/opt/doris/fe/doris-meta
+          - /opt/dataease/logs/fe:/opt/doris/fe/log
+          - /opt/dataease/conf/fe.conf:/opt/doris/fe/conf/fe.conf
+        networks:
+          dataease-network :
+            ipv4_address: 172.19.0.198
+        restart: always
+
+      doris-be:
+        image: registry.cn-qingdao.aliyuncs.com/dataease/doris-init:0.14.0-611
+        container_name: doris-be
+        environment:
+          - DORIS_ROLE=be
+        volumes:
+          - /opt/dataease/data/be:/opt/doris/be/storage
+          - /opt/dataease/logs/be:/opt/doris/be/log
+          - /opt/dataease/conf/be.conf:/opt/doris/be/conf/be.conf
+        networks:
+          dataease-network :
+            ipv4_address: 172.19.0.199
+        restart: always
+
+      kettle:
+        image: registry.cn-qingdao.aliyuncs.com/dataease/kettle:8.3-v1.1
+        container_name: kettle
+        ports:
+          - 18080:18080
+        volumes:
+          - /opt/dataease/conf/:/opt/dataease/conf
+          - /opt/dataease/data/kettle:/opt/dataease/data/kettle
+        networks:
+          - dataease-network
+        restart: always
+
+    networks:
+      dataease-network:
+        driver: bridge
+        ipam:
+          driver: default
+          config:
+            - subnet: 172.19.0.0/16
+              gateway: 172.19.0.1
+    ```
+
+### 运行 Kettle 和 Doris 组件
+
+执行命令运行组件：
+```shell
+cd /opt/dataease
+docker-compose -f docker-compose-kettle-doris.yml up -d
+```
