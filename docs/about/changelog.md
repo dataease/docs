@@ -11,6 +11,24 @@ DataEase 版本号命名规则为：v大版本.功能版本.Bug修复版本
 像其它优秀开源项目一样，DataEase 将每月发布一个功能版本
 
 
+## v1.1.1
+
+------
+
+2021年08月27日
+
+!!! info "问题修复"
+
+- fix: 抽取 Oracle 数据
+- fix: 解析 Excel 报错
+- fix: 数据集消息获取接收人权限错误
+- fix: 外部链接 Token 存储使用 Vue 不使用 Cookie
+- fix: 外部链接带密码嵌在 iframe
+- fix: Excel 识别日期类型
+- fix: Doris 时间类型长度
+
+
+
 ## v1.1.0
 
 ------
