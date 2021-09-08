@@ -98,6 +98,25 @@ logger.level=INFO
 
 ## IDEA 方式运行
 
+### Windows 下环境配置（可选）
+
+在 windows 环境下对配置文件的路径会有所要求，一般可以采用下面两种配置方案里的一种。
+
+#### 方案一(推荐)
+
+将配置文件放置到工程源码的所在盘的指定路径下，以 dataease.properties 配置文件举例，如源码工程在 D 盘下，则配置文件存放路径为 d:\opt\dataease\conf\dataease.properties。其他配置文件类似
+
+此方案中不需要对 DataEase 的源码进行任何修改。
+
+![方案一](../img/dev_manual/windows-idea-1.png)
+
+#### 方案二
+
+配置文件可以随意放置在任意路径下，但需要修改工程源码中配置文件的路径信息。以 dataease.properties 配置文件举例，如该配置文件存放在 D 盘根目录下，则需要按下图修改三个地方的配置路径：
+
+![方案二](../img/dev_manual/windows-idea-2.png)
+
+
 ### 运行后端服务
 
 新建一个 git 项目 输入主工程 git 地址: git@github.com:dataease/dataease.git
