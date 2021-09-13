@@ -44,6 +44,7 @@ nav:
         - 使用 DataEase 制作【2021年全国GDP数据】: manual_demo/china_gdp_2021.md
     - 常见问题:
         - 安装配置: faq/configuration_faq.md
+        - 备份还原: faq/backup_faq.md
         - 系统管理: faq/system_management.md
         - 数据集: faq/dataset_faq.md
         - 仪表板: faq/panel_faq.md
