@@ -15,3 +15,12 @@ mvn clean install
 如遇到缺少 kettle 相关依赖的话，可以检查是否使用了 maven 的 mirror，建议去掉 mirror 后重试。如还不行的话，可以在百度网盘上下载一下最小化的 dataease 依赖包。链接: https://pan.baidu.com/s/1fWv_ze-QKUew3ND4NAdt8Q 提取码: rpzi
 
 将删除依赖包解压后放置到 ~/.m2/repository 下即可。
+
+
+## 使用地图组件时提示 "/geo/100000_full.json not found."
+
+![no-map](../img/faq/no-map.png)
+
+出现上述原因，是因为没有将地图文件放置到指定位置中。
+
+在 DataEase 源码工程的目录下有一个地图文件目录 mapFiles/full，需要将该目录下的文件放置到 /opt/dataease/data/feature/full 目录下。如果是windows的话，可以在工程目录所在盘的根目录下，创建 opt/dataease/data/feature/full目录。

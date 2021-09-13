@@ -84,6 +84,10 @@ dataease.login_timeout=480
 logger.level=INFO
 ```
 
+#### 地图文件
+
+DataEase 从 1.2 版本开始支持地图组件。在 DataEase 源码工程的目录下有一个地图文件目录 mapFiles/full，需要将该目录下的文件放置到 /opt/dataease/data/feature/full 目录下。如果是windows的话，可以在工程目录所在盘的根目录下，创建 opt/dataease/data/feature/full目录。
+
 ## 本地 jar 包方式运行
 
 ### 编译工程
