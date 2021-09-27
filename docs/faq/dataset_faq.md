@@ -1,7 +1,6 @@
-## 创建 Excel 数据集时，对 Excel 文件的格式有什么要求？
+## 创建 Excel 数据集时，对 Excel 文件的格式有什么要求？注意：必须满足要求的格式，否则无法成功导入。
 
->Excel 中如存在合并单元格则无法导入；另外文件的第一行不能为空，第一行是标题行。
-可以用格式刷保持格式统一。
+>1、文件中不能存在合并单元格；</br>2、文件的第一行为标题行，不能为空，不能为日期型。
 
 ## 添加excel数据集，提示"java.sql.SQLSyntaxErrorException: errCode = 2, detailMessage = The size of a row (1048587) exceed the maximal row size: 1000000"
 
