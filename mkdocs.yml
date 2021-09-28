@@ -25,6 +25,7 @@ nav:
     - 安装部署: 
         - 在线安装: installation/online_installation.md
         - 离线安装: installation/offline_installation.md
+        - 离线安装(Windows): installation/offline_installation_windows.md
         - 在线升级: installation/online_upgrade.md
         - 离线升级: installation/offline_upgrade.md
     - 用户手册:

@@ -1,0 +1,167 @@
+## 环境要求
+
+得益于 Docker 跨平台应用，DataEase 理论上可以部署在任何可以运行 Docker 的宿主机。
+
+我们并非是只支持 Linux 操作系统，我们是支持可以部署 Docker 的任意 x86_64 的宿主机（Windows / Linux / macOS）
+
+!!! warning "注意"
+	* 云虚拟机可能不支持，需要嵌套虚拟化
+	* 物理机可以，Hyper-V 支持嵌套虚拟化
+
+!!! info "部署服务器要求"
+    * 操作系统: 可运行 docker 的 windows 操作系统
+    * CPU/内存: 4核8G
+    * 磁盘空间: 200G
+
+本文将以 Windows 10 为例介绍如何在 Windows 10 上安装 DataEase。
+
+## 安装 WSL
+
+参考[在 Windows 10 上安装 WSL | Microsoft Docs](https://docs.microsoft.com/zh-cn/windows/wsl/install)此问题，进行 Windows 宿主机的配置
+
+使用管理员身份运行：
+```powershell
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+
+重启操作系统
+
+下载[适用于 x64 计算机的 WSL2 Linux 内核更新包](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
+
+
+## 安装 Docker
+
+下载[Docker Desktop for Windows](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)，如果使用的是 macOS，[Install Docker Desktop on Mac | Docker Documentation](https://docs.docker.com/desktop/mac/install/)
+
+安装完成后双击 Docker Desktop Installer.exe 安装即可完成安装。
+
+
+## 安装 Ubuntu
+
+在 Windows 10 的应用商店里搜索"Ubuntu"并安装
+
+![安装Ubuntu](../img/installation/windows-install-ubuntu.png)
+
+点击"启动"按钮启动 Ubuntu，并切换到 root 用户
+
+![启动Ubuntu](../img/installation/launch-ubuntu.png)
+
+## 下载安装包
+
+请自行下载 DataEase 最新版本的离线安装包(v1.2.3及以上版本)
+
+!!! tip ""
+    安装包下载链接: https://community.fit2cloud.com/#/products/dataease/downloads
+
+
+## 解压安装包
+
+在 Ubuntu 中，以 root 用户执行如下命令
+
+```sh
+# 假设安装包存放路径为 c:\dataease-v1.2.3-offline.tar.gz
+cd /mnt/c
+# 解压安装包
+tar zxvf dataease-release-v1.2.3-offline.tar.gz
+```
+
+## 设置安装参数（可选）
+
+DataEase 支持以配置文件的形式来设置安装参数，如安装目录、服务运行端口、数据库配置参数等，具体参数请参见安装包中的 install.conf 文件：
+```properties
+# 基础配置
+## 安装目录
+DE_BASE=/opt
+## Service 端口
+DE_PORT=80
+
+# 数据库配置
+## 是否使用外部数据库
+DE_EXTERNAL_MYSQL=false
+## 数据库地址
+DE_MYSQL_HOST=mysql
+## 数据库端口
+DE_MYSQL_PORT=3306
+## DataEase 数据库库名
+DE_MYSQL_DB=dataease
+## 数据库用户名
+DE_MYSQL_USER=root
+## 数据库密码
+DE_MYSQL_PASSWORD=Password123@mysql
+
+```
+
+## 执行安装脚本
+
+```sh
+# 进入安装包目录
+cd dataease-release-v1.2.3-offline
+# 运行安装脚本
+/bin/bash install.sh
+```
+
+
+!!! info "注意"
+    如果使用外部数据库进行安装，推荐使用 MySQL 5.7 版本。同时 DataEase 对数据库部分配置项有要求，请参考下附的数据库配置，修改环境中的数据库配置文件
+
+    ```
+    [mysqld]
+	datadir=/var/lib/mysql
+
+	default-storage-engine=INNODB
+	character_set_server=utf8
+	lower_case_table_names=1
+	table_open_cache=128
+	max_connections=2000
+	max_connect_errors=6000
+	innodb_file_per_table=1
+	innodb_buffer_pool_size=1G
+	max_allowed_packet=64M
+	transaction_isolation=READ-COMMITTED
+	innodb_flush_method=O_DIRECT
+	innodb_lock_wait_timeout=1800
+	innodb_flush_log_at_trx_commit=0
+	sync_binlog=0
+	group_concat_max_len=1024000
+	sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+	skip-name-resolve
+
+	[mysql]
+	default-character-set=utf8
+
+	[mysql.server]
+	default-character-set=utf8
+    ```
+
+    请参考文档中的建库语句创建 DataEase 使用的数据库，DataEase 服务启动时会自动在配置的库中创建所需的表结构及初始化数据。
+    ```mysql
+    CREATE DATABASE `dataease` /*!40100 DEFAULT CHARACTER SET utf8mb4 */
+    ```
+
+安装脚本默认使用 /opt/dataease 使用的数据库，DataEase 的配置文件、数据及日志等均存放在该安装目录
+
+!!! info "安装目录目录结构说明"
+    ```
+    /opt/dataease/
+	├── bin                                         #-- 安装过程中需要加载到容器中的脚本
+	├── conf                                        #-- DataEase 各组件及数据库等中间件的配置文件
+	├── data                                        #-- DataEase 各组件及数据库等中间件的数据持久化目录
+	├── docker-compose-kettle-doris.yml             #-- DataEase 内建的 kettle 和 doris 所需的 Docker Compose 文件 
+	├── docker-compose-mysql.yml                    #-- DataEase 内建的 MySQl 所需的 Docker Compose 文件 
+	├── docker-compose.yml                          #-- DataEase 基础 Docker Compose 文件，定义了网络等基础信息 
+	├── logs                                        #-- DataEase 各组件的日志文件持久化目录
+	└── templates                                   #-- DataEase 各组件及数据库等中间件的配置文件的原始文件
+    ```
+
+
+
+安装成功后，通过浏览器访问如下页面登录 DataEase
+
+```
+地址: http://目标服务器IP地址:服务运行端口
+用户名: admin
+密码: dataease
+```
+
+![安装DataEase](../img/installation/windows-install.png)
