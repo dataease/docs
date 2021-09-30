@@ -30,11 +30,12 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 下载[适用于 x64 计算机的 WSL2 Linux 内核更新包](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
 
 
-## 安装 Docker
+## 设置 WSL2 为默认
 
-下载[Docker Desktop for Windows](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)，如果使用的是 macOS，[Install Docker Desktop on Mac | Docker Documentation](https://docs.docker.com/desktop/mac/install/)
-
-安装完成后双击 Docker Desktop Installer.exe 安装即可完成安装。
+以管理员身份执行：
+```powershell
+wsl --set-default-version 2
+```
 
 
 ## 安装 Ubuntu
@@ -43,9 +44,40 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 ![安装Ubuntu](../img/installation/windows-install-ubuntu.png)
 
-点击"启动"按钮启动 Ubuntu，并切换到 root 用户
 
-![启动Ubuntu](../img/installation/launch-ubuntu.png)
+
+## 检测 Ubuntu WSL 版本
+
+以管理员身份执行：
+```powershell
+wsl.exe -l -v
+```
+
+![WSL版本1](../img/installation/check-version-1.png)
+
+示例中安装的 Ubuntu Name 为 "Ubuntu"， 如像上图出现 Ubuntu 版本为 1， 则继续执行命令：
+```powershell
+wsl.exe --set-version Ubuntu 2
+```
+
+出现下图结果即为成功:
+
+![WSL版本2](../img/installation/check-version-2.png)
+
+
+## 安装 Docker
+
+下载[Docker Desktop for Windows](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)，如果使用的是 macOS，[Install Docker Desktop on Mac | Docker Documentation](https://docs.docker.com/desktop/mac/install/)
+
+安装完成后双击 Docker Desktop Installer.exe 安装即可完成安装。
+
+
+## Docker 设置
+
+Docker Desktop 安装完成后，进入 Settings 界面，选择 Resources 菜单下的 WSL INTEGRATION，按下图设置后，点击右下角的 Apply & Restart 即可。
+
+![docker设置](../img/installation/docker-settings.png)
+
 
 ## 下载安装包
 
@@ -53,6 +85,29 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 !!! tip ""
     安装包下载链接: https://community.fit2cloud.com/#/products/dataease/downloads
+
+
+## 启动 Ubuntu
+
+在应用商店里，选择 Ubuntu，点击"启动"按钮启动 Ubuntu，并执行命令切换到 root 用户：
+
+```shell
+sudo su -
+```
+
+![启动Ubuntu](../img/installation/launch-ubuntu.png)
+
+
+## 检查 docker 环境
+
+在 Ubuntu 命令行中执行命令：
+```shell
+docker version
+```
+
+如能像下图一样正常显示 docker 版本信息，则能正常执行 DataEase 后续的安装操作，如出现异常，请根据提示信息解决异常问题。
+
+![docker检测](../img/installation/check-docker.png)
 
 
 ## 解压安装包
