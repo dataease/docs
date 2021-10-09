@@ -44,3 +44,24 @@ rm -rf /opt/dataease/data/be/*
 # 启动 DataEase 服务
 service dataease start
 ```
+
+>如果上述修复方案未生效的话，可以手动初始化一下doris。
+
+>1. 进入 doris-fe
+可以用任意 MySQL Client 连接 doris-fe，以下以 DataEase 内置的 MySQL 举例
+```shell
+# 进入内置 MySQL 容器内
+docker exec -it mysql sh
+
+# 进入 MySQL 容器后，连接 doris-fe
+mysql -uroot -h doris-fe -P  9030 -p
+```
+
+>2. 初始化 doris
+连接上 doris-fe 后，执行下面的语句：
+```mysql
+ALTER SYSTEM ADD BACKEND "172.19.0.199:9050";
+SET PASSWORD FOR 'root' = PASSWORD('Password123@doris');
+CREATE DATABASE dataease;
+```
+执行成功后，可以新建 Excel 数据集 或 定时同步类型数据集试试。
