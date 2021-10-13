@@ -205,7 +205,7 @@ fe.conf、be.conf、.kettle 一般情况下不需要修改，其他配置文件�
     logger.level=INFO
     ```
 
-    修改 docker-compose-kettle-doris.yml，将 ${DE_BASE} 替换为 /opt，将 doris-fe 和 kettle 的运行端口暴露出来:
+    修改 docker-compose-kettle-doris.yml，将 ${DE_BASE} 替换为 /opt，将 doris-fe 和 kettle 的运行端口暴露出来，增加网络定义部分:
     ```yml
     version: '2.1'
     services:
