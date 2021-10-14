@@ -1,6 +1,6 @@
 ## 创建 Excel 数据集时，对 Excel 文件的格式有什么要求？注意：必须满足要求的格式，否则无法成功导入。
 
->1、文件中不能存在合并单元格；</br>2、文件的第一行为标题行，不能为空，不能为日期型。
+>1、文件中不能存在合并单元格；</br>2、文件的第一行为标题行，不能为空，不能为日期型；</br>3、Excel文件大小请确保在500M以内。
 
 ## 添加excel数据集，提示"java.sql.SQLSyntaxErrorException: errCode = 2, detailMessage = The size of a row (1048587) exceed the maximal row size: 1000000"
 
