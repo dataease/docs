@@ -4,7 +4,7 @@ site_description: 'Document'
 site_author: 'yayanpei'
 google_analytics: ['UA-147297392-11', 'dataease.io']
 
-repo_name: 'DataEase Docs'
+repo_name: 'DataEase'
 repo_url: 'https://github.com/dataease/dataease'
 
 edit_uri: https://github.com/dataease/docs/edit/master/docs/
@@ -17,8 +17,27 @@ theme:
     hljs_languages:
         - yaml
         - django
-    custom_dir: 'theme'
-
+    palette:
+        - scheme: default
+          accent: blue
+          toggle:
+              icon: material/weather-sunny
+              name: Switch to dark mode
+        - scheme: slate
+          accent: blue
+          toggle:
+              icon: material/weather-night
+              name: Switch to light mode
+    features:
+        - navigation.instant
+        - navigation.tracking
+        - navigation.indexes
+        - navigation.top
+        - search.suggest
+        - search.highlight
+        - search.share
+        - header.autohide
+    custom_dir: "theme"
 nav:
     - 产品介绍: index.md
     - 系统架构: system_arch.md
@@ -60,10 +79,10 @@ nav:
 markdown_extensions:
     - admonition
     - codehilite:
-        guess_lang: True
-        linenums: False
+          guess_lang: True
+          linenums: False
     - toc:
-        permalink: True
+          permalink: True
     - footnotes
     - attr_list
     - def_list
@@ -73,12 +92,12 @@ markdown_extensions:
     - pymdownx.extra
     - pymdownx.arithmatex
     - pymdownx.betterem:
-        smart_enable: all
+          smart_enable: all
     - pymdownx.caret
     - pymdownx.critic
     - pymdownx.details
     - pymdownx.emoji:
-        emoji_generator: !!python/name:pymdownx.emoji.to_png
+          emoji_generator: !!python/name:pymdownx.emoji.to_png
     - pymdownx.inlinehilite
     - pymdownx.magiclink
     - pymdownx.mark
@@ -102,3 +121,13 @@ plugins:
 extra:
     version:
         method: mike
+    analytics:
+        provider: google
+        property: UA-147297392-11
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/dataease
+        - icon: fontawesome/solid/envelope
+          link: mailto:support@fit2cloud.com
+        - icon: fontawesome/solid/phone
+          link: tel://400-052-0755

@@ -214,7 +214,6 @@ h4,h5{font-family:-apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro
 
 *,::after,::before{box-sizing:border-box;}
 section{display:block;}
-p{margin-top:0;margin-bottom:1rem;}
 a{color:#a4b1b2;text-decoration:none;background-color:transparent;}
 a:hover{color:#a4b1b2;text-decoration:underline;}
 .pr-1{padding-right:.25rem!important;}
@@ -228,7 +227,6 @@ p{orphans:3;widows:3;}
 ::-moz-selection{background:rgba(47, 85, 212, 0.9);color:#ffffff;}
 ::selection{background:rgba(47, 85, 212, 0.9);color:#ffffff;}
 a{text-decoration:none!important;}
-p{line-height:1.6;}
 ::selection{background-color:rgba(255, 91, 105, 0.9);}
 p{font-family:-apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Helvetica Neue", ".PingFang SC", "PingFang SC", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;}
 .footer-start-box{position:fixed;bottom:75px!important;right:30px!important;width:230px!important;height:45px!important;padding:13px;border-radius:20px;box-shadow:0 8px 16px 0 rgba(46,37,111,.32);background-image:linear-gradient(109deg,#783887,#7565ee);color:#fff;cursor:pointer;text-align:center;}

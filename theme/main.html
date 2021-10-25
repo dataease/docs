@@ -2,31 +2,46 @@
 
 {% block header %}
 {% include "f2c-header.html" %}
-{% endblock %}
-
-{% block footer %}
 {{ super() }}
-
 {% endblock %}
 
+{% block outdated %}
+  You're not viewing the latest version.
+  <a href="{{ '../' ~ base_url }}">
+    <strong>Click here to go to latest.</strong>
+  </a>
+{% endblock %}
 
 {% block styles %}
     <link rel="stylesheet" href="{{ base_url }}/css/lightgallery.min.css">
-
     <link href="{{ base_url }}/css/f2c-header.css" rel="stylesheet" type="text/css" />
-
     {{ super() }}
 
 {% endblock styles %}
 
+{% block footer %}
+    <footer class="md-footer">
+      <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+          <div class="md-footer-copyright">
+            {% if config.copyright %}
+              <div class="md-footer-copyright__highlight">
+                {{ config.copyright }}
+              </div>
+            {% endif %}
+          </div>
+          {% include "partials/social.html" %}
+        </div>
+      </div>
+    </footer>
+{% endblock footer %}
+
 {% block libs %}
     {{ super() }}
     <script src="{{ base_url }}/js/lightgallery.min.js"></script>
-
     <script src="{{ base_url }}/js/jquery-3.5.1.min.js"></script>
     <script src="{{ base_url }}/js/bootstrap.bundle.min.js"></script>
     <script src="{{ base_url }}/js/mega.js"></script>
-
 {% endblock libs %}
 
 {% block scripts %}

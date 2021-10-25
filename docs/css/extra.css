@@ -1,5 +1,6 @@
 .md-header {
   background-color: #0a7be0;
+  top: 48px;
 }
 
 .md-footer {
@@ -15,7 +16,7 @@
 }
 
 .md-main__inner {
-  margin-top: .8rem;
+  margin-top: 3rem;
 }
 
 .progress-label {
@@ -95,4 +96,18 @@
 
 .lg-outer .lg-img-wrap {
   padding: 80px
+}
+
+.md-nav__source {
+  background-color: #fc6554;
+}
+
+.md-grid {
+  margin-left: 1rem;
+  margin-right: auto;
+  max-width: initial;
+}
+
+.md-top {
+  margin-top: 2rem;
 }
