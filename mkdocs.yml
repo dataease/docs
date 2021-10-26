@@ -72,6 +72,7 @@ nav:
         - 安全问题: faq/security_faq.md
         - 企业版: faq/enterprise_faq.md
     - 开发文档: dev_manual/dev_manual.md
+    - 技术咨询: https://jinshuju.net/f/TK5TTd
     - 关于:
         - 更新说明: about/changelog.md
         - 联系我们: about/contact.md
