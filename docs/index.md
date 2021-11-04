@@ -43,7 +43,7 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="19">
+		<td rowspan="20">
 			仪表板
 		</td>
 		<td rowspan="3">
@@ -64,7 +64,7 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="14">
+		<td rowspan="15">
 			仪表板制作
 		</td>
 		<td>
@@ -73,7 +73,7 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 	</tr>
 	<tr>
 		<td>
-			支持仪表板中添加多种组件，如：视图/时间组件/文本组件/数字组件/样式组件/图片/tab组件等
+			支持仪表板中添加多种组件，如：视图/时间组件/文本组件/数字组件/样式组件/图片/tab组件/链接等
 		</td>
 	</tr>
 	<tr>
@@ -89,6 +89,11 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 	<tr>
 		<td>
 			支持仪表板中视图间的联动
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持仪表板中的视图跳转，如跳转至系统内其他仪表板、外部链接。
 		</td>
 	</tr>
 	<tr>
@@ -292,7 +297,7 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 			数据源管理
 		</td>
 		<td>
-			支持多种数据源，如：多sheet页 Excel 文件，MySQL / Oracle / SQL Server / PostgreSQL / Elasticsearch / ClickHouse / MariaDB / Doris 数据库
+			支持多种数据源，如：多sheet页 Excel 文件，MySQL / Oracle / SQL Server / PostgreSQL / Elasticsearch / ClickHouse / MongoDB / MariaDB / Doris 数据库
 		</td>
 	</tr>
 	<tr>
