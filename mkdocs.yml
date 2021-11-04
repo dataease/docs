@@ -71,7 +71,9 @@ nav:
         - 开发问题: faq/dev_faq.md
         - 安全问题: faq/security_faq.md
         - 企业版: faq/enterprise_faq.md
-    - 开发文档: dev_manual/dev_manual.md
+    - 开发文档: 
+        - 开发环境搭建: dev_manual/dev_manual.md
+        - 源码部署（前后端分离）: dev_manual/dev_deployment.md
     - 技术咨询: https://jinshuju.net/f/TK5TTd
     - 关于:
         - 更新说明: about/changelog.md
