@@ -297,7 +297,7 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 			数据源管理
 		</td>
 		<td>
-			支持多种数据源，如：多sheet页 Excel 文件，MySQL / Oracle / SQL Server / PostgreSQL / Elasticsearch / ClickHouse / MongoDB / MariaDB / Doris 数据库
+			支持多种数据源，如：多sheet页 Excel 文件，MySQL / Oracle / SQL Server / PostgreSQL / Elasticsearch / ClickHouse / MongoDB /AWS RedShift/ MariaDB / Doris 数据库
 		</td>
 	</tr>
 	<tr>
