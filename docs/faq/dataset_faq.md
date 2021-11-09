@@ -54,7 +54,7 @@ service dataease start
 docker exec -it mysql sh
 
 # 进入 MySQL 容器后，连接 doris-fe
-mysql -uroot -h doris-fe -P  9030 -p
+mysql -uroot -h doris-fe -P 9030
 ```
 
 >2. 初始化 doris

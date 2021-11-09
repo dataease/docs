@@ -157,7 +157,7 @@ DataEase 从 1.2 版本开始支持地图组件。在 DataEase 源码工程的�
 
 1. 下载 installer 工程
 ```shell
-git clone git@github.com:dataease/installer.git
+git clone https://github.com/dataease/installer.git
 ```
 
 2. 初始化目录
