@@ -210,14 +210,18 @@ dectl reload
 
 ### <span id="mysql-port">如何修改内置 MySQL 端口？</span>
 
->
-1. 修改运行目录下 /opt/dataease/docker-compose-mysql.yml 文件，将 MySQL 外部运行端口参数 ${DE_MYSQL_PORT} 改为新端口，如 3307:
+>1. 修改配置文件
+
+>1.4 版本之前的版本，修改运行目录下 /opt/dataease/docker-compose-mysql.yml 文件，将 MySQL 外部运行端口参数 ${DE_MYSQL_PORT} 改为新端口，如 3307:
 ```yml
     ports:
       - 3307:3306
 ```
->
-2. 重启 DataEase 服务： service dataease restart
+>1.4 版本及之后的版本，修改运行目录下 /opt/dataease/.env 文件，将 DE_MYSQL_PORT 改为新端口，如 3307:
+```properties
+DE_MYSQL_PORT=3307
+```
+>2. 重启 DataEase 服务： service dataease restart
 
 ### <span id="mysql-changename">如何修改内置 MySQL 容器名？</span>
 
