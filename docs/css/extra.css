@@ -111,3 +111,9 @@
 .md-top {
   margin-top: 2rem;
 }
+
+.x-pack-span {
+    background-color: #0a7be0;
+    padding: 2px 5px;
+    color: #ffffff;
+}

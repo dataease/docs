@@ -50,7 +50,7 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 			仪表板管理
 		</td>
 		<td>
-			支持仪表板的新建、重命名、删除、复制、移动等
+			支持仪表板的新建、重命名、删除、复制、移动、搜索等
 		</td>
 	</tr>
 	<tr>
@@ -326,10 +326,125 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="2">
-			消息中心
+		<td rowspan="22">
+			系统管理
 		</td>
+		<td rowspan="3">
+			用户管理
+		</td>
+		<td>
+			支持用户的新建、编辑、删除、修改密码、启用/禁用、搜索等
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持给用户分配组织 <span class="x-pack-span">X-Pack</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持给用户分配角色 <span class="x-pack-span">X-Pack</span>
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="1">
+			角色管理
+		</td>
+		<td>
+			支持角色的新建、编辑、删除、搜索等 <span class="x-pack-span">X-Pack</span>
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="1">
+			组织管理
+		</td>
+		<td>
+			支持组织的新建、编辑、删除、搜索、排序、移动等 <span class="x-pack-span">X-Pack</span>
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="3">
+			权限管理
+		</td>
+		<td>
+			支持从组织、角色、用户三个维度进行使用、管理、授权等形式的权限控制 <span class="x-pack-span">X-Pack</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持对数据源、数据集、视图、仪表板的维度进行数据权限控制 <span class="x-pack-span">X-Pack</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持菜单和操作层面的权限控制 <span class="x-pack-span">X-Pack</span>
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="1">
+			显示设置
+		</td>
+		<td>
+			支持头部系统Logo、登录页Logo、登录页图片、登录页标题、系统名称等显示设置 <span class="x-pack-span">X-Pack</span>
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="3">
+			主题设置
+		</td>
+		<td>
+			支持两种默认主题 <span class="x-pack-span">X-Pack</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持自定义主题的新建、编辑、删除等 <span class="x-pack-span">X-Pack</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持对主题进行基础配色、字体配色、边框配色、背景配色等多属性的设置 <span class="x-pack-span">X-Pack</span>
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="1">
+			LDAP设置
+		</td>
+		<td>
+			支持LDAP认证对接 <span class="x-pack-span">X-Pack</span>
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="1">
+			单点登录
+		</td>
+		<td>
+			支持单点登录系统对接 <span class="x-pack-span">X-Pack</span>
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="1">
+			集成与扩展
+		</td>
+		<td>
+			提供完善的API接口及文档 <span class="x-pack-span">X-Pack</span>
+		</td>
+	</tr>
+	<tr>
 		<td rowspan="2">
+			模板管理
+		</td>
+		<td>
+			支持系统模板和用户模板
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持模板的分类、导入、重命名、删除、搜索等
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="4">
 			消息管理
 		</td>
 		<td>
@@ -342,9 +457,16 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="1">
-			定时任务
+		<td>
+			支持消息状态标记
 		</td>
+	</tr>
+	<tr>
+		<td>
+			支持已读消息的删除
+		</td>
+	</tr>
+	<tr>
 		<td rowspan="1">
 			定时任务
 		</td>
@@ -352,7 +474,6 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 			支持对平台定时任务进行全生命周期管理
 		</td>
 	</tr>
-
 </table>
 
 
