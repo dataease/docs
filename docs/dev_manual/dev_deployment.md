@@ -99,7 +99,7 @@ skip-name-resolve
 登录要连接的 MySQL 服务器，创建 DataEase 运行时使用的数据库，此处示例数据库名为 dataease-wei
 
 ```mysql
-CREATE DATABASE `dataease-wei` /*!40100 DEFAULT CHARACTER SET utf8mb4 */
+CREATE DATABASE `dataease-wei` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 ```
 
 ### 创建 DataEase 配置文件及日志相关
@@ -250,7 +250,7 @@ mvn clean package
 nohup java -jar backend-1.4.0.jar &
 ```
 
-### 其他
+### 其他注意事项
 
 内置示例数据以 flyway 的形式在 DataEase 启动时自动插入到了 MySQL 数据库中，在源码运行的情况下，需要登录到 DataEase 控制台，进入到【数据源】页面，选择 "demo" 数据源，将 "demo" 数据源的相关连接信息修改正确，保存后即可正常使用内置示例数据。
 

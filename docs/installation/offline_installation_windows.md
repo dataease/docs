@@ -115,15 +115,15 @@ docker version
 在 Ubuntu 中，以 root 用户执行如下命令
 
 ```sh
-# 假设安装包存放路径为 c:\dataease-v1.2.3-offline.tar.gz
+# 假设安装包存放路径为 c:\dataease-v1.5.0-offline.tar.gz
 cd /mnt/c
 # 解压安装包
-tar zxvf dataease-release-v1.2.3-offline.tar.gz
+tar zxvf dataease-v1.5.0-offline.tar.gz
 ```
 
 ## 设置安装参数（可选）
 
-DataEase 支持以配置文件的形式来设置安装参数，如安装目录、服务运行端口、数据库配置参数等，具体参数请参见安装包中的 install.conf 文件：
+DataEase v1.5.0 版本支持以配置文件的形式来设置安装参数，如安装目录、服务运行端口、数据库配置参数等，具体参数请参见安装包中的 install.conf 文件：
 ```properties
 # 基础配置
 ## 安装目录
@@ -145,13 +145,40 @@ DE_MYSQL_USER=root
 ## 数据库密码
 DE_MYSQL_PASSWORD=Password123@mysql
 
+# Apache Doris 配置
+## 是否使用外部 Apache Doris
+DE_EXTERNAL_DORIS=false
+## Doris 地址
+DE_DORIS_HOST=doris-fe
+## Doris 查询连接端口
+DE_DORIS_PORT=9030
+## Doris http端口
+DE_DORIS_HTTPPORT=8030
+## Doris 数据库名称
+DE_DORIS_DB=dataease
+## Doris 用户名
+DE_DORIS_USER=root
+## Doris 密码
+DE_DORIS_PASSWORD=Password123@doris
+
+# Kettle 配置
+## 是否使用外部 Kettle - (目前还不支持外部Kettle，除非不需运行Kettle，否则请不要修改此参数)
+DE_EXTERNAL_KETTLE=false
+## Kettle 服务器地址
+DE_CARTE_HOST=kettle
+## Kettle 访问端口
+DE_CARTE_PORT=18080
+## Kettle 用户名
+DE_CARTE_USER=cluster
+## Kettle 密码
+DE_CARTE_PASSWORD=cluster
 ```
 
 ## 执行安装脚本
 
 ```sh
 # 进入安装包目录
-cd dataease-release-v1.2.3-offline
+cd dataease-v1.5.0-offline
 # 运行安装脚本
 /bin/bash install.sh
 ```
@@ -189,9 +216,16 @@ cd dataease-release-v1.2.3-offline
 	default-character-set=utf8
     ```
 
+    特别注意以下几个参数的设置：
+	```
+	character_set_server=utf8
+	lower_case_table_names=1
+	group_concat_max_len=1024000
+	```
+
     请参考文档中的建库语句创建 DataEase 使用的数据库，DataEase 服务启动时会自动在配置的库中创建所需的表结构及初始化数据。
     ```mysql
-    CREATE DATABASE `dataease` /*!40100 DEFAULT CHARACTER SET utf8mb4 */
+    CREATE DATABASE `dataease` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
     ```
 
 安装脚本默认使用 /opt/dataease 使用的数据库，DataEase 的配置文件、数据及日志等均存放在该安装目录
@@ -220,3 +254,10 @@ cd dataease-release-v1.2.3-offline
 ```
 
 ![安装DataEase](../img/installation/windows-install.png)
+
+
+## 其他注意事项
+
+内置示例数据以 flyway 的形式在 DataEase 启动时自动插入到了 MySQL 数据库中，如果使用了外部 MySQL 或者修改了内置 MySQL 的容器名称的话，需要登录到 DataEase 控制台，进入到【数据源】页面，选择 "demo" 数据源，将 "demo" 数据源的相关连接信息修改正确，保存后即可正常使用内置示例数据。
+
+![modify-demo-dataset](../img/dev_manual/modify-demo-dataset.png)

@@ -7,3 +7,6 @@ dectl upgrade
 # 查看 DataEase 状态
 dectl status
 ```
+
+!!! info "注意"
+	升级前做好数据库的备份工作是一个良好的习惯。

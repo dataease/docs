@@ -52,7 +52,7 @@ skip-name-resolve
 
 请参考文档中的建库语句创建 DataEase 使用的数据库，DataEase 后端服务启动时会自动在配置的库中创建所需的表结构及初始化数据。
 ```mysql
-CREATE DATABASE `dataease` /*!40100 DEFAULT CHARACTER SET utf8mb4 */
+CREATE DATABASE `dataease` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 ```
 
 #### DataEase 配置文件
@@ -270,3 +270,9 @@ fe.conf、be.conf、.kettle 一般情况下不需要修改，其他配置文件�
 cd /opt/dataease
 docker-compose -f docker-compose-kettle-doris.yml up -d
 ```
+
+### 其他注意事项
+
+内置示例数据以 flyway 的形式在 DataEase 启动时自动插入到了 MySQL 数据库中，在源码运行的情况下，需要登录到 DataEase 控制台，进入到【数据源】页面，选择 "demo" 数据源，将 "demo" 数据源的相关连接信息修改正确，保存后即可正常使用内置示例数据。
+
+![modify-demo-dataset](../img/dev_manual/modify-demo-dataset.png)
