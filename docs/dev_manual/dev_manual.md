@@ -172,7 +172,11 @@ mkdir -p /opt/dataease/logs
 3. 准备配置文件
 ```shell
 cd installer/dataease/templates && cp -rp fe.conf be.conf dataease.properties .kettle /opt/dataease/conf && cd -
+
+# v1.4.0 及以前版本执行以下命令
 cd installer/dataease && cp docker-compose-kettle-doris.yml /opt/dataease/ && cd -
+
+# v1.5.0 及以后版本可以手动把 installer/dataease 目录下的 docker-compose-kettle.yml docker-compose-doris.yml 内容合并起来（去掉重复的 version 和 services 定义），命名为 docker-compose-kettle-doris.yml，放置到 /opt/dataease 目录下
 ```
 
 4. 按实际情况修改配置文件
@@ -211,7 +215,7 @@ fe.conf、be.conf、.kettle 一般情况下不需要修改，其他配置文件�
     services:
 
       doris-fe:
-        image: registry.cn-qingdao.aliyuncs.com/dataease/doris-init:0.14.0-611
+        image: registry.cn-qingdao.aliyuncs.com/dataease/doris:0.15
         container_name: doris-fe
         ports:
           - 8030:8030
@@ -228,7 +232,7 @@ fe.conf、be.conf、.kettle 一般情况下不需要修改，其他配置文件�
         restart: always
 
       doris-be:
-        image: registry.cn-qingdao.aliyuncs.com/dataease/doris-init:0.14.0-611
+        image: registry.cn-qingdao.aliyuncs.com/dataease/doris:0.15
         container_name: doris-be
         environment:
           - DORIS_ROLE=be
@@ -242,7 +246,7 @@ fe.conf、be.conf、.kettle 一般情况下不需要修改，其他配置文件�
         restart: always
 
       kettle:
-        image: registry.cn-qingdao.aliyuncs.com/dataease/kettle:8.3-v1.1
+        image: registry.cn-qingdao.aliyuncs.com/dataease/kettle:8.3-v1.2
         container_name: kettle
         ports:
           - 18080:18080
