@@ -82,9 +82,23 @@ service dataease restart
 遇到这种情况的话，可以多尝试执行几次安装脚本，或者也可以到 https://github.com/dataease/dataease/releases 上下载 DataEase 的离线安装包安装。
 
 
-## 如何修改 DataEase 运行的 docker 网段？
+## <span id="modify-address-space">如何修改 DataEase 运行的 docker 网段？</span>
 
->DataEase 暂时还不支持修改 docker 运行网段。
+从 v1.4.0 版本开始，DataEase 支持 docker 运行网段的修改。
+
+1. 停止 DataEase 服务： service dataease stop
+
+2. 修改运行目录 /opt/dataease 目录下的 docker-compose.yml ，将默认的 172.19.0.0/16 和 172.19.0.1 改为其他网段，如 172.33.0.0/16 和 172.33.0.1
+
+3. 修改 /opt/dataease 目录下的 docker-compose-doris.yml，把里面 172.19.0.198 和 172.19.0.199 改为第一步设置的网段的ip，如 172.33.0.198 和 172.33.0.199
+
+4. 重启 DataEase 服务：service dataease restart
+
+
+## 安装 DataEase 时提示 "Pool overlaps with other one on this address space"
+>![网段冲突](../img/faq/address-space.png)
+
+>可以参考[如何修改 DataEase 运行的 docker 网段？](#modify-address-space) 
 
 
 ## 无法通过一键安装脚本在线安装 docker 和 docker-compose
