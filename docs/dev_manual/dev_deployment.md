@@ -14,13 +14,13 @@ yum install -y git java-1.8.0-openjdk*
 
 ```shell
 # 下载并安装 Maven
-wget https://dlcdn.apache.org/maven/maven-3/3.8.3/binaries/apache-maven-3.8.3-bin.tar.gz
+wget https://dlcdn.apache.org/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.tar.gz
 
-tar zxvf apache-maven-3.8.3-bin.tar.gz
+tar zxvf apache-maven-3.8.4-bin.tar.gz
 
-mv apache-maven-3.8.3 /opt
+mv apache-maven-3.8.4 /opt
 
-echo "export M2_HOME=/opt/apache-maven-3.8.3" >> ~/.bashrc
+echo "export M2_HOME=/opt/apache-maven-3.8.4" >> ~/.bashrc
 
 echo "export PATH=\$PATH:\$M2_HOME/bin" >> ~/.bashrc
 
@@ -157,6 +157,15 @@ cd dataease
 cp -r mapFiles/full /opt/dataease/data/feature/full
 ```
 
+### 驱动库准备
+
+DataEase 从 1.4 版本开始将数据源连接用的驱动库独立在 drivers 目录中。 在 DataEase 源码工程的目录下有一个驱动文件目录 drivers，需要将该目录放置到 /opt/dataease/drivers 下
+
+```shell
+mkdir -p /opt/dataease/drivers
+cp -rp drivers/* /opt/dataease/drivers/
+```
+
 ### 编译前端
 
 ```shell
@@ -211,16 +220,24 @@ cp -r dist /opt/dataease/frontend/dist
 
 ##### 配置 nginx
 
-此处假设 DataEase 需要运行在 8000 端口，且 DataEase 前端编译后生成的 dist 目录存放到路径为 /opt/dataease/frontend/dist，相应的 nginx 配置如下：
+此处假设 DataEase 前端运行在 8000 端口，后端运行在 8081，且 DataEase 前端编译后生成的 dist 目录存放到路径为 /opt/dataease/frontend/dist，相应的 nginx 配置如下：
 ```conf
 server {
-	listen		8000;
-	server_name	localhost;
+    listen      8000;
+    server_name localhost;
+    location / {
+        root    /opt/dataease/frontend/dist;
+        index   index.html index.htm;
+    }
 
-	location / {
-	    root	/opt/dataease/frontend/dist;
-	    index	index.html index.htm;
-	}
+    # 此处为公共链接请求转发，8081 为后端运行端口
+    location /link/ {
+        proxy_pass http://$host:8081;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+
 }
 ```
 
