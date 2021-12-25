@@ -37,6 +37,7 @@ theme:
         - search.highlight
         - search.share
         - header.autohide
+        - content.tabs.link
     custom_dir: "theme"
 nav:
     - 产品介绍: index.md
@@ -112,6 +113,8 @@ markdown_extensions:
     - pymdownx.superfences
     - pymdownx.progressbar
     - lightgallery
+    - pymdownx.tabbed:
+          alternate_style: true
 
 extra_css:
     - css/extra.css
