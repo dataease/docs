@@ -110,11 +110,9 @@ markdown_extensions:
     - pymdownx.tasklist
     - pymdownx.tilde
     - pymdownx.betterem
-    - pymdownx.superfences
     - pymdownx.progressbar
     - lightgallery
-    - pymdownx.tabbed:
-          alternate_style: true
+    - pymdownx.tabbed
 
 extra_css:
     - css/extra.css
