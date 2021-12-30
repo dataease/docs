@@ -10,7 +10,7 @@
 
 请自行下载 DataEase 最新版本的在线安装包，并复制到目标机器的 /tmp 目录下
 
-!!! tip ""
+!!! info ""
     安装包下载链接: https://github.com/dataease/dataease/releases
 
 ## 解压安装包
@@ -25,7 +25,7 @@ tar zxvf dataease-v1.5.0-offline.tar.gz
 
 ## 设置安装参数（可选）
 
-!!! info "注意"
+!!! Warning "注意"
 	强烈建议不要将安装包的路径作为 DataEase 的安装目录，对日常的维护以及后续版本的升级会带来一些不必要的麻烦。
 
 从 v1.5.0 版本开始，DataEase 支持以配置文件的形式来设置安装参数，如安装目录、服务运行端口、数据库配置参数等，具体参数请参见安装包中的 install.conf 文件：
@@ -160,6 +160,7 @@ cd dataease-v1.5.0-offline
 
 ## 其他注意事项
 
-内置示例数据以 flyway 的形式在 DataEase 启动时自动插入到了 MySQL 数据库中，如果使用了外部 MySQL 或者修改了内置 MySQL 的容器名称的话，需要登录到 DataEase 控制台，进入到【数据源】页面，选择 "demo" 数据源，将 "demo" 数据源的相关连接信息修改正确，保存后即可正常使用内置示例数据。
+!!! Warning "注意"
+    内置示例数据以 flyway 的形式在 DataEase 启动时自动插入到了 MySQL 数据库中，如果使用了外部 MySQL 或者修改了内置 MySQL 的容器名称的话，需要登录到 DataEase 控制台，进入到【数据源】页面，选择 "demo" 数据源，将 "demo" 数据源的相关连接信息修改正确，保存后即可正常使用内置示例数据。
 
 ![modify-demo-dataset](../img/dev_manual/modify-demo-dataset.png)

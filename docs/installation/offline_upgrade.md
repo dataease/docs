@@ -10,5 +10,5 @@ cd dataease-release-v1.x.y-offline
 dectl status
 ```
 
-!!! info "注意"
+!!! Warning "注意"
 	升级前做好数据库的备份工作是一个良好的习惯。
