@@ -1,7 +1,7 @@
 site_name: 'DataEase 文档'
 site_url: 'https://dataease.io'
 site_description: 'Document'
-site_author: 'yayanpei'
+site_author: 'Dataease'
 google_analytics: ['UA-147297392-11', 'dataease.io']
 
 repo_name: 'DataEase'
