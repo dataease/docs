@@ -38,7 +38,7 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 		<td bgcolor="#3779d9" align="middle" style="font-weight:bold;color: white;width: 170px">
 			功能
 		</td>
-		<td bgcolor="#3779d9" align="middle" style="font-weight:bold;color: white;width: 750px">
+		<td bgcolor="#3779d9" align="middle" style="font-weight:bold;color: white;width: 750px"> 
 			功能描述
 		</td>
 	</tr>
