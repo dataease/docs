@@ -43,7 +43,7 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="20">
+		<td rowspan="22">
 			仪表板
 		</td>
 		<td rowspan="3">
@@ -64,7 +64,7 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="15">
+		<td rowspan="17">
 			仪表板制作
 		</td>
 		<td>
@@ -74,6 +74,16 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 	<tr>
 		<td>
 			支持仪表板中添加多种组件，如：视图/时间组件/文本组件/数字组件/样式组件/图片/视频/tab组件/链接等
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持动态设置日期组件的默认值等
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持通过一个过滤组件，过滤多个视图（视图数据来自多个数据集）
 		</td>
 	</tr>
 	<tr>
@@ -155,7 +165,7 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="14">
+		<td rowspan="15">
 			视图
 		</td>
 		<td rowspan="2">
@@ -171,7 +181,7 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="12">
+		<td rowspan="13">
 			视图制作
 		</td>
 		<td>
@@ -220,6 +230,11 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 	</tr>
 	<tr>
 		<td>
+			支持指标的高级计算，如同比、环比等
+		</td>
+	</tr>
+	<tr>
+		<td>
 			支持对图表类型的图形属性进行设置
 		</td>
 	</tr>
@@ -241,7 +256,7 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 			数据集管理
 		</td>
 		<td>
-			支持添加多种类型的数据集，数据库数据集/SQL 数据集/Excel 数据集/自定义数据集
+			支持添加多种类型的数据集，数据库数据集/SQL 数据集/Excel 数据集/自定义数据集/关联数据集
 		</td>
 	</tr>
 	<tr>
@@ -297,7 +312,7 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 			数据源管理
 		</td>
 		<td>
-			支持多种数据源，如：多sheet页 Excel 文件，MySQL / Oracle / SQL Server / PostgreSQL / Elasticsearch / ClickHouse / MongoDB /AWS RedShift/ MariaDB / Doris / Hive 数据库
+			支持多种数据源，如：多sheet页 Excel 文件，MySQL / Oracle / SQL Server / PostgreSQL / Elasticsearch / ClickHouse / MongoDB /AWS RedShift/ MariaDB / Doris / Hive 数据库 / DB2
 		</td>
 	</tr>
 	<tr>
@@ -326,7 +341,7 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="22">
+		<td rowspan="24">
 			系统管理
 		</td>
 		<td rowspan="3">
@@ -363,7 +378,7 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="3">
+		<td rowspan="4">
 			权限管理
 		</td>
 		<td>
@@ -373,6 +388,11 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 	<tr>
 		<td>
 			支持对数据源、数据集、视图、仪表板的维度进行数据权限控制 <span class="x-pack-span">X-Pack</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持从组织、角色、用户三个维度，对数据集进行【行权限】控制 <span class="x-pack-span">X-Pack</span>
 		</td>
 	</tr>
 	<tr>
@@ -468,10 +488,18 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 	</tr>
 	<tr>
 		<td rowspan="1">
-			定时任务
+			任务管理->数据同步
 		</td>
 		<td>
 			支持对平台定时任务进行全生命周期管理
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="1">
+			任务管理->定时报告
+		</td>
+		<td>
+			支持定时发送仪表板报告
 		</td>
 	</tr>
 </table>
