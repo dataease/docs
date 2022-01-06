@@ -341,7 +341,7 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="24">
+		<td rowspan="25">
 			系统管理
 		</td>
 		<td rowspan="3">
@@ -378,7 +378,7 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="4">
+		<td rowspan="5">
 			权限管理
 		</td>
 		<td>
@@ -398,6 +398,11 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 	<tr>
 		<td>
 			支持菜单和操作层面的权限控制 <span class="x-pack-span">X-Pack</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持数据集的行级权限控制 <span class="x-pack-span">X-Pack</span> <span class="new-span">New</span>
 		</td>
 	</tr>
 	<tr>
@@ -487,19 +492,16 @@ DataEase 是开源的数据可视化分析工具，帮助用户快速分析数�
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="1">
-			任务管理->数据同步
+		<td rowspan="2">
+			任务管理
 		</td>
 		<td>
-			支持对平台定时任务进行全生命周期管理
+			支持数据同步，可以对平台定时任务进行全生命周期管理
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="1">
-			任务管理->定时报告
-		</td>
 		<td>
-			支持定时发送仪表板报告
+			支持定时报告，可以定时以邮件形式发送仪表板报告  <span class="x-pack-span">X-Pack</span> <span class="new-span">New</span>
 		</td>
 	</tr>
 </table>
