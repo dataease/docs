@@ -1,6 +1,6 @@
 ## 整体架构
 
-![整体架构](./img/system-arch.png)
+![整体架构](./img/system-arch.png){ width="1235" }
 
 ## 组件说明
 

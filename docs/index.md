@@ -3,7 +3,7 @@
 !!! Abstract "欢迎使用 DataEase"
     DataEase 是开源的数据可视化分析工具，帮助用户快速分析数据并洞察业务趋势，从而实现业务的改进与优化。DataEase 支持丰富的数据源连接，能够通过拖拉拽方式快速制作图表，并可以方便的与他人分享。
 
-![功能架构图](./img/index/DataEase功能架构图.png)
+![功能架构图](./img/index/DataEase功能架构图.png){ width="1235" }
 
 
 ## 界面展示
