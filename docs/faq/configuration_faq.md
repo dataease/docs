@@ -82,6 +82,7 @@
 
 !!! Abstract ""
     **从 v1.4.0 版本开始，DataEase 支持 docker 运行网段的修改。**
+
     1. 停止 DataEase 服务： service dataease stop
     2. 修改运行目录 /opt/dataease 目录下的 docker-compose.yml ，将默认的 172.19.0.0/16 和 172.19.0.1 改为其他网段，如 172.33.0.0/16 和 172.33.0.1
     3. 修改 /opt/dataease 目录下的 docker-compose-doris.yml，把里面 172.19.0.198 和 172.19.0.199 改为第一步设置的网段的ip，如 172.33.0.198 和 172.33.0.199
@@ -355,6 +356,7 @@
 
 !!! Abstract ""
     **当出现类似下图的错误时，可以通过任选以下方式之一处理：**  
+
     1. 修改 my.cnf 文件的 group_concat_max_len 参数，如：group_concat_max_len=1024000，然后重启 MySQL 服务  
     2. 进入 MySQL，执行 SET GLOBAL group_concat_max_len=1024000; 临时修改该参数的值
 ![mysql-concat](../img/faq/mysql-concat.png)
