@@ -62,9 +62,11 @@ nav:
             - 定时任务: user_manual/system_management/task.md
         - 命令行工具: user_manual/cli.md
     - 使用教程:
-        - 仪表板制作:
-            - 制作【销售仪表板】: manual_demo/sales_dashboard.md
-            - 制作【2021年全国GDP数据】: manual_demo/china_gdp_2021.md
+        - 仪表板制作示例:
+            - 制作【销售仪表板】: manual_demo/dashboard_flow/sales_dashboard.md
+            - 制作【2021年全国GDP数据】: manual_demo/dashboard_flow/china_gdp_2021.md
+        - 使用进阶:
+            - 常见使用 Tips: manual_demo/tips.md
     - 常见问题:
         - 安装配置: faq/configuration_faq.md
         - 备份还原: faq/backup_faq.md

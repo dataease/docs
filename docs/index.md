@@ -31,6 +31,8 @@
 
 ## 功能列表
 
+!!! Abstract "说明"
+    功能后带有 "X-Pack" 标识含义为此功能为企业版本所有，其它核心功能均开源开放。
 <table>
 	<tr>
 		<td bgcolor="#3779d9" align="middle" style="font-weight:bold;color: white;width: 150px">
