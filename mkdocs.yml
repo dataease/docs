@@ -67,6 +67,7 @@ nav:
             - 制作【2021年全国GDP数据】: manual_demo/dashboard_flow/china_gdp_2021.md
         - 使用进阶:
             - 常见使用技巧: manual_demo/tips.md
+            - 计算字段使用: manual_demo/calculate_fields.md
     - 常见问题:
         - 安装配置: faq/configuration_faq.md
         - 备份还原: faq/backup_faq.md
