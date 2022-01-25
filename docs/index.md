@@ -46,6 +46,17 @@
 		</td>
 	</tr>
 	<tr>
+		<td rowspan="1">
+			首页
+		</td>
+		<td rowspan="1">
+			欢迎导航页
+		</td>
+		<td>
+			DataEase 常用文档、视频教程、更新日志等内容导航 <span class="new-span">New</span>
+		</td>
+	</tr>
+	<tr>
 		<td rowspan="22">
 			仪表板
 		</td>
@@ -344,7 +355,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="25">
+		<td rowspan="26">
 			系统管理
 		</td>
 		<td rowspan="3">
@@ -381,7 +392,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="5">
+		<td rowspan="6">
 			权限管理
 		</td>
 		<td>
@@ -405,7 +416,12 @@
 	</tr>
 	<tr>
 		<td>
-			支持数据集的行级权限控制 <span class="x-pack-span">X-Pack</span> <span class="new-span">New</span>
+			支持数据集的行级权限控制 <span class="x-pack-span">X-Pack</span> 
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持数据集的列级权限控制 <span class="x-pack-span">X-Pack</span> <span class="new-span">New</span>
 		</td>
 	</tr>
 	<tr>
@@ -504,7 +520,7 @@
 	</tr>
 	<tr>
 		<td>
-			支持定时报告，可以定时以邮件形式发送仪表板报告  <span class="x-pack-span">X-Pack</span> <span class="new-span">New</span>
+			支持定时报告，可以定时以邮件形式发送仪表板报告  <span class="x-pack-span">X-Pack</span>
 		</td>
 	</tr>
 </table>
