@@ -51,6 +51,7 @@ nav:
         - 命令行工具: user_manual/cli.md
     - 用户手册:
         - 通用功能: user_manual/general.md
+        - 首页: user_manual/homepage.md
         - 数据源: user_manual/datasource_configuration.md
         - 数据集: user_manual/dataset_configuration.md
         - 视图: user_manual/view_generation.md
