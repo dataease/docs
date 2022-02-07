@@ -11,7 +11,7 @@
     - **[Kettle](https://github.com/pentaho/pentaho-kettle)**: 用于在本地连接模式下抽取和转换来自数据源的数据
     - **[Apache Doris](https://github.com/apache/incubator-doris/)**: 用于提供实时数据分析能力
 
-各个组件间的关系可参考下图
+各个组件间的关系可参考下图  
 ![组件说明](./img/components.png)
 
 ## 关键术语
