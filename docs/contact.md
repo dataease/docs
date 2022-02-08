@@ -1,10 +1,10 @@
 ## 微信公众号
 
-![wechat-official](../img/wechat-official.jpg)
+![wechat-official](img/wechat-official.jpg)
 
 ## 微信群
 
-![wechat-group](../img/wechat-group.png)
+![wechat-group](img/wechat-group.png)
 
 ## 项目地址
 
