@@ -48,7 +48,7 @@ nav:
         - 离线安装(Windows): installation/offline_installation_windows.md
         - 在线升级: installation/online_upgrade.md
         - 离线升级: installation/offline_upgrade.md
-        - 命令行工具: user_manual/cli.md
+        - 命令行工具: installation/cli.md
     - 用户手册:
         - 通用功能: user_manual/general.md
         - 首页: user_manual/homepage.md
@@ -82,9 +82,8 @@ nav:
         - 开发环境搭建: dev_manual/dev_manual.md
         - 源码部署（前后端分离）: dev_manual/dev_deployment.md
     - 技术咨询: https://jinshuju.net/f/e40eKK
-    - 关于:
-        - 更新说明: about/changelog.md
-        - 联系我们: about/contact.md
+    - 更新说明: about/changelog.md
+    - 联系我们: about/contact.md
 
 markdown_extensions:
     - admonition
