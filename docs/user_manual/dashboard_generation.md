@@ -174,50 +174,61 @@
 	如下图，点击展开功能菜单，开始【联动设置】。
 
 ![联动设置](../img/dashboard_generation/联动设置入口.png)
+
 !!! Abstract "联动设置"
 	如下图，当设置两个视图联动时，设置相对应的数据集的联动字段。设置完成后，点击【确定】，联动设置完成。
 
 ![设置联动字段](../img/dashboard_generation/联动设置_字段关联.png)
+
 !!! Abstract "联动展示"
 	第一步，点击【浙江省】，并选择【联动】。
 !!! Danger "请注意"
 	如果视图同时设置了联动和钻取，那么当点击时由用户选择执行联动，或者钻取；当只设置了联动时，默认执行联动；当只设置了钻取时，默认执行钻取。
 
 ![联动展示](../img/dashboard_generation/联动选择.png)
+
 !!! Abstract "联动展示"
 	第二步，联动结果展示，如下图，设置了联动的视图，只展示浙江省的数据。
 
 ![联动展示](../img/dashboard_generation/联动结果.png)
+
 !!! Abstract "联动展示"
 	第三步，可点击下图所示位置，清除局部联动和所有联动。
 
 ![地图联动](../img/dashboard_generation/联动清除.png)
+
 ### 2.7 跳转
 
 !!! Abstract "跳转设置入口"
 	如下图，点击展开功能菜单，开始【跳转设置】。
 
 ![跳转设置入口](../img/dashboard_generation/跳转设置入口.png)
+
 !!! Abstract "跳转设置"
 	第一种，仪表板间跳转，如下图所示，设置原视图与目标仪表板的视图的联动字段（<font color=#FF0000>请注意：当前用户至少拥有目标仪表板的查看权限</font>）。设置完成后，点击【确定】，跳转设置完成。
 
 ![跳转设置](../img/dashboard_generation/跳转设置_仪表板间.png)
+
 !!! Abstract "跳转设置"
 	第二种，外部链接跳转，如下图所示，输入链接 URL。设置完成后，点击【确定】，跳转设置完成。
 
 ![跳转设置](../img/dashboard_generation/跳转设置_外部链接.png)
+
 !!! Abstract "跳转展示"
 	点击下图所示位置，触发跳转。
 
 ![跳转展示](../img/dashboard_generation/跳转结果入口.png)
+
 !!! Abstract "跳转展示"
 	如果选择的是仪表板跳转，那么跳转至目标仪表板，并联动目标仪表板的视图，如果不需要，可点击右上角清除联动。
 
 ![跳转设置](../img/dashboard_generation/跳转结果_仪表板间.png)
+
 !!! Abstract "跳转展示"
 	第二种，如果选择的是外部链接跳转，那么跳转至第三方平台。
 
 ![跳转设置](../img/dashboard_generation/跳转结果_外部链接.png)
+
 ## 3 仪表板的使用
 ### 3.1 仪表板-查看
 
@@ -225,28 +236,33 @@
 	点击下图中所示位置，查看仪表板
 
 ![仪表盘_查看](../img/dashboard_generation/仪表板_查看.png)
+
 ### 3.2 仪表板-预览
 
 !!! Abstract ""
 	支持两种预览方式，第一种：新打开页面预览，第二种：全屏预览仪表盘
 
 ![仪表板_预览](../img/dashboard_generation/仪表板_预览.png)
+
 !!! Abstract "视图放大"
 	预览模式下，视图可放大，可查看明细并下载
 
 ![仪表板_预览](../img/dashboard_generation/仪表板_放大.png)
 
 ![仪表板_预览](../img/dashboard_generation/查看明细.png)
+
 ### 3.3 仪表板-分享
 
 !!! Abstract ""
 	点击下图中所示位置，点击【分享】。
 
 ![仪表板_分享](../img/dashboard_generation/仪表板_分享.png)
+
 !!! Abstract ""
 	分享仪表板给系统内的组织、角色、或者用户。
 
 ![仪表板_分享用户](../img/dashboard_generation/仪表板_分享用户.png)
+
 !!! Abstract ""
 	可在下图所示位置：  
 
@@ -260,6 +276,7 @@
 	点击下图中所示位置，收藏仪表板。
 
 ![仪表板_收藏](../img/dashboard_generation/仪表板_收藏.png)
+
 !!! Abstract ""
 	收藏后，可在下图所示位置查看收藏列表。
 
@@ -282,6 +299,7 @@
 	点击下图中所示位置，创建公共链接
 
 ![仪表板_创建公共链接](../img/dashboard_generation/仪表板_创建公共链接.png)
+
 !!! Abstract ""
 	打开下图中所示链接分享的按钮，链接自动生成，点击【复制链接】，可把链接分享给任何组织或个人。  
 
