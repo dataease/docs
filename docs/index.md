@@ -57,7 +57,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="22">
+		<td rowspan="35">
 			仪表板
 		</td>
 		<td rowspan="3">
@@ -102,7 +102,7 @@
 	</tr>
 	<tr>
 		<td>
-			支持组件样式设置，如图形属性、组件样式等
+			支持组件样式设置，如图形属性、组件背景、组件样式等
 		</td>
 	</tr>
 	<tr>
@@ -179,32 +179,16 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="15">
-			视图
-		</td>
-		<td rowspan="2">
-			视图管理
-		</td>
-		<td>
-			支持视图的添加、编辑、重命名、移动、删除等
-		</td>
-	</tr>
-	<tr>
-		<td>
-			支持视图分组的添加、重命名、删除、移动等
-		</td>
-	</tr>
-	<tr>
 		<td rowspan="13">
 			视图制作
 		</td>
 		<td>
-			支持通过简单的拖拉操作，制作视图
+			支持视图的创建及复用，支持通过简单的拖拉操作，制作视图。
 		</td>
 	</tr>
 	<tr>
 		<td>
-			支持多种图表类型，明细表/汇总表/指标卡/基础柱状图/堆叠柱状图/横向柱状图/横向堆叠柱状图/基础折线图/堆叠折线图/饼图/南丁格尔玫瑰图/漏斗图/雷达图/仪表盘/中国地图/散点图/气泡图/矩形树图/组合图/水波图/瀑布图/词云图等
+			支持多种图表类型，明细表/汇总表/透视图/指标卡/基础柱状图/堆叠柱状图/横向柱状图/横向堆叠柱状图/基础折线图/堆叠折线图/饼图/南丁格尔玫瑰图/漏斗图/雷达图/仪表盘/中国地图/气泡地图/散点图/气泡图/矩形树图/组合图/水波图/瀑布图/词云图等
 		</td>
 	</tr>
 	<tr>
@@ -326,7 +310,7 @@
 			数据源管理
 		</td>
 		<td>
-			支持多种数据源，如：多sheet页 Excel 文件，MySQL / Oracle / SQL Server / PostgreSQL / Elasticsearch / ClickHouse / MongoDB /AWS RedShift/ MariaDB / Doris / Hive 数据库 / DB2
+			支持多种数据源，如：多sheet页 Excel 文件，MySQL / Oracle / SQL Server / PostgreSQL / Elasticsearch / ClickHouse / MongoDB /AWS RedShift/ MariaDB / Doris / Hive 数据库 / DB2 / API 数据源
 		</td>
 	</tr>
 	<tr>
