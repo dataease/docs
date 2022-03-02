@@ -1,5 +1,5 @@
-!!! Warning "注意"
-	本文以 CentOS 8.3 为例，举例说明如何以源码的形式编译 DataEase 工程，并进行前后端分离部署。
+!!! Abstract ""
+	**本文以 CentOS 8.3 为例，举例说明如何以源码的形式编译 DataEase 工程，并进行前后端分离部署。**  
 	本文所有操作均在阿里云（新加坡区）4C8G 环境中执行。
 
 ## 工具准备
@@ -67,7 +67,7 @@
 ### 2.MySQL 配置
 
 !!! Abstract ""
-	以下是推荐的 MySQL 配置
+	以下是推荐的 MySQL 配置：
 	```inf
 	[mysqld]
 	datadir=/var/lib/mysql
@@ -90,18 +90,17 @@
 	skip-name-resolve
 	```
 
-!!! Warning "注意"
-	特别注意以下几个参数的设置：
+	**特别注意以下几个参数的设置：**
 	```
-		character_set_server=utf8
-		lower_case_table_names=1
-		group_concat_max_len=1024000
+	character_set_server=utf8
+	lower_case_table_names=1
+	group_concat_max_len=1024000
 	```
 
 ### 3.创建 MySQL 数据库
 
 !!! Abstract ""
-	登录要连接的 MySQL 服务器，创建 DataEase 运行时使用的数据库，此处示例数据库名为 dataease-wei
+	登录要连接的 MySQL 服务器，创建 DataEase 运行时使用的数据库，此处示例数据库名为 dataease-wei。
 
 	```mysql
 	CREATE DATABASE `dataease-wei` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
@@ -143,7 +142,7 @@
 	```
 
 
-## 源码编译及运行
+## 源码准备
 
 ### 1.下载代码
 
@@ -172,7 +171,9 @@
 	cp -rp drivers/* /opt/dataease/drivers/
 	```
 
-### 4.编译前端
+## 编译运行（v1.7.0 及以前）
+
+### 1.编译前端
 
 !!! Abstract ""
 	```shell
@@ -182,10 +183,11 @@
 
 ![npm-install](../img/dev_manual/npm-install.png){width="800px"}
 
-!!! Warning "注意"
-	国内使用 npm 时经常会遇到网络问题，可以考虑将 npm 源替换为国内的源。可以参考文档 https://segmentfault.com/a/1190000023314583
+!!! Abstract ""
+	**注意：国内使用 npm 时经常会遇到网络问题，可以考虑将 npm 源替换为国内的源。**  
+	可以参考文档 https://segmentfault.com/a/1190000023314583。
 
-### 5.运行前端
+### 2.运行前端
 
 !!! Abstract ""
 	前端运行有两种方式：
@@ -244,7 +246,7 @@
 
 	nginx 默认以 nobody 用户身份运行，可能会遇到 403 的错误。可以授予 dist 目录访问权限，或者将 nginx 设置为 root 用户运行。
 
-### 6.编译后端
+### 3.编译后端
 
 !!! Abstract ""
 	进入后端代码目录 backend，修改 pom.xml，去掉默认的打包前端代码的部分
@@ -259,7 +261,7 @@
 !!! Warning "注意"
 	在编译后端代码时如遇到依赖无法下载的问题，可以在百度网盘上下载一下最小化的 dataease 依赖包。链接: https://pan.baidu.com/s/1fWv_ze-QKUew3ND4NAdt8Q 提取码: rpzi
 
-### 7.运行后端
+### 4.运行后端
 
 !!! Abstract ""
 	后端代码编译完成后，会在 backend/target 目录下生成一个 backend-1.4.0.jar，可以通过命令运行后端：
@@ -267,7 +269,94 @@
 	nohup java -jar backend-1.4.0.jar &
 	```
 
-### 8.其他注意事项
+## 编译运行（v1.8.0 及以后）
+
+### 1.源码编译打包
+
+!!! Abstract ""
+	**打包 backend**  
+	在backend目录下，执行下面命令。
+
+	```shell
+	mvn clean package -Pstage
+	```
+
+	**注意:**  
+
+    1. 在 backend 目录下，不是 dataease 目录；
+	2. 命令一定要加 -Pstage；
+	3. 运行文件为 target/backend-1.8.0.jar。
+
+	**打包 frontend**  
+	在 frontend 目录下，执行下面命令，注意命令后缀。
+
+	```shell
+	npm run build:stage
+	```
+
+	**打包 mobile**  
+	在 mobile 目录下，执行下面命令，注意命令后缀。
+	
+	```shell
+	npm run build:stage
+	```
+
+### 2.nginx 配置
+
+!!! Abstract ""
+	假设各个文件分别按如下路径放置：  
+
+	- frontend 编译后文件存放目录
+  	/opt/dataease/frontend/dist
+	- mobile 编译后文件存放目录
+  	/opt/mobile/frontend/dist
+	- nginx 配置文件路径
+  	/usr/local/etc/nginx/nginx.conf
+
+	在dataease工程目录下执行：
+	```shell
+	mkdir -p /opt/dataease/frontend/dist
+	cp -r frontend/dist/* /opt/dataease/frontend/dist
+	
+	mkdir -p /opt/dataease/mobile/dist
+	cp -r mobile/dist/* /opt/dataease/mobile/dist
+	mv /opt/dataease/mobile/dist/index.html /opt/dataease/mobile/dist/app.html
+	```
+
+	**修改 nginx.conf 配置**
+	```
+	server {
+    	listen      8000;
+    	server_name localhost;
+
+    	location / {
+        	root    /opt/dataease/frontend/dist/;
+        	index   index.html;
+    	}
+
+    	location /app.html {
+        	root    /opt/dataease/mobile/dist/;
+    	}
+
+    	location /de-app/ {
+        	alias   /opt/dataease/mobile/dist/;
+    	}
+
+    	location /de-api/ {
+        	proxy_pass http://localhost:8081/de-api/;
+        	proxy_set_header X-Real-IP $remote_addr;
+        	proxy_set_header Host $host:8000;
+        	server_name_in_redirect on;
+    	}
+	}
+	```
+
+### 3.运行测试
+
+!!! Abstract ""
+	访问 http://localhost:8000。
+
+## 其他注意事项
 
 !!! Abstract ""
 	内置示例数据以 flyway 的形式在 DataEase 启动时自动插入到了 MySQL 数据库中，在源码运行的情况下，需要登录到 DataEase 控制台，进入到【数据源】页面，选择 "demo" 数据源，将 "demo" 数据源的相关连接信息修改正确，保存后即可正常使用内置示例数据。
