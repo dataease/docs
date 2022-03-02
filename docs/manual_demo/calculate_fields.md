@@ -140,6 +140,7 @@
 
 !!! Abstract ""
     MOD(x,y)：返回 x 被 y 除后的余数。其中 x，y 可需根据需要选择维度或指标中的一个字段或指定数字。注意：x，y 是数字类型。
+![image.png](../img/calculate_fields/MOD(x,y).png){width="950px"}
 
 ### 10.取整
 
@@ -163,7 +164,7 @@
 !!! Abstract ""
     PI()：返回圆周率 π，默认显示 6 位小数。
 
-![image.png](../img/calculate_fields/MOD(x,y).png){width="950px"}
+![image.png](../img/calculate_fields/PI().png){width="950px"}
 
 ### 12.三角函数
 
@@ -195,7 +196,7 @@
 !!! Abstract ""
     下面介绍 MySQL 数据库部分常用函数。
 
-### 1.符反转函数
+### 1.字符串函数
 
 !!! Abstract ""
     REVERSE(s)：将字符串 s 反转，其中 str 需根据需要选择维度或指标中的一个字段。注意：str 是字符串类型。
@@ -225,11 +226,6 @@
     SPACE(n)：返回一个由 n 个空格组成的字符串。
 
 ![image.png](../img/calculate_fields/拼接空格字符.png){width="950px"}
-
-!!! Abstract ""
-    SYSDATE()：返回当前日期和时间值，格式为 "YYYY_MM-DD HH:MM:SS" 或 "YYYYMMDDHHMMSS"，具体格式根据函数用在字符串或数字语境中而定。具体步骤按照下图所示。
-
-![image.png](../img/calculate_fields/SYSDATE().png){width="950px"}
 
 ### 3.返回当前时间
 
