@@ -70,6 +70,7 @@ nav:
             - 常见使用技巧【仪表板篇】: manual_demo/tips_dashboard.md
             - 常见使用技巧【视图篇】: manual_demo/tips_view.md
             - 计算字段使用篇: manual_demo/calculate_fields.md
+    - 教学视频: instructional_video.md
     - 常见问题:
         - 安装配置: faq/configuration_faq.md
         - 备份还原: faq/backup_faq.md
