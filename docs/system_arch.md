@@ -1,8 +1,8 @@
-## 整体架构
+## 1 整体架构
 
-![整体架构](./img/system-arch.png){ width="1235" }
+![整体架构](./img/system-arch.png){ width="1235px" }
 
-## 组件说明
+## 2 组件说明
 
 !!! Abstract ""
     - **[Frontend](https://github.com/dataease/dataease/tree/main/frontend)**: DataEase 的前端工程, 基于 Vue.js 进行开发
@@ -12,18 +12,20 @@
     - **[Apache Doris](https://github.com/apache/incubator-doris/)**: 用于提供实时数据分析能力
 
 各个组件间的关系可参考下图  
-![组件说明](./img/components.png)
+![组件说明](./img/components.png){ width="600px" }
 
-## 关键术语
+## 3 关键术语
 
-!!! Abstract "DataEase 中有一些基本概念，下面是这些基本概念的说明。"
+!!! Abstract ""
+    **DataEase 中有一些基本概念，下面是这些基本概念的说明：**
+
     - **数据源**: 用来管理各类数据源连接信息，是后续数据分析操作中数据的来源
-    - **数据集**: 数据的集合，可以是数据表、Excel表等具体的数据集合，是可视化图形展示的数据来源
+    - **数据集**: 数据的集合，可以是数据表、Excel 表等具体的数据集合，是可视化图形展示的数据来源
     - **视图**: 可视化展示的最小单元，是组成仪表板的基本元素，可以是折线图、柱状图、饼状图等可视化图形
     - **仪表板**: 通过可视化效果展示具体数据常见的图形面板
     - **模板**: 可用来快速构建仪表板的数据及样式模板
     
-## 技术栈
+## 4 技术栈
 
 !!! Abstract ""
     - 后端：[Spring Boot](https://spring.io/projects/spring-boot)

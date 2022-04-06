@@ -1,4 +1,4 @@
-## DataEase Service
+## 1 DataEase Service
 
 !!! Abstract ""
     DataEase 在安装的时候默认向系统中添加了相应的 dataease Service，支持的 Service 命令有：
@@ -8,7 +8,7 @@
     - restart : 停止后启动 DataEase 服务，相当于先执行 stop，再执行 start 命令
     - status : 查看 DataEase 服务当前各容器运行状态
 
-## dectl
+## 2 dectl
 
 !!! Abstract ""
     DataEase 默认内置了命令行运维工具 - dectl，通过执行 dectl help 命令，可以查看相关的帮助文档。

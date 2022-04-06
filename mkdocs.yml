@@ -41,50 +41,86 @@ theme:
     custom_dir: "theme"
 nav:
     - 产品介绍: index.md
+    - 更新说明: changelog.md
     - 系统架构: system_arch.md
-    - 安装部署: 
-        - 在线安装: installation/online_installation.md
-        - 离线安装: installation/offline_installation.md
-        - 离线安装(Windows): installation/offline_installation_windows.md
-        - 在线升级: installation/online_upgrade.md
-        - 离线升级: installation/offline_upgrade.md
+    - 安装部署:
+        - Windows:
+            - 离线安装: installation/offline_installation_windows.md
+        - Linux:
+            - 安装模式: installation/installation_mode.md
+            - 在线安装: installation/online_installation.md
+            - 离线安装: installation/offline_installation.md
+            - 在线升级: installation/online_upgrade.md
+            - 离线升级: installation/offline_upgrade.md
         - 命令行工具: installation/cli.md
-    - 用户手册:
+    - 功能手册:
         - 通用功能: user_manual/general.md
         - 首页: user_manual/homepage.md
-        - 数据源: user_manual/datasource_configuration.md
-        - 数据集: user_manual/dataset_configuration.md
-        - 视图: user_manual/view_generation.md
-        - 仪表板: user_manual/dashboard_generation.md
-        - 移动端: user_manual/app.md
+        - 数据源:
+            - 数据源概述: user_manual/datasource_description.md
+            - 配置数据库数据源: user_manual/datasource_configuration.md
+            - 配置 API 数据源: user_manual/datasource_configuration_api.md
+        - 数据集:
+            - 数据集概述: user_manual/dataset_description.md
+            - 添加数据集:
+                - 数据库数据集: user_manual/dataset_configuration/dataset_database.md
+                - SQL 数据集: user_manual/dataset_configuration/dataset_SQL.md
+                - Excel 数据集: user_manual/dataset_configuration/dataset_Excel.md
+                - 自定义数据集: user_manual/dataset_configuration/dataset_definision.md
+                - 关联数据集: user_manual/dataset_configuration/dataset_connection.md
+                - API 数据集: user_manual/dataset_configuration/dataset_api.md
+            - 数据集功能设计: user_manual/dataset_design.md
+        - 仪表板:
+            - 仪表板概述: user_manual/dashboard_description.md
+            - 创建仪表板: user_manual/dashboard_create.md
+            - 仪表板基础功能: user_manual/dashboard_basicfunctions.md
+            - 视图组件:
+                - 视图概述: user_manual/view_module/view_generation.md
+                - 添加视图: user_manual/view_module/view_create.md
+                - 视图功能设计: user_manual/view_module/view_design.md
+                - 视图图库: user_manual/view_module/view_gallery.md
+            - 过滤组件:
+                - 时间过滤组件: user_manual/filter_module/filtertime_module.md
+                - 文本过滤组件: user_manual/filter_module/filtertext_module.md
+                - 数字过滤组件: user_manual/filter_module/filternumber_module.md
+            - 其他组件:
+                - 样式组件: user_manual/other_module/style_module.md
+                - 多媒体组件: user_manual/other_module/multimedia_module.md
+                - 其他组件: user_manual/other_module/other_module.md
+            - 组件基础功能: user_manual/module_basicfunctions.md
+            - 仪表板使用: user_manual/dashboard_using.md
         - 系统管理:
             - 用户管理: user_manual/system_management/user.md
+            - 系统参数: user_manual/system_management/param.md
             - 模版管理: user_manual/system_management/module.md
             - 站内消息: user_manual/system_management/message.md
             - 定时任务: user_manual/system_management/task.md
-    - 使用教程:
-        - 仪表板制作示例:
-            - 制作【销售仪表板】: manual_demo/dashboard_flow/sales_dashboard.md
-            - 制作【2021年全国GDP数据】: manual_demo/dashboard_flow/china_gdp_2021.md
-        - 使用进阶:
-            - 常见使用技巧【仪表板篇】: manual_demo/tips_dashboard.md
-            - 常见使用技巧【视图篇】: manual_demo/tips_view.md
-            - 计算字段使用篇: manual_demo/calculate_fields.md
+        - 移动端:
+            - 移动端概述: user_manual/app_description.md
+            - 移动端布局: user_manual/app_design.md
     - 教学视频: instructional_video.md
     - 常见问题:
-        - 安装配置: faq/configuration_faq.md
+        - 安装配置:
+            - 安装配置相关: faq/configuration_faq/configuration.md
+            - 安装启动相关: faq/configuration_faq/installation_starts.md
+            - MySQL 相关: faq/configuration_faq/dataease_mysql.md
         - 备份还原: faq/backup_faq.md
         - 系统管理: faq/system_management.md
-        - 数据集: faq/dataset_faq.md
-        - 仪表板: faq/panel_faq.md
-        - 开发问题: faq/dev_faq.md
+        - 功能相关:
+            - 数据集: faq/dataset_faq.md
+            - 仪表板: faq/panel_faq.md
         - 安全问题: faq/security_faq.md
         - 企业版: faq/enterprise_faq.md
     - 开发文档: 
         - 开发环境搭建: dev_manual/dev_manual.md
-        - 源码部署（前后端分离）: dev_manual/dev_deployment.md
+        - 源码搭建（前后端分离）:
+            - 工具准备: dev_manual/dev_deployment/tool.md
+            - 环境准备: dev_manual/dev_deployment/enviroment.md
+            - 源码准备: dev_manual/dev_deployment/code.md
+            - 编译运行: dev_manual/dev_deployment/compile.md
+            - 注意事项: dev_manual/dev_deployment/attention.md
+        - 开发问题: faq/dev_faq.md
     - 技术咨询: https://jinshuju.net/f/e40eKK
-    - 更新说明: changelog.md
     - 联系我们: contact.md
 
 markdown_extensions:

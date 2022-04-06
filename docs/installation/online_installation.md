@@ -1,12 +1,14 @@
-## 环境要求
+## 1 环境要求
 
-!!! Abstract "部署服务器要求"
+!!! Abstract ""
+    **部署服务器要求：**
+
     * 操作系统: CentOS 7.x
     * CPU/内存: 4核8G
     * 磁盘空间: 200G
     * **可访问互联网**
 
-## 一键安装
+## 2 安装部署
 
 !!! Abstract ""
     GitHub release 链接: https://github.com/dataease/dataease/releases  
@@ -16,7 +18,7 @@
     curl -sSL https://github.com/dataease/dataease/releases/latest/download/quick_start.sh | sh
     ```
 
-!!! Abstract "注意"
+!!! Abstract ""
     如果使用外部数据库进行安装，推荐使用 MySQL 5.7 版本。同时 DataEase 对数据库部分配置项有要求，请参考下附的数据库配置，修改环境中的数据库配置文件
 
     ```
@@ -77,16 +79,16 @@
     ```
 
 !!! Abstract ""
-    **安装成功后，通过浏览器访问如下页面登录 DataEase。**
+    **安装成功后，通过浏览器访问如下页面登录 DataEase：**
     ```
     地址: http://目标服务器IP地址:服务运行端口
     用户名: admin
     密码: dataease
     ```
 
-## 其他注意事项
+## 3 其他注意事项
 
-!!! Abstract "注意"
+!!! Abstract ""
     内置示例数据以 flyway 的形式在 DataEase 启动时自动插入到了 MySQL 数据库中，如果使用了外部 MySQL 或者修改了内置 MySQL 的容器名称的话，需要登录到 DataEase 控制台，进入到【数据源】页面，选择 "demo" 数据源，将 "demo" 数据源的相关连接信息修改正确，保存后即可正常使用内置示例数据。
 
-![modify-demo-dataset](../img/dev_manual/modify-demo-dataset.png)
+![modify-demo-dataset](../img/dev_manual/modify-demo-dataset.png){ width="900px" }

@@ -1,4 +1,4 @@
-## 项目结构
+## 1 项目结构
 
 ```
 .
@@ -10,22 +10,22 @@
 └── pom.xml                                         # 整体 maven 项目使用的 pom 文件
 ```
 
-## 配置开发环境
-### 1.环境准备
+## 2 配置开发环境
+### 2.1 环境准备
 
-=== "后端"
-    !!! Abstract ""
-        DataEase 后端使用了 Java 语言的 Spring Boot 框架，并使用 Maven 作为项目管理工具。开发者需要先在开发环境中安装 JDK 1.8 及 Maven。
-=== "前端"
-    !!! Abstract ""
-        DataEase 前端使用了 Vue.js 作为前端框架，ElementUI 作为 UI 框架，并使用 npm 作为包管理工具。开发者请先下载 Node.js 作为运行环境，IDEA 用户建议安装 Vue.js 插件，便于开发
 
-!!! Abstract "安装 npm"
+!!! Abstract ""
+    **后端：**  
+    DataEase 后端使用了 Java 语言的 Spring Boot 框架，并使用 Maven 作为项目管理工具。开发者需要先在开发环境中安装 JDK 1.8 及 Maven。  
+    **前端：**  
+    DataEase 前端使用了 Vue.js 作为前端框架，ElementUI 作为 UI 框架，并使用 npm 作为包管理工具。开发者请先下载 Node.js 作为运行环境，IDEA 用户建议安装 Vue.js 插件，便于开发。  
+    **安装 npm:**  
     进入网站 https://nodejs.org/en/download/， 选择相应的安装包进行安装即可。
 
-### 2.初始化配置
+### 2.2 初始化配置
 
-!!! Abstract "数据库初始化"
+!!! Abstract ""
+    **数据库初始化：**  
     DataEase 使用 MySQL 数据库，推荐使用 MySQL 5.7 版本。同时 DataEase 对数据库部分配置项有要求，请参考下附的数据库配置，修改开发环境中的数据库配置文件（以下配置有部分参数可能并不适用 MySQL 8.x 版本）
 
     ```
@@ -55,7 +55,8 @@
     CREATE DATABASE `dataease` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
     ```
 
-!!! Abstract "配置文件"
+!!! Abstract ""
+    **配置文件：**  
     DataEase 会默认加载该路径下的配置文件 /opt/dataease/conf/dataease.properties，请参考下列配置创建对应目录及配置文件
 
     ```properties
@@ -84,49 +85,56 @@
     logger.level=INFO
     ```
 
-!!! Abstract "地图文件"
+!!! Abstract ""
+    **地图文件：**  
     DataEase 从 1.2 版本开始支持地图组件。在 DataEase 源码工程的目录下有一个地图文件目录 mapFiles/full，需要将该目录下的文件放置到 /opt/dataease/data/feature/full 目录下。如果是 Windows 的话，可以在工程目录所在盘的根目录下，创建 opt/dataease/data/feature/full 目录。
 
-## 代码运行
+## 3 代码运行
 
-### 1.IDEA 方式运行
+### 3.1 IDEA 方式运行
 
-!!! Warning "Windows 下环境配置（可选）"
-    在 windows 环境下对配置文件的路径会有所要求，一般可以采用下面两种配置方案里的一种，非 Windows 环境以下方案可跳过。
-
-!!! Abstract "方案一(推荐)"
+!!! Abstract ""
+    **Windows 下环境配置（可选）：**  
+    在 Windows 环境下对配置文件的路径会有所要求，一般可以采用下面两种配置方案里的一种，非 Windows 环境以下方案可跳过。  
+    **方案一(推荐)：**  
     将配置文件放置到工程源码的所在盘的指定路径下，以 dataease.properties 配置文件举例，如源码工程在 D 盘下，则配置文件存放路径为 d:\opt\dataease\conf\dataease.properties。其他配置文件类似。  
     此方案中不需要对 DataEase 的源码进行任何修改。
-![方案一](../img/dev_manual/windows-idea-1.png){width="800px"}  
+![方案一](../img/dev_manual/windows-idea-1.png){width="900px"}  
 
-!!! Abstract "方案二"
+!!! Abstract ""
+    **方案二：**  
     配置文件可以随意放置在任意路径下，但需要修改工程源码中配置文件的路径信息。以 dataease.properties 配置文件举例，如该配置文件存放在 D 盘根目录下，则需要按下图修改三个地方的配置路径：
-![方案二](../img/dev_manual/windows-idea-2.png){width="800px"}
+![方案二](../img/dev_manual/windows-idea-2.png){width="900px"}
 
-!!! Abstract "运行后端服务"
+!!! Abstract ""
+    **运行后端服务：**  
     新建一个 git 项目 输入主工程 git 地址: git@github.com:dataease/dataease.git
 
-![新建工程](../img/dev_manual/new-project.png){width="800px"}  
+![新建工程](../img/dev_manual/new-project.png){width="900px"}  
 
-!!! Abstract "配置 maven"
-    配置 maven 并引入 pom.xml
-![引入pom-1](../img/dev_manual/import-pom1.png){width="800px"}
-![引入pom-2](../img/dev_manual/import-pom2.png){width="800px"}  
+!!! Abstract ""
+    **配置 maven 并引入 pom.xml：**
 
-!!! Abstract "启动后端"
-    两种启动方式：
+![引入pom-1](../img/dev_manual/import-pom1.png){width="900px"}
+
+![引入pom-2](../img/dev_manual/import-pom2.png){width="900px"}  
+
+!!! Abstract ""
+    **启动后端，两种启动方式：**  
 
     - 可以使用 io.dataease.Application 入口方法直接启动
     - 可以使用 maven 插件中的 backend>spring-boot>spring-boot:start 启动  
 
-![启动后端](../img/dev_manual/run-backend.png){width="800px"}
+![启动后端](../img/dev_manual/run-backend.png){width="900px"}
 
-!!! Abstract "运行前端服务"
-    进入工程目录下的子目录 frontend, 用npm i 安装前端依赖包  
+!!! Abstract ""
+    **运行前端：**  
+    进入工程目录下的子目录 frontend, 用 npm i 安装前端依赖包  
     安装完成后，使用 npm run serve 命名启动前端,前端启动后即可通过 http://localhost:9528/ 地址访问
-![安装前端](../img/dev_manual/install-frontend.png){width="800px"}
 
-### 2.本地 jar 包方式运行
+![安装前端](../img/dev_manual/install-frontend.png){width="900px"}
+
+### 3.2 本地 jar 包方式运行
 
 !!! Abstract ""
 
@@ -135,19 +143,19 @@
     3.编译完成后，在工程目录的 backend/target 目录下，会生成一个 backend-x.y.z.jar （xyz代表版本号，xyz具体值视具体版本而定） 的可运行 jar 包。可以通过 java -jar backend-x.y.z.jar 来运行 DataEase；  
     4.服务完全启动后，可以在本地浏览器访问 http://localhost:8081 来访问 DataEase 服务。
 
-## 本地运行 Kettle 和 Doris (可选)
-
-!!! Warning "注意"
-    若需要调试 Excel 和定时同步模式数据集的话，需要此支持
-
-### 1.准备运行环境
+## 4 本地运行 Kettle 和 Doris (可选)
 
 !!! Abstract ""
-    1. 下载 installer 工程
+    **注意：** 若需要调试 Excel 和定时同步模式数据集的话，需要此支持。
+
+### 4.1 准备运行环境
+
+!!! Abstract ""
+    **下载 installer 工程：**
     ```shell
     git clone https://github.com/dataease/installer.git
     ```
-    2. 初始化目录
+    **初始化目录：**
     ```shell
     mkdir -p /opt/dataease/conf
     mkdir -p /opt/dataease/data/kettle
@@ -155,7 +163,7 @@
     mkdir -p /opt/dataease/data/be
     mkdir -p /opt/dataease/logs
     ```
-    3. 准备配置文件
+    **准备配置文件：**
     ```shell
     cd installer/dataease/templates && cp -rp fe.conf be.conf dataease.properties .kettle /opt/dataease/conf && cd -
     
@@ -164,9 +172,9 @@
     
     # v1.5.0 及以后版本可以手动把 installer/dataease 目录下的 docker-compose-kettle.yml docker-compose-doris.yml 内容合并起来（去掉重复的 version 和 services 定义），命名为 docker-compose-kettle-doris.yml，放置到 /opt/dataease 目录下
     ```
-    4. 按实际情况修改配置文件
+    **按实际情况修改配置文件：
     fe.conf、be.conf、.kettle 一般情况下不需要修改，其他配置文件的修改可以参考下面示例：
-    修改 dataease.properties 文件，设置 MySQL、Kettle 和 Doris 的连接信息，以本机IP（192.168.1.9）为例:
+    修改 dataease.properties 文件，设置 MySQL、Kettle 和 Doris 的连接信息，以本机IP（192.168.1.9）为例:**
     ```properties
     # 数据库配置
     spring.datasource.url=jdbc:mysql://192.168.1.9:3306/dataease?autoReconnect=false&useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
@@ -193,7 +201,7 @@
     logger.level=INFO
     ```
 
-    修改 docker-compose-kettle-doris.yml，将 ${DE_BASE} 替换为 /opt，将 doris-fe 和 kettle 的运行端口暴露出来，增加网络定义部分:
+    **修改 docker-compose-kettle-doris.yml，将 ${DE_BASE} 替换为 /opt，将 doris-fe 和 kettle 的运行端口暴露出来，增加网络定义部分：**
     ```yml
     version: '2.1'
     services:
@@ -251,18 +259,18 @@
               gateway: 172.19.0.1
     ```
 
-### 2.运行 Kettle 和 Doris 组件
+### 4.2 运行 Kettle 和 Doris 组件
 
 !!! Abstract ""
-    执行命令运行组件：
+    **执行命令运行组件：**
     ```shell
     cd /opt/dataease
     docker-compose -f docker-compose-kettle-doris.yml up -d
     ```
 
-### 3.其他注意事项
+## 5 其他注意事项
 
 !!! Abstract ""
     内置示例数据以 flyway 的形式在 DataEase 启动时自动插入到了 MySQL 数据库中，在源码运行的情况下，需要登录到 DataEase 控制台，进入到【数据源】页面，选择 "demo" 数据源，将 "demo" 数据源的相关连接信息修改正确，保存后即可正常使用内置示例数据。
 
-![modify-demo-dataset](../img/dev_manual/modify-demo-dataset.png){width="800px"}
+![modify-demo-dataset](../img/dev_manual/modify-demo-dataset.png){width="900px"}
