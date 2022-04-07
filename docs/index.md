@@ -556,4 +556,5 @@
 !!! Abstract ""
     - **获取新一代数据可视化分析平台建设指南**：https://jinshuju.net/f/cerWRY
     - **DataEase 知识库**：https://kb.fit2cloud.com/categories/dataease
+    - **飞致云学堂**：https://edu.fit2cloud.com/index
 
