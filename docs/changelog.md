@@ -17,7 +17,7 @@
 2022年04月07日
 
 !!! Abstract "新增功能 :star2:"
-    - feat(数据源): 支持 Impala
+    - feat(数据源): 新增支持 Impala、TiDB 和 StarRocks
     - feat(视图): 支持文本卡
     - feat(视图): 视图所有操作可直接在仪表板上进行
     - feat(视图): 透视表支持总计、小计
