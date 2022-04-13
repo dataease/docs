@@ -21,6 +21,7 @@
     ![echarts明细表](../../img/view_generation/view_gallery/ECharts/echarts明细表.png){ width="900px" }
 
 ### 1.2 指标卡
+
 !!! Abstract ""
     通过文字、数字和符号的合理排版，对数据进行一目了然的展示。指标卡由看板标签和看板指标组成，标签由数据的维度决定，指标由数据的度量决定。  
     **提示：** 指标卡当前不支持跳转设置。

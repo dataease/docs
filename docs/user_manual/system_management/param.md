@@ -32,7 +32,7 @@
 ## 4 Kettle 设置
 
 !!! Abstract ""
-    集群模式下需配置 Kettle 组件用以做数据抽取，可手动配置 Kettle 的基本信息，并可添加多个 kettle 组件。
+    集群模式下需配置 Kettle 组件用以做数据抽取，可手动配置 Kettle 的基本信息，并可添加多个 Kettle 组件，多个 Kettle 存在时，任务将随机分配。
 
 ![Kettle设置](../../img/system_management/Kettle设置.png){ width="900" }  
 ![Kettle设置_编辑](../../img/system_management/Kettle设置_编辑.png){ width="900" }
