@@ -80,5 +80,8 @@
 	dataease.login_timeout=480
 	
 	logger.level=INFO
+
+	#DE运行模式，可选值有 local、simple、cluster，分别对应本地模式、精简模式、集群模式
+	engine_mode=simple
 	EOF
 	```
