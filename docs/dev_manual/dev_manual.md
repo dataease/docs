@@ -102,25 +102,25 @@
     **方案一(推荐)：**  
     将配置文件放置到工程源码的所在盘的指定路径下，以 dataease.properties 配置文件举例，如源码工程在 D 盘下，则配置文件存放路径为 d:\opt\dataease\conf\dataease.properties。其他配置文件类似。  
     此方案中不需要对 DataEase 的源码进行任何修改。
-![方案一](../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application%20Support/com.tencent.xinWeChat/2.0b4.0.9/e40c94b8c91dd228cbecdcf82ba94971/Message/MessageTemp/799ba1ceb08c3d8585e6c76370cf05b2/File/img/dev_manual/windows-idea-1.png){width="900px"}  
+![方案一](../img/dev_manual/windows-idea-1.png){width="900px"}  
 
 !!! Abstract ""
     **方案二：**  
     配置文件可以随意放置在任意路径下，但需要修改工程源码中配置文件的路径信息。以 dataease.properties 配置文件举例，如该配置文件存放在 D 盘根目录下，则需要按下图修改三个地方的配置路径：
-![方案二](../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application%20Support/com.tencent.xinWeChat/2.0b4.0.9/e40c94b8c91dd228cbecdcf82ba94971/Message/MessageTemp/799ba1ceb08c3d8585e6c76370cf05b2/File/img/dev_manual/windows-idea-2.png){width="900px"}
+![方案二](../img/dev_manual/windows-idea-2.png){width="900px"}
 
 !!! Abstract ""
     **运行后端服务：**  
     新建一个 git 项目 输入主工程 git 地址: git@github.com:dataease/dataease.git
 
-![新建工程](../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application%20Support/com.tencent.xinWeChat/2.0b4.0.9/e40c94b8c91dd228cbecdcf82ba94971/Message/MessageTemp/799ba1ceb08c3d8585e6c76370cf05b2/File/img/dev_manual/new-project.png){width="900px"}  
+![新建工程](../img/dev_manual/new-project.png){width="900px"}  
 
 !!! Abstract ""
     **配置 maven 并引入 pom.xml：**
 
-![引入pom-1](../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application%20Support/com.tencent.xinWeChat/2.0b4.0.9/e40c94b8c91dd228cbecdcf82ba94971/Message/MessageTemp/799ba1ceb08c3d8585e6c76370cf05b2/File/img/dev_manual/import-pom1.png){width="900px"}
+![引入pom-1](../img/dev_manual/import-pom1.png){width="900px"}
 
-![引入pom-2](../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application%20Support/com.tencent.xinWeChat/2.0b4.0.9/e40c94b8c91dd228cbecdcf82ba94971/Message/MessageTemp/799ba1ceb08c3d8585e6c76370cf05b2/File/img/dev_manual/import-pom2.png){width="900px"}  
+![引入pom-2](../img/dev_manual/import-pom2.png){width="900px"}  
 
 !!! Abstract ""
     **启动后端，两种启动方式：**  
@@ -128,14 +128,14 @@
     - 可以使用 io.dataease.Application 入口方法直接启动
     - 可以使用 maven 插件中的 backend>spring-boot>spring-boot:start 启动  
 
-![启动后端](../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application%20Support/com.tencent.xinWeChat/2.0b4.0.9/e40c94b8c91dd228cbecdcf82ba94971/Message/MessageTemp/799ba1ceb08c3d8585e6c76370cf05b2/File/img/dev_manual/run-backend.png){width="900px"}
+![启动后端](../img/dev_manual/run-backend.png){width="900px"}
 
 !!! Abstract ""
     **运行前端：**  
     进入工程目录下的子目录 frontend, 用 npm i 安装前端依赖包  
     安装完成后，使用 npm run serve 命名启动前端,前端启动后即可通过 http://localhost:9528/ 地址访问
 
-![安装前端](../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application%20Support/com.tencent.xinWeChat/2.0b4.0.9/e40c94b8c91dd228cbecdcf82ba94971/Message/MessageTemp/799ba1ceb08c3d8585e6c76370cf05b2/File/img/dev_manual/install-frontend.png){width="900px"}
+![安装前端](../img/dev_manual/install-frontend.png){width="900px"}
 
 ### 3.2 本地 jar 包方式运行
 
@@ -276,4 +276,4 @@
 !!! Abstract ""
     内置示例数据以 flyway 的形式在 DataEase 启动时自动插入到了 MySQL 数据库中，在源码运行的情况下，需要登录到 DataEase 控制台，进入到【数据源】页面，选择 "demo" 数据源，将 "demo" 数据源的相关连接信息修改正确，保存后即可正常使用内置示例数据。
 
-![modify-demo-dataset](../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application%20Support/com.tencent.xinWeChat/2.0b4.0.9/e40c94b8c91dd228cbecdcf82ba94971/Message/MessageTemp/799ba1ceb08c3d8585e6c76370cf05b2/File/img/dev_manual/modify-demo-dataset.png){width="900px"}
+![modify-demo-dataset](../img/dev_manual/modify-demo-dataset.png){width="900px"}
