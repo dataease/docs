@@ -32,7 +32,7 @@
 ## 2 切换安装模式
 
 !!! Abstract ""
-    若需切换安装模式，修改 /opt/dataease/.env 文件中 DE_ENGINE_MODE 参数，在 DataEase 安装包解压目录下，重新执行安装脚本即可。  
+    安装包部署方式下，若需切换安装模式，修改 /opt/dataease/.env 文件中 DE_ENGINE_MODE 参数，在 DataEase 安装包解压目录下，重新执行安装脚本即可。  
     **注意：由于精简模式的 Excel 与 API 数据集是保存在配置的数据引擎中的，切换为其它模式会导致这两部分的数据丢失，反之亦然（Excel 与 API 数据集保存位置变更），直连数据库的相关数据集不受影响。**  
     ```shell
     bash install.sh

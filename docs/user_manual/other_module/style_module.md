@@ -3,8 +3,8 @@
 !!! Abstract ""
 	文本型组件，可设置文字的大小、颜色、粗细、背景色、超链接等。
 
-![仪表盘编辑_其他组件](../../img/dashboard_generation/文字组件.png){ width="900px" }
- 
+![仪表盘编辑_其他组件](../../img/dashboard_generation/文字组件.png){ width="900px" }  
+![仪表盘编辑_其他组件](../../img/dashboard_generation/文字组件显示效果.png){ width="900px" }
 ## 2 矩形框
 
 !!! Abstract ""
@@ -29,3 +29,8 @@
 	如下图所示，可设置 Tab 组件内部样式。
 
 ![Tab页内部样式编辑](../../img/dashboard_generation/Tab页内部样式编辑.png){ width="900px" }
+
+!!! Abstract ""
+	如下图所示，Tab 组件支持放置视频、流媒体、网页组件，配置方式与单独使用该组件一致。
+
+![Tab组件_选择组件](../../img/dashboard_generation/Tab组件_选择组件.png){ width="900px" }

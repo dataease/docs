@@ -19,7 +19,9 @@
 
 !!! Abstract ""
     精简模式下需配置数据引擎用以存储 Excel 及 API 数据集数据，目前该引擎只支持 MySQL 类型；  
-    可配置 DataEase 自带的 MySQL 组件，参考以下示例图，也可使用外部 MySQL 。
+    DataEase v1.10.0 之前版本中引擎的参数都为空，用户不知道需要配置的情况下上传 Excel 会报错，提示用户“未配置数据引擎”；  
+    DataEase v1.10.0 系统会检查是否设置了引擎参数，若无设置，则读取 dataease.properties 配置文件中 MySQL 连接信息，自动填入其中；  
+    参考以下示例图，也可使用外部 MySQL 。
 
 ![MySQL设置](../../img/system_management/MySQL设置.png){ width="900" }
 

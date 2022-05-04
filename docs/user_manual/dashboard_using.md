@@ -55,42 +55,64 @@
 
 ![新建模板分类](../../img/system_management/新建模板分类.png){ width="900px" }
 
-## 5 导出为模板
+## 5 仪表板导出 
+### 5.1 导出为模板
 
 !!! Abstract ""
 	点击下图中所示位置，导出模板到本地，可在本地的下载目录中查看，亦可用此模板创建仪表板。
 
 ![仪表板_导出为模版](../img/dashboard_generation/仪表板_导出为模版.png){ width="900px" }
 
-## 6 导出为 PDF
+### 5.2 导出为 PDF
 
 !!! Abstract ""
-	点击下图中所示位置，点击可弹出 pdf 的预览窗口。
+	点击下图中所示位置，点击可弹出 PDF 的预览窗口。
 
 ![仪表板_导出pdf](../img/dashboard_generation/仪表板_导出pdf入口.png){ width="900px" }
 
 !!! Abstract ""
-	预览导出的 pdf 样式，另外还支持带参数下载，比如：仪表板名称、导出时间、导出人等。点击【导出 pdf 】，下载 pdf 文件至本地；点击【取消】，取消下载 pdf 文件。
+	预览导出的 PDF 样式，另外还支持带参数下载，比如：仪表板名称、导出时间、导出人等，点击【导出为 PDF 】，下载 PDF 文件至本地，点击【取消】，取消下载 PDF 文件。
 
 ![仪表板_导出pdf](../img/dashboard_generation/仪表板_导出pdf预览.png){ width="900px" }
 
-## 7 预览
+### 5.3 导出为图片
+
+!!! Abstract ""
+	仪表板支持导出图片，点击下图所示的位置，可导出图片。
+
+![仪表板_导出图片](../img/dashboard_generation/仪表板_导出图片.png){ width="900px" }
+
+## 6 预览
 
 !!! Abstract ""
 	支持两种预览方式，第一种：新打开页面预览，第二种：全屏预览仪表盘。
 
 ![仪表板_预览](../img/dashboard_generation/仪表板_预览.png){ width="900px" }
 
-## 8 查看明细
+## 7 查看明细
+
+### 7.1 导出视图 Excel
 
 !!! Abstract ""
-	预览模式下，视图可放大，可查看明细并下载。
+	预览模式下，视图可放大，支持导出 Excel ，支持导出图片，视图明细导出可附带截图。
 
 ![仪表板_预览](../img/dashboard_generation/仪表板_放大.png){ width="900px" }
 
-![仪表板_预览](../img/dashboard_generation/查看明细.png){ width="900px" }
+!!! Abstract ""
+	点击下图所示的位置，对视图进行 Excel 导出，可查看到附带的明细截图。
 
-## 9 收藏 
+![仪表板_预览](../img/dashboard_generation/查看明细.png){ width="900px" }  
+![明细导出结果](../img/dashboard_generation/明细导出结果.png){ width="900px" }
+
+### 7.2 导出视图图片
+
+!!! Abstract ""
+	点击下图所示的位置，导出视图图片。  
+	**注意：** 表格类视图不支持，因为该视图本身形式就是表格，按 Excel 导出即可。
+
+![仪表板_导出图片](../img/dashboard_generation/仪表板_导出图片.png){ width="900px" }
+
+## 8 收藏 
 
 !!! Abstract ""
 	点击下图中所示位置，收藏仪表板。
@@ -102,7 +124,7 @@
 
 ![仪表板_收藏列表](../img/dashboard_generation/仪表板_收藏列表.png){ width="900px" }
 
-## 10 刷新
+## 9 刷新
 
 !!! Abstract ""
 	仪表板刷新提供手动与自动两种方式，其中自动刷新配置如下，完成配置后需保存仪表板进入预览界面查看效果。

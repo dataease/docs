@@ -59,7 +59,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="38">
+		<td rowspan="42">
 			仪表板
 		</td>
 		<td rowspan="3">
@@ -80,11 +80,16 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="18">
+		<td rowspan="20">
 			仪表板制作
 		</td>
 		<td>
 			支持在线编辑仪表板；
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持仪表板通过矩阵或悬浮模式进行布局，支持开启辅助设计网格协助布局设计；
 		</td>
 	</tr>
 	<tr>
@@ -129,6 +134,11 @@
 	</tr>
 	<tr>
 		<td>
+			支持视图及组件设置超链接；
+		</td>
+	</tr>
+	<tr>
+		<td>
 			支持仪表板背景、组件间隙、刷新时间、展示数据量等设置；
 		</td>
 	</tr>
@@ -139,7 +149,7 @@
 	</tr>
 	<tr>
 		<td>
-			支持仪表板导出为 PDF 文件；
+			支持仪表板导出为 PDF 文件及图片；
 		</td>
 	</tr>
 	<tr>
@@ -191,7 +201,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="14">
+		<td rowspan="16">
 			视图制作
 		</td>
         <td>
@@ -213,6 +223,11 @@
             支持柱状图和折线图设置缩略轴和辅助线；
         </td>
     </tr>
+	<tr>
+		<td>
+			支持视图阈值设置；
+		</td>
+	</tr>
 	<tr>
 		<td>
 			支持视图数据集的切换；
@@ -261,6 +276,11 @@
 	<tr>
 		<td >
 			支持通过过滤条件筛选视图数据；
+		</td>
+    </tr>
+	<tr>
+		<td >
+			支持导出视图图片及导出视图明细数据；
 		</td>
     </tr>
     <tr>
@@ -334,7 +354,7 @@
 			数据源管理
 		</td>
 		<td>
-			支持多种数据源，例如：多 Sheet 页的 Excel 文件，MySQL / Oracle / SQL Server / PostgreSQL / Elasticsearch / ClickHouse / MongoDB / AWS RedShift / MariaDB / Doris / Hive / DB2 数据库/ Impala / StarRocks / TiDB /API 数据源等；
+			支持多种数据源，例如：多 Sheet 页的 Excel 文件，MySQL / Oracle / SQL Server / PostgreSQL / Elasticsearch / ClickHouse / MongoDB / AWS RedShift / MariaDB / Doris / Hive / DB2 数据库 / Impala / StarRocks / TiDB / MaxCompute / API 数据源等；
 		</td>
 	</tr>
 	<tr>
@@ -427,7 +447,7 @@
 			显示设置
 		</td>
 		<td>
-			支持头部系统 Logo 、登录页 Logo 、登录页图片、登录页标题、系统名称、移动端登录页面背景等显示设置； <span class="x-pack-span">X-Pack</span>
+			支持头部系统 Logo 、登录页 Logo 、登录页图片、登录页标题、系统名称、移动端登录页面背景、帮助文档及首页链接等设置； <span class="x-pack-span">X-Pack</span>
 		</td>
 	</tr>
 	<tr>

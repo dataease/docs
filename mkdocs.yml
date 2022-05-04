@@ -44,13 +44,23 @@ nav:
     - 更新说明: changelog.md
     - 系统架构: system_arch.md
     - 安装部署:
-        - Linux:
-            - 安装模式: installation/installation_mode.md
+        - 安装模式: installation/installation_mode.md
+        - Linux 单机部署:
             - 在线安装: installation/online_installation.md
             - 离线安装: installation/offline_installation.md
             - 在线升级: installation/online_upgrade.md
             - 离线升级: installation/offline_upgrade.md
-        - Windows:
+        - Linux HA 部署:
+            - 准备工作: installation/HA/prepare.md
+            - 搭建 NFS 服务: installation/HA/nfs_installation.md
+            - 部署 MySQL: installation/HA/mysql_installation.md
+            - 部署 Redis: installation/HA/redis_installation.md
+            - 部署 Apache Doris: installation/HA/doris_installation.md
+            - 部署 Kettle: installation/HA/kettle_installation.md
+            - 部署 Nginx: installation/HA/nginx_installation.md
+            - 部署 Keepalived 及 VIP: installation/HA/keepalived_installation.md
+            - 部署 DataEase: installation/HA/dataease_installation.md
+        - Windows 单机部署:
               - 离线安装: installation/offline_installation_windows.md
         - 命令行工具: installation/cli.md
     - 功能手册:
@@ -111,7 +121,7 @@ nav:
             - 仪表板: faq/panel_faq.md
         - 安全问题: faq/security_faq.md
         - 企业版: faq/enterprise_faq.md
-    - 开发文档: 
+    - 开发文档:
         - 开发环境搭建: dev_manual/dev_manual.md
         - 源码搭建（前后端分离）:
             - 工具准备: dev_manual/dev_deployment/tool.md

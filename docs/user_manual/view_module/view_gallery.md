@@ -7,30 +7,29 @@
 ### 1.1 表格
 
 !!! Abstract ""
-    表格是数据的详情罗列，能看到明细信息，表格包含汇总表和明细表。  
-    **提示：** 明细表支持分页展示。
+    表格是数据的详情罗列，能看到明细信息，表格包含汇总表和明细表。
 
 !!! Abstract ""
-    汇总表格
+    汇总表
 
     ![echarts汇总表](../../img/view_generation/view_gallery/ECharts/echarts汇总表.png){ width="900px" }
 
 !!! Abstract ""
-    明细表格
+    明细表
 
     ![echarts明细表](../../img/view_generation/view_gallery/ECharts/echarts明细表.png){ width="900px" }
 
 ### 1.2 指标卡
 
 !!! Abstract ""
-    通过文字、数字和符号的合理排版，对数据进行一目了然的展示。指标卡由看板标签和看板指标组成，标签由数据的维度决定，指标由数据的度量决定。  
-    **提示：** 指标卡当前不支持跳转设置。
+    通过文字、数字和符号的合理排版，对数据进行一目了然的展示。指标卡由看板标签和看板指标组成，标签由数据的维度决定，指标由数据的度量决定。
 
 !!! Abstract ""
 
-    ![echarts指标卡](../../img/view_generation/view_gallery/ECharts/echarts指标卡.png){ width="900px" }  
-    **注意：** 指标卡当前只支持数值类型的数据汇总。
-
+    ![echarts指标卡](../../img/view_generation/view_gallery/ECharts/echarts指标卡.png){ width="900px" }
+ 
+    **注意：** 指标卡只支持数值类型的数据汇总。
+    
 ### 1.3 文本卡
 
 !!! Abstract ""
@@ -118,19 +117,11 @@
 ### 1.9 仪表盘
 
 !!! Abstract ""
-    仪表盘像一个钟表或者可读盘，有刻度和指针，其中刻度表示度量，指针表示维度，指针角度表示数值，指针指向当前数值。  
-    **提示：** 仪表盘当前不支持跳转设置。
+    仪表盘像一个钟表或者可读盘，有刻度和指针，其中刻度表示度量，指针表示维度，指针角度表示数值，指针指向当前数值。
 
 !!! Abstract ""
 
     ![echarts仪表盘](../../img/view_generation/view_gallery/ECharts/echarts仪表盘.png){ width="900px" }
-
-!!! Abstract ""
-    **DataEase 1.9.0 版本，仪表盘支持分段显示颜色：**  
-    设置位置：高级-阈值，该功能决定仪表盘区间颜色，为空则不开启阈值，范围（0-100），仅限整数，且逐级递增。  
-    以下图为示例，输入 30，70；表示分 3 段，分别为[0,30]，(30,70]，(70,100]。
-
-    ![echarts仪表盘阈值](../../img/view_generation/view_gallery/ECharts/echarts仪表盘阈值.png){ width="900px" }
 
 ### 1.10 饼图
 
@@ -177,9 +168,6 @@
 ### 1.14 地图
 
 !!! Abstract ""
-    
-
-!!! Abstract ""
     普通地图：用颜色的深浅来展示区域范围的数值大小。
 
     ![普通地图](../../img/view_generation/view_gallery/ECharts/echarts普通地图.png){ width="900px" }
@@ -201,12 +189,12 @@
     AntV 的表格支持更详细的表格配置，支持表头、表格对齐（左对齐、居中、右对齐），支持列宽调整，比如自适应和自定义。
 
 !!! Abstract ""
-    明细表格
+    明细表
     
     ![antv明细表格](../../img/view_generation/view_gallery/AntV/antv明细表.png){ width="900px" }
 
 !!! Abstract ""
-    汇总表格
+    汇总表
 
     ![antv汇总表格](../../img/view_generation/view_gallery/AntV/antv汇总表.png){ width="900px" }
 
@@ -216,9 +204,7 @@
     ![antv透视表](../../img/view_generation/view_gallery/AntV/antv透视表.png){ width="900px" }
 
 !!! Abstract ""
-    **DataEase 1.9.0 版本，透视表支持小计合计，小计会针对每层维度进行计算，总计对行或列全部数据进行计算。**
-
-!!! Abstract ""
+    **提示：** 透视表支持小计合计，小计会针对每层维度进行计算，总计对行或列全部数据进行计算。
 
     ![antv透视表_小计合计](../../img/view_generation/view_gallery/AntV/antv透视表_小计合计.png){ width="900px" }  
     ![antv透视表_小计合计设置](../../img/view_generation/view_gallery/AntV/antv透视表_小计合计设置.png){ width="900px" }
@@ -226,12 +212,13 @@
 ### 2.2 指标卡
 
 !!! Abstract ""
-    通过文字、数字和符号的合理排版，对数据进行一目了然的展示。指标卡由看板标签和看板指标组成，标签由数据的维度决定，指标由数据的度量决定。  
-    **提示：** 指标卡当前不支持跳转设置。
+    通过文字、数字和符号的合理排版，对数据进行一目了然的展示。指标卡由看板标签和看板指标组成，标签由数据的维度决定，指标由数据的度量决定。
 
 !!! Abstract ""
 
     ![antv指标卡](../../img/view_generation/view_gallery/AntV/antv指标卡.png){ width="900px" }
+ 
+    **注意：** 指标卡只支持数值类型的数据汇总。
 
 ### 2.3 文本卡
 
@@ -310,19 +297,11 @@
 ### 2.8 仪表盘
 
 !!! Abstract ""
-    像一个钟表或者可读盘，有刻度和指针，其中刻度表示度量，指针表示维度，指针角度表示数值，指针指向当前数值。  
-    **提示：** 仪表盘当前不支持跳转设置。
+    像一个钟表或者可读盘，有刻度和指针，其中刻度表示度量，指针表示维度，指针角度表示数值，指针指向当前数值。
 
 !!! Abstract ""
 
     ![antv仪表盘](../../img/view_generation/view_gallery/AntV/antv仪表盘.png){ width="900px" }
-
-!!! Abstract ""
-    **DataEase 1.9.0 版本，仪表盘支持分段显示颜色：**  
-    设置位置：高级-阈值，该功能决定仪表盘区间颜色，为空则不开启阈值，范围（0-100），仅限整数，且逐级递增。  
-    以下图为示例，输入 30，70；表示分 3 段，分别为[0,30]，(30,70]，(70,100]。
-
-    ![antv仪表盘](../../img/view_generation/view_gallery/AntV/antv仪表盘阈值.png){ width="900px" }
 
 ### 2.9 饼图
 
@@ -378,8 +357,7 @@
 ### 2.14 水波图
 
 !!! Abstract ""
-    水波图的水波高度表示指标值，当水填满或溢出时，代表指标值已经到达目标值。  
-    **提示：** 水波图当前不支持跳转设置。
+    水波图的水波高度表示指标值，当水填满或溢出时，代表指标值已经到达目标值。
 
 !!! Abstract ""
 
@@ -388,8 +366,7 @@
 ### 2.15 词云图
 
 !!! Abstract ""
-	词云图又称文字云，是文本数据的视觉表示，由词汇组成类似云的彩色图形，用于展示大量文本数据。每个词的重要性以字体大小或颜色显示。  
-    **提示：** 词云图当前不支持跳转设置。
+	词云图又称文字云，是文本数据的视觉表示，由词汇组成类似云的彩色图形，用于展示大量文本数据。每个词的重要性以字体大小或颜色显示。
 
 !!! Abstract ""
 

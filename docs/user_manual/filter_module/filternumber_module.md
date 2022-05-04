@@ -7,6 +7,11 @@
 ![仪表盘编辑_过滤组件](../../img/dashboard_generation/数字下拉组件.png){ width="900px" }  
 ![数字下拉组件显示效果](../../img/dashboard_generation/数字下拉组件显示效果.png){ width="900px" }
 
+!!! Abstract ""
+	数字下拉组件支持手动输入模糊匹配的功能。
+
+![数字下拉组件_模糊匹配](../../img/dashboard_generation/数字下拉组件_模糊匹配.png){ width="900px" }
+
 ## 2 数字列表组件
 
 !!! Abstract ""

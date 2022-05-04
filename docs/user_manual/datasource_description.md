@@ -8,7 +8,7 @@
 ## 2 支持的数据源类型
 
 !!! Abstract ""
-    - **数据仓库/数据湖：** AWS RedShift
+    - **数据仓库/数据湖：** AWS RedShift、MaxCompute
     - **OLTP 型数据库：** MySQL、MongoDB、SQL Server、Oracle、PostgreSQL、MariaDB、Db2、TiDB
     - **OLAP 型数据库：** Apache Hive、Elasticsearch、ClickHouse、Apache Doris、Apache Impala、StarRocks
     - **数据文件：** Excel

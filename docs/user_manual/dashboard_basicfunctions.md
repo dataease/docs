@@ -82,10 +82,11 @@
 !!! Abstract ""
 	点击下图按钮，弹出外部参数设置页面，外部参数设置步骤：
 
-	- 【序号 1】：启用外部参数；
-	- 【序号 2】：增加一个参数并命名，启用参数，可设置多个参数；
-	- 【序号 3】：配置联动视图与联动视图的字段；
-	- 【序号 4】：点击【确定】保存。
+	- 【序号 1】：增加一个参数并命名，启用参数，可设置多个参数；
+	- 【序号 2】：配置联动视图与联动视图的字段；
+	- 【序号 3】：点击【确定】保存。
+
+	**提示：** 点击启用参数后，启用状态被系统自动打开，即默认打开该设置，若是 v1.10.0 之前版本则需手动勾选【启用外部参数设置】。
 
 ![外部参数设置入口](../img/dashboard_generation/外部参数设置入口.png){ width="900px" }  
 ![外部参数设置](../img/dashboard_generation/外部参数设置.png){ width="900" }
@@ -97,7 +98,23 @@
 	echo '{"省份":"北京市"}'|base64
 	```
 	加密结果为：eyLnnIHku70iOiLljJfkuqzluIIifQo=  
-	在仪表板的公共链接后加上  ?attachParams=加密后的内容，构建完整的 URL：公共链接?attachParams=eyLnnIHku70iOiLljJfkuqzluIIifQo=  
+	在仪表板的公共链接后加上 ?attachParams= 加密后的内容，构建完整的 URL：公共链接 ?attachParams=eyLnnIHku70iOiLljJfkuqzluIIifQo=  
 	以公共链接的形式访问仪表板，关联的内容被过滤：
 
-![](../img/dashboard_generation/外部参数设置_效果预览.png){ width="900px" }
+![外部参数设置_效果预览](../img/dashboard_generation/外部参数设置_效果预览.png){ width="900px" }
+
+!!! Abstract ""
+	公共链接外部参数支持一参多传，可通过数组形式传入多值，对组件进行多选，如下示例，对参数进行处理。
+	```shell
+	echo '{"省份":["山东省","四川省","广东省","河南省"]}'|base64
+	```
+	访问构建后的 URL 结果如下。
+
+![外部参数设置_数组](../img/dashboard_generation/外部参数设置_数组.png){ width="900px" }
+
+## 7 辅助设计网格
+
+!!! Abstract ""
+	点击下图按钮，可快速打开或关闭【辅助设计网格】，打开辅助设计网格后仪表板中显示网格线，可辅助仪表板制作，视图和组件可通过参考网格对齐，网格内部细化，可为矩阵模式提供更精细的定位。
+
+![仪表板_辅助设计网格](../img/dashboard_generation/仪表板_辅助设计网格.png){ width="900px" }
