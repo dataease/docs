@@ -41,7 +41,7 @@ theme:
     custom_dir: "theme"
 nav:
     - 产品介绍: index.md
-    - 更新说明: changelog.md
+    - 更新日志: changelog.md
     - 系统架构: system_arch.md
     - 安装部署:
         - 安装模式: installation/installation_mode.md
