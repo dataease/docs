@@ -103,14 +103,15 @@
 
     解决方法：
     
-     MySQL 版本 5.7.6 版本以前用户可以使用如下命令：
-        ```mysql
-        mysql> SET PASSWORD = PASSWORD('Password123@mysql');
-        ```
-     MySQL 版本 5.7.6 版本开始的用户可以使用如下命令：
-        ```mysql
-        mysql> ALTER USER USER() IDENTIFIED BY 'Password123@mysql';
-        ```
+    MySQL 版本 5.7.6 版本以前用户可以使用如下命令：
+    ```shell
+    mysql> SET PASSWORD = PASSWORD('Password123@mysql');
+    ```
+    MySQL 版本 5.7.6 版本开始的用户可以使用如下命令：
+    ```shell
+    mysql> ALTER USER USER() IDENTIFIED BY 'Password123@mysql';
+    ```
+
 !!! Abstract ""
 	登录 MySQL 后，进行 MySQL 配置操作： 
     ```

@@ -22,15 +22,17 @@
     yum install -y nfs-utils
     ```
 
-    创建 NSF 目录：
+    创建 NSF static-resource thirdpart 目录：
     ```
-    mkdir -p /nfs-share
-    chmod 666 /nfs-share
+    mkdir -p /nfs-share /dataease-static-resource /dataease-thirdpart
+    chmod 666 /nfs-share /dataease-static-resource /dataease-thirdpart
     ```
 
     编辑 exports 文件：命令中的 “10.1.11.0/24” 替换为各自具体的网段：
     ```
     echo "/nfs-share 10.1.11.0/24(rw,no_root_squash,no_all_squash,sync)" >> /etc/exports
+    echo "/dataease-static-resource 10.1.11.0/24(rw,no_root_squash,no_all_squash,sync)" >> /etc/exports
+    echo "/dataease-thirdpart 10.1.11.0/24(rw,no_root_squash,no_all_squash,sync)" >> /etc/exports
     ```
 
     rpcbind 和 NFS 做开机启动：
