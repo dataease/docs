@@ -45,18 +45,20 @@
     #spring.redis.sentinel.nodes=10.1.11.197:6379,10.1.11.197:6380,10.1.11.197:6381
     #spring.redis.sentinel.password=admin123456
     
-    #cluster模式 redis 配置
+    #cluster 模式 redis 配置
     #spring.redis.cluster.nodes=10.1.11.197:6379,10.1.11.197:6380,10.1.11.197:6381,10.1.11.197:6382,10.1.11.197:6383,10.1.11.197:6384
     #spring.redis.cluster.max-redirects=3
     #spring.redis.password=admin123456
     ```
 
-## 4 准备 Excel 文件目录
+## 4 挂载文件目录
 
 !!! Abstract ""
 	**默认目录路径为：**
     ```
     /opt/dataease/data/kettle
+    /opt/dataease/data/static-resource
+    /opt/dataease/plugins/thirdpart
     ```
    
     安装 NFS 服务的软件包：
@@ -66,12 +68,14 @@
 
     创建挂载目录：
     ```
-    mkdir -p /opt/dataease/data/kettle
+    mkdir -p /opt/dataease/data/kettle /opt/dataease/data/static-resource  /opt/dataease/plugins/thirdpart
     ```
 
     挂载：
     ```
     echo "10.1.11.205:/nfs-share /opt/dataease/data/kettle nfs defaults 0 0" >> /etc/fstab
+    echo "10.1.11.205:/dataease-static-resource /opt/dataease/data/static-resource nfs defaults 0 0" >> /etc/fstab
+    echo "10.1.11.205:/dataease-thirdpart /opt/dataease/plugins/thirdpart nfs defaults 0 0" >> /etc/fstab
     mount -a
     ```
 
