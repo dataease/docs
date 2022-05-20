@@ -1,47 +1,59 @@
 ## 1 准备工作
 
-!!! Abstract ""
-    **本文配合前文 【[Nginx 部署](nginx_installation.md)】 和 【[MySQL 部署](mysql_installation.md)】 一起实现负载均衡和 MySQL 的高可用。**
-    
-    Keepalived 环境的搭建需要准备以下资源：
-    
-    * VIP: 10.1.11.202
-    * Nginx 节点 A： 10.1.11.198
-    * Nginx 节点 B： 10.1.11.199
-    * MySQL 节点 A： 10.1.11.180
-    * MySQL 节点 B： 10.1.11.181
-    * Keepalived 节点 A： 10.1.11.220
-    * Keepalived 节点 B： 10.1.11.221
-
-## 2 环境要求
+### 1.1 服务器准备
 
 !!! Abstract ""
-    **部署 Keepalived 服务器要求：**
+    **此处在 MySQL 集群节点上进行 Keepalived 的安装，一起实现负载均衡和 MySQL 的高可用，节点规划如下：**
 
-    * 操作系统：CentOS 7.x
-    * CPU/内存：4 核 8G
-    * 磁盘空间：500G
+    * Keepalived-1 节点，IP 为 10.1.11.187
+    * Keepalived-2 节点，IP 为 10.1.11.189
 
-## 3 安装 Keepalived
+    其他信息：
+
+    * VIP：10.1.11.137
+
+### 1.2 软件准备
+
+!!! Abstract ""
+    可以在 Keepalived 官网下载对应的安装包，此处下载的是 keepalived-2.2.7.tar.gz。
+    ```shell
+    wget --no-check-certificate https://www.keepalived.org/software/keepalived-2.2.7.tar.gz
+    ```
+
+## 2 安装 Keepalived
 
 !!! Abstract ""
 	**在两个节点上分别执行以下命令安装 Keepalived：**  
     ```
-    #安装依赖包
+    # 安装依赖包
     yum install -y gcc-c++ pcre-devel openssl-devel popt-devel gcc automake autoconf libtool make ca-certificates
     
-    #下载安装包
-    wget www.keepalived.org/software/keepalived-1.2.7.tar.gz
+    tar zxvf keepalived-2.2.7.tar.gz -C /opt
     
-    tar zxvf keepalived-1.2.7.tar.gz
-    
-    cd keepalived-1.2.7
+    cd /opt/keepalived-2.2.7
     
     ./configure --prefix=/usr/local/keepalived
     
     make && make install
     ```
-    
+## 3 配置系统服务
+
+!!! Abstract ""
+    在两个节点上分别执行以下命令：
+
+    ```shell
+    cp /usr/local/keepalived/etc/sysconfig/keepalived  /etc/sysconfig/keepalived
+    cp /usr/local/keepalived/sbin/keepalived /usr/sbin/keepalived
+    cp /opt/keepalived-2.2.7/keepalived/etc/init.d/keepalived /etc/init.d/keepalived
+    mkdir -p /etc/keepalived
+    ```
+    加为系统服务且开机自启动：
+
+    ```
+    chkconfig --add keepalived
+    chkconfig keepalived on
+    ```
+
 ## 4 编写 Keepalived 切换脚本
 
 !!! Abstract ""
@@ -55,26 +67,13 @@
     # 赋予切换脚本执行权限
     chmod +x /usr/local/keepalived/down.sh
     ```
-![keepalived-查看脚本](../../img/installation/HA/keepalived-查看脚本.png){ width="900px" }
 
-## 5 配置系统服务
+## 5 配置 Keepalived
 
-!!! Abstract ""
-	**在两个节点上分别执行以下命令：**
-    ```
-    cp /usr/local/keepalived/etc/rc.d/init.d/keepalived /etc/init.d/
-    cp /usr/local/keepalived/etc/sysconfig/keepalived /etc/sysconfig/
-    mkdir /etc/keepalived/
-    cp /usr/local/keepalived/etc/keepalived/keepalived.conf /etc/keepalived/
-    cp /usr/local/keepalived/sbin/keepalived /usr/sbin/
-    ```
-
-## 6 配置 Keepalived
-
-### 6.1 配置节点 A
+### 5.1 配置 Keepalived-1 节点
 
 !!! Abstract ""
-	**将节点 A 上的 Keepalived 配置文件 /etc/keepalived/keepalived.conf 修改为以下内容：** 
+	**将 Keepalived-1 上的 Keepalived 配置文件 /etc/keepalived/keepalived.conf 修改为以下内容：** 
     ```
     ! Configuration File for keepalived
     
@@ -84,25 +83,31 @@
     
     vrrp_instance VI_1 {
         state MASTER
-        interface eth0
+        interface ens192
         virtual_router_id 51
         priority 100
         advert_int 1
+        #本机 ip
+        unicast_src_ip 10.1.11.187
+        unicast_peer {
+            #对端 ip
+            10.1.11.189
+    }
         authentication {
             auth_type PASS
             auth_pass 1111
         }
         virtual_ipaddress {
-            10.1.11.202
+            10.1.11.137
         }
     }
     
-    virtual_server 10.1.11.202 3306 {
+    virtual_server 10.1.11.137 3306 {
         delay_loop 2
         persistence_timeout 50
         protocol TCP
     
-        real_server 10.1.11.180 3306 {
+        real_server 10.1.11.187 3306 {
             weight 3
             notify_down /usr/local/keepalived/down.sh
             TCP_CHECK {
@@ -113,12 +118,12 @@
         }
     }
     
-    virtual_server 10.1.11.202 80 {
+    virtual_server 10.1.11.137 80 {
         delay_loop 2
         persistence_timeout 50
         protocol TCP
     
-        real_server 10.1.11.198 80 {
+        real_server 10.1.11.187 80 {
             weight 3
             notify_down /usr/local/keepalived/down.sh
             TCP_CHECK {
@@ -133,14 +138,14 @@
 !!! Abstract ""
     **注意：**
 
-    1. 配置文件中的 “interface eth0”，需要视具体环境设置对应的网卡，如 “ens192” 等；       
+    1. 配置文件中的 “interface ens192”，需要视具体环境设置对应的网卡，如 “eth0” 等；       
     2. 注意配置文件中的 "state MASTER"、"priority 100"。
 
 
-### 6.2 配置节点 B
+### 5.2 配置 Keepalived-2 节点
 
 !!! Abstract ""
-	**将节点 B 上的 Keepalived 配置文件 /etc/keepalived/keepalived.conf 修改为以下内容：**
+	**将 Keepalived-2 节点上的 Keepalived 配置文件 /etc/keepalived/keepalived.conf 修改为以下内容：**
     ```
     ! Configuration File for keepalived
     
@@ -150,25 +155,31 @@
     
     vrrp_instance VI_1 {
         state BACkUP
-        interface eth0
+        interface ens192
         virtual_router_id 51
-        priority 90
+        priority 50
         advert_int 1
+        #本机ip
+        unicast_src_ip 10.1.11.189
+        unicast_peer {
+            #对端ip
+            10.1.11.187
+        }
         authentication {
             auth_type PASS
             auth_pass 1111
         }
         virtual_ipaddress {
-            10.1.11.202
+            10.1.11.137
         }
     }
     
-    virtual_server 10.1.11.202 3306 {
+    virtual_server 10.1.11.137 3306 {
         delay_loop 2
         persistence_timeout 50
         protocol TCP
     
-        real_server 10.1.11.181 3306 {
+        real_server 10.1.11.189 3306 {
             weight 3
             notify_down /usr/local/keepalived/down.sh
             TCP_CHECK {
@@ -179,12 +190,12 @@
         }
     }
     
-    virtual_server 10.1.11.202 80 {
+    virtual_server 10.1.11.137 80 {
         delay_loop 2
         persistence_timeout 50
         protocol TCP
     
-        real_server 10.1.11.199 80 {
+        real_server 10.1.11.189 80 {
             weight 3
             notify_down /usr/local/keepalived/down.sh
             TCP_CHECK {
@@ -200,9 +211,9 @@
     **注意：**
     
     1. 配置文件中的 “interface eth0”，需要视具体环境设置对应的网卡，如 “ens192” 等；       
-    2. 注意配置文件中的 "state BACKUP"、"priority 90"。
+    2. 注意配置文件中的 "state BACKUP"、"priority 50"。
 
-## 7 启动 Keepalived 服务
+## 6 启动 Keepalived 服务
 
 !!! Abstract ""
 	**在两个节点上分别启动 Keepalived 服务：** 
@@ -211,15 +222,25 @@
     ```
 ![keepalived-启动](../../img/installation/HA/keepalived-启动.png){ width="900px" }
 
-## 8 验证高可用配置
+## 7 验证高可用配置
 
 !!! Abstract ""
-	**Keepalived 配置的 MASTER 节点为节点 A，可以通过在两个节点上执行命令，查看配置的 VIP 在哪台机器上。** 
+	**Keepalived 配置的 MASTER 节点为 Keepalived-1 节点，可以通过在两个节点上执行命令，查看配置的 VIP 在哪台机器上。** 
+
+    ```shell
+    ip addr
     ```
-    ip a
-    ```
+
+    在 Keepalived-1 节点上可以看到对应的网卡上存在两个 IP，分别是自身 IP 10.1.11.187 和 VIP 10.1.11.137，而节点 B 上只会看到 IP 10.1.11.137。
+
+![Keepalived-1 节点-查看ip](../../img/installation/HA/keepalived-查看ip.png){ width="900px" }
     
-    在主节点 A 上可以看到对应的网卡上存在两个 IP，分别是自身 IP 10.1.11.220 和 VIP 10.1.11.202，而节点 B 上只会看到 IP 10.1.11.221。
-    
-    当在节点 A 上关闭 Nginx 服务后，再次执行上述命令，可以看到节点 B 上存在两个 IP，VIP 已经漂移到了节点 B 上。
-![keepalived-查看ip](../../img/installation/HA/keepalived-查看ip.png){ width="900px" }
+!!! Abstract ""
+    而 Keepalived-2 节点上只会看到 IP 10.1.11.189。
+
+![Keepalived-2 节点-查看ip](../../img/installation/HA/keepalived-查看ip2.png){ width="900px" }
+
+!!! Abstract ""
+    当在 Keepalived-1 节点上关闭 Nginx 服务后，再次执行上述命令，可以看到 Keepalived-2 节点上存在两个 IP，VIP 已经漂移到了 Keepalived-2 节点上。
+
+![keepalived-2 节点-查看ip](../../img/installation/HA/keepalived-查看ip2-1.png){ width="900px" }
