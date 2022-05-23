@@ -1,82 +1,78 @@
-## 1 准备工作
+## 1 NFS 服务器端安装与配置
+
+### 1.1 环境信息
 
 !!! Abstract ""
-    **NFS 服务器信息：**
+    **NFS 服务器信息如下：**
 
-    * IP： 10.1.11.205
+    - IP 为 10.1.11.64
 
-## 2 环境要求
+### 1.2 防火墙
 
 !!! Abstract ""
-    **部署 NFS 服务器要求：**
-
-    * 操作系统：CentOS 7.x
-    * CPU/内存：4 核 8G
-    * 磁盘空间：500G
-
-## 3 NFS 服务器端安装与配置
-
-!!! Abstract "" 
-    **安装 NFS 服务的软件包：**
+    **为了避免 NFS 服务的通信问题，可以先将防火墙关闭，或者打开对应的端口。**
+    ```shell
+    systemctl stop firewalld
     ```
+
+### 1.3 安装 NFS 服务器所需的软件包
+
+!!! Abstract ""
+    ```shell
     yum install -y nfs-utils
     ```
 
-    创建 NSF static-resource thirdpart 目录：
-    ```
-    mkdir -p /nfs-share /dataease-static-resource /dataease-thirdpart
-    chmod 666 /nfs-share /dataease-static-resource /dataease-thirdpart
+### 1.4 创建 NSF 目录
+
+!!! Abstract ""
+    ```shell
+    mkdir -p /opt/kettle /opt/plugins/thirdpart /opt/static-resource
+    chmod 666 -R /opt/kettle /opt/plugins/thirdpart /opt/static-resource
     ```
 
-    编辑 exports 文件：命令中的 “10.1.11.0/24” 替换为各自具体的网段：
-    ```
-    echo "/nfs-share 10.1.11.0/24(rw,no_root_squash,no_all_squash,sync)" >> /etc/exports
-    echo "/dataease-static-resource 10.1.11.0/24(rw,no_root_squash,no_all_squash,sync)" >> /etc/exports
-    echo "/dataease-thirdpart 10.1.11.0/24(rw,no_root_squash,no_all_squash,sync)" >> /etc/exports
-    ```
+### 1.5 编辑 exports 文件
 
-    rpcbind 和 NFS 做开机启动：
+!!! Abstract ""
+    **以下命令中的 “10.1.11.0/24” 请替换为各自具体的网段。**
+
+    ```shell
+    echo "/opt/kettle 10.1.11.0/24(rw,no_root_squash,no_all_squash,sync)" >> /etc/exports
     
-    **提示：** 必须先启动 rpcbind 服务。
+    echo "/opt/static-resource 10.1.11.0/24(rw,no_root_squash,no_all_squash,sync)" >> /etc/exports
+    
+    echo "/opt/plugins/thirdpart 10.1.11.0/24(rw,no_root_squash,no_all_squash,sync)" >> /etc/exports
     ```
+
+### 1.6 rpcbind 和 NFS 做开机启动
+
+!!! Abstract ""
+    **NFS 服务器使用 rpcbind 来实现端口映射工作，必须先启动 rpcbind 服务。**
+
+    ```shell
     systemctl enable rpcbind.service
     systemctl enable nfs-server.service
     ```
- 
-    分别启动 rpcbind 和 NFS 服务：
-    ```
+
+### 1.7 分别启动 rpcbind 和 NFS 服务
+
+!!! Abstract ""
+    ```shell
     systemctl start rpcbind.service
     systemctl start nfs-server.service
     ```
 
-    设置 exports 配置生效：
-    ```
+### 1.8 让 exports 配置生效
+
+!!! Abstract ""
+    ```shell
     exportfs -r
     ```
 
-    检查 exports 是否生效：
-    ```
+### 1.9 检查 exports 是否生效
+
+!!! Abstract ""
+    ```conf
     exportfs
-    # 10.1.11.205 为 nfs 服务器地址，即当前机器地址
-    showmount -e 10.1.11.205
-    ```
-![check_nfs](../../img/installation/HA/check_nfs.png){ width="900px" }
-
-## 4 NFS 客户端安装与配置
-
-!!! Abstract ""  
-    **安装 NFS 服务的软件包：**
-    ```
-    yum install -y nfs-utils
-    ```
-
-    创建挂载目录：
-    ```
-    mkdir -p /opt/kettle/data
-    ```
-
-    挂载：
-    ```
-    echo "10.1.11.205:/nfs-share /opt/kettle/data nfs defaults 0 0" >> /etc/fstab
-    mount -a
+    # 10.1.11.64 为 NFS 服务器地址，即当前机器地址
+    showmount -e 10.1.11.64
     ```

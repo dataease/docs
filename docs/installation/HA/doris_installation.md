@@ -1,298 +1,220 @@
-## 1 标准安装
+## 1 准备工作
+
+### 1.1 服务器准备
 
 !!! Abstract ""
-	可以参考官网的集群部署文档：https://doris.apache.org/zh-CN/installing/install-deploy.html#%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2
-	
-## 2 Docker-Compose 安装 
+    **此处搭建一个简单的 Apache Doris 集群，集群节点规划：**
+
+    - 1 个 FE 节点，IP 为 10.1.11.39
+    - 3 个 BE 节点，IP 分别为 10.1.11.37，10.1.11.27，10.1.11.70
+
+    所有服务器的操作系统均为 CentOS 7，这里使用的是 CentOS 7.7，服务器硬件配置视数据规模而定，可参考[ Apache Doris 官方文档](https://doris.apache.org/zh-CN/install/install-deploy.html)。
+
+### 1.2 软件准备
 
 !!! Abstract ""
-	**需要在服务器上提前安装 Docker 与 Docker-Compose，**
-	在 Doris 节点上，使用 DataEase 提供的 Doris 镜像安装和运行 Apache Doris。
+    从 Apache Doris 官网[下载 Doris 的安装包](https://doris.apache.org/zh-CN/downloads/downloads.html) ， 将安装包放在所有 Doris 节点服务器上，这里下载的是 1.0.0 版本的安装包。
 
-### 2.1 准备工作
-
-!!! Abstract ""
-    **Doris 服务器信息：**
-
-    * IP： 10.1.11.183
-
-### 2.2 环境要求
-  
-!!! Abstract ""
-    **部署 Doris 服务器要求：**
-
-    * 操作系统：CentOS 7.x
-    * CPU/内存：4 核 16G
-    * 磁盘空间：500G    
-
-### 2.3 创建文件夹
-
-!!! Abstract ""
-    ```
-    mkdir -p /opt/doris/conf /opt/doris/bin /opt/doris/data/fe /opt/doris/data/be /opt/doris/data/be-2 /opt/doris/logs/fe /opt/doris/logs/be /opt/doris/logs/be-2
+    下载了 Doris 安装包后，将安装包解压，放置于自己的运行目录下。这处示例将安装包放置于 /opt/doris 目录下，结构如下所示：
+    ```conf
+    [root@doris-1 opt]# tree -L 2
+    .
+    └── doris
+        ├── apache_hdfs_broker
+        ├── be
+        ├── CHANGE-LOG.txt
+        ├── DISCLAIMER
+        ├── fe
+        ├── LICENSE-dist.txt
+        ├── licenses
+        ├── NOTICE-dist.txt
+        ├── README
+        └── udf
+    
+    6 directories, 5 files
     ```
 
-### 2.4 准备配置文件
+### 1.3 操作系统参数设置
 
 !!! Abstract ""
-    **准备 fe.conf，放置在 /opt/doris/conf/fe.conf：**
-    ```
-    # Licensed to the Apache Software Foundation (ASF) under one
-    # or more contributor license agreements.  See the NOTICE file
-    # distributed with this work for additional information
-    # regarding copyright ownership.  The ASF licenses this file
-    # to you under the Apache License, Version 2.0 (the
-    # "License"); you may not use this file except in compliance
-    # with the License.  You may obtain a copy of the License at
-    #
-    #   http://www.apache.org/licenses/LICENSE-2.0
-    #
-    # Unless required by applicable law or agreed to in writing,
-    # software distributed under the License is distributed on an
-    # "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-    # KIND, either express or implied.  See the License for the
-    # specific language governing permissions and limitations
-    # under the License.
-    
-    #####################################################################
-    ## The uppercase properties are read and exported by bin/start_fe.sh.
-    ## To see all Frontend configurations,
-    ## see fe/src/org/apache/doris/common/Config.java
-    #####################################################################
-    
-    # the output dir of stderr and stdout
-    LOG_DIR = ${DORIS_HOME}/log
-    
-    DATE = `date +%Y%m%d-%H%M%S`
-    JAVA_OPTS="-Xmx4096m -XX:+UseMembar -XX:SurvivorRatio=8 -XX:MaxTenuringThreshold=7 -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+CMSClassUnloadingEnabled -XX:-CMSParallelRemarkEnabled -XX:CMSInitiatingOccupancyFraction=80 -XX:SoftRefLRUPolicyMSPerMB=0 -Xloggc:$DORIS_HOME/log/fe.gc.log.$DATE"
-    
-    # For jdk 9+, this JAVA_OPTS will be used as default JVM options
-    JAVA_OPTS_FOR_JDK_9="-Xmx4096m -XX:SurvivorRatio=8 -XX:MaxTenuringThreshold=7 -XX:+CMSClassUnloadingEnabled -XX:-CMSParallelRemarkEnabled -XX:CMSInitiatingOccupancyFraction=80 -XX:SoftRefLRUPolicyMSPerMB=0 -Xlog:gc*:$DORIS_HOME/log/fe.gc.log.$DATE:time"
-    
-    ##
-    ## the lowercase properties are read by main program.
-    ##
-    
-    # INFO, WARN, ERROR, FATAL
-    sys_log_level = INFO
-    
-    # store metadata, must be created before start FE.
-    # Default value is ${DORIS_HOME}/doris-meta
-    # meta_dir = ${DORIS_HOME}/doris-meta
-    
-    http_port = 8030
-    rpc_port = 9020
-    query_port = 9030
-    edit_log_port = 9010
-    mysql_service_nio_enabled = true
-    
-    # Choose one if there are more than one ip except loopback address.
-    # Note that there should at most one ip match this list.
-    # If no ip match this rule, will choose one randomly.
-    # use CIDR format, e.g. 10.10.10.0/24
-    # Default value is empty.
-    # priority_networks = 10.10.10.0/24;192.168.0.0/16
-    
-    # Advanced configurations
-    # log_roll_size_mb = 1024
-    # sys_log_dir = ${DORIS_HOME}/log
-      sys_log_roll_num = 1
-    # sys_log_verbose_modules =
-    # audit_log_dir = ${DORIS_HOME}/log
-    # audit_log_modules = slow_query, query
-      audit_log_roll_num = 1
-    # meta_delay_toleration_second = 10
-      qe_max_connection = 65535
-      max_conn_per_user = 1024
-    # qe_query_timeout_second = 300
-    # qe_slow_log_ms = 5000
-      sys_log_delete_age=1d
-      audit_log_delete_age=3d
-      exec_mem_limit=8589934592
-      tablet_create_timeout_second=30
-      catalog_trash_expire_second = 60
-      enable_batch_delete_by_default=true
-      max_layout_length_per_row=10000000
-      stream_load_default_timeout_second=6000
-    ```
-    准备 be.conf，放置在 /opt/doris/conf/be.conf：
-    ```
-    # Licensed to the Apache Software Foundation (ASF) under one
-    # or more contributor license agreements.  See the NOTICE file
-    # distributed with this work for additional information
-    # regarding copyright ownership.  The ASF licenses this file
-    # to you under the Apache License, Version 2.0 (the
-    # "License"); you may not use this file except in compliance
-    # with the License.  You may obtain a copy of the License at
-    #
-    #   http://www.apache.org/licenses/LICENSE-2.0
-    #
-    # Unless required by applicable law or agreed to in writing,
-    # software distributed under the License is distributed on an
-    # "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-    # KIND, either express or implied.  See the License for the
-    # specific language governing permissions and limitations
-    # under the License.
-    
-    PPROF_TMPDIR="$DORIS_HOME/log/"
-    
-    # INFO, WARNING, ERROR, FATAL
-    sys_log_level = INFO
-    
-    # ports for admin, web, heartbeat service
-    be_port = 9060
-    be_rpc_port = 9070
-    webserver_port = 8040
-    heartbeat_service_port = 9050
-    brpc_port = 8060
-    
-    # Choose one if there are more than one ip except loopback address.
-    # Note that there should at most one ip match this list.
-    # If no ip match this rule, will choose one randomly.
-    # use CIDR format, e.g. 10.10.10.0/24
-    # Default value is empty.
-    # priority_networks = 10.10.10.0/24;192.168.0.0/16
-    
-    # data root path, separate by ';'
-    # you can specify the storage medium of each root path, HDD or SSD
-    # you can add capacity limit at the end of each root path, seperate by ','
-    # eg:
-    # storage_root_path = /home/disk1/doris.HDD,50;/home/disk2/doris.SSD,1;/home/disk2/doris
-    # /home/disk1/doris.HDD, capacity limit is 50GB, HDD;
-    # /home/disk2/doris.SSD, capacity limit is 1GB, SSD;
-    # /home/disk2/doris, capacity limit is disk capacity, HDD(default)
-    #
-    # you also can specify the properties by setting '<property>:<value>', seperate by ','
-    # property 'medium' has a higher priority than the extension of path
-    #
-    # Default value is ${DORIS_HOME}/storage, you should create it by hand.
-    # storage_root_path = ${DORIS_HOME}/storage
-    
-    # Advanced configurations
-    # sys_log_dir = ${DORIS_HOME}/log
-    # sys_log_roll_mode = SIZE-MB-1024
-      sys_log_roll_num = 1
-      load_error_log_reserve_hours=1
-    # sys_log_verbose_modules = *
-    # log_buffer_level = -1
-    # palo_cgroups
-      trash_file_expire_time_sec = 60
-      snapshot_expire_time_sec = 60
-      pending_data_expire_time_sec = 60
-    exec_mem_limit = 8G
-    streaming_load_max_mb=102400
-    ```
-    准备初始化脚本 init.sql，放置在 /opt/doris/bin/init.sql：
-    ```
-    ALTER SYSTEM ADD BACKEND '172.19.0.199:9050';
-    ALTER SYSTEM ADD BACKEND '172.19.0.200:9050';
-    CREATE DATABASE dataease;
-    SET PASSWORD FOR 'root' = PASSWORD('Password123@doris');
-    ```
-    准备 docker-compose 文件，放置在 /opt/doris/docker-compose.yml：
-    ```
-    version: '2.1'
-    services:
-    
-      doris-fe:
-        image: registry.cn-qingdao.aliyuncs.com/dataease/doris:0.15-0309
-        container_name: doris-fe
-        environment:
-          - DORIS_ROLE=fe-leader
-          - FORMAT_MESSAGES_PATTERN_DISABLE_LOOKUPS=true
-        ports:
-          - 8030:8030
-          - 9030:9030
-        volumes:
-          - /opt/doris/data/fe:/opt/doris/fe/doris-meta
-          - /opt/doris/logs/fe:/opt/doris/fe/log
-          - /opt/doris/conf/fe.conf:/opt/doris/fe/conf/fe.conf
-          - /opt/doris/bin:/docker-entrypoint-initdb.d/
-        networks:
-          doris-network :
-            ipv4_address: 172.19.0.198
-        restart: always
-        depends_on:
-          doris-be:
-            condition: service_healthy
-          doris-be-2:
-            condition: service_healthy
-        healthcheck:
-          test: [ "CMD-SHELL", "curl -sS 127.0.0.1:8030 || exit 1" ]
-          interval: 10s
-          timeout: 5s
-          retries: 3
-    
-      doris-be:
-        image: registry.cn-qingdao.aliyuncs.com/dataease/doris:0.15-0309
-        container_name: doris-be
-        environment:
-          - DORIS_ROLE=be
-          - FORMAT_MESSAGES_PATTERN_DISABLE_LOOKUPS=true
-        ports:
-          - 8040:8040
-        volumes:
-          - /opt/doris/data/be:/opt/doris/be/storage
-          - /opt/doris/logs/be:/opt/doris/be/log
-          - /opt/doris/conf/be.conf:/opt/doris/be/conf/be.conf
-        networks:
-          doris-network :
-            ipv4_address: 172.19.0.199
-        restart: always
-        healthcheck:
-          test: [ "CMD-SHELL", "curl -sS 127.0.0.1:8040 || exit 1" ]
-          interval: 10s
-          timeout: 5s
-          retries: 3
-    
-      doris-be-2:
-        image: registry.cn-qingdao.aliyuncs.com/dataease/doris:0.15-0309
-        container_name: doris-be-2
-        environment:
-          - DORIS_ROLE=be
-          - FORMAT_MESSAGES_PATTERN_DISABLE_LOOKUPS=true
-        ports:
-          - 8041:8040
-        volumes:
-          - /opt/doris/data/be-2:/opt/doris/be/storage
-          - /opt/doris/logs/be-2:/opt/doris/be/log
-          - /opt/doris/conf/be.conf:/opt/doris/be/conf/be.conf
-        networks:
-          doris-network :
-            ipv4_address: 172.19.0.200
-        restart: always
-        healthcheck:
-          test: [ "CMD-SHELL", "curl -sS 127.0.0.1:8040 || exit 1" ]
-          interval: 10s
-          timeout: 5s
-          retries: 3
-    
-    networks:
-      doris-network:
-        driver: bridge
-        ipam:
-          driver: default
-          config:
-            - subnet: 172.19.0.0/16
-              gateway: 172.19.0.1
+    **设置系统最大打开文件句柄数，修改 /etc/security/limits.conf**
+
+    ```conf
+    echo "* soft nofile 204800" >> /etc/security/limits.conf
+    echo "* hard nofile 204800" >> /etc/security/limits.conf
+    echo "* soft nproc 204800" >> /etc/security/limits.conf
+    echo "* hard nproc 204800 " >> /etc/security/limits.conf
     ```
 
-### 2.5 运行 Apache Doris 
+    修改 /etc/sysctl.conf
+    
+    ```conf
+    echo fs.file-max = 6553560 >> /etc/sysctl.conf
+    ```
+
+    设置完参数后，可以重启一下服务器。
+
+### 1.4 防火墙
 
 !!! Abstract ""
-    ```
-    cd /opt/doris
-    docker-compose up -d
-    ```
-![doris-状态](../../img/installation/HA/doris-状态.png){ width="900px" }
+    **Doris 各个实例直接通过网络进行通讯，以下表格展示了所有需要的端口：**
 
-### 2.6 检查
+| 实例名称 | 端口名称 | 默认端口 | 通讯方向 | 说明                                     |
+| --- | --- | --- | --- |----------------------------------------|
+| BE | be_port                  | 9060 | FE --> BE | BE 上 thrift server 的端口，用于接收来自 FE 的请求   |
+| BE | webserver_port           | 8040 | BE <--> BE | BE 上的 http server 的端口                  |
+| BE | heartbeat_service_port   | 9050 | FE --> BE | BE 上心跳服务端口（thrift），用于接收来自 FE 的心跳       |
+| BE | brpc_port                | 8060 | FE <--> BE, BE <--> BE | BE 上的 brpc 端口，用于 BE 之间通讯               |
+| FE | http_port                | 8030 | FE <--> FE，用户 <--> FE | FE 上的 http server 端口                   |
+| FE | rpc_port                 | 9020 | BE --> FE, FE <--> FE | FE 上的 thrift server 端口，每个 fe 的配置需要保持一致 |
+| FE | query_port               | 9030 | 用户 <--> FE | FE 上的 mysql server 端口                  |
+| FE | edit_log_port            | 9010 | FE <--> FE | FE 上的 bdbje 之间通信用的端口                   |
 
 !!! Abstract ""
-    **用 MySQL 客户端接入 doris-fe，查看 doris be 节点是否成功添加：**
-    ```
-    mysql> show proc "/backends";
-    ```
-![doris-检查](../../img/installation/HA/doris-检查.png){ width="900px" }
-	
+    如果简单处理，也可以将防火墙关闭：
 
+    ```shell
+    service firewalld stop
+    ```
+
+## 2 安装运行 Doris FE
+
+### 2.1 Java 运行环境
+
+!!! Abstract ""
+    **Doris FE 是 Java 项目，它的运行需要有 JRE 的环境支持，在 FE 节点上安装 Java 环境：**
+    ```conf
+    yum install -y java-1.8.0-openjdk
+
+    echo "export JAVA_HOME=/usr/lib/jvm/jre-1.8.0-openjdk" >> /etc/profile
+    source /etc/profile
+    ```
+
+### 2.2 配置 FE
+
+!!! Abstract ""
+    **获取 Doris 节点所处的内网网段，此示例的内网网段的 CIDR 是 10.1.11.0/24。**  
+    如不清楚，也可执行命令查询：
+    ```conf
+    [root@Doris-1 ~]# ip addr
+    1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+        link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+        inet 127.0.0.1/8 scope host lo
+            valid_lft forever preferred_lft forever
+        inet6 ::1/128 scope host
+            valid_lft forever preferred_lft forever
+    2: ens192: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+        link/ether 00:50:56:bb:75:3e brd ff:ff:ff:ff:ff:ff
+        inet 10.1.11.39/24 brd 10.1.11.255 scope global noprefixroute ens192
+            valid_lft forever preferred_lft forever
+        inet6 fe80::250:56ff:febb:753e/64 scope link noprefixroute
+            valid_lft forever preferred_lft forever
+    ```
+
+    返回结果中的 10.1.11.39/24，也可作为当前节点的 CIDR 使用。
+
+    将网段信息配置到 /opt/doris/fe/conf/fe.conf 配置文件中：
+    ```conf
+    echo "priority_networks = 10.1.11.39/24" >> /opt/doris/fe/conf/fe.conf
+    ```
+    fe.conf 配置文件中很多参数默认是注释状态，可以根据实际情况来调整，例如：
+    ```conf
+    qe_max_connection = 65535
+    max_conn_per_user = 1024
+    sys_log_delete_age=1d
+    audit_log_delete_age=3d
+    exec_mem_limit=8589934592
+    tablet_create_timeout_second=30
+    catalog_trash_expire_second = 60
+    enable_batch_delete_by_default=true
+    max_layout_length_per_row=10000000
+    ```
+
+### 2.3 启动 FE
+
+!!! Abstract ""
+    **执行启动命令：**
+    ```shell
+    bash /opt/doris/fe/bin/start_fe.sh --daemon
+    ```
+    可以通过查看 FE 的运行日志来了解 FE 的启动情况：
+    ```shell
+    tail -f /opt/doris/fe/log/fe.log
+    ```
+
+## 3 安装运行 Doris BE
+
+### 3.1 配置 BE
+
+!!! Abstract ""
+    **获取 Doris 节点所处的内网网段，此示例的内网网段的 CIDR 是 10.1.11.0/24。**  
+    如不清楚，也可参考之前配置 FE 时，通过命令 ip a 获取。
+    将网段信息配置到 /opt/doris/be/conf/be.conf 配置文件中：
+    ```shell
+    echo "priority_networks = 10.1.11.0/24" >> /opt/doris/be/conf/be.conf
+    ```
+    be.conf 配置文件中很多参数默认是注释状态，可根据实际情况来调整。
+
+### 3.2 启动 BE
+
+!!! Abstract ""
+    **执行启动命令：**
+    ```shell
+    bash /opt/doris/be/bin/start_be.sh --daemon
+    ```
+
+    可以通过查看 BE 的运行日志来了解 BE 的启动情况：
+    ```shell
+    tail -f /opt/doris/be/log/be.INFO
+    ```
+
+## 4 配置集群
+
+### 4.1 登录 FE
+
+!!! Abstract ""
+    **以 MySQL client 登录 FE，初始时 FE root 用户无密码：**
+    ```shell
+    mysql -uroot -h10.1.11.39 -P9030
+    ```
+
+### 4.2 在 FE 中添加 BE 节点
+
+!!! Abstract ""
+    ```conf
+    mysql> ALTER SYSTEM ADD BACKEND '10.1.11.37:9050';
+    Query OK, 0 rows affected (0.06 sec)
+    
+    mysql> ALTER SYSTEM ADD BACKEND '10.1.11.27:9050';
+    Query OK, 0 rows affected (0.00 sec)
+    
+    mysql> ALTER SYSTEM ADD BACKEND '10.1.11.70:9050';
+    Query OK, 0 rows affected (0.01 sec)
+    ```
+
+### 4.3 查询 BE 是否成功添加
+
+!!! Abstract ""
+    ```conf
+    mysql> show proc '/backends';
+    +-----------+-----------------+------------+------------+---------------+--------+----------+----------+---------------------+---------------------+-------+----------------------+-----------------------+-----------+------------------+---------------+---------------+---------+----------------+--------------------------+--------+--------------------+-------------------------------------------------------------------------------------------------------------------------------+
+    | BackendId | Cluster         | IP         | HostName   | HeartbeatPort | BePort | HttpPort | BrpcPort | LastStartTime       | LastHeartbeat       | Alive | SystemDecommissioned | ClusterDecommissioned | TabletNum | DataUsedCapacity | AvailCapacity | TotalCapacity | UsedPct | MaxDiskUsedPct | Tag                      | ErrMsg | Version            | Status                                                                                                                        |
+    +-----------+-----------------+------------+------------+---------------+--------+----------+----------+---------------------+---------------------+-------+----------------------+-----------------------+-----------+------------------+---------------+---------------+---------+----------------+--------------------------+--------+--------------------+-------------------------------------------------------------------------------------------------------------------------------+
+    | 11002     | default_cluster | 10.1.11.27 | 10.1.11.27 | 9050          | 9060   | 8040     | 8060     | 2022-05-13 12:39:38 | 2022-05-13 14:19:22 | true  | false                | false                 | 7         | 2.179 KB         | 93.932 GB     | 96.941 GB     | 3.10 %  | 3.10 %         | {"location" : "default"} |        | 1.0.0-rc03-Unknown | {"lastSuccessReportTabletsTime":"2022-05-13 14:18:34","lastStreamLoadTime":-1,"isQueryDisabled":false,"isLoadDisabled":false} |
+    | 11001     | default_cluster | 10.1.11.37 | 10.1.11.37 | 9050          | 9060   | 8040     | 8060     | 2022-05-13 12:46:46 | 2022-05-13 14:19:22 | true  | false                | false                 | 2         | 2.146 KB         | 93.936 GB     | 96.941 GB     | 3.10 %  | 3.10 %         | {"location" : "default"} |        | 1.0.0-rc03-Unknown | {"lastSuccessReportTabletsTime":"2022-05-13 14:19:11","lastStreamLoadTime":-1,"isQueryDisabled":false,"isLoadDisabled":false} |
+    | 11003     | default_cluster | 10.1.11.70 | 10.1.11.70 | 9050          | 9060   | 8040     | 8060     | 2022-05-13 12:45:41 | 2022-05-13 14:19:22 | true  | false                | false                 | 3         | 1.063 KB         | 93.932 GB     | 96.941 GB     | 3.10 %  | 3.10 %         | {"location" : "default"} |        | 1.0.0-rc03-Unknown | {"lastSuccessReportTabletsTime":"2022-05-13 14:18:23","lastStreamLoadTime":-1,"isQueryDisabled":false,"isLoadDisabled":false} |
+    +-----------+-----------------+------------+------------+---------------+--------+----------+----------+---------------------+---------------------+-------+----------------------+-----------------------+-----------+------------------+---------------+---------------+---------+----------------+--------------------------+--------+--------------------+-------------------------------------------------------------------------------------------------------------------------------+
+    3 rows in set (0.35 sec)
+    ```
+    查询结果中 Alive 字段为 true 则表示添加成功。
+
+### 4.4 创建 DataEase 库及初始化 FE 密码
+    
+!!! Abstract ""
+    ```conf
+    mysql> CREATE DATABASE dataease;
+    Query OK, 0 rows affected (0.02 sec)
+
+    mysql> SET PASSWORD FOR 'root' = PASSWORD('Password123@doris');
+    Query OK, 0 rows affected (0.00 sec)
+    ```
