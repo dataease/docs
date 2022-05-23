@@ -36,8 +36,6 @@
 
 ## 2 安装 NFS
 
-### 2.1 挂载 NFS 目录
-
 !!! Abstract ""
     由于 Kettle 需要使用通过 DataEase 上传的 Excel 文件，此处采用了 NFS 方案。
 
@@ -52,14 +50,12 @@
     echo "10.1.11.64:/opt/kettle /opt/dataease/data/kettle nfs defaults 0 0" >> /etc/fstab
     ```
 
-### 2.2 挂载
-
-!!! Abstract ""
     ```
+    # 挂载
     mount -a
     ```
 
-### 2.3 安装 JDK 1.8
+## 3 安装 JDK 1.8
 
 !!! Abstract ""
     执行命令安装 OpenJDK 1.8：
@@ -68,22 +64,22 @@
     yum install -y java-1.8.0-openjdk
     ```
 
-## 3 安装 Kettle
+## 4 安装 Kettle
 
-### 3.1 解压安装包
+### 4.1 解压安装包
 
 !!! Abstract ""
     执行命令将安装包解压到 /opt/kettle 目录下：
     ```shell
     unzip -d /opt/kettle pdi-ce-8.3.0.0-371.zip
     ```
-### 3.2 安装驱动
+### 4.2 安装驱动
 
 !!! Abstract ""
     Kettle 需要通过数据库驱动程序来连接各类数据源，官方提供的安装包内驱动程序并不齐全，此处需要额外添加几个驱动，可以通过百度网盘进行下载：  
     链接: https://pan.baidu.com/s/1bTpL1MtFnebaOv1wqKhulQ?pwd=ltvj 提取码: ltvj
 
-### 3.3 创建配置文件
+### 4.3 创建配置文件
 
 !!! Abstract ""
     创建 Kettle 运行时的配置文件，将数据目录指向 NFS 路径：
@@ -107,7 +103,7 @@
     EOF
     ```
 
-### 3.4 配置环境变量
+### 4.4 配置环境变量
 
 !!! Abstract ""
     设置环境变量 KETTLE_HOME：
@@ -117,7 +113,7 @@
     source /etc/profile
     ```
 
-### 3.5 运行 Kettle
+### 4.5 运行 Kettle
 
 !!! Abstract ""
     执行启动命令：
