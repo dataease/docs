@@ -22,7 +22,7 @@
     yum install -y nfs-utils
     ```
 
-### 1.4 创建 NSF 目录
+### 1.4 创建 NFS 目录
 
 !!! Abstract ""
     ```shell

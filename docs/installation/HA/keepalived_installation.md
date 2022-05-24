@@ -231,7 +231,7 @@
     ip addr
     ```
 
-    在 Keepalived-1 节点上可以看到对应的网卡上存在两个 IP，分别是自身 IP 10.1.11.187 和 VIP 10.1.11.137，而节点 B 上只会看到 IP 10.1.11.137。
+    在 Keepalived-1 节点上可以看到对应的网卡上存在两个 IP，分别是自身 IP 10.1.11.187 和 VIP 10.1.11.137。
 
 ![Keepalived-1 节点-查看ip](../../img/installation/HA/keepalived-查看ip.png){ width="900px" }
     
