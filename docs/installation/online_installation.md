@@ -75,7 +75,7 @@
 	├── docker-compose-mysql.yml                    #-- DataEase 内建的 MySQl 所需的 Docker Compose 文件 
 	├── docker-compose.yml                          #-- DataEase 基础 Docker Compose 文件，定义了网络等基础信息 
 	├── logs                                        #-- DataEase 各组件的日志文件持久化目录
-	└── templates                                   #-- DataEase 各组件及数据库等中间件的配置文件的原始文件
+    └── templates                                   #-- DataEase 各组件及数据库等中间件的配置文件的原始文件
     ```
 
 !!! Abstract ""

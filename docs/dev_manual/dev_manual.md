@@ -57,7 +57,7 @@
 
 !!! Abstract ""
     **配置文件：**  
-    DataEase 会默认加载该路径下的配置文件 /opt/dataease/conf/dataease.properties，请参考下列配置创建对应目录及配置文件。
+    DataEase 会默认加载该路径下的配置文件 /opt/dataease/conf/dataease.properties，请参考下面配置创建对应目录及配置文件。
 
     ```properties
     # 数据库配置

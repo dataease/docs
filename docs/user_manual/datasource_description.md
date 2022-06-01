@@ -10,8 +10,21 @@
 !!! Abstract ""
     - **数据仓库/数据湖：** AWS RedShift、MaxCompute
     - **OLTP 型数据库：** MySQL、MongoDB、SQL Server、Oracle、PostgreSQL、MariaDB、Db2、TiDB
-    - **OLAP 型数据库：** Apache Hive、Elasticsearch、ClickHouse、Apache Doris、Apache Impala、StarRocks
+    - **OLAP 型数据库：** Apache Hive、Elasticsearch、ClickHouse、Apache Doris、Apache Impala、StarRocks、Presto
     - **数据文件：** Excel
     - **API 数据源**
 
 ![支持的数据源类型](../img/datasource_configuration/支持的数据源类型.png){ width="900" }
+
+## 3 数据源驱动管理
+
+!!! Abstract ""
+    支持手动上传数据源驱动程序，在创建数据源时手动选择驱动，匹配不同版本数据库，下图以添加 Impala 驱动为示例。
+
+![数据源驱动管理入口](../img/datasource_configuration/数据源驱动管理入口.png){ width="900" }
+
+![数据源管理_添加驱动](../img/datasource_configuration/数据源管理_添加驱动.png){ width="900" }
+
+![上传驱动](../img/datasource_configuration/上传驱动.png){ width="900" }
+
+![选择上传的驱动](../img/datasource_configuration/选择上传的驱动.png){ width="900" }

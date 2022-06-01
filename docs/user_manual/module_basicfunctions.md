@@ -7,6 +7,11 @@
 
 ![组建编辑_基础功能](../img/dashboard_generation/组件编辑_基础功能.png){ width="900px" }
 
+!!! Abstract ""
+	当仪表板处于编辑的场景下，前进后退浏览器会弹出提示信息，避免在操作过程中由于使用触摸板不小心退出编辑的情况。
+
+![仪表板_编辑_退出确认提示.](../img/dashboard_generation/仪表板_编辑_退出确认提示.png){ width="900px" }
+
 ## 2 复制
 
 !!! Abstract ""

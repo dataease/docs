@@ -7,6 +7,11 @@
  
 ![新建数据连接](../img/datasource_configuration/新增.png){ width="900" }
 
+!!! Abstract ""
+    配置数据源时，支持手动选择与数据库匹配的驱动，解决不同版本数据源驱动程序不兼容问题，如不更改，驱动选择栏默认是 Default，即系统自带的驱动。
+
+![选择驱动](../img/datasource_configuration/选择驱动.png){ width="900" }
+
 ## 2 数据源校验
 
 !!! Abstract ""

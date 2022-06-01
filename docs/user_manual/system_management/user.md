@@ -50,3 +50,13 @@
 	点击用户列表操作区的【删除】按钮，在弹出的确认框中点击【确定】按钮即可。
 
 ![删除用户](../../img/system_management/删除用户.png){ width="900px" }
+
+## 6 其他
+### 6.1 个人信息
+
+!!! Abstract ""
+	个人信息支持编辑，可修改电话、姓名和邮箱，如下图所示。
+
+![个人信息入口](../../img/system_management/个人信息入口.png){ width="900px" }
+
+![修改个人信息](../../img/system_management/修改个人信息.png){ width="900px" }

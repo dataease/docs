@@ -103,6 +103,7 @@ nav:
             - 用户管理: user_manual/system_management/user.md
             - 系统参数: user_manual/system_management/param.md
             - 模版管理: user_manual/system_management/module.md
+            - 操作日志: user_manual/system_management/operation_log.md
             - 站内消息: user_manual/system_management/message.md
             - 定时任务: user_manual/system_management/task.md
         - 移动端:

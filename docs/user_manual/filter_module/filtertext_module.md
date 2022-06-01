@@ -29,3 +29,13 @@
 ![文本搜索组件入口](../../img/dashboard_generation/文本搜索组件入口.png){ width="900px" }  
 ![仪表盘编辑_过滤组件](../../img/dashboard_generation/文本搜索组件.png){ width="900px" }  
 ![文本搜索组件显示效果](../../img/dashboard_generation/文本搜索组件显示效果.png){ width="900px" }
+
+## 4 下拉树组件
+
+!!! Abstract ""
+	支持把具有级联关系的字段依次拖入至框中，实现级联功能。  
+	**注意：** 字段需要来自同一个数据集。
+
+![下拉树组件入口](../../img/dashboard_generation/下拉树组件入口.png){ width="900px" }
+
+![下拉树组件显示效果](../../img/dashboard_generation/下拉树组件显示效果.png){ width="900px" }

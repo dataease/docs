@@ -371,3 +371,12 @@
 !!! Abstract ""
 
     ![antv词云图](../../img/view_generation/view_gallery/AntV/词云图.png){ width="900px" }
+
+### 2.16 符号地图
+
+!!! Abstract ""
+    符号地图根据经纬点绘制图形（不同于以往的行政区划名称），对点数据进行展示，体现相关对象的空间分布，符号地图可根据鼠标缩放地图范围，且范围不限制，可至全球。  
+    **注意：** 符号地图基于高德地图，所以该组件需要在在线环境下使用，且使用符号地图的数据集字段类型需为“地理位置”。
+
+!!! Abstract ""
+    ![antv符号地图](../../img/view_generation/view_gallery/AntV/antv符号地图.png){ width="900px" }

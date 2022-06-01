@@ -59,14 +59,19 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="42">
+		<td rowspan="43">
 			仪表板
 		</td>
-		<td rowspan="3">
+		<td rowspan="4">
 			仪表板管理
 		</td>
 		<td>
 			支持仪表板的新建、重命名、删除、复制、移动、搜索等；
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持仪表板的发布与下架；
 		</td>
 	</tr>
 	<tr>
@@ -210,7 +215,7 @@
 	</tr>
 	<tr>
 		<td>
-			支持多种图表类型，明细表/汇总表/指标卡/文本卡/透视表/基础柱状图/堆叠柱状图/横向柱状图/横向堆叠柱状图/基础折线图/堆叠折线图/饼图/南丁格尔玫瑰图/漏斗图/雷达图/仪表盘/中国地图/气泡地图/散点图/气泡图/矩形树图/组合图/水波图/瀑布图/词云图等；
+			支持多种图表类型，明细表/汇总表/指标卡/文本卡/透视表/基础柱状图/堆叠柱状图/横向柱状图/横向堆叠柱状图/基础折线图/堆叠折线图/饼图/南丁格尔玫瑰图/漏斗图/雷达图/仪表盘/中国地图/气泡地图/散点图/气泡图/矩形树图/组合图/水波图/瀑布图/词云图/符号地图等；
 		</td>
 	</tr>
 	<tr>
@@ -270,7 +275,7 @@
 	</tr>
 	<tr>
 		<td>
-			支持对图表类型的组件样式进行设置；
+			支持对图表类型的组件样式进行设置，支持批量修改图表样式属性；
 		</td>
 	</tr>
 	<tr>
@@ -347,14 +352,14 @@
         </td>
     </tr>
 	<tr>
-		<td rowspan="5">
+		<td rowspan="6">
 			数据源
 		</td>
-		<td rowspan="5">
+		<td rowspan="6">
 			数据源管理
 		</td>
 		<td>
-			支持多种数据源，例如：多 Sheet 页的 Excel 文件，MySQL / Oracle / SQL Server / PostgreSQL / Elasticsearch / ClickHouse / MongoDB / AWS RedShift / MariaDB / Doris / Hive / DB2 数据库 / Impala / StarRocks / TiDB / MaxCompute / API 数据源等；
+			支持多种数据源，例如：多 Sheet 页的 Excel 文件，MySQL / Oracle / SQL Server / PostgreSQL / Elasticsearch / ClickHouse / MongoDB / AWS RedShift / MariaDB / Doris / Hive / DB2 数据库 / Impala / StarRocks / TiDB / MaxCompute / Presto / API 数据源等；
 		</td>
 	</tr>
 	<tr>
@@ -377,8 +382,13 @@
 			支持定时检测数据源的连接状态；
 		</td>
 	</tr>
+    <tr>
+		<td>
+			支持用户自行上传数据库驱动并使用；
+		</td>
+	</tr>
 	<tr>
-		<td rowspan="25">
+		<td rowspan="26">
 			系统管理
 		</td>
 		<td rowspan="3">
@@ -470,7 +480,7 @@
 	</tr>
 	<tr>
 		<td rowspan="1">
-			LDAP设置
+			LDAP 设置
 		</td>
 		<td>
 			支持 LDAP 认证对接； <span class="x-pack-span">X-Pack</span>
@@ -503,6 +513,14 @@
 	<tr>
 		<td>
 			支持模板的分类、导入、重命名、删除、搜索等；
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="1">
+			操作日志
+		</td>
+		<td>
+			支持系统操作日志的记录、查看、搜索及导出；
 		</td>
 	</tr>
 	<tr>
