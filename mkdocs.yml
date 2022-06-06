@@ -41,26 +41,16 @@ theme:
     custom_dir: "theme"
 nav:
     - 产品介绍: index.md
-    - 更新日志: changelog.md
+    - 更新说明: changelog.md
     - 系统架构: system_arch.md
     - 安装部署:
-        - 安装模式: installation/installation_mode.md
-        - Linux 单机部署:
+        - Linux:
+            - 安装模式: installation/installation_mode.md
             - 在线安装: installation/online_installation.md
             - 离线安装: installation/offline_installation.md
             - 在线升级: installation/online_upgrade.md
             - 离线升级: installation/offline_upgrade.md
-        - Linux HA 部署:
-            - 准备工作: installation/HA/prepare.md
-            - 搭建 NFS 服务: installation/HA/nfs_installation.md
-            - 部署 MySQL 集群: installation/HA/mysql_installation.md
-            - 部署 Nginx 集群: installation/HA/nginx_installation.md
-            - 部署 Keepalived 及 配置 VIP: installation/HA/keepalived_installation.md
-            - 部署 Redis 集群: installation/HA/redis_installation.md
-            - 部署 Apache Doris 集群: installation/HA/doris_installation.md
-            - 部署 Kettle 集群: installation/HA/kettle_installation.md
-            - 部署 DataEase 集群: installation/HA/dataease_installation.md
-        - Windows 单机部署:
+        - Windows:
               - 离线安装: installation/offline_installation_windows.md
         - 命令行工具: installation/cli.md
     - 功能手册:
@@ -103,12 +93,19 @@ nav:
             - 用户管理: user_manual/system_management/user.md
             - 系统参数: user_manual/system_management/param.md
             - 模版管理: user_manual/system_management/module.md
-            - 操作日志: user_manual/system_management/operation_log.md
             - 站内消息: user_manual/system_management/message.md
             - 定时任务: user_manual/system_management/task.md
         - 移动端:
             - 移动端概述: user_manual/app_description.md
             - 移动端布局: user_manual/app_design.md
+        - X-Pack:
+            - 用户管理: xpack/user_management_user.md
+            - 角色管理: xpack/sys_management_role.md
+            - 组织管理: xpack/sys_management_organization.md
+            - 权限管理: xpack/sys_management_permission.md
+            - 系统参数: xpack/sys_management.md
+            - 系统 API: xpack/sys_management_develop.md
+            - 定时报告: xpack/sys_management_report.md
     - 教学视频: instructional_video.md
     - 常见问题:
         - 安装配置:
@@ -172,7 +169,7 @@ markdown_extensions:
 extra_css:
     - css/extra.css
 
-copyright: Copyright &copy; 2014-2022 <a href="https://www.fit2cloud.com">杭州飞致云信息科技有限公司</a>, All Rights Reserved. <a href="http://www.beian.miit.gov.cn" target="_blank">京ICP备15023818号</a>
+copyright: Copyright &copy; 2014-2021 <a href="https://www.fit2cloud.com">杭州飞致云信息科技有限公司</a>, All Rights Reserved. <a href="http://www.beian.miit.gov.cn" target="_blank">京ICP备15023818号</a>
 
 plugins:
     - search
