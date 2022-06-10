@@ -57,11 +57,12 @@
 
 !!! Abstract ""
     **配置文件：**  
-    DataEase 会默认加载该路径下的配置文件 /opt/dataease/conf/dataease.properties，请参考下面配置创建对应目录及配置文件。
+    DataEase 会默认加载该路径下的配置文件 /opt/dataease/conf/dataease.properties，请参考下面配置创建对应目录及配置文件。  
+    **提示：** 请自行将 MYSQL_HOST 配置为自己的 MySQL 地址。
 
     ```properties
     # 数据库配置
-    spring.datasource.url=jdbc:mysql://mysql:3306/dataease?autoReconnect=false&useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    spring.datasource.url=jdbc:mysql://MYSQL_HOST:3306/dataease?autoReconnect=false&useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
     spring.datasource.username=root
     spring.datasource.password=Password123@mysql
     
