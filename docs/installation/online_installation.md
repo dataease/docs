@@ -70,12 +70,15 @@
     /opt/dataease/
 	├── bin                                         #-- 安装过程中需要加载到容器中的脚本
 	├── conf                                        #-- DataEase 各组件及数据库等中间件的配置文件
+    ├── custom-drivers                              #-- DataEase 自定义驱动程序目录 
 	├── data                                        #-- DataEase 各组件及数据库等中间件的数据持久化目录
-	├── docker-compose-kettle-doris.yml             #-- DataEase 内建的 kettle 和 doris 所需的 Docker Compose 文件 
+	├── docker-compose-doris.yml                    #-- DataEase 内建的 Doris 所需的 Docker Compose 文件
+    ├── docker-compose-kettle.yml                   #-- DataEase 内建的 Kettle 所需的 Docker Compose 文件 
 	├── docker-compose-mysql.yml                    #-- DataEase 内建的 MySQl 所需的 Docker Compose 文件 
 	├── docker-compose.yml                          #-- DataEase 基础 Docker Compose 文件，定义了网络等基础信息 
 	├── logs                                        #-- DataEase 各组件的日志文件持久化目录
-    └── templates                                   #-- DataEase 各组件及数据库等中间件的配置文件的原始文件
+    ├── plugins                                     #-- DataEase 第三方插件目录 
+	└── templates                                   #-- DataEase 各组件及数据库等中间件的配置文件的原始文件
     ```
 
 !!! Abstract ""
