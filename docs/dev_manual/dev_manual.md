@@ -7,6 +7,7 @@
 ├── README.md                                       
 ├── backend                                         # 后端项目主目录
 ├── frontend                                        # 前端项目主目录
+├── mobile                                          # 移动端项目主目录
 └── pom.xml                                         # 整体 maven 项目使用的 pom 文件
 ```
 
@@ -57,7 +58,7 @@
 
 !!! Abstract ""
     **配置文件：**  
-    DataEase 会默认加载该路径下的配置文件 /opt/dataease/conf/dataease.properties，请参考下面配置创建对应目录及配置文件。  
+    DataEase 会默认加载该路径下的配置文件 /opt/dataease/conf/dataease.properties，**请参考下面配置创建对应目录及配置文件**。  
     **提示：** 请自行将 MYSQL_HOST 配置为自己的 MySQL 地址。
 
     ```properties
@@ -88,10 +89,13 @@
     #DE运行模式，可选值有 local、simple、cluster，分别对应本地模式、精简模式、集群模式
     engine_mode=simple
     ```
-
-!!! Abstract ""
     **地图文件：**  
     DataEase 从 1.2 版本开始支持地图组件。在 DataEase 源码工程的目录下有一个地图文件目录 mapFiles/full，需要将该目录下的文件放置到 /opt/dataease/data/feature/full 目录下。如果是 Windows 的话，可以在工程目录所在盘的根目录下，创建 opt/dataease/data/feature/full 目录。
+
+    **插件文件：**  
+    DataEase 从 1.9 版本开始支持以插件的形式导入组件与数据源，可以下载 dataease-extensions 工程源码，在本地打包下，需要将打包后生成的 jar 包放置到 /opt/dataease/plugins/default 目录下。如果是 Windows 的话，可以在工程所在盘的根目录下，创建 /opt/dataease/plugins/default 目录，如下示例图。
+
+![dataease-extensions](../img/dev_manual/dataease-extensions.png){ width="900px" }
 
 ## 3 代码运行
 
@@ -178,7 +182,7 @@
     ```
     **按实际情况修改配置文件：
     fe.conf、be.conf、.kettle 一般情况下不需要修改，其他配置文件的修改可以参考下面示例：
-    修改 dataease.properties 文件，设置 MySQL、Kettle 和 Doris 的连接信息，以本机IP（192.168.1.9）为例:**
+    修改 dataease.properties 文件，设置 MySQL、Kettle 和 Doris 的连接信息，以本机 IP（192.168.1.9）为例:**
     ```properties
     # 数据库配置
     spring.datasource.url=jdbc:mysql://192.168.1.9:3306/dataease?autoReconnect=false&useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false

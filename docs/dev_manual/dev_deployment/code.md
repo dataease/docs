@@ -24,3 +24,29 @@
 	mkdir -p /opt/dataease/drivers
 	cp -rp drivers/* /opt/dataease/drivers/
 	```
+
+## 4 插件库准备
+
+!!! Abstract ""
+	**DataEase 从 1.9 版本开始支持以插件的形式导入组件与数据源，可以下载 dataease-extensions 工程源码，在本地打包下，需要将打包后生成的 jar 包放置到 /opt/dataease/plugins/default 下：**
+	```shell
+	git clone -b v1.11 https://github.com/dataease/dataease-extensions.git
+	cd dataease-extensions
+	mvn clean package
+	```
+	如果以容器的方式安装了 DataEase，也可从镜像里拷贝下列文件，放置到 /opt/dataease/plugins/default 下：
+	```
+	/opt/dataease/plugins/default/
+	├── dataease-extensions-tabs-backend-1.0-SNAPSHOT.jar
+	├── deplugin-xpack-backend-1.0-SNAPSHOT.jar
+	├── maxcompute-backend-1.0-SNAPSHOT.jar
+	├── maxcomputeDriver
+	│   └── odps-jdbc-3.2.26-jar-with-dependencies.jar
+	├── odps-jdbc-3.2.26-jar-with-dependencies.jar
+	├── presto-backend-1.0-SNAPSHOT.jar
+	├── prestoDriver
+	│   └── presto-jdbc-350.jar
+	├── presto-jdbc-350.jar
+	├── view-bubblemap-backend-1.0-SNAPSHOT.jar
+	└── view-symbolmap-backend-1.0-SNAPSHOT.jar	
+	```
