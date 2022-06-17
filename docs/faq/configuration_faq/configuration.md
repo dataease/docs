@@ -79,9 +79,18 @@
 !!! Abstract ""
     **从 v1.4.0 版本开始，DataEase 支持 docker 运行网段的修改：**
 
+    **v1.4.0 之后 v1.10.0 之前的版本，执行以下操作：**
+
     1. 停止 DataEase 服务： service dataease stop；
     2. 修改运行目录 /opt/dataease 目录下的 docker-compose.yml ，将默认的 172.19.0.0/16 和 172.19.0.1 改为其他网段，如 172.33.0.0/16 和 172.33.0.1；
-    3. 修改 /opt/dataease 目录下的 docker-compose-doris.yml，把里面 172.19.0.198 和 172.19.0.199 改为第一步设置的网段的ip，如 172.33.0.198 和 172.33.0.199；
+    3. 修改 /opt/dataease 目录下的 docker-compose-doris.yml，把里面 172.19.0.198 和 172.19.0.199 改为第二步设置的网段的 ip，如 172.33.0.198 和 172.33.0.199；
+    4. 重启 DataEase 服务：service dataease restart。
+
+    **v1.10.0 及之后的版本，执行以下操作：**
+
+    1. 停止 DataEase 服务： service dataease stop；
+    2. 修改 /opt/dataease/.env 文件，把 DE_DOCKER_SUBNET、DE_DOCKER_GATEWAY 改为其他网段；
+    3. 把 DE_DORIS_FE_IP、DE_DORIS_BE_IP 改为第二步设置的网段的 ip；
     4. 重启 DataEase 服务：service dataease restart。
 
 
