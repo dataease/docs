@@ -13,7 +13,21 @@
 
 ## 2 示例仪表板
 
-![示例仪表板](./img/index/示例仪表板.gif){ width="1235px" }
+[![某证券公司 2021 年度财务年报](img/index/某证券公司 2021 年度财务年报.png){ width="280"}](https://dataease.io/templates/archives/%E8%AF%81%E5%88%B8%E5%85%AC%E5%8F%B8%E5%B9%B4%E5%BA%A6%E8%B4%A2%E5%8A%A1%E5%B9%B4%E6%8A%A5)
+[![某连锁门店 2021 年销售驾驶舱](img/index/某连锁门店 2021 年销售驾驶舱.png){ width="280"}](https://dataease.io/templates/archives/%E9%97%A8%E5%BA%97%E9%94%80%E5%94%AE%E9%A9%BE%E9%A9%B6%E8%88%B1)
+[![某车间生产管理大屏](img/index/某车间生产管理大屏.png){ width="280"}](https://dataease.io/templates/archives/%E8%BD%A6%E9%97%B4%E7%94%9F%E4%BA%A7%E7%AE%A1%E7%90%86%E5%A4%A7%E5%B1%8F)
+
+[![某电商公司 2021 年度销售大屏](img/index/某电商公司 2021 年度销售大屏.png){ width="280"}](https://dataease.io/templates/archives/%E7%94%B5%E5%95%86%E5%85%AC%E5%8F%B8%E5%B9%B4%E5%BA%A6%E9%94%80%E5%94%AE%E5%A4%A7%E5%B1%8F)
+[![2022 年航空运输情况](img/index/2022 年航空运输情况.png){ width="280"}](https://dataease.io/templates/archives/%E8%88%AA%E7%A9%BA%E8%BF%90%E8%BE%93%E6%83%85%E5%86%B5%E5%A4%A7%E5%B1%8F)
+[![2020 年双碳及能源情况概览](img/index/2020 年双碳及能源情况概览.png){ width="280"}](https://dataease.io/templates/archives/%E5%8F%8C%E7%A2%B3%E5%8F%8A%E8%83%BD%E6%BA%90%E6%83%85%E5%86%B5%E6%A6%82%E8%A7%88)
+
+[![双十二（上海）电商消费大数据](img/index/双十二（上海）电商消费大数据.png){ width="280"}](https://dataease.io/templates/archives/%E7%94%B5%E5%95%86%E6%B6%88%E8%B4%B9%E5%A4%A7%E6%95%B0%E6%8D%AE)
+[![上海国庆旅游大数据分析](img/index/上海国庆旅游大数据分析.png){ width="280"}](https://dataease.io/templates/archives/%E6%97%85%E6%B8%B8%E5%A4%A7%E6%95%B0%E6%8D%AE)
+[![科技金融渠道分析](img/index/科技金融渠道分析.png){ width="280"}](https://dataease.io/templates/archives/%E7%A7%91%E6%8A%80%E9%87%91%E8%9E%8D%E6%B8%A0%E9%81%93%E5%88%86%E6%9E%90)
+
+[![高中全年级学生情况概览](img/index/高中全年级学生情况概览.png){width="280"}](https://dataease.io/templates/archives/%E9%AB%98%E4%B8%AD%E5%85%A8%E5%B9%B4%E7%BA%A7%E5%AD%A6%E7%94%9F%E6%83%85%E5%86%B5%E6%A6%82%E8%A7%88)
+[![MeterSphere 测试质量大屏](img/index/MeterSphere 测试质量大屏.png){ width="280"}](https://dataease.io/templates/archives/%E6%B5%8B%E8%AF%95%E8%B4%A8%E9%87%8F%E5%A4%A7%E5%B1%8F)
+[![JumpServer 运维安全审计大屏](img/index/JumpServer 运维安全审计大屏.png){ width="280"}](https://dataease.io/templates/archives/%E8%BF%90%E7%BB%B4%E5%AE%89%E5%85%A8%E5%AE%A1%E8%AE%A1%E5%A4%A7%E5%B1%8F)
 
 ## 3 产品优势
 
