@@ -109,6 +109,7 @@ nav:
         - 移动端:
             - 移动端概述: user_manual/app_description.md
             - 移动端布局: user_manual/app_design.md
+        - 模板市场: user_manual/template_market.md
     - 教学视频: instructional_video.md
     - 常见问题:
         - 安装配置:
