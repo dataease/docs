@@ -12,6 +12,16 @@
 
 ![选择驱动](../img/datasource_configuration/选择驱动.png){ width="900" }
 
+!!! Abstract ""
+    配置数据源时，支持查询超时参数设置，DataEase v1.12.0 之前的版本数据源默认超时时间为 30 秒，新增数据源时可调整超时时间，若不修改，超时时间默认为 30 秒，如下图所示。
+
+![超时时间](../img/datasource_configuration/超时时间.png){ width="900" }
+
+!!! Abstract ""
+    配置数据源时，支持设置源编码与目标编码，目前仅支持 Oracle 数据源，如下图所示。
+
+![选择字符集](../img/datasource_configuration/选择字符集.png){ width="900" }
+
 ## 2 数据源校验
 
 !!! Abstract ""

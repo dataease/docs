@@ -41,7 +41,10 @@ theme:
     custom_dir: "theme"
 nav:
     - 产品介绍: index.md
-    - 更新日志: changelog.md
+    - 版本迭代:
+        - 更新日志: changelog.md
+        - 更新说明:
+            v1.12.0: release_notes/v1.12.0.md
     - 系统架构: system_arch.md
     - 安装部署:
         - 安装模式: installation/installation_mode.md
@@ -84,6 +87,7 @@ nav:
             - 仪表板概述: user_manual/dashboard_description.md
             - 创建仪表板: user_manual/dashboard_create.md
             - 仪表板基础功能: user_manual/dashboard_basicfunctions.md
+            - 组件基础功能: user_manual/module_basicfunctions.md
             - 视图组件:
                 - 视图概述: user_manual/view_module/view_generation.md
                 - 添加视图: user_manual/view_module/view_create.md
@@ -97,7 +101,6 @@ nav:
                 - 样式组件: user_manual/other_module/style_module.md
                 - 多媒体组件: user_manual/other_module/multimedia_module.md
                 - 其他组件: user_manual/other_module/other_module.md
-            - 组件基础功能: user_manual/module_basicfunctions.md
             - 仪表板使用: user_manual/dashboard_using.md
         - 系统管理:
             - 用户管理: user_manual/system_management/user.md

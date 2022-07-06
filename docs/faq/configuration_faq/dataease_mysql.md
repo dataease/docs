@@ -128,7 +128,7 @@
 !!! Abstract ""
     **当出现类似下图的错误时，可以通过任选以下方式之一处理：**  
 
-    1. 修改 my.cnf 文件的 group_concat_max_len 参数，如：group_concat_max_len=1024000，然后重启 MySQL 服务；  
+    1. 修改 my.cnf 文件的 group_concat_max_len 参数，如：group_concat_max_len=1024000，然后重启 MySQL 与 DataEase 服务；  
     2. 进入 MySQL，执行 SET GLOBAL group_concat_max_len=1024000; 临时修改该参数的值。
 
 ![mysql-concat](../../img/faq/mysql-concat.png){ width="900px" }

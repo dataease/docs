@@ -68,6 +68,15 @@
 			proxy_set_header Host $http_host;
 			proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 		}
+
+        # 注意配置域名代理访问的时候，添加下面这个代理配置，导致分享仪表板公共链接无法访问
+        # location /link/ {
+            # proxy_pass http://$host:8081;
+            # porxy_pass https://dataease;
+            # proxy_set_header X-Real-IP $remote_addr;
+            # proxy_set_header Host $http_host;
+            # proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        # }
 	
 	}
 	```

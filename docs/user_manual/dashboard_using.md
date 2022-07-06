@@ -113,17 +113,17 @@
 
 ![仪表板_预览](../img/dashboard_generation/仪表板_预览.png){ width="900px" }
 
-## 8 查看明细
+## 8 查看明细与放大
 
 ### 8.1 导出视图 Excel
 
 !!! Abstract ""
-	预览模式下，视图可放大，支持导出 Excel ，支持导出图片，视图明细导出可附带截图。
+	预览模式下，视图放大下支持导出图片，查看视图明细下支持导出图表数据并附带视图截图。
 
 ![仪表板_预览](../img/dashboard_generation/仪表板_放大.png){ width="900px" }
 
 !!! Abstract ""
-	点击下图所示的位置，对视图进行 Excel 导出，可查看到附带的明细截图。
+	视图明细效果，支持对视图进行 Excel 导出，可查看到附带的明细截图。
 
 ![仪表板_预览](../img/dashboard_generation/查看明细.png){ width="900px" }  
 ![明细导出结果](../img/dashboard_generation/明细导出结果.png){ width="900px" }
@@ -131,7 +131,7 @@
 ### 8.2 导出视图图片
 
 !!! Abstract ""
-	点击下图所示的位置，导出视图图片。  
+	在视图放大效果下，支持导出视图图片。  
 	**注意：** 表格类视图不支持，因为该视图本身形式就是表格，按 Excel 导出即可。
 
 ![仪表板_导出图片](../img/dashboard_generation/仪表板_导出图片.png){ width="900px" }
