@@ -16,6 +16,24 @@
 
 ![支持的数据源类型](../img/datasource_configuration/支持的数据源类型.png){ width="900" }
 
+!!! Abstract ""
+    下列版本的数据库，为 DataEase 稳定链接的版本，您可也链接其他版本的数据库。
+
+    - SQL Server - 2019
+    - Elasticsearch - 7.10.1、8.1.1
+    - Oracle - 12.2.0.1
+    - MongoDB - 4.4.13、5.0.6
+    - Db2 - 10.5、11.5.7.0
+    - TiDB - 5.3.1
+    - PostgreSQL - 12.10、14.2
+    - ClickHouse - 22.1.4.30
+    - Hive - 2.3.2
+    - 达梦 - DM8
+    - mysql - 5.7.36
+    - Impala - 4.0.0
+    - Doris - 0.15、1.0.0、1.1.0
+    - presto - 0.272
+
 ## 3 数据源驱动管理
 
 !!! Abstract ""
