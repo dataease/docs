@@ -17,7 +17,7 @@
 ![支持的数据源类型](../img/datasource_configuration/支持的数据源类型.png){ width="900" }
 
 !!! Abstract ""
-    下列版本的数据库，为 DataEase 稳定链接的版本，您可也链接其他版本的数据库。
+    下列数据库的版本，为 DataEase 对接测试的版本，您可也链接其他版本的数据库。
 
     - SQL Server - 2019
     - Elasticsearch - 7.10.1、8.1.1
