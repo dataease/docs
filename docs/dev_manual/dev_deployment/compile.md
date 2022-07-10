@@ -37,8 +37,8 @@
 	**注意：** 以 npm 方式运行前端，默认会运行在本地的 9528 端口上，通过浏览器访问 http://ip:9528 即可。
 
 !!! Abstract ""
-	**方式二 nginx 运行：**  
-	以 nginx、apache 等运行前端，则修改 .env.production 文件中的 VUE_APP_BASE_API，将 IP 地址设置为本机 IP，后端默认运行端口为 8081:
+	**方式二 Nginx 运行：**  
+	以 Nginx、Apache 等运行前端，则修改 .env.production 文件中的 VUE_APP_BASE_API，将 IP 地址设置为本机 IP，后端默认运行端口为 8081，如下示例配置 Nginx 运行。
 
 ![frontend-production-env](../../img/dev_manual/frontend-production-env.png){width="900px"}
 
@@ -68,6 +68,15 @@
 			proxy_set_header Host $http_host;
 			proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 		}
+
+        # 注意配置域名代理访问的时候，添加下面这个代理配置，导致分享仪表板公共链接无法访问
+        # location /link/ {
+            # proxy_pass http://$host:8081;
+            # porxy_pass https://dataease;
+            # proxy_set_header X-Real-IP $remote_addr;
+            # proxy_set_header Host $http_host;
+            # proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        # }
 	
 	}
 	```
@@ -127,7 +136,7 @@
 	npm run build:stage
 	```
 
-### 2.2 nginx 配置
+### 2.2 Nginx 配置
 
 !!! Abstract ""
 	**假设各个文件分别按如下路径放置：**  

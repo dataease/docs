@@ -4,11 +4,44 @@
 ![过滤组件_多字段过滤](../../img/dashboard_generation/过滤组件_多字段过滤.png){ width="900px" }
 
 !!! Abstract ""
-	所有筛选类组件的标题支持位置设置，可调整组件标题的水平位置及垂直位置，下图以“年份组件”为示例。
+	所有筛选类组件的标题支持位置设置，可调整组件标题的水平位置及垂直位置，下图以“文本下拉组件”为示例。
 
 ![过滤组件_标题设置](../../img/dashboard_generation/过滤组件_标题设置.png){ width="900px" }
 
 ![过滤组件_位置调整](../../img/dashboard_generation/过滤组件_位置调整.png){ width="900px" }
+
+!!! Abstract ""
+	所有过滤组件输入框均支持边框、文字、背景色设置。  
+	途径一：如下图所示，在组件操作中设置。
+
+![过滤组件_输入框](../../img/dashboard_generation/过滤组件_输入框.png){ width="900px" }
+
+![过滤组件_输入框调整](../../img/dashboard_generation/过滤组件_输入框调整.png){ width="900px" }
+
+!!! Abstract ""
+	途径二：如下图所示，在仪表板公共样式中设置。
+
+![过滤组件_公共样式设置](../../img/dashboard_generation/过滤组件_公共样式设置.png){ width="900px" }
+
+!!! Abstract ""
+	所有过滤组件选择数据集时支持逐级返回，如下图所示。
+
+![过滤组件_逐级返回](../../img/dashboard_generation/过滤组件_逐级返回.png){ width="900px" }
+
+![过滤组件_逐级返回说明](../../img/dashboard_generation/过滤组件_逐级返回说明.png){ width="900px" }
+
+!!! Abstract ""
+	**提示：同数据集在一个过滤组件中仅支持绑定一个字段。**
+
+![过滤组件_字段选择](../../img/dashboard_generation/过滤组件_字段选择.png){ width="900opx" }
+
+!!! Abstract ""
+	v1.12.0 版本开始，过滤组件支持排序。  
+	**提示：** 当有多个字段时，除第一个外其他字段排序设置为“不可用”状态。
+
+![过滤组件_排序](../../img/dashboard_generation/过滤组件_排序.png){ width="900px"}
+
+![过滤组件_排序](../../img/dashboard_generation/过滤组件_排序结果.png){ width="900px"}
 
 ## 1 年份组件
 

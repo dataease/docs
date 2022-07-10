@@ -22,7 +22,7 @@
 ### 1.2 软件准备
 
 !!! Abstract ""
-    下载 Kettle 安装包，此处使用的是 pdi-ce-8.3.0.0-371.zip。
+    下载 Kettle 安装包，此处使用的是 pdi-ce-8.3.0.0-371.zip，链接地址：https://pan.baidu.com/s/1sMYw0H49uEBqwL_BGskt8g?pwd=am3q 提取码：am3q。
 
 ### 1.3 防火墙
 

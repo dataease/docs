@@ -7,3 +7,8 @@
     update sys_user set password='40b8893ea9ebc2d631c4bb42bb1e8996' where username='admin';
     ```
     连接到数据库后，执行上面的 SQL 语句可以将用户 `admin` 的密码重置为 `dataease`。
+
+## 2 遇到系统超时如何处理？
+
+!!! Abstract ""
+    **如遇网络不通畅，系统报 ”timeout of 10000ms exceeded“ 错误，则可在【系统管理】【系统参数】的基础设置调整超时时间。**

@@ -7,6 +7,11 @@
 ![新建任务](../../img/system_management/新建任务.png){ width="900px" }   
 ![添加任务](../../img/system_management/添加任务.png){ width="900px" }
 
+!!! Abstract ""
+	如下图所示，任务执行情况可通过【站内消息】或消息铃铛查看。
+
+![查看消息铃铛](../../img/system_management/查看消息铃铛.png){ width="900px" }
+
 ## 2 执行记录
 
 !!! Abstract ""

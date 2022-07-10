@@ -2,7 +2,7 @@
 
 !!! Abstract ""
     DataEase 是开源的数据可视化分析工具，帮助用户快速分析数据并洞察业务趋势，从而实现业务的改进与优化。  
-    DataEase 支持丰富的数据源连接，能够通过拖拉拽方式快速制作图表，并可以方便的与他人分享。
+    DataEase 支持丰富的数据源连接，能够通过拖拉拽方式快速制作图表，并可以方便地与他人分享。
 
 ![功能架构图](./img/index/DataEase功能架构图.jpg){ width="1235px" }
 
@@ -11,9 +11,12 @@
 
 ![界面展示](./img/index/界面展示.gif){ width="1235px" }
 
-## 2 示例仪表板
+## 2 模板市场
 
-![示例仪表板](./img/index/示例仪表板.gif){ width="1235px" }
+!!! Abstract ""
+    模板市场链接地址：https://dataease.io/templates/ 。
+
+[![模板市场](./img/index/模板市场.gif){ width="1235px" }](https://dataease.io/templates/)
 
 ## 3 产品优势
 
@@ -59,7 +62,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="43">
+		<td rowspan="45">
 			仪表板
 		</td>
 		<td rowspan="4">
@@ -206,7 +209,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="16">
+		<td rowspan="18">
 			视图制作
 		</td>
         <td>
@@ -235,12 +238,22 @@
 	</tr>
 	<tr>
 		<td>
+			支持表格自动滚动设置；
+		</td>
+	</tr>
+	<tr>
+		<td>
 			支持视图数据集的切换；
 		</td>
 	</tr>
 	<tr>
 		<td>
 			支持视图数据集的编辑；
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持视图级别的计算字段（支持常用聚合类函数）；
 		</td>
 	</tr>
 	<tr>
@@ -289,10 +302,10 @@
 		</td>
     </tr>
     <tr>
-        <td rowspan="12">
+        <td rowspan="13">
         数据集
         </td>
-		<td rowspan="12">
+		<td rowspan="13">
 			数据集管理
         </td>
 	</tr>
@@ -309,6 +322,11 @@
 	<tr>
 		<td>
 			支持数据集的添加、移动、重命名、删除、预览等；
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持直连模式下 SQL 数据集动态参数传递；
 		</td>
 	</tr>
 	<tr>
@@ -359,7 +377,7 @@
 			数据源管理
 		</td>
 		<td>
-			支持多种数据源，例如：多 Sheet 页的 Excel 文件，MySQL / Oracle / SQL Server / PostgreSQL / Elasticsearch / ClickHouse / MongoDB / AWS RedShift / MariaDB / Doris / Hive / DB2 数据库 / Impala / StarRocks / TiDB / MaxCompute / Presto / API 数据源等；
+			支持多种数据源，例如：多 Sheet 页的 Excel 文件，MySQL / Oracle / SQL Server / PostgreSQL / Elasticsearch / ClickHouse / MongoDB / AWS RedShift / MariaDB / Doris / Hive / DB2 数据库 / Impala / StarRocks / TiDB / MaxCompute / Presto / 达梦 / API 数据源等；
 		</td>
 	</tr>
 	<tr>
@@ -388,7 +406,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="26">
+		<td rowspan="27">
 			系统管理
 		</td>
 		<td rowspan="3">
@@ -479,19 +497,21 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="1">
-			LDAP 设置
+		<td rowspan="3">
+			单点登录
 		</td>
 		<td>
 			支持 LDAP 认证对接； <span class="x-pack-span">X-Pack</span>
 		</td>
-	</tr>
-	<tr>
-		<td rowspan="1">
-			单点登录
-		</td>
+    </tr>
+    <tr>
 		<td>
-			支持单点登录系统对接； <span class="x-pack-span">X-Pack</span>
+			支持 OIDC 单点登录系统对接； <span class="x-pack-span">X-Pack</span>
+		</td>
+    </tr>
+    <tr>
+		<td>
+			支持 CAS 单点登录系统对接； <span class="x-pack-span">X-Pack</span>
 		</td>
 	</tr>
 	<tr>

@@ -38,4 +38,6 @@
 
 ![下拉树组件入口](../../img/dashboard_generation/下拉树组件入口.png){ width="900px" }
 
+![下拉树组件显示效果](../../img/dashboard_generation/下拉树组件.png){ width="900px" }
+
 ![下拉树组件显示效果](../../img/dashboard_generation/下拉树组件显示效果.png){ width="900px" }

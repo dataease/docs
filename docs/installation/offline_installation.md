@@ -32,7 +32,7 @@
     从 v1.5.0 版本开始，DataEase 支持以配置文件的形式来设置安装参数，如安装目录、服务运行端口、数据库配置参数等，具体参数请参见安装包中的 install.conf 文件：
     
     **从 v1.9.0 版本开始，DataEase 支持多种部署模式，调整 install.conf 文件中 DE_ENGINE_MODE 参数来设置不同的安装部署模式，DE_ENGINE_MODE 可选值有 local、simple、cluster，分别对应本地模式、精简模式、集群模式，具体可参考【安装模式】说明。**  
-    如不调整，则模式安装精简模式。
+    如不调整，则默认安装精简模式。
     ```properties
     # 基础配置
     ## 安装目录
@@ -152,11 +152,14 @@
     /opt/dataease/
 	├── bin                                         #-- 安装过程中需要加载到容器中的脚本
 	├── conf                                        #-- DataEase 各组件及数据库等中间件的配置文件
+    ├── custom-drivers                              #-- DataEase 自定义驱动程序目录 
 	├── data                                        #-- DataEase 各组件及数据库等中间件的数据持久化目录
-	├── docker-compose-kettle-doris.yml             #-- DataEase 内建的 kettle 和 doris 所需的 Docker Compose 文件 
+	├── docker-compose-doris.yml                    #-- DataEase 内建的 Doris 所需的 Docker Compose 文件
+    ├── docker-compose-kettle.yml                   #-- DataEase 内建的 Kettle 所需的 Docker Compose 文件 
 	├── docker-compose-mysql.yml                    #-- DataEase 内建的 MySQl 所需的 Docker Compose 文件 
 	├── docker-compose.yml                          #-- DataEase 基础 Docker Compose 文件，定义了网络等基础信息 
 	├── logs                                        #-- DataEase 各组件的日志文件持久化目录
+    ├── plugins                                     #-- DataEase 第三方插件目录 
 	└── templates                                   #-- DataEase 各组件及数据库等中间件的配置文件的原始文件
     ```
 
