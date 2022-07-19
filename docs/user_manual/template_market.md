@@ -70,3 +70,9 @@
     如下图所示，模板的各组件、样式、背景已带入到新建的仪表板中，如需修改可在模板的基础上再根据自己的实际情况，自行调整仪表板样式、组件和视图等。
 
 ![仪表板市场_样式调整](../img/template_market/仪表板市场_样式调整.png){ width="900px" }
+
+## 6 应用示例
+
+!!! Abstract ""
+    [使用模板市场质量大屏展示 MeterSphere 数据](https://kb.fit2cloud.com/archives/120)  
+    [JumpServer 安全运维审计大屏的设计与实现](https://kb.fit2cloud.com/archives/112)
