@@ -218,7 +218,7 @@
 	```
     查看网络信息，若存在冲突情况，则会看到仍然有多余的网桥 br-xxxxx 存在，执行：
 	```shell
-    brectl delbr <br-xxxxx> && systemclt restart network
+    brctl delbr <br-xxxxx> && systemclt restart network
 	```
     删除该网桥后，重启 Docker，重启 DataEase，执行：
 	```shell
