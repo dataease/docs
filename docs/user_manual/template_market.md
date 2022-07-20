@@ -74,5 +74,5 @@
 ## 6 应用示例
 
 !!! Abstract ""
-    [使用模板市场质量大屏展示 MeterSphere 数据](https://kb.fit2cloud.com/archives/120)  
-    [JumpServer 安全运维审计大屏的设计与实现](https://kb.fit2cloud.com/archives/112)
+    - [MeterSphere 测试质量大屏](https://kb.fit2cloud.com/archives/120)  
+    - [JumpServer 运维安全审计大屏](https://kb.fit2cloud.com/archives/112)
