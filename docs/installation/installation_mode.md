@@ -38,7 +38,7 @@
     ```shell
     bash install.sh
     ```
-    若是在线安装方式，在执行一键安装命令的在线安装包解压目录（以 v1.12.0 版本为示例，在 /home 目录下执行命令，则在 /home/dataease-v1.12.0-online 下，重新执行 bash install.sh，也可重新执行在线安装脚本。
+    若是在线安装方式，在执行一键安装命令的在线安装包解压目录（以 v1.12.0 版本为示例，在 /home 目录下执行命令，则在 /home/dataease-v1.12.0-online 下），重新执行 bash install.sh，也可重新执行在线安装脚本。
     ```
     curl -sSL https://github.com/dataease/dataease/releases/latest/download/quick_start.sh | sh
     ```
