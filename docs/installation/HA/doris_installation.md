@@ -8,12 +8,12 @@
     - 1 个 FE 节点，IP 为 10.1.11.39
     - 3 个 BE 节点，IP 分别为 10.1.11.37，10.1.11.27，10.1.11.70
 
-    所有服务器的操作系统均为 CentOS 7，这里使用的是 CentOS 7.7，服务器硬件配置视数据规模而定，可参考[ Apache Doris 官方文档](https://doris.apache.org/zh-CN/install/install-deploy.html)。
+    所有服务器的操作系统均为 CentOS 7，这里使用的是 CentOS 7.7，服务器硬件配置视数据规模而定，可参考[ Apache Doris 官方文档](https://doris.apache.org/zh-CN/docs/install/install-deploy/)。
 
 ### 1.2 软件准备
 
 !!! Abstract ""
-    从 Apache Doris 官网[下载 Doris 的安装包](https://doris.apache.org/zh-CN/downloads/downloads.html) ， 将安装包放在所有 Doris 节点服务器上，这里下载的是 1.0.0 版本的安装包。
+    从 Apache Doris 官网[下载 Doris 的安装包](https://doris.apache.org/zh-CN/download/) ， 将安装包放在所有 Doris 节点服务器上，这里下载的是 1.0.0 版本的安装包。
 
     下载了 Doris 安装包后，将安装包解压，放置于自己的运行目录下。这处示例将安装包放置于 /opt/doris 目录下，结构如下所示：
     ```conf
