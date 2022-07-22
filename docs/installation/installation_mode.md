@@ -32,9 +32,9 @@
 ## 2 切换安装模式
 
 !!! Abstract ""
-    安装包部署方式下，若需切换安装模式，修改 /opt/dataease/.env 文件（注意 .env 是隐藏文件）中 DE_ENGINE_MODE 参数；  
-    若是离线安装方式，在 DataEase 离线安装包解压目录（以 v1.12.0 版本为示例，离线包上传到 /tmp 目录下解压，则在 /tmp/dataease-v1.12.0-offline 下），重新执行安装脚本即可。  
-    **注意：由于精简模式的 Excel 与 API 数据集是保存在配置的数据引擎中的，切换为其它模式会导致这两部分的数据丢失，反之亦然（Excel 与 API 数据集保存位置变更），直连数据库的相关数据集不受影响。**  
+    **安装包部署方式下，若需切换安装模式，请执行以下操作。**  
+    步骤一：修改 /opt/dataease/.env 文件（注意 .env 是隐藏文件）中 DE_ENGINE_MODE 参数；  
+    步骤二：若是离线安装方式，在 DataEase 离线安装包解压目录（以 v1.12.0 版本为示例，离线包上传到 /tmp 目录下解压，则在 /tmp/dataease-v1.12.0-offline 下），重新执行安装脚本即可。
     ```shell
     bash install.sh
     ```
@@ -42,3 +42,4 @@
     ```
     curl -sSL https://github.com/dataease/dataease/releases/latest/download/quick_start.sh | sh
     ```
+    **注意：由于精简模式的 Excel 与 API 数据集是保存在配置的数据引擎中的，切换为其它模式会导致这两部分的数据丢失，反之亦然（Excel 与 API 数据集保存位置变更），直连数据库的相关数据集不受影响。**  
