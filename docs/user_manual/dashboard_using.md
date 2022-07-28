@@ -77,7 +77,7 @@
 !!! Abstract ""
 	若保存模板时提示"请选择所属类别"，请用户在模板管理自行添加新的模板分类。
 
-![新建模板分类](../../img/system_management/新建模板分类.png){ width="900px" }
+![新建模板分类](../img/system_management/新建模板分类.png){ width="900px" }
 
 ## 6 仪表板导出 
 ### 6.1 导出为模板
