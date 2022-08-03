@@ -44,7 +44,8 @@ nav:
     - 版本迭代:
         - 更新日志: changelog.md
         - 更新说明:
-            v1.12.0: release_notes/v1.12.0.md
+            - v1.12.0: release_notes/v1.12.0.md
+            - v1.13.0: release_notes/v1.13.0.md
     - 系统架构: system_arch.md
     - 安装部署:
         - 安装模式: installation/installation_mode.md
@@ -94,6 +95,7 @@ nav:
                 - 视图功能设计: user_manual/view_module/view_design.md
                 - 视图图库: user_manual/view_module/view_gallery.md
             - 过滤组件:
+                - 查询按钮组件: user_manual/filter_module/inquire_button_module.md
                 - 时间过滤组件: user_manual/filter_module/filtertime_module.md
                 - 文本过滤组件: user_manual/filter_module/filtertext_module.md
                 - 数字过滤组件: user_manual/filter_module/filternumber_module.md

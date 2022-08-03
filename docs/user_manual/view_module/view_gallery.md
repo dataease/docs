@@ -179,6 +179,11 @@
 
     ![气泡地图](../../img/view_generation/view_gallery/ECharts/echarts气泡地图.png){ width="900px" }
 
+!!! Abstract ""
+    支持展示世界地图，【中华人民共和国】为之前默认的地图，同时自定义地图文件可在【系统参数】的【地图设置】中添加。
+
+    ![世界地图](../../img/view_generation/view_gallery/ECharts/echarts世界地图.png){ width="900px" }
+
 ## 2 AntV 图库
 
 !!! Abstract ""

@@ -62,7 +62,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="45">
+		<td rowspan="46">
 			仪表板
 		</td>
 		<td rowspan="4">
@@ -209,7 +209,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="18">
+		<td rowspan="19">
 			视图制作
 		</td>
         <td>
@@ -218,7 +218,7 @@
 	</tr>
 	<tr>
 		<td>
-			支持多种图表类型，明细表/汇总表/指标卡/文本卡/透视表/基础柱状图/堆叠柱状图/横向柱状图/横向堆叠柱状图/基础折线图/堆叠折线图/饼图/南丁格尔玫瑰图/漏斗图/雷达图/仪表盘/中国地图/气泡地图/散点图/气泡图/矩形树图/组合图/水波图/瀑布图/词云图/符号地图等；
+			支持多种图表类型，明细表/汇总表/指标卡/文本卡/透视表/基础柱状图/堆叠柱状图/横向柱状图/横向堆叠柱状图/基础折线图/堆叠折线图/饼图/南丁格尔玫瑰图/漏斗图/雷达图/仪表盘/中国地图/世界地图/气泡地图/散点图/气泡图/矩形树图/组合图/水波图/瀑布图/词云图/符号地图等；
 		</td>
 	</tr>
 	<tr>
@@ -234,6 +234,11 @@
 	<tr>
 		<td>
 			支持视图阈值设置；
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持视图标题备注设置；
 		</td>
 	</tr>
 	<tr>
@@ -406,7 +411,23 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="27">
+		<td rowspan="2">
+			模板市场
+		</td>
+		<td rowspan="2">
+			模板市场
+		</td>
+		<td>
+			支持系统内访问在线模板市场列表，支持搜索与预览；
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持系统内直接应用在线模板市场中的模板，转为系统内仪表板；
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="28">
 			系统管理
 		</td>
 		<td rowspan="3">
@@ -443,7 +464,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="5">
+		<td rowspan="6">
 			权限管理
 		</td>
 		<td>
@@ -468,6 +489,11 @@
     <tr>
         <td>
             支持数据集的列级权限控制； <span class="x-pack-span">X-pack</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            支持行列权限的白名单设置； <span class="x-pack-span">X-pack</span>
         </td>
     </tr>
 	<tr>
@@ -576,7 +602,7 @@
     </tr>
     <tr>
 		<td>
-			支持定时报告，可以定时以邮件形式发送仪表板报告。  <span class="x-pack-span">X-Pack</span>
+			支持定时报告，可以定时以邮件形式发送仪表板或视图报告；  <span class="x-pack-span">X-Pack</span>
 		</td>
 	</tr>
     <tr>
@@ -612,9 +638,8 @@
 ## 6 了解更多
 
 !!! Abstract ""
-    - **如何向团队介绍 DataEase？**：https://dataease.io/download/introduce-dataease_202206.pdf
-    - **获取新一代数据可视化分析平台建设指南**：https://jinshuju.net/f/cerWRY
-    - **DataEase 实战训练营**: https://lkh.h5.xeknow.com/s/3mcEKQ
-    - **DataEase 知识库**：https://kb.fit2cloud.com/categories/dataease
-    - **飞致云学堂**：https://edu.fit2cloud.com/index
-
+    - **如何向团队介绍 DataEase？：** https://dataease.io/download/introduce-dataease_202206.pdf
+    - **获取新一代数据可视化分析平台建设指南：** https://jinshuju.net/f/cerWRY
+    - **DataEase 实战训练营：** https://lkh.h5.xeknow.com/s/3mcEKQ
+    - **DataEase 知识库：** https://kb.fit2cloud.com/categories/dataease
+    - **飞致云学堂：** https://edu.fit2cloud.com/index

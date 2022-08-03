@@ -33,7 +33,11 @@
 
 !!! Abstract ""
     **安装包部署方式下，若需切换安装模式，请执行以下操作。**  
-    步骤一：修改 /opt/dataease/.env 文件（注意 .env 是隐藏文件）中 DE_ENGINE_MODE 参数；  
+    步骤一：修改 /opt/dataease/.env 文件（注意 .env 是隐藏文件）中 DE_ENGINE_MODE 参数，比如将 local 改成 simple。
+
+![env](../img/dev_manual/env.png){ width="900px" }
+
+!!! Abstract ""
     步骤二：若是离线安装方式，在 DataEase 离线安装包解压目录（以 v1.12.0 版本为示例，离线包上传到 /tmp 目录下解压，则在 /tmp/dataease-v1.12.0-offline 下），重新执行安装脚本即可。
     ```shell
     bash install.sh

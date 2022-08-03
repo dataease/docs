@@ -11,4 +11,8 @@
 ## 2 遇到系统超时如何处理？
 
 !!! Abstract ""
-    **如遇网络不通畅，系统报 ”timeout of 10000ms exceeded“ 错误，则可在【系统管理】【系统参数】的基础设置调整超时时间。**
+    **如遇网络不通畅，系统报 ”timeout of xxx exceeded“ 错误，则可在【系统管理】【系统参数】的基础设置增大超时时间，同时支持在数据源的【高级设置】修改查询超时时间。**
+
+![调整超时时间](../img/system_management/调整超时时间.png){ width="900" }
+
+![超时时间](../img/datasource_configuration/超时时间.png){ width="900" }

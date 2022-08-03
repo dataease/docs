@@ -55,7 +55,7 @@
 
 ### 4.3 仪表板背景
 !!! Abstract ""
-	如下图所示，点击【仪表板背景】，设置仪表板背景颜色或图片。
+	如下图所示，点击【仪表板背景】，设置仪表板背景颜色或图片，支持重新上传背景图片。
 
 ![仪表板背景](../img/dashboard_generation/仪表板背景.png){ width="900px" }
 
@@ -163,3 +163,11 @@
 	点击下图所示的返回按钮，关闭仪表板。
 
 ![仪表板_关闭](../img/dashboard_generation/仪表板_关闭.png){ width="900px" }
+
+## 10 复用
+
+!!! Abstract ""
+	支持复用所有的组件。
+
+![仪表板_复用](../img/dashboard_generation/仪表板_复用.png){ width="900px" }
+

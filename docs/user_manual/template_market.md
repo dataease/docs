@@ -3,7 +3,33 @@
 !!! Abstract ""
     2022 年 6 月 21 日，DataEase 开源数据可视化分析平台正式发布模板市场，作为广大社区用户期待已久的功能之一，模板市场旨在为 DataEase 用户提供专业、美观、拿来即用的仪表板模板，方便用户根据自身的业务需求和使用场景选择对应的仪表板模板，并在优质模板的基础上轻松制作自己的仪表板。
 
-## 2 下载模板
+## 2 内置模板市场
+
+### 2.1 预览模板
+
+!!! Abstract ""
+    支持通过 DataEase 内置的市场模板模块，预览仪表板模板。
+
+![模板市场](../img/template_market/模板市场.png){ width="900px" }
+
+![模板市场_预览](../img/template_market/模板市场_预览.png){ width="900px" }
+
+!!! Abstract ""
+    支持查找功能，快捷搜索仪表板模板。
+
+![模板市场_搜索](../img/template_market/模板市场_搜索.png){ width="900px" }
+
+### 2.2 应用模板
+
+!!! Abstract ""
+    点击【应用模板】，弹出应用模板框，模板名为默认命名，可自行修改，选择一个仪表板分组后点击确定，成功后会自动跳转到该仪表板的编辑界面下。
+
+![模板市场_应用](../img/template_market/模板市场_应用.png){ width="900px" }
+
+
+## 3 线上模板市场
+
+### 3.1 下载模板
 
 !!! Abstract ""
     点击[模板市场](https://dataease.io/templates/)，如下图所示，打开模板市场主页。
@@ -25,7 +51,7 @@
 
 ![模板市场_下载](../img/template_market/模板市场_下载.png){ width="900px" }
  
-## 3 导入模板
+### 3.2 导入模板
 
 !!! Abstract ""
     方式一：进入自己的 DataEase 系统的”仪表板“模块中，通过下图所示以”导入模板的“方式新建仪表板。
@@ -76,3 +102,5 @@
 !!! Abstract ""
     - [MeterSphere 测试质量大屏](https://kb.fit2cloud.com/archives/120)  
     - [JumpServer 运维安全审计大屏](https://kb.fit2cloud.com/archives/112)
+    - [Redmine 任务分析大屏](https://kb.fit2cloud.com/archives/119)
+    - [禅道业务数据分析大屏](https://kb.fit2cloud.com/archives/137)

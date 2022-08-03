@@ -3,7 +3,7 @@
 !!! Abstract ""
     **以 MySQL 数据库为示例：**
 
-    点击【新建数据连接】按钮，跳转至新建数据源页面。在新建数据源页面输入名称、选择类型为 MySQL，填入 IP 地址，填写数据库名称，用户名和密码等。
+    点击【新建数据源】按钮，跳转至新建数据源页面。在新建数据源页面输入名称、选择类型为 MySQL，填入 IP 地址，填写数据库名称，用户名和密码等。
  
 ![新建数据连接](../img/datasource_configuration/新增.png){ width="900" }
 
@@ -18,7 +18,7 @@
 ![超时时间](../img/datasource_configuration/超时时间.png){ width="900" }
 
 !!! Abstract ""
-    配置数据源时，支持设置源编码与目标编码，目前仅支持 Oracle 数据源，如下图所示。
+    **提示：** 配置数据源时，Oracle 数据源支持设置源编码与目标编码，如下图所示。
 
 ![选择字符集](../img/datasource_configuration/选择字符集.png){ width="900" }
 

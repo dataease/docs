@@ -286,6 +286,7 @@
 ## 3 其他注意事项
 
 !!! Abstract ""
-	注意：内置示例数据以 flyway 的形式在 DataEase 启动时自动插入到了 MySQL 数据库中，如果使用了外部 MySQL 或者修改了内置 MySQL 的容器名称的话，需要登录到 DataEase 控制台，进入到【数据源】页面，选择 "demo" 数据源，将 "demo" 数据源的相关连接信息修改正确，保存后即可正常使用内置示例数据。
+	注意：内置示例数据以 flyway 的形式在 DataEase 启动时自动插入到了 MySQL 数据库中，如果使用了外部 MySQL 或者修改了内置 MySQL 的容器名称的话，需要登录到 DataEase 控制台，进入到【数据源】页面，选择 "demo" 数据源，将 "demo" 数据源的相关连接信息修改正确，保存后即可正常使用内置示例数据；  
+	**提示：Windows 使用 docker-compose 部署 Kettle 及 Doris ，若出现 doris-fe 无限重启问题，可参考此篇[知识库](https://kb.fit2cloud.com/archives/134)。**
 
 ![modify-demo-dataset](../img/dev_manual/modify-demo-dataset.png){ width="900px" }

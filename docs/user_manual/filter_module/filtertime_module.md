@@ -1,5 +1,7 @@
 !!! Abstract ""
-	所有过滤组件均支持跨数据集或视图进行多字段过滤，并可自定义控制范围，如下示例。
+	所有过滤组件均支持跨数据集或视图进行多字段过滤，并可自定义控制范围，如下示例。  
+	**提示：** 所有过滤组件选择数据集时支持逐级返回。  
+	**注意：** 同数据集在一个过滤组件中仅支持绑定一个字段。
 
 ![过滤组件_多字段过滤](../../img/dashboard_generation/过滤组件_多字段过滤.png){ width="900px" }
 
@@ -22,18 +24,6 @@
 	途径二：如下图所示，在仪表板公共样式中设置。
 
 ![过滤组件_公共样式设置](../../img/dashboard_generation/过滤组件_公共样式设置.png){ width="900px" }
-
-!!! Abstract ""
-	所有过滤组件选择数据集时支持逐级返回，如下图所示。
-
-![过滤组件_逐级返回](../../img/dashboard_generation/过滤组件_逐级返回.png){ width="900px" }
-
-![过滤组件_逐级返回说明](../../img/dashboard_generation/过滤组件_逐级返回说明.png){ width="900px" }
-
-!!! Abstract ""
-	**提示：同数据集在一个过滤组件中仅支持绑定一个字段。**
-
-![过滤组件_字段选择](../../img/dashboard_generation/过滤组件_字段选择.png){ width="900opx" }
 
 !!! Abstract ""
 	v1.12.0 版本开始，过滤组件支持排序。  
@@ -71,6 +61,12 @@
 ![日期组件入口](../../img/dashboard_generation/日期组件入口.png){ width="900px" }  
 ![仪表盘编辑_过滤组件](../../img/dashboard_generation/日期组件.png){ width="900px" }  
 ![日期组件显示效果](../../img/dashboard_generation/日期组件显示效果.png){ width="900px" }
+
+!!! Abstract ""
+	日期过滤组件还支持时分秒级别的设置。
+
+![日期组件的时分秒](../../img/dashboard_generation/日期组件的时分秒.png){ width="900px" }
+![日期组件的时分秒显示效果](../../img/dashboard_generation/日期组件的时分秒显示效果.png){ width="900px" }
 
 ## 4 日期范围组件
 

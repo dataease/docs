@@ -74,11 +74,6 @@
 
 ![仪表板_保存为模版](../img/dashboard_generation/仪表板_保存为模版.png){ width="900px" }
 
-!!! Abstract ""
-	若保存模板时提示"请选择所属类别"，请用户在模板管理自行添加新的模板分类。
-
-![新建模板分类](../img/system_management/新建模板分类.png){ width="900px" }
-
 ## 6 仪表板导出 
 ### 6.1 导出为模板
 
@@ -153,11 +148,11 @@
 !!! Abstract ""
 	仪表板刷新提供手动与自动两种方式，其中自动刷新配置如下，完成配置后需保存仪表板进入预览界面查看效果。
 
-![仪表板_刷新](../img/dashboard_generation/仪表板_自动刷新配置.jpg){ width="900px" }
+![仪表板_刷新](../img/dashboard_generation/仪表板_自动刷新配置.png){ width="900px" }
 
 !!! Abstract ""
 	同时，仪表板提供手动刷新按钮，用户需要时可自行点击进行刷新。
 
-![仪表板_刷新](../img/dashboard_generation/仪表板_手动刷新按钮.jpg){ width="900px" }
+![仪表板_刷新](../img/dashboard_generation/仪表板_手动刷新按钮.png){ width="900px" }
 
 
