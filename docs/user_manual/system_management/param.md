@@ -61,8 +61,6 @@
 
 ![俄罗斯](../../img/system_management/俄罗斯.png){ width="900" }
 
-![世界地图](../../img/system_management/世界地图.png){ width="900" }
-
 ## 4 引擎设置
 
 ### 4.1 精简模式
