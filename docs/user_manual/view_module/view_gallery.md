@@ -170,6 +170,8 @@
 !!! Abstract ""
     普通地图：用颜色的深浅来展示区域范围的数值大小。
 
+    ![普通地图](../../img/view_generation/view_gallery/ECharts/echarts普通地图.png){ width="900px" }
+
     **提示：** v1.12.0 版本，地图组件 Low 与 Higt 颜色跟随主题变化，深色主题下为白色，浅色主题下为黑色。
 
 !!! Abstract ""
