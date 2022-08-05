@@ -8,7 +8,7 @@
 ### 2.1 预览模板
 
 !!! Abstract ""
-    支持通过 DataEase 内置的市场模板模块，预览仪表板模板。
+    支持通过 DataEase 内置的模板市场模块，预览仪表板模板。
 
 ![模板市场](../img/template_market/模板市场.png){ width="900px" }
 
@@ -26,6 +26,10 @@
 
 ![模板市场_应用](../img/template_market/模板市场_应用.png){ width="900px" }
 
+### 2.3 关闭模板市场
+
+!!! Abstract ""
+    查看内置的模板市场需要与模板市场（https://dataease.io/templates/）联通，若不需要使用模板市场模块，可在【系统管理】的【系统参数】关闭模板市场显示。
 
 ## 3 线上模板市场
 
