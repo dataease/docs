@@ -144,7 +144,7 @@
 	- frontend 编译后文件存放目录
   	/opt/dataease/frontend/dist
 	- mobile 编译后文件存放目录
-  	/opt/mobile/frontend/dist
+  	/opt/dataease/mobile/dist
 	- nginx 配置文件路径
   	/usr/local/etc/nginx/nginx.conf
 
