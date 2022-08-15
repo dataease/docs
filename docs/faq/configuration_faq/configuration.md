@@ -225,3 +225,13 @@
     service docker start && service dataease restart
 	```
     网桥删除可参考：https://ignorantshr.github.io/person-blog/linux/%E5%88%A0%E9%99%A4%E7%BD%91%E6%A1%A5/
+
+## 11 如何修改 Kettle 容器的 Java 运行时内存
+
+!!! Abstract ""
+    若出现 Kettle 内存溢出，可以编辑 opt/dataease/docker-compose-kettle.yml 文件调整 Kettle 容器的 Java 运行时内存，如下示例调整为 8G，再重启服务即可。
+
+    ```shell
+    environment:
+    - PENTAHO_DI_JAVA_OPTIONS=-Xms1024m -Xmx8192m -XX:MaxPermSize=256m -Dfile.encoding=utf-8
+    ```
