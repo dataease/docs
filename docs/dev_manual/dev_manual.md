@@ -277,7 +277,12 @@
     docker-compose -f docker-compose-kettle-doris.yml up -d
     ```
 
-## 5 其他注意事项
+## 5 镜像打包（推荐）
+
+!!! Abstract ""
+    源码中包含 Dockerfile 文件，建议将项目打包成镜像运行，具体可参考[如何打包 DataEase 镜像](https://kb.fit2cloud.com/archives/70)、[DataEase 二次开发如何替换镜像](https://kb.fit2cloud.com/archives/125)。
+
+## 6 其他注意事项
 
 !!! Abstract ""
     内置示例数据以 flyway 的形式在 DataEase 启动时自动插入到了 MySQL 数据库中，在源码运行的情况下，需要登录到 DataEase 控制台，进入到【数据源】页面，选择 "demo" 数据源，将 "demo" 数据源的相关连接信息修改正确，保存后即可正常使用内置示例数据；  
