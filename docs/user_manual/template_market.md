@@ -108,3 +108,4 @@
     - [JumpServer 运维安全审计大屏](https://kb.fit2cloud.com/archives/112)
     - [Redmine 任务分析大屏](https://kb.fit2cloud.com/archives/119)
     - [禅道业务数据分析大屏](https://kb.fit2cloud.com/archives/137)
+    - [Confluence 仪表看板大屏](https://kb.fit2cloud.com/archives/145)
