@@ -147,7 +147,7 @@
     修改文件属性后，重启 DataEase 服务: service dataease restart
 
 
-## 7 使用 DataEase 时，提示"Table 'datashowdb.V_AUTH_MODEL' doesn't exist" 的错误
+## 7 使用 DataEase 时，出现数据库大小写的问题，提示类似"Table 'datashowdb.V_AUTH_MODEL' doesn't exist" 的错误
 
 !!! Abstract ""
     出现该问题一般是由于 DataEase 使用的外部 MySQL 配置参数 lower_case_table_names 设置为 0 了。  
