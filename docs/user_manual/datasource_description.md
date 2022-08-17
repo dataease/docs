@@ -29,10 +29,10 @@
     - ClickHouse - 22.1.4.30
     - Hive - 2.3.2
     - 达梦 - DM8
-    - mysql - 5.7.36
+    - MySQL - 5.7.36
     - Impala - 4.0.0
     - Doris - 0.15、1.0.0、1.1.0
-    - presto - 0.272
+    - Presto - 0.272
 
 ## 3 数据源驱动管理
 
