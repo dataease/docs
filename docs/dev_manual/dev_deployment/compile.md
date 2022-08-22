@@ -1,6 +1,101 @@
-## 1 编译运行（v1.7.0 及以前）
+## 1 编译运行（v1.8.0 及以后）
 
-### 1.1 编译前端
+### 1.1 源码编译打包
+
+!!! Abstract ""
+	**v1.8.0 及以后分支，请执行以下步骤进行编译打包。**  
+	**打包 backend：**  
+	在 backend 目录下，执行下面命令。
+
+	```shell
+	mvn clean package -Pstage
+	```
+
+	**注意:**  
+
+    1. 在 backend 目录下，不是 dataease 目录；
+	2. 命令一定要加 -Pstage；
+	3. 运行文件为 target/backend-1.8.0.jar。
+
+	**运行 backend：**
+	```shell
+	nohup java -jar backend-1.8.0.jar &
+	```
+
+	**编译打包 frontend：**  
+	在 frontend 目录下，执行下面命令，此处构建测试环境，注意命令后缀（带 stage）。
+
+	```shell
+	npm i
+	npm run build:stage
+	```
+
+	**编译打包 mobile：**  
+	在 mobile 目录下，执行下面命令，此处构建测试环境，注意命令后缀（带 stage）。
+	
+	```shell
+	npm i
+	npm run build:stage
+	```
+
+### 1.2 Nginx 配置
+
+!!! Abstract ""
+	**假设各个文件分别按如下路径放置：**
+
+	- frontend 编译后文件存放目录
+  	/opt/dataease/frontend/dist
+	- mobile 编译后文件存放目录
+  	/opt/dataease/mobile/dist
+	- nginx 配置文件路径
+  	/usr/local/etc/nginx/nginx.conf
+
+	**在dataease工程目录下执行：**
+	```shell
+	mkdir -p /opt/dataease/frontend/dist
+	cp -r frontend/dist/* /opt/dataease/frontend/dist
+	
+	mkdir -p /opt/dataease/mobile/dist
+	cp -r mobile/dist/* /opt/dataease/mobile/dist
+	mv /opt/dataease/mobile/dist/index.html /opt/dataease/mobile/dist/app.html
+	```
+
+	**修改 nginx.conf 配置：**
+	```
+	server {
+    	listen      8000;
+    	server_name localhost;
+
+    	location / {
+        	root    /opt/dataease/frontend/dist/;
+        	index   index.html;
+    	}
+
+    	location /app.html {
+        	root    /opt/dataease/mobile/dist/;
+    	}
+
+    	location /de-app/ {
+        	alias   /opt/dataease/mobile/dist/;
+    	}
+
+    	location /de-api/ {
+        	proxy_pass http://localhost:8081/de-api/;
+        	proxy_set_header X-Real-IP $remote_addr;
+        	proxy_set_header Host $host:8000;
+        	server_name_in_redirect on;
+    	}
+	}
+	```
+
+### 1.3 运行测试
+
+!!! Abstract ""
+	访问 http://localhost:8000。
+
+## 2 编译运行（v1.7.0 及以前）
+
+### 2.1 编译前端
 
 !!! Abstract ""
 	```shell
@@ -12,10 +107,7 @@
 
 ![npm-install](../../img/dev_manual/npm-install.png){width="900px"}
 
-
-
-
-### 1.2 运行前端
+### 2.2 运行前端
 
 !!! Abstract ""
 	**前端运行有两种方式：**
@@ -69,7 +161,7 @@
 			proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 		}
 
-        # 注意配置域名代理访问的时候，添加下面这个代理配置，导致分享仪表板公共链接无法访问
+        # 注意配置域名代理访问的时候，注释下面这个代理配置，否则导致分享仪表板公共链接无法访问
         # location /link/ {
             # proxy_pass http://$host:8081;
             # porxy_pass https://dataease;
@@ -82,7 +174,7 @@
 	```
 	**注意：** nginx 默认以 nobody 用户身份运行，可能会遇到 403 的错误。可以授予 dist 目录访问权限，或者将 nginx 设置为 root 用户运行。
 
-### 1.3 编译后端
+### 2.3 编译后端
 
 !!! Abstract ""
 	**进入后端代码目录 backend，修改 pom.xml，去掉默认的打包前端代码的部分：**
@@ -96,99 +188,10 @@
 	```
 	**注意：** 在编译后端代码时如遇到依赖无法下载的问题，可以在百度网盘上下载一下最小化的 dataease 依赖包。链接: https://pan.baidu.com/s/1fWv_ze-QKUew3ND4NAdt8Q 提取码: rpzi
 
-### 1.4 运行后端
+### 2.4 运行后端
 
 !!! Abstract ""
 	**后端代码编译完成后，会在 backend/target 目录下生成一个 backend-1.4.0.jar，可以通过命令运行后端：**
 	```shell
 	nohup java -jar backend-1.4.0.jar &
 	```
-
-## 2 编译运行（v1.8.0 及以后）
-
-### 2.1 源码编译打包
-
-!!! Abstract ""
-	**打包 backend：**  
-	在backend目录下，执行下面命令。
-
-	```shell
-	mvn clean package -Pstage
-	```
-
-	**注意:**  
-
-    1. 在 backend 目录下，不是 dataease 目录；
-	2. 命令一定要加 -Pstage；
-	3. 运行文件为 target/backend-1.8.0.jar。
-
-	**打包 frontend：**  
-	在 frontend 目录下，执行下面命令，注意命令后缀。
-
-	```shell
-	npm run build:stage
-	```
-
-	**打包 mobile：**  
-	在 mobile 目录下，执行下面命令，注意命令后缀。
-	
-	```shell
-	npm run build:stage
-	```
-
-### 2.2 Nginx 配置
-
-!!! Abstract ""
-	**假设各个文件分别按如下路径放置：**  
-
-	- frontend 编译后文件存放目录
-  	/opt/dataease/frontend/dist
-	- mobile 编译后文件存放目录
-  	/opt/dataease/mobile/dist
-	- nginx 配置文件路径
-  	/usr/local/etc/nginx/nginx.conf
-
-	**在dataease工程目录下执行：**
-	```shell
-	mkdir -p /opt/dataease/frontend/dist
-	cp -r frontend/dist/* /opt/dataease/frontend/dist
-	
-	mkdir -p /opt/dataease/mobile/dist
-	cp -r mobile/dist/* /opt/dataease/mobile/dist
-	mv /opt/dataease/mobile/dist/index.html /opt/dataease/mobile/dist/app.html
-	```
-
-	**修改 nginx.conf 配置：**
-	```
-	server {
-    	listen      8000;
-    	server_name localhost;
-
-    	location / {
-        	root    /opt/dataease/frontend/dist/;
-        	index   index.html;
-    	}
-
-    	location /app.html {
-        	root    /opt/dataease/mobile/dist/;
-    	}
-
-    	location /de-app/ {
-        	alias   /opt/dataease/mobile/dist/;
-    	}
-
-    	location /de-api/ {
-        	proxy_pass http://localhost:8081/de-api/;
-        	proxy_set_header X-Real-IP $remote_addr;
-        	proxy_set_header Host $host:8000;
-        	server_name_in_redirect on;
-    	}
-	}
-	```
-
-### 2.3 运行测试
-
-!!! Abstract ""
-	访问 http://localhost:8000。
-
-
