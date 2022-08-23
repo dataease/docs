@@ -23,7 +23,7 @@
 	```
 
 	**编译打包 frontend：**  
-	在 frontend 目录下，执行下面命令，此处构建测试环境，注意命令后缀（带 stage）。
+	在 frontend 目录下，执行下面命令，构建测试环境，注意命令后缀（带 stage）。
 
 	```shell
 	npm i
@@ -31,7 +31,7 @@
 	```
 
 	**编译打包 mobile：**  
-	在 mobile 目录下，执行下面命令，此处构建测试环境，注意命令后缀（带 stage）。
+	在 mobile 目录下，执行下面命令，构建测试环境，注意命令后缀（带 stage）。
 	
 	```shell
 	npm i
