@@ -44,6 +44,7 @@ nav:
     - 版本迭代:
         - 更新日志: changelog.md
         - 更新说明:
+            - v1.14.0: release_notes/v1.14.0.md
             - v1.13.0: release_notes/v1.13.0.md
             - v1.12.0: release_notes/v1.12.0.md
     - 系统架构: system_arch.md
@@ -95,10 +96,11 @@ nav:
                 - 视图功能设计: user_manual/view_module/view_design.md
                 - 视图图库: user_manual/view_module/view_gallery.md
             - 过滤组件:
-                - 查询按钮组件: user_manual/filter_module/inquire_button_module.md
                 - 时间过滤组件: user_manual/filter_module/filtertime_module.md
                 - 文本过滤组件: user_manual/filter_module/filtertext_module.md
                 - 数字过滤组件: user_manual/filter_module/filternumber_module.md
+                - 查询按钮组件: user_manual/filter_module/inquire_button_module.md
+                - 清空按钮组件: user_manual/filter_module/clear_button_module.md
             - 其他组件:
                 - 样式组件: user_manual/other_module/style_module.md
                 - 多媒体组件: user_manual/other_module/multimedia_module.md
@@ -111,6 +113,7 @@ nav:
             - 操作日志: user_manual/system_management/operation_log.md
             - 站内消息: user_manual/system_management/message.md
             - 定时任务: user_manual/system_management/task.md
+            - 插件管理: user_manual/system_management/plugin_management.md
         - 移动端:
             - 移动端概述: user_manual/app_description.md
             - 移动端布局: user_manual/app_design.md

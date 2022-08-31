@@ -63,7 +63,7 @@
 ![日期组件显示效果](../../img/dashboard_generation/日期组件显示效果.png){ width="900px" }
 
 !!! Abstract ""
-	日期过滤组件还支持时分秒级别的设置。
+	日期过滤组件支持时分秒级别的设置。
 
 ![日期组件的时分秒](../../img/dashboard_generation/日期组件的时分秒.png){ width="900px" }
 ![日期组件的时分秒显示效果](../../img/dashboard_generation/日期组件的时分秒显示效果.png){ width="900px" }
@@ -76,3 +76,10 @@
 ![日期范围组件入口](../../img/dashboard_generation/日期范围组件入口.png){ width="900px" }  
 ![仪表盘编辑_过滤组件](../../img/dashboard_generation/日期范围组件.png){ width="900px" }  
 ![日期范围组件显示效果](../../img/dashboard_generation/日期范围组件显示效果.png){ width="900px" }
+
+!!! Abstract ""
+	日期范围组件支持常用时间范围的快捷选项，比如本周、当月、本季、今年、上周、上月、上季、去年等，极大方便查询使用；  
+	与日期过滤组件一样，日期范围组件也支持时分秒级别的设置。
+
+![日期范围组件显示效果](../../img/dashboard_generation/日期范围组件快捷查询.png){ width="900px" }
+

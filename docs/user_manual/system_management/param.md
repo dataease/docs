@@ -30,13 +30,13 @@
     **世界各国的地图文件可以自行在网上下载，下面举例说明如何使用。**  
     **提示：** 因为各个国家的行政架构不一致，无法统一处理，目前世界地图不支持钻取。  
     1.下载指定国家的 geo 地图文件，文件要求后缀名为 json，如俄罗斯的 geojson:  
-    https://github.com/codeforgermany/click_that_hood/blob/main/public/data/russia.geojson  
+    https://github.com/codeforgermany/click_that_hood/blob/main/public/data/russia.geojson；  
     2.确认 geo 文件是否正确，并在 properties 中包含 name 字段；
 
 ![地图设置geo文件](../../img/system_management/地图设置geo文件.png){ width="900" }
 
 !!! Abstract ""
-    3.查找国家地区代码来唯一标识该国家，如俄罗斯地区的代码为 643，区域代码可以写成 643100000；  
+    3.查找[国家地区代码](https://zh.wikipedia.org/wiki/%E5%9C%8B%E5%AE%B6%E5%9C%B0%E5%8D%80%E4%BB%A3%E7%A2%BC)来唯一标识该国家，如俄罗斯地区的代码为 643，区域代码可以写成 643100000；  
     4.在 DataEase 中创建俄罗斯地图；
 
 ![俄罗斯地图](../../img/system_management/俄罗斯地图.png){ width="900" }
@@ -68,10 +68,8 @@
 ### 4.1 精简模式
 
 !!! Abstract ""
-    精简模式下需配置数据引擎用以存储 Excel 及 API 数据集数据，目前该引擎只支持 MySQL 类型；  
-    DataEase v1.10.0 之前版本中引擎的参数都为空，用户不知道需要配置的情况下上传 Excel 会报错，提示用户“未配置数据引擎”；  
-    DataEase v1.10.0 系统会检查是否设置了引擎参数，若无设置，则读取 dataease.properties 配置文件中 MySQL 连接信息，自动填入其中；  
-    参考以下示例图，也可使用外部 MySQL 。
+    精简模式下需配置数据引擎用以存储 Excel 及 API 数据集数据，目前该引擎只支持 MySQL 类型，支持使用外部 MySQL；  
+    系统会自动检查是否设置了引擎参数，若无设置，则读取 dataease.properties 配置文件中 MySQL 连接信息，并填入其中。
 
 ![MySQL设置](../../img/system_management/MySQL设置.png){ width="900" }
 

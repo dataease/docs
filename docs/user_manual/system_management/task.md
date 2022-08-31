@@ -1,11 +1,10 @@
 ## 1 任务列表
 
 !!! Abstract ""
-	任务主界面，点击【新建任务】，新建一个定时任务。
+	任务主界面，点击【添加任务】，新建一个定时任务，操作步骤与数据集的添加定时同步任务一致。
 
 ![任务列表](../../img/system_management/任务列表.png){ width="900px" }  
-![新建任务](../../img/system_management/新建任务.png){ width="900px" }   
-![添加任务](../../img/system_management/添加任务.png){ width="900px" }
+![新建任务](../../img/system_management/新建任务.png){ width="900px" }
 
 !!! Abstract ""
 	如下图所示，任务执行情况可通过【站内消息】或消息铃铛查看。
