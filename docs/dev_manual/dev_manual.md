@@ -50,6 +50,7 @@
     sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
     skip-name-resolve
     ```
+    **注意：Windows 系统数据库初始化配置应删除 innodb_flush_method 参数，请参考[文章](https://bugs.mysql.com/bug.php?id=40757)。**
 
     请参考文档中的建库语句创建 DataEase 使用的数据库，**DataEase 后端服务启动时会自动在配置的库中创建所需的表结构及初始化数据。**
     ```mysql
