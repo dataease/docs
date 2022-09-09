@@ -39,3 +39,16 @@
     dectl reload
     ```
     重载容器。受限于服务器性能的原因，doris-be 启动比较慢，doris-fe 依赖 doris-be ，在检测时间内未成功启动完成，doris-fe 便不会再启动。
+
+## 6 Doris-fe 启动失败，日志提示 UNKNOWN 
+
+!!! Abstract ""
+    **查询 Doris-fe 日志报事务错误 20 问题，状态为 UNKNOWN。**
+    ```shell
+    Problem closing transaction 20. The current state is:UNKNOWN.
+    ```
+    此为磁盘空间不足导致，清理磁盘空间后再重启 Doris-fe 即可，具体可参考知识库。
+
+    - [磁盘空间不足导致 Doris-fe 显示 unhealthy 状态的解决方案](https://kb.fit2cloud.com/archives/93)  
+    - [排查DataEase服务器磁盘空间占用情况并清理](https://kb.fit2cloud.com/archives/159)  
+    - [清理 DataEase 服务器磁盘空间](https://kb.fit2cloud.com/archives/52)  
