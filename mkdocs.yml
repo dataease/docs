@@ -68,6 +68,11 @@ nav:
         - Windows 单机部署:
               - 离线安装: installation/offline_installation_windows.md
         - 命令行工具: installation/cli.md
+        - 安装部署常见问题:
+          - 安装配置相关: faq/configuration_faq/configuration.md
+          - 安装启动相关: faq/configuration_faq/installation_starts.md
+          - MySQL 相关: faq/configuration_faq/dataease_mysql.md
+
     - 功能手册:
         - 通用功能: user_manual/general.md
         - 首页: user_manual/homepage.md
@@ -118,12 +123,9 @@ nav:
             - 移动端概述: user_manual/app_description.md
             - 移动端布局: user_manual/app_design.md
         - 模板市场: user_manual/template_market.md
+    - 最佳实践: best_practices.md
     - 教学视频: instructional_video.md
     - 常见问题:
-        - 安装配置:
-            - 安装配置相关: faq/configuration_faq/configuration.md
-            - 安装启动相关: faq/configuration_faq/installation_starts.md
-            - MySQL 相关: faq/configuration_faq/dataease_mysql.md
         - 备份还原: faq/backup_faq.md
         - 系统管理: faq/system_management.md
         - 功能相关:
