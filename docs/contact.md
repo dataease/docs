@@ -6,11 +6,15 @@
 
 ![wechat-group](img/wechat-group.png)
 
-## 3 项目地址
+## 3 学习认证
+
+![wechat-official](img/wechat-official2.jpg){ width="156px" }
+
+## 4 项目地址
 
 - [DataEase][dataease] ![dataease stars][dataease stars]
 
-## 4 联系方式
+## 5 联系方式
 
 - 官网：http://www.dataease.io
 - 邮箱：support@fit2cloud.com
