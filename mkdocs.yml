@@ -41,6 +41,7 @@ theme:
     custom_dir: "theme"
 nav:
     - 产品介绍: index.md
+    - 快速入门: quick_start.md
     - 版本迭代:
         - 更新日志: changelog.md
         - 更新说明:
