@@ -6,7 +6,7 @@
     - [使用计算字段做数据字典映射](https://kb.fit2cloud.com/archives/47)  
     - [选择哪个视图库中的图表更好](https://kb.fit2cloud.com/archives/74)  
     - [设置饼图显示百分比信息](https://kb.fit2cloud.com/archives/23)  
-
+    - [使用 DataEase 制作多指标折线图/柱状图](https://kb.fit2cloud.com/archives/82)
 
 ## 2 运维部署篇
 
