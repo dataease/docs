@@ -432,14 +432,19 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="28">
+		<td rowspan="29">
 			系统管理
 		</td>
-		<td rowspan="3">
+		<td rowspan="4">
 			用户管理
 		</td>
 		<td>
 			支持用户的新建、编辑、删除、修改密码、启用、禁用、搜索、批量导入等；
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持批量导入用户； <span class="x-pack-span">X-Pack</span>
 		</td>
 	</tr>
 	<tr>
