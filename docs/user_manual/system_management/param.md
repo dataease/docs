@@ -10,6 +10,18 @@
 
 ![调整超时时间](../../img/system_management/调整超时时间.png){ width="900" }
 
+!!! Abstract ""
+    支持设置数据源有效性检测的间隔时间。
+
+![基础设置](../../img/system_management/数据源有效性检测.png){ width="900" }
+
+!!! Abstract ""
+    支持防暴力登录设置以及解锁用户；  
+    “限制登录失败次数”：触发禁止登录的次数上限；  
+    “限制登录失败时间”：从禁止登录到可再次登录之间需要等待的时间。
+
+![基础设置](../../img/system_management/数据源有效性检测.png){ width="900" }
+
 ## 2 邮件设置
 
 !!! Abstract ""

@@ -307,10 +307,10 @@
 		</td>
     </tr>
     <tr>
-        <td rowspan="14">
+        <td rowspan="15">
         数据集
         </td>
-		<td rowspan="14">
+		<td rowspan="15">
 			数据集管理
         </td>
 	</tr>
@@ -337,6 +337,11 @@
 	<tr>
 		<td>
 			数据库数据集和 SQL 数据集支持直连和定时同步两种连接方式；
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持 SQL 数据集下数据参考功能，可预览数据库中的表及表字段；
 		</td>
 	</tr>
 	<tr>
@@ -387,7 +392,7 @@
 			数据源管理
 		</td>
 		<td>
-			支持多种数据源，例如：多 Sheet 页的 Excel 文件，MySQL / Oracle / SQL Server / PostgreSQL / Elasticsearch / ClickHouse / MongoDB / AWS RedShift / MariaDB / Doris / Hive / DB2 数据库 / Impala / StarRocks / TiDB / MaxCompute / Presto / 达梦 / API 数据源等；
+			支持多种数据源，例如：多 Sheet 页的 Excel 文件，CSV 文件，MySQL / Oracle / SQL Server / PostgreSQL / Elasticsearch / ClickHouse / MongoDB / AWS RedShift / MariaDB / Doris / Hive / DB2 数据库 / Impala / StarRocks / TiDB / MaxCompute / Presto / 达梦 / API 数据源等；
 		</td>
 	</tr>
 	<tr>
@@ -432,14 +437,14 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="29">
+		<td rowspan="35">
 			系统管理
 		</td>
 		<td rowspan="4">
 			用户管理
 		</td>
 		<td>
-			支持用户的新建、编辑、删除、修改密码、启用、禁用、搜索、批量导入等；
+			支持用户的新建、编辑、删除、修改密码、启用、禁用、搜索等；
 		</td>
 	</tr>
 	<tr>
@@ -506,6 +511,24 @@
             支持行列权限的白名单设置； <span class="x-pack-span">X-pack</span>
         </td>
     </tr>
+    <tr>
+        <td rowspan="3">
+            系统参数
+        </td>
+        <td>
+            支持设置系统请求超时时间、消息保留时间、数据源检测时间间隔；
+        </td>
+    </tr>
+    <tr>
+        <td>
+        支持设置默认登录方式（普通登录、LDAP、OIDC、CAS）；  <span class="x-pack-span">X-Pack</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        支持设置限制登录失败次数及限制登录失败时间；
+        </td>
+    </tr>
 	<tr>
 		<td rowspan="1">
 			显示设置
@@ -532,9 +555,27 @@
 			支持对主题进行基础配色、字体配色、边框配色、背景配色等多属性的设置； <span class="x-pack-span">X-Pack</span>
 		</td>
 	</tr>
+    <tr>
+        <td rowspan="3">
+            平台对接
+        </td>
+        <td>
+            支持飞书平台接入，可扫码登录、接收消息和定时报告；  <span class="x-pack-span">X-Pack</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            支持钉钉平台接入，可扫码登录、接收消息和定时报告；  <span class="x-pack-span">X-Pack</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            支持企业微信平台接入，可扫码登录、接收消息和定时报告；  <span class="x-pack-span">X-Pack</span>
+        </td>
+    </tr>
 	<tr>
 		<td rowspan="3">
-			单点登录
+			认证设置
 		</td>
 		<td>
 			支持 LDAP 认证对接； <span class="x-pack-span">X-Pack</span>

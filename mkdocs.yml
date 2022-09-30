@@ -45,6 +45,7 @@ nav:
     - 版本迭代:
         - 更新日志: changelog.md
         - 更新说明:
+            - v1.15.0: release_notes/v1.15.0.md
             - v1.14.0: release_notes/v1.14.0.md
             - v1.13.0: release_notes/v1.13.0.md
             - v1.12.0: release_notes/v1.12.0.md
@@ -87,7 +88,6 @@ nav:
                 - 数据库数据集: user_manual/dataset_configuration/dataset_database.md
                 - SQL 数据集: user_manual/dataset_configuration/dataset_SQL.md
                 - Excel 数据集: user_manual/dataset_configuration/dataset_Excel.md
-                - 自定义数据集: user_manual/dataset_configuration/dataset_definision.md
                 - 关联数据集: user_manual/dataset_configuration/dataset_connection.md
                 - API 数据集: user_manual/dataset_configuration/dataset_api.md
             - 数据集功能设计: user_manual/dataset_design.md

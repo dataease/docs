@@ -126,6 +126,8 @@
 
 ![设置 demo 数据源](../../img/installation/HA/设置 demo 数据源.png){ width="900px" }
 
+![设置 demo 数据源](../../img/installation/HA/设置 demo 数据源1.png){ width="900px" }
+
 ### 6.2 设置引擎
 
 !!! Abstract ""

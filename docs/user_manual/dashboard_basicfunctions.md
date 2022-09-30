@@ -187,7 +187,12 @@
 ## 11 复用
 
 !!! Abstract ""
-	支持复用所有的组件。
+	支持复用所有的组件，复用视图支持适配当前仪表板样式。
 
 ![仪表板_复用](../img/dashboard_generation/仪表板_复用.png){ width="900px" }
+
+!!! Abstract ""
+	复制上图不一样样式的仪表板中的视图会自动适配当前仪表板下的样式。
+
+![仪表板_复用](../img/dashboard_generation/仪表板_复用2.png){ width="900px" }
 
