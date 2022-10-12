@@ -18,7 +18,7 @@
 
 !!! Abstract "问题修复 :palm_tree:"
 
-    - fix(数据源): 修复MySQL JDBC连接字符串存在的反序列化漏洞
+    - fix(数据源): 修复 MySQL JDBC 连接字符串存在的反序列化漏洞
 
 ### v1.15.1
 
