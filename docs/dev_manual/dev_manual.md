@@ -150,7 +150,8 @@
     1.下载 DataEase 工程源码（工程地址：https://github.com/dataease/dataease.git) ；  
     2.进入工程目录后，执行 mvn clean package 进行编译；  
     3.编译完成后，在工程目录的 backend/target 目录下，会生成一个 backend-x.y.z.jar （xyz代表版本号，xyz具体值视具体版本而定） 的可运行 jar 包。可以通过 java -jar backend-x.y.z.jar 来运行 DataEase；  
-    4.服务完全启动后，可以在本地浏览器访问 http://localhost:8081 来访问 DataEase 服务。
+    4.服务完全启动后，可以在本地浏览器访问 http://localhost:8081 来访问 DataEase 服务。  
+    **提示：此处已有编译好的 v1.15 版本的 jar 包，可通过此[链接](https://kaibo-1251506367.cos.ap-beijing.myqcloud.com/backend-1.15.0.jar)下载。**
 
 ## 4 本地运行 Kettle 和 Doris (可选)
 

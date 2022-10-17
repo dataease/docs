@@ -140,8 +140,9 @@
 	```shell
 	echo '{"省份":"北京市"}'|base64
 	```
-	加密结果为：eyLnnIHku70iOiLljJfkuqzluIIifQo=  
-	在仪表板的公共链接后加上 ?attachParams= 加密后的内容，构建完整的 URL：公共链接 ?attachParams=eyLnnIHku70iOiLljJfkuqzluIIifQo=  
+	加密结果为：eyLnnIHku70iOiLljJfkuqzluIIifQo= ，组装规则如下:  
+	< 仪表板公共链接 > + < ?attachParams= > + < 加密后的结果 >  
+	构建完整的 URL 为：<仪表板公共链接>?attachParams=eyLnnIHku70iOiLljJfkuqzluIIifQo=  
 	以公共链接的形式访问仪表板，关联的内容被过滤。
 
 ![外部参数设置_效果预览](../img/dashboard_generation/外部参数设置_效果预览.png){ width="900px" }
@@ -155,6 +156,27 @@
 	访问构建后的 URL 结果如下。
 
 ![外部参数设置_数组](../img/dashboard_generation/外部参数设置_数组.png){ width="900px" }
+
+!!! Abstract ""
+	公共链接外部参数支持多参数传参，将外部参数名称及过滤的数据组合成 Json 再对传参进行 base64 处理，以下为示例：
+	
+	```shell
+	echo '{"省份":"广东省","年份":"2020"}'|base64
+	```
+	加密结果为：eyLnnIHku70iOiLlub/kuJznnIEiLCLlubTku70iOiIyMDIwIn0K  
+	配置参数"省份"。
+
+![外部参数设置_多参](../img/dashboard_generation/外部参数设置_多参.png){ width="900px" }
+
+!!! Abstract ""
+	配置参数"年份"。
+
+![外部参数设置_多参](../img/dashboard_generation/外部参数设置_多参1.png){ width="900px" }
+
+!!! Abstract ""
+	访问：<仪表板公共链接>?attachParams=eyLnnIHku70iOiLlub/kuJznnIEiLCLlubTku70iOiIyMDIwIn0K，结果如下。
+
+![外部参数设置_多参](../img/dashboard_generation/外部参数设置_多参2.png){ width="900px" }
 
 ## 8 辅助设计网格
 
