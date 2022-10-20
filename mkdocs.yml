@@ -137,7 +137,7 @@ nav:
         - 开发环境搭建: dev_manual/dev_manual.md
         - 源码搭建（前后端分离）:
             - 工具准备: dev_manual/dev_deployment/tool.md
-            - 环境准备: dev_manual/dev_deployment/enviroment.md
+            - 环境准备: dev_manual/dev_deployment/environment.md
             - 源码准备: dev_manual/dev_deployment/code.md
             - 编译运行: dev_manual/dev_deployment/compile.md
             - 注意事项: dev_manual/dev_deployment/attention.md

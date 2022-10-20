@@ -154,7 +154,7 @@
     }
     
     vrrp_instance VI_1 {
-        state BACkUP
+        state BACKUP
         interface ens192
         virtual_router_id 51
         priority 50
