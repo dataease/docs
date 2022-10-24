@@ -42,7 +42,7 @@
 ### 1.4 柱状图
 
 !!! Abstract ""
-    柱状图又称条形图，是一种通过柱形的高度（横向的情况下则是宽度）来表现数据大小的一种常用图表类型，柱状图包括基础柱状图、堆叠柱状图、横向柱状图和横向堆叠柱状图，其中堆叠柱状图是柱状图的变形，不仅可以比较不同维度间总数的差别，还可以显示同类型下各数据的大小情况。  
+    柱状图又称条形图，是一种通过柱形的高度（横向的情况下则是宽度）来表现数据大小的一种常用图表类型，柱状图包括基础柱状图、堆叠柱状图、横向柱状图和横向堆叠柱状图。  
     **注意：** 柱状图当前同一维度只能显示一种颜色。
 
 !!! Abstract ""
@@ -50,8 +50,8 @@
 
     ![echarts基础柱状图](../../img/view_generation/view_gallery/ECharts/echarts基础柱状图.png){ width="900px" }
 
-!!! Abstract ""
-    堆叠柱状图
+!!! Abstract "" 
+    堆叠柱状图是柱状图的变形，堆叠柱状图将每个柱子进行颜色分割，用于显示同系列下各个数据的大小情况，它不仅可以比较不同维度间总数的差别，还可以显示同类型下子类别的构成以及各数据的大小情况。
 
     ![echarts堆叠柱状图](../../img/view_generation/view_gallery/ECharts/echarts堆叠柱状图.png){ width="900px" }
 
@@ -61,7 +61,7 @@
     ![echarts横向柱状图](../../img/view_generation/view_gallery/ECharts/echarts横向柱状图.png){ width="900px" }
 
 !!! Abstract ""
-    横向堆叠柱状图
+    横向堆叠柱状图如同字面意思，是堆叠柱状图的横向展示。
 
     ![echarts横向堆叠柱状图](../../img/view_generation/view_gallery/ECharts/echarts横向堆叠柱状图.png){ width="900px" }
 
@@ -76,7 +76,7 @@
     ![echarts基础折线图](../../img/view_generation/view_gallery/ECharts/echarts基础折线图.png){ width="900px" }
 
 !!! Abstract ""
-    堆叠折线图
+    堆叠折线图在折线图的基础上形成，折线与自变量坐标轴之间的区域使用颜色填充，堆叠折线图每一个数据的起点都是基于前一个数据，最终代表的是所有数据的和，即累计值。
 
     ![echarts堆叠折现图](../../img/view_generation/view_gallery/ECharts/echarts堆叠折线图.png){ width="900px" }
 
@@ -239,7 +239,7 @@
 ### 2.4 柱状图
 
 !!! Abstract ""
-    柱状图又称条形图，是一种通过柱形的高度（横向的情况下则是宽度）来表现数据大小的一种常用图表类型，柱状图包括基础柱状图、堆叠柱状图、横向柱状图和横向堆叠柱状图，其中堆叠柱状图是柱状图的变形，不仅可以比较不同维度间总数的差别，还可以显示同类型下各数据的大小情况。
+    柱状图又称条形图，是一种通过柱形的高度（横向的情况下则是宽度）来表现数据大小的一种常用图表类型，柱状图包括基础柱状图、堆叠柱状图、横向柱状图和横向堆叠柱状图。
 
 !!! Abstract ""
     基础柱状图
@@ -247,7 +247,7 @@
     ![antv基础柱状图](../../img/view_generation/view_gallery/AntV/antv基础柱状图.png){ width="900px" }
 
 !!! Abstract ""
-    堆叠柱状图
+    堆叠柱状图是柱状图的变形，堆叠柱状图将每个柱子进行颜色分割，用于显示同系列下各个数据的大小情况，它不仅可以比较不同维度间总数的差别，还可以显示同类型下子类别的构成以及各数据的大小情况。
 
     ![antv堆叠柱状图](../../img/view_generation/view_gallery/AntV/antv堆叠柱状图.png){ width="900px" }
 
@@ -257,7 +257,7 @@
     ![antv横向柱状图](../../img/view_generation/view_gallery/AntV/antv横向柱状图.png){ width="900px" }
 
 !!! Abstract ""
-    横向堆叠柱状图
+    横向堆叠柱状图如同字面意思，是堆叠柱状图的横向展示。
 
     ![antv横向堆叠柱状图](../../img/view_generation/view_gallery/AntV/antv横向堆叠柱状图.png){ width="900px" }
 
@@ -286,7 +286,7 @@
     ![antv基础折线图](../../img/view_generation/view_gallery/AntV/antv基础折线图.png){ width="900px" }
 
 !!! Abstract ""
-    堆叠折线图
+    堆叠折线图在折线图的基础上形成，折线与自变量坐标轴之间的区域使用颜色填充，堆叠折线图每一个数据的起点都是基于前一个数据，最终代表的是所有数据的和，即累计值。
 
     ![antv堆叠折线图](../../img/view_generation/view_gallery/AntV/antv堆叠折线图.png){ width="900px" }
 
