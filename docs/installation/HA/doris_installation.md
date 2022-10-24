@@ -52,7 +52,8 @@
     echo fs.file-max = 6553560 >> /etc/sysctl.conf
     ```
 
-    设置完参数后，可以重启一下服务器。
+    设置完参数后，可以重启一下服务器；  
+    **注意：** 需对所有 Doris 节点服务器进行配置。
 
 ### 1.4 防火墙
 
@@ -76,6 +77,7 @@
     ```shell
     service firewalld stop
     ```
+    **注意：** 需对所有 Doris 节点服务器进行配置。
 
 ## 2 安装运行 Doris FE
 
