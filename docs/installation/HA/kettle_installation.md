@@ -22,7 +22,7 @@
 ### 1.2 软件准备
 
 !!! Abstract ""
-    下载 Kettle 安装包，此处使用的是 pdi-ce-8.3.0.0-371.zip，链接地址：https://pan.baidu.com/s/1sMYw0H49uEBqwL_BGskt8g?pwd=am3q 提取码：am3q。
+    下载 Kettle 安装包，此处使用的是 pdi-ce-8.3.0.0-371.zip，链接地址：https://pan.baidu.com/s/106CxFdc0n_kYOHRT4M5ZaQ 提取码：spzf 。
 
 ### 1.3 防火墙
 
@@ -77,7 +77,8 @@
 
 !!! Abstract ""
     Kettle 需要通过数据库驱动程序来连接各类数据源，官方提供的安装包内驱动程序并不齐全，此处需要额外添加几个驱动，可以通过百度网盘进行下载：  
-    链接: https://pan.baidu.com/s/1bTpL1MtFnebaOv1wqKhulQ?pwd=ltvj 提取码: ltvj
+    链接: https://pan.baidu.com/s/1bTpL1MtFnebaOv1wqKhulQ?pwd=ltvj 提取码: ltvj  
+    解压后的数据库驱动文件，拷贝到 Kettle 应用的安装位置，例如：/opt/kettle/data-integration/lib 目录下，然后重启 Kettle 即可。
 
 ### 4.3 创建配置文件
 
