@@ -18,7 +18,7 @@
 
 !!! Abstract "问题修复 :palm_tree:"
 
-    -fix(数据源): 修复 SQLServer 获取表出错的问题
+    - fix(数据源): 修复 SQLServer 获取表出错的问题
 
 ### v1.15.3
 
