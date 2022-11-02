@@ -104,6 +104,8 @@
 ## 6 应用示例
 
 !!! Abstract ""
+    - [DataEase 仪表板数据概览](https://kb.fit2cloud.com/archives/171)
+    - [Jira 业务数据仪表板](https://kb.fit2cloud.com/archives/161)
     - [MeterSphere 测试质量大屏](https://kb.fit2cloud.com/archives/120)  
     - [JumpServer 运维安全审计大屏](https://kb.fit2cloud.com/archives/112)
     - [Redmine 任务分析大屏](https://kb.fit2cloud.com/archives/119)

@@ -218,7 +218,7 @@
 	</tr>
 	<tr>
 		<td>
-			支持多种图表类型，明细表/汇总表/透视表/指标卡/文本卡/基础柱状图/分组柱状图/堆叠柱状图/横向柱状图/横向堆叠柱状图/基础折线图/堆叠折线图/饼图/南丁格尔玫瑰图/漏斗图/雷达图/仪表盘/中国地图/世界地图/气泡地图/散点图/气泡图/矩形树图/组合图/水波图/瀑布图/词云图/符号地图/富文本视图等；
+			支持多种图表类型，明细表/汇总表/透视表/指标卡/文本卡/基础柱状图/分组柱状图/堆叠柱状图/横向柱状图/横向堆叠柱状图/分组堆叠柱状图/百分比柱状图/基础折线图/堆叠折线图/饼图/环形图/南丁格尔玫瑰图/漏斗图/雷达图/仪表盘/中国地图/世界地图/气泡地图/散点图/气泡图/矩形树图/组合图/水波图/瀑布图/词云图/符号地图/富文本视图等；
 		</td>
 	</tr>
 	<tr>
@@ -283,7 +283,7 @@
     </tr>
     <tr>
 		<td>
-			支持指标的高级计算，例如同比、环比等；
+			支持指标的高级计算，例如同比、环比、占比计算等；
 		</td>
 	</tr>
 	<tr>
@@ -392,7 +392,7 @@
 			数据源管理
 		</td>
 		<td>
-			支持多种数据源，例如：多 Sheet 页的 Excel 文件，CSV 文件，MySQL / Oracle / SQL Server / PostgreSQL / Elasticsearch / ClickHouse / MongoDB / AWS RedShift / MariaDB / Doris / Hive / DB2 数据库 / Impala / StarRocks / TiDB / MaxCompute / Presto / 达梦 / API 数据源等；
+			支持多种数据源，例如：多 Sheet 页的 Excel 文件，CSV 文件，MySQL / Oracle / SQL Server / PostgreSQL / Elasticsearch / ClickHouse / MongoDB / AWS RedShift / MariaDB / Doris / Hive / DB2 数据库 / Impala / StarRocks / TiDB / MaxCompute / Presto / Kylin / 达梦 / API 数据源等；
 		</td>
 	</tr>
 	<tr>
@@ -434,6 +434,37 @@
 	<tr>
 		<td>
 			支持系统内直接应用在线模板市场中的模板，转为系统内仪表板；
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="5">
+            应用
+		</td>
+		<td rowspan="5">
+			应用管理
+		</td>
+		<td>
+			支持将仪表板导出为应用；
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持将应用文件上传到应用管理处；
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持对应用文件进行分类整理；
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持使用应用创建新的仪表板（系统会同时创建仪表板及其所需的数据集与数据源）；
+		</td>
+	</tr>
+	<tr>
+		<td>
+			支持查看应用的历史使用记录；
 		</td>
 	</tr>
 	<tr>
@@ -560,7 +591,7 @@
             平台对接
         </td>
         <td>
-            支持飞书平台接入，可扫码登录、接收消息和定时报告；  <span class="x-pack-span">X-Pack</span>
+            支持飞书与国际飞书平台接入，可扫码登录、接收消息和定时报告；  <span class="x-pack-span">X-Pack</span>
         </td>
     </tr>
     <tr>
@@ -691,6 +722,5 @@
 !!! Abstract ""
     - **如何向团队介绍 DataEase？：** https://dataease.io/download/introduce-dataease_202206.pdf
     - **获取新一代数据可视化分析平台建设指南：** https://jinshuju.net/f/cerWRY
-    - **DataEase 小白 SQL 进阶直播课：** https://lkh.h5.xeknow.com/sl/1SuhT7
     - **DataEase 知识库：** https://kb.fit2cloud.com/categories/dataease
     - **飞致云学堂：** https://edu.fit2cloud.com/index

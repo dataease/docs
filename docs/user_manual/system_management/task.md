@@ -19,6 +19,6 @@
 ![执行记录](../../img/system_management/执行记录.png){ width="900px" }
 
 !!! Abstract ""
-	如图所示，点击下图中的位置，可暂停，执行，编辑或删除等待执行的任务。
+	如图所示，点击下图所示的位置，可查看或删除任务。
 
 ![任务列表_暂停任务](../../img/system_management/任务列表_暂停任务.png){ width="900px" }

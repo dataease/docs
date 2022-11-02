@@ -23,7 +23,7 @@
 ## 2 界面介绍
 
 !!! Abstract ""
-    进入 DataEase 主界面后可以看到界面上方导航栏，有【首页】【仪表板】【数据集】【数据源】【模板市场】【系统管理】六大模块。
+    进入 DataEase 主界面后可以看到界面上方导航栏，有【首页】【仪表板】【数据集】【数据源】【模板市场】【应用】【系统管理】七大模块。
 
 ![导航栏](img/quick_start/导航栏.png){ width="900px" }
 
@@ -53,6 +53,11 @@
 ![模板市场](img/quick_start/模板市场.png){ width="900px" }
 
 !!! Abstract ""
+    【应用】模块，应用既包含仪表板，也包含其用到的数据集与数据源的关联关系，使用应用可快速制作第三方系统仪表板，具体可参考本文档功能手册[应用](./user_manual/app_template_market.md)。
+
+![模板市场](img/quick_start/应用.png){ width="900px" }
+
+!!! Abstract ""
     【系统管理】模块，该模块可对用户与租户、角色与权限、系统配置、定时任务等内容进行管理与配置，具体可参考本文档功能手册[系统管理](./user_manual/system_management/user.md)。
 
 ![系统管理界面](img/quick_start/系统管理界面.png){ width="900px" }
@@ -75,7 +80,7 @@
 ### 3.3 创建数据集
 
 !!! Abstract ""
-    切换到数据集菜单，在【官方示例】分组下添加数据库数据集，选择 "demo_gdp_by_city" 点击确认即可。 
+    切换到数据集菜单，在【官方示例】分组下添加数据库数据集，选择上一步创建的数据源 "GDP 分析"，勾选数据表 "demo_gdp_by_city" 点击确认即可。 
 
 ![添加数据集](img/quick_start/添加数据集.png){ width="900px" }
 

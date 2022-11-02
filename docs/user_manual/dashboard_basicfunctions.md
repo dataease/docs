@@ -86,7 +86,7 @@
 	如下图所示，支持设置组件背景颜色、透明度与边框半径；  
 	**提示：** DataEase v1.12.0 之前版本，此处设置需要将视图样式设置为 [「样式优先级」](../view_module/view_design/#3) 跟随仪表板才会生效。
 
-![仪表版_其他样式](../img/dashboard_generation/仪表版_其他样式.png){ width="900px" }
+![仪表版_其他样式](../img/dashboard_generation/仪表板_其他样式.png){ width="900px" }
 
 ### 5.5 组件配色
 

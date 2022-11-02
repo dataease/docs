@@ -15,25 +15,30 @@
 ## 3 选项卡
 
 !!! Abstract ""
-	用户在制作仪表板时，可通过选项卡展示多个视图，并通过切换查看。
+	用户在制作仪表板时，可通过选项卡展示多个视图，并通过切换查看；  
+	Tab 组件支持放置视图、视频、流媒体、网页等组件，配置方式与单独使用该组件一致，即 Tab 组件支持多组件移入移出自由布局。
+
+	- Tab 组件内支持放置多个组件；
+	- 支持在仪表板中以拖拽的形式，将其他组件拖拉至 Tab 组件内；
+	- 支持 Tab 项内组件的联动、下钻、跳转等；
+	- Tab 组件中不可以再嵌套 Tab。
 
 ![仪表盘编辑_其他组件](../../img/dashboard_generation/tab选项.png){ width="900px" }
 
 !!! Abstract ""
-	点击下图所示位置，通过 Tab 页展示一个视图。  
-	**提示：** Tab 组件目前不支持同一 Tab 展示多个视图。
+	如下图所示，可通过 Tab 页展示多个视图。
 
 ![Tab页展示视图](../../img/dashboard_generation/Tab页展示视图.png){ width="900px" }
+
+!!! Abstract ""
+	如下图以 Tab 项内组件的下钻做示例。
+
+![Tab页展示视图](../../img/dashboard_generation/Tab页视图下钻.png){ width="900px" }
 
 !!! Abstract ""
 	如下图所示，可设置 Tab 组件内部样式。
 
 ![Tab页内部样式编辑](../../img/dashboard_generation/Tab页内部样式编辑.png){ width="900px" }
-
-!!! Abstract ""
-	如下图所示，Tab 组件支持放置视频、流媒体、网页组件，配置方式与单独使用该组件一致。
-
-![Tab组件_选择组件](../../img/dashboard_generation/Tab组件_选择组件.png){ width="900px" }
 
 ## 4 富文本
 
