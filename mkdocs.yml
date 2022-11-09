@@ -100,7 +100,10 @@ nav:
             - 视图组件:
                 - 视图概述: user_manual/view_module/view_generation.md
                 - 添加视图: user_manual/view_module/view_create.md
-                - 视图功能设计: user_manual/view_module/view_design.md
+                - 视图基础功能: user_manual/view_module/view_basic_functionality.md
+                - 视图数据设计: user_manual/view_module/view_data_design.md
+                - 视图样式设计: user_manual/view_module/view_style_design.md
+                - 视图高级设计: user_manual/view_module/view_advanced_design.md
                 - 视图图库: user_manual/view_module/view_gallery.md
             - 过滤组件:
                 - 时间过滤组件: user_manual/filter_module/filtertime_module.md
