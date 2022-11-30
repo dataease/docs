@@ -282,6 +282,32 @@
 
 ![安装DataEase](../img/installation/windows-install.png){ width="900px" }
 
+!!! Abstract ""
+	**由于采用 wsl2 的方案，如果在 Windows 系统中访问 DataEase 服务，需要在 wsl2 中查看网卡 IP 地址（在 18945 版本后，微软对 wsl2 做了改进，可以使用 localhost 访问 wsl2）：**
+
+	```sh
+	ifconfig eth0
+	```
+
+![获取网卡地址](../img/installation/windows-install-ipaddr.png){ width="600px" }
+
+!!! Abstract ""
+	**同时，如果局域网内需要访问此台 Windows 上的 DataEase 服务，可以通过端口转发实现：（Powershell 管理员身份运行）**
+
+	```sh
+	netsh interface portproxy add v4tov4 listenport=80 listenaddress=0.0.0.0 connetport=80 connectaddress=localhost
+	```
+
+	对于高版本 Windows 支持 localhost 映射为 wsl2 地址，否则请参考上一步获取 wsl2 地址。
+	
+	查看所有转发规则，如果有如下显示，则说明其他局域网内的主机可以通过此台 Windows 访问 DataEase 服务了。
+
+	```sh
+	netsh ineterface portproxy show all
+	```
+
+![端口转发](../img/installation/windows-install-portproxy.png){ width="600px" }
+
 
 ## 3 其他注意事项
 
