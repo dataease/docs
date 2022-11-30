@@ -42,7 +42,20 @@
         - 符号地图
         - 富文本视图
 
-## 3 功能区介绍
+## 3 表格分页
+
+!!! Abstract ""
+    **直连模式下，AntV 图库的明细表实现前后端分页。**  
+    **注意：** 下面几种数据源在系统里不支持直连分页，分页为前端分页。
+
+    - Apache Kylin
+    - SQL Server
+    - Elasticsearch
+    - Presto
+    - Apache Doris
+    - StarRocks
+
+## 4 功能区介绍
 
 !!! Abstract ""
     视图设计功能区介绍

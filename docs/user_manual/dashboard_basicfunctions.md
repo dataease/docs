@@ -197,14 +197,7 @@
 
 ![仪表板_批量操作_共性属性](../img/dashboard_generation/仪表板_批量操作_共性属性.png){ width="900px" }
 
-## 10 返回
-
-!!! Abstract ""
-	点击下图所示的返回按钮，关闭仪表板。
-
-![仪表板_关闭](../img/dashboard_generation/仪表板_关闭.png){ width="900px" }
-
-## 11 复用
+## 10 复用
 
 !!! Abstract ""
 	支持复用所有的组件，复用视图支持适配当前仪表板样式。
@@ -215,4 +208,35 @@
 	复制上图不一样样式的仪表板中的视图会自动适配当前仪表板下的样式。
 
 ![仪表板_复用](../img/dashboard_generation/仪表板_复用2.png){ width="900px" }
+
+## 11 保存
+
+!!! Abstract ""
+	点击下图所示的保存按钮，保存仪表板。
+
+![仪表板_保存](../img/dashboard_generation/仪表板_保存.png){ width="900px" }
+
+## 12 返回
+
+!!! Abstract ""
+	点击下图所示的返回按钮，关闭仪表板。
+
+![仪表板_关闭](../img/dashboard_generation/仪表板_关闭.png){ width="900px" }
+
+## 13 快捷键使用
+
+!!! Abstract ""
+	仪表板支持快捷键功能，支持复制、粘贴、保存、放大。  
+	Mac：
+
+	- 复制/粘贴组件：command + c / command + v
+	- 大图查看视图：command + .
+	- 保存仪表板：command + s
+
+    其他：
+
+    - 复制/粘贴组件：ctrl + c / ctrl + v
+    - 大图查看视图：ctrl + .
+    - 保存仪表板：ctrl + s
+
 

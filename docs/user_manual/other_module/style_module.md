@@ -5,6 +5,7 @@
 
 ![仪表盘编辑_其他组件](../../img/dashboard_generation/文字组件.png){ width="900px" }  
 ![仪表盘编辑_其他组件](../../img/dashboard_generation/文字组件显示效果.png){ width="900px" }
+
 ## 2 矩形
 
 !!! Abstract ""
@@ -12,7 +13,16 @@
 
 ![仪表盘编辑_其他组件](../../img/dashboard_generation/矩形框.png){ width="900px" }
 
-## 3 选项卡
+## 3 选项卡（Tab 组件）
+
+### 3.1 轮播功能
+
+!!! Abstract ""
+	Tab 组件支持轮播。
+
+![Tab页轮播](../../img/dashboard_generation/Tab页轮播.png){ width="900px" }
+
+### 3.2 基础功能
 
 !!! Abstract ""
 	用户在制作仪表板时，可通过选项卡展示多个视图，并通过切换查看；  

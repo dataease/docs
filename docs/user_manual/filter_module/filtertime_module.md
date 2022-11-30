@@ -78,6 +78,25 @@
 ![日期范围组件显示效果](../../img/dashboard_generation/日期范围组件显示效果.png){ width="900px" }
 
 !!! Abstract ""
+	时间范围组件支持动态参数，在 SQL 数据集中可以将日期范围的开始和结束时间定义为变量，与其他变量设置一致。
+
+![日期范围组件](../../img/dashboard_generation/日期范围组件动态参数.png){ width="900px" }
+
+![日期范围组件](../../img/dashboard_generation/日期范围组件动态参数1.png){ width="900px" }
+
+![日期范围组件](../../img/dashboard_generation/日期范围组件动态参数2.png){ width="900px" }
+
+!!! Abstract ""
+	在日期范围组件的【参数】中分别选择开始时间和结束时间对应的变量即可。
+
+![日期范围组件](../../img/dashboard_generation/日期范围组件动态参数3.png){ width="900px" }
+
+!!! Abstract ""
+	日期范围组件动态时间可设置固定时分秒，选择动态时间的自定义，支持勾选【显示时间】，进行时分秒的设置。
+
+![日期范围组件时分秒](../../img/dashboard_generation/日期范围组件时分秒.png){ width="900px" }
+
+!!! Abstract ""
 	日期范围组件支持常用时间范围的快捷选项，比如本周、当月、本季、今年、上周、上月、上季、去年等，极大方便查询使用；  
 	与日期过滤组件一样，日期范围组件也支持时分秒级别的设置。
 

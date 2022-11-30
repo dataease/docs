@@ -7,6 +7,11 @@
 ![新建任务](../../img/system_management/新建任务.png){ width="900px" }
 
 !!! Abstract ""
+	单次执行的数据同步任务，可通过在已执行同步任务的记录上，选择【运行一次】来实现。
+
+![运行一次](../../img/system_management/运行一次.png){ width="900px" }
+
+!!! Abstract ""
 	如下图所示，任务执行情况可通过【站内消息】或消息铃铛查看。
 
 ![查看消息铃铛](../../img/system_management/查看消息铃铛.png){ width="900px" }
