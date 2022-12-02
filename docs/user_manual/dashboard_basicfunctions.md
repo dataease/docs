@@ -229,13 +229,13 @@
 	仪表板支持快捷键功能，支持复制、粘贴、保存、放大。  
 	Mac：
 
-	- 复制/粘贴组件：command + c / command + v
+	- 复制粘贴组件：command + D
 	- 大图查看视图：command + .
 	- 保存仪表板：command + s
 
     其他：
 
-    - 复制/粘贴组件：ctrl + c / ctrl + v
+    - 复制粘贴组件：ctrl + D
     - 大图查看视图：ctrl + .
     - 保存仪表板：ctrl + s
 
