@@ -82,7 +82,26 @@ nav:
         - 首页: user_manual/homepage.md
         - 数据源:
             - 数据源概述: user_manual/datasource_description.md
-            - 配置数据库数据源: user_manual/datasource_configuration.md
+            - 配置 MySQL 数据源: user_manual/datasource_configuration/MySQL_datasource_configuration.md
+            - 配置 ClickHouse 数据源: user_manual/datasource_configuration/ClickHouse_datasource_configuration.md
+            - 配置 Db2 数据源: user_manual/datasource_configuration/DB2_datasource_configuration.md
+            - 配置 DM 数据源: user_manual/datasource_configuration/DM_datasource_configuration.md
+            - 配置 Doris 数据源: user_manual/datasource_configuration/Doris_datasource_configuration.md
+            - 配置 Elasticsearch 数据源: user_manual/datasource_configuration/Elasticsearch_datasource_configuration.md
+            - 配置 Hive 数据源: user_manual/datasource_configuration/Hive_datasource_configuration.md
+            - 配置 Impala 数据源: user_manual/datasource_configuration/Impala_datasource_configuration.md
+            - 配置 Kylin 数据源: user_manual/datasource_configuration/Kylin_datasource_configuration.md
+            - 配置 MariaDB 数据源: user_manual/datasource_configuration/MariaDB_datasource_configuration.md
+            - 配置 MaxCompute 数据源: user_manual/datasource_configuration/Maxcompute_datasource_configuration.md
+            - 配置 MongoDB-BI 数据源: user_manual/datasource_configuration/MongoDB-BI_datasource_configuration.md
+            - 配置 MongoDB 数据源: user_manual/datasource_configuration/MongoDB_datasource_configuration.md
+            - 配置 Oracle 数据源: user_manual/datasource_configuration/Oracle_datasource_configuration.md
+            - 配置 PostgreSQL 数据源: user_manual/datasource_configuration/PostgreSQL_datasource_configuration.md
+            - 配置 Presto 数据源: user_manual/datasource_configuration/Presto_datasource_configuration.md
+            - 配置 SQL Server 数据源: user_manual/datasource_configuration/SQL Server_datasource_configuration.md
+            - 配置 StarRocks 数据源: user_manual/datasource_configuration/StarRocks_datasource_configuration.md
+            - 配置 TiDB 数据源: user_manual/datasource_configuration/TiDB_datasource_configuration.md
+            - 配置 AWS Redshift 数据源: user_manual/datasource_configuration/AWS_Redshift_datasource_configuration.md
             - 配置 API 数据源: user_manual/datasource_configuration_api.md
         - 数据集:
             - 数据集概述: user_manual/dataset_description.md
