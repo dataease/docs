@@ -11,7 +11,8 @@
 !!! Abstract ""
     - **数据仓库/数据湖：** AWS RedShift、MaxCompute
     - **OLTP 型数据库：** MySQL、MongoDB、SQL Server、Oracle、PostgreSQL、MariaDB、Db2、TiDB、达梦（DM）
-    - **OLAP 型数据库：** Apache Hive、Apache Kylin、Elasticsearch、ClickHouse、Apache Doris、Apache Impala、StarRocks、Presto
+    - **OLAP 型数据库：** Apache Hive、Apache Kylin、Elasticsearch、ClickHouse、Apache Doris、Apache 
+Impala、StarRocks、Presto、KingBase
     - **数据文件：** Excel、CSV
     - **API 数据源**
 
