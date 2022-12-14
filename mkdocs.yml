@@ -102,6 +102,7 @@ nav:
             - 配置 StarRocks 数据源: user_manual/datasource_configuration/StarRocks_datasource_configuration.md
             - 配置 TiDB 数据源: user_manual/datasource_configuration/TiDB_datasource_configuration.md
             - 配置 AWS Redshift 数据源: user_manual/datasource_configuration/AWS_Redshift_datasource_configuration.md
+            - 配置 KingBase 数据源: user_manual/datasource_configuration/KingBase_datasource_configuration.md
             - 配置 API 数据源: user_manual/datasource_configuration_api.md
         - 数据集:
             - 数据集概述: user_manual/dataset_description.md
