@@ -16,7 +16,7 @@
 
 2022年12月13日
 
-!!! Abstract "功能优化 :sunflower:"
+!!! Abstract "新增功能 :star2:"
 
     - feature(数据源): 新增人大金仓数据源支持 (感谢社区用户 AndroidBaby1 的贡献)
 
