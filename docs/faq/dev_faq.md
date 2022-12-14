@@ -8,7 +8,7 @@
     cd dataease-extension-sdk/dataease-plugin-interface
     mvn clean install
     ```
-    如遇到缺少 kettle 相关依赖的话，可以检查是否使用了 maven 的 mirror，建议去掉 mirror 后重试。如还不行的话，可以在百度网盘上下载一下最小化的 dataease 依赖包。链接: https://pan.baidu.com/s/1cZDfHerGl88mpm0sTGo4hg?pwd=bn4i 提取码: bn4i
+    如遇到缺少 kettle 相关依赖的话，可以检查是否使用了 maven 的 mirror，建议去掉 mirror 后重试。如还不行的话，可以在百度网盘上下载一下最小化的 dataease 依赖包。链接: https://pan.baidu.com/s/1hoT6zGNFaToqTbLhnpm6lg 提取码: 45pg
     将删除依赖包解压后放置到 ~/.m2/repository 下即可。
 
 ![plugins-dependency](../img/faq/plugins-dependency.png){ width="900" }  
