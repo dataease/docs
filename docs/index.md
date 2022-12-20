@@ -748,7 +748,7 @@
 ## 6 了解更多
 
 !!! Abstract ""
-    - **如何向团队介绍 DataEase？：** https://dataease.io/download/introduce-dataease_202206.pdf
+    - **如何向团队介绍 DataEase？：** https://dataease.io/download/introduce-dataease_202212.pdf
     - **获取新一代数据可视化分析平台建设指南：** https://jinshuju.net/f/cerWRY
     - **DataEase 实战训练营：** https://lkh.xet.tech/s/4vWgus
     - **DataEase 知识库：** https://kb.fit2cloud.com/categories/dataease
