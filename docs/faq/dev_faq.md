@@ -25,8 +25,7 @@
 ## 3 使用世界地图时提示 "/geo/full/156/1561*****_full.json not found."
 
 !!! Abstract ""
-    v1.13.0 及之后版本项目启动时，**已手动放置到 /opt/dataease/data/feature/full 目录下的地图文件会被系统解析到 /opt/dataease/data/custom/full 目录下**，出现上述原因一般是由于 MapService 、WebMvcConfig 与 MapTransferService 类 geo.custom.rootpath 路径出现更变。    
-    **注意：不能将地图文件手动添加到 /opt/dataease/data/custom/full 目录下**
+    出现此问题原因一般是由于地图文件未正确放置。 请确保已将源码中的 mapFiles/full 文件夹复制到  /opt/dataease/data/feature/full 目录，v1.13.0 及之后版本项目启动时，**已手动放置到 /opt/dataease/data/feature/full 目录下的地图文件会被系统解析到 /opt/dataease/data/custom/full 目录下**。若文件放置完成并重启应用后仍出现此问题，应确认 MapService 、WebMvcConfig 与 MapTransferService 类中的 geo.custom.rootpath 路径是否出现更变。
 
 ![no-map2](../img/faq/no-map2.png){ width="900" }
 
