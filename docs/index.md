@@ -62,7 +62,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="49">
+		<td rowspan="50">
 			仪表板
 		</td>
 		<td rowspan="4">
@@ -157,7 +157,7 @@
 	</tr>
 	<tr>
 		<td>
-			支持仪表板背景、组件间隙、刷新时间、展示数据量等设置；
+			支持仪表板背景、组件间隙、仪表板刷新时间、展示数据量等设置；
 		</td>
 	</tr>
 	<tr>
@@ -219,7 +219,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="20">
+		<td rowspan="21">
 			视图制作
 		</td>
         <td>
@@ -241,6 +241,11 @@
             支持柱状图和折线图设置缩略轴和辅助线；
         </td>
     </tr>
+    <tr>
+		<td>
+			支持设置视图的刷新时间；
+		</td>
+	</tr>
 	<tr>
 		<td>
 			支持视图阈值设置；
@@ -417,7 +422,7 @@
 	</tr>
 	<tr>
 		<td>
-			支持数据源的新建、编辑、删除等；
+			支持数据源的新建、编辑、删除、复制等；
 		</td>
 	</tr>
 	<tr>
@@ -479,7 +484,7 @@
 	</tr>
 	<tr>
 		<td>
-			支持使用应用创建新的仪表板（系统会同时创建仪表板及其所需的数据集与数据源）；
+			支持使用应用创建新的仪表板，系统会同时创建仪表板及其所需的数据集，创建应用时可选择存量数据源，或由系统同时新建数据源；
 		</td>
 	</tr>
 	<tr>
@@ -488,7 +493,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="36">
+		<td rowspan="39">
 			系统管理
 		</td>
 		<td rowspan="4">
@@ -607,7 +612,7 @@
 		</td>
 	</tr>
     <tr>
-        <td rowspan="3">
+        <td rowspan="5">
             平台对接
         </td>
         <td>
@@ -622,6 +627,16 @@
     <tr>
         <td>
             支持企业微信平台接入，可扫码登录、接收消息和定时报告；  <span class="x-pack-span">X-Pack</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            支持飞书工作台免登录进入 DataEase；  <span class="x-pack-span">X-Pack</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            支持钉钉工作台免登录进入 DataEase；  <span class="x-pack-span">X-Pack</span>
         </td>
     </tr>
 	<tr>
@@ -715,6 +730,14 @@
 			支持定时报告，可以定时以邮件形式发送仪表板或视图报告；  <span class="x-pack-span">X-Pack</span>
 		</td>
 	</tr>
+    <tr>
+        <td rowspan="1">
+            血缘分析
+        </td>
+        <td>
+            支持数据源、数据集、仪表板的血缘分析；
+        </td>
+    </tr>
     <tr>
         <td rowspan="3">
             安装模式

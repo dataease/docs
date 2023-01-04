@@ -45,6 +45,7 @@ nav:
     - 版本迭代:
         - 更新日志: changelog.md
         - 更新说明:
+            - v1.18.0: release_notes/v1.18.0.md
             - v1.17.0: release_notes/v1.17.0.md
             - v1.16.0: release_notes/v1.16.0.md
             - v1.15.0: release_notes/v1.15.0.md
@@ -145,6 +146,7 @@ nav:
             - 操作日志: user_manual/system_management/operation_log.md
             - 站内消息: user_manual/system_management/message.md
             - 定时任务: user_manual/system_management/task.md
+            - 血缘关系: user_manual/system_management/blood_relationship.md
             - 插件管理: user_manual/system_management/plugin_management.md
         - 移动端:
             - 移动端概述: user_manual/app_description.md

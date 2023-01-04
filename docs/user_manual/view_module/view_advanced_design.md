@@ -72,3 +72,10 @@
 
 ![高级设置_表格滚动](../../img/view_generation/高级设置_表格滚动下拉模式.png){ width="900px" }  
 ![高级设置_表格滚动](../../img/view_generation/高级设置_表格滚动.png){ width="900px" }
+
+## 5 空值处理
+
+!!! Abstract ""
+    如下图所示，在柱状图、折线图中均加入了空值处理的设置。
+
+![空值处理](../../img/view_generation/空值处理.png){ width="900px" }
