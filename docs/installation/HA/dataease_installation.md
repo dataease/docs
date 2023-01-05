@@ -92,7 +92,7 @@
 
     创建挂载目录：
     ```shell
-    mkdir -p /opt/dataease/data/kettle /opt/dataease/data/static-resource  /opt/dataease/plugins/thirdpart
+    mkdir -p /opt/dataease/data/kettle /opt/dataease/data/static-resource /opt/dataease/plugins/thirdpart /opt/dataease/custom-drivers /opt/dataease/data/custom /opt/dataease/data/business
     ```
 
     挂载：
@@ -100,6 +100,9 @@
     echo "10.1.11.64:/opt/kettle /opt/dataease/data/kettle nfs defaults 0 0" >> /etc/fstab
     echo "10.1.11.64:/opt/plugins/thirdpart /opt/dataease/plugins/thirdpart nfs defaults 0 0" >> /etc/fstab
     echo "10.1.11.64:/opt/static-resource /opt/dataease/data/static-resource nfs defaults 0 0" >> /etc/fstab
+    echo "10.1.11.64:/opt/custom-drivers /opt/dataease/custom-drivers nfs defaults 0 0" >> /etc/fstab
+    echo "10.1.11.64:/opt/custom /opt/dataease/data/custom nfs defaults 0 0" >> /etc/fstab
+    echo "10.1.11.64:/opt/business /opt/dataease/data/business nfs defaults 0 0" >> /etc/fstab
     mount -a
     ```
 

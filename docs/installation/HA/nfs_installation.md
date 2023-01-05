@@ -26,8 +26,8 @@
 
 !!! Abstract ""
     ```shell
-    mkdir -p /opt/kettle /opt/plugins/thirdpart /opt/static-resource
-    chmod 666 -R /opt/kettle /opt/plugins/thirdpart /opt/static-resource
+    mkdir -p /opt/kettle /opt/plugins/thirdpart /opt/static-resource /opt/custom-drivers /opt/custom /opt/business
+    chmod 666 -R /opt/kettle /opt/plugins/thirdpart /opt/static-resource /opt/custom-drivers /opt/custom /opt/business
     ```
 
 ### 1.5 编辑 exports 文件
@@ -41,6 +41,14 @@
     echo "/opt/static-resource 10.1.11.0/24(rw,no_root_squash,no_all_squash,sync)" >> /etc/exports
     
     echo "/opt/plugins/thirdpart 10.1.11.0/24(rw,no_root_squash,no_all_squash,sync)" >> /etc/exports
+
+    echo "/opt/custom-drivers 10.1.11.0/24(rw,no_root_squash,no_all_squash,sync)" >> /etc/exports
+
+    echo "/opt/custom 10.1.11.0/24(rw,no_root_squash,no_all_squash,sync)" >> /etc/exports
+
+    echo "/opt/business 10.1.11.0/24(rw,no_root_squash,no_all_squash,sync)" >> /etc/exports
+
+    mount -a
     ```
 
 ### 1.6 rpcbind 和 NFS 做开机启动
