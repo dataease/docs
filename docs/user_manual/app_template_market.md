@@ -37,7 +37,7 @@
 
 ![应用管理](../img/app_template_market/应用管理3.png){ width="900px" }
 
-## 4 应用使用
+## 5 应用使用
 
 !!! Abstract ""
     选择一个应用并点击【应用】，在弹出的对话框中，【基本信息】系统会自动填充，若不满足要求，可自行调整；  
@@ -46,11 +46,11 @@
 ![应用使用](../img/app_template_market/应用管理4.png){ width="900px" }
 
 !!! Abstract ""
-    新建：
+    选择"新建"的情况如下：
 
 ![应用使用](../img/app_template_market/应用管理5.png){ width="900px" }
 
 !!! Abstract ""
-    复用：
+    选择"复用"的情况如下：
 
 ![应用使用](../img/app_template_market/应用管理6.png){ width="900px" }
