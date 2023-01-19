@@ -49,6 +49,6 @@
     ```
     此为磁盘空间不足导致，清理磁盘空间后再重启 Doris-fe 即可，具体可参考知识库。
 
-    - [磁盘空间不足导致 Doris-fe 显示 unhealthy 状态的解决方案](https://kb.fit2cloud.com/archives/93)  
-    - [排查DataEase服务器磁盘空间占用情况并清理](https://kb.fit2cloud.com/archives/159)  
-    - [清理 DataEase 服务器磁盘空间](https://kb.fit2cloud.com/archives/52)  
+    - [磁盘空间不足导致 Doris-fe 显示 unhealthy 状态的解决方案](https://kb.fit2cloud.com/archives/ci-pan-kong-jian-bu-zu-dao-zhi-doris-fe-xian-shi-unhealthy-zhuang-tai-de-jie-jue-fang-an)  
+    - [排查DataEase服务器磁盘空间占用情况并清理](https://kb.fit2cloud.com/archives/pai-cha-dataease-fu-wu-qi-ci-pan-kong-jian-zhan-yong-qing-kuang-bing-qing-li)  
+    - [清理 DataEase 服务器磁盘空间](https://kb.fit2cloud.com/archives/%E6%B8%85%E7%90%86dataease%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4)  

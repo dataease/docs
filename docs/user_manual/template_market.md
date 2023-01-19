@@ -110,10 +110,10 @@
 ## 6 应用示例
 
 !!! Abstract ""
-    - [DataEase 仪表板数据概览](https://kb.fit2cloud.com/archives/171)
-    - [Jira 业务数据仪表板](https://kb.fit2cloud.com/archives/161)
-    - [MeterSphere 测试质量大屏](https://kb.fit2cloud.com/archives/120)  
-    - [JumpServer 运维安全审计大屏](https://kb.fit2cloud.com/archives/112)
-    - [Redmine 任务分析大屏](https://kb.fit2cloud.com/archives/119)
-    - [禅道业务数据分析大屏](https://kb.fit2cloud.com/archives/137)
-    - [Confluence 仪表看板大屏](https://kb.fit2cloud.com/archives/145)
+    - [DataEase 仪表板数据概览](https://kb.fit2cloud.com/archives/-mo-ban-ying-yong-dataease-yi-biao-ban-shu-ju-gai-lan)
+    - [Jira 业务数据仪表板](https://kb.fit2cloud.com/archives/-mo-ban-ying-yong-jira-ye-wu-shu-ju-yi-biao-ban)
+    - [MeterSphere 测试质量大屏](https://kb.fit2cloud.com/archives/shi-yong-mo-ban-shi-chang-zhi-liang-da-ping-zhan-shi-metersphere-shu-ju)  
+    - [JumpServer 运维安全审计大屏](https://kb.fit2cloud.com/archives/-mo-ban-ying-yong-jumpserver-an-quan-yun-wei-shen-ji-da-ping)
+    - [Redmine 任务分析大屏](https://kb.fit2cloud.com/archives/shi-yong-dataease-zhi-zuo-redmine-ren-wu-fen-xi-da-ping)
+    - [禅道业务数据分析大屏](https://kb.fit2cloud.com/archives/-mo-ban-ying-yong--chan-dao-ye-wu-shu-ju-fen-xi-da-ping)
+    - [Confluence 仪表看板大屏](https://kb.fit2cloud.com/archives/-mo-ban-ying-yong-confluence-yi-biao-kan-ban-da-ping)
