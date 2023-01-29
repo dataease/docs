@@ -1,7 +1,6 @@
 ## 1 功能篇
 
 !!! Abstract ""
-    - [配置 Chrome 浏览器多 Tab 轮播](https://kb.fit2cloud.com/archives/%E9%85%8D%E7%BD%AEchrome%E6%B5%8F%E8%A7%88%E5%99%A8%E5%A4%9Atab%E8%BD%AE%E6%92%AD)  
     - [使用 Tab 组件做多屏仪表板及自动轮播](https://kb.fit2cloud.com/archives/-gong-neng-shi-jian--shi-yong-tab-zu-jian-zuo-duo-ping-yi-biao-ban-ji-zi-dong-lun-bo)  
     - [使用 DataEase 数据集关联跨库数据](https://kb.fit2cloud.com/archives/shi-yong-dataease-shu-ju-ji-guan-lian-kua-ku-shu-ju)  
     - [使用计算字段做数据字典映射](https://kb.fit2cloud.com/archives/%E4%BD%BF%E7%94%A8%E8%AE%A1%E7%AE%97%E5%AD%97%E6%AE%B5%E5%81%9A%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8%E6%98%A0%E5%B0%84)  
