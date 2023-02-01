@@ -24,12 +24,21 @@
 
 !!! Abstract ""
     填写请求参数，包括请求头、请求体与认证配置，认证配置支持 No Auth 和 Basic Auth；  
-    用户无需自行写 JsonPath 系统会自行解析，且可以组合不同层级的字段；  
-    如下示例图，认证方式选 No Auth，点击下一步，勾选所需的字段，支持字段重命名，字段类型选择，点击【保存】即可。
+    若【是否指定JsonPath】勾选否，则用户无需自行写 JsonPath，系统会自行解析，且可以组合不同层级的字段；  
+    如下示例图，认证方式选 No Auth，【是否指定JsonPath】勾选否，点击下一步，勾选所需的字段，支持字段重命名，字段类型选择，点击【保存】即可。
 
 ![请求参数](../img/datasource_configuration/请求参数.png){ width="900" }
 
 ![请求参数2](../img/datasource_configuration/请求参数2.png){ width="900" }
+
+!!! Abstract ""
+    若【是否指定JsonPath】勾选是，则用户需自行写 JsonPath，系统会根据 JsonPath 的值进行解析，不可以组合不同层级的字段；  
+    **注意：** 点击【查看 API 原始数据】按钮，可以查看到接口对应的数据结构，为写 JsonPath 提供参考；  
+    如下示例图，认证方式选 No Auth，【是否指定JsonPath】勾选是，录入正确的 JsonPath 的值，点击下一步，支持字段重命名，字段类型选择，点击【保存】即可。
+
+![请求参数3](../img/datasource_configuration/请求参数3.png){ width="900" }
+
+![请求参数4](../img/datasource_configuration/请求参数4.png){ width="900" }
 
 ## 5 数据源校验
 
