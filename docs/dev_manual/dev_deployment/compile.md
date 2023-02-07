@@ -87,7 +87,7 @@
     	}
 	}
 	```
-	**注意：** 前后端分离部署时，假若无法访问静态资源，可参考[知识库](https://kb.fit2cloud.com/archives/dataease-zuo-qian-hou-duan-fen-li-bu-shu--dao-ru-yi-biao-ban-mo-ban-hou-bei-jing-tu-pian-wu-fa-xian-shi-de-jie-jue-fang-fa)。
+	**注意：** 前后端分离部署时，假若无法访问静态资源，可参考[知识库](https://kb.fit2cloud.com/?p=156)。
 
 ### 1.3 运行测试
 

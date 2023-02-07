@@ -282,13 +282,13 @@
 ## 5 镜像打包（推荐）
 
 !!! Abstract ""
-    源码中包含 Dockerfile 文件，建议将项目打包成镜像运行，具体可参考[如何打包 DataEase 镜像](https://kb.fit2cloud.com/archives/ru-he-da-bao-dataease-jing-xiang)、[DataEase 二次开发如何替换镜像](https://kb.fit2cloud.com/archives/dataease-er-ci-kai-fa-ru-he-ti-huan-jing-xiang)。
+    源码中包含 Dockerfile 文件，建议将项目打包成镜像运行，具体可参考[如何打包 DataEase 镜像](https://kb.fit2cloud.com/?p=70)、[DataEase 二次开发如何替换镜像](https://kb.fit2cloud.com/?p=125)。
 
 ## 6 其他注意事项
 
 !!! Abstract ""
     内置示例数据以 flyway 的形式在 DataEase 启动时自动插入到了 MySQL 数据库中，在源码运行的情况下，需要登录到 DataEase 控制台，进入到【数据源】页面，选择 "demo" 数据源，将 "demo" 数据源的相关连接信息修改正确，保存后即可正常使用内置示例数据；  
-    **提示：Windows 使用 docker-compose 部署 Kettle 及 Doris ，若出现 doris-fe 无限重启问题，可参考此篇[知识库](https://kb.fit2cloud.com/archives/windows-shi-yong-docker-compose-bu-shu-kettle-ji-dorisdoris-fe-wu-xian-zhong-qi-wen-ti)。**
+    **提示：Windows 使用 docker-compose 部署 Kettle 及 Doris ，若出现 doris-fe 无限重启问题，可参考此篇[知识库](https://kb.fit2cloud.com/?p=134)。**
 
 ![modify-demo-dataset](../img/dev_manual/modify-demo-dataset1.png){width="900px"}
 

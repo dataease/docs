@@ -1,7 +1,7 @@
 ## 1 前提条件
 
 !!! Abstract ""
-    链接 MongoDB-BI 之前，请提前安装部署 MongoDB BI Connector，可参考此篇[知识库](https://kb.fit2cloud.com/archives/mongodbbiconnector-an-zhuang)，并收集以下信息：
+    链接 MongoDB-BI 之前，请提前安装部署 MongoDB BI Connector，可参考此篇[知识库](https://kb.fit2cloud.com/?p=143)，并收集以下信息：
 
     - 数据库服务器的 IP 地址和端口号
     - 数据库名称
