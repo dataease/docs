@@ -17,7 +17,7 @@
 
     **在服务器上执行一键安装命令：**
     ```properties
-    curl -sSL https://github.com/dataease/dataease/releases/latest/download/quick_start.sh | sh
+    curl -sSL https://dataease.oss-cn-hangzhou.aliyuncs.com/quick_start.sh | sh
     ```
 
 !!! Abstract ""

@@ -12,7 +12,7 @@
 
     执行以下脚本进行一键安装：
     ```
-    curl -sSL https://github.com/dataease/dataease/releases/latest/download/quick_start.sh | sh
+    curl -sSL https://dataease.oss-cn-hangzhou.aliyuncs.com/quick_start.sh | sh
     ```
     DataEase 是一款 B/S 架构的产品，即浏览器/服务器结构，在服务器安装完成后，客户端通过浏览器访问以下地址，即可开始使用。
     ```

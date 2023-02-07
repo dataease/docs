@@ -44,6 +44,6 @@
     ```
     若是在线安装方式，在执行一键安装命令的在线安装包解压目录（以 v1.12.0 版本为示例，在 /home 目录下执行命令，则在 /home/dataease-v1.12.0-online 下），重新执行 bash install.sh，也可重新执行在线安装脚本。
     ```
-    curl -sSL https://github.com/dataease/dataease/releases/latest/download/quick_start.sh | sh
+    curl -sSL https://dataease.oss-cn-hangzhou.aliyuncs.com/quick_start.sh | sh
     ```
     **注意：由于精简模式的 Excel 与 API 数据集是保存在配置的数据引擎中的，切换为其它模式会导致这两部分的数据丢失，反之亦然（Excel 与 API 数据集保存位置变更），直连数据库的相关数据集不受影响。**  
