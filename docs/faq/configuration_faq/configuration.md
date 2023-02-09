@@ -235,3 +235,27 @@
     environment:
     - PENTAHO_DI_JAVA_OPTIONS=-Xms1024m -Xmx8192m -XX:MaxPermSize=256m -Dfile.encoding=utf-8
     ```
+
+## 12 安装 DataEase 过程报错 Schema dataease contains a failed migration to version XX
+
+!!! Abstract ""
+    1.报错详情  
+    安装 DataEase 时，日志报错 “Schema dataease contains a failed migration to version 43 !” 说明有 SQL 执行失败；  
+    有可能用户使用了外置 MySQL，没有修改 max_allowed_packet 的值引起的，先确认 my.cnf 的配置与官网文档指定的配置一致；  
+    （使用外置MySQL my.cnf 配置：https://dataease.io/docs/installation/offline_installation/#5）  
+    **如果安装环境配置均正确，请尝试以下步骤，手动执行产生失败的 SQL。**  
+      
+    2.下载 SQL  
+    访问 GitHub https://github.com/dataease/dataease/tree/dev/backend/src/main/resources/db/migration  
+    （如果网络不通畅，可以访问 Gitee https://gitee.com/fit2cloud-feizhiyun/DataEase/tree/dev/backend/src/main/resources/db/migration）  
+    查看对应 version 的 flyway sql，比如报错中显示 “ version 43”，则下载 V43 这个 SQL 文件  
+    ![sql-v64](../../img/faq/sql-v64.png){ width="900px" }
+      
+    3.执行 SQL  
+    将此 SQL 文件下载打开，然后重新手动一条条执行下，全部执行成功后修改 dataease_version 表对应版本的 success 值为1，然后 dectl reload 重启服务即可。
+    ![dataease_verison](../../img/faq/dataease_verison.png){ width="900px" }
+
+## 13 Communication link failed 问题汇总
+
+!!! Abstract ""
+    - [Communication link failed 问题汇总](https://kb.fit2cloud.com/?p=104)

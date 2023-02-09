@@ -30,3 +30,20 @@
 ![no-map2](../img/faq/no-map2.png){ width="900" }
 
 ![no-map2](../img/faq/no-map3.png){ width="900" }
+
+## 4 DataEase 源码运行无法打开公共链接
+
+!!! Abstract ""
+    很多人在本地源码部署后，手动对仪表板创建公共链接却无法访问，如图所示。
+
+![无法访问](../img/faq/无法访问.png){ width="900" }
+
+!!! Abstract ""
+    方法一：手动将链接上的 8081 端口修改成前端端口，例如默认就是 9528，修改完毕之后即可访问。
+
+![方法1](../img/faq/方法1.png){ width="900" }
+
+!!! Abstract ""
+    方法二：在 vue.config.js 文件上对 devServer 新增 changeOrigin:false 属性。
+
+![方法2](../img/faq/方法2.png){ width="900" }

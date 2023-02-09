@@ -493,7 +493,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="39">
+		<td rowspan="40">
 			系统管理
 		</td>
 		<td rowspan="4">
@@ -612,7 +612,7 @@
 		</td>
 	</tr>
     <tr>
-        <td rowspan="5">
+        <td rowspan="6">
             平台对接
         </td>
         <td>
@@ -637,6 +637,11 @@
     <tr>
         <td>
             支持钉钉工作台免登录进入 DataEase；  <span class="x-pack-span">X-Pack</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            支持企业微信工作台免登录进入 DataEase；  <span class="x-pack-span">X-Pack</span>
         </td>
     </tr>
 	<tr>

@@ -49,3 +49,36 @@
     CREATE DATABASE dataease;
     ```
     执行成功后，可以新建 Excel 数据集 或 定时同步类型数据集试试。
+
+## 3 DataEasee 定时同步报错 body exceed max size, max_body_bytes=10737418240 的解决方法
+
+!!! Abstract ""
+    1.报错日志  
+    ![报错日志](../../img/faq/报错日志.png){ width="900px" }  
+    
+    2.原因  
+    由于 Doris 一次默认最大导入的数据量是 10GB,一旦超过就会报错 body exceed max size, max_body_bytes=10737418240。  
+    ```
+    streaming_load_max_mb​
+    类型：int64
+    描述：用于限制数据格式为 csv 的一次 Stream load 导入中，允许的最大数据量。单位 MB。
+    默认值： 10240
+    可动态修改：是
+    ```  
+    
+    3.解决方法  
+    BE 启动后，通过下面命令动态设置配置项 streaming_load_max_mb:  
+    ```shell
+    curl -X POST http://{be_ip}:{be_http_port}/api/update_config?streaming_load_max_mb=1024
+    ```  
+    返回值如下，则说明设置成功。  
+    ```js
+    {
+        "status": "OK",
+        "msg": ""
+    }
+    ```  
+    BE 重启后该配置将失效。如果想持久化修改结果，使用如下命令：  
+    ```shell
+    curl -X POST http://{be_ip}:{be_http_port}/api/update_config?streaming_load_max_mb=1024\&persist=true
+    ```
