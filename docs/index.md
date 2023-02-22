@@ -30,10 +30,10 @@
 
 !!! Abstract ""
 
-- 图表展示: 支持 PC 端、移动端及大屏；
-- 图表制作: 支持丰富的图表类型（基于 Apache ECharts 实现）、支持拖拉拽方式快速制作仪表板；
-- 数据引擎: 支持直连模式、本地模式（基于 Apache Doris / Kettle 实现）；
-- 数据连接: 支持关系型数据库、Excel 等文件、Hadoop 等大数据平台、NoSQL 等各种数据源。
+    - 图表展示: 支持 PC 端、移动端及大屏；
+    - 图表制作: 支持丰富的图表类型（基于 Apache ECharts 实现）、支持拖拉拽方式快速制作仪表板；
+    - 数据引擎: 支持直连模式、本地模式（基于 Apache Doris / Kettle 实现）；
+    - 数据连接: 支持关系型数据库、Excel 等文件、Hadoop 等大数据平台、NoSQL 等各种数据源。
 
 ## 5 功能列表
 
@@ -45,8 +45,8 @@
 
 !!! Abstract ""
 
-- **如何向团队介绍 DataEase？：** https://dataease.io/download/introduce-dataease_202212.pdf
-- **获取新一代数据可视化分析平台建设指南：** https://jinshuju.net/f/cerWRY
-- **DataEase 实战训练营：** https://lkh.xet.tech/s/4vWgus
-- **DataEase 知识库：** https://kb.fit2cloud.com/categories/dataease
-- **飞致云学堂：** https://edu.fit2cloud.com/index
+    - **如何向团队介绍 DataEase？：** https://dataease.io/download/introduce-dataease_202212.pdf
+    - **获取新一代数据可视化分析平台建设指南：** https://jinshuju.net/f/cerWRY
+    - **DataEase 实战训练营：** https://lkh.xet.tech/s/4vWgus
+    - **DataEase 知识库：** https://kb.fit2cloud.com/categories/dataease
+    - **飞致云学堂：** https://edu.fit2cloud.com/index
