@@ -1,7 +1,7 @@
 ## 1 环境要求
 
 !!! Abstract ""
-**部署服务器要求：**
+	**部署服务器要求：**  
 
     * 操作系统: 可运行 VirtualBox 的 Windows 操作系统
     * CPU/内存: 4核8G
@@ -12,13 +12,12 @@
 ### 2.1 安装虚拟化软件
 
 !!! Abstract ""
-电脑上没有安装虚拟化软件的用户，需要安装虚拟化软件，市面上主流的桌面虚拟化软件有 VMware Workstation 和
-VirtualBox。如果你的电脑已经安装了其中一款软件，可以直接跳过这一部分。  
-本文示例选择了 VirtualBox。因为 VirtualBox 是免费的，有需求的用户可以自行选择安装收费的 VMware Workstation。  
-VirtualBox 下载链接：https://download.virtualbox.org/virtualbox/7.0.4/VirtualBox-7.0.4-154605-Win.exe。
+	电脑上没有安装虚拟化软件的用户，需要安装虚拟化软件，市面上主流的桌面虚拟化软件有 VMware Workstation 和 VirtualBox。如果你的电脑已经安装了其中一款软件，可以直接跳过这一部分。  
+	本文示例选择了 VirtualBox。因为 VirtualBox 是免费的，有需求的用户可以自行选择安装收费的 VMware Workstation。  
+	VirtualBox 下载链接：https://download.virtualbox.org/virtualbox/7.0.4/VirtualBox-7.0.4-154605-Win.exe。
 
 !!! Abstract ""
-下载 VirtualBox 后，双击安装包进行安装，安装完成后默认打开 VirtualBox。
+	下载 VirtualBox 后，双击安装包进行安装，安装完成后默认打开 VirtualBox。
 
 ![VirtualBox](../img/installation/VirtualBox1.png){ width="900px" }
 
@@ -37,12 +36,11 @@ VirtualBox 下载链接：https://download.virtualbox.org/virtualbox/7.0.4/Virtu
 ### 2.2 下载并导入 DataEase OVA 文件
 
 !!! Abstract ""
-通过上一步，虚拟化软件 VirtualBox 已经安装完成了，接下来只需要将 DataEase 虚拟机（OVA）文件导入到 VirtualBox 就可以运行
-DataEase 了。我们通过以下链接下载 DataEase OVA 文件，建议选择最新版本。  
-下载链接：https://pan.baidu.com/s/1DOik47PMGV6245DrcTr2QQ，提取码：DESr。
+	通过上一步，虚拟化软件 VirtualBox 已经安装完成了，接下来只需要将 DataEase 虚拟机（OVA）文件导入到 VirtualBox 就可以运行 DataEase 了。我们通过以下链接下载 DataEase OVA 文件，建议选择最新版本。  
+	下载链接：https://pan.baidu.com/s/1DOik47PMGV6245DrcTr2QQ，提取码：DESr。
 
 !!! Abstract ""
-DataEase OVA 文件下载完成后，在 VirtualBox 中按下图的操作流程将下载好的 OVA 文件导入到 VirtualBox 中。
+	DataEase OVA 文件下载完成后，在 VirtualBox 中按下图的操作流程将下载好的 OVA 文件导入到 VirtualBox 中。
 
 ![导入 OVA](../img/installation/导入1.png){ width="900px" }
 
@@ -53,7 +51,7 @@ DataEase OVA 文件下载完成后，在 VirtualBox 中按下图的操作流程�
 ![导入 OVA](../img/installation/导入4.png){ width="900px" }
 
 !!! Abstract ""
-至此，已经选择了 OVA 文件，继续按照下图所示步骤完成最后的导入操作。
+	至此，已经选择了 OVA 文件，继续按照下图所示步骤完成最后的导入操作。
 
 	- 可以自定义修改虚拟机的名称；
 	- 设定 DataEase 虚拟机运行的文件夹；
@@ -64,26 +62,24 @@ DataEase OVA 文件下载完成后，在 VirtualBox 中按下图的操作流程�
 ![导入 OVA](../img/installation/导入5.png){ width="900px" }
 
 !!! Abstract ""
-等待 DataEase 虚拟机完成导入。
+	等待 DataEase 虚拟机完成导入。
 
 ![导入 OVA](../img/installation/导入6.png){ width="900px" }
 
 ### 2.3 启动虚拟机
 
 !!! Abstract ""
-导入完成后，选择导入的虚拟机，点击“启动”按钮。
+	导入完成后，选择导入的虚拟机，点击“启动”按钮。
 
 ![启动](../img/installation/启动1.png){ width="900px" }
 
 !!! Abstract ""
-启动后，输入用户名（root）和密码（passwd）进入系统。
+	启动后，输入用户名（root）和密码（passwd）进入系统。
 
 ![启动](../img/installation/启动2.png){ width="900px" }
 
 !!! Abstract ""
-这时我们需要查看一下虚拟机的 IP 地址，因为用户的环境不一样，虚拟机的 IP 也不一样。输入命令：hostname -I，并按“回车键”。通常显示的第一个
-IP 地址就是虚拟机的网卡地址，需要记住这个地址，在后续登录 DataEase 时会使用到。同时，我们可以顺便检查 DataEase
-的服务状态，输入命令：dectl status | less，并按“回车键”查看各服务状态。如下图所示，各个服务都是健康状态。
+	这时我们需要查看一下虚拟机的 IP 地址，因为用户的环境不一样，虚拟机的 IP 也不一样。输入命令：hostname -I，并按“回车键”。通常显示的第一个 IP 地址就是虚拟机的网卡地址，需要记住这个地址，在后续登录 DataEase 时会使用到。同时，我们可以顺便检查 DataEase 的服务状态，输入命令：dectl status | less，并按“回车键”查看各服务状态。如下图所示，各个服务都是健康状态。
 
 ![启动](../img/installation/启动3.png){ width="900px" }
 
@@ -92,21 +88,19 @@ IP 地址就是虚拟机的网卡地址，需要记住这个地址，在后续�
 ### 2.4 访问DataEase
 
 !!! Abstract ""
-在浏览器中输入上一步查询到的 IP 地址，即可打开 DataEase 登录页面。
+	在浏览器中输入上一步查询到的 IP 地址，即可打开 DataEase 登录页面。
 
 ![登录](../img/installation/登录1.png){ width="900px" }
 
 !!! Abstract ""
-**注意事项：**  
-默认的虚拟机网络是桥接模式，桥接模式下虚拟机在用户电脑上运行时会自动获取与用户电脑同网段的 IP 地址，如果用户电脑的网络发生了变化，DataEase
-虚拟机的 IP 就会发生变化，这时需要在虚拟机登录后的界面输入 hostname -I 命令后，重新查看最新的 IP 地址。  
-如果用户想要固定的 IP，可以在虚拟机设置界面的“网络选项”中，将“桥接网卡”更换为“仅主机网路”，“仅主机网络”是使用你电脑中的虚拟机独立网络，虚拟机
-IP 地址不会因为电脑的网络发生变化而变化。设置方法如下图所示，设置完后，重启虚拟机即可生效。
+	**注意事项：**  
+	默认的虚拟机网络是桥接模式，桥接模式下虚拟机在用户电脑上运行时会自动获取与用户电脑同网段的 IP 地址，如果用户电脑的网络发生了变化，DataEase 虚拟机的 IP 就会发生变化，这时需要在虚拟机登录后的界面输入 hostname -I 命令后，重新查看最新的 IP 地址。  
+	如果用户想要固定的 IP，可以在虚拟机设置界面的“网络选项”中，将“桥接网卡”更换为“仅主机网路”，“仅主机网络”是使用你电脑中的虚拟机独立网络，虚拟机 IP 地址不会因为电脑的网络发生变化而变化。设置方法如下图所示，设置完后，重启虚拟机即可生效。
 
 ![注意事项](../img/installation/注意事项.png){ width="900px" }
 
 !!! Abstract ""
-“桥接网卡”与“仅主机网络”的区别如下：
+	“桥接网卡”与“仅主机网络”的区别如下：  
 
 	- 桥接网卡：可以访问公网，可以访问电脑的局域网，但会因为切换局域网而改变IP地址；  
 	- 仅主机网络：不能访问公网，不能访问电脑所在的局域网，不会因为切换局域网而改变IP地址。
