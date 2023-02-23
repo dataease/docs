@@ -34,8 +34,8 @@
 ### 2.4 下载 dataease-mac.git 部署文件
 
 !!! Abstract ""
-下载地址：https://github.com/mfanoffice/dataease-mac  
-手动复制 dataease-mac 中的 install.sh 到解压目录 dataease-v1.18.2-offline 中，替换原有的 install.sh
+	下载地址：https://github.com/mfanoffice/dataease-mac  
+	手动复制 dataease-mac 中的 install.sh 到解压目录 dataease-v1.18.2-offline 中，替换原有的 install.sh
 
 ### 2.5 编辑 install.conf 文件
 
@@ -49,7 +49,7 @@
 ### 2.6 执行安装
 
 !!! Abstract ""
-进入到解压目录，执行以下指令
+	进入到解压目录，执行以下指令
 
 	```powershell
 	sudo chmod +x install.sh && sudo ./install.sh
