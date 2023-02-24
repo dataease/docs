@@ -20,5 +20,8 @@
 - 邮箱：support@fit2cloud.com
 - 电话：400-052-0755
 
+## 6 在线提交需求
+- [DataEase需求、Bug征集](https://dataease.yuque.com/forms/share/5c5ec4b7-f047-41f9-941a-572981d5f9ff)
+
 [dataease]: https://github.com/dataease/dataease
 [dataease stars]: https://img.shields.io/github/stars/dataease/dataease.svg
