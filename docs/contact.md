@@ -3,6 +3,7 @@
 ![wechat-official](img/wechat-official.jpg)
 
 ## 2 微信群
+
 !!! Abstract ""
     如您在使用过程中遇到问题，欢迎您在群里进行反馈与咨询，请您在询问前尽可能全面的描述您的情况，例如：
 
