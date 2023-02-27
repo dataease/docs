@@ -21,7 +21,14 @@
 - 电话：400-052-0755
 
 ## 6 在线提交需求
-- [DataEase需求、Bug征集](https://dataease.yuque.com/forms/share/5c5ec4b7-f047-41f9-941a-572981d5f9ff)
+- [DataEase在线文档需求收集](https://dataease.yuque.com/forms/share/5c5ec4b7-f047-41f9-941a-572981d5f9ff)
 
+## 7 提问说明
+进入微信群后，对DataEase使用有相关问题请提供以下信息，工作人员会进行解答。
+
+- 当前 DataEase 版本  
+- 当前浏览器版本
+- DataEase 问题/需求/建议/Bug
+- 相关图片和解释
 [dataease]: https://github.com/dataease/dataease
 [dataease stars]: https://img.shields.io/github/stars/dataease/dataease.svg
