@@ -303,7 +303,7 @@
 	查看所有转发规则，如果有如下显示，则说明其他局域网内的主机可以通过此台 Windows 访问 DataEase 服务了。
 
 	```sh
-	netsh ineterface portproxy show all
+	netsh interface portproxy show all
 	```
 
 ![端口转发](../img/installation/windows-install-portproxy.png){ width="600px" }
