@@ -107,13 +107,7 @@
 
 ![仪表板市场_样式调整](../img/template_market/仪表板市场_样式调整.png){ width="900px" }
 
-## 6 应用示例
+## 6 模版与应用
 
 !!! Abstract ""
-    - [DataEase 仪表板数据概览](https://kb.fit2cloud.com/?p=171)
-    - [Jira 业务数据仪表板](https://kb.fit2cloud.com/?p=161)
-    - [MeterSphere 测试质量大屏](https://kb.fit2cloud.com/?p=120)  
-    - [JumpServer 运维安全审计大屏](https://kb.fit2cloud.com/?p=112)
-    - [Redmine 任务分析大屏](https://kb.fit2cloud.com/?p=119)
-    - [禅道业务数据分析大屏](https://kb.fit2cloud.com/?p=137)
-    - [Confluence 仪表看板大屏](https://kb.fit2cloud.com/?p=145)
+    [模版与应用的区别以及应用的使用](https://kb.fit2cloud.com/?p=211)
