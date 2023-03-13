@@ -20,7 +20,7 @@
 	下载地址：https://community.fit2cloud.com/#/products/dataease/downloads  
 	**注意：** 下载时需根据 MacBook 的芯片选择安装包  
 
-	- Inter 芯片：选择 “DataEase v1.18.2 AMD64” 安装包；  
+	- Intel 芯片：选择 “DataEase v1.18.2 AMD64” 安装包；  
 	- Apple 芯片：选择 “DataEase v1.18.2 ARM64” 安装包。  
 
 ### 2.3 解压安装包
@@ -45,6 +45,7 @@
 	DE_BASE=/Users/User_Dir #更换为自己的用户目录
 	DE_ENGINE_MODE=simple 或 local #按需更改
 	```
+	**注意：** DE_ENGINE_MODE 可选值有 local、simple、cluster，分别对应本地模式、精简模式、集群模式，具体可参考【[安装模式](installation_mode.md)】说明。
 
 ### 2.6 执行安装
 
