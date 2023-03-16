@@ -88,7 +88,7 @@ nav:
         - 命令行工具: installation/cli.md
         - 备份还原: faq/backup_faq.md
     - 功能手册:
-        - 通用功能: user_manual/general.md
+          - 通用功能: user_manual/general.md
         - 首页: user_manual/homepage.md
         - 数据源:
             - 数据源概述: user_manual/datasource_description.md
@@ -148,20 +148,33 @@ nav:
                 - 其他组件: user_manual/other_module/other_module.md
             - 仪表板使用: user_manual/dashboard_using.md
         - 系统管理:
-            - 用户管理: user_manual/system_management/user.md
+              - 用户管理: user_manual/system_management/user.md
             - 系统参数: user_manual/system_management/param.md
             - 模版管理: user_manual/system_management/module.md
             - 应用管理: user_manual/system_management/apps_management.md
-            - 操作日志: user_manual/system_management/operation_log.md
-            - 站内消息: user_manual/system_management/message.md
-            - 定时任务: user_manual/system_management/task.md
-            - 血缘关系: user_manual/system_management/blood_relationship.md
-            - 插件管理: user_manual/system_management/plugin_management.md
-        - 移动端:
-            - 移动端概述: user_manual/app_description.md
-            - 移动端布局: user_manual/app_design.md
-        - 模板市场: user_manual/template_market.md
-        - 应用: user_manual/app_template_market.md
+              - 操作日志: user_manual/system_management/operation_log.md
+              - 站内消息: user_manual/system_management/message.md
+              - 定时任务: user_manual/system_management/task.md
+              - 血缘关系: user_manual/system_management/blood_relationship.md
+              - 插件管理: user_manual/system_management/plugin_management.md
+          - 移动端:
+                - 移动端概述: user_manual/app_description.md
+                - 移动端布局: user_manual/app_design.md
+          - 模板市场: user_manual/template_market.md
+          - 应用: user_manual/app_template_market.md
+          - X-Pack:
+                - 用户管理: xpack/user_management_user.md
+                - 角色管理: xpack/sys_management_role.md
+                - 组织管理: xpack/sys_management_organization.md
+                - 权限管理: xpack/sys_management_permission.md
+                - 系统配置:
+                      - 系统参数: xpack/sys_parameters.md
+                      - 外观配置: xpack/appearance_configuration.md
+                      - 平台对接: xpack/platform_abutment.md
+                      - 认证设置: xpack/identification_setting.md
+                      - 水印管理: xpack/watermark.md
+                - 系统 API: xpack/sys_management_develop.md
+                - 定时报告: xpack/sys_management_report.md
     - 实践教程: best_practices.md
     - 教学视频: instructional_video.md
     - 常见问题:
