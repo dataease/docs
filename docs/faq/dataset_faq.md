@@ -53,9 +53,9 @@
 ## 3 DataEasee 定时同步报错 body exceed max size, max_body_bytes=10737418240 的解决方法
 
 !!! Abstract ""
-    1.报错日志  
-    ![报错日志](../../img/faq/报错日志.png){ width="900px" }  
-    
+1.报错日志  
+![报错日志](../img/faq/报错日志.png){ width="900px" }
+
     2.原因  
     由于 Doris 一次默认最大导入的数据量是 10GB,一旦超过就会报错 body exceed max size, max_body_bytes=10737418240。  
     ```
