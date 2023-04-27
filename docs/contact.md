@@ -18,7 +18,7 @@
 
 !!! Abstract ""
 
-    **飞致云官方开源社区论坛**：[开源社区论坛](https://bbs.fit2cloud.com/)
+    **飞致云官方开源社区论坛**：[开源社区论坛](https://bbs.fit2cloud.com/c/de/6)
 
 ## 4 学习认证
 
