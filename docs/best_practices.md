@@ -25,5 +25,3 @@
     - [数据分析与 BI 的异同](https://kb.fit2cloud.com/?p=149)
     - [【间距意识】一个最容易被忽视的细节](https://kb.fit2cloud.com/?p=164)
     - [【色彩搭配】轻松搞定仪表板配色](https://kb.fit2cloud.com/?p=148)
-
-

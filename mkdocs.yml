@@ -175,7 +175,10 @@ nav:
               - 水印管理: xpack/watermark.md
           - 系统 API: xpack/sys_management_develop.md
           - 定时报告: xpack/sys_management_report.md
-  - 实践教程: best_practices.md
+  - 实践教程:
+      - 图表样式解析: chart_style_analysis.md
+      - 间距细节: spacing_design.md
+      - 更多实践: best_practices.md
   - 教学视频: instructional_video.md
   - 常见问题:
       - 安装部署问题:
