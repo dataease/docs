@@ -78,7 +78,7 @@
 ![启动](../img/installation/启动1.png){ width="900px" }
 
 !!! Abstract ""
-	启动后，输入用户名和密码进入系统。
+	启动后，输入用户名和密码进入系统。  
 
 	* 用户名：root
 

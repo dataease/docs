@@ -257,14 +257,14 @@
 
 
 !!! Abstract ""
-	安装脚本默认使用 /opt/dataease 使用的数据库，DataEase 的配置文件、数据及日志等均存放在该安装目录。  
+	安装脚本使用 /opt/dataease 作为默认安装目录，DataEase 的配置文件、数据及日志等均存放在该安装目录。  
 	**安装目录目录结构说明：**
     ```
     /opt/dataease/
 	├── bin                                         #-- 安装过程中需要加载到容器中的脚本
 	├── conf                                        #-- DataEase 各组件及数据库等中间件的配置文件
 	├── data                                        #-- DataEase 各组件及数据库等中间件的数据持久化目录
-	├── docker-compose-kettle-doris.yml             #-- DataEase 内建的 kettle 和 doris 所需的 Docker Compose 文件 
+	├── docker-compose-kettle-doris.yml             #-- DataEase 内建的 kettle 和 doris 所需的 Docker  Compose 文件 
 	├── docker-compose-mysql.yml                    #-- DataEase 内建的 MySQl 所需的 Docker Compose 文件 
 	├── docker-compose.yml                          #-- DataEase 基础 Docker Compose 文件，定义了网络等基础信息 
 	├── logs                                        #-- DataEase 各组件的日志文件持久化目录
