@@ -241,7 +241,7 @@ copyright: Copyright &copy; 2014-2023 <a href="https://www.fit2cloud.com">杭州
 plugins:
   - search:
       lang:
-        - zhs
+        - en
         - ja
       separator: '[\s\-\.]+'
 extra:
