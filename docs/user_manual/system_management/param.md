@@ -41,7 +41,7 @@
 !!! Abstract ""
     **世界各国的地图文件可以自行在网上下载，下面举例说明如何使用。**  
     **提示：** 因为各个国家的行政架构不一致，无法统一处理，目前世界地图不支持钻取。  
-    1.下载指定国家的 geo 地图文件，文件要求后缀名为 json，如俄罗斯的 geojson:  
+    1.下载指定国家的 geo 地图文件，文件缀名需修改为 .json，如下载俄罗斯的 russia.geojson 改为 russia.json；
     https://github.com/codeforgermany/click_that_hood/blob/main/public/data/russia.geojson；  
     2.确认 geo 文件是否正确，并在 properties 中包含 name 字段；
 
