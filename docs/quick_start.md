@@ -27,40 +27,46 @@
 
 ![导航栏](img/quick_start/导航栏.png){ width="900px" }
 
-!!! Abstract ""  
-    【仪表板】模块界面主要分为目录区域与预览区域，业务人员可在此创建图表进行可视化分析。
+=== "仪表板"
+    !!! Abstract ""  
+        【仪表板】模块界面主要分为目录区域与预览区域，业务人员可在此创建图表进行可视化分析。
 
-    - 目录区域：添加目录/仪表板，对仪表板进行编辑、分享等；
-    - 预览区域：预览、收藏、导出仪表板等。
+        - 目录区域：添加目录/仪表板，对仪表板进行编辑、分享等；
+        - 预览区域：预览、收藏、导出仪表板等。
 
-    详细功能请参考本文档功能手册[仪表板](./user_manual/dashboard_description.md)。
+         详细功能请参考本文档功能手册[仪表板](./user_manual/dashboard_description.md)。
 
-![仪表板界面](img/quick_start/仪表板界面.png){ width="900px" }
+    ![仪表板界面](img/quick_start/仪表板界面.png){ width="900px" }
 
-!!! Abstract ""  
-    【数据集】模块，业务员可在此界面为数据分析或可视化分析进行相关的数据准备，具体可参考本文档功能手册[数据集](./user_manual/dataset_description.md)。
+=== "数据集"
+    !!! Abstract ""  
+        【数据集】模块，业务员可在此界面为数据分析或可视化分析进行相关的数据准备，具体可参考本文档功能手册[数据集](./user_manual/dataset_description.md)。
 
-![数据集界面](img/quick_start/数据集界面.png){ width="900px" }
+    ![数据集界面](img/quick_start/数据集界面.png){ width="900px" }
 
-!!! Abstract ""  
-    【数据源】模块，此界面是用来管理各类数据连接信息，是后续数据分析操作中数据的来源，具体可参考本文档功能手册[数据源](./user_manual/datasource_description.md)。
+=== "数据源"   
+    !!! Abstract ""  
+        【数据源】模块，此界面是用来管理各类数据连接信息，是后续数据分析操作中数据的来源，具体可参考本文档功能手册[数据源](./user_manual/datasource_description.md)。
 
-![数据源界面](img/quick_start/数据源界面.png){ width="900px" }
+    ![数据源界面](img/quick_start/数据源界面.png){ width="900px" }
 
-!!! Abstract ""
-    【模板市场】模块，提供丰富的仪表板模板，业务员可按照场景需求，利用优质的仪表板模板轻松快速制作自己的仪表板，具体可参考本文档功能手册[模板市场](./user_manual/template_market.md)。
+=== "模板市场"
+    !!! Abstract ""
+        【模板市场】模块，提供丰富的仪表板模板，业务员可按照场景需求，利用优质的仪表板模板轻松快速制作自己的仪表板，具体可参考本文档功能手册[模板市场](./user_manual/template_market.md)。
 
-![模板市场](img/quick_start/模板市场.png){ width="900px" }
+    ![模板市场](img/quick_start/模板市场.png){ width="900px" }
 
-!!! Abstract ""
-    【应用】模块，应用既包含仪表板，也包含其用到的数据集与数据源的关联关系，使用应用可快速制作第三方系统仪表板，具体可参考本文档功能手册[应用](./user_manual/app_template_market.md)。
+=== "应用"
+    !!! Abstract ""
+        【应用】模块，应用既包含仪表板，也包含其用到的数据集与数据源的关联关系，使用应用可快速制作第三方系统仪表板，具体可参考本文档功能手册[应用](./user_manual/app_template_market.md)。
 
-![模板市场](img/quick_start/应用.png){ width="900px" }
+    ![模板市场](img/quick_start/应用.png){ width="900px" }
 
-!!! Abstract ""
-    【系统管理】模块，该模块可对用户与租户、角色与权限、系统配置、定时任务等内容进行管理与配置，具体可参考本文档功能手册[系统管理](./user_manual/system_management/user.md)。
+=== "系统管理"
+    !!! Abstract ""
+        【系统管理】模块，该模块可对用户与租户、角色与权限、系统配置、定时任务等内容进行管理与配置，具体可参考本文档功能手册[系统管理](./user_manual/system_management/user.md)。
 
-![系统管理界面](img/quick_start/系统管理界面.png){ width="900px" }
+    ![系统管理界面](img/quick_start/系统管理界面.png){ width="900px" }
 
 ## 3 三分钟快速上手
 
