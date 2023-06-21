@@ -52,4 +52,9 @@
     - [磁盘空间不足导致 Doris-fe 显示 unhealthy 状态的解决方案](https://kb.fit2cloud.com/?p=93)  
     - [排查DataEase服务器磁盘空间占用情况并清理](https://kb.fit2cloud.com/?p=159)  
     - [清理 DataEase 服务器磁盘空间](https://kb.fit2cloud.com/?p=52)  
+## 7 Communication link failed 问题汇总
+
+!!! Abstract ""
+    - [DataEase 无法访问，查看容器日志报错：exec format error](https://kb.fit2cloud.com/?p=151)
+    - [umask 导致的安装报错记录](https://kb.fit2cloud.com/?p=fd9c0661-06c8-48c7-8fed-c1caa925bcb5)
 
