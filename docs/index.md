@@ -16,7 +16,7 @@
 !!! Abstract ""
     模板市场链接地址：https://dataease.io/templates/ 。
 
-[![模板市场](./img/index/模板市场.gif){ width="1235px" }](https://dataease.io/templates/){ width="900px" }
+[![模板市场](./img/index/模板市场展示动图.gif){ width="1235px" }](https://dataease.io/templates/){ width="900px" }
 
 ## 3 产品优势
 
