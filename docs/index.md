@@ -20,7 +20,7 @@
 
            [**查看分享**](https://dataease.io/docs/user_manual/other_module/style_module/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**移动端**](https://dataease.io/docs/user_manual/app_description/)   &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[**模板应用**](https://dataease.io/docs/user_manual/template_market/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**应用管理**](https://dataease.io/docs/user_manual/app_template_market/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**系统配置**](https://dataease.io/docs/user_manual/system_management/param/)&emsp;
 
-    - **企业应用**
+    - **企业应用（X-Pack）**
 
            [**权限管理**](https://dataease.io/docs/xpack/sys_management_permission/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**平台对接**](https://dataease.io/docs/xpack/platform_abutment/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**认证设置**](https://dataease.io/docs/xpack/identification_setting/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**定时报告**](https://dataease.io/docs/xpack/sys_management_report/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**系统 API**](https://dataease.io/docs/xpack/sys_management_develop/)&emsp;
 
