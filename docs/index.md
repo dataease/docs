@@ -26,7 +26,7 @@
 
      - **进阶学习** 
 
-           [**客户案例**](https://dataease.io/docs/customercase.md/1) &emsp;&emsp;&emsp;&emsp;&emsp;  [**仪表板案例**](https://dataease.io/docs/customercase.md/2) &emsp;&emsp;&emsp;&emsp;  [**图表解析**](https://dataease.io/docs/customercase.md/1) &emsp;&emsp;&emsp;&emsp;&emsp;  [**间距细节**](https://dataease.io/docs/spacing_design/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**更多实践**](https://kb.fit2cloud.com/categories/dataease)&emsp;
+           [**客户案例**](https://dataease.io/docs/customercase/#1) &emsp;&emsp;&emsp;&emsp;&emsp;  [**仪表板案例**](https://dataease.io/docs/customercase/#2) &emsp;&emsp;&emsp;&emsp;  [**图表解析**](https://dataease.io/docs/chart_style_analysis/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**间距细节**](https://dataease.io/docs/spacing_design/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**更多实践**](https://kb.fit2cloud.com/categories/dataease)&emsp;
 
 ## 1 界面展示
 
