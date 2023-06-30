@@ -146,7 +146,7 @@
     ```
 
 !!! Abstract ""
-    安装脚本默认使用 /opt/dataease 使用的数据库，DataEase 的配置文件、数据及日志等均存放在该安装目录。  
+    安装脚本使用 /opt/dataease 作为默认安装目录，DataEase 的配置文件、数据及日志等均存放在该安装目录。  
     **安装目录目录结构说明：**
     ```
     /opt/dataease/
