@@ -5,6 +5,8 @@
     DataEase 支持丰富的数据源连接，能够通过拖拉拽方式快速制作图表，并可以方便地与他人分享。
 
 ![功能架构图](./img/index/DataEase功能架构图.jpg){ width="900px" }
+
+
 !!! Abstract "文档指引"
     - **DataEase 介绍**    
 
