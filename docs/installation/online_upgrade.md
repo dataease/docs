@@ -9,4 +9,4 @@
 	dectl status
 	```
 
-	**注意：升级前做好数据库的备份工作是一个良好的习惯。**
+	**注意：升级前做好数据库的备份工作是一个良好的习惯，可参考[备份还原](https://dataease.io/docs/faq/backup_faq/)。**
