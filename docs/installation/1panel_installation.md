@@ -1,10 +1,12 @@
 ## 1 安装 1Panel
+
 !!! Abstract ""
     关于 1Panel 的安装部署与基础功能介绍，请参考 [1Panel 官方文档](https://1panel.cn/docs/installation/online_installation/)。在完成了 1Panel 的安装部署后，根据提示网址打开浏览器进入 1Panel，如下界面。
 
 ![安装1Panel](../img/installation/1panel安装1.png){ width="900px" }
 
 ## 2 安装 MySQL 数据库
+
 !!! Abstract ""
     在安装 DataEase 之前，需要先在 1Panel 上安装好所需的软件 MySQL。在应用商店中选择 MySQL 点击安装，选择 5.7.xx 版本（这里必须选择 5.7.xx 版本）。
 
@@ -28,6 +30,7 @@
 ![MYSQL状态](../img/installation/1panel安装5.png){ width="900px" }
 
 ## 3 安装 DataEase
+
 !!! Abstract ""
     安装好 MySQL 后，进入应用商店应用列表，找到 DataEase 应用进行安装。
 ![安装DataEase](../img/installation/1panel安装6.png){ width="900px" }
@@ -55,6 +58,7 @@
 
 ![DataEase安装状态](../img/installation/1panel安装9.png){ width="900px" }
 ## 4 访问 DataEase
+
 !!! Abstract ""
     安装成功后，通过浏览器访问如下页面登录 DataEase：
     ```
