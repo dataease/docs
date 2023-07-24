@@ -15,6 +15,7 @@
     连续数据：在两个任意值之间具有无限个值的数据，连续型数据可以是数值，也可以是日期/时间。例如，零件的长度、商品的价格、销量、收付款时间等。  
 
 ## 1 趋势数据
+
 ![趋势常见视图](https://blog.fit2cloud.com/upload/%E5%9B%BE01-ouhv.png){ width="900px" }
 !!! Abstract ""
     **视图所需的数据类型**：
@@ -58,6 +59,7 @@
 ![设置外间距](https://blog.fit2cloud.com/upload/%E5%9B%BE05-xoij.png){ width="900px" }
 
 ## 2 比较数据
+
 ![比较常见视图](https://blog.fit2cloud.com/upload/%E5%9B%BE06-gdyc.png){ width="900px" }
 !!! Abstract ""
     **视图所需的数据类型**：
@@ -93,6 +95,7 @@
     * 样式设置：AntV 相比 ECharts 少了“外间距”的功能。
 
 ## 3 分布数据
+
 ![分布常见视图](https://blog.fit2cloud.com/upload/%E5%9B%BE09-ptef.png){ width="900px" }
 !!! Abstract ""
     **视图所需的数据类型**：
@@ -132,6 +135,7 @@
 ![ECharts雷达图](https://blog.fit2cloud.com/upload/%E5%9B%BE12-ymyl.png){ width="900px" }
 
 ## 4 关系数据
+
 ![关系常见视图](https://blog.fit2cloud.com/upload/%E5%9B%BE14-hwpg.png){ width="900px" }
 !!! Abstract ""
     **气泡图数据类型**：
@@ -163,6 +167,7 @@
 ![ECharts漏斗图](https://blog.fit2cloud.com/upload/%E5%9B%BE15-hmes.png){ width="900px" }
 
 ## 5 空间数据
+
 ![空间常见视图](https://blog.fit2cloud.com/upload/%E5%9B%BE17-nhrq.png){ width="900px" }
 !!! Abstract ""
     **符号地图数据类型**：
