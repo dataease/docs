@@ -2,6 +2,8 @@
 
 
 !!! Abstract ""
+    - [DataEase 助力亚加达智能医学实验室场景 BI 展示](https://blog.fit2cloud.com/?p=e1d298cf-c239-438f-807c-19ab1e8bac20)
+    - [企业 BI 选型：从 Quick BI、Superset 到 DataEase](https://blog.fit2cloud.com/?p=b86347ff-628f-4d97-b63c-308aea74adf9)
     - [DataEase 助力丹霞生物实现数据驱动的企业管理](https://blog.fit2cloud.com/?p=cdf2a37f-c11b-46cb-b287-8bc32dabd879)
     - [小牛电动通过 DataEase 进行业务数据可视化分析](https://blog.fit2cloud.com/?p=edb31b15-4ce2-4fde-bf3b-3aa6cf185031)
     - [用 DataEase 开源 BI 工具分析店铺营收未达预期原因](https://blog.fit2cloud.com/?p=3937)
