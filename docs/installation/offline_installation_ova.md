@@ -101,6 +101,23 @@
 
 ![登录](../img/installation/登录1.png){ width="900px" }
 
+### 2.5 修改安装模式 (可选)
+!!! Abstract ""
+	OVA部署包中，DataEase 的部署模式默认是 simple 模式，如果需要使用 local 模式，可通过以下操作进行切换(v1.18.9 及以后的版本支持该操作，以下操作以 v1.18.9 版本为例):
+	```shell
+    #修改配置文件
+    vi /opt/dataease/.env
+    按“i”键进入编辑模式(双引号中的内容)
+    将 DE ENGINE_MODE=simple 修改为 DE ENGINE_MODE=local修改完成后按“ESC”键，
+	输入“:wq””(双引号中的内容)保存修改;
+    #切换至安装包目录
+    cd /opt/dataease-v1.18.9.offline
+    执行安装脚本
+    ./install.sh
+    #安装完成后查看DataEase 状态
+    dectl status
+    ```
+
 !!! Abstract ""
 	**注意事项：**  
 	默认的虚拟机网络是桥接模式，桥接模式下虚拟机在用户电脑上运行时会自动获取与用户电脑同网段的 IP 地址，如果用户电脑的网络发生了变化，DataEase 虚拟机的 IP 就会发生变化，这时需要在虚拟机登录后的界面输入 hostname -I 命令后，重新查看最新的 IP 地址。  
