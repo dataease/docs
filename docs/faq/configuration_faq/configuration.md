@@ -111,7 +111,6 @@
     - MySQL 容器名冲突
 
 !!! Abstract ""
-    **由于 MeterSphere 在运行时并没有指定运行网段，所以不一定会产生 docker 网段冲突，如没有网段冲突，则可以直接跳到第三步执行：**
 
     1. 修改 MeterSphere 的网段  
     修改 /opt/metersphere/docker-compose-base.yml，网络部分定义如下：

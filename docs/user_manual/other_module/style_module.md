@@ -20,7 +20,8 @@
 !!! Abstract ""
 	Tab 组件支持轮播。
 
-![Tab页轮播](../../img/dashboard_generation/Tab页轮播.png){ width="900px" }
+![Tab页轮播](../../img/dashboard_generation/tab组件轮播设置.png){ width="900px" }
+![Tab页轮播](../../img/dashboard_generation/开启轮播.png){ width="900px" }
 
 ### 3.2 基础功能
 
