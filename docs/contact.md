@@ -14,8 +14,6 @@
 
     ![wechat-group](img/wechat-assistant.png){ width="156px" }
 
-    另外，我们有核心开源用户群，大家可申请进入：[DataEase 核心用户群人员招募](https://bbs.fit2cloud.com/t/topic/523)。
-
 ## 3 开源社区论坛
 
 !!! Abstract ""
