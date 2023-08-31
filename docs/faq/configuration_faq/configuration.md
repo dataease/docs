@@ -245,8 +245,8 @@
     **如果安装环境配置均正确，请尝试以下步骤，手动执行产生失败的 SQL。**  
       
     2.下载 SQL  
-    访问 GitHub https://github.com/dataease/dataease/tree/dev/backend/src/main/resources/db/migration  
-    （如果网络不通畅，可以访问 Gitee https://gitee.com/fit2cloud-feizhiyun/DataEase/tree/dev/backend/src/main/resources/db/migration）  
+    访问 GitHub https://github.com/dataease/dataease/tree/dev/core/backend/src/main/resources/db/migration  
+    （如果网络不通畅，可以访问 Gitee https://gitee.com/fit2cloud-feizhiyun/DataEase/tree/dev/core/backend/src/main/resources/db/migration）  
     查看对应 version 的 flyway sql，比如报错中显示 “ version 43”，则下载 V43 这个 SQL 文件  
     ![sql-v64](../../img/faq/sql-v64.png){ width="900px" }
       

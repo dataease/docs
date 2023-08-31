@@ -11,7 +11,7 @@
     ```properties
     DE_MYSQL_PORT=3307
     ```
-    2. 重启 DataEase 服务： service dataease restart
+    2. 修改 .env 文件中的端口后要执行 dectl reload 重启 DataEase 服务，端口修改方能生效。
 
 ## 2 <span id="mysql-changename">如何修改内置 MySQL 容器名</span>
 
@@ -180,7 +180,7 @@
     DataEase 启动过程中，抛出 Public Key Retrieval is not allowed 的异常。  
     **解决方法：**
     ```shell
-    cd /opt/dataease/conf/dataease.properties
+    vim /opt/dataease/conf/dataease.properties
     ```
     spring.datasource.url 最后加上 &allowPublicKeyRetrieval=true。
 

@@ -343,7 +343,7 @@
     	}
 
     	location /de-api/ {
-        	proxy_pass http://localhost:8081/de-api/;
+        	proxy_pass http://localhost:8081/;
         	proxy_set_header X-Real-IP $remote_addr;
         	proxy_set_header Host $host:8000;
         	server_name_in_redirect on;
@@ -359,7 +359,7 @@
 ## 其他注意事项
 
 !!! Abstract ""
-	内置示例数据以 flyway 的形式在 DataEase 启动时自动插入到了 MySQL 数据库中，在源码运行的情况下，需要登录到 DataEase 控制台，进入到【数据源】页面，选择 "demo" 数据源，将 "demo" 数据源的相关连接信息修改正确，保存后即可正常使用内置示例数据。
+	内置示例数据以 flyway 的形式在 DataEase 启动时自动插入到了 MySQL 数据库中，在源码运行的情况下，需要登录到 DataEase 控制台，进入到【数据源】页面，选择 "demo" 数据源，将 "demo" 数据源的相关连接信息修改正确，保存后即可正常使用内置示例数据。 
 ![modify-demo-dataset](../img/dev_manual/modify-demo-dataset.png){width="800px"}
 
 

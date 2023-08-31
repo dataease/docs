@@ -80,7 +80,7 @@
     	}
 
     	location /de-api/ {
-        	proxy_pass http://localhost:8081/de-api/;
+        	proxy_pass http://localhost:8081/;
         	proxy_set_header X-Real-IP $remote_addr;
         	proxy_set_header Host $host:8000;
         	server_name_in_redirect on;
