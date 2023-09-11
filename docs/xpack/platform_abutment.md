@@ -215,7 +215,7 @@
 ### 4.3 钉钉免登设置
 
 !!! Abstract ""
-    在钉钉开放平台的【应用开发】栏中，进入【开发管理】，设置【应用首页地址】和【PC端首页地址】。首页地址格式为：http(s)://xxx.xxx.xxx/#/de-auto-login?corpId=$CORPID$，corpId=$CORPID$ 无需替换成真正的 corpId，此处仅为变量。
+    在钉钉开放平台的【应用开发】栏中，进入【开发管理】，设置【应用首页地址】和【PC端首页地址】。首页地址格式为：http(s)://xxx.xxx.xxx/#/de-auto-login?corpId=&dollar;CORPID&dollar;，corpId=&dollar;CORPID&dollar; 无需替换成真正的 corpId，此处仅为变量。
 
 ![对接钉钉平台](../img/xpack/钉钉免登1.png){ width="900px" }
 
