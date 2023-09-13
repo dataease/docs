@@ -7,14 +7,14 @@
 ### 1.1 获取框架
 
 !!! Abstract ""
-    进入 GitHub 下载源码：https://github.com/dataease/dataease-extensions 。
+    进入 GitHub 下载源码：https://github.com/dataease/dataease/tree/dev/extensions。
 
 ### 1.2 安装依赖
 
 !!! Abstract ""
     如果能正常安装所有依赖则跳过此步骤，否则继续：  
     插件框架依赖 dataease-extension-sdk，如果提示缺少这部分依赖，需要下载 sdk 源码手动安装。  
-    sdk 源码地址：https://github.com/dataease/dataease-extension-sdk 。  
+    sdk 源码地址：https://github.com/dataease/dataease/tree/dev/sdk 。  
     下载完成在根目录下执行：
     ```shell
     mvn clean install
