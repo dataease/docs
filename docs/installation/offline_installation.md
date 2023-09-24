@@ -19,8 +19,9 @@
     **以 root 用户 ssh 登录到目标机器, 并执行如下命令：**  
 
     ```sh
+    # 进入 tmp 目录下
     cd /tmp
-    # 解压安装包
+    # 解压安装包（请注意：dataease-v1.5.0-offline.tar.gz 上带有版本号，以下命令因实际 DataEase 版本会有差异，请自行调整）
     tar zxvf dataease-v1.5.0-offline.tar.gz
     ```
 
@@ -97,7 +98,7 @@
 
 !!! Abstract ""
     ```sh
-    # 进入安装包目录
+    # 进入安装包目录（请注意：dataease-v1.5.0-offline.tar.gz 上带有版本号，以下命令因实际 DataEase 版本会有差异，请自行调整）
     cd dataease-v1.5.0-offline
     # 运行安装脚本
     /bin/bash install.sh
