@@ -105,17 +105,21 @@
 !!! Abstract ""
 	OVA部署包中，DataEase 的部署模式默认是 simple 模式，如果需要使用 local 模式，可通过以下操作进行切换(v1.18.9 及以后的版本支持该操作，以下操作以 v1.18.9 版本为例):
 	```shell
-    #修改配置文件
-    vi /opt/dataease/.env
-    按“i”键进入编辑模式(双引号中的内容)
-    将 DE ENGINE_MODE=simple 修改为 DE ENGINE_MODE=local修改完成后按“ESC”键，
-	输入“:wq””(双引号中的内容)保存修改;
-    #切换至安装包目录
-    cd /opt/dataease-v1.18.9.offline
-    执行安装脚本
-    ./install.sh
-    #安装完成后查看DataEase 状态
-    dectl status
+
+	#修改配置文件
+	vi /opt/dataease/.env
+	#按 “i” 键进入编辑模式 (双引号中的内容)
+	#将 DE_ENGINE_MODE=simple 修改为 DE_ENGINE_MODE=local
+	#修改完成后按 “ESC” 键，输入 “:wq” (双引号中的内容) 保存修改；
+	
+	#切换至安装包目录
+	cd /opt/dataease-v1.18.9.offline
+	#执行安装脚本
+	./install.sh
+	
+	#安装完成后查看 DataEase 状态
+	dectl status
+
     ```
 
 !!! Abstract ""

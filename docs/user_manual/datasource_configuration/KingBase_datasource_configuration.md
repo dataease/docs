@@ -1,7 +1,7 @@
 ## 1 前提条件
 
 !!! Abstract ""
-    链接 KingBase 数据库之前，请收集以下信息：
+    链接 KingbaseES 数据库之前，请收集以下信息：
 
     - 数据库服务器的 IP 地址和端口号
     - 数据库名称
@@ -13,7 +13,7 @@
     步骤一：登入 DataEase 系统。
 
 !!! Abstract ""
-    步骤二：按照以下步骤，选择 KingBase 图标。
+    步骤二：按照以下步骤，选择 KingbaseES 图标。
 
 ![Oracle](../../img/datasource_configuration/KingBase1.png){ width="900" }
 
