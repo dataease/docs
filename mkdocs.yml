@@ -44,8 +44,6 @@ nav:
   - 快速入门: quick_start.md
   - 版本迭代:
       - 更新日志: changelog.md
-      - 更新说明:
-          - v1.18.0: release_notes/v1.18.0.md
   - 系统架构: system_arch.md
   - 安装部署:
       - 在线安装与升级: installation/online_INSTL_and_UPG.md
@@ -125,13 +123,6 @@ nav:
           - 角色管理: xpack/sys_management_role.md
           - 组织管理: xpack/sys_management_organization.md
           - 权限管理: xpack/sys_management_permission.md
-  - 实践教程:
-      - 实践案例: customercase.md
-      - 图表样式解析: chart_style_analysis.md
-      - 大屏疑难指南: high_precision_problem_solving.md
-      - 数据关系与图表: datarelationships_charttypes.md
-      - 间距细节: spacing_design.md
-      - 更多实践: best_practices.md
   - 技术咨询: https://jinshuju.net/f/e40eKK
   - 联系我们: contact.md
 

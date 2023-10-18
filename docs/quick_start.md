@@ -1,23 +1,22 @@
 ## 1 快速部署
 
 !!! Abstract ""
-    按照部署服务器要求准备好部署环境后，可通过 DataEase 安装脚本快速部署。  
-    **注意：** 一键安装采用默认安装参数，更多有关部署相关内容可查看本文档[安装模式](./installation/installation_mode.md)。  
+    按照部署服务器要求准备好部署环境后，可通过 DataEase 安装脚本快速部署。   
     **部署服务器要求：**
 
-    * 操作系统: CentOS 7.x
+    * 操作系统: CentOS/RHEL 7 及以上 64 位系统
     * CPU/内存: 4核8G
     * 磁盘空间: 200G
     * **可访问互联网**
 
-    执行以下脚本进行一键安装：
+    将上传至服务器的安装包解压好，在安装包目录里执行以下脚本进行快速安装：
     ```
-    curl -sSL https://dataease.oss-cn-hangzhou.aliyuncs.com/quick_start.sh | sh
+    /bin/bash install.sh
     ```
     DataEase 是一款 B/S 架构的产品，即浏览器/服务器结构，在服务器安装完成后，客户端通过浏览器访问以下地址，即可开始使用。
     ```
     http://目标服务器 IP 地址：服务运行端口
-    使用默认用户名 admin 密码 dataease 进行登录。
+    使用默认用户名 admin 密码 DataEase@123456 进行登录。
     ```
 
 ## 2 界面介绍
