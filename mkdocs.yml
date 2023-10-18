@@ -96,16 +96,12 @@ nav:
               - 视图高级设计: user_manual/view_module/view_advanced_design.md
               - 视图图库: user_manual/view_module/view_gallery.md
           - 过滤组件:
+              - 过滤组件概览: user_manual/filter_module/filtert_module.md
               - 时间过滤组件: user_manual/filter_module/filtertime_module.md
               - 文本过滤组件: user_manual/filter_module/filtertext_module.md
               - 数字过滤组件: user_manual/filter_module/filternumber_module.md
-              - 查询按钮组件: user_manual/filter_module/inquire_button_module.md
-              - 清空按钮组件: user_manual/filter_module/clear_button_module.md
           - 其他组件:
               - 样式组件: user_manual/other_module/style_module.md
-              - 多媒体组件: user_manual/other_module/multimedia_module.md
-              - 其他组件: user_manual/other_module/other_module.md
-          - 仪表板使用: user_manual/dashboard_using.md
       - 数据大屏:
           - 数据大屏概述: user_manual/dashboard_description.md
           - 创建数据大屏: user_manual/dashboard_create.md
