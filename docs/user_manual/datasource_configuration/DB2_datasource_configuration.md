@@ -15,12 +15,12 @@
 !!! Abstract ""
     步骤二：按照以下步骤，选择 Db2 图标。
 
-![Db2](../../img/datasource_configuration/Db21.png){ width="900" }
+![Db2](../../img/datasource_configuration/选择DB2.png){ width="900" }
 
 !!! Abstract ""
     步骤三：填入收集的 IP 、端口、数据库等相关的信息。
 
-![Db2](../../img/datasource_configuration/Db22.png){ width="900" }
+![DB2链接信息](../../img/datasource_configuration/DB2链接信息.png){ width="900" }
 
 !!! Abstract ""
     详细说明信息如下：
@@ -41,4 +41,6 @@
 !!! Abstract ""
     步骤四：获取 Schema 并检验数据源，检验成功后如下图所示，点击保存即可。
 
-![Db2](../../img/datasource_configuration/Db23.png){ width="900" }
+![DB2获取Schema](../../img/datasource_configuration/DB2获取Schema.png){ width="900" }
+
+![DB2校验成功](../../img/datasource_configuration/DB2校验成功.png){ width="900" }

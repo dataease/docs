@@ -16,17 +16,17 @@
 !!! Abstract ""
     步骤二：按照以下步骤，选择 PostgreSQL 图标。
 
-![PostgreSQL](../../img/datasource_configuration/PostgreSQL1.png){ width="900" }
+![PostgreSQL](../../img/datasource_configuration/选择PostgreSQL.png){ width="900" }
 
 !!! Abstract ""
     步骤三：填入收集的 IP 、端口、数据库等相关的信息。
 
-![PostgreSQL](../../img/datasource_configuration/PostgreSQL2.png){ width="900" }
+![PostgreSQL](../../img/datasource_configuration/PostgreSQL链接信息.png){ width="900" }
 
 !!! Abstract ""
     步骤四：获取 Schema。
 
-![PostgreSQL](../../img/datasource_configuration/PostgreSQL_Schema.png){ width="900" }
+![PostgreSQL](../../img/datasource_configuration/PostgreSQL获取Schema.png){ width="900" }
 
 !!! Abstract ""
     详细说明信息如下：
@@ -47,4 +47,4 @@
 !!! Abstract ""
     步骤五：数据源检验，校验成功后如下图所示，点击保存即可。
 
-![PostgreSQL](../../img/datasource_configuration/PostgreSQL3.png){ width="900" }
+![PostgreSQL](../../img/datasource_configuration/PostgreSQL校验成功.png){ width="900" }

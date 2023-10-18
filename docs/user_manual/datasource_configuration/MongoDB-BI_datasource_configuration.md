@@ -15,12 +15,12 @@
 !!! Abstract ""
     步骤二：按照以下步骤，选择 MongoDB-BI 图标。
 
-![MongoDB](../../img/datasource_configuration/MongoDB1.png){ width="900" }
+![MongoDB](../../img/datasource_configuration/选择Mongodb-BI.png){ width="900" }
 
 !!! Abstract ""
     步骤三：填入收集的 IP 、端口、数据库等相关的信息。
 
-![MongoDB](../../img/datasource_configuration/MongoDB2.png){ width="900" }
+![MongoDB](../../img/datasource_configuration/Mongodb链接信息.png){ width="900" }
 
 !!! Abstract ""
     详细说明信息如下：
@@ -43,4 +43,4 @@
 !!! Abstract ""
     步骤四：数据源检验，校验成功后如下图所示，点击保存即可。
 
-![MongoDB](../../img/datasource_configuration/MongoDB3.png){ width="900" }
+![MongoDB](../../img/datasource_configuration/Mongodb校验成功.png){ width="900" }

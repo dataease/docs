@@ -15,12 +15,12 @@
 !!! Abstract ""
     步骤二：按照以下步骤，选择 Doris 图标。
 
-![Doris](../../img/datasource_configuration/Doris1.png){ width="900" }
+![Doris](../../img/datasource_configuration/选择Doris.png){ width="900" }
 
 !!! Abstract ""
     步骤三：填入收集的 IP 、端口、数据库等相关的信息。
 
-![Doris](../../img/datasource_configuration/Doris2.png){ width="900" }
+![Doris](../../img/datasource_configuration/Doris链接信息.png){ width="900" }
 
 !!! Abstract ""
     详细说明信息如下：
@@ -40,5 +40,5 @@
 !!! Abstract ""
     步骤四：数据源检验，校验成功后如下图所示，点击右上角的保存即可。
 
-![Doris](../../img/datasource_configuration/Doris3.png){ width="900" }
+![Doris](../../img/datasource_configuration/Doris校验成功.png){ width="900" }
 

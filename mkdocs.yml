@@ -46,12 +46,6 @@ nav:
       - 更新日志: changelog.md
       - 更新说明:
           - v1.18.0: release_notes/v1.18.0.md
-          - v1.17.0: release_notes/v1.17.0.md
-          - v1.16.0: release_notes/v1.16.0.md
-          - v1.15.0: release_notes/v1.15.0.md
-          - v1.14.0: release_notes/v1.14.0.md
-          - v1.13.0: release_notes/v1.13.0.md
-          - v1.12.0: release_notes/v1.12.0.md
   - 系统架构: system_arch.md
   - 安装部署:
       - 在线安装与升级: installation/online_INSTL_and_UPG.md
@@ -60,40 +54,34 @@ nav:
       - 备份还原: installation/backup_faq.md
   - 功能手册:
       - 通用功能: user_manual/general.md
-      - 首页: user_manual/homepage.md
-      - 数据源:
-          - 数据源概述: user_manual/datasource_description.md
-          - 配置 MySQL 数据源: user_manual/datasource_configuration/MySQL_datasource_configuration.md
-          - 配置 ClickHouse 数据源: user_manual/datasource_configuration/ClickHouse_datasource_configuration.md
-          - 配置 Db2 数据源: user_manual/datasource_configuration/DB2_datasource_configuration.md
-          - 配置 DM 数据源: user_manual/datasource_configuration/DM_datasource_configuration.md
-          - 配置 Doris 数据源: user_manual/datasource_configuration/Doris_datasource_configuration.md
-          - 配置 Elasticsearch 数据源: user_manual/datasource_configuration/Elasticsearch_datasource_configuration.md
-          - 配置 Hive 数据源: user_manual/datasource_configuration/Hive_datasource_configuration.md
-          - 配置 Impala 数据源: user_manual/datasource_configuration/Impala_datasource_configuration.md
-          - 配置 Kylin 数据源: user_manual/datasource_configuration/Kylin_datasource_configuration.md
-          - 配置 MariaDB 数据源: user_manual/datasource_configuration/MariaDB_datasource_configuration.md
-          - 配置 MaxCompute 数据源: user_manual/datasource_configuration/Maxcompute_datasource_configuration.md
-          - 配置 MongoDB-BI 数据源: user_manual/datasource_configuration/MongoDB-BI_datasource_configuration.md
-          - 配置 MongoDB 数据源: user_manual/datasource_configuration/MongoDB_datasource_configuration.md
-          - 配置 Oracle 数据源: user_manual/datasource_configuration/Oracle_datasource_configuration.md
-          - 配置 PostgreSQL 数据源: user_manual/datasource_configuration/PostgreSQL_datasource_configuration.md
-          - 配置 Presto 数据源: user_manual/datasource_configuration/Presto_datasource_configuration.md
-          - 配置 SQL Server 数据源: user_manual/datasource_configuration/SQL Server_datasource_configuration.md
-          - 配置 StarRocks 数据源: user_manual/datasource_configuration/StarRocks_datasource_configuration.md
-          - 配置 TiDB 数据源: user_manual/datasource_configuration/TiDB_datasource_configuration.md
-          - 配置 AWS Redshift 数据源: user_manual/datasource_configuration/AWS_Redshift_datasource_configuration.md
-          - 配置 KingbaseES 数据源: user_manual/datasource_configuration/KingBase_datasource_configuration.md
-          - 配置 API 数据源: user_manual/datasource_configuration_api.md
-      - 数据集:
-          - 数据集概述: user_manual/dataset_description.md
-          - 添加数据集:
-              - 数据库数据集: user_manual/dataset_configuration/dataset_database.md
-              - SQL 数据集: user_manual/dataset_configuration/dataset_SQL.md
-              - Excel 数据集: user_manual/dataset_configuration/dataset_Excel.md
-              - 关联数据集: user_manual/dataset_configuration/dataset_connection.md
-              - API 数据集: user_manual/dataset_configuration/dataset_api.md
-          - 数据集功能设计: user_manual/dataset_design.md
+      - 工作台: user_manual/homepage.md
+      - 数据准备:
+          - 数据源:
+              - 数据源概述: user_manual/datasource_description.md
+              - 配置 MySQL 数据源: user_manual/datasource_configuration/MySQL_datasource_configuration.md
+              - 配置 ClickHouse 数据源: user_manual/datasource_configuration/ClickHouse_datasource_configuration.md
+              - 配置 Db2 数据源: user_manual/datasource_configuration/DB2_datasource_configuration.md
+              - 配置 Doris 数据源: user_manual/datasource_configuration/Doris_datasource_configuration.md
+              - 配置 Impala 数据源: user_manual/datasource_configuration/Impala_datasource_configuration.md
+              - 配置 MariaDB 数据源: user_manual/datasource_configuration/MariaDB_datasource_configuration.md
+              - 配置 MongoDB-BI 数据源: user_manual/datasource_configuration/MongoDB-BI_datasource_configuration.md
+              - 配置 Oracle 数据源: user_manual/datasource_configuration/Oracle_datasource_configuration.md
+              - 配置 PostgreSQL 数据源: user_manual/datasource_configuration/PostgreSQL_datasource_configuration.md
+              - 配置 SQL Server 数据源: user_manual/datasource_configuration/SQL Server_datasource_configuration.md
+              - 配置 StarRocks 数据源: user_manual/datasource_configuration/StarRocks_datasource_configuration.md
+              - 配置 TiDB 数据源: user_manual/datasource_configuration/TiDB_datasource_configuration.md
+              - 配置 AWS Redshift 数据源: user_manual/datasource_configuration/AWS_Redshift_datasource_configuration.md
+              - 配置 API 数据源: user_manual/datasource_configuration_api.md
+              - 配置 Excel 数据源: user_manual/datasource_configuration/datasource_configuration_excel.md
+          - 数据集:
+              - 数据集概述: user_manual/dataset_description.md
+              - 添加数据集:
+                  - 数据库数据集: user_manual/dataset_configuration/dataset_database.md
+                  - SQL 数据集: user_manual/dataset_configuration/dataset_SQL.md
+                  - Excel 数据集: user_manual/dataset_configuration/dataset_Excel.md
+                  - 关联数据集: user_manual/dataset_configuration/dataset_connection.md
+                  - API 数据集: user_manual/dataset_configuration/dataset_api.md
+              - 数据集功能设计: user_manual/dataset_design.md
       - 仪表板:
           - 仪表板概述: user_manual/dashboard_description.md
           - 创建仪表板: user_manual/dashboard_create.md
@@ -118,34 +106,29 @@ nav:
               - 多媒体组件: user_manual/other_module/multimedia_module.md
               - 其他组件: user_manual/other_module/other_module.md
           - 仪表板使用: user_manual/dashboard_using.md
-      - 系统管理:
-          - 用户管理: user_manual/system_management/user.md
-          - 系统参数: user_manual/system_management/param.md
-          - 模版管理: user_manual/system_management/module.md
-          - 应用管理: user_manual/system_management/apps_management.md
-          - 操作日志: user_manual/system_management/operation_log.md
-          - 站内消息: user_manual/system_management/message.md
-          - 定时任务: user_manual/system_management/task.md
-          - 血缘关系: user_manual/system_management/blood_relationship.md
-          - 插件管理: user_manual/system_management/plugin_management.md
-      - 移动端:
-          - 移动端概述: user_manual/app_description.md
-          - 移动端布局: user_manual/app_design.md
-      - 模板市场: user_manual/template_market.md
-      - 应用: user_manual/app_template_market.md
+      - 数据大屏:
+          - 数据大屏概述: user_manual/dashboard_description.md
+          - 创建数据大屏: user_manual/dashboard_create.md
+          - 数据大屏基础功能: user_manual/dashboard_basicfunctions.md
+          - 组件基础功能: user_manual/module_basicfunctions.md
+          - 视图组件:
+              - 视图概述: user_manual/view_module/view_generation.md
+              - 添加视图: user_manual/view_module/view_create.md
+              - 视图基础功能: user_manual/view_module/view_basic_functionality.md
+              - 视图数据设计: user_manual/view_module/view_data_design.md
+              - 视图样式设计: user_manual/view_module/view_style_design.md
+              - 视图高级设计: user_manual/view_module/view_advanced_design.md
+              - 视图图库: user_manual/view_module/view_gallery.md
+          - 其他组件:
+              - 样式组件: user_manual/other_module/style_module.md
+              - 多媒体组件: user_manual/other_module/multimedia_module.md
+              - 其他组件: user_manual/other_module/other_module.md
+          - 数据大屏使用: user_manual/dashboard_using.md
       - X-Pack:
           - 用户管理: xpack/user_management_user.md
           - 角色管理: xpack/sys_management_role.md
           - 组织管理: xpack/sys_management_organization.md
           - 权限管理: xpack/sys_management_permission.md
-          - 系统配置:
-              - 系统参数: xpack/sys_parameters.md
-              - 外观配置: xpack/appearance_configuration.md
-              - 平台对接: xpack/platform_abutment.md
-              - 认证设置: xpack/identification_setting.md
-              - 水印管理: xpack/watermark.md
-          - 系统 API: xpack/sys_management_develop.md
-          - 定时报告: xpack/sys_management_report.md
   - 实践教程:
       - 实践案例: customercase.md
       - 图表样式解析: chart_style_analysis.md
@@ -153,25 +136,7 @@ nav:
       - 数据关系与图表: datarelationships_charttypes.md
       - 间距细节: spacing_design.md
       - 更多实践: best_practices.md
-  - 教学视频: instructional_video.md
-  - 常见问题:
-      - 安装部署问题:
-          - 安装配置相关: faq/configuration_faq/configuration.md
-          - 安装启动相关: faq/configuration_faq/installation_starts.md
-          - MySQL 相关: faq/configuration_faq/dataease_mysql.md
-      - 系统管理: faq/system_management.md
-      - 功能相关:
-          - 数据集: faq/dataset_faq.md
-          - 仪表板: faq/panel_faq.md
-      - 安全问题: faq/security_faq.md
-      - 企业版: faq/enterprise_faq.md
-  - 开发文档:
-      - 开发环境搭建: dev_manual/dev_manual.md
-      - 视图插件开发示例: dev_manual/dev_view_plugin.md
-      - 数据源插件开发示例: dev_manual/dev_datasource_plugin.md
-      - 开发问题: faq/dev_faq.md
   - 技术咨询: https://jinshuju.net/f/e40eKK
-  - 安全公告: securitybulletin.md
   - 联系我们: contact.md
 
 markdown_extensions:

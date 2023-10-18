@@ -15,12 +15,13 @@
 !!! Abstract ""
     步骤二：按照以下步骤，选择 ClickHouse 图标。
 
-![ClickHouse](../../img/datasource_configuration/ClickHouse1.png){ width="900" }
+![ClickHouse](../../img/datasource_configuration/选择ClickHouse数据源.png){ width="900" }
+
 
 !!! Abstract ""
     步骤三：填入收集的 IP 、端口、数据库等相关的信息。
 
-![ClickHouse](../../img/datasource_configuration/ClickHouse2.png){ width="900" }
+![ClickHouse](../../img/datasource_configuration/CH链接信息.png){ width="900" }
 
 !!! Abstract ""
     详细说明信息如下：
@@ -41,5 +42,5 @@
 !!! Abstract ""
     步骤四：数据源检验，校验成功后如下图所示，点击保存即可。
 
-![ClickHouse](../../img/datasource_configuration/ClickHouse3.png){ width="900" }
+![ClickHouse](../../img/datasource_configuration/CH校验成功.png){ width="900" }
 

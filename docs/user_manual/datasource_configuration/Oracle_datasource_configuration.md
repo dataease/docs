@@ -15,17 +15,17 @@
 !!! Abstract ""
     步骤二：按照以下步骤，选择 Oracle 图标。
 
-![Oracle](../../img/datasource_configuration/Oracle1.png){ width="900" }
+![Oracle](../../img/datasource_configuration/选择Oracle.png){ width="900" }
 
 !!! Abstract ""
     步骤三：填入收集的 IP 、端口、数据库等相关的信息。
 
-![Oracle](../../img/datasource_configuration/Oracle2.png){ width="900" }
+![Oracle](../../img/datasource_configuration/Oracle链接信息.png){ width="900" }
 
 !!! Abstract ""
     步骤四：获取 Schema。
 
-![Oracle](../../img/datasource_configuration/Oracle_Schema.png){ width="900" }
+![Oracle](../../img/datasource_configuration/Oracle获取Schema.png){ width="900" }
 
 !!! Abstract ""
     详细说明信息如下：
@@ -49,4 +49,4 @@
 !!! Abstract ""
     步骤五：数据源检验，校验成功后如下图所示，点击保存即可。
 
-![Oracle](../../img/datasource_configuration/Oracle3.png){ width="900" }
+![Oracle](../../img/datasource_configuration/Oracle校验成功.png){ width="900" }

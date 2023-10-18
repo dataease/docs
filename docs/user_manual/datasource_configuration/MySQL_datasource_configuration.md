@@ -15,12 +15,12 @@
 !!! Abstract ""
     步骤二：按照以下步骤，选择 MySQL 图标。
 
-![MySQL](../../img/datasource_configuration/MySQL1.png){ width="900" }
+![MySQL1](../../img/datasource_configuration/选择数据源1.png){ width="900" }
 
 !!! Abstract ""
     步骤三：填入收集的 IP 、端口、数据库等相关的信息。
 
-![MySQL](../../img/datasource_configuration/MySQL2.png){ width="900" }
+![MySQL2](../../img/datasource_configuration/MYSQL信息.png){ width="900" }
 
 !!! Abstract ""
     详细说明信息如下：
@@ -40,4 +40,4 @@
 !!! Abstract ""
     步骤四：数据源检验，校验成功后如下图所示，点击保存即可。
 
-![MySQL](../../img/datasource_configuration/MySQL3.png){ width="900" }
+![MySQL3](../../img/datasource_configuration/MYSQL校验成功.png){ width="900" }

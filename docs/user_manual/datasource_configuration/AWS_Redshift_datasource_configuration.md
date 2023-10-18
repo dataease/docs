@@ -15,7 +15,7 @@
 !!! Abstract ""
     步骤二：按照以下步骤，选择 AWS Redshift 图标。
 
-![AWS Redshift](../../img/datasource_configuration/AWS_Redshift.png){ width="900" }
+![AWS Redshift](../../img/datasource_configuration/选择AWSRedshift.png){ width="900" }
 
 !!! Abstract ""
     步骤三：填入收集的 IP 、端口、数据库等相关的信息。

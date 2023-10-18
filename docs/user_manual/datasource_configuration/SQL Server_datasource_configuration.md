@@ -15,17 +15,17 @@
 !!! Abstract ""
     步骤二：按照以下步骤，选择 SQL Server 图标。
 
-![SQL Server](../../img/datasource_configuration/SQL_Server1.png){ width="900" }
+![SQL Server](../../img/datasource_configuration/选择SQLServer.png){ width="900" }
 
 !!! Abstract ""
     步骤三：填入收集的 IP 、端口、数据库等相关的信息。
 
-![SQL Server](../../img/datasource_configuration/SQL_Server2.png){ width="900" }
+![SQLServer链接信息](../../img/datasource_configuration/SQLServer链接信息.png){ width="900" }
 
 !!! Abstract ""
     步骤四：获取 Schema。
 
-![SQL Server](../../img/datasource_configuration/SQL_Server_Schema.png){ width="900" }
+![SQLServer获取Schema](../../img/datasource_configuration/SQLServer获取schema.png){ width="900" }
 
 !!! Abstract ""
     详细说明信息如下：
@@ -46,4 +46,4 @@
 !!! Abstract ""
     步骤五：数据源检验，校验成功后如下图所示，点击保存即可。
 
-![SQL Server](../../img/datasource_configuration/SQL_Server3.png){ width="900" }
+![SQLServer校验成功](../../img/datasource_configuration/SQLServer校验成功.png){ width="900" }

@@ -15,12 +15,12 @@
 !!! Abstract ""
     步骤二：按照以下步骤，选择 MariaDB 图标。
 
-![MariaDB](../../img/datasource_configuration/MariaDB1.png){ width="900" }
+![MariaDB](../../img/datasource_configuration/选择MariaDB.png){ width="900" }
 
 !!! Abstract ""
     步骤三：填入收集的 IP 、端口、数据库等相关的信息。
 
-![MariaDB](../../img/datasource_configuration/MariaDB2.png){ width="900" }
+![MariaDB](../../img/datasource_configuration/MariaDB信息.png){ width="900" }
 
 !!! Abstract ""
     详细说明信息如下：
@@ -40,4 +40,4 @@
 !!! Abstract ""
     步骤四：数据源检验，校验成功后如下图所示，点击保存即可。
 
-![MariaDB](../../img/datasource_configuration/MariaDB3.png){ width="900" }
+![MariaDB校验成功](../../img/datasource_configuration/MariaDB校验成功.png){ width="900" }
