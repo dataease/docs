@@ -42,8 +42,6 @@ theme:
 nav:
   - 产品介绍: index.md
   - 快速入门: quick_start.md
-  - 版本迭代:
-      - 更新日志: changelog.md
   - 系统架构: system_arch.md
   - 安装部署:
       - 在线安装与升级: installation/online_INSTL_and_UPG.md
