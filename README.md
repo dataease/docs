@@ -29,7 +29,7 @@ nav:
         - 通用功能: user_manual/general.md
         - 数据源: user_manual/datasource_configuration.md
         - 数据集: user_manual/dataset_configuration.md
-        - 视图: user_manual/view_generation.md
+        - 图表: user_manual/view_generation.md
         - 仪表板: user_manual/dashboard_generation.md
         - 系统管理:
             - 用户管理: user_manual/system_management/user.md

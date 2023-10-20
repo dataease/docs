@@ -44,7 +44,7 @@
 
 ![过滤组件_位置调整](../../img/dashboard_generation/2.0查询结果.png){ width="900px" }
 
-## 3 过滤组件样式设置
+## 3 组件样式设置
 
 !!! Abstract ""
 

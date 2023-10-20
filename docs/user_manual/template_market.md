@@ -95,7 +95,7 @@
 ![模板市场_新建仪表板](../img/template_market/模板市场_新建仪表板.png){ width="900px" }
 
 !!! Abstract ""
-    编辑视图组件，根据情况替换为自己的数据。
+    编辑图表，根据情况替换为自己的数据。
 
 ![模板市场_替换数据集](../img/template_market/模板市场_替换数据集.png){ width="900px" }
 

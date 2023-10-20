@@ -5,7 +5,7 @@
 [![数据集整合](img/video/数据集整合.png){ width="280"}](https://www.bilibili.com/video/BV1fR4y1k7Dt/) </br>
 [![数据加工](img/video/数据加工.png){ width="280"}](https://www.bilibili.com/video/BV1uW4y1g7fB/)
 
-## 2 视图组件
+## 2 图表
 
 [![新建视图](img/video/新建视图.png){ width="280"}](https://www.bilibili.com/video/BV1U84y167oS/)
 [![视图样式](img/video/视图样式.png){ width="280"}](https://www.bilibili.com/video/BV1id4y1s7XK/)

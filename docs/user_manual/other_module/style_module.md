@@ -1,7 +1,7 @@
 ## 1 富文本
 
 !!! Abstract ""
-	双击富文本视图，可定义样式，并支持在编辑区引用维度与指标中字段。
+	双击富文本组件，可定义样式，并支持在编辑区引用维度与指标中字段。
 	注意： 引用维度与指标字段时，富文本只选取第一条结果值。
 
 	![仪表板_富文本组件入口](../../img/dashboard_generation/2.0富文本组件点击.png){ width="900px" }
@@ -59,7 +59,7 @@
 ![仪表盘编辑_其他组件](../../img/dashboard_generation/2.0Tab组件.png){ width="900px" }
 
 !!! Abstract ""
-	如下图所示，可通过 Tab 页展示多个视图。
+	如下图所示，可通过 Tab 页展示多个图表和组件。
 
 ![Tab页展示视图](../../img/dashboard_generation/2.0选择tab1.png){ width="900px" }
 
