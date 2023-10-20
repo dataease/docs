@@ -24,8 +24,7 @@
 	可通过与图表的日期字段绑定，按日期过滤图表的数据。支持设置默认日期，展示展示具体日期的数据。
 
 ![日期组件入口](../../img/dashboard_generation/2.0年月日过滤.png){ width="900px" }  
-![仪表盘编辑_过滤组件](../../img/dashboard_generation/2.0设置年月日过滤设置.png){ width="900px" }  
-}
+![仪表盘编辑_过滤组件](../../img/dashboard_generation/2.0设置年月日过滤设置.png){ width="900px" }
 
 !!! Abstract ""
 	日期过滤组件支持时分秒级别的设置。
