@@ -115,9 +115,9 @@ nav:
           - 其他组件: user_manual/other_module/panel_style_module.md
       - X-Pack:
           - 用户管理: xpack/user_management_user.md
-          - 角色管理: xpack/sys_management_role.md
           - 组织管理: xpack/sys_management_organization.md
-          - 权限管理: xpack/sys_management_permission.md
+          - 权限配置: xpack/sys_management_permission.md
+          - 多维嵌入: xpack/multidimensional_embedding.md
   - 技术咨询: https://jinshuju.net/f/e40eKK
   - 联系我们: contact.md
 
