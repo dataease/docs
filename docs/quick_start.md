@@ -49,17 +49,17 @@
         - 目录区域：添加目录/数据大屏，对数据大屏进行编辑、分享等；
         - 预览区域：预览、收藏、导出数据大屏等。
 
-         详细功能请参考本文档功能手册[数据大屏](./user_manual/dashboard_description.md)。
+         详细功能请参考本文档功能手册[数据大屏](./user_manual/panel_description.md)。
 ![数据大屏](./newimg/product_acceptance/数据大屏.png){ width="900px" }
 
 === "数据准备"
     !!! Abstract ""  
         【数据准备】模块分为数据源和数据集，进行相关的数据准备.
 
-        - **数据源**：添此界面是用来管理各类数据连接信息，是后续数据分析操作中数据的来源。详细功能请参考本文档功能手册[数据源](./user_manual/dashboard_description.md)。
-        - **数据集**：为数据分析或可视化分析进行相关的数据准备。详细功能请参考本文档功能手册[数据集](./user_manual/dashboard_description.md)。
+        - **数据源**：添此界面是用来管理各类数据连接信息，是后续数据分析操作中数据的来源。详细功能请参考本文档功能手册[数据源](./user_manual/datasource_description.md)。
+        - **数据集**：为数据分析或可视化分析进行相关的数据准备。详细功能请参考本文档功能手册[数据集](./user_manual/dataset_description.md)。
 
-         详细功能请参考本文档功能手册[数据准备](./user_manual/dashboard_description.md)。
+         详细功能请参考本文档功能手册【数据准备】。
 
 ![数据源](./newimg/product_acceptance/数据源.png){ width="900px" }
 
@@ -120,7 +120,7 @@
 
 ![地图替换颜色](./newimg/product_acceptance/地图替换颜色.png){ width="900px" }
 
-### 3.4 分享
+### 3.4 快速分享
 
 !!! Abstract ""
     如下图所示，点击展开功能菜单，创建公共链接。
