@@ -26,7 +26,7 @@
 
 ![移动确认](../newimg/user_manual/移动确认.png){ width="900px" }
 
-## 4删除
+## 4 删除
 
 !!! Abstract ""
     1. 点击如下图所示位置，选择"删除";

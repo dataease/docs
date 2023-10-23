@@ -35,7 +35,7 @@
 
     ``` 
     cd /tmp
-    # 解压安装包
+    # 解压安装包（dataease-online-installer-v2.0.0.tar.gz 为示例安装包名称，操作时可根据实际安装包名称替换）
     tar zxvf dataease-online-installer-v2.0.0.tar.gz
     ```
 
@@ -75,7 +75,7 @@
 !!! Abstract "" 
 
 	```
-    # 进入安装包目录
+    # 进入安装包目录（dataease-online-installer-v2.0.0 为示例安装包目录名称，操作时可根据实际安装包名称替换）
     cd dataease-online-installer-v2.0.0
 
     # 运行安装脚本
@@ -143,7 +143,7 @@
     ```
 
 !!! Abstract ""
-    安装成功后，通过浏览器访问如下页面登录
+    安装成功后，通过浏览器访问如下页面登录：
     
     ```
     地址: http://目标服务器IP地址:服务运行端口 

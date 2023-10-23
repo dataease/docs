@@ -17,7 +17,7 @@
 ## 3 恢复
 
 !!! Abstract ""
-	点击下图按钮，可以对组件操作恢复。
+	**点击下图按钮，可以对组件操作恢复。**
 
 ![2.0恢复](../img/dashboard_generation/2.0恢复.png){ width="900px" }
 
@@ -97,7 +97,7 @@
 ![仪表板_批量操作](../img/dashboard_generation/2.0批量操作.png){ width="900px" }
 
 !!! Abstract ""
-	当勾选多个不同类别的图形时，只能批量修改共性的属性。
+	**请注意：当勾选多个不同类别的图形时，只能批量修改共性的属性。**
 
 ![仪表板_批量操作](../img/dashboard_generation/2.0批量样式调整.png){ width="900px" }
 
@@ -126,12 +126,5 @@
 	点击下图所示的返回按钮，关闭仪表板。
 
 ![仪表板_关闭](../img/dashboard_generation/2.0返回.png){ width="900px" }
-
-## 9 快捷键使用
-
-!!! Abstract ""
-	仪表板支持快捷键功能，支持复制、放大、查看数据、导出。  
-
-![仪表板快捷](../img/dashboard_generation/2.0视图快捷复制.png){ width="900px" }
 
 
