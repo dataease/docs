@@ -18,7 +18,7 @@
 ![支持数据源类型](../newimg/user_manual/支持数据源类型.png){ width="900px" }
 
 !!! Abstract ""
-    以下版本为 DataEase 对接调试版，可供参考，其它版本您也可正常对接，若不满足可尝试通过在驱动管理处添加相应版本驱动解决。
+    以下版本为 DataEase 研发对接调试版，可供参考，其它版本通常也可正常对接，若有问题可反馈至 GitHub Issue。
 
     - SQL Server - 2019
     - Oracle - 12.2.0.1
