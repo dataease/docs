@@ -80,7 +80,6 @@ nav:
           - 图表:
               - 图表概述: user_manual/view_module/view_generation.md
               - 添加图表: user_manual/view_module/view_create.md
-              - 图表基础功能: user_manual/view_module/view_basic_functionality.md
               - 图表数据设计: user_manual/view_module/view_data_design.md
               - 图表样式设计: user_manual/view_module/view_style_design.md
               - 图表高级设计: user_manual/view_module/view_advanced_design.md
@@ -99,10 +98,9 @@ nav:
           - 图表:
               - 图表概述: user_manual/view_module/panel_generation.md
               - 添加图表: user_manual/view_module/panel_view_create.md
-              - 图表基础功能: user_manual/view_module/panel_view_basic_functionality.md
               - 图表数据设计: user_manual/view_module/panel_view_data_design.md
               - 图表样式设计: user_manual/view_module/panel_view_style_design.md
-              - 图表表高级设计: user_manual/view_module/panel_view_advanced_design.md
+              - 图表高级设计: user_manual/view_module/panel_view_advanced_design.md
               - 图表图库: user_manual/view_module/view_gallery.md
           - 其他组件: user_manual/other_module/panel_style_module.md
       - X-Pack:

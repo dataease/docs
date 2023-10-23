@@ -3,10 +3,10 @@
 !!! Abstract ""
     **DataEase 安装后，相关文件的分布路径如下：**
 
-    - /opt/dataease2.0 - 默认运行路径，在安装时可设置。主要存放 DataEase 运行时所需的配置文件及运行时产生的数据，包括日志文件等
-    - /usr/bin - 默认 docker 及 docker-compose 的运行程序被放置在此目录下
-    - /usr/local/bin/dectl - DataEase 的命令行工具
-    - /var/lib/docker - 默认 docker 镜像加载在此
+    - /opt/dataease2.0：默认运行路径，在安装时可设置。主要存放 DataEase 运行时所需的配置文件及运行时产生的数据，包括日志文件等
+    - /usr/bin：默认 docker 及 docker-compose 的运行程序被放置在此目录下
+    - /usr/local/bin/dectl：DataEase 的命令行工具
+    - /var/lib/docker：默认 docker 镜像加载在此
 
 !!! Abstract ""
     **综上所述，备份 DataEase 主要需要备份运行路径，如 /opt/dataease2.0 目录即可。还原步骤如下：**
