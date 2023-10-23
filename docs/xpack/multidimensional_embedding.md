@@ -44,10 +44,12 @@
     ![API 接口调用类](../img/xpack/multidimensional_embedding/TokenApi.png){ width="900px" }  
     需要从 DataEase 系统管理中获取 appId 和 secret 两个参数的值传入该接口，需要注意的是 secret 需要进行 HMAC256 加密。  
     获取界面如下图所示:   
-    ![获取界面](../img/xpack/multidimensional_embedding/XXXX.png){ width="900px" }（敬请期待）
+    ![获取界面](../img/xpack/multidimensional_embedding/XXXX.png){ width="900px" }（敬请期待）  
+    **临时处理** —— 往该表插入以下数据：  
+    ![临时处理](../img/xpack/multidimensional_embedding/temporary.png){ width="900px" }
 
 !!! Abstract ""
-    第三方界面模拟静态文件:  
+    第三方界面模拟静态文件:   
     ![第三方界面模拟](../img/xpack/multidimensional_embedding/index.png){ width="900px" }
 
 !!! Abstract ""
@@ -62,7 +64,8 @@
 
     ![资源预览](../img/xpack/multidimensional_embedding/ResourceView.png){ width="900px" }  
     
-    **注意：**dvId 的获取方式如下：（敬请期待）
+    **注意：** dvId 的获取方式如下：  
+    ![dvId](../img/xpack/multidimensional_embedding/1.png){ width="900px" }
 
 !!! Abstract ""
     仪表板编辑界面调用静态文件:
@@ -77,7 +80,8 @@
 
     ![仪表板编辑](../img/xpack/multidimensional_embedding/DashboardEditor.png){ width="900px" }  
     
-    **注意：**resourceId 的获取方式如下：（敬请期待）
+    **注意：** resourceId 的获取方式如下：  
+    ![resourceId](../img/xpack/multidimensional_embedding/2.png){ width="900px" }
 
 !!! Abstract ""
     大屏编辑界面调用静态文件:
@@ -92,7 +96,8 @@
 
     ![大屏编辑](../img/xpack/multidimensional_embedding/VisualizationEditor.png){ width="900px" }
     
-    **注意：**dvId 的获取方式如下：（敬请期待）
+    **注意：** dvId 的获取方式如下：  
+    ![dvId](../img/xpack/multidimensional_embedding/3.png){ width="900px" }
 
 !!! Abstract ""
     视图预览界面调用静态文件:
@@ -107,7 +112,11 @@
 
     ![视图预览](../img/xpack/multidimensional_embedding/view.png){ width="900px" }
     
-    **注意：**dvId 和 chartId 的获取方式如下：（敬请期待）
+    **注意：** dvId 和 chartId 的获取方式如下：  
+    dvId：  
+    ![dvId](../img/xpack/multidimensional_embedding/2.png){ width="900px" }  
+    chartId：  
+    ![chartId](../img/xpack/multidimensional_embedding/4.png){ width="900px" }
 
 !!! Abstract ""
     最后本地运行即可预览效果。  
