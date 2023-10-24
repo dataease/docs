@@ -1,4 +1,4 @@
-## 1 安装 Git 和 jdk 8
+## 1 安装 Git 和 jdk 11
 
 !!! Abstract ""
 	**本文以 CentOS 8.3 为例，举例说明如何以源码的形式编译 DataEase 工程，并进行前后端分离部署。**  

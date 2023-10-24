@@ -268,7 +268,7 @@
 !!! Abstract "新增功能 :star2:"
 
     - feat(视图): 视图增加流向地图支持
-    - feat(视图): Doris、StarRocks 同环比支持周，季度
+    - feat(视图): Doris、StarRocks 支持显示周，季度
 
 !!! Abstract "功能优化 :sunflower:"
 

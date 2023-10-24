@@ -4,7 +4,7 @@
 
 ## 工具准备
 
-### 1.安装 Git 和 jdk 8
+### 1.安装 Git 和 jdk 11
 
 !!! Abstract ""
 	```shell
