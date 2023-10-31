@@ -135,17 +135,6 @@
     margin: 1em 0
 }
 
-.md-typeset .admonition.de-abstract,
-.md-typeset details.de-abstract {
+.md-typeset {
   border-color: rgb(10, 123, 224);
-}
-
-.md-typeset .de-abstract > .admonition-title,
-.md-typeset .de-abstract > summary {
-  background-color: rgba(10, 123, 224, 0.1);
-}
-
-.md-typeset .de-abstract > .admonition-title::before,
-.md-typeset .de-abstract > summary::before {
-  background-color: rgb(10, 123, 224);
 }
