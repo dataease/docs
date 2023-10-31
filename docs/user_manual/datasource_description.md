@@ -23,11 +23,12 @@
     - SQL Server - 2019
     - Oracle - 12.2.0.1
     - MongoDB - 4.4.13、5.0.6
-    - Db2 - 10.5、11.5.7.0
     - TiDB - 5.3.1
     - PostgreSQL - 12.10、14.2
     - ClickHouse - 22.1.4.30
     - MySQL - 5.7.36
     - Impala - 4.0.0
     - Doris - 0.15、1.0.0、1.1.0
+    - StarRocks  - 3.0.0
+    - MariaDB - 10.7.8
 

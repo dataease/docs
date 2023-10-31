@@ -56,7 +56,6 @@ nav:
               - 数据源概述: user_manual/datasource_description.md
               - 配置 MySQL 数据源: user_manual/datasource_configuration/MySQL_datasource_configuration.md
               - 配置 ClickHouse 数据源: user_manual/datasource_configuration/ClickHouse_datasource_configuration.md
-              - 配置 Db2 数据源: user_manual/datasource_configuration/DB2_datasource_configuration.md
               - 配置 Doris 数据源: user_manual/datasource_configuration/Doris_datasource_configuration.md
               - 配置 Impala 数据源: user_manual/datasource_configuration/Impala_datasource_configuration.md
               - 配置 MariaDB 数据源: user_manual/datasource_configuration/MariaDB_datasource_configuration.md
@@ -141,7 +140,6 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.betterem
   - pymdownx.progressbar
-  - lightgallery
   - pymdownx.tabbed
 
 extra_css:
@@ -157,7 +155,7 @@ plugins:
       separator: '[\s\-\.]+'
 extra:
   version:
-    method: mike
+    provider: mike
   analytics:
     provider: google
     property: UA-147297392-11
