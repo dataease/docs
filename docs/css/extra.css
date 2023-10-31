@@ -123,3 +123,18 @@
     padding: 2px 5px;
     color: #ffffff;
 }
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-width: 0;
+  border-left-width: 4px;
+}
+
+.md-typeset p,.md-typeset ul,.md-typeset ol,.md-typeset dl,.md-typeset blockquote {
+    display: flow-root;
+    margin: 1em 0
+}
+
+.md-typeset {
+  border-color: rgb(10, 123, 224);
+}
