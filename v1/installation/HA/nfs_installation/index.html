@@ -4845,7 +4845,8 @@
 <h2 id="1-nfs">1 NFS 服务器端安装与配置<a class="headerlink" href="#1-nfs" title="Permanent link">&para;</a></h2>
 <h3 id="11">1.1 环境信息<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p><strong>NFS 服务器信息如下：</strong></p>
+<p><strong>注意：</strong> NFS 在集群中起到存储 Excel、插件包等文件的作用。<br />
+<strong>NFS 服务器信息如下：</strong></p>
 <ul>
 <li>IP 为 10.1.11.64</li>
 </ul>
@@ -4884,6 +4885,14 @@ chmod<span class="w"> </span><span class="m">666</span><span class="w"> </span>-
 
 mount<span class="w"> </span>-a
 </code></pre></div>
+<p>文件夹存放文件介绍：<br />
+<div class="highlight"><pre><span></span><code>-<span class="w"> </span>kettle：Excel、CSV<span class="w"> </span>文件；<span class="w">  </span>
+-<span class="w"> </span>static-resource：图片等静态文件；<span class="w">  </span>
+-<span class="w"> </span>thirdpart：外部插件包；<span class="w">  </span>
+-<span class="w"> </span>custom-drivers：数据库驱动包；<span class="w">    </span>
+-<span class="w"> </span>custom：地图文件；<span class="w">  </span>
+-<span class="w"> </span>business：第三方平台定时报告附件。
+</code></pre></div></p>
 </div>
 <h3 id="16-rpcbind-nfs">1.6 rpcbind 和 NFS 做开机启动<a class="headerlink" href="#16-rpcbind-nfs" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">

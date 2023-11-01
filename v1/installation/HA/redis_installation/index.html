@@ -4871,7 +4871,8 @@
 <h2 id="1">1 准备工作<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
 <h3 id="11">1.1 服务器准备<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p>此处在同一台服务器上部署了 6 个 Redis 节点，以端口区分，模拟组建 3 主 3 从的 Redis Cluster 集群。<br />
+<p><strong>注意：</strong> Redis 在集群中起到缓存数据的作用，如果不安装该服务可能会导致权限的变化无法同步到各个节点。  <br />
+此处在同一台服务器上部署了 6 个 Redis 节点，以端口区分，模拟组建 3 主 3 从的 Redis Cluster 集群。<br />
 Redis 服务器信息如下：</p>
 <ul>
 <li>IP 为 10.1.11.64</li>
