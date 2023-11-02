@@ -577,6 +577,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v11812" class="md-nav__link">
+    v1.18.12
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v11811" class="md-nav__link">
     v1.18.11
   </a>
@@ -5067,6 +5074,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v11812" class="md-nav__link">
+    v1.18.12
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v11811" class="md-nav__link">
     v1.18.11
   </a>
@@ -5458,6 +5472,54 @@ Bug 修复的小版本。<br />
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v11812">v1.18.12<a class="headerlink" href="#v11812" title="Permanent link">&para;</a></h3>
+<p>2023年11月2日</p>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>feat: 支持动态设置访问路径前缀</li>
+<li>feat: 支持用户配置在线地图的 Key</li>
+<li>feat: 过滤器时间和数值支持过滤空项</li>
+<li>feat: 水波图支持阈值 #5603</li>
+<li>feat: 子维度支持跳转 #5739</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>refactor(仪表板): 优化预览模块自定义组件 Picture 的图片 src</li>
+<li>refactor(仪表板): 优化仪表板快捷键相应区域，避免弹框中的快捷操作影响仪表板</li>
+<li>refactor(视图): AntV 组合图插件去除维度自定义排序</li>
+<li>refactor(视图): 厦门地图更新</li>
+<li>refactor(视图): ECharts 地图图层控制弹窗放到左侧</li>
+<li>perf: 禁止通过 API 删除 admin 账号</li>
+<li>chore: 新安装时 MySQL 版本升级为 8.1.0（老版本不升级）</li>
+<li>chore: AntV 图库依赖更新</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>fix(数据源): 限制 MySQL 非法参数</li>
+<li>fix(数据源): 修复 API 数据结构解析问题</li>
+<li>fix(数据集): 修复定时同步数据集日期范围过滤不包含左侧的问题 #6423</li>
+<li>fix(仪表板): 修复过滤组件无法过滤 Tab 组件未加载的 Tab 页问题</li>
+<li>fix(仪表板): 修复维度为时间格式时图例显示不全的问题 #6253</li>
+<li>fix(仪表板): 修复视图插件类型选项出现重复的问题 #6220</li>
+<li>fix(仪表板): 修复仪表板右侧的日期范围组件在全屏状态无法全部展示的问题</li>
+<li>fix(仪表板): 修复编辑页面下，修改图表标题后导出，Excel 标题没有跟随变化的问题</li>
+<li>fix(仪表板): 修复编辑状态每次点击图表都会导致图表刷新的问题</li>
+<li>fix(视图): 修复 Antv 和 ECharts 组合图互相覆盖的问题</li>
+<li>fix(视图): 修复 ECharts 地图全屏状态切换指标无法使用的问题 #5204</li>
+<li>fix(视图): 修复 ECharts 标记地图空指针异常 #6356</li>
+<li>fix(视图): 修复明细表切换为其他图表时，清空数据列逻辑错误的问题</li>
+<li>fix(视图): 修复符号地图数据包含经纬度为空的记录 label 无法展示的问题</li>
+<li>fix(视图): 修复编辑时切换到明细表会清空字段的问题</li>
+<li>fix(视图): 修复折线图时间维度图例丢失的问题</li>
+<li>fix(视图): 修复 ECharts 地图标记功能详情显示问题</li>
+<li>fix(视图): 解决 view-bubblemap 的前端执行 npm run dev 时，无法启动报错 #5288</li>
+</ul>
+</div>
 <h3 id="v11811">v1.18.11<a class="headerlink" href="#v11811" title="Permanent link">&para;</a></h3>
 <p>2023年09月15日</p>
 <div class="admonition abstract">
