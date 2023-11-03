@@ -30,4 +30,4 @@ jobs:
     - name: Build package
       run: |
         git fetch origin deploy:deploy
-        mike deploy --push --branch deploy --rebase ${{ github.ref_name }}
+        mike deploy --push --branch deploy
