@@ -83,7 +83,7 @@
     在线地图：支持配置高德地图 Key（符号地图、流向地图）。
 
 !!! Abstract ""
-    进入高德开放平台官网：https://lbs.amap.com/
+    进入高德开放平台官网：https://lbs.amap.com/ 。
 
 ![高德【平台](../../img/system_management/高德平台.PNG){ width="900" }
 
@@ -119,8 +119,6 @@
 ![配置KEY](../../img/system_management/配置KEY.png){ width="900" }
 
 ![KEY保存成功](../../img/system_management/KEY保存成功.png){ width="900" }
-
-
 
 ## 4 引擎设置
 
