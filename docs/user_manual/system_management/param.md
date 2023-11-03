@@ -36,7 +36,7 @@
 !!! Abstract ""
     地理信息：支持设置自定义地图文件。
 
-![地图设置2](../../img/system_management/地理信息png){ width="900" }
+![地图设置2](../../img/system_management/地理信息.png){ width="900" }
 
 ![地图设置2](../../img/system_management/添加地图文件.png){ width="900" }
 
@@ -100,9 +100,9 @@
 !!! Abstract ""
     如下即为验证成功，以及创建应用获取 Key。
 ![世界地图](../../img/system_management/高德验证成功.PNG){ width="900" }
-![世界地图](../../img/system_management/高德创建应用.PNG){ width="900" }
-![世界地图](../../img/system_management/高德添加KEY.PNG){ width="900" }
-![世界地图](../../img/system_management/高德创建KEY成功.PNG){ width="900" }
+![世界地图](../../img/system_management/高德创建应用.png){ width="900" }
+![世界地图](../../img/system_management/高德添加KEY.png){ width="900" }
+![世界地图](../../img/system_management/高德创建KEY成功.png){ width="900" }
 
 !!! Abstract ""
     在 DataEase 在线地图 Key 配置中，填入获取的地图服务 Key，点击保持即可。
