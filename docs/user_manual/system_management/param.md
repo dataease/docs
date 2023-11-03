@@ -78,36 +78,47 @@
 ![世界地图](../../img/system_management/世界地图.png){ width="900" }
 
 ### 3.2 在线地图
+
 !!! Abstract ""
     在线地图：支持配置高德地图 Key（符号地图、流向地图）。
 
 !!! Abstract ""
     进入高德开放平台官网：https://lbs.amap.com/
-![世界地图](../../img/system_management/高德平台.PNG){ width="900" }
+
+![高德【平台](../../img/system_management/高德平台.PNG){ width="900" }
 
 !!! Abstract ""
     选择【文档与支持】->【API】->【web 服务 API】。
-![世界地图](../../img/system_management/高德平台.PNG){ width="900" }
+
+![web服务](../../img/system_management/高德平台.PNG){ width="900" }
 
 !!! Abstract ""
     点开【开发指南】->【获取 Key】。
-![世界地图](../../img/system_management/高德开发指南.PNG){ width="900" }
+
+![开发指南](../../img/system_management/高德开发指南.PNG){ width="900" }
 
 !!! Abstract ""
     登录【高德开放平台控制台】，注册开发者，后续按照文档进行即可。
-![世界地图](../../img/system_management/高德地图指南.PNG){ width="900" }
+
+![地图指南](../../img/system_management/高德地图指南.PNG){ width="900" }
 
 !!! Abstract ""
     如下即为验证成功，以及创建应用获取 Key。
-![世界地图](../../img/system_management/高德验证成功.PNG){ width="900" }
-![世界地图](../../img/system_management/高德创建应用.png){ width="900" }
-![世界地图](../../img/system_management/高德添加KEY.png){ width="900" }
-![世界地图](../../img/system_management/高德创建KEY成功.png){ width="900" }
+
+![高德验证成功](../../img/system_management/高德验证成功.PNG){ width="900" }
+
+![高德创建应用](../../img/system_management/高德创建应用.png){ width="900" }
+
+![高德添加KEY](../../img/system_management/高德添加KEY.png){ width="900" }
+
+![高德创建KEY成功](../../img/system_management/高德创建KEY成功.png){ width="900" }
 
 !!! Abstract ""
-    在 DataEase 在线地图 Key 配置中，填入获取的地图服务 Key，点击保持即可。
-![世界地图](../../img/system_management/配置KEY.png){ width="900" }
-![世界地图](../../img/system_management/KEY保存成功.png){ width="900" }
+    在 DataEase 在线地图 Key 配置中，填入获取的地图服务 Key，点击保持即可。 
+
+![配置KEY](../../img/system_management/配置KEY.png){ width="900" }
+
+![KEY保存成功](../../img/system_management/KEY保存成功.png){ width="900" }
 
 
 
