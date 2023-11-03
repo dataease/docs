@@ -31,12 +31,16 @@
 
 ## 3 地图设置
 
+![地图设置2](../../img/system_management/地图配置界面.png){ width="900" }
+
+### 3.1 地理信息
+
 !!! Abstract ""
-    支持设置自定义地图文件。
+    地理信息：支持设置自定义地图文件。
 
-![地图设置2](../../img/system_management/地图设置1.png){ width="900" }
+![地图设置2](../../img/system_management/地图设置.png){ width="900" }
 
-![地图设置2](../../img/system_management/地图设置2.png){ width="900" }
+![地图设置2](../../img/system_management/添加地图文件.png){ width="900" }
 
 !!! Abstract ""
     **世界各国的地图文件可以自行在网上下载，下面举例说明如何使用。**  
@@ -74,6 +78,40 @@
 ![俄罗斯](../../img/system_management/俄罗斯.png){ width="900" }
 
 ![世界地图](../../img/system_management/世界地图.png){ width="900" }
+
+### 3.2 在线地图
+!!! Abstract ""
+    在线地图：支持配置高德地图 Key（符号地图、流向地图）。
+
+!!! Abstract ""
+    进入高德开放平台官网：https://lbs.amap.com/
+![世界地图](../../img/system_management/高德平台.PNG){ width="900" }
+
+!!! Abstract ""
+    选择【文档与支持】->【API】->【web 服务 API】。
+![世界地图](../../img/system_management/高德平台.PNG){ width="900" }
+
+!!! Abstract ""
+    点开【开发指南】->【获取 Key】。
+![世界地图](../../img/system_management/高德开发指南.PNG){ width="900" }
+
+!!! Abstract ""
+    登录【高德开放平台控制台】，注册开发者，后续按照文档进行即可。
+![世界地图](../../img/system_management/高德地图指南.PNG){ width="900" }
+
+!!! Abstract ""
+    如下即为验证成功，以及创建应用获取 Key。
+![世界地图](../../img/system_management/高德验证成功.PNG){ width="900" }
+![世界地图](../../img/system_management/高德创建应用.PNG){ width="900" }
+![世界地图](../../img/system_management/高德添加KEY.PNG){ width="900" }
+![世界地图](../../img/system_management/高德创建KEY成功.PNG){ width="900" }
+
+!!! Abstract ""
+    在 DataEase 在线地图 Key 配置中，填入获取的地图服务 Key，点击保持即可。
+![世界地图](../../img/system_management/配置KEY.png){ width="900" }
+![世界地图](../../img/system_management/KEY保存成功.png){ width="900" }
+
+
 
 ## 4 引擎设置
 
