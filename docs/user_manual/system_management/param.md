@@ -31,14 +31,12 @@
 
 ## 3 地图设置
 
-![地图设置2](../../img/system_management/地图配置界面.png){ width="900" }
-
 ### 3.1 地理信息
 
 !!! Abstract ""
     地理信息：支持设置自定义地图文件。
 
-![地图设置2](../../img/system_management/地图设置.png){ width="900" }
+![地图设置2](../../img/system_management/地理信息png){ width="900" }
 
 ![地图设置2](../../img/system_management/添加地图文件.png){ width="900" }
 
