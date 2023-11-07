@@ -149,3 +149,16 @@
     用户名: admin
     密码: DataEase@123456
     ```
+
+## 5 升级步骤
+!!! Abstract ""
+    在可连接互联网的情况下，执行以下命令即可完成在线升级步骤（升级前备份是个良好的习惯哦，备份参考见： [备份还原](./installation/backup_faq.md) ）：  
+    按照本文档离线安装步骤，下载新版本安装包并上传解压后，重新执行安装命令进行升级。
+    ```
+    # 进入项目目录
+    cd dataease-online-installer-v2.0.0
+    # 运行安装脚本
+    /bin/bash install.sh
+    # 查看 DataEase 状态
+    dectl status
+    ```
