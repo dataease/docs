@@ -12,6 +12,7 @@
 !!! Abstract ""
     **请自行下载 DataEase 最新版本的离线安装包，并复制到目标机器的 /tmp 目录下：**  
     安装包下载链接: https://community.fit2cloud.com/#/products/dataease/downloads
+![离线包版本选择](../img/installation/离线包版本选择.png){ width="900px" }
 
 ## 3 解压安装包
 

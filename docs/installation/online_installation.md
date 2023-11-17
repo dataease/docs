@@ -101,4 +101,4 @@
 ![modify-demo-dataset](../img/dev_manual/modify-demo-dataset.png){ width="900px" }
 
 !!! Abstract ""
-    获取更多部署相关帮助可访问[**安装配置**](https://dataease.io/docs/faq/configuration_faq/configuration/)与[**安全启动**](https://dataease.io/docs/faq/configuration_faq/installation_starts/)。
+    获取更多部署相关帮助可访问[**安装配置**](https://dataease.io/docs/v1/faq/configuration_faq/configuration/)与[**安全启动**](https://dataease.io/docs/v1/faq/configuration_faq/installation_starts/)。

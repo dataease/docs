@@ -10,23 +10,23 @@
 !!! Abstract "文档指引"
     - **DataEase 介绍**    
 
-         [**产品简介**](https://dataease.io/docs/#1) &emsp;&emsp;&emsp;&emsp;&emsp;  [**安装部署**](https://dataease.io/docs/installation/installation_mode/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**体验环境**](https://dataease.fit2cloud.com/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**企业试用**](https://jinshuju.net/f/TK5TTd) &emsp;&emsp;&emsp;&emsp;&emsp;  [**社区论坛**](https://bbs.fit2cloud.com/c/de/6)
+         [**产品简介**](https://dataease.io/docs/v1/#1) &emsp;&emsp;&emsp;&emsp;&emsp;  [**安装部署**](https://dataease.io/docs/v1/installation/installation_mode/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**体验环境**](https://dataease.fit2cloud.com/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**企业试用**](https://jinshuju.net/f/TK5TTd) &emsp;&emsp;&emsp;&emsp;&emsp;  [**社区论坛**](https://bbs.fit2cloud.com/c/de/6)
 
       - **功能指南**
 
-           [**数据连接**](https://dataease.io/docs/user_manual/datasource_description/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**数据准备**](https://dataease.io/docs/user_manual/dataset_description/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**数据管理**](https://dataease.io/docs/user_manual/dataset_design/)  
+           [**数据连接**](https://dataease.io/docs/v1/user_manual/datasource_description/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**数据准备**](https://dataease.io/docs/v1/user_manual/dataset_description/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**数据管理**](https://dataease.io/docs/v1/user_manual/dataset_design/)  
 
-           [**仪表板设计**](https://dataease.io/docs/user_manual/dashboard_basicfunctions/)  &emsp;&emsp;&emsp;&emsp;   [**创建图表**](https://dataease.io/docs/user_manual/view_module/view_generation/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**添加交互**](https://dataease.io/docs/user_manual/module_basicfunctions/#7) &emsp;&emsp;&emsp;&emsp;&emsp;  [**数据筛选**](https://dataease.io/docs/user_manual/filter_module/filtertime_module/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**配置组件**](https://dataease.io/docs/user_manual/other_module/style_module/)
+           [**仪表板设计**](https://dataease.io/docs/v1/user_manual/dashboard_basicfunctions/)  &emsp;&emsp;&emsp;&emsp;   [**创建图表**](https://dataease.io/docs/v1/user_manual/view_module/view_generation/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**添加交互**](https://dataease.io/docs/v1/user_manual/module_basicfunctions/#7) &emsp;&emsp;&emsp;&emsp;&emsp;  [**数据筛选**](https://dataease.io/docs/v1/user_manual/filter_module/filtertime_module/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**配置组件**](https://dataease.io/docs/v1/user_manual/other_module/style_module/)
 
-           [**查看分享**](https://dataease.io/docs/user_manual/other_module/style_module/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**移动端**](https://dataease.io/docs/user_manual/app_description/)   &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[**模板应用**](https://dataease.io/docs/user_manual/template_market/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**应用管理**](https://dataease.io/docs/user_manual/app_template_market/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**系统配置**](https://dataease.io/docs/user_manual/system_management/param/)&emsp;
+           [**查看分享**](https://dataease.io/ddocs/v1/user_manual/other_module/style_module/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**移动端**](https://dataease.io/docs/v1/user_manual/app_description/)   &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[**模板应用**](https://dataease.io/docs/v1/user_manual/template_market/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**应用管理**](https://dataease.io/docs/v1/user_manual/app_template_market/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**系统配置**](https://dataease.io/docs/v1/user_manual/system_management/param/)&emsp;
 
     - **企业应用（X-Pack）**
 
-           [**权限管理**](https://dataease.io/docs/xpack/sys_management_permission/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**平台对接**](https://dataease.io/docs/xpack/platform_abutment/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**认证设置**](https://dataease.io/docs/xpack/identification_setting/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**定时报告**](https://dataease.io/docs/xpack/sys_management_report/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**系统 API**](https://dataease.io/docs/xpack/sys_management_develop/)&emsp;
+           [**权限管理**](https://dataease.io/docs/v1/xpack/sys_management_permission/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**平台对接**](https://dataease.io/docs/v1/xpack/platform_abutment/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**认证设置**](https://dataease.io/docs/v1/xpack/identification_setting/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**定时报告**](https://dataease.io/docs/v1/xpack/sys_management_report/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**系统 API**](https://dataease.io/docs/v1/xpack/sys_management_develop/)&emsp;
 
      - **进阶学习** 
 
-           [**客户案例**](https://dataease.io/docs/customercase/#1) &emsp;&emsp;&emsp;&emsp;&emsp;  [**仪表板案例**](https://dataease.io/docs/customercase/#2) &emsp;&emsp;&emsp;&emsp;  [**图表解析**](https://dataease.io/docs/chart_style_analysis/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**间距细节**](https://dataease.io/docs/spacing_design/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**更多实践**](https://kb.fit2cloud.com/categories/dataease)&emsp;
+           [**客户案例**](https://dataease.io/docs/v1/customercase/#1) &emsp;&emsp;&emsp;&emsp;&emsp;  [**仪表板案例**](https://dataease.io/docs/v1/customercase/#2) &emsp;&emsp;&emsp;&emsp;  [**图表解析**](https://dataease.io/docs/v1/chart_style_analysis/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**间距细节**](https://dataease.io/docs/v1/spacing_design/) &emsp;&emsp;&emsp;&emsp;&emsp;  [**更多实践**](https://kb.fit2cloud.com/categories/dataease)&emsp;
 
 ## 1 界面展示
 
