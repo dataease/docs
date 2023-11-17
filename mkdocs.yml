@@ -44,7 +44,6 @@ nav:
   - 快速入门: quick_start.md
   - 系统架构: system_arch.md
   - 安装部署:
-      - 在线安装与升级: installation/online_INSTL_and_UPG.md
       - 离线安装与升级: installation/offline_INSTL_and_UPG.md
       - 命令行工具: installation/cli.md
       - 备份还原: installation/backup_faq.md
