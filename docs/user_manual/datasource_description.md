@@ -30,6 +30,7 @@
     - ClickHouse - 22.1.4.30
     - Hive - 2.3.2
     - Kylin - 4.0.0
+    - MariaDB - 10.7.8
     - 达梦 - DM8
     - MySQL - 5.7.36
     - Impala - 4.0.0
