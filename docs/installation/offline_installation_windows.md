@@ -295,7 +295,7 @@
 	**同时，如果局域网内需要访问此台 Windows 上的 DataEase 服务，可以通过端口转发实现：（Powershell 管理员身份运行）**
 
 	```sh
-	netsh interface portproxy add v4tov4 listenport=80 listenaddress=0.0.0.0 connetport=80 connectaddress=localhost
+	netsh interface portproxy add v4tov4 listenport=80 listenaddress=0.0.0.0 connectport=80 connectaddress=localhost
 	```
 
 	对于高版本 Windows 支持 localhost 映射为 wsl2 地址，否则请参考上一步获取 wsl2 地址。
