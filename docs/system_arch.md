@@ -1,6 +1,6 @@
 ## 1 整体架构
 
-![整体架构](./newimg/product_acceptance/功能架构图.png){ width="900px" }
+![整体架构](./newimg/product_acceptance/功能架构图.jpg){ width="900px" }
 
 ## 2 组件说明
 
