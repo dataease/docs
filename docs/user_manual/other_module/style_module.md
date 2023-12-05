@@ -47,9 +47,9 @@
 ![Tab页展示视图](../../img/dashboard_generation/Tab页视图下钻.png){ width="900px" }
 
 !!! Abstract ""
-	如下图所示，可设置 Tab 组件内部样式。
+	如下图所示，可设置 Tab 组件内部样式。支持隐藏标题头，对头部字体和边框样式配置。
 
-![Tab页内部样式编辑](../../img/dashboard_generation/Tab页内部样式编辑.png){ width="900px" }
+![Tab页内部样式编辑](../../img/dashboard_generation/tab组件样式设置.png){ width="900px" }
 
 ## 4 富文本
 
