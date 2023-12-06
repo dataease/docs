@@ -1,3 +1,4 @@
+<!-- 
 ## 1 企业微信设置
 
 !!! Abstract ""
@@ -231,14 +232,15 @@
     移动端免登，和桌面端类似，就是给每个应用添加上移动端的首页设置就可以了。
 
 ![对接钉钉平台](../img/xpack/移动端免登.png){ width="900px" }
-
-## 5 飞书设置
+-->
+##  飞书设置
 
 !!! Abstract ""
-    系统支持飞书平台接入，支持扫码登录、接收消息、定时报告以及免登。
+    系统支持飞书平台接入，支持扫码登录以及免登。
 
-![对接飞书平台](../img/xpack/对接飞书平台1.png){ width="900px" }
+![对接飞书平台](../img/xpack/v2飞书对接1 (1).png){ width="900px" }
 
+<!--
 !!! Abstract ""
     配置定时报告示例。
 
@@ -254,8 +256,8 @@
 ![对接飞书平台](../img/xpack/飞书工作台.png){ width="900px" }
 
 ## 6 飞书平台接入流程
-
-### 6.1 配置平台对接信息
+-->
+###  配置平台对接信息
 
 !!! Abstract ""
     DataEase 对接飞书，需要填写以下信息：
@@ -283,15 +285,20 @@
 ![对接飞书平台](../img/xpack/飞书对接5.png){ width="900px" }
 
 !!! Abstract ""
-    应用设置，启用机器人，路径：飞书开放平台->新创建的 DataEase 测试应用->应用功能->添加机器人。
+    新建 App，添加网页应用，设置桌面端主页为 DataEase 服务器地址。
 
-![对接飞书平台](../img/xpack/飞书对接5-2.png){ width="900px" }
+![对接飞书平台](../img/xpack/v2飞书对接1 (7).png){ width="900px" }
 
-![对接飞书平台](../img/xpack/飞书对接7.png){ width="900px" }
+!!! Abstract ""
+    在【安全设置】里添加重定向 URL，即 DataEase 服务器地址。
 
+![对接飞书平台](../img/xpack/v2飞书对接1 (8).png){ width="900px" }
+
+<!--
 !!! Abstract ""
     设置回调 URL 和 IP 白名单，假设 DataEase 服务器的域名为 https://dataease.fit2cloud.com，对应的 IP 为111.222.111.222，则在应用中的【安全设置】里，在【重定向 URL】中添加两条记录：https://dataease.fit2cloud.com/plugin/lark/callBack，即 http(s)://域名/plugin/lark/callBack；https://dataease.fit2cloud.com/plugin/lark/bind， 即 http(s)://域名/plugin/lark/bind；  
     在【IP 白名单】中加 入DataEase 服务器对应的 IP，如 111.222.111.222。
+
 
 ![对接飞书平台](../img/xpack/飞书对接8.png){ width="900px" }
 
@@ -326,17 +333,21 @@
 ![对接飞书平台](../img/xpack/飞书对接17.png){ width="900px" }
 
 !!! Abstract ""
-    获取应用 ID 和应用密钥，在应用的【凭证与基础信息】里可以获取到应用 ID 和应用密钥。
+    
 
 ![对接飞书平台](../img/xpack/飞书对接18.png){ width="900px" }
+-->
 
 !!! Abstract ""
-    回调域名填写 DataEase 的访问域名即可，例如 https://dataease.fit2cloud.com，此处域名根据自己的实际情况进行修改；  
-    **注意：** 此处的回调域名在后续的应用权限设置中需要用到。  
-    按照以上信息完成下图所示的平台对接配置即可。
+    获取应用 ID 和应用密钥，息完成下图所示的平台对接配置即可。
 
-![对接飞书平台](../img/xpack/对接飞书平台1.png){ width="900px" }
+![对接飞书平台](../img/xpack/v2飞书对接1 (4).png){ width="900px" }
 
+![对接飞书平台](../img/xpack/v2飞书对接1 (3).png){ width="900px" }
+
+![对接飞书平台](../img/xpack/v2飞书对接1 (2).png){ width="900px" }
+
+<!--
 ### 6.2 飞书免登设置
 
 !!! Abstract ""
@@ -366,6 +377,7 @@
     移动端免登，和桌面端类似，就是给每个应用添加上移动端的首页设置就可以了。
 
 ![对接飞书平台](../img/xpack/飞书对接24.png){ width="900px" }
+
 
 ## 7 Lark 设置
 
@@ -469,3 +481,4 @@
     获取应用 key 和应用密钥，在应用的【Credentials】里可以获取到 App ID 和 App Secret。
 
 ![对接国际飞书平台](../img/xpack/对接国际飞书平台16.png){ width="900px" }
+-->

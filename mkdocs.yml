@@ -42,6 +42,10 @@ theme:
 nav:
   - 产品介绍: index.md
   - 快速入门: quick_start.md
+  - 产品迭代:
+      - 更新日志: changelog.md
+      - 更新说明:
+          - v2.1.0: change-v2-1.md
   - 系统架构: system_arch.md
   - 安装部署:
       - 离线安装与升级: installation/offline_INSTL_and_UPG.md
@@ -100,12 +104,17 @@ nav:
               - 图表样式设计: user_manual/view_module/panel_view_style_design.md
               - 图表高级设计: user_manual/view_module/panel_view_advanced_design.md
               - 图表图库: user_manual/view_module/view_gallery.md
-          - 其他组件: user_manual/other_module/panel_style_module.md
+          - 其他组件: user_manual/template_market.md
+      - 模板市场: user_manual/template_market.md
+      - 百宝箱: user_manual/system_management/module.md
+      - 系统管理:
+          - 系统参数: user_manual/system_management/param.md
       - X-Pack:
           - 用户管理: xpack/user_management_user.md
           - 组织管理: xpack/sys_management_organization.md
           - 权限配置: xpack/sys_management_permission.md
           - 多维嵌入: xpack/multidimensional_embedding.md
+          - 平台对接: xpack/platform_abutment.md
   - 联系我们: contact.md
 
 markdown_extensions:

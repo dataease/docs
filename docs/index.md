@@ -11,9 +11,17 @@
 
 ![功能架构图](./newimg/product_acceptance/2.0界面.gif){ width="900px" }
 
+## 2 模板市场
+
+!!! Abstract ""
+    模板市场链接地址：https://templates-de.fit2cloud.com/ 。
+
+![功能架构图](./newimg/product_acceptance/模板市场.gif){ width="900px" }
+
 ## 2 产品优势
 
 !!! Abstract ""
+
     - 开源开放：零门槛，线上快速获取和安装；快速获取用户反馈、按月发布新版本；
     - 简单易用：极易上手，通过鼠标点击和拖拽即可完成分析；
     - 全场景支持：多平台安装和多样化嵌入支持；
