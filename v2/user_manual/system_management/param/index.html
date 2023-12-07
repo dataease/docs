@@ -2395,6 +2395,8 @@
       
         
       
+        
+      
     
     
     
@@ -2530,6 +2532,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../xpack/sys_management_develop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    系统 API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2642,7 +2665,7 @@
 <p>支持设置自定义地图文件。</p>
 </div>
 <p><img alt="地图设置1" src="../../../img/system_management/%E5%9C%B0%E5%9B%BE%E7%95%8C%E9%9D%A2.png" width="900" /></p>
-<p><img alt="地图设置2" src="../../../img/system_management/%E5%9C%B0%E5%9B%BE%E8%AE%BE%E7%BD%AE.png" width="900" /></p>
+<p><img alt="地图设置2" src="../../img/system_management/添加地图文件.png" width="900" /></p>
 <div class="admonition abstract">
 <p><strong>世界各国的地图文件可以自行在网上下载。</strong><br />
 <strong>提示：</strong> 因为各个国家的行政架构不一致，无法统一处理，目前世界地图不支持钻取。<br />
@@ -2650,37 +2673,30 @@
 <a href="https://github.com/codeforgermany/click_that_hood/blob/main/public/data/russia.geojson">https://github.com/codeforgermany/click_that_hood/blob/main/public/data/russia.geojson</a>；<br />
 2.确认 geo 文件是否正确，并在 properties 中包含 name 字段；</p>
 </div>
+<p><img alt="地图设置geo文件" src="../../../img/system_management/%E5%9C%B0%E5%9B%BE%E8%AE%BE%E7%BD%AEgeo%E6%96%87%E4%BB%B6.png" width="900" /></p>
+<div class="admonition abstract">
+<p>3.查找<a href="https://zh.wikipedia.org/wiki/%E5%9C%8B%E5%AE%B6%E5%9C%B0%E5%8D%80%E4%BB%A3%E7%A2%BC">国家地区代码</a>来唯一标识该国家，如俄罗斯地区的代码为 643，区域代码可以写成 643100000；<br />
+4.在 DataEase 中创建俄罗斯地图；</p>
+</div>
+<p><img alt="俄罗斯地图" src="../../../img/system_management/%E4%BF%84%E7%BD%97%E6%96%AF%E5%9C%B0%E5%9B%BE.png" width="900" /></p>
+<div class="admonition abstract">
+<p>5.创建测试数据文件；</p>
+</div>
+<p><img alt="数据文件" src="../../../img/system_management/%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6.png" width="900" /></p>
+<div class="admonition abstract">
+<p>country 需要和地球村文件里的 name 字段名称保持一致；</p>
+</div>
+<p><img alt="country" src="../../../img/system_management/country.png" width="900" /></p>
+<div class="admonition abstract">
+<p>province 需要和国家 geo 文件中 properties 下的 name 字段保持一致；</p>
+</div>
+<p><img alt="province" src="../../../img/system_management/%E5%9C%B0%E5%9B%BE%E8%AE%BE%E7%BD%AEgeo%E6%96%87%E4%BB%B6.png" width="900" /></p>
+<div class="admonition abstract">
+<p>6.制作俄罗斯地图视图，在地图中选择俄罗斯即可；</p>
+</div>
+<p><img alt="俄罗斯" src="../../../img/system_management/%E4%BF%84%E7%BD%97%E6%96%AF.png" width="900" /></p>
+<p><img alt="世界地图" src="../../../img/system_management/%E4%B8%96%E7%95%8C%E5%9C%B0%E5%9B%BE.png" width="900" /></p>
 <!-- 
-![地图设置geo文件](../../img/system_management/地图设置geo文件.png){ width="900" }
-
-!!! Abstract ""
-    3.查找[国家地区代码](https://zh.wikipedia.org/wiki/%E5%9C%8B%E5%AE%B6%E5%9C%B0%E5%8D%80%E4%BB%A3%E7%A2%BC)来唯一标识该国家，如俄罗斯地区的代码为 643，区域代码可以写成 643100000；  
-    4.在 DataEase 中创建俄罗斯地图；
-
-![俄罗斯地图](../../img/system_management/俄罗斯地图.png){ width="900" }
-
-!!! Abstract ""
-    5.创建测试数据文件；
-
-![数据文件](../../img/system_management/数据文件.png){ width="900" }
-
-!!! Abstract ""
-    country 需要和地球村文件里的 name 字段名称保持一致；
-
-![country](../../img/system_management/country.png){ width="900" }
-
-!!! Abstract ""
-    province 需要和国家 geo 文件中 properties 下的 name 字段保持一致；
-
-![province](../../img/system_management/province.png){ width="900" }
-
-!!! Abstract ""
-    6.制作俄罗斯地图视图，在地图中选择俄罗斯即可；
-
-![俄罗斯](../../img/system_management/俄罗斯.png){ width="900" }
-
-![世界地图](../../img/system_management/世界地图.png){ width="900" }
-
 ## 4 引擎设置
 
 ### 4.1 精简模式

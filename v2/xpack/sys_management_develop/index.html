@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://dataease.io/v2/xpack/sys_management_develop/">
       
       
+        <link rel="prev" href="../platform_abutment/">
+      
+      
+        <link rel="next" href="../../contact/">
       
       
       <link rel="icon" href="../../img/facio.ico">
@@ -22,7 +26,7 @@
     
     
       
-        <title>Sys management develop - DataEase 文档</title>
+        <title>系统 API - DataEase 文档</title>
       
     
     
@@ -272,7 +276,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Sys management develop
+              系统 API
             
           </span>
         </div>
@@ -732,8 +736,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -759,12 +765,12 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -778,7 +784,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             功能手册
@@ -2318,8 +2324,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -2333,16 +2341,18 @@
       
         
       
+        
+      
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_9" checked>
         
           
           <label class="md-nav__link" for="__nav_6_9" id="__nav_6_9_label" tabindex="0">
@@ -2356,7 +2366,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_9">
             <span class="md-nav__icon md-icon"></span>
             X-Pack
@@ -2468,6 +2478,72 @@
 
               
             
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    系统 API
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    系统 API
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-api-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 系统 API Keys 管理
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2536,24 +2612,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#2-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      2 系统 API 查看
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      3 系统 API 在线调试
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -2572,27 +2630,13 @@
   
 
 
-  <h1>Sys management develop</h1>
+  <h1>系统 API</h1>
 
 <h2 id="1-api-keys">1 系统 API Keys 管理<a class="headerlink" href="#1-api-keys" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>对 API Keys 的管理包括"创建"、"复制"、"显示" Secret Key、选择"状态"是否可用和"删除"的操作。</p>
 </div>
 <p><img alt="组件置底_基础功能" src="../../img/xpack/%E9%9B%86%E6%88%90%E4%B8%8E%E6%89%A9%E5%B1%951.png" width="900px" /></p>
-<h2 id="2-api">2 系统 API 查看<a class="headerlink" href="#2-api" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<p>用户可通过【创建】获取到 API Key，可供调试的接口如下图所示。</p>
-</div>
-<p><img alt="组件置底_基础功能" src="../../img/xpack/%E9%9B%86%E6%88%90%E4%B8%8E%E6%89%A9%E5%B1%952.png" width="900px" /></p>
-<div class="admonition abstract">
-<p>支持查看 API 文档，如下图所示。</p>
-</div>
-<p><img alt="组件置底_基础功能" src="../../img/xpack/%E9%9B%86%E6%88%90%E4%B8%8E%E6%89%A9%E5%B1%953.png" width="900px" /></p>
-<h2 id="3-api">3 系统 API 在线调试<a class="headerlink" href="#3-api" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<p>系统提供了丰富的接口调试功能，用户可以依据下图的操作进行接口的调试。</p>
-</div>
-<p><img alt="组件置底_基础功能" src="../../img/xpack/API-KEY.png" width="900px" /></p>
 
 
   
