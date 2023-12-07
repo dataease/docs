@@ -25,3 +25,20 @@
 !!! Abstract ""
     图表嵌入示例：  
 ![视图预览](../img/xpack/multidimensional_embedding/view.png){ width="900px" }
+
+## 3 系统配置
+!!! Abstract ""
+    嵌入式管理创建嵌入式应用。  
+    **注意：** 每个 DataEase 实例默认最多可创建 5 个嵌入式应用。
+![视图预览](../img/xpack/multidimensional_embedding/嵌入式管理.png){ width="900px" }
+
+!!! Abstract ""
+    创建嵌入式应用配置项如下：
+
+    - 【序号 1】应用名称：自定义；
+    - 【序号 2】跨域设置：在使用嵌入式时遇到跨域问题时，可以通过设置目标系统的域名进行跨域设置。
+![视图预览](../img/xpack/multidimensional_embedding/创建嵌入式应用.png){ width="900px" }
+
+!!! Abstract ""
+    创建完嵌入式应用后，可以获取到该应用对应的 APP ID 和 APP Secret（**嵌入式对接时需要用到**）。
+![视图预览](../img/xpack/multidimensional_embedding/嵌入式应用列表.png){ width="900px" }
