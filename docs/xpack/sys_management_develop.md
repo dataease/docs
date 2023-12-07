@@ -5,23 +5,6 @@
 
 ![组件置底_基础功能](../img/xpack/集成与扩展1.png){ width="900px" }
 
-## 2 系统 API 查看
 
-!!! Abstract ""
-    用户可通过【创建】获取到 API Key，可供调试的接口如下图所示。
-
-![组件置底_基础功能](../img/xpack/集成与扩展2.png){ width="900px" }
-
-!!! Abstract ""
-    支持查看 API 文档，如下图所示。
-
-![组件置底_基础功能](../img/xpack/集成与扩展3.png){ width="900px" }
-
-## 3 系统 API 在线调试
-
-!!! Abstract ""
-    系统提供了丰富的接口调试功能，用户可以依据下图的操作进行接口的调试。
-
-![组件置底_基础功能](../img/xpack/API-KEY.png){ width="900px" }
 
 

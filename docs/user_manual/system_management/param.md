@@ -20,7 +20,7 @@
 
 ![地图设置1](../../img/system_management/地图界面.png){ width="900" }
 
-![地图设置2](../../img/system_management/地图设置.png){ width="900" }
+![地图设置2](../../img/system_management/添加地图文件.png){ width="900" }
 
 !!! Abstract ""
     **世界各国的地图文件可以自行在网上下载。**  
@@ -28,7 +28,7 @@
     1.下载指定国家的 geo 地图文件，文件缀名需修改为 .json，如下载俄罗斯的 russia.geojson 改为 russia.json；
     https://github.com/codeforgermany/click_that_hood/blob/main/public/data/russia.geojson；  
     2.确认 geo 文件是否正确，并在 properties 中包含 name 字段；
-<!-- 
+
 ![地图设置geo文件](../../img/system_management/地图设置geo文件.png){ width="900" }
 
 !!! Abstract ""
@@ -50,7 +50,7 @@
 !!! Abstract ""
     province 需要和国家 geo 文件中 properties 下的 name 字段保持一致；
 
-![province](../../img/system_management/province.png){ width="900" }
+![province](../../img/system_management/地图设置geo文件.png){ width="900" }
 
 !!! Abstract ""
     6.制作俄罗斯地图视图，在地图中选择俄罗斯即可；
@@ -58,7 +58,7 @@
 ![俄罗斯](../../img/system_management/俄罗斯.png){ width="900" }
 
 ![世界地图](../../img/system_management/世界地图.png){ width="900" }
-
+<!-- 
 ## 4 引擎设置
 
 ### 4.1 精简模式
