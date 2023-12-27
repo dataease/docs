@@ -107,7 +107,7 @@ nav:
               - 图表图库: user_manual/view_module/view_gallery.md
           - 其他组件: user_manual/template_market.md
       - 模板市场: user_manual/template_market.md
-      - 百宝箱: user_manual/system_management/module.md
+      - 工具箱: user_manual/system_management/module.md
       - 系统管理:
           - 系统参数: user_manual/system_management/param.md
       - X-Pack:

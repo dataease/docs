@@ -1,8 +1,8 @@
 
 !!! Abstract ""
-    目前百宝箱只有模版管理，后续会上线其他工具。
+    目前工具箱只有模板管理，后续会上线其他工具。
 
-![百宝箱入口](../../img/system_management/百宝箱入口.png){ width="900px" }
+![百宝箱入口](../../img/system_management/百宝箱.png){ width="900px" }
 
 ##  模板管理
 
