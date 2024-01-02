@@ -47,6 +47,10 @@
 
 ![仪表板_创建公共链接_复制链接](../img/dashboard_generation/仪表板_创建公共链接_复制链接.png){ width="900px" }
 
+!!! Abstract ""
+	公共链接查看仪表板时支持切换全屏预览。
+![name](../img/release_notes/v1-18-14-13.png){ width="900px" }
+
 ### 3.2 公共链接传参
 
 !!! Abstract ""
