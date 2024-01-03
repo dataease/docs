@@ -585,6 +585,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v11814" class="md-nav__link">
+    <span class="md-ellipsis">
+      v1.18.14
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v11813" class="md-nav__link">
     <span class="md-ellipsis">
       v1.18.13
@@ -5380,6 +5389,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v11814" class="md-nav__link">
+    <span class="md-ellipsis">
+      v1.18.14
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v11813" class="md-nav__link">
     <span class="md-ellipsis">
       v1.18.13
@@ -5891,6 +5909,95 @@ Bug 修复的小版本。<br />
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v11814">v1.18.14<a class="headerlink" href="#v11814" title="Permanent link">&para;</a></h3>
+<p>2024年1月4日</p>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>feat(数据源): 数据源驱动可以标记⽀持的数据源版本范围</li>
+<li>feat(数据源): Impala、SQLServer、Doris ⽀持分⻚查询</li>
+<li>feat(仪表板): 仪表板公共链接⽀持切换全屏</li>
+<li>feat(仪表板): 跳转设置上⽀持设置过滤组件的关联字段 #5924</li>
+<li>feat(仪表板): 下拉组件增加清空按钮 #7144</li>
+<li>feat(视图): ⼦维度⽀持⾃定义排序 #5977</li>
+<li>feat(视图): 明细表、汇总表⽀持冻结前 N ⾏/列 #6205</li>
+<li>feat(视图): 新增 AntV 区间条形图</li>
+<li>feat(视图): AntV 轴分割线⽀持设置虚线</li>
+<li>feat(视图): 视图过滤组件⽀持与或关系配置</li>
+<li>feat(视图): 散点图增加辅助线</li>
+<li>feat(X-Pack): 定时报告发送明细表数据⽀持全量发送</li>
+<li>feat(X-Pack): 定时报告⽀持按照⻆⾊、组织发送</li>
+<li>feat(X-Pack): 定时报告支持发送⾄⻜书群聊</li>
+<li>feat(X-Pack): 定时报告⽀持设置额外等待时间</li>
+<li>feat(系统管理): 系统管理-任务管理-数据同步菜单⽀持排序 #5760</li>
+<li>feat: 调整默认字体为阿⾥巴巴普惠体</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>refactor(仪表板): 优化过滤组件必填逻辑</li>
+<li>refactor(仪表板): 去掉预览加载时⾮必要的全局 loading 提示</li>
+<li>refactor(仪表板): 联动跳转外部参数选择视图或字段时⽀持搜索 #5973</li>
+<li>refactor(仪表板): 点击下拉框外的区域时，能将下拉框收起</li>
+<li>refactor(视图): ECharts 明细表支持开启自动换行 #7124</li>
+<li>refactor(视图): 表格阈值编辑界⾯输⼊框对⻬</li>
+<li>refactor(视图): 减少不必要的视图绘制</li>
+<li>refactor(X-Pack): 定时报告过滤掉已禁⽤⽤户</li>
+<li>refactor: 移动端 token 过期之后循环刷新⻚⾯</li>
+<li>refactor: 帮助⽂档 URL 变更</li>
+<li>refactor: 默认禁⽤ demo ⽤户 #5995</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>fix(数据源): 修复 ClickHouse 类型识别错误</li>
+<li>fix(数据源): 修复 SQLServer 下拉树组件过滤失效的问题</li>
+<li>fix(数据源): 修复 Postgre 数据源使⽤数字下拉模糊搜索出错的问题</li>
+<li>fix(数据集): 修复 MySQL 数据表中有 blob 类型字段时定时同步预览⽆数据的问题</li>
+<li>fix(数据集): 修复没有已完成的同步任务，⽆法进⾏增量同步的问题</li>
+<li>fix(数据集): 修复不同 Doris 版本对 decimal 类型的⽀持问题</li>
+<li>fix(数据集): 修复 SQLServer 分⻚报错</li>
+<li>fix(仪表板): 修复画布中存在查询按钮时，设置联动初次查询时没有带过滤条件的问题 #7061</li>
+<li>fix(仪表板): 修复下拉过滤组件设置⾸项会影响到其他仪表板的问题</li>
+<li>fix(仪表板): 修复仅调整 Tab 组件的标签顺序⽽未⽆法点击保存的问题 #613350</li>
+<li>fix(仪表板): 修复添加边框样式后过滤组件等⽆点击效果的问题</li>
+<li>fix(仪表板): 修复隐藏 Tab 头部未触发保存的问题</li>
+<li>fix(仪表板): 修复开启⾸项后，刷新⻚⾯没有⾸项选项的视图显示成空⽩的问题</li>
+<li>fix(仪表板): 修复查询按钮设置关联范围失效的问题</li>
+<li>fix(仪表板): 修复过滤组件⾸项禁⽤后⾸次⼿动设置默认项⽆法正常显示的问题</li>
+<li>fix(仪表板): 修复过滤组件中⽂排序出现空项报错的问题</li>
+<li>fix(仪表板): 修复⽇期类型过滤组件没有请求的问题</li>
+<li>fix(仪表板): 修复多选下拉过滤组件必填时空值没有提示的问题</li>
+<li>fix(仪表板): 下拉树过滤组件空数据提示样式修复 #7165</li>
+<li>fix(仪表板): 修复仪表板过滤组件切换全屏失效的问题</li>
+<li>fix(仪表板): 修复⽂本下拉设置⾸项在全屏模式可能⽆效的问题</li>
+<li>fix(仪表板): 修复⽂本下拉设置必填后反复编辑逻辑错误的问题</li>
+<li>fix(仪表板): 修复在过滤组件使⽤默认值的情况下，视图过滤放⼤后展示的是组件默认值的问题 #7314</li>
+<li>fix(仪表板): 修复⽂本下拉过滤组件关闭⾸项后再开启默认值⽆效的问题</li>
+<li>fix(仪表板): 修复所有过滤组件在存在查询按钮场景下，切换全屏查询失败的问题</li>
+<li>fix(视图): Tab 切换时重新渲染表格</li>
+<li>fix(视图): 修复在开启刷新的情况下，视图加载错误后没有继续刷新的问题</li>
+<li>fix(视图): 表格详情使⽤原有样式，其他视图统⼀样式，不使⽤斑⻢纹</li>
+<li>fix(视图): 分组堆叠柱状图提示显示分组信息</li>
+<li>fix(视图): 修复横向柱状图标签和纵轴重叠的问题 #6634</li>
+<li>fix(视图): 修复 ECharts 表格冻结列后样式异常的问题</li>
+<li>fix(视图): 修复隐藏表头显示异常的问题</li>
+<li>fix(视图): 限制饼图/环形图标签显示在视图内部 #6626</li>
+<li>fix(视图): 修复组合图设置渐变后修改主题⾊为深⾊渐变没有禁⽤的问题</li>
+<li>fix(视图): 修复 AntV 组合图同⽐环⽐占⽐计算⽆效的问题</li>
+<li>fix: 修复消息接收逻辑错误的问题 #7237</li>
+<li>fix: 修复数据同步，点击“添加任务”后，⻚⾯左侧导航栏⾃动消失的问题 #7373</li>
+<li>fix: 修复升级版本时导致的初始密码被重置的问题</li>
+<li>fix: 修复关闭组件⾃适应后，在⼿机端查看仪表板，视图字号特别⼤的问题</li>
+<li>fix: 修复⽬录/仪表板/视图标题可输⼊空格创建的问题 #7255</li>
+<li>fix: 修复部分有告警线模板复⽤视图⽆法显示的问题</li>
+<li>fix: 修复应⽤管理在应⽤成功后，应⽤记录中⽆法编辑的问题 #7252</li>
+<li>fix: 修复应⽤记录中⽆法筛选的问题</li>
+<li>fix: 修复定时报告包含⾸项的过滤组件⽆效的问题</li>
+</ul>
+</div>
 <h3 id="v11813">v1.18.13<a class="headerlink" href="#v11813" title="Permanent link">&para;</a></h3>
 <p>2023年12月7日</p>
 <div class="admonition abstract">
