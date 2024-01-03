@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://dataease.io/v2/change-v2-2/</loc>
+         <lastmod>2024-01-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://dataease.io/v2/changelog/</loc>
          <lastmod>2024-01-03</lastmod>
          <changefreq>daily</changefreq>

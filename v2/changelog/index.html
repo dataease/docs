@@ -573,6 +573,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v220" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.2.0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v210" class="md-nav__link">
     <span class="md-ellipsis">
       v2.1.0
@@ -612,6 +621,8 @@
   
     
     
+      
+        
       
         
       
@@ -657,6 +668,27 @@
   
   <span class="md-ellipsis">
     v2.1.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../change-v2-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v2.2.0
   </span>
   
 
@@ -2683,6 +2715,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v220" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.2.0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v210" class="md-nav__link">
     <span class="md-ellipsis">
       v2.1.0
@@ -2735,6 +2776,89 @@ Bug 修复的小版本。<br />
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v220">v2.2.0<a class="headerlink" href="#v220" title="Permanent link">&para;</a></h3>
+<p>2024年1月4日</p>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>feat(数据集): 创建数据集的下拉框⽀持搜索</li>
+<li>feat(仪表板): 查询组件⽀持下拉选项设置为必填项</li>
+<li>feat(数据⼤屏): ⽀持分组内组件移动定位操作</li>
+<li>feat(数据⼤屏): ⽀持双击分组内组件直接编辑组件属性</li>
+<li>feat(数据⼤屏): 组合到⼀个分组后，在图层管理中，可以查看该分组下的组件列表</li>
+<li>feat(数据⼤屏): 分组放⼤缩⼩其内部组件同⽐放⼤缩⼩</li>
+<li>feat(数据⼤屏): 画布放⼤缩⼩其图表⽀持同⽐放⼤缩⼩</li>
+<li>feat(X-Pack): 列权限⽩名单⽤户设置增加搜索功能</li>
+<li>feat: 新增 API 接⼝⽂档</li>
+<li>feat: 新增嵌⼊式应⽤⽇志</li>
+<li>feat: 模板管理⽀持批量操作</li>
+<li>feat: 前端静态资源增加访问前缀</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>refactor(数据集): 计算字段提示⽂案修改 #7260</li>
+<li>refactor(数据集): 修改新建计算字段提示 #7168</li>
+<li>refactor(数据源): 创建完上⼀个数据源后的继续创建操作的默认⽂件夹仍然保持为同⼀个</li>
+<li>refactor(仪表板): 查询组件配置去除缓存</li>
+<li>refactor(数据⼤屏): 优化复制操作</li>
+<li>refactor(数据⼤屏): 图层样式优化</li>
+<li>refactor(数据⼤屏): ⼤屏分组样式调整</li>
+<li>refactor(数据⼤屏): 数据⼤屏右键菜单优化</li>
+<li>refactor(数据⼤屏): 批量操作时，屏蔽其他⽆关操作</li>
+<li>refactor(X-Pack): ⽤户管理筛选条件优化</li>
+<li>refactor: 优化模板管理</li>
+<li>refactor: 模板中⼼按钮⾃适应宽度</li>
+<li>refactor: 优化模板中⼼默认展开分类</li>
+<li>refactor: 地理信息上传地图⽂件验证</li>
+<li>refactor: 优化安装脚本提示 #7247</li>
+<li>refactor: 优化运⾏模式转换脚本</li>
+<li>refactor: 处理地理信息树节点超出⻓度时的样式</li>
+<li>refactor: 持久化⾃定义地图⽂件</li>
+<li>refactor: 允许社区版修改 admin 密码</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>fix(⼯作台): 处理⼯作台填充⾊内的图标⼤⼩，与仪表板等模块的⼤⼩保持⼀致 </li>
+<li>fix(⼯作台): 修复最近使⽤列表按照最近编辑时间排序的错误</li>
+<li>fix(数据集): 修复复制数据集并替换数据表保存时出现的异常问题</li>
+<li>fix(数据源): 修复 API 数据源⽆法更新数据的问题</li>
+<li>fix(数据源): 修复 Excel 字段类型错误</li>
+<li>fix(数据源): 修复本地 Excel ⽂件创建的数据源数据预览为空的问题</li>
+<li>fix(数据源): 修复 API 数据源界⾯自动添加⾏问题 #7335</li>
+<li>fix(数据源): 修复 API 数据源数据表请求参数全部填满后最后⼀条参数⽆法删除的问题 #733650 fix(图表): 修复汇总表脱敏字段显示不正确的问题</li>
+<li>fix(图表): 修复表格组合后点击⻚⾯下钻的问题</li>
+<li>fix(仪表板): 修复查询组件时间范围绑定参数，⽆法获取可绑定参数的问题</li>
+<li>fix(仪表板): 修复在仪表板⽂件夹上应⽤模板创建仪表板，保存时没有⾃动选择⽂件夹问题</li>
+<li>fix(仪表板): 修复预览时 Tab 组件也可修改标题的问题</li>
+<li>fix(仪表板): 修复动态时间范围不正确的问题</li>
+<li>fix(仪表板): 修复⽇期范围参数化问题</li>
+<li>fix(仪表板): 查询组件去除包含列权限脱敏和禁⽤的列</li>
+<li>fix(仪表板): 修复查询组件字段切换的问题</li>
+<li>fix(仪表板): 修复查询组件的动态时间默认值没有随时间推移⽽⾃动更新的问题</li>
+<li>fix(仪表板): 修复查询组件中时间范围设置动态默认时间，退出编辑后默认时间清空的问题</li>
+<li>fix(仪表板): 修复时间戳年⽉组件过滤失效的问题 #7313</li>
+<li>fix(数据⼤屏): 修复设置⼤屏百分⽐时容易触发删除热键的问题 #7131</li>
+<li>fix(数据⼤屏): 修复 MAC 端，在⼤屏编辑界⾯按 shift 键后，⽆法使⽤ command 键选择图层进⾏组合的问题</li>
+<li>fix(数据⼤屏): 修复⼤屏预览分组位置定位不准确的问题</li>
+<li>fix(系统设置): 基础设置中数据源检测时间间隔限制数值边界</li>
+<li>fix(系统设置): 修复查看世界村地图数据，加载时间过⻓，可能导致浏览器崩溃的问题</li>
+<li>fix(X-Pack): 修复删除⽤户后其名下资源⽆法查看的问题</li>
+<li>fix(X-Pack): 修复在⼩屏幕下横向滚动⽤户列表，列表内容会与操作按钮重叠的问题</li>
+<li>fix(X-Pack): 开源版可以看到⾏列权限菜单，但切换后显示空⽩⻚⾯</li>
+<li>fix(X-Pack): 修复权限设置存在的未保存变更切换权限维度的逻辑</li>
+<li>fix(X-Pack): 修复⽤户批量导⼊使⽤的不是默认密码的问题</li>
+<li>fix(X-Pack): 修复⽤户批量导⼊的国际化错误问题</li>
+<li>fix(X-Pack): 脱敏字段删除改为标记</li>
+<li>fix: 修复升级脚本⽆法在线升级的问题</li>
+<li>fix: 修改安装脚本⽂案</li>
+<li>fix: 处理关于⻚⾯备注为空时的显示效果</li>
+<li>fix: 修复模板管理重命名失效的问题</li>
+</ul>
+</div>
 <h3 id="v210">v2.1.0<a class="headerlink" href="#v210" title="Permanent link">&para;</a></h3>
 <p>2023年12月7日</p>
 <div class="admonition abstract">
