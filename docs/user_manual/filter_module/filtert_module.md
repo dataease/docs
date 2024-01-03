@@ -16,8 +16,13 @@
 
 !!! Abstract ""
 	如下图所示，点击查询组件的编辑按钮，设置查询条件。
-。
+
 ![过滤组件_位置调整](../../img/dashboard_generation/2.0过滤组件拖拽字段.png){ width="900px" }
+!!! Abstract ""
+	查询组件支持下拉选项设置为必填。
+
+![更新1](../../newimg/v2-2-7.png){ width="900px" }
+![更新1](../../newimg/v2-2-8.png){ width="900px" }
 
 !!! Abstract ""
 

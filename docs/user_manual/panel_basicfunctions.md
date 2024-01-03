@@ -64,6 +64,24 @@
 
 ![仪表板主题](../img/panel_generation/2.0图层组合2.png){ width="900px" }
 ![仪表板主题](../img/panel_generation/2.0视图图层组合.png){ width="900px" }
+!!! Abstract ""
+	组件组合后，在图层管理中可以按照分组查看组件列表。 
+
+![更新1](../newimg/v2-2-9.png){ width="900px" }
+
+!!! Abstract ""
+	多个组件创建分组后，可以作为分组整体移动，如果需要单独调整分组内组件的位置，可以通过双击该组件，然后移动该组件的所在位置。 
+
+![更新1](../newimg/v2-2-10.gif){ width="900px" }
+
+!!! Abstract ""
+	放大缩小组合时其内部组件同比放大缩小。
+
+![更新1](../newimg/v2-2-11.gif){ width="900px" }
+
+!!! Abstract ""
+	画布放大缩小其图表支持同比放大缩小。
+![更新1](../newimg/v2-2-12.gif){ width="900px" }
 
 ### 4.4 图层顺序
 
