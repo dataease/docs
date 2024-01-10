@@ -1,25 +1,24 @@
-## 1 数据准备
+## 1 课程简介
 
-[![连接数据库并添加数据集](./img/video/连接数据库并添加数据集.png){ width="280"}](https://www.bilibili.com/video/BV13V4y1P7FB/)
-[![创建Excel数据集和api数据集](./img/video/Excel数据集和api数据集.png){ width="280"}](https://www.bilibili.com/video/BV16P4y1Q7zT/)
-[![数据集整合](img/video/数据集整合.png){ width="280"}](https://www.bilibili.com/video/BV1fR4y1k7Dt/) </br>
-[![数据加工](img/video/数据加工.png){ width="280"}](https://www.bilibili.com/video/BV1uW4y1g7fB/)
+[![课程简介](./img/video/1.1 课程简介.png){ width="280"}](https://www.bilibili.com/video/BV1G64y1n7Aq/)
 
-## 2 图表
+## 2 数据准备
 
-[![新建视图](img/video/新建视图.png){ width="280"}](https://www.bilibili.com/video/BV1U84y167oS/)
-[![视图样式](img/video/视图样式.png){ width="280"}](https://www.bilibili.com/video/BV1id4y1s7XK/)
-[![操作实践](img/video/视图高级配置及实践.png){ width="280"}](https://www.bilibili.com/video/BV1wv4y1R7F4/)
+[![数据准备-数据接入](./img/video/2.1 数据准备-数据接入.png){ width="280"}](https://www.bilibili.com/video/BV1wp4y1R746/)
+[![数据准备-数据组合](./img/video/2.2 数据准备-数据组合.png){ width="280"}](https://www.bilibili.com/video/BV1dG411B7Lh/)
+[![数据准备-数据加工](img/video/2.3%20数据准备-数据加工.png){ width="280"}](https://www.bilibili.com/video/BV1vK41147gV/) </br>
 
-## 3 组件交互
+## 3 可视化分析
 
-[![过滤组件](img/video/过滤组件.png){ width="280" }](https://www.bilibili.com/video/BV1RG411T7hk/)
-[![联动和下钻](img/video/联动和下钻.png){ width="280" }](https://www.bilibili.com/video/BV1sv4y1R7he/)
-[![组件跳转](img/video/组件跳转.png){ width="280" }](https://www.bilibili.com/video/BV1Nv4y1R7wH/) </br>
+[![可视化分析-仪表板基础介绍](img/video/3.1 可视化分析-仪表板基础介绍.png){ width="280"}](https://www.bilibili.com/video/BV1vC4y1N7Qq)
+[![可视化分析-图表样式及高级配置](img/video/3.2 可视化分析-图表样式及高级配置.png){ width="280"}](https://www.bilibili.com/video/BV1zT4y1p7wz)
+[![可视化分析-图表交互配置](img/video/3.3 可视化分析-图表交互配置.png){ width="280"}](https://www.bilibili.com/video/BV1Ue411q7wb/)
 
-## 4 仪表板设计
+[![可视化分析-操作实践](img/video/3.4 可视化分析-其他组件介绍.png){ width="280" }](https://www.bilibili.com/video/BV1WN4y1W7uv/)
+[![可视化分析-操作实践](img/video/3.5 可视化分析-操作实践.png){ width="280" }](https://www.bilibili.com/video/BV1Ke411S7Tk/)
+[![可视化分析-布局美化及分享](img/video/3.6 可视化分析-布局美化及分享.png){ width="280" }](https://www.bilibili.com/video/BV1ze411q7sG/)
+[![可视化分析-数据大屏制作](img/video/3.7 可视化分析-数据大屏制作.png){ width="280" }](https://www.bilibili.com/video/BV14C4y1i7Zr/) </br>
 
-[![其他组件](img/video/其他组件.png){ width="280"}](https://www.bilibili.com/video/BV1P84y1r7P7/)
-[![布局美化](img/video/布局美化.png){ width="280" }](https://www.bilibili.com/video/BV13V4y1P7gm/)
-[![移动端介绍](img/video/移动端介绍.png){ width="280" }](https://www.bilibili.com/video/BV1nR4y1C7KG/)
-[![分享和导出](img/video/分享和导出.png){ width="280" }](https://www.bilibili.com/video/BV1U84y16746/)
+## 4 工作台及模板市场
+
+[![其他组件](img/video/4.1 工作台及模板市场介绍.png){ width="280"}](https://www.bilibili.com/video/BV1M64y1n7nk/)

@@ -118,6 +118,7 @@ nav:
           - 多维嵌入: xpack/multidimensional_embedding.md
           - 平台对接: xpack/platform_abutment.md
           - 系统 API: xpack/sys_management_develop.md
+  - 教学视频: instructional_video.md
   - 联系我们: contact.md
 
 markdown_extensions:

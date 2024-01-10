@@ -403,10 +403,10 @@
 		</td>
 	</tr>
 	</tr>
-			<td rowspan="18">
+			<td rowspan="17">
 			数据准备	
 		</td>
-		<td rowspan="11">
+		<td rowspan="10">
 			数据集
 		</td>
 		<td>
@@ -421,11 +421,6 @@
 	<tr>
 		<td>
 			支持通过拖拉拽的方式引用数据表
-		</td>
-	</tr>
-	<tr>
-		<td>
-			持下拉框搜索数据集
 		</td>
 	</tr>
 	<tr>
