@@ -36,13 +36,15 @@
 ### 2.2 下载并导入 DataEase OVA 文件
 
 !!! Abstract ""
-	虚拟化软件 VirtualBox 已经安装完成了，接下来将 DataEase 虚拟机 OVA 文件导入到 VirtualBox 就可以运行 DataEase 啦!    
+	虚拟化软件 VirtualBox 已经安装完成了，接下来将 DataEase 虚拟机 OVA 文件导入到 VirtualBox 就可以运行 DataEase !    
 	DataEase OVA 文件是虚拟化软件导出的 DataEase 虚拟机，可以导入到其他虚拟机环境直接启动;    
 	通过以下链接下载 DataEase OVA 文件: [https://community.fit2cloud.com/#/products/dataease/downloads](https://community.fit2cloud.com/#/products/dataease/downloads)    
-	选择“DataEase vxxx AMD64 OVA”下载，建议选择最新版本下载。  
+	选择“DataEase vxxx AMD64 OVA”下载，建议选择最新版本下载。下图所示带有 OVA 标识的版本，点击下载按钮进行下载；  
 	**系统用户名: root，密码: passwd**
-
-![社区版下载DataEase](../img/installation/下载OVA文件.png){ width="900px" }
+![社区版下载DataEase](../img/installation/选择对应版本.png){ width="900px" }
+![社区版下载DataEase](../img/installation/点击下载按钮.png){ width="900px" }
+![社区版下载DataEase](../img/installation/进行下载.png){ width="900px" }
+mkdocs serve
 
 !!! Abstract ""
 	DataEase OVA 文件下载完成后，在 VirtualBox 中按下图的操作流程将下载好的 OVA 文件导入到 VirtualBox 中。
