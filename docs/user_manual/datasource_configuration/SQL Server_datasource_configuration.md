@@ -44,6 +44,7 @@
 | Schema         | 选择对象的集合           |
 
 !!! Abstract ""
-    步骤五：数据源检验，校验成功后如下图所示，点击保存即可。
+    步骤五：数据源检验，校验成功后如下图所示，点击保存即可。  
+    **注意：若数据库连接失败，可添加额外的 JDBC 连接符”encrypt=true;trustServerCertificate=true“，确保具有足够的权限。**
 
 ![SQLServer校验成功](../../img/datasource_configuration/SQLServer校验成功.png){ width="900" }
