@@ -14,7 +14,7 @@
 ## 2 模板市场
 
 !!! Abstract ""
-    模板市场链接地址：https://templates-de.fit2cloud.com/ 。
+    模板市场链接地址：https://templates.dataease.cn 。
 
 ![功能架构图](./newimg/product_acceptance/模板市场.gif){ width="900px" }
 
