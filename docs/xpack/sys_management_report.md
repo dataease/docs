@@ -18,6 +18,13 @@
 ![定时报告](../img/xpack/任务列表2.png){ width="900px" }
 
 !!! Abstract ""
+    定时报告的接收对象支持按照角色与组织选择。
+![name](../img/release_notes/v1-18-14-20.png){ width="900px" }
+!!! Abstract ""
+    在 DataEase 定时报告的配置中选择发送到具体哪些飞书群。
+![name](../img/release_notes/v1-18-14-25.png){ width="900px" }
+
+!!! Abstract ""
     系统支持发送选定视图的数据，支持视图数据范围选项。
 
     - 【展示数据】：即页面上显示的数据，页面中过滤组件筛选后的数据；
@@ -27,10 +34,22 @@
 
 ![定时报告](../img/xpack/任务列表_视图1.png){ width="900px" }
 
+
 !!! Abstract ""
     以"飞书"为例，接收到的内容如下图所示。
 
 ![定时报告](../img/xpack/任务列表_视图2.png){ width="900px" }
+
+!!! Abstract ""
+    定时报告支持设置额外等待时间。
+![name](../img/release_notes/v1-18-14-26.png){ width="900px" }
+
+!!! Abstract ""
+    定时报告支持过滤掉已禁用用户。 即当用户状态为「禁用」，则定时报告会自动过滤掉该用户，不会因为配置中有该用户而为他发送报告。
+
+![name](../img/release_notes/v1-18-14-27.png){ width="900px" }
+
+
 
 ### 1.2 预览邮件
 

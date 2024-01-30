@@ -310,14 +310,21 @@
 
 ![antv分组堆叠柱状图](../../img/view_generation/view_gallery/AntV/antv分组堆叠柱状图.png){ width="900px" }
 
-### 2.9 基础面积图
+### 2.9  区间条形图
+
+!!! Abstract ""
+    区间条形图适合展示各类别数据的分布和比较。与普通条形图不同的是，区间条形图强调的是数值范围而不是单一数值点。这在展示持续时间或不同对象之间的数值范围比较时特别有用。
+
+![antv分组堆叠柱状图](../../img/view_generation/view_gallery/AntV/antv区间条形图.png){ width="900px" }
+
+### 2.10 基础面积图
 
 !!! Abstract ""
     面积图又叫区域图，它是在折线图的基础之上形成的，它将折线图中折线与自变量坐标轴之间的区域使用颜色或者纹理填充，这样一个填充区域我们叫做面积，颜色的填充可以更好的突出趋势信息。
 
     ![antv基础面积图](../../img/view_generation/view_gallery/AntV/antv基础面积图.png){ width="900px" }
 
-### 2.10 折线图
+### 2.11 折线图
 
 !!! Abstract ""
     折线图是用折线将各个数据点标志连接起来的图表，可用于直角坐标系和极坐标系上。
@@ -332,7 +339,7 @@
 
     ![antv堆叠折线图](../../img/view_generation/view_gallery/AntV/antv堆叠折线图.png){ width="900px" }
 
-### 2.11 散点图
+### 2.12 散点图
 
 !!! Abstract ""
     散点图又称 XY 散点图，将数据以点的形式展现，以显示变量间的相互关系或者影响程度，点的位置由变量的数值决定。
@@ -347,7 +354,7 @@
 
     ![antv气泡图](../../img/view_generation/view_gallery/AntV/antv气泡图.png){ width="900px" }
 
-### 2.12 雷达图
+### 2.13 雷达图
 
 !!! Abstract ""
     雷达图又称蜘蛛网图，将多个维度的数据量映射到起始于同一个圆心的坐标轴上，结束于圆周边缘，然后将同一组的点使用线连接起来。
@@ -356,7 +363,7 @@
 
     ![antv雷达图](../../img/view_generation/view_gallery/AntV/antv雷达图.png){ width="900px" }
 
-### 2.13 仪表盘
+### 2.14 仪表盘
 
 !!! Abstract ""
     像一个钟表或者可读盘，有刻度和指针，其中刻度表示度量，指针表示维度，指针角度表示数值，指针指向当前数值。
@@ -365,21 +372,21 @@
 
     ![antv仪表盘](../../img/view_generation/view_gallery/AntV/antv仪表盘.png){ width="900px" }
 
-### 2.14 饼图
+### 2.15 饼图
 
 !!! Abstract ""
     饼图以饼状图形显示一个数据系列中各项的大小与各项总和的比例，也称作扇形统计图。
 
     ![antv基础饼图](../../img/view_generation/view_gallery/AntV/antv基础饼图.png){ width="900px" }
 
-### 2.15 环形图
+### 2.16 环形图
 
 !!! Abstract ""
     环形图（环形饼图）
 
     ![antv环形饼图](../../img/view_generation/view_gallery/AntV/antv环形饼图.png){ width="900px" }
 
-### 2.16 南丁格尔玫瑰
+### 2.17 南丁格尔玫瑰
 
 !!! Abstract ""
     南丁格尔玫瑰图又称鸡冠花图、极坐标区域图，是由弗罗伦斯·南丁格尔所发明，其实是一种圆形的直方图，以圆弧的半径长短表示数据的大小。
@@ -388,13 +395,13 @@
 
     ![antv南丁格尔玫瑰图](../../img/view_generation/view_gallery/AntV/antv南丁格尔玫瑰图.png){ width="900px" }
 
-### 2.17 玫瑰环形图
+### 2.18 玫瑰环形图
 
 !!! Abstract ""
     
     ![antv玫瑰环形图](../../img/view_generation/view_gallery/AntV/antv玫瑰环形图.png){ width="900px" }
 
-### 2.18 漏斗图
+### 2.19 漏斗图
 
 !!! Abstract ""
 	楼斗图由多个梯形从上而下叠加而成。从上到下的项有逻辑上的顺序关系，梯形面积表示某个业务量与上一个环节之间的差异。
@@ -403,7 +410,7 @@
 
     ![antv漏斗图](../../img/view_generation/view_gallery/AntV/antv漏斗图.png){ width="900px" }
 
-### 2.19 矩形树图
+### 2.20 矩形树图
 
 !!! Abstract ""
     矩形树图是一种常见的表达『层级数据』『树状数据』的可视化形式。它主要用面积的方式，便于突出展现出『树』的各层级中重要的节点。
@@ -412,7 +419,7 @@
 
     ![antv矩形树图](../../img/view_generation/view_gallery/AntV/antv矩形树图.png){ width="900px" }
 
-### 2.20 瀑布图
+### 2.21 瀑布图
 
 !!! Abstract ""
     瀑布图采用绝对值与相对值结合的方式，适用于表达数个特定数值之间的数量变化关系，因图形形似瀑布流水所以称之为瀑布图。
@@ -421,7 +428,7 @@
 
     ![antv瀑布图](../../img/view_generation/view_gallery/AntV/antv瀑布图.png){ width="900px" }
 
-### 2.21 水波图
+### 2.22 水波图
 
 !!! Abstract ""
     水波图的水波高度表示指标值，当水填满或溢出时，代表指标值已经到达目标值。
@@ -430,7 +437,7 @@
 
     ![antv水波图](../../img/view_generation/view_gallery/AntV/antv水波图.png){ width="900px" }
 
-### 2.22 词云图
+### 2.23 词云图
 
 !!! Abstract ""
 	词云图又称文字云，是文本数据的视觉表示，由词汇组成类似云的彩色图形，用于展示大量文本数据。每个词的重要性以字体大小或颜色显示。
@@ -439,7 +446,7 @@
 
     ![antv词云图](../../img/view_generation/view_gallery/AntV/词云图.png){ width="900px" }
 
-### 2.23 符号地图
+### 2.24 符号地图
 
 !!! Abstract ""
     符号地图根据经纬点绘制图形（不同于以往的行政区划名称），对点数据进行展示，体现相关对象的空间分布，符号地图可根据鼠标缩放地图范围，且范围不限制，可至全球。  
@@ -448,7 +455,7 @@
 !!! Abstract ""
     ![antv符号地图](../../img/view_generation/view_gallery/AntV/antv符号地图.png){ width="900px" }
 
-### 2.24 富文本视图
+### 2.25 富文本视图
 
 !!! Abstract ""
     类似组件里的富文本组件，双击富文本视图，可定义样式，并支持在编辑区引用维度与指标中字段。  
@@ -459,7 +466,7 @@
 
     ![antv富文本视图](../../img/view_generation/view_gallery/AntV/antv富文本视图.png){ width="900px" }
 
-### 2.25 流向地图
+### 2.26 流向地图
 
 !!! Abstract ""
 

@@ -336,6 +336,15 @@
     按照以上信息完成下图所示的平台对接配置即可。
 
 ![对接飞书平台](../img/xpack/对接飞书平台1.png){ width="900px" }
+!!! Abstract ""
+    定时报告支持发送至飞书群聊，飞书应用中需要在权限里加上以下两个权限。
+![name](../img/release_notes/v1-18-14-21.png){ width="900px" }
+!!! Abstract ""
+    在飞书群组中加入 DataEase 应用的机器人。
+![name](../img/release_notes/v1-18-14-22.png){ width="900px" }
+![name](../img/release_notes/v1-18-14-23.png){ width="900px" }
+![name](../img/release_notes/v1-18-14-24.png){ width="900px" }
+![name](../img/release_notes/v1-18-14-28.png){ width="900px" }
 
 ### 6.2 飞书免登设置
 
