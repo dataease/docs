@@ -102,3 +102,29 @@
 ![重置](../../img/view_generation/重置.png){ width="900px" }
 
 ![重置确认](../../img/view_generation/重置确认.png){ width="900px" }
+
+## 7 放大和导出
+
+!!! Abstract ""
+    如下图所示，点击【放大】，对视图进行放大进行查看，同时视图导出图片时支持选择分辨率。
+
+![重置](../../img/view_generation/放大.png){ width="900px" }
+
+![重置确认](../../img/view_generation/选择分辨率.png){ width="900px" }
+
+## 8 查看详情
+
+!!! Abstract ""
+    如下图所示，点击【查看详情】，可查看视图详细数据，还支持数据导出。
+
+![重置](../../img/view_generation/查看详情.png){ width="900px" }
+![重置](../../img/view_generation/查看明细.png){ width="900px" }
+
+## 9 导出 Excel
+
+!!! Abstract ""
+    如下图所示，点击【导出】，可将视图数据以 Excel 格式导出。
+
+![重置](../../img/view_generation/导出Excel.png){ width="900px" }
+
+

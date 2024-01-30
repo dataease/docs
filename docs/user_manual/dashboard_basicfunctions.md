@@ -236,14 +236,20 @@
 
 ![仪表板_保存](../img/dashboard_generation/仪表板_保存.png){ width="900px" }
 
-## 13 返回
+## 13 顶部
 
 !!! Abstract ""
-	点击下图所示的返回按钮，关闭仪表板。
+	当预览仪表板时，向下滚动一定距离，返回顶部按钮自动出现，点击可快速回到仪表板最上面。
+![返回顶部](../img/dashboard_generation/返回顶部.png){ width="900px" }
+
+## 14 返回
+
+!!! Abstract ""
+点击下图所示的返回按钮，关闭仪表板。
 
 ![仪表板_关闭](../img/dashboard_generation/仪表板_关闭.png){ width="900px" }
 
-## 14 快捷键使用
+## 15 快捷键使用
 
 !!! Abstract ""
 	仪表板支持快捷键功能，支持复制、粘贴、保存、放大。  
