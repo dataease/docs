@@ -13,16 +13,16 @@
 !!! Abstract ""
     自定义公式可参考系统提示的参数。
 
-![水印管理](../img/xpack/水印管理_自定义公式.png){ width="900px" }
+![水印管理](../img/xpack/水印参数.png){ width="900px" }
 
 !!! Abstract ""
     完成设置后可点击预览进行确认。
 
-![水印管理](../img/xpack/水印管理_预览.png){ width="900px" }
+![水印管理](../img/xpack/水印预览.png){ width="900px" }
 
 !!! Abstract ""
     若开启允许仪表板单独打开或者关闭水印，则在仪表板编辑界面中可选择水印开关。
 
-![水印管理](../img/xpack/水印管理_单独开关.png){ width="900px" }
+![水印管理](../img/xpack/单独开水印.png){ width="900px" }
 
-![水印管理](../img/xpack/水印管理1.png){ width="900px" }
+![水印管理](../img/xpack/2.0水印开关.png){ width="900px" }

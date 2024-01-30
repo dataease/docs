@@ -1,6 +1,4 @@
 
-!!! Abstract ""
-    目前工具箱只有模板管理，后续会上线其他工具。
 
 ![百宝箱入口](../../img/system_management/百宝箱.png){ width="900px" }
 
@@ -26,3 +24,15 @@
 ![导出为模板](../../img/system_management/导出为模板.png){ width="900px" }
 ![上传模板](../../img/system_management/上传模板.png){ width="900px" } 
 ![模板导入成功](../../img/system_management/模板导入成功.png){ width="900px" }
+
+##  操作日志
+
+!!! Abstract ""
+    系统管理员可以查看所有日志，包括组织管理员在内的其他用户只能查看自己的所有日志，包括该用户所在的所有组织下的操作日志。
+![操作日志入口](../../newimg/操作日志入口.png){ width="900px" }
+
+!!! Abstract ""
+    可根据操作类型、操作用户、所属组织、操作时间等查询系统操作日志。
+![操作日志入口](../../newimg/操作日志1.png){ width="900px" }
+
+![操作日志入口](../../newimg/操作日志2.png){ width="900px" }

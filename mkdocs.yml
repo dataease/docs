@@ -72,6 +72,7 @@ nav:
               - 配置 TiDB 数据源: user_manual/datasource_configuration/TiDB_datasource_configuration.md
               - 配置 AWS Redshift 数据源: user_manual/datasource_configuration/AWS_Redshift_datasource_configuration.md
               - 配置 API 数据源: user_manual/datasource_configuration_api.md
+              - 配置 DB2 数据源: user_manual/datasource_configuration/DB2_datasource_configuration.md
               - 配置 Excel 数据源: user_manual/datasource_configuration/datasource_configuration_excel.md
           - 数据集:
               - 数据集概述: user_manual/dataset_description.md
@@ -81,6 +82,7 @@ nav:
           - 创建仪表板: user_manual/dashboard_create.md
           - 仪表板基础功能: user_manual/dashboard_basicfunctions.md
           - 组件基础功能: user_manual/module_basicfunctions.md
+          - 仪表板使用: user_manual/dashboard_using_copy.md
           - 图表:
               - 图表概述: user_manual/view_module/view_generation.md
               - 添加图表: user_manual/view_module/view_create.md
@@ -99,6 +101,7 @@ nav:
           - 创建数据大屏: user_manual/panel_create.md
           - 数据大屏基础功能: user_manual/panel_basicfunctions.md
           - 组件基础功能: user_manual/panel_module_basicfunctions.md
+          - 数据大屏使用: user_manual/panel_using.md
           - 图表:
               - 图表概述: user_manual/view_module/panel_generation.md
               - 添加图表: user_manual/view_module/panel_view_create.md
@@ -117,7 +120,9 @@ nav:
           - 权限配置: xpack/sys_management_permission.md
           - 多维嵌入: xpack/multidimensional_embedding.md
           - 平台对接: xpack/platform_abutment.md
+          - 同步管理: xpack/data_synchronization_management.md
           - 系统 API: xpack/sys_management_develop.md
+          - 水印管理: xpack/watermark.md
   - 教学视频: instructional_video.md
   - 联系我们: contact.md
 
