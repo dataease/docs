@@ -44,7 +44,6 @@
 ![社区版下载DataEase](../img/installation/选择对应版本.png){ width="900px" }
 ![社区版下载DataEase](../img/installation/点击下载按钮.png){ width="900px" }
 ![社区版下载DataEase](../img/installation/进行下载.png){ width="900px" }
-mkdocs serve
 
 !!! Abstract ""
 	DataEase OVA 文件下载完成后，在 VirtualBox 中按下图的操作流程将下载好的 OVA 文件导入到 VirtualBox 中。
