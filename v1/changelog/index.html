@@ -18,7 +18,7 @@
         <link rel="prev" href="../quick_start/">
       
       
-        <link rel="next" href="../release_notes/v1.18.14/">
+        <link rel="next" href="../release_notes/v1.18.15/">
       
       
       <link rel="icon" href="../img/facio.ico">
@@ -585,6 +585,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v11815" class="md-nav__link">
+    <span class="md-ellipsis">
+      v1.18.15
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v11814" class="md-nav__link">
     <span class="md-ellipsis">
       v1.18.14
@@ -1111,6 +1120,8 @@
       
         
       
+        
+      
     
     
     
@@ -1140,6 +1151,27 @@
             更新说明
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../release_notes/v1.18.15/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v1.18.15
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -5340,6 +5372,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v11815" class="md-nav__link">
+    <span class="md-ellipsis">
+      v1.18.15
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v11814" class="md-nav__link">
     <span class="md-ellipsis">
       v1.18.14
@@ -5860,6 +5901,99 @@ Bug 修复的小版本。<br />
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v11815">v1.18.15<a class="headerlink" href="#v11815" title="Permanent link">&para;</a></h3>
+<p>2024年2月1日</p>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>feat(数据集): 定时同步任务支持在历史数据变动后增量更新到 Doris 中 #6276</li>
+<li>feat(数据集): 数据库表允许重复创建数据库数据集</li>
+<li>feat(数据集): SQL 数据集支持 LATERAL VIEW EXPLODE 语法 #7485</li>
+<li>feat(仪表板): 当仪表板向下滚动一定距离，增加返回顶部按钮 #6002</li>
+<li>feat(仪表板): 数字列表过滤组件支持参数 #6743</li>
+<li>feat(仪表板): 图片组件配置超链接后可以直接点击图片进行跳转 #6682</li>
+<li>feat(视图): 词云图支持下钻</li>
+<li>feat(视图): 透视表小计总计支持按字段配置聚合方式</li>
+<li>feat(视图): 区间条形图支持不聚合：一行展示多个数据条 #7528</li>
+<li>feat(视图): 明细表/汇总表支持表头排序 #6754</li>
+<li>feat(视图): 符号地图支持按指定维度配置颜色 #5735</li>
+<li>feat(视图): 表格增加鼠标停留提示 #2477</li>
+<li>feat(X-Pack): 支持 CAS v2 协议</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>refactor(数据源): 优化 SQLServer 根据版本区分明细表分页模式</li>
+<li>refactor(数据集): 优化数据库数据集加载速度 #6758</li>
+<li>refactor(仪表板): 公共链接移动端显示去掉全屏按钮</li>
+<li>refactor(仪表板): 公共链接移动端显示时无需下载 #6252</li>
+<li>refactor(仪表板): 变更刷新文案 #6027</li>
+<li>refactor(仪表板): 增加 Tab 标题最大长度 #7558</li>
+<li>refactor(仪表板): 支持视图图片在低分辨率屏幕上也可以导出高清图片</li>
+<li>refactor(仪表板): 视图导出支持选择分辨率</li>
+<li>refactor(仪表板): 全屏导出视图像素优化</li>
+<li>refactor(仪表板): Tab 组件复制支持同时复制内部组件</li>
+<li>refactor(仪表板): 导出应用增加存在模板视图提示</li>
+<li>refactor(仪表板): 视图放大导出支持显示水印</li>
+<li>refactor(视图): 区间条形图配置调整时间聚合选项展示</li>
+<li>refactor(视图): 区间条形图设置聚合区间范围时，隐藏图例设置</li>
+<li>refactor(视图): 富文本视图富文本组件进入编辑状态自动聚焦在文档末尾</li>
+<li>refactor(移动端): 移动端组件放大按钮样式调整</li>
+<li>refactor(X-Pack): 移除 hutool 后第三方平台消息推送使用 httpclient 重构</li>
+<li>refactor: 日志保留时间最大设置限制为 4000 天</li>
+<li>refactor: 系统日志文件大小和数量支持配置文件配置</li>
+<li>refactor: 优化系统升级后静态资源可能还是使用的历史的缓存版本造成错误的问题</li>
+<li>refactor: 优化 dectl 脚本，获取当前版本的同时可以查询最新版本 #7492</li>
+<li>refactor: installer 脚本适配 Ubuntu 操作系统</li>
+<li>refactor: 将 ProviderFactory 移动到 SDK 内</li>
+<li>refactor: 升级 pagehelper</li>
+<li>refactor: 升级 jsqlparser -&gt; 4.8</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>fix(数据源): 修复 Doris 数据源，SQL 数据集中使用参数时，SQL 中含有两行空行时执行报错的问题 #7750</li>
+<li>fix(数据源): 修复 SQLServer 排序后获取 count 报错 #7700</li>
+<li>fix(数据源): 修复视图时间过滤组件类型不转换问题 #6091 #6931</li>
+<li>fix(数据源): 限制 MySQL 非法参数</li>
+<li>fix(数据源): 修正数据库表字段描述</li>
+<li>fix(数据源): 修复原先正常使用的 SQLServer 数据源不可用的问题 #7584</li>
+<li>fix(数据源): 修复 API 数据源，接口设置超时时间 120s，实际执行 10s 后出现超时异常的问题 #7567</li>
+<li>fix(数据源): 修复 Doris DATEV2 和 DATETIMEV2 被自动识别成了文本类型的问题 #7450</li>
+<li>fix(数据源): 修复 Doris 数据源 SQL 数据集使用 collect_set 函数，数据集预览异常的问题 #7535</li>
+<li>fix(数据集): 修复数据集可能出现的连接模式切换问题</li>
+<li>fix(数据集): 修复编辑数据集时出现的权限问题</li>
+<li>fix(数据集): 修复创建 Excel 数据集后，数据集为空的问题</li>
+<li>fix(数据集): 修复导入 Excel 数据集时，字段类型被设置为 bigint(20)，保存时报长度超限异常 #7752</li>
+<li>fix(仪表板): 修复因样式冲突导致选项卡组件方框大小无法随字体大小调节的问题 #6182</li>
+<li>fix(仪表板): 修复明细表视图进行跳转设置，设置某一个字段跳转打开外部链接，点击其他字段同样出现跳转的问题 #7533</li>
+<li>fix(仪表板): 修复时间条形图复制后聚合没有开启的问题</li>
+<li>fix(仪表板): 修复部分 Tab 内部未显示问题</li>
+<li>fix(仪表板): 修复行权限无法过滤下拉组件默认值的问题 #7195</li>
+<li>fix(仪表板): 修复 Tab 组件表头对齐方式会受过滤组件影响，预览和编辑展示初始的富文本字体大小差距大的问题</li>
+<li>fix(仪表板): 修复 Tab 组件内部矩形等组件悬浮操操框出现显示不全的问题</li>
+<li>fix(仪表板): 修复部分组件悬浮模式和矩阵模式初始移入大小不同的问题</li>
+<li>fix(仪表板): 修复默认仪表板取消默认的时候，提示的是删除仪表板，而不是取消默认的问题 #7822</li>
+<li>fix(仪表板): 修复历史主题在编辑界面移动端设计时前端 console 报错的问题 #7783</li>
+<li>fix(视图): ECharts 矩形树图取消点击聚焦 #7361</li>
+<li>fix(视图): 修复水波图数值过大显示异常的问题</li>
+<li>fix(视图): 修复透视表行小计禁用条件错误的问题</li>
+<li>fix(视图): 修复使用 SQLServer 数据源的 SQL 数据集，明细表视图报错的问题 #7592</li>
+<li>fix(视图): 修复区间条形图纵轴标签和轴线重合的问题</li>
+<li>fix(视图): 修复区间条形图调整大小后数据条消失的问题</li>
+<li>fix(视图): 修复表格单元格提示显示不完整的问题</li>
+<li>fix(视图): 修复透视表指标字段清空时渲染失败的问题</li>
+<li>fix(视图): 修复 AntV 组合图无法使用日期维度的问题 #7542</li>
+<li>fix(视图): 修复明细表视图进行跳转设置，设置某一个字段跳转打开外部链接，点击其他字段同样出现跳转的问题 #7533 #7635</li>
+<li>fix(视图): 修复基础柱状图修改指标名称后自定义配色被重置的问题 #7665</li>
+<li>fix(视图): 修复视图清除联动后未清除高亮效果的问题</li>
+<li>fix(移动端): 修复移动端仪表板排序和 PC 端不一致的问题 #6692</li>
+<li>fix: 修复公共链接短链接失效后，对应长链接仍然有效的问题 #7500</li>
+<li>fix: 修复定时报告执行记录导出乱码的问题</li>
+</ul>
+</div>
 <h3 id="v11814">v1.18.14<a class="headerlink" href="#v11814" title="Permanent link">&para;</a></h3>
 <p>2024年1月4日</p>
 <div class="admonition abstract">

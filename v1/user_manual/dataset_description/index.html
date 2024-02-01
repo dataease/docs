@@ -559,6 +559,8 @@
       
         
       
+        
+      
     
     
     
@@ -588,6 +590,27 @@
             更新说明
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release_notes/v1.18.15/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v1.18.15
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -4886,6 +4909,11 @@
 <strong>提示：定时同步模式下有两个概念，立即更新和稍后同步，立即更新即此次操作会即时更新数据，稍后同步需要设置定时任务或手动去更新数据。</strong></li>
 </ol>
 </div>
+<div class="admonition abstract">
+<p>新建定时同步类型的数据集时，支持设置主键，设置主键后不支持修改主键。 设置主键后，添加增量更新任务时可以通过主键自动判断对 Doris 中的数据进行增量 insert 或 update。  <br />
+<strong>注意：不支持对已同步的数据进行主键更新。</strong></p>
+</div>
+<p><img alt="定时任务" src="../../img/dataset_configuration/定时同步支持主键设置.png" width="900px" /></p>
 <table>
 <thead>
 <tr>
