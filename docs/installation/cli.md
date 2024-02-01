@@ -26,7 +26,7 @@
       reload       重新加载 DATAEASE 服务
       uninstall    卸载 DATAEASE 服务
       upgrade      升级 DATAEASE 服务
-      version      查看 DATAEASE 版本信息
+      version      查看 DATAEASE 版本信息及最新版本信息
       clear-images 清理 DATAEASE 旧版本的相关镜像
       clear-logs   清理 DATAEASE 历史日志以及 Doris 临时日志
     ```
