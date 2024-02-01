@@ -67,6 +67,6 @@
 !!! Abstract ""
 
     - **如何向团队介绍 DataEase？：** https://fit2cloud.com/dataease/download/introduce-dataease_202312.pdf
-    - **获取新一代数据可视化分析平台建设指南：** https://jinshuju.net/f/cerWRY
+    - **获取新一代数据可视化分析平台建设指南：** https://fit2cloud.com/whitepaper/dataease-whitepaper_202203.pdf
     - **DataEase 知识库：** https://kb.fit2cloud.com/categories/dataease
     - **飞致云学堂：** https://edu.fit2cloud.com/index 
