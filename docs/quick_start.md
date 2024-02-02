@@ -8,7 +8,6 @@
     * 操作系统: CentOS 7.x
     * CPU/内存: 4核8G
     * 磁盘空间: 200G
-    * **可访问互联网**
     * 建议：如用于生产环境，推荐使用 [离线安装包](https://community.fit2cloud.com/#/products/dataease/downloads) 进行部署
 
     执行以下脚本进行一键安装：
