@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.9">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
     
     
       
@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="../../../css/lightgallery.min.css">
     <link href="../../../css/f2c-header.css" rel="stylesheet" type="text/css" />
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.f2e4d321.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -4985,11 +4985,7 @@
 <div class="admonition abstract">
 <ol>
 <li>修改配置文件：<br />
-<strong>1.4 版本之前的版本</strong>，修改运行目录下 /opt/dataease/docker-compose-mysql.yml 文件，将 MySQL 外部运行端口参数 ${DE_MYSQL_PORT} 改为新端口，如 3307:
-<div class="highlight"><pre><span></span><code>    ports:
-      - 3307:3306
-</code></pre></div>
-<strong>1.4 版本及之后的版本</strong>，修改运行目录下 /opt/dataease/.env 文件，将 DE_MYSQL_PORT 改为新端口，如 3307:
+修改运行目录下 /opt/dataease/.env 文件，将 DE_MYSQL_PORT 改为新端口，如 3307:
 <div class="highlight"><pre><span></span><code><span class="na">DE_MYSQL_PORT</span><span class="o">=</span><span class="s">3307</span>
 </code></pre></div></li>
 <li>修改 .env 文件中的端口后要执行 dectl reload 重启 DataEase 服务，端口修改方能生效。</li>
