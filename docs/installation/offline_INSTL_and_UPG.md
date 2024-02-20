@@ -3,7 +3,7 @@
 !!! Abstract ""
     **部署服务器要求：**
 
-    * 操作系统: CentOS/RHEL 7 及以上 64 位系统
+    * 操作系统: Ubuntu 22.04 / CentOS 7 64 位系统
     * CPU/内存: 4核8G
     * 磁盘空间: 200G
 
@@ -150,14 +150,4 @@
     密码: DataEase@123456
     ```
 
-## 5 升级步骤
-!!! Abstract ""
-    按照本文档离线安装步骤，下载新版本安装包并上传解压后，重新执行安装命令进行升级。（升级前备份是个良好的习惯哦，备份参考见： [备份还原](./installation/backup_faq.md) ）：  
-    ```
-    # 进入项目目录
-    cd dataease-online-installer-v2.0.0
-    # 运行安装脚本
-    /bin/bash install.sh
-    # 查看 DataEase 状态
-    dectl status
-    ```
+
