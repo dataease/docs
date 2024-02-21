@@ -280,34 +280,23 @@
 ![对接飞书平台](../img/xpack/飞书对接4.png){ width="900px" }
 
 !!! Abstract ""
-    点击【确定创建】按钮后，完成应用创建并进入应用。提醒进行配置和发布，进行配置后进行发布版本。
+    点击【确定创建】按钮后，完成应用创建并进入应用。提醒进行配置和发布，再进行配置后，进行版本发布。
 
 ![对接飞书平台](../img/xpack/飞书对接5.png){ width="900px" }
 
 !!! Abstract ""
-    新建 App，添加网页应用，设置桌面端主页为 DataEase 服务器地址。
+    新建 App，添加网页应用，设置桌面端主页为 DataEase 服务器地址。如果是 IP 地址，则填入 http(s)://域名/。
+
+![对接飞书平台](../img/xpack/v2飞书对接1 (8).png){ width="900px" }
+
+!!! Abstract ""
+    在【安全设置】里添加重定向 URL，即 DataEase 服务器地址。与网页应用设置的地址、DataEase 回调域名一致。
 
 ![对接飞书平台](../img/xpack/v2飞书对接1 (7).png){ width="900px" }
 
 !!! Abstract ""
-    在【安全设置】里添加重定向 URL，即 DataEase 服务器地址。
-
-![对接飞书平台](../img/xpack/v2飞书对接1 (8).png){ width="900px" }
-
-<!--
-!!! Abstract ""
-    设置回调 URL 和 IP 白名单，假设 DataEase 服务器的域名为 https://dataease.fit2cloud.com，对应的 IP 为111.222.111.222，则在应用中的【安全设置】里，在【重定向 URL】中添加两条记录：https://dataease.fit2cloud.com/plugin/lark/callBack，即 http(s)://域名/plugin/lark/callBack；https://dataease.fit2cloud.com/plugin/lark/bind， 即 http(s)://域名/plugin/lark/bind；  
-    在【IP 白名单】中加 入DataEase 服务器对应的 IP，如 111.222.111.222。
-
-
-![对接飞书平台](../img/xpack/飞书对接8.png){ width="900px" }
-
-!!! Abstract ""
     应用授权，在应用的【权限管理】里进行应用的相关授权，具体权限参考下图：
-
-![对接飞书平台](../img/xpack/飞书对接9.png){ width="900px" }
-
-![对接飞书平台](../img/xpack/飞书对接10.png){ width="900px" }
+![对接飞书平台](../img/xpack/v2飞书对接权限.png){ width="900px" }
 
 !!! Abstract ""
     新建应用版本，在应用的【版本管理与发布】中创建应用版本，如下图所示。
@@ -325,6 +314,23 @@
     进行应用审核。
 
 ![对接飞书平台](../img/xpack/飞书对接14.png){ width="900px" }
+
+<!--
+!!! Abstract ""
+    设置回调 URL 和 IP 白名单，假设 DataEase 服务器的域名为 https://dataease.fit2cloud.com，对应的 IP 为111.222.111.222，则在应用中的【安全设置】里，在【重定向 URL】中添加两条记录：https://dataease.fit2cloud.com/plugin/lark/callBack，即 http(s)://域名/plugin/lark/callBack；https://dataease.fit2cloud.com/plugin/lark/bind， 即 http(s)://域名/plugin/lark/bind；  
+    在【IP 白名单】中加 入DataEase 服务器对应的 IP，如 111.222.111.222。
+
+
+![对接飞书平台](../img/xpack/飞书对接8.png){ width="900px" }
+
+!!! Abstract ""
+    应用授权，在应用的【权限管理】里进行应用的相关授权，具体权限参考下图：
+
+![对接飞书平台](../img/xpack/飞书对接9.png){ width="900px" }
+
+![对接飞书平台](../img/xpack/飞书对接10.png){ width="900px" }
+
+
 
 ![对接飞书平台](../img/xpack/飞书对接15.png){ width="900px" }
 
