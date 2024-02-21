@@ -15,10 +15,10 @@
         <link rel="canonical" href="https://dataease.io/v2/installation/offline_INSTL_and_UPG/">
       
       
-        <link rel="prev" href="../../system_arch/">
+        <link rel="prev" href="../online_installation/">
       
       
-        <link rel="next" href="../offline_installation_ova/">
+        <link rel="next" href="../online_upgrade/">
       
       
       <link rel="icon" href="../../img/facio.ico">
@@ -26,7 +26,7 @@
     
     
       
-        <title>离线安装与升级 - DataEase 文档</title>
+        <title>离线安装 - DataEase 文档</title>
       
     
     
@@ -273,7 +273,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              离线安装与升级
+              离线安装
             
           </span>
         </div>
@@ -678,6 +678,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -710,6 +716,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../online_installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    在线安装
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -724,7 +751,7 @@
           
   
   <span class="md-ellipsis">
-    离线安装与升级
+    离线安装
   </span>
   
 
@@ -735,7 +762,7 @@
         
   
   <span class="md-ellipsis">
-    离线安装与升级
+    离线安装
   </span>
   
 
@@ -823,19 +850,52 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      5 升级步骤
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../online_upgrade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    在线升级
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../offline_upgrade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    离线升级
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -2915,15 +2975,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      5 升级步骤
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -2942,13 +2993,13 @@
   
 
 
-  <h1>离线安装与升级</h1>
+  <h1>离线安装</h1>
 
 <h2 id="1">1 环境要求<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p><strong>部署服务器要求：</strong></p>
 <ul>
-<li>操作系统: CentOS/RHEL 7 及以上 64 位系统</li>
+<li>操作系统: Ubuntu 22.04 / CentOS 7 64 位系统</li>
 <li>CPU/内存: 4核8G</li>
 <li>磁盘空间: 200G</li>
 </ul>
@@ -3089,17 +3140,6 @@ group_concat_max_len=1024000
 用户名: admin
 密码: DataEase@123456
 </code></pre></div>
-</div>
-<h2 id="5">5 升级步骤<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<p>按照本文档离线安装步骤，下载新版本安装包并上传解压后，重新执行安装命令进行升级。（升级前备份是个良好的习惯哦，备份参考见： <a href="./installation/backup_faq.md">备份还原</a> ）：<br />
-<div class="highlight"><pre><span></span><code># 进入项目目录
-cd dataease-online-installer-v2.0.0
-# 运行安装脚本
-/bin/bash install.sh
-# 查看 DataEase 状态
-dectl status
-</code></pre></div></p>
 </div>
 
 
