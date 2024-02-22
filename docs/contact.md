@@ -24,12 +24,6 @@
     - 邮箱：support@fit2cloud.com
     - 电话：400-052-0755
 
-## 6 在线文档问题反馈
-
-!!! Abstract ""
-
-    **如您在阅读该文档时，发现一些问题，欢迎您通过以下表单反馈给我们，我们将尽快调整优化。**  
-    [在线文档问题反馈表](https://doc.weixin.qq.com/forms/AFYAQAeUAAwAGwACwZqAP0FXBzOJsRTUf#/)
 
 [dataease]: https://github.com/dataease/dataease
 [dataease stars]: https://img.shields.io/github/stars/dataease/dataease.svg
