@@ -4493,6 +4493,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#11-dataease-order-by-clause-is-not-in-select-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      11 使用 DataEase 时提示 "ORDER BY clause is not in SELECT list" 的错误
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4544,6 +4553,8 @@
       
         
       
+        
+      
     
     
     
@@ -4571,6 +4582,27 @@
             功能相关
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datasource_faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据源
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -4961,6 +4993,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#11-dataease-order-by-clause-is-not-in-select-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      11 使用 DataEase 时提示 "ORDER BY clause is not in SELECT list" 的错误
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -5141,6 +5182,12 @@ networks:
 <div class="highlight"><pre><span></span><code>vim<span class="w"> </span>/opt/dataease/conf/dataease.properties
 </code></pre></div>
 spring.datasource.url 最后加上 &amp;allowPublicKeyRetrieval=true。</p>
+</div>
+<h2 id="11-dataease-order-by-clause-is-not-in-select-list">11 使用 DataEase 时提示 "ORDER BY clause is not in SELECT list" 的错误<a class="headerlink" href="#11-dataease-order-by-clause-is-not-in-select-list" title="Permanent link">&para;</a></h2>
+<p><img alt="大小写" src="../../../img/faq/Mysql%E5%BC%82%E5%B8%B8.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>MySQL 外置数据库的数据库配置不一致，需要调整下 MySQL 的 sql_mode 配置，建议其它配置也参照调整下，避免因配置导致的其它问题出现。<br />
+参考配置链接：<a href="https://dataease.io/docs/v1/installation/offline_installation/#5">https://dataease.io/docs/v1/installation/offline_installation/#5</a></p>
 </div>
 
 

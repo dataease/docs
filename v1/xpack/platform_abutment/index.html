@@ -4633,6 +4633,8 @@
       
         
       
+        
+      
     
     
     
@@ -4660,6 +4662,27 @@
             功能相关
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/datasource_faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据源
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -5295,18 +5318,16 @@
 </ul>
 <p>获取企业 ID，需要访问钉钉开放平台 <a href="https://open-dev.dingtalk.com/#/">https://open-dev.dingtalk.com/#/</a>，以管理员权限登录钉钉后台，登录后即可查到对应的企业 ID，可参考下图：</p>
 </div>
-<p><img alt="对接钉钉平台" src="../../img/xpack/%E5%AF%B9%E6%8E%A5%E9%92%89%E9%92%89%E5%B9%B3%E5%8F%B02.png" width="900px" /></p>
+<p><img alt="对接钉钉平台" src="../../img/xpack/%E9%92%89%E9%92%89corpid.png" width="900px" />x" }</p>
 <div class="admonition abstract">
 <p>获取应用 ID 和应用密钥，需要在钉钉工作台的【应用管理】中创建一个对应的应用，可以先登录工作台 <a href="https://oa.dingtalk.com/index.htm#/microApp/microAppList">https://oa.dingtalk.com/index.htm#/microApp/microAppList</a>；<br />
 创建应用，需要在【应用管理】中，滚动到页面最下方，点击【自建应用】。</p>
 </div>
-<p><img alt="对接钉钉平台" src="../../img/xpack/%E5%AF%B9%E6%8E%A5%E9%92%89%E9%92%89%E5%B9%B3%E5%8F%B03_1.png" width="900px" /></p>
-<p><img alt="对接钉钉平台" src="../../img/xpack/%E5%AF%B9%E6%8E%A5%E9%92%89%E9%92%89%E5%B9%B3%E5%8F%B03_2.png" width="900px" /></p>
-<p><img alt="对接钉钉平台" src="../../img/xpack/%E5%AF%B9%E6%8E%A5%E9%92%89%E9%92%89%E5%B9%B3%E5%8F%B03_3.png" width="900px" /></p>
+<p><img alt="对接钉钉平台" src="../../img/xpack/%E9%92%89%E9%92%89%E5%88%9B%E5%BB%BA%E5%BA%94%E7%94%A8.png" width="900px" /></p>
 <div class="admonition abstract">
 <p>在弹出的【创建企业内部应用】对话框中输入应用的相关信息后确认即可，此处我们创建一个名叫“DataEase 测试应用”的应用，这里应用类型不影响结果。</p>
 </div>
-<p><img alt="对接钉钉平台" src="../../img/xpack/%E5%AF%B9%E6%8E%A5%E9%92%89%E9%92%89%E5%B9%B3%E5%8F%B03.png" width="900px" /></p>
+<p><img alt="对接钉钉平台" src="../../img/xpack/%E9%92%89%E9%92%89%E5%BA%94%E7%94%A8%E8%A1%A5%E5%85%85.png" width="900px" /></p>
 <div class="admonition abstract">
 <p>获取应用信息，在应用创建完成后，可以在刚才创建的“DataEase 测试应用”中的【应用凭证】里找到所需的信息，其中：</p>
 <ul>
@@ -5315,7 +5336,7 @@
 <li>AppSecret - 应用密钥</li>
 </ul>
 </div>
-<p><img alt="对接钉钉平台" src="../../img/xpack/%E5%AF%B9%E6%8E%A5%E9%92%89%E9%92%89%E5%B9%B3%E5%8F%B03_4.png" width="900px" /></p>
+<p><img alt="对接钉钉平台" src="../../img/xpack/%E9%92%89%E9%92%89%E5%BA%94%E7%94%A8%E4%BF%A1%E6%81%AF.png" width="900px" /></p>
 <div class="admonition abstract">
 <p>回调域名填写 DataEase 的访问域名即可，例如 <a href="https://dataease.fit2cloud.com">https://dataease.fit2cloud.com</a>，此处域名根据自己的实际情况进行修改；<br />
 <strong>注意：</strong> 此处的回调域名在后续的应用权限设置中需要用到。<br />
@@ -5324,22 +5345,22 @@
 <p><img alt="对接钉钉平台" src="../../img/xpack/%E5%AF%B9%E6%8E%A5%E9%92%89%E9%92%89%E5%B9%B3%E5%8F%B01.png" width="900px" /></p>
 <h3 id="42">4.2 应用权限设置<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p>授权登录，要支持扫码登录，需要进行钉钉授权登录的设置，进入应用“DataEase 测试应用”，在【登录与分享】的【接入登录】里中添加授权回调域，注意域名需要和DataEase 平台里填写的【回调域名】一致。</p>
+<p>授权登录，要支持扫码登录，需要进行钉钉授权登录的设置，进入应用“DataEase 测试应用”，在【分享设置】里中添加授权回调域，注意域名需要和 DataEase 平台里填写的【回调域名】一致。</p>
 </div>
-<p><img alt="对接钉钉平台" src="../../img/xpack/%E5%AF%B9%E6%8E%A5%E9%92%89%E9%92%89%E5%B9%B3%E5%8F%B04.png" width="900px" /></p>
+<p><img alt="对接钉钉平台" src="../../img/xpack/%E7%99%BB%E5%BD%95%E4%B8%8E%E5%88%86%E4%BA%AB%E6%94%B9%E6%88%90%E5%88%86%E4%BA%AB%E8%AE%BE%E7%BD%AE1.png" width="900px" /></p>
 <div class="admonition abstract">
 <p>权限控制，进入到【权限管理】中，添加如下图所示的权限即可。</p>
 </div>
 <p><img alt="对接钉钉平台" src="../../img/xpack/%E5%AF%B9%E6%8E%A5%E9%92%89%E9%92%89%E5%B9%B3%E5%8F%B05.png" width="900px" /></p>
 <h3 id="43">4.3 钉钉免登设置<a class="headerlink" href="#43" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p>在钉钉开放平台的【应用开发】栏中，进入【开发管理】，设置【应用首页地址】和【PC端首页地址】。首页地址格式为：http(s)://xxx.xxx.xxx/#/de-auto-login?corpId=&dollar;CORPID&dollar;，corpId=&dollar;CORPID&dollar; 无需替换成真正的 corpId，此处仅为变量。</p>
+<p>在钉钉开放平台的【应用能力】栏中，进入【网页应用】，设置【应用首页地址】和【PC端首页地址】。首页地址格式为：http(s)://xxx.xxx.xxx/#/de-auto-login?corpId=&dollar;CORPID&dollar;，corpId=&dollar;CORPID&dollar; 无需替换成真正的 corpId，此处仅为变量。</p>
 </div>
-<p><img alt="对接钉钉平台" src="../../img/xpack/%E9%92%89%E9%92%89%E5%85%8D%E7%99%BB1.png" width="900px" /></p>
+<p><img alt="对接钉钉平台" src="../../img/xpack/%E9%92%89%E9%92%89%E5%BC%80%E5%8F%91%E7%AE%A1%E7%90%86%E6%94%B9%E7%BD%91%E9%A1%B5%E7%AE%A1%E7%90%86.png" width="900px" /></p>
 <div class="admonition abstract">
-<p>在【登录与分享】页面中添加回调域名，域名格式为：http(s)://xxx.xxx.xxx/plugin/dingtalk/callBackWithoutLogin。</p>
+<p>在【分享设置】页面中添加回调域名，域名格式为：http(s)://xxx.xxx.xxx/plugin/dingtalk/callBackWithoutLogin。</p>
 </div>
-<p><img alt="对接钉钉平台" src="../../img/xpack/%E9%92%89%E9%92%89%E5%85%8D%E7%99%BB2.png" width="900px" /></p>
+<p><img alt="对接钉钉平台" src="../../img/xpack/%E7%99%BB%E5%BD%95%E4%B8%8E%E5%88%86%E4%BA%AB%E6%94%B9%E6%88%90%E5%88%86%E4%BA%AB%E8%AE%BE%E7%BD%AE.png" width="900px" /></p>
 <div class="admonition abstract">
 <p><strong>注意：</strong> 在工作台里访问 DataEase，用户将无法退出，以及无法修改密码。</p>
 </div>
