@@ -167,22 +167,18 @@
 
     获取企业 ID，需要访问钉钉开放平台 https://open-dev.dingtalk.com/#/，以管理员权限登录钉钉后台，登录后即可查到对应的企业 ID，可参考下图：
 
-![对接钉钉平台](../img/xpack/对接钉钉平台2.png){ width="900px" }
+![对接钉钉平台](../img/xpack/钉钉corpid.png){ width="900px" }x" }
 
 !!! Abstract ""
     获取应用 ID 和应用密钥，需要在钉钉工作台的【应用管理】中创建一个对应的应用，可以先登录工作台 https://oa.dingtalk.com/index.htm#/microApp/microAppList；  
     创建应用，需要在【应用管理】中，滚动到页面最下方，点击【自建应用】。
 
-![对接钉钉平台](../img/xpack/对接钉钉平台3_1.png){ width="900px" }
-
-![对接钉钉平台](../img/xpack/对接钉钉平台3_2.png){ width="900px" }
-
-![对接钉钉平台](../img/xpack/对接钉钉平台3_3.png){ width="900px" }
+![对接钉钉平台](../img/xpack/钉钉创建应用.png){ width="900px" }
 
 !!! Abstract ""
     在弹出的【创建企业内部应用】对话框中输入应用的相关信息后确认即可，此处我们创建一个名叫“DataEase 测试应用”的应用，这里应用类型不影响结果。
 
-![对接钉钉平台](../img/xpack/对接钉钉平台3.png){ width="900px" }
+![对接钉钉平台](../img/xpack/钉钉应用补充.png){ width="900px" }
 
 !!! Abstract ""
     获取应用信息，在应用创建完成后，可以在刚才创建的“DataEase 测试应用”中的【应用凭证】里找到所需的信息，其中：
@@ -191,7 +187,7 @@
     - AppKey - 应用 Key
     - AppSecret - 应用密钥
 
-![对接钉钉平台](../img/xpack/对接钉钉平台3_4.png){ width="900px" }
+![对接钉钉平台](../img/xpack/钉钉应用信息.png){ width="900px" }
 
 !!! Abstract ""
     回调域名填写 DataEase 的访问域名即可，例如 https://dataease.fit2cloud.com，此处域名根据自己的实际情况进行修改；  
@@ -203,9 +199,9 @@
 ### 4.2 应用权限设置
 
 !!! Abstract ""
-    授权登录，要支持扫码登录，需要进行钉钉授权登录的设置，进入应用“DataEase 测试应用”，在【登录与分享】的【接入登录】里中添加授权回调域，注意域名需要和DataEase 平台里填写的【回调域名】一致。
+    授权登录，要支持扫码登录，需要进行钉钉授权登录的设置，进入应用“DataEase 测试应用”，在【分享设置】里中添加授权回调域，注意域名需要和 DataEase 平台里填写的【回调域名】一致。
 
-![对接钉钉平台](../img/xpack/对接钉钉平台4.png){ width="900px" }
+![对接钉钉平台](../img/xpack/登录与分享改成分享设置1.png){ width="900px" }
 
 !!! Abstract ""
     权限控制，进入到【权限管理】中，添加如下图所示的权限即可。
@@ -215,14 +211,14 @@
 ### 4.3 钉钉免登设置
 
 !!! Abstract ""
-    在钉钉开放平台的【应用开发】栏中，进入【开发管理】，设置【应用首页地址】和【PC端首页地址】。首页地址格式为：http(s)://xxx.xxx.xxx/#/de-auto-login?corpId=&dollar;CORPID&dollar;，corpId=&dollar;CORPID&dollar; 无需替换成真正的 corpId，此处仅为变量。
+    在钉钉开放平台的【应用能力】栏中，进入【网页应用】，设置【应用首页地址】和【PC端首页地址】。首页地址格式为：http(s)://xxx.xxx.xxx/#/de-auto-login?corpId=&dollar;CORPID&dollar;，corpId=&dollar;CORPID&dollar; 无需替换成真正的 corpId，此处仅为变量。
 
-![对接钉钉平台](../img/xpack/钉钉免登1.png){ width="900px" }
+![对接钉钉平台](../img/xpack/钉钉开发管理改网页管理.png){ width="900px" }
 
 !!! Abstract ""
-    在【登录与分享】页面中添加回调域名，域名格式为：http(s)://xxx.xxx.xxx/plugin/dingtalk/callBackWithoutLogin。
+    在【分享设置】页面中添加回调域名，域名格式为：http(s)://xxx.xxx.xxx/plugin/dingtalk/callBackWithoutLogin。
 
-![对接钉钉平台](../img/xpack/钉钉免登2.png){ width="900px" }
+![对接钉钉平台](../img/xpack/登录与分享改成分享设置.png){ width="900px" }
 
 !!! Abstract ""
     **注意：** 在工作台里访问 DataEase，用户将无法退出，以及无法修改密码。

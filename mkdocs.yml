@@ -192,6 +192,7 @@ nav:
           - MySQL 相关: faq/configuration_faq/dataease_mysql.md
       - 系统管理: faq/system_management.md
       - 功能相关:
+          - 数据源: faq/datasource_faq.md
           - 数据集: faq/dataset_faq.md
           - 仪表板: faq/panel_faq.md
       - 安全问题: faq/security_faq.md
