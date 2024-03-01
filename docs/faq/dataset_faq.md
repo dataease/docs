@@ -50,7 +50,7 @@
     ```
     执行成功后，可以新建 Excel 数据集 或 定时同步类型数据集试试。
 
-## 3 DataEasee 定时同步报错 body exceed max size, max_body_bytes=10737418240 的解决方法
+## 3 DataEase 定时同步报错 body exceed max size, max_body_bytes=10737418240 的解决方法
 
 !!! Abstract ""
     1. 出现以下报错日志 
