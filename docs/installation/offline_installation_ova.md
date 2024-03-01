@@ -75,27 +75,10 @@
 ### 2.3  Ubuntu 系统中安装 DataEase
 
 !!! Abstract ""
-	成功在虚拟机中安装并启动 Ubuntu 系统，连接 Ubuntu 系统即可进行 DataEase 安装。
+	成功在虚拟机中安装并启动 Ubuntu 系统，右键 Windows 图标，选择“PowerShell”或“终端”(Windows 版本不同，选项不同)。      
+	在 PowerShell 界面输入：ssh root@192.168.11.230 登录到 Ubuntu 系统。 
 
-	如果没有用于连接 Linux 系统终端的工具，可以选择安装 FinalShell，下载地址：http://www.hostbuf.com/downloads/finalshell_windows_x64.exe。
-
-![登录](../img/installation/安装FinalShell1.png){ width="900px" }
-![登录](../img/installation/安装FinalShell2.png){ width="900px" }
+![启动](../img/installation/powershell.png){ width="900px" }
 
 !!! Abstract ""
-	安装 FinalShell 成功后，按照下图操作创建链接。
-![登录](../img/installation/创建SSH连接.jpg){ width="900px" }
-
-!!! Abstract ""
-	填写连接配置信息，进行确认。双击创建好的连接，即可连接到虚拟机的 Ubuntu 系统。
-
-	* 主机填写 Ubuntu 系统的 IP 地址；
-
-	* 用户名和密码填写 Ubuntu 系统的用户名和密码。
-
-![登录](../img/installation/输入连接配置.jpg){ width="900px" }
-![登录](../img/installation/成功创建连接.jpg){ width="900px" }
-![登录](../img/installation/连接主机成功.jpg){ width="900px" }
-
-!!! Abstract ""
-	连接 Ubuntu 系统后，按照 [DataEase 离线部署]( https://dataease.io/docs/v1/installation/offline_installation/)步骤进行操作，即可部署 DataEase。
+	连接 Ubuntu 系统，按照 [DataEase 离线部署]( https://dataease.io/docs/v1/installation/offline_installation/)步骤进行操作，即可部署 DataEase。
