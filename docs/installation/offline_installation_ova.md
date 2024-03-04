@@ -32,10 +32,7 @@
 
 !!! Abstract ""
 	在虚拟机中安装 Ubuntu 系统，可以下载 DataEase 提供的 Ubuntu OVA 文件，直接导入到 VirtualBox 就可以使用，省去安装系统的过程。  
-	通过网盘链接下载 Ubuntu OVA 文件: https://pan.baidu.com/s/1gNM-tvT35YPpineCVauviA?pwd=DeUb 提取码：DeUb 
-
-![社区版下载DataEase](../img/installation/选择对应版本.png){ width="900px" }
-
+	通过网盘链接下载 Ubuntu OVA 文件: https://pan.baidu.com/s/1gNM-tvT35YPpineCVauviA?pwd=DeUb 提取码：DeUb
 
 !!! Abstract ""
 	在 VirtualBox 界面上，点击 ”导入” ，选择下载好的 Ubuntu OVA 文件，点击 “下一步”。
