@@ -45,6 +45,7 @@ nav:
   - 产品迭代:
       - 更新日志: changelog.md
       - 更新说明:
+          - v2.4.0: change-v2-4.md
           - v2.3.0: change-v2-3.md
           - v2.2.0: change-v2-2.md
           - v2.1.0: change-v2-1.md
@@ -100,6 +101,7 @@ nav:
               - 文本过滤组件: user_manual/filter_module/filtertext_module.md
               - 数字过滤组件: user_manual/filter_module/filternumber_module.md
           - 样式组件: user_manual/other_module/style_module.md
+          - 移动端: user_manual/app_description.md
       - 数据大屏:
           - 数据大屏概述: user_manual/panel_description.md
           - 创建数据大屏: user_manual/panel_create.md
@@ -113,20 +115,24 @@ nav:
               - 图表样式设计: user_manual/view_module/panel_view_style_design.md
               - 图表高级设计: user_manual/view_module/panel_view_advanced_design.md
               - 图表图库: user_manual/view_module/view_gallery.md
-          - 其他组件: user_manual/template_market.md
+          - 其他组件: user_manual/other_module/panel_style_module.md
       - 模板市场: user_manual/template_market.md
       - 工具箱: user_manual/system_management/module.md
-      - 系统管理:
-          - 系统参数: user_manual/system_management/param.md
+      - 系统参数: user_manual/system_management/param.md
       - X-Pack:
-          - 用户管理: xpack/user_management_user.md
-          - 组织管理: xpack/sys_management_organization.md
-          - 权限配置: xpack/sys_management_permission.md
-          - 多维嵌入: xpack/multidimensional_embedding.md
-          - 平台对接: xpack/platform_abutment.md
-          - 同步管理: xpack/data_synchronization_management.md
+          - 组织管理中心:
+              - 用户管理: xpack/user_management_user.md
+              - 组织管理: xpack/sys_management_organization.md
+              - 权限配置: xpack/sys_management_permission.md
+              - 同步管理: xpack/data_synchronization_management.md
+          - 系统设置:
+              - 平台对接: xpack/platform_abutment.md
+              - 外观配置: xpack/appearance_configuration.md
+              - 多维嵌入: xpack/multidimensional_embedding.md
+              - 认证设置: xpack/identification_setting.md
+              - 水印管理: xpack/watermark.md
           - 系统 API: xpack/sys_management_develop.md
-          - 水印管理: xpack/watermark.md
+
   - 教学视频: instructional_video.md
   - 联系我们: contact.md
 

@@ -19,12 +19,14 @@
       ./dectl --help
     
     Commands:
-        status 查看 DATAEASE 服务运行状态
-        start 启动 DATAEASE 服务
-        stop 停止 DATAEASE 服务
-        restart 重启 DATAEASE 服务
+        status 查看 DATAEASE 服务运行状态   
+        start 启动 DATAEASE 服务   
+        stop 停止 DATAEASE 服务  
+        restart 重启 DATAEASE 服务  
         reload 重新加载 DATAEASE 服务
         upgrade 在线升级 DATAEASE 服务
         version 查看 DATAEASE 版本信息
         clear-images 清理 DATAEASE 旧版本的相关镜像
+        backup 进行 DATAEASE 备份
+        restore  进行 DATAEASE 恢复
     ```

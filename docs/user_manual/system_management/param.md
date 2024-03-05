@@ -58,30 +58,11 @@
 ![俄罗斯](../../img/system_management/俄罗斯.png){ width="900" }
 
 ![世界地图](../../img/system_management/世界地图.png){ width="900" }
-<!-- 
-## 4 引擎设置
 
-### 4.1 精简模式
+## 3 引擎设置
 
 !!! Abstract ""
-    精简模式下需配置数据引擎用以存储 Excel 及 API 数据集数据，目前该引擎只支持 MySQL 类型，支持使用外部 MySQL；  
+    默认数据引擎是 DataEase 范围内的 MySQL，用以存储 Excel 及 API 数据集数据。目前该引擎只支持 MySQL 类型，支持使用外部 MySQL；  
     系统会自动检查是否设置了引擎参数，若无设置，则读取 dataease.properties 配置文件中 MySQL 连接信息，并填入其中。
 
-![MySQL设置](../../img/system_management/MySQL设置.png){ width="900" }
-
-### 4.2 集群模式
-
-!!! Abstract ""
-    集群模式下需要手动配置 Doris 组件的参数，用以存储 Excel 数据集，API 数据集数据和定时同步模式下数据集的数据。
-
-![Doris设置](../../img/system_management/Doris设置.png){ width="900" }
-
-## 5 Kettle 设置
-
-!!! Abstract ""
-    集群模式下需配置 Kettle 组件用以做数据抽取，可手动配置 Kettle 的基本信息，并可添加多个 Kettle 组件，多个 Kettle 存在时，任务将随机分配。
-
-![Kettle设置](../../img/system_management/Kettle设置.png){ width="900" }  
-![Kettle设置_编辑](../../img/system_management/Kettle设置_编辑.png){ width="900" }
--->
-    
+![MySQL设置](../../img/system_management/引擎管理.png){ width="900" }
