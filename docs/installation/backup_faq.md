@@ -22,5 +22,6 @@
     - 备份操作：dectl backup
     - 恢复操作：dectl restore DataEase备份文件.tar.gz  
 
-    dectl backup 命令将 DataEase 排除日志目录以外的运行目录（如 /opt/dataease2.0）进行备份压缩，生成备份文件 DataEase备份文件.tar.gz。在安装了同样版本的 DataEase 服务器上，用户可以通过执行 dectl restore DataEase备份文件.tar.gz 将 DataEase 还原为备份的内容。   
-    **请注意：备份文件中并不包含完整的镜像文件，所以备份和还原操作只能在同版本的情况下执行。**
+    dectl backup 命令将 DataEase 排除日志目录以外的运行目录（如 /opt/dataease2.0）进行备份压缩，生成备份文件 DataEase备份文件.tar.gz。   
+    在安装了同样版本的 DataEase 服务器上，用户可以通过执行 dectl restore DataEase备份文件.tar.gz 将 DataEase 还原为备份的内容。   
+    **注意：备份文件中并不包含完整的镜像文件，所以备份和还原操作只能在同版本的情况下执行。**
