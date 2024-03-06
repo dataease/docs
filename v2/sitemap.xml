@@ -26,6 +26,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://dataease.io/docs/v2/change-v2-4/</loc>
+         <lastmod>2024-03-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://dataease.io/docs/v2/changelog/</loc>
          <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
@@ -137,6 +142,11 @@
     </url>
     <url>
          <loc>https://dataease.io/docs/v2/installation/cli/</loc>
+         <lastmod>2024-03-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dataease.io/docs/v2/installation/deployment_installation/</loc>
          <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
