@@ -22,31 +22,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - name: insert MaxKb code
-        run: |
-          sed -i '/<head>/a\
-          <script>\
-            window.maxkbChatConfig = {\
-            token: "5baa787163381fa2",\
-            host: "maxkb.fit2cloud.com",\
-            protocol:"https:"\
-          }\
-          </script>\
-          <script src="https://maxkb.fit2cloud.com/ui/embeb.js">\
-          </script>
-          ' v1/index.html
-
-          sed -i '/<head>/a\
-          <script>\
-            window.maxkbChatConfig = {\
-            token: "2ddd8b594ce09dbb",\
-            host: "maxkb.fit2cloud.com",\
-            protocol:"https:"\
-          }\
-          </script>\
-          <script src="https://maxkb.fit2cloud.com/ui/embeb.js">\
-          </script>
-          ' v2/index.html
       
       - name: ssh deploy
         uses: easingthemes/ssh-deploy@v2.2.11
