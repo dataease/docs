@@ -336,6 +336,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://dataease.io/docs/v1/release_notes/v1.18.16/</loc>
+         <lastmod>2024-03-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://dataease.io/docs/v1/user_manual/app/</loc>
          <lastmod>2024-03-06</lastmod>
          <changefreq>daily</changefreq>

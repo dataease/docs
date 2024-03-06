@@ -569,6 +569,8 @@
       
         
       
+        
+      
     
     
     
@@ -596,6 +598,27 @@
             更新说明
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release_notes/v1.18.16/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v1.18.16
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -4868,6 +4891,16 @@
 <li>把原环境里的运行目录 /opt/dataease 整个目录覆盖掉新环境里的 /opt/dataease 目录</li>
 <li>启动新环境里的 DataEase 服务： service dataease start</li>
 </ul>
+</div>
+<div class="admonition abstract">
+<p><strong>使用 dectl 命令备份与恢复操作</strong></p>
+<ul>
+<li>备份操作：dectl backup  </li>
+<li>恢复操作：dectl restore DataEase备份文件.tar.gz  </li>
+</ul>
+<p>dectl backup 命令将 DataEase 排除日志目录以外的运行目录（如 /opt/dataease）进行备份压缩，生成备份文件 DataEase备份文件.tar.gz。  <br />
+在安装了同样版本的 DataEase 服务器上，用户可以通过执行 dectl restore DataEase备份文件.tar.gz 将 DataEase 还原为备份的内容。<br />
+<strong>注意：备份文件中并不包含完整的镜像文件，所以备份和还原操作只能在同版本的情况下执行。</strong></p>
 </div>
 
 

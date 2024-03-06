@@ -18,7 +18,7 @@
         <link rel="prev" href="../quick_start/">
       
       
-        <link rel="next" href="../release_notes/v1.18.15/">
+        <link rel="next" href="../release_notes/v1.18.16/">
       
       
       <link rel="icon" href="../img/facio.ico">
@@ -593,6 +593,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v11816" class="md-nav__link">
+    <span class="md-ellipsis">
+      v1.18.16
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v11815" class="md-nav__link">
     <span class="md-ellipsis">
       v1.18.15
@@ -1130,6 +1139,8 @@
       
         
       
+        
+      
     
     
     
@@ -1157,6 +1168,27 @@
             更新说明
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../release_notes/v1.18.16/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v1.18.16
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -5357,6 +5389,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v11816" class="md-nav__link">
+    <span class="md-ellipsis">
+      v1.18.16
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v11815" class="md-nav__link">
     <span class="md-ellipsis">
       v1.18.15
@@ -5886,6 +5927,91 @@ Bug 修复的小版本。<br />
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v11816">v1.18.16<a class="headerlink" href="#v11816" title="Permanent link">&para;</a></h3>
+<p>2024年3月7日</p>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>feat（仪表板）: 仪表板公共链接支持设置浏览器整体刷新</li>
+<li>feat（仪表板）: 树列表侧边栏新增展开、收起功能</li>
+<li>feat（数据源）: 数据集行权限支持设置左右模糊查询 #7954</li>
+<li>feat（数据集）: 定时同步和 Excel 数据集支持分页 #6209</li>
+<li>feat（视图）: 支持右键复制表格的指定单元格内容 #5884</li>
+<li>feat（视图）: 指标卡/文本卡在非编辑状态下可以选中并复制内容 #7726</li>
+<li>feat（视图）: 明细表/汇总表支持按列设置宽度及拖拽调整宽度 #7707</li>
+<li>feat（视图）: 视图字体大小属性支持 6 和 8</li>
+<li>feat（视图）: 明细表中的定时同步数据集和 Excel 数据集支持分页</li>
+<li>feat（X-Pack）: 支持对接 V2 协议的 CAS #7698</li>
+<li>feat（X-Pack）: 支持代理设置 #8300</li>
+<li>feat: dectl 增加备份和恢复功能 #6602</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>chore: 升级 commons-compress 版本到 1.26.0</li>
+<li>pref（仪表板）: 优化导出图片组件，解决导出卡顿，图片渲染不全和全屏状态下视图图片导出位置偏移或空白的问题 #8005</li>
+<li>pref（仪表板）: 视图导出图片优化</li>
+<li>pref（仪表板）: 公共链接导出等组件优化</li>
+<li>refactor（仪表板）: 优化公共链接下载等按钮的显示区域 #7461</li>
+<li>refactor（仪表板）: 优化初始化编辑界面加载逻辑，防止出现初始化时画布尺寸改变可能出现的闪动问题</li>
+<li>refactor（仪表板）: 优化悬浮组件移入移出 Tab 的样式，保持移入组件宽高</li>
+<li>refactor（仪表板）: 优化明细表大数据量导出的场景</li>
+<li>refactor（仪表板）: 文本组件 PC 端自适应优化,可根据屏幕尺寸伸缩</li>
+<li>refactor（仪表板）: 视图明细数据字体大小调整 #7729</li>
+<li>refactor（仪表板）: 调整公共链接下载等按钮显示感应区域，防止无法点击到对应区域的视图放大等按钮</li>
+<li>refactor: uninstall.sh 卸载脚本优化提示 #7955</li>
+<li>refactor: 优化 installer 加载镜像逻辑</li>
+<li>refactor: 升级 installer 中 docker-compose 版本到 v2.24.5</li>
+<li>style（仪表板）: 公共链接图标样式优化</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>fix（仪表板）: 修复仪表板公共链接打开视图明细弹出输入用户信息的问题</li>
+<li>fix（仪表板）: 修复当仪表板过长时导出图片水印不全的问题</li>
+<li>fix（仪表板）: 修复快速交替点击组件可能出现组件重叠的问题</li>
+<li>fix（仪表板）: 修复移动端仪表板 tab 组件中的在切换 tab 页时其他页面筛选默认值可能会失效的问题 #8041</li>
+<li>fix（仪表板）: 修复移动端成功上传背景图片，但下次进行编辑的时候背景图片不显示的问题 #8239</li>
+<li>fix（仪表板）: 修复全屏展示仪表板会清空过滤组件中内容的问题 #8076</li>
+<li>fix（仪表板）: 修复仪表板导出为图片，出现过滤组件内容错位的问题 #7138</li>
+<li>fix（仪表板）: 修复二次点击查询按钮，表格数据无法刷新的问题 #8101</li>
+<li>fix（仪表板）: 修复矩阵模式改为悬浮模式 tab 中的组件在一定的尺寸下可能出现无法移出的问题</li>
+<li>fix（仪表板）: 修复仪表板复用缩放按钮显示不正确的问题</li>
+<li>fix（仪表板）: 修复将明细表添加进 tab 组件预览界面显示图表不全的问题</li>
+<li>fix（数据源）: SQLserver 2014 驱动版本号 12 添加到 default 中 #7984</li>
+<li>fix（数据源）: 修复驱动管理中支持版本反显的问题 #7640</li>
+<li>fix（数据源）: 修改数据源数据库不保存依然可以变更数据的问题</li>
+<li>fix（数据源）: 增加 postgre sql 数据库版本的支持范围</li>
+<li>fix（数据集）: 修复 simple 模式下，Excel 文件上传失败的问题 #7534</li>
+<li>fix（数据集）: 修复 postgre sql 数据集使用定时同步，数据量超过 50000 时，有可能会丢失数据的问题 #6177</li>
+<li>fix（数据集）: 修复 Oracle 数据源的 SQL 数据集使用 in 语法和参数时执行异常的问题 #8053</li>
+<li>fix（数据集）: 修复 SQL 数据集子查询中使用 union 执行异常的问题 #8022</li>
+<li>fix（数据集）: 修复创建 API 数据集无数据的问题</li>
+<li>fix（数据集）: 补全 Doris 数据源 SQL 处理逻辑</li>
+<li>fix（数据集）: 修复编辑 SQL 时,设置主键不生效的问题</li>
+<li>fix（数据集）: 修复 v1.18.14 版本的 SQL 数据集能正常查询，升级到 v1.18.15 报错的问题 #8169</li>
+<li>fix（数据集）: 修复 SQL 语句中有 left join 子查询时动态参数报错的问题 #6301</li>
+<li>fix（视图）: AntV 雷达图去除标签位置 #7969</li>
+<li>fix（视图）: 修复 ECharts 视图清除联动后未清除高亮效果的问题</li>
+<li>fix（视图）: 修复符号地图色彩字段为时间时不显示符号的问题</li>
+<li>fix（视图）: 修复视图插件直连 Doris 报错的问题 #8054</li>
+<li>fix（视图）: 修复汇总表自定义宽度缺少指标字段的问题</li>
+<li>fix（视图）: 修复表格字段未设置跳转信息时未弹出提示的问题</li>
+<li>fix（视图）: 修复表格开启序号后拖拽无法保存序号的列宽的问题</li>
+<li>fix（视图）: 修复视图属性变更防抖，防止属性和实际效果不一致的问题</li>
+<li>fix（视图）: 修复饼图设置联动，点击后无法恢复样式的问题 #8043</li>
+<li>fix（视图）: 修复 AntV 动态辅助线平均值存在多个小数位的问题，Echarts 默认会保留两位 #6460</li>
+<li>fix（公共链接）: 修复平台内跳转和公共跳转返回数据不一致的问题 #8184</li>
+<li>fix（公共链接）: 修复未登陆用户使用公共链接访问仪表板，点击视图详情提示输入用户密码的问题 #8079</li>
+<li>fix（移动端）: 修复移动端时间过滤器初始化无法过滤 Tab 内部视图的问题</li>
+<li>fix（过滤器）: 修复 tab 组件中过滤器设置首项，首次清空选项值无任何请求的问题 #8081</li>
+<li>fix（过滤器）: 修复全屏会清空过滤器中内容的问题 #8076</li>
+<li>fix: 修复任意文件上传漏洞</li>
+<li>fix: 修复新建账号登陆时，出现缓存 bug，导致 DataEase 无法正常访问的问题 #8124</li>
+</ul>
+</div>
 <h3 id="v11815">v1.18.15<a class="headerlink" href="#v11815" title="Permanent link">&para;</a></h3>
 <p>2024年2月1日</p>
 <div class="admonition abstract">
@@ -5971,7 +6097,6 @@ Bug 修复的小版本。<br />
 <li>fix(视图): 修复表格单元格提示显示不完整的问题</li>
 <li>fix(视图): 修复透视表指标字段清空时渲染失败的问题</li>
 <li>fix(视图): 修复 AntV 组合图无法使用日期维度的问题 #7542</li>
-<li>fix(视图): 修复明细表视图进行跳转设置，设置某一个字段跳转打开外部链接，点击其他字段同样出现跳转的问题 #7533 #7635</li>
 <li>fix(视图): 修复基础柱状图修改指标名称后自定义配色被重置的问题 #7665</li>
 <li>fix(视图): 修复视图清除联动后未清除高亮效果的问题</li>
 <li>fix(移动端): 修复移动端仪表板排序和 PC 端不一致的问题 #6692</li>
