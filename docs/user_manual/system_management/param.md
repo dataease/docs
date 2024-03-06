@@ -3,9 +3,10 @@
 ![系统设置](../../img/system_management/系统设置.png){ width="900" }
 
 !!! Abstract ""
-    如下图所示，可设置是否开启第三方自动创建用户、数据源检测时间间隔。
+    如下图所示，可设置请求超时时间、数据源检测时间间隔，日志保留时间。  
+    通过 X-Pack 进行认证设置或平台对接后，可以设置是否开启第三方自动创建用户、用户组织和角色。
 
-![系统管理界面](../../img/system_management/系统管理界面.png){ width="900" }
+![系统管理界面](../../img/system_management/基础设置.png){ width="900" }
 
 
 !!! Abstract ""
