@@ -100,24 +100,24 @@
     
     [root@iZt4n8oa58aqukyv8sf1ciZ ~]# npm version
     {
-    npm: '8.5.5',
-    node: '16.15.0',
-    v8: '9.4.146.24-node.20',
-    uv: '1.43.0',
-    zlib: '1.2.11',
-    brotli: '1.0.9',
-    ares: '1.18.1',
-    modules: '93',
-    nghttp2: '1.47.0',
-    napi: '8',
-    llhttp: '6.0.4',
-    openssl: '1.1.1n+quic',
-    cldr: '40.0',
-    icu: '70.1',
-    tz: '2021a3',
-    unicode: '14.0',
-    ngtcp2: '0.1.0-DEV',
-    nghttp3: '0.1.0-DEV'
+        npm: '8.5.5',
+        node: '16.15.0',
+        v8: '9.4.146.24-node.20',
+        uv: '1.43.0',
+        zlib: '1.2.11',
+        brotli: '1.0.9',
+        ares: '1.18.1',
+        modules: '93',
+        nghttp2: '1.47.0',
+        napi: '8',
+        llhttp: '6.0.4',
+        openssl: '1.1.1n+quic',
+        cldr: '40.0',
+        icu: '70.1',
+        tz: '2021a3',
+        unicode: '14.0',
+        ngtcp2: '0.1.0-DEV',
+        nghttp3: '0.1.0-DEV'
     }
     ```
 
@@ -158,7 +158,7 @@
 
 ### 3.3 配置运行环境
 !!! Abstract ""
-    **操作系统**  
+    **操作系统设置**  
 
     参数设置，增加系统监听文件数量。
     ```
@@ -227,17 +227,17 @@
     在配置文件目录下创建 DataEase 配置文件 application.yml，YOUR_IP:PORTS/YOUR_DATABASE/YOUR_USER/YOUR_PASSWORD 部分请修改成实际数据库配置。
     ```
     server:
-    tomcat:
-    connection-timeout: 70000
+        tomcat:
+            connection-timeout: 70000
     spring:
-    servlet:
-    multipart:
-    max-file-size: 500MB
-    max-request-size: 500MB
+        servlet:
+            multipart:
+                max-file-size: 500MB
+                max-request-size: 500MB
     datasource:
-    url: jdbc:mysql://YOUR_IP:PORTS/YOUR_DATABASE?autoReconnect=false&useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
-    username: YOUR_USER
-    password: YOUR_PASSWORD
+        url: jdbc:mysql://YOUR_IP:PORTS/YOUR_DATABASE?autoReconnect=false&useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+        username: YOUR_USER
+        password: YOUR_PASSWORD
     ```
 
 ### 3.4 运行 jar
@@ -270,7 +270,7 @@
     docker build -t registry.cn-qingdao.aliyuncs.com/dataease/dataease:v2.3-rc1 .
     ```
 !!! Abstract ""
-    如下输出日志参考,使用 docker images 可查看镜像是否成功打包。
+    如下输出日志参考，使用 docker images 可查看镜像是否成功打包。
 
 ![源码部署](../img/installation/输出日志.png){ width="900px" }
 
@@ -302,17 +302,17 @@
     在配置文件目录下创建 DataEase 配置文件 application.yml，内容如下。YOUR_IP:PORTS/YOUR_DATABASE/YOUR_USER/YOUR_PASSWORD 部分请修改成实际数据库配置。
     ```
     server:
-    tomcat:
-    connection-timeout: 70000
+        tomcat:
+            connection-timeout: 70000
     spring:
-    servlet:
-    multipart:
-    max-file-size: 500MB
-    max-request-size: 500MB
+        servlet:
+            multipart:
+                max-file-size: 500MB
+                max-request-size: 500MB
     datasource:
-    url: jdbc:mysql://YOUR_IP:PORTS/YOUR_DATABASE?autoReconnect=false&useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
-    username: YOUR_USER
-    password: YOUR_PASSWORD
+        url: jdbc:mysql://YOUR_IP:PORTS/YOUR_DATABASE?autoReconnect=false&useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+        username: YOUR_USER
+        password: YOUR_PASSWORD
     ```
 
 ### 5.2 运行镜像
