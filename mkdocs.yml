@@ -56,6 +56,7 @@ nav:
       - 在线升级: installation/online_upgrade.md
       - 离线升级: installation/offline_upgrade.md
       - Windows 单机部署: installation/offline_installation_ova.md
+      - 源码部署: installation/deployment_installation.md
       - 命令行工具: installation/cli.md
       - 备份还原: installation/backup_faq.md
   - 功能手册:
