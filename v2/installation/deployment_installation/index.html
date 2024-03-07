@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://dataease.io/docs/v2/installation/deployment_installation/">
       
       
+        <link rel="prev" href="../offline_installation_ova/">
+      
+      
+        <link rel="next" href="../cli/">
       
       
       <link rel="icon" href="../../img/facio.ico">
@@ -22,7 +26,7 @@
     
     
       
-        <title>Deployment installation - DataEase 文档</title>
+        <title>源码部署 - DataEase 文档</title>
       
     
     
@@ -278,7 +282,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Deployment installation
+              源码部署
             
           </span>
         </div>
@@ -691,8 +695,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -710,14 +716,16 @@
       
         
       
+        
+      
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -731,7 +739,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             安装部署
@@ -838,6 +846,240 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    源码部署
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    源码部署
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 项目结构
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 配置环境
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 配置环境">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-jdk-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 安装 JDK 17
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 安装 Git
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-maven" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 安装配置 Maven
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4  安装配置 nodejs（可选）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3  代码运行
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3 代码运行">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 源码准备
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 源码编译
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 配置运行环境
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-jar" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 运行 jar
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 镜像制作
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 镜像制作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 安装 Docker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 制作镜像
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 镜像运行
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5 镜像运行">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 配置运行环境
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 运行镜像
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2989,6 +3231,132 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#24-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4  安装配置 nodejs（可选）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3  代码运行
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3 代码运行">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 源码准备
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 源码编译
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 配置运行环境
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-jar" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 运行 jar
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 镜像制作
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 镜像制作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 安装 Docker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 制作镜像
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 镜像运行
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5 镜像运行">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 配置运行环境
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 运行镜像
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3012,44 +3380,41 @@
   
 
 
-  <h1>Deployment installation</h1>
+  <h1>源码部署</h1>
 
 <div class="admonition abstract">
-<p>以源码方式运行 DataEase ，请使用 v2.3、v2.2 等已发布分支的代码，请勿使用 dev 等分支。dev 等分支代码均处于开发或测试阶段，用到的依赖并没有上传到中央仓库，在编译时会出现依赖缺失的情况。
-本文所使用源码为 DataEase v2.3 分支。</p>
+<p>请使用 v2.3、v2.2 等已发布分支的代码运行 DataEase。请勿使用 dev 等分支，dev 等分支代码均处于开发或测试阶段，部分依赖并没有上传到中央仓库，编译时可能出现依赖缺失。 <br />
+本文所使用源码为 DataEase v2.3 分支，操作系统为 CentOS 7.9，举例说明如何以源码的形式编译 DataEase 工程。所有操作均在阿里云（新加坡区） 4核8G 环境中执行。</p>
 </div>
 <h2 id="1">1 项目结构<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code><span class="n">```</span>
-<span class="n">├── CODE_OF_CONDUCT.md</span>
-<span class="n">├── CONTRIBUTING.md</span>
-<span class="n">├── Dockerfile                                # 构建容器镜像使用的 Dockerfile</span>
-<span class="n">├── LICENSE                                   # License 申明</span>
-<span class="n">├── README.md</span>
-<span class="n">├── SECURITY.md</span>
-<span class="n">├── core                                      # 社区版功能源码</span>
-<span class="n">├── de-xpack                                  # 企业版功能源码（不开源）</span>
-<span class="n">├── drivers                                   # 数据源驱动文件</span>
-<span class="n">├── installer                                 # 安装工程源码</span>
-<span class="n">├── mapFiles                                  # 地图文件</span>
-<span class="n">├── pom.xml                                   # 整体 maven 项目使用的 pom 文件</span>
-<span class="n">├── sdk                                       # DataEase 基础接口工程源码</span>
-<span class="n">└── staticResource                            # 静态资源文件</span>
-<span class="n">```</span>
+<div class="codehilite"><pre><span></span><code><span class="n"> ```</span>
+<span class="n"> ├── CODE_OF_CONDUCT.md</span>
+<span class="n"> ├── CONTRIBUTING.md</span>
+<span class="n"> ├── Dockerfile                                # 构建容器镜像使用的 Dockerfile</span>
+<span class="n"> ├── LICENSE                                   # License 申明</span>
+<span class="n"> ├── README.md</span>
+<span class="n"> ├── SECURITY.md</span>
+<span class="n"> ├── core                                      # 社区版功能源码</span>
+<span class="n"> ├── de-xpack                                  # 企业版功能源码（不开源）</span>
+<span class="n"> ├── drivers                                   # 数据源驱动文件</span>
+<span class="n"> ├── installer                                 # 安装工程源码</span>
+<span class="n"> ├── mapFiles                                  # 地图文件</span>
+<span class="n"> ├── pom.xml                                   # 整体 maven 项目使用的 pom 文件</span>
+<span class="n"> ├── sdk                                       # DataEase 基础接口工程源码</span>
+<span class="n"> └── staticResource                            # 静态资源文件</span>
+<span class="n"> ```</span>
 </code></pre></div>
 
 <h2 id="2">2 配置环境<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<p>本文以 CentOS 7.9 为例，举例说明如何以源码的形式编译 DataEase 工程。所有操作均在阿里云（新加坡区） 4核8G 环境中执行。</p>
-</div>
 <h3 id="21-jdk-17">2.1 安装 JDK 17<a class="headerlink" href="#21-jdk-17" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p>DataEase v2 使用 JDK17， <a href="https://www.oracle.com/java/technologies/downloads/#java17">Oracle 官网下载 JDK17 安装包</a>,根据 CPU 架构，选择对应安装包。本文档所用测试服务器 CPU 架构为 x64，下载的 x64 架构的 rpm 安装包。</p>
+<p>DataEase v2 使用 JDK17， <a href="https://www.oracle.com/java/technologies/downloads/#java17">Oracle 官网下载 JDK17 安装包</a>,根据 CPU 架构，选择对应安装包。本文档所用测试服务器 CPU 架构为 x64，下载的 x64 架构的 rpm 安装包。
 <div class="highlight"><pre><span></span><code># 下载 JDK17 RPM 安装包
 wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.rpm
 
 # 安装 RPM 安装包
 yum -y install jdk-17_linux-x64_bin.rpm
-</code></pre></div>
+</code></pre></div></p>
 </div>
 <div class="admonition abstract">
 <p>验证 JDK 正确安装。
@@ -3061,9 +3426,9 @@ Java HotSpot(TM) 64-Bit Server VM (build 17.0.10+11-LTS-240, mixed mode, sharing
 </div>
 <h3 id="22-git">2.2 安装 Git<a class="headerlink" href="#22-git" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p>执行命令安装 Git。</p>
+<p>执行命令安装 Git。
 <div class="highlight"><pre><span></span><code>yum install -y git
-</code></pre></div>
+</code></pre></div></p>
 </div>
 <div class="admonition abstract">
 <p>验证 Git。
@@ -3076,7 +3441,7 @@ git version 1.8.3.1
 <p>到 Apache Maven 官网下载最新版本的 Maven，官网地址如下：<a href="https://maven.apache.org/download.cgi">https://maven.apache.org/download.cgi</a> 。</p>
 </div>
 <div class="admonition abstract">
-<p>执行命令安装 Maven。</p>
+<p>执行命令安装 Maven。
 <div class="highlight"><pre><span></span><code># 下载并安装 Maven
 wget https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz
 tar zxvf apache-maven-3.9.6-bin.tar.gz
@@ -3086,18 +3451,246 @@ echo &quot;export M2_HOME=/opt/apache-maven-3.9.6&quot; &gt;&gt; ~/.bashrc
 echo &quot;export PATH=\$PATH:\$M2_HOME/bin&quot; &gt;&gt; ~/.bashrc
 
 source ~/.bashrc
-</code></pre></div>
+</code></pre></div></p>
 </div>
 <div class="admonition abstract">
-<p>验证 Maven。</p>
+<p>验证 Maven。
 <div class="highlight"><pre><span></span><code>[root@iZt4n8oa58aqukyv8sf1ciZ ~]# mvn -v
 Apache Maven 3.9.6 (bc0240f3c744dd6b6ec2920b3cd08dcc295161ae)
 Maven home: /opt/apache-maven-3.9.6
 Java version: 17.0.10, vendor: Oracle Corporation, runtime: /usr/lib/jvm/jdk-17-oracle-x64
 Default locale: zh_CN, platform encoding: UTF-8
 OS name: &quot;linux&quot;, version: &quot;3.10.0-1160.105.1.el7.x86_64&quot;, arch: &quot;amd64&quot;, family: &quot;unix&quot;
+</code></pre></div></p>
+</div>
+<h3 id="24-nodejs">2.4  安装配置 nodejs（可选）<a class="headerlink" href="#24-nodejs" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>执行命令安装 nodejs。
+<div class="highlight"><pre><span></span><code># 下载并安装 nodejs
+wget https://nodejs.org/dist/v16.15.0/node-v16.15.0-linux-x64.tar.xz
+tar xvf node-v16.15.0-linux-x64.tar.xz
+mv node-v16.15.0-linux-x64 /opt
+
+echo &quot;export PATH=\$PATH:/opt/node-v16.15.0-linux-x64/bin&quot; &gt;&gt; ~/.bashrc
+
+source ~/.bashrc
+</code></pre></div></p>
+</div>
+<div class="admonition abstract">
+<p>验证 nodejs。
+<div class="highlight"><pre><span></span><code>[root@iZt4n8oa58aqukyv8sf1ciZ ~]# node --version
+v16.15.0
+
+[root@iZt4n8oa58aqukyv8sf1ciZ ~]# npm version
+{
+npm: &#39;8.5.5&#39;,
+node: &#39;16.15.0&#39;,
+v8: &#39;9.4.146.24-node.20&#39;,
+uv: &#39;1.43.0&#39;,
+zlib: &#39;1.2.11&#39;,
+brotli: &#39;1.0.9&#39;,
+ares: &#39;1.18.1&#39;,
+modules: &#39;93&#39;,
+nghttp2: &#39;1.47.0&#39;,
+napi: &#39;8&#39;,
+llhttp: &#39;6.0.4&#39;,
+openssl: &#39;1.1.1n+quic&#39;,
+cldr: &#39;40.0&#39;,
+icu: &#39;70.1&#39;,
+tz: &#39;2021a3&#39;,
+unicode: &#39;14.0&#39;,
+ngtcp2: &#39;0.1.0-DEV&#39;,
+nghttp3: &#39;0.1.0-DEV&#39;
+}
+</code></pre></div></p>
+</div>
+<h2 id="3">3  代码运行<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 源码准备<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>下载源码到本地
+<div class="highlight"><pre><span></span><code>cd /opt
+git clone -b v2.3 https://github.com/dataease/dataease.git
+</code></pre></div>
+<strong>注意：源码工程目录在下载后的内容的 /core 目录下。</strong></p>
+</div>
+<h3 id="32">3.2 源码编译<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<div class="highlight"><pre><span></span><code>cd dataease
+mvn clean install
+
+cd core
+mvn clean package -Pstandalone -U -Dmaven.test.skip=true
 </code></pre></div>
 </div>
+<div class="admonition abstract">
+<p>如下图所示输出，则编译成功。</p>
+</div>
+<p><img alt="源码部署" src="../../img/installation/%E6%88%90%E5%8A%9F%E7%BC%96%E8%AF%911.png" width="900px" /></p>
+<p><img alt="源码部署" src="../../img/installation/%E7%BC%96%E8%AF%91%E6%88%90%E5%8A%9F2.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>编译完成后，可以在 core-backend/target 目录下看到编译后的 jar 包 CoreApplication.jar</p>
+</div>
+<p><img alt="源码部署" src="../../img/installation/%E7%BC%96%E8%AF%91%E5%AE%8C%E6%88%90.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>core-backend 源码引用到 calcite-core 依赖，是 DataEase 基于 Apache Calcite 工程修改后的依赖包，不属于开源部分。该依赖包会持续迭代，并上传到公共仓库中，对社区版源码的编译和使用不会造成任何影响。   <br />
+<strong>注意：编译前端代码如果出现网络问题导致编译失败，可以将 npm 镜像源换为淘宝镜像源，并使用 pnpm 进行编译。手动编译前端，将下图前端 pom 文件相关插件注释,然后再执行 mvn clean package -Pstandalone -U -Dmaven.test.skip=true。</strong></p>
+</div>
+<p><img alt="源码部署" src="../../img/installation/%E9%95%9C%E5%83%8F.png" width="900px" /></p>
+<h3 id="33">3.3 配置运行环境<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p><strong>操作系统</strong>  </p>
+<p>参数设置，增加系统监听文件数量。
+<div class="highlight"><pre><span></span><code>echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf &amp;&amp; sudo sysctl -p
+</code></pre></div></p>
+</div>
+<div class="admonition abstract">
+<p><strong>MySQL 配置</strong>  </p>
+<p>使用 MySQL 8.0 及以上版本进行，以下是推荐的 MySQL 配置。
+<div class="highlight"><pre><span></span><code>[mysqld]
+datadir=/var/lib/mysql
+
+default-storage-engine=INNODB
+character_set_server=utf8
+lower_case_table_names=1
+table_open_cache=128
+max_connections=2000
+max_connect_errors=6000
+innodb_file_per_table=1
+innodb_buffer_pool_size=1G
+max_allowed_packet=64M
+transaction_isolation=READ-COMMITTED
+innodb_flush_method=O_DIRECT
+innodb_lock_wait_timeout=1800
+innodb_flush_log_at_trx_commit=0
+sync_binlog=0
+group_concat_max_len=1024000
+sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+skip-name-resolve
+
+[mysql]
+default-character-set=utf8
+
+[mysql.server]
+default-character-set=utf8
+</code></pre></div>
+创建 DataEase 运行时使用的数据库。本文档使用 dataeaseV2demo。
+<div class="highlight"><pre><span></span><code>CREATE DATABASE `dataeaseV2demo` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+</code></pre></div></p>
+</div>
+<div class="admonition abstract">
+<p><strong>运行目录设置</strong>  </p>
+<p>创建 DataEase 运行目录。
+<div class="highlight"><pre><span></span><code>mkdir -p /opt/dataease2.0/config /opt/dataease2.0/drivers/ /opt/dataease2.0/cache/ /opt/dataease2.0/data/map /opt/dataease2.0/data/static-resource
+</code></pre></div>
+进入到 DataEase 源码目录，将 DataEase 源码目录下的 drivers 目录的驱动复制到 /opt/dataease2.0/drivers。
+<div class="highlight"><pre><span></span><code>cp -rp /opt/dataease/drivers* /opt/dataease2.0/drivers/
+</code></pre></div>
+将源码 mapFiles 目录下的地图文件复制到 /opt/dataease2.0/data/map 目录下。
+<div class="highlight"><pre><span></span><code>cp -rp /opt/dataease/mapFiles/* /opt/dataease2.0/data/map/
+</code></pre></div>
+将源码staticResource 目录下的资源文件复制到 /opt/dataease2.0/data/static-resource 目录下。
+<div class="highlight"><pre><span></span><code>cp -rp /opt/dataease/staticResource/* /opt/dataease2.0/data/static-resource/
+</code></pre></div>
+进入 DataEase 配置文件目录。
+<div class="highlight"><pre><span></span><code>cd /opt/dataease2.0/config
+</code></pre></div>
+在配置文件目录下创建 DataEase 配置文件 application.yml，YOUR_IP:PORTS/YOUR_DATABASE/YOUR_USER/YOUR_PASSWORD 部分请修改成实际数据库配置。
+<div class="highlight"><pre><span></span><code>server:
+tomcat:
+connection-timeout: 70000
+spring:
+servlet:
+multipart:
+max-file-size: 500MB
+max-request-size: 500MB
+datasource:
+url: jdbc:mysql://YOUR_IP:PORTS/YOUR_DATABASE?autoReconnect=false&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;characterSetResults=UTF-8&amp;zeroDateTimeBehavior=convertToNull&amp;useSSL=false&amp;allowPublicKeyRetrieval=true
+username: YOUR_USER
+password: YOUR_PASSWORD
+</code></pre></div></p>
+</div>
+<h3 id="34-jar">3.4 运行 jar<a class="headerlink" href="#34-jar" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>在 core-backend/target 目录下找到编译后的 jar 包 CoreApplication.jar，复制到运行目录下，运行 jar 包。
+<div class="highlight"><pre><span></span><code>cp /opt/dataease/core/core-backend/target/CoreApplication.jar /opt/dataease2.0/
+cd /opt/dataease2.0
+java -jar CoreApplication.jar
+</code></pre></div></p>
+</div>
+<div class="admonition abstract">
+<p>如下代码准备就绪，说明 DataEase 已成功运行，此时已经可以通过 IP:8100 访问服务。</p>
+</div>
+<p><img alt="源码部署" src="../../img/installation/%E4%BB%A3%E7%A0%81%E5%B0%B1%E7%BB%AA.png" width="900px" /></p>
+<h2 id="4">4 镜像制作<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<h3 id="41-docker">4.1 安装 Docker<a class="headerlink" href="#41-docker" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>在服务器上安装 Docker，本文使用 DataEase 项目组编写安装脚本进行安装，用户可自行选择如何安装 Docker（需安装 docker compsose）。
+<div class="highlight"><pre><span></span><code>curl -fsSL https://resource.fit2cloud.com/get-docker-linux.sh | bash
+
+# 设置 docker 开机自启，并启动 docker 服务
+systemctl enable docker; systemctl daemon-reload; service docker start
+</code></pre></div></p>
+</div>
+<h3 id="42">4.2 制作镜像<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>进入 DataEase 项目根目录，执行镜像制作命令。
+<div class="highlight"><pre><span></span><code>cd /opt/dataease
+docker build -t registry.cn-qingdao.aliyuncs.com/dataease/dataease:v2.3-rc1 .
+</code></pre></div></p>
+</div>
+<div class="admonition abstract">
+<p>如下输出日志参考,使用 docker images 可查看镜像是否成功打包。</p>
+</div>
+<p><img alt="源码部署" src="../../img/installation/%E8%BE%93%E5%87%BA%E6%97%A5%E5%BF%97.png" width="900px" /></p>
+<h2 id="5">5 镜像运行<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<h3 id="51">5.1 配置运行环境<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>创建运行目录。
+<div class="highlight"><pre><span></span><code>mkdir -p /opt/dataease2.0
+</code></pre></div>
+在运行目录下创建 docker-compose.yml，内容如下：
+<div class="highlight"><pre><span></span><code>version: &#39;2.1&#39;
+services:
+
+    dataease:
+        image: registry.cn-qingdao.aliyuncs.com/dataease/dataease:v2.3-rc1
+        container_name: dataease
+        ports:
+            - 8100:8100
+        volumes:
+            - /opt/dataease2.0/conf:/opt/apps/config
+</code></pre></div>
+创建配置文件目录及配置文件 application.yml.
+<div class="highlight"><pre><span></span><code>mkdir -p /opt/dataease2.0/conf
+touch application.yml
+</code></pre></div>
+在配置文件目录下创建 DataEase 配置文件 application.yml，内容如下。YOUR_IP:PORTS/YOUR_DATABASE/YOUR_USER/YOUR_PASSWORD 部分请修改成实际数据库配置。
+<div class="highlight"><pre><span></span><code>server:
+tomcat:
+connection-timeout: 70000
+spring:
+servlet:
+multipart:
+max-file-size: 500MB
+max-request-size: 500MB
+datasource:
+url: jdbc:mysql://YOUR_IP:PORTS/YOUR_DATABASE?autoReconnect=false&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;characterSetResults=UTF-8&amp;zeroDateTimeBehavior=convertToNull&amp;useSSL=false&amp;allowPublicKeyRetrieval=true
+username: YOUR_USER
+password: YOUR_PASSWORD
+</code></pre></div></p>
+</div>
+<h3 id="52">5.2 运行镜像<a class="headerlink" href="#52" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>在运行目录下执行 docker-compose(docker compose) 命令。
+<div class="highlight"><pre><span></span><code>docker-compose up -d
+# 或者 docker compose up -d
+</code></pre></div></p>
+</div>
+<div class="admonition abstract">
+<p>验证 DataEase 服务状态，状态为 health 则正常，浏览器输入 IP:PORTS 访问服务。</p>
+</div>
+<p><img alt="源码部署" src="../../img/installation/%E6%9C%8D%E5%8A%A1%E7%8A%B6%E6%80%81.png" width="900px" />
+<img alt="源码部署" src="../../img/installation/%E8%AE%BF%E9%97%AE%E6%9C%8D%E5%8A%A1.png" width="900px" /></p>
 
 
 
