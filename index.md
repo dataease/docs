@@ -41,7 +41,7 @@
 
 !!! Abstract ""
 
-    - [DataEase 功能列表](https://dataease.io/features.html#:~:text=%E4%B8%8E%E4%BB%96%E4%BA%BA%E5%88%86%E4%BA%AB%E3%80%82-,%E5%8A%9F%E8%83%BD%E5%88%97%E8%A1%A8,-%E6%B3%A8%EF%BC%9A%E5%B8%A6%E6%9C%89%20X)
+   * [DataEase 功能列表](https://dataease.io/features.html#:~:text=%E4%B8%8E%E4%BB%96%E4%BA%BA%E5%88%86%E4%BA%AB%E3%80%82-,%E5%8A%9F%E8%83%BD%E5%88%97%E8%A1%A8,-%E6%B3%A8%EF%BC%9A%E5%B8%A6%E6%9C%89%20X)
 
 ## 6 了解更多 
 
