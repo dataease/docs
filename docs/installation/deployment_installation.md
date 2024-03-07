@@ -24,7 +24,7 @@
 
 ### 2.1 安装 JDK 17
 !!! Abstract ""
-    DataEase v2 使用 JDK17， [Oracle 官网下载 JDK17 安装包](https://www.oracle.com/java/technologies/downloads/#java17),根据 CPU 架构，选择对应安装包。本文档所用测试服务器 CPU 架构为 x64，下载的 x64 架构的 rpm 安装包。
+    DataEase v2 使用 JDK17， [Oracle 官网下载 JDK17 安装包](https://www.oracle.com/java/technologies/downloads/#java17)，根据 CPU 架构，选择对应安装包。本文档所用测试服务器 CPU 架构为 x64，下载的 x64 架构的 rpm 安装包。
     ```
     # 下载 JDK17 RPM 安装包
     wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.rpm
@@ -130,7 +130,7 @@
     cd /opt
     git clone -b v2.3 https://github.com/dataease/dataease.git
     ```
-    **注意：源码工程目录在下载后的内容的 /core 目录下。**
+    **注意：源码工程目录在下载后的内容的 core 目录下。**
 
 ### 3.2 源码编译
 !!! Abstract ""
