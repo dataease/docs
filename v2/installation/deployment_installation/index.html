@@ -3483,24 +3483,24 @@ v16.15.0
 
 [root@iZt4n8oa58aqukyv8sf1ciZ ~]# npm version
 {
-npm: &#39;8.5.5&#39;,
-node: &#39;16.15.0&#39;,
-v8: &#39;9.4.146.24-node.20&#39;,
-uv: &#39;1.43.0&#39;,
-zlib: &#39;1.2.11&#39;,
-brotli: &#39;1.0.9&#39;,
-ares: &#39;1.18.1&#39;,
-modules: &#39;93&#39;,
-nghttp2: &#39;1.47.0&#39;,
-napi: &#39;8&#39;,
-llhttp: &#39;6.0.4&#39;,
-openssl: &#39;1.1.1n+quic&#39;,
-cldr: &#39;40.0&#39;,
-icu: &#39;70.1&#39;,
-tz: &#39;2021a3&#39;,
-unicode: &#39;14.0&#39;,
-ngtcp2: &#39;0.1.0-DEV&#39;,
-nghttp3: &#39;0.1.0-DEV&#39;
+    npm: &#39;8.5.5&#39;,
+    node: &#39;16.15.0&#39;,
+    v8: &#39;9.4.146.24-node.20&#39;,
+    uv: &#39;1.43.0&#39;,
+    zlib: &#39;1.2.11&#39;,
+    brotli: &#39;1.0.9&#39;,
+    ares: &#39;1.18.1&#39;,
+    modules: &#39;93&#39;,
+    nghttp2: &#39;1.47.0&#39;,
+    napi: &#39;8&#39;,
+    llhttp: &#39;6.0.4&#39;,
+    openssl: &#39;1.1.1n+quic&#39;,
+    cldr: &#39;40.0&#39;,
+    icu: &#39;70.1&#39;,
+    tz: &#39;2021a3&#39;,
+    unicode: &#39;14.0&#39;,
+    ngtcp2: &#39;0.1.0-DEV&#39;,
+    nghttp3: &#39;0.1.0-DEV&#39;
 }
 </code></pre></div></p>
 </div>
@@ -3538,7 +3538,7 @@ mvn clean package -Pstandalone -U -Dmaven.test.skip=true
 <p><img alt="源码部署" src="../../img/installation/%E9%95%9C%E5%83%8F.png" width="900px" /></p>
 <h3 id="33">3.3 配置运行环境<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p><strong>操作系统</strong>  </p>
+<p><strong>操作系统设置</strong>  </p>
 <p>参数设置，增加系统监听文件数量。
 <div class="highlight"><pre><span></span><code>echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf &amp;&amp; sudo sysctl -p
 </code></pre></div></p>
@@ -3596,17 +3596,17 @@ default-character-set=utf8
 </code></pre></div>
 在配置文件目录下创建 DataEase 配置文件 application.yml，YOUR_IP:PORTS/YOUR_DATABASE/YOUR_USER/YOUR_PASSWORD 部分请修改成实际数据库配置。
 <div class="highlight"><pre><span></span><code>server:
-tomcat:
-connection-timeout: 70000
+    tomcat:
+        connection-timeout: 70000
 spring:
-servlet:
-multipart:
-max-file-size: 500MB
-max-request-size: 500MB
+    servlet:
+        multipart:
+            max-file-size: 500MB
+            max-request-size: 500MB
 datasource:
-url: jdbc:mysql://YOUR_IP:PORTS/YOUR_DATABASE?autoReconnect=false&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;characterSetResults=UTF-8&amp;zeroDateTimeBehavior=convertToNull&amp;useSSL=false&amp;allowPublicKeyRetrieval=true
-username: YOUR_USER
-password: YOUR_PASSWORD
+    url: jdbc:mysql://YOUR_IP:PORTS/YOUR_DATABASE?autoReconnect=false&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;characterSetResults=UTF-8&amp;zeroDateTimeBehavior=convertToNull&amp;useSSL=false&amp;allowPublicKeyRetrieval=true
+    username: YOUR_USER
+    password: YOUR_PASSWORD
 </code></pre></div></p>
 </div>
 <h3 id="34-jar">3.4 运行 jar<a class="headerlink" href="#34-jar" title="Permanent link">&para;</a></h3>
@@ -3639,7 +3639,7 @@ docker build -t registry.cn-qingdao.aliyuncs.com/dataease/dataease:v2.3-rc1 .
 </code></pre></div></p>
 </div>
 <div class="admonition abstract">
-<p>如下输出日志参考,使用 docker images 可查看镜像是否成功打包。</p>
+<p>如下输出日志参考，使用 docker images 可查看镜像是否成功打包。</p>
 </div>
 <p><img alt="源码部署" src="../../img/installation/%E8%BE%93%E5%87%BA%E6%97%A5%E5%BF%97.png" width="900px" /></p>
 <h2 id="5">5 镜像运行<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
@@ -3666,17 +3666,17 @@ touch application.yml
 </code></pre></div>
 在配置文件目录下创建 DataEase 配置文件 application.yml，内容如下。YOUR_IP:PORTS/YOUR_DATABASE/YOUR_USER/YOUR_PASSWORD 部分请修改成实际数据库配置。
 <div class="highlight"><pre><span></span><code>server:
-tomcat:
-connection-timeout: 70000
+    tomcat:
+        connection-timeout: 70000
 spring:
-servlet:
-multipart:
-max-file-size: 500MB
-max-request-size: 500MB
+    servlet:
+        multipart:
+            max-file-size: 500MB
+            max-request-size: 500MB
 datasource:
-url: jdbc:mysql://YOUR_IP:PORTS/YOUR_DATABASE?autoReconnect=false&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;characterSetResults=UTF-8&amp;zeroDateTimeBehavior=convertToNull&amp;useSSL=false&amp;allowPublicKeyRetrieval=true
-username: YOUR_USER
-password: YOUR_PASSWORD
+    url: jdbc:mysql://YOUR_IP:PORTS/YOUR_DATABASE?autoReconnect=false&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;characterSetResults=UTF-8&amp;zeroDateTimeBehavior=convertToNull&amp;useSSL=false&amp;allowPublicKeyRetrieval=true
+    username: YOUR_USER
+    password: YOUR_PASSWORD
 </code></pre></div></p>
 </div>
 <h3 id="52">5.2 运行镜像<a class="headerlink" href="#52" title="Permanent link">&para;</a></h3>
