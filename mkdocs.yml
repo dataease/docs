@@ -51,10 +51,10 @@ nav:
           - v2.1.0: change-v2-1.md
   - 系统架构: system_arch.md
   - 安装部署:
-      - 在线安装: installation/online_installation.md
       - 离线安装: installation/offline_INSTL_and_UPG.md
-      - 在线升级: installation/online_upgrade.md
       - 离线升级: installation/offline_upgrade.md
+      - 在线安装: installation/online_installation.md
+      - 在线升级: installation/online_upgrade.md
       - Windows 单机部署: installation/offline_installation_ova.md
       - 源码部署: installation/deployment_installation.md
       - 命令行工具: installation/cli.md
