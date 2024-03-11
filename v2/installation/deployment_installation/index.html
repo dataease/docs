@@ -925,7 +925,7 @@
           <li class="md-nav__item">
   <a href="#24-nodejs" class="md-nav__link">
     <span class="md-ellipsis">
-      2.4  安装配置 nodejs（可选）
+      2.4  安装配置 nodejs
     </span>
   </a>
   
@@ -3211,7 +3211,7 @@
           <li class="md-nav__item">
   <a href="#24-nodejs" class="md-nav__link">
     <span class="md-ellipsis">
-      2.4  安装配置 nodejs（可选）
+      2.4  安装配置 nodejs
     </span>
   </a>
   
@@ -3440,7 +3440,7 @@ Default locale: zh_CN, platform encoding: UTF-8
 OS name: &quot;linux&quot;, version: &quot;3.10.0-1160.105.1.el7.x86_64&quot;, arch: &quot;amd64&quot;, family: &quot;unix&quot;
 </code></pre></div></p>
 </div>
-<h3 id="24-nodejs">2.4  安装配置 nodejs（可选）<a class="headerlink" href="#24-nodejs" title="Permanent link">&para;</a></h3>
+<h3 id="24-nodejs">2.4  安装配置 nodejs<a class="headerlink" href="#24-nodejs" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p>执行命令安装 nodejs。
 <div class="highlight"><pre><span></span><code># 下载并安装 nodejs
@@ -3488,7 +3488,7 @@ v16.15.0
 <div class="highlight"><pre><span></span><code>cd /opt
 git clone -b v2.3 https://github.com/dataease/dataease.git
 </code></pre></div>
-<strong>注意：源码工程目录在下载后的内容的 core 目录下。</strong></p>
+<strong>注意：前后端项目目录在下载后的内容的 core 目录下。</strong></p>
 </div>
 <h3 id="32">3.2 源码编译<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
@@ -3560,7 +3560,7 @@ default-character-set=utf8
 <div class="highlight"><pre><span></span><code>mkdir -p /opt/dataease2.0/config /opt/dataease2.0/drivers/ /opt/dataease2.0/cache/ /opt/dataease2.0/data/map /opt/dataease2.0/data/static-resource
 </code></pre></div>
 进入到 DataEase 源码目录，将 DataEase 源码目录下的 drivers 目录的驱动复制到 /opt/dataease2.0/drivers。
-<div class="highlight"><pre><span></span><code>cp -rp /opt/dataease/drivers* /opt/dataease2.0/drivers/
+<div class="highlight"><pre><span></span><code>cp -rp /opt/dataease/drivers/* /opt/dataease2.0/drivers/
 </code></pre></div>
 将源码 mapFiles 目录下的地图文件复制到 /opt/dataease2.0/data/map 目录下。
 <div class="highlight"><pre><span></span><code>cp -rp /opt/dataease/mapFiles/* /opt/dataease2.0/data/map/
