@@ -79,7 +79,7 @@
     Default locale: zh_CN, platform encoding: UTF-8
     OS name: "linux", version: "3.10.0-1160.105.1.el7.x86_64", arch: "amd64", family: "unix"
     ```
-### 2.4  安装配置 nodejs（可选）
+### 2.4  安装配置 nodejs
 !!! Abstract ""
     执行命令安装 nodejs。
     ```
@@ -130,7 +130,7 @@
     cd /opt
     git clone -b v2.3 https://github.com/dataease/dataease.git
     ```
-    **注意：源码工程目录在下载后的内容的 core 目录下。**
+    **注意：前后端项目目录在下载后的内容的 core 目录下。**
 
 ### 3.2 源码编译
 !!! Abstract ""
@@ -210,7 +210,7 @@
     ```
     进入到 DataEase 源码目录，将 DataEase 源码目录下的 drivers 目录的驱动复制到 /opt/dataease2.0/drivers。
     ```
-    cp -rp /opt/dataease/drivers* /opt/dataease2.0/drivers/
+    cp -rp /opt/dataease/drivers/* /opt/dataease2.0/drivers/
     ```
     将源码 mapFiles 目录下的地图文件复制到 /opt/dataease2.0/data/map 目录下。
     ```
