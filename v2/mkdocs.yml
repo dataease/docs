@@ -1,0 +1,6 @@
+site_name: My Project
+nav:
+  - Home: index.md
+  - Contact: contact.md
+  - docs_dir: docs
+
