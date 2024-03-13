@@ -136,6 +136,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://dataease.io/docs/v2/installation/1panel_installation/</loc>
+         <lastmod>2024-03-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://dataease.io/docs/v2/installation/backup_faq/</loc>
          <lastmod>2024-03-13</lastmod>
          <changefreq>daily</changefreq>
