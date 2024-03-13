@@ -53,6 +53,7 @@ nav:
   - 安装部署:
       - 离线安装: installation/offline_INSTL_and_UPG.md
       - 离线升级: installation/offline_upgrade.md
+      - 1Panel 安装: installation/1panel_installation.md
       - 在线安装: installation/online_installation.md
       - Windows 单机部署: installation/offline_installation_ova.md
       - 源码部署: installation/deployment_installation.md
