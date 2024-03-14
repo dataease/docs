@@ -5,7 +5,7 @@
     **注意：** 一键安装采用默认安装参数，更多有关离线部署、集群部署、Windows 部署等方式可查看本文档[安装模式](./installation/installation_mode.md)。  
     **部署服务器要求：**
 
-    * 操作系统: CentOS/RHEL 7 及以上 64 位系统
+    * 操作系统: Ubuntu 22.04 / CentOS 7 64 位系统
     * CPU/内存: 4核8G
     * 磁盘空间: 200G
     * **可访问互联网**
