@@ -167,7 +167,7 @@
 
     获取企业 ID，需要访问钉钉开放平台 https://open-dev.dingtalk.com/#/，以管理员权限登录钉钉后台，登录后即可查到对应的企业 ID，可参考下图：
 
-![对接钉钉平台](../img/xpack/钉钉corpid.png){ width="900px" }x" }
+![对接钉钉平台](../img/xpack/钉钉corpid.png){ width="900px" }
 
 !!! Abstract ""
     获取应用 ID 和应用密钥，需要在钉钉工作台的【应用管理】中创建一个对应的应用，可以先登录工作台 https://oa.dingtalk.com/index.htm#/microApp/microAppList；  
