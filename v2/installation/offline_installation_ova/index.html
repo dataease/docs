@@ -3154,7 +3154,7 @@ VirtualBox 下载链接：<a href="https://download.virtualbox.org/virtualbox/7.
 <h3 id="22-ubuntu-ova">2.2  虚拟机导入 Ubuntu 系统 OVA 包<a class="headerlink" href="#22-ubuntu-ova" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p>在虚拟机中安装 Ubuntu 系统，可以下载 DataEase 提供的 Ubuntu OVA 文件，直接导入到 VirtualBox 就可以使用，省去安装系统的过程。<br />
-通过网盘链接下载 Ubuntu OVA 文件: <a href="https://pan.baidu.com/s/1gNM-tvT35YPpineCVauviA?pwd=DeUb">https://pan.baidu.com/s/1gNM-tvT35YPpineCVauviA?pwd=DeUb</a> 提取码：DeUb</p>
+通过网盘链接下载 Ubuntu OVA 文件: <a href="https://pan.baidu.com/s/1lIV8QXQcwiPlYjMxlifdyQ?pwd=DeUb">https://pan.baidu.com/s/1lIV8QXQcwiPlYjMxlifdyQ?pwd=DeUb</a>  提取码：DeUb 。</p>
 </div>
 <div class="admonition abstract">
 <p>在 VirtualBox 界面上，点击 ”导入” ，选择下载好的 Ubuntu OVA 文件，点击 “下一步”。</p>
@@ -3190,12 +3190,29 @@ VirtualBox 下载链接：<a href="https://download.virtualbox.org/virtualbox/7.
 <p><img alt="启动" src="../../img/installation/%E6%9F%A5%E7%9C%8B%E8%99%9A%E6%8B%9F%E6%9C%BAIP.png" width="900px" /></p>
 <h3 id="23-ubuntu-dataease">2.3  Ubuntu 系统中安装 DataEase<a class="headerlink" href="#23-ubuntu-dataease" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p>成功在虚拟机中安装并启动 Ubuntu 系统，右键 Windows 图标，选择“PowerShell”或“终端”(Windows 版本不同，选项不同)。      <br />
+<p>成功在虚拟机中安装并启动 Ubuntu 系统，右键 Windows 图标，选择“PowerShell”或“终端”(Windows 版本不同，选项不同)。    <br />
 在 PowerShell 界面输入：ssh root@192.168.11.230 登录到 Ubuntu 系统。</p>
 </div>
 <p><img alt="启动" src="../../img/installation/powershell.png" width="900px" /></p>
 <div class="admonition abstract">
-<p>连接 Ubuntu 系统，按照 <a href="https://dataease.io/docs/v2/installation/offline_INSTL_and_UPG/">DataEase 离线部署</a>步骤进行操作，即可部署 DataEase。</p>
+<p>可以将 DataEase 的安装包下载到 Ubuntu 系统中，访问地址：<a href="https://community.fit2cloud.com/#/products/dataease/downloads">https://community.fit2cloud.com/#/products/dataease/downloads</a> 下载安装包；</p>
+</div>
+<p><img alt="启动" src="../../img/installation/%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%8C%85.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>浏览器开始下载后，打开浏览器的 “下载内容”；</p>
+</div>
+<p><img alt="启动" src="../../img/installation/%E4%B8%8B%E8%BD%BD%E5%86%85%E5%AE%B9.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>右击下载任务，选择 “复制链接地址”；</p>
+</div>
+<p><img alt="启动" src="../../img/installation/%E5%A4%8D%E5%88%B6%E5%9C%B0%E5%9D%80.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>回到 PowerShell 界面，输入：wget  -O dataease.tar.gz "粘贴复制的链接"</p>
+<p>按回车键开始下载安装包；</p>
+</div>
+<p><img alt="启动" src="../../img/installation/%E7%B2%98%E8%B4%B4%E5%A4%8D%E5%88%B6%E9%93%BE%E6%8E%A5.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>安装包下载完成就可以开始部署 DataEase。按照 <a href="https://dataease.io/docs/v2/installation/offline_installation/">DataEase 离线部署</a>步骤进行操作，即可部署 DataEase。</p>
 </div>
 
 
