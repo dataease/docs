@@ -1118,7 +1118,16 @@
         <li class="md-nav__item">
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
-      3 其他注意事项
+      3 登录访问
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 其他注意事项
     </span>
   </a>
   
@@ -4881,7 +4890,16 @@
         <li class="md-nav__item">
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
-      3 其他注意事项
+      3 登录访问
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 其他注意事项
     </span>
   </a>
   
@@ -4980,14 +4998,14 @@ group_concat_max_len=1024000
 └── templates                                   #-- DataEase 各组件及数据库等中间件的配置文件的原始文件
 </code></pre></div></p>
 </div>
+<h2 id="3">3  登录访问<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p><strong>安装成功后，通过浏览器访问如下页面登录 DataEase：</strong>
-<div class="highlight"><pre><span></span><code>地址: http://目标服务器IP地址:服务运行端口
-用户名: admin
-密码: dataease
-</code></pre></div></p>
+<p>安装成功后，通过浏览器访问如下页面登录：<br />
+- <strong>访问地址</strong> : <a href="http://目标服务器IP地址:服务运行端口">http://目标服务器IP地址:服务运行端口</a><br />
+- <strong>登录用户名</strong>: admin<br />
+- <strong>登录密码</strong>: dataease</p>
 </div>
-<h2 id="3">3 其他注意事项<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h2 id="4">4 其他注意事项<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>内置示例数据以 flyway 的形式在 DataEase 启动时自动插入到了 MySQL 数据库中，如果使用了外部 MySQL 或者修改了内置 MySQL 的容器名称的话，需要登录到 DataEase 控制台，进入到【数据源】页面，选择 "demo" 数据源，将 "demo" 数据源的相关连接信息修改正确，保存后即可正常使用内置示例数据。</p>
 </div>
