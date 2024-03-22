@@ -32,7 +32,7 @@
 
 !!! Abstract ""
 	在虚拟机中安装 Ubuntu 系统，可以下载 DataEase 提供的 Ubuntu OVA 文件，直接导入到 VirtualBox 就可以使用，省去安装系统的过程。  
-	通过网盘链接下载 Ubuntu OVA 文件: https://pan.baidu.com/s/1gNM-tvT35YPpineCVauviA?pwd=DeUb 提取码：DeUb 
+	通过网盘链接下载 Ubuntu OVA 文件: https://pan.baidu.com/s/1lIV8QXQcwiPlYjMxlifdyQ?pwd=DeUb 提取码：DeUb
 
 
 !!! Abstract ""
@@ -79,4 +79,27 @@
 ![启动](../img/installation/powershell.png){ width="900px" }
 
 !!! Abstract ""
-	连接 Ubuntu 系统，按照 [DataEase 离线部署]( https://dataease.io/docs/v1/installation/offline_installation/)步骤进行操作，即可部署 DataEase。
+	现在可以将 DataEase 的安装包下载到 Ubuntu 系统中，访问地址：https://community.fit2cloud.com/#/products/dataease/downloads 下载安装包；
+
+![启动](../img/installation/下载安装包.png){ width="900px" }
+
+!!! Abstract ""
+	浏览器开始下载后，打开浏览器的 “下载内容”；
+
+![启动](../img/installation/下载内容.png){ width="900px" }
+
+!!! Abstract ""
+	右击下载任务，选择 “复制链接地址”；
+
+![启动](../img/installation/复制地址.png){ width="900px" }
+
+!!! Abstract ""
+	回到 PowerShell 界面，输入：wget  -O dataease.tar.gz "粘贴复制的链接"
+
+	按回车键开始下载安装包；
+
+![启动](../img/installation/粘贴复制链接.png){ width="900px" }
+
+
+!!! Abstract ""
+	安装包下载完成就可以开始部署 DataEase。按照 [DataEase 离线部署]( https://dataease.io/docs/v1/installation/offline_installation/)步骤进行操作，即可部署 DataEase。
