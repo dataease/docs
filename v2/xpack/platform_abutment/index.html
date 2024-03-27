@@ -2816,15 +2816,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#13" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.3 企业微信免登设置
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -2858,15 +2849,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#23" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.3 钉钉免登设置
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -2895,15 +2877,6 @@
   <a href="#32" class="md-nav__link">
     <span class="md-ellipsis">
       3.2 应用权限设置
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#33" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.3 飞书免登设置
     </span>
   </a>
   
@@ -3176,15 +3149,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#13" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.3 企业微信免登设置
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -3218,15 +3182,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#23" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.3 钉钉免登设置
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -3255,15 +3210,6 @@
   <a href="#32" class="md-nav__link">
     <span class="md-ellipsis">
       3.2 应用权限设置
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#33" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.3 飞书免登设置
     </span>
   </a>
   
@@ -3386,28 +3332,33 @@
 <p>根据以上信息完成下图界面的信息录入并校验、保存。</p>
 </div>
 <p><img alt="对接企业微信" src="../../img/xpack/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%A0%A1%E9%AA%8C%E6%88%90%E5%8A%9F.png" width="900px" /></p>
-<h3 id="13">1.3 企业微信免登设置<a class="headerlink" href="#13" title="Permanent link">&para;</a></h3>
-<div class="admonition abstract">
-<p>应用主页地址的构造可以参考企业微信的在线文档<a href="https://developer.work.weixin.qq.com/document/path/91120#%E6%9E%84%E9%80%A0%E4%BC%81%E4%B8%9Aoauth2%E9%93%BE%E6%8E%A5">《构造网页授权链接——构造企业oauth2链接》</a>。<br />
-应用主页地址主要结构如下面的链接所示，注意下面的红字部分：<br />
-<a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=CORPID&amp;redirect_uri=REDIRECT_URI&amp;response_type=code&amp;scope=SCOPE&amp;agentid=AGENTID#wechat_redirect">https://open.weixin.qq.com/connect/oauth2/authorize?appid=CORPID&amp;redirect_uri=REDIRECT_URI&amp;response_type=code&amp;scope=SCOPE&amp;agentid=AGENTID#wechat_redirect</a><br />
-详细说明如下：</p>
-<ul>
-<li>CORPID - 企业 ID</li>
-<li>REDIRECT_URI - 回调地址，例如 <a href="https://dataease.fit2cloud.com/#/de-auto-login?type=wecom">https://dataease.fit2cloud.com/#/de-auto-login?type=wecom</a>，调整域名部分即可</li>
-<li>SCOPE - 填 snsapi_base 即可</li>
-<li>AGENTID - 应用 ID</li>
-</ul>
-<p>主页地址示例：
-<a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=ww8c9076cfd8ea1fc1&amp;redirect_uri=https://dataease.fit2cloud.com/#/de-auto-login?type=wecom&amp;response_type=code&amp;scope=snsapi_base&amp;agentid=1000010#wechat_redirect">https://open.weixin.qq.com/connect/oauth2/authorize?appid=ww8c9076cfd8ea1fc1&amp;redirect_uri=https://dataease.fit2cloud.com/#/de-auto-login?type=wecom&amp;response_type=code&amp;scope=snsapi_base&amp;agentid=1000010#wechat_redirect</a></p>
-</div>
-<div class="admonition abstract">
-<p>在应用的【应用主页】栏点击【配置】，将上一步获取到的应用主页地址填入电脑端网址即可。</p>
-</div>
-<p><img alt="对接企业微信" src="../../img/xpack/%E4%BC%81%E5%BE%AE%E5%85%8D%E7%99%BB5.png" width="900px" /></p>
-<div class="admonition abstract">
-<p>在企业微信工作台中找到 DataEase 应用，点击该应用即可免登访问 DataEase。</p>
-</div>
+<!--
+
+### 1.3 企业微信免登设置
+
+!!! Abstract ""
+    应用主页地址的构造可以参考企业微信的在线文档[《构造网页授权链接——构造企业oauth2链接》](https://developer.work.weixin.qq.com/document/path/91120#%E6%9E%84%E9%80%A0%E4%BC%81%E4%B8%9Aoauth2%E9%93%BE%E6%8E%A5)。  
+    应用主页地址主要结构如下面的链接所示，注意下面的红字部分：  
+    https://open.weixin.qq.com/connect/oauth2/authorize?appid=CORPID&redirect_uri=REDIRECT_URI&response_type=code&scope=SCOPE&agentid=AGENTID#wechat_redirect  
+    详细说明如下：
+
+    - CORPID - 企业 ID
+    - REDIRECT_URI - 回调地址，例如 https://dataease.fit2cloud.com/#/de-auto-login?type=wecom，调整域名部分即可
+    - SCOPE - 填 snsapi_base 即可
+    - AGENTID - 应用 ID
+
+    主页地址示例：
+    https://open.weixin.qq.com/connect/oauth2/authorize?appid=ww8c9076cfd8ea1fc1&redirect_uri=https://dataease.fit2cloud.com/#/de-auto-login?type=wecom&response_type=code&scope=snsapi_base&agentid=1000010#wechat_redirect
+
+!!! Abstract ""
+    在应用的【应用主页】栏点击【配置】，将上一步获取到的应用主页地址填入电脑端网址即可。
+
+![对接企业微信](../img/xpack/企微免登5.png){ width="900px" }
+
+!!! Abstract ""
+    在企业微信工作台中找到 DataEase 应用，点击该应用即可免登访问 DataEase。
+ -->
+
 <h2 id="2">2 钉钉设置<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <h3 id="21">2.1 配置平台对接信息<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
@@ -3454,20 +3405,27 @@
 <p>按照以上信息完成下图所示的平台对接配置即可。</p>
 </div>
 <p><img alt="对接钉钉平台" src="../../img/xpack/%E9%92%89%E9%92%89%E6%A0%A1%E9%AA%8C%E6%88%90%E5%8A%9F.png" width="900px" /></p>
-<h3 id="23">2.3 钉钉免登设置<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
-<div class="admonition abstract">
-<p>在钉钉开放平台的【应用能力】栏中，进入【网页应用】，设置【应用首页地址】和【PC端首页地址】。首页地址格式为：http(s)://xxx.xxx.xxx/#/de-auto-login?corpId=<span class="arithmatex"><span class="MathJax_Preview">CORPID</span><script type="math/tex">CORPID</script></span>，corpId=<span class="arithmatex"><span class="MathJax_Preview">CORPID</span><script type="math/tex">CORPID</script></span> 无需替换成真正的 corpId，此处仅为变量。</p>
-</div>
-<p><img alt="对接钉钉平台" src="../../img/xpack/%E9%92%89%E9%92%89%E6%B7%BB%E5%8A%A0%E7%BD%91%E9%A1%B5%E5%BA%94%E7%94%A8.png" width="900px" />
-<img alt="对接钉钉平台" src="../../img/xpack/%E9%92%89%E9%92%89%E5%B9%B3%E5%8F%B0%E7%BD%91%E9%A1%B5%E8%AE%BE%E7%BD%AE.png" width="900px" /></p>
-<div class="admonition abstract">
-<p>在【登录与分享】页面中添加回调域名，域名格式为：http(s)://xxx.xxx.xxx/plugin/dingtalk/callBackWithoutLogin。</p>
-</div>
-<p><img alt="对接钉钉平台" src="../../img/xpack/%E9%92%89%E9%92%89%E5%88%86%E4%BA%AB%E8%AE%BE%E7%BD%AE%E5%9B%9E%E8%B0%83%E5%9F%9F%E5%90%8D.png" width="900px" /></p>
-<div class="admonition abstract">
-<p>移动端免登，和桌面端类似，就是给每个应用添加上移动端的首页设置就可以了。</p>
-</div>
-<p><img alt="对接钉钉平台" src="../../img/xpack/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%85%8D%E7%99%BB.png" width="900px" /></p>
+<!--
+
+### 2.3 钉钉免登设置
+
+!!! Abstract ""
+    在钉钉开放平台的【应用能力】栏中，进入【网页应用】，设置【应用首页地址】和【PC端首页地址】。首页地址格式为：http(s)://xxx.xxx.xxx/#/de-auto-login?corpId=$CORPID$，corpId=$CORPID$ 无需替换成真正的 corpId，此处仅为变量。
+
+![对接钉钉平台](../img/xpack/钉钉添加网页应用.png){ width="900px" }
+![对接钉钉平台](../img/xpack/钉钉平台网页设置.png){ width="900px" }
+
+!!! Abstract ""
+    在【登录与分享】页面中添加回调域名，域名格式为：http(s)://xxx.xxx.xxx/plugin/dingtalk/callBackWithoutLogin。
+
+![对接钉钉平台](../img/xpack/钉钉分享设置回调域名.png){ width="900px" }
+
+!!! Abstract ""
+    移动端免登，和桌面端类似，就是给每个应用添加上移动端的首页设置就可以了。
+
+![对接钉钉平台](../img/xpack/移动端免登.png){ width="900px" }
+ -->
+
 <h2 id="3">3 飞书设置<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 <h3 id="31">3.1 配置平台对接信息<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
@@ -3498,7 +3456,7 @@
 <div class="admonition abstract">
 <p>在【安全设置】里添加重定向 URL，即 DataEase 服务器地址。与网页应用设置的地址、DataEase 回调域名一致。</p>
 </div>
-<p><img alt="对接飞书平台" src="../../img/xpack/v2%E9%A3%9E%E4%B9%A6%E5%AF%B9%E6%8E%A51%20%287%29.png" width="900px" /></p>
+<p><img alt="对接飞书平台" src="../../img/xpack/%E9%A3%9E%E4%B9%A6%E5%9B%9E%E8%B0%83%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE.png" width="900px" /></p>
 <div class="admonition abstract">
 <p>应用授权，在应用的【权限管理】里进行应用的相关授权，具体权限参考下图：</p>
 </div>
@@ -3522,23 +3480,32 @@
 <p><img alt="对接飞书平台" src="../../img/xpack/v2%E9%A3%9E%E4%B9%A6%E5%AF%B9%E6%8E%A51%20%284%29.png" width="900px" /></p>
 <p><img alt="对接飞书平台" src="../../img/xpack/v2%E9%A3%9E%E4%B9%A6%E5%AF%B9%E6%8E%A51%20%283%29.png" width="900px" /></p>
 <p><img alt="对接飞书平台" src="../../img/xpack/v2%E9%A3%9E%E4%B9%A6%E5%AF%B9%E6%8E%A51%20%282%29.png" width="900px" /></p>
-<h3 id="33">3.3 飞书免登设置<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
-<div class="admonition abstract">
-<p>在飞书开放平台中，选择 DataEase 应用。在【应用功能】下的【网页】里，开启网页功能，并配置【桌面端主页】。主页地址格式：http(s)://xxx.xxx.xxx.xxx/#/de-auto-login?type=lark。</p>
-</div>
-<p><img alt="对接飞书平台" src="../../img/xpack/%E9%A3%9E%E4%B9%A6%E5%AF%B9%E6%8E%A519.png" width="900px" /></p>
-<div class="admonition abstract">
-<p>在【安全设置】里添加【重定向URL】。URL格式为：http(s)://xxx.xxx.xxx.xxx/#/de-auto-login?type=lark。</p>
-</div>
-<p><img alt="对接飞书平台" src="../../img/xpack/%E9%A3%9E%E4%B9%A6%E5%AF%B9%E6%8E%A520.png" width="900px" /></p>
-<div class="admonition abstract">
-<p>滚动到页面下方，继续添加【可信域名】，将 DataEase 服务器的域名添加到可信域名中。此处支持 http(s)://192.168.1.101:9999 格式的内容。</p>
-</div>
-<p><img alt="对接飞书平台" src="../../img/xpack/%E9%A3%9E%E4%B9%A6%E5%AF%B9%E6%8E%A522.png" width="900px" /></p>
-<div class="admonition abstract">
-<p>移动端免登，和桌面端类似，就是给每个应用添加上移动端的首页设置就可以了。</p>
-</div>
-<p><img alt="对接飞书平台" src="../../img/xpack/%E9%A3%9E%E4%B9%A6%E5%AF%B9%E6%8E%A524.png" width="900px" /></p>
+<!--
+
+### 3.3 飞书免登设置
+
+!!! Abstract ""
+    在飞书开放平台中，选择 DataEase 应用。在【应用功能】下的【网页】里，开启网页功能，并配置【桌面端主页】。主页地址格式：http(s)://xxx.xxx.xxx.xxx/#/de-auto-login?type=lark。
+
+![对接飞书平台](../img/xpack/飞书对接19.png){ width="900px" }
+
+!!! Abstract ""
+    在【安全设置】里添加【重定向URL】。URL格式为：http(s)://xxx.xxx.xxx.xxx/#/de-auto-login?type=lark。
+
+![对接飞书平台](../img/xpack/飞书对接20.png){ width="900px" }
+
+!!! Abstract ""
+    滚动到页面下方，继续添加【可信域名】，将 DataEase 服务器的域名添加到可信域名中。此处支持 http(s)://192.168.1.101:9999 格式的内容。
+
+![对接飞书平台](../img/xpack/飞书对接22.png){ width="900px" }
+
+!!! Abstract ""
+    移动端免登，和桌面端类似，就是给每个应用添加上移动端的首页设置就可以了。
+
+![对接飞书平台](../img/xpack/飞书对接24.png){ width="900px" }
+
+ -->
+
 <h2 id="4-lark">4 Lark 设置<a class="headerlink" href="#4-lark" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>支持飞书国际版平台接入，可扫码登录。</p>
