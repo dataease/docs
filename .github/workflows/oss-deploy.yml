@@ -23,4 +23,4 @@ jobs:
           ACCESS_KEY_SECRET: ${{ secrets.DATAEASE_OSS_SK }}
           ACCESS_KEY_BUCKET: ${{ secrets.DATAEASE_OSS_BUCKET }}
         run: |
-          ossutil cp -r ./ oss://$ACCESS_KEY_BUCKET/docs --access-key-id=$ACCESS_KEY_ID --access-key-secret=$ACCESS_KEY_SECRET --endpoint=oss-cn-zhangjiakou.aliyuncs.com
+          ossutil cp -r -f ./ oss://$ACCESS_KEY_BUCKET/docs --access-key-id=$ACCESS_KEY_ID --access-key-secret=$ACCESS_KEY_SECRET --endpoint=oss-cn-zhangjiakou.aliyuncs.com --exclude '.git*' 
