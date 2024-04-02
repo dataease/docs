@@ -32,6 +32,11 @@
 
 ![图形属性_渐变色方案](../../img/view_generation/图形属性_渐变色方案.png){ width="900px" }
 
+!!! Abstract ""
+    AntV 和 ECharts 图库的饼图和环形图均支持 TopN 设置，即显示 TopN，其余的可以合并为其他 。
+
+![name](../../img/release_notes/1.4 饼图:环形图支持显示 TopN.png){ width="900px" }
+
 ### 1.2 大小
 
 !!! Abstract ""
@@ -62,6 +67,11 @@
 
 ![图形属性](../../img/view_generation/AntV图库标签内容.png){ width="900px" }
 
+!!! Abstract ""
+    AntV 漏斗图支持显示转换率
+
+![name](../../img/release_notes/1.11%20AntV%20漏斗图支持显示转换率.png){ width="900px" }
+
 ### 1.4 提示
 
 !!! Abstract ""
@@ -84,6 +94,11 @@
 !!! Abstract ""
     例如：AntV 明细表/汇总表支持按列设置宽度。支持手动拖拉和针对各个字段配置所占表格宽度的百分比。  
     **注意：在预览界面与编辑界面均支持手动拖拉表格宽度，但只有编辑界面下拖拉完成保存后生效，在预览界面拖拉仅用于临时使用，刷新页面后将还原。**
+
+!!! Abstract ""
+    AntV 明细表/汇总表可控制是否启用表头排序
+
+![name](../../img/release_notes/1.13  AntV 明细表:汇总表可控制是否启用表头排序.png){ width="900px" }
 
 ![name](../../img/release_notes/v1-18-16-3.PNG){ width="900px" }
 

@@ -45,6 +45,7 @@ nav:
   - 版本迭代:
       - 更新日志: changelog.md
       - 更新说明:
+          - v1.18.18: release_notes/v1.18.16.md
           - v1.18.16: release_notes/v1.18.16.md
           - v1.18.15: release_notes/v1.18.15.md
           - v1.18.14: release_notes/v1.18.14.md

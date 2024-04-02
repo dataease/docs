@@ -48,6 +48,24 @@
 ![仪表板_创建公共链接_复制链接](../img/dashboard_generation/仪表板_创建公共链接_复制链接.png){ width="900px" }
 
 !!! Abstract ""
+	公共链接功能现已集成 Ticket 机制，增强了链接的安全性和灵活性。每个 Ticket 均可独立设定有效期。此外，相较于之前版本需要对外部参数进行 base64 编码处理，现在的公共链接外部参数可以直接在 Ticket 参数中简易设置。  
+	具体操作如下： 一个仪表板的公共链接为 https://example.dataease.com/link/bcg48L2W；
+
+![name](../img/release_notes/1.9%20公共链接增加%20Ticket%20机制1.png){ width="500px" }
+
+!!! Abstract ""
+	对其进行 Ticket 设置，设置参数为 {"name":"Tony","age":10}，获取到该条 Ticket 的 ticket 为“VMv5FH2o” ；
+![name](../img/release_notes/1.9%20公共链接增加%20Ticket%20机制3.png){ width="500px" }
+
+![name](../img/release_notes/1.9%20公共链接增加%20Ticket%20机制4.png){ width="500px" }
+
+!!! Abstract ""
+	使用 Ticket 的公共链接格式为 https://example.dataease.com/link/bcg48L2W?ticket=VMv5FH2o。 
+	在此情况下，无需传递 Ticket 参数，DataEase 将从数据库自动获取 Ticket 相关参数。    
+	当启用 Ticket “必选”选项时，只有在 URL 中附带 ticket 参数的情况下，公共链接才能被成功访问。
+![name](../img/release_notes/1.9%20公共链接增加%20Ticket机制5.png){ width="500px" }
+
+!!! Abstract ""
 	公共链接查看仪表板时支持切换全屏预览。
 ![name](../img/release_notes/v1-18-14-13.png){ width="900px" }
 

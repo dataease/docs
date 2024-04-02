@@ -8,12 +8,29 @@
 ![文本下拉组件显示效果](../../img/dashboard_generation/文本下拉组件显示效果.png){ width="900px" }
 
 !!! Abstract ""
+	单选的文本下拉组件以及数字下拉组件可在【组件样式】中设置选项平铺展示，展示项最多可设置为 10。
+
+![name](../../img/release_notes/1.8%20下拉组件支持%20radio%20风格展示.png){ width="500px" }
+![name](../../img/release_notes/1.8%20下拉组件支持%20radio%20风格展示2.png){ width="900px" }
+
+!!! Abstract ""
 	文本下拉组件支持自定义排序，类似视图里的自定义排序，可手动拖动排序。
 
 ![文本下拉组件](../../img/dashboard_generation/文本下拉组件排序.png){ width="900px" }
 
 !!! Abstract ""
+	文本下拉组件支持过滤空数据。
+
+![name](../../img/release_notes/1.5%20文本下拉组件的选项新增空数据选项1.png){ width="900px" }
+![name](../../img/release_notes/1.5%20文本下拉组件的选项新增空数据选项2.png){ width="900px" }
+
+!!! Abstract ""
 	如下图所示，文本下拉组件支持手动输入模糊匹配的功能。
+
+![文本下拉组件_模糊匹配](../../img/dashboard_generation/文本下拉组件_模糊匹配.png){ width="900px" }
+
+!!! Abstract ""
+如下图所示，文本下拉组件支持手动输入模糊匹配的功能。
 
 ![文本下拉组件_模糊匹配](../../img/dashboard_generation/文本下拉组件_模糊匹配.png){ width="900px" }
 
