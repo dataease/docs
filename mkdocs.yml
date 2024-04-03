@@ -179,6 +179,7 @@ nav:
               - 水印管理: xpack/watermark.md
           - 系统 API: xpack/sys_management_develop.md
           - 定时报告: xpack/sys_management_report.md
+          - 数据填报: xpack/data_filing.md
   - 实践教程:
       - 实践案例: customercase.md
       - 图表样式解析: chart_style_analysis.md
