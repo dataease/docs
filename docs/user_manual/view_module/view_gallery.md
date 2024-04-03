@@ -168,19 +168,22 @@
     ![echarts漏斗图](../../img/view_generation/view_gallery/ECharts/2.0漏斗图.png){ width="900px" }
 
 ## 8 地图
-
+### 8.1 区域地图
 !!! Abstract ""
     普通地图：用颜色的深浅来展示区域范围的数值大小。
 
     ![普通地图](../../img/view_generation/view_gallery/ECharts/2.0地图.png){ width="900px" }
-
 
 !!! Abstract ""
     支持展示世界地图，【地图设置】中选择【世界村】。
 
     ![世界地图](../../img/view_generation/view_gallery/ECharts/2.0世界地图.png){ width="900px" }
 
+### 8.2 气泡地图
+!!! Abstract ""
+    气泡地图：用气泡大小展示区域范围的数值大小。
 
+    ![普通地图](../../img/view_generation/view_gallery/ECharts/气泡地图.png){ width="900px" }
 
 ## 9 雷达图
 
