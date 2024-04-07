@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.15">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
     
     
       
@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="../css/lightgallery.min.css">
     <link href="../css/f2c-header.css" rel="stylesheet" type="text/css" />
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.bcfcd587.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -557,6 +557,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v250" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.5.0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v241" class="md-nav__link">
     <span class="md-ellipsis">
       v2.4.1
@@ -641,6 +650,8 @@
       
         
       
+        
+      
     
     
     
@@ -668,6 +679,27 @@
             更新说明
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../change-v2-4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v2.5.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -3089,6 +3121,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v250" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.5.0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v241" class="md-nav__link">
     <span class="md-ellipsis">
       v2.4.1
@@ -3177,6 +3218,104 @@ Bug 修复的小版本。<br />
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v250">v2.5.0<a class="headerlink" href="#v250" title="Permanent link">&para;</a></h3>
+<p>2024年4月7日</p>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>feat(X-Pack): 第三方平台飞书，企业微信，钉钉支持绑定用户</li>
+<li>feat(仪表板): 仪表板的公共链接支持在移动端打开</li>
+<li>feat(仪表板): 仪表板资源树支持排序</li>
+<li>feat(仪表板): 公共链接打开后，浏览器网页标题提示支持显示为仪表板和数据大屏的名称</li>
+<li>feat(仪表板): 可视化资源支持外部参数功能 #8257</li>
+<li>feat(仪表板): 增加开启/关闭移动端功能</li>
+<li>feat(图表): 支持地图图例显示为整数 #8202</li>
+<li>feat(图表): 地图增加恢复初始状态按钮</li>
+<li>feat(图表): 富文本视图增加点击字段既可选中设置样式的效果</li>
+<li>feat(图表): 支持气泡地图</li>
+<li>feat(图表): 明细表/汇总表支持控制表头排序开关和图标颜色 #8147</li>
+<li>feat(图表): 表格支持平滑滚动 #7277</li>
+<li>feat(工作台): 支持点击工作台列表中的大屏或仪表板跳转到资源预览界面</li>
+<li>feat(数据大屏): 增加时间组件 #8157</li>
+<li>feat(数据大屏): 支持鼠标选中一些区域后，区域内的组件可通过滑动鼠标，批量移动</li>
+<li>feat(数据集): 支持 DataEase v2 版本仪表板名称、文件夹名称等按照名称进行升序 #7741</li>
+<li>feat(数据集): 支持一个计算字段作为整体进行二次计算引用</li>
+<li>feat(查询组件): 日期范围查询组件支持设置查询时间时可选的范围 #6005</li>
+<li>feat(查询组件): 过滤组件支持空数据逻辑</li>
+<li>feat(系统设置): 是否启用浏览器缓存支持配置</li>
+<li>feat: 新增 DataEase 智能小助手</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>build: 升级 Calcite 版本</li>
+<li>perf(嵌入式): iframe 嵌入式新增数据集页面优化</li>
+<li>perf(嵌入式): iframe 嵌入式编辑数据集页面优化</li>
+<li>refactor(仪表板): 仪表板内通过复制组件向画布内增加新组件，默认选中新添加的组件</li>
+<li>refactor(仪表板): 可视化资源树排序改为前端排序 #7741</li>
+<li>refactor(仪表板): 调整公共样式设置区域样式</li>
+<li>refactor(仪表板): 资源树中的资源图标增加移动端标识</li>
+<li>refactor(图表): 图表明细支持大数据量导出</li>
+<li>refactor(图表): 图表详情查看优化: 非表格类型统一样式，表格类型使用自身样式。</li>
+<li>refactor(图表): 明细导出样式等优化</li>
+<li>refactor(工作台): 优化工作台可视化资源跳转样式，逻辑</li>
+<li>refactor(工作台): 当模板管理新添加分类成功后，分类列表中默认选中新添加的分类</li>
+<li>refactor(数据大屏): 优化外部参数，解决外部参数对所有图表兼容性问题</li>
+<li>refactor(数据大屏): 时间组件样式设置区域调整</li>
+<li>refactor(数据大屏): 添加样式设置区域部分样式属性</li>
+<li>refactor(数据大屏): 组件通用样式区域样式组件优化</li>
+<li>refactor(数据集): 修改了数据集内容后，字段选择交互优化</li>
+<li>refactor(系统设置): 模版名称校验优化</li>
+<li>refactor(系统设置): 模版管理批量操作修改分类是当分类完全相同默认显示分类标签</li>
+<li>refactor: UI 库升级</li>
+<li>refactor: 优化安装脚本对本地已有镜像的判断逻辑</li>
+<li>refactor: 优化社区版升级企业版脚本，通过 bash install.sh 即可升级</li>
+<li>refactor: 关闭不必要的容器端口</li>
+<li>refactor: 减少安装脚本中对不必要的本地镜像的判断</li>
+<li>refactor: 去掉 installer 无用代码</li>
+<li>style(X-Pack): 外观设置的卡片以及底部按钮样式修改</li>
+<li>style(X-Pack): 外观设置次要按钮背景色值修改</li>
+<li>style(仪表板): 修复资源树部分颜色未跟随主题色问题</li>
+<li>style(系统设置): 侧边菜单悬浮以及选中样式</li>
+<li>style: 浅色头部背景文案颜色改为黑色</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>build: 升级 Calcite 版本</li>
+<li>perf(嵌入式): iframe 嵌入式新增数据集页面优化</li>
+<li>perf(嵌入式): iframe 嵌入式编辑数据集页面优化</li>
+<li>refactor(仪表板): 仪表板内通过复制组件向画布内增加新组件，默认选中新添加的组件</li>
+<li>refactor(仪表板): 可视化资源树排序改为前端排序 #7741</li>
+<li>refactor(仪表板): 调整公共样式设置区域样式</li>
+<li>refactor(仪表板): 资源树中的资源图标增加移动端标识</li>
+<li>refactor(图表): 图表明细支持大数据量导出</li>
+<li>refactor(图表): 图表详情查看优化: 非表格类型统一样式，表格类型使用自身样式。</li>
+<li>refactor(图表): 明细导出样式等优化</li>
+<li>refactor(工作台): 优化工作台可视化资源跳转样式，逻辑</li>
+<li>refactor(工作台): 当模板管理新添加分类成功后，分类列表中默认选中新添加的分类</li>
+<li>refactor(数据大屏): 优化外部参数，解决外部参数对所有图表兼容性问题</li>
+<li>refactor(数据大屏): 时间组件样式设置区域调整</li>
+<li>refactor(数据大屏): 添加样式设置区域部分样式属性</li>
+<li>refactor(数据大屏): 组件通用样式区域样式组件优化</li>
+<li>refactor(数据集): 修改了数据集内容后，字段选择交互优化</li>
+<li>refactor(系统设置): 模版名称校验优化</li>
+<li>refactor(系统设置): 模版管理批量操作修改分类是当分类完全相同默认显示分类标签</li>
+<li>refactor: UI 库升级</li>
+<li>refactor: 优化安装脚本对本地已有镜像的判断逻辑</li>
+<li>refactor: 优化社区版升级企业版脚本，通过 bash install.sh 即可升级</li>
+<li>refactor: 关闭不必要的容器端口</li>
+<li>refactor: 减少安装脚本中对不必要的本地镜像的判断</li>
+<li>refactor: 去掉 installer 无用代码</li>
+<li>style(X-Pack): 外观设置的卡片以及底部按钮样式修改</li>
+<li>style(X-Pack): 外观设置次要按钮背景色值修改</li>
+<li>style(仪表板): 修复资源树部分颜色未跟随主题色问题</li>
+<li>style(系统设置): 侧边菜单悬浮以及选中样式</li>
+<li>style: 浅色头部背景文案颜色改为黑色</li>
+</ul>
+</div>
 <h3 id="v241">v2.4.1<a class="headerlink" href="#v241" title="Permanent link">&para;</a></h3>
 <p>2024年3月13日</p>
 <div class="admonition abstract">
@@ -4208,7 +4347,7 @@ Bug 修复的小版本。<br />
     
     
     
-      <script src="../assets/javascripts/bundle.bd41221c.min.js"></script>
+      <script src="../assets/javascripts/bundle.1e8ae164.min.js"></script>
       
     
     <script>
