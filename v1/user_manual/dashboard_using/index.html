@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.15">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
     
     
       
@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="../../css/lightgallery.min.css">
     <link href="../../css/f2c-header.css" rel="stylesheet" type="text/css" />
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -535,6 +535,8 @@
       
         
       
+        
+      
     
     
     
@@ -562,6 +564,27 @@
             更新说明
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release_notes/v1.18.16/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v1.18.18
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -3923,6 +3946,8 @@
       
         
       
+        
+      
     
     
     
@@ -4228,6 +4253,27 @@
   
   <span class="md-ellipsis">
     定时报告
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xpack/data_filing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据填报
   </span>
   
 
@@ -5255,6 +5301,22 @@
 </div>
 <p><img alt="仪表板_创建公共链接_复制链接" src="../../img/dashboard_generation/%E4%BB%AA%E8%A1%A8%E6%9D%BF_%E5%88%9B%E5%BB%BA%E5%85%AC%E5%85%B1%E9%93%BE%E6%8E%A5_%E5%A4%8D%E5%88%B6%E9%93%BE%E6%8E%A5.png" width="900px" /></p>
 <div class="admonition abstract">
+<p>公共链接功能现已集成 Ticket 机制，增强了链接的安全性和灵活性。每个 Ticket 均可独立设定有效期。此外，相较于之前版本需要对外部参数进行 base64 编码处理，现在的公共链接外部参数可以直接在 Ticket 参数中简易设置。<br />
+具体操作如下： 一个仪表板的公共链接为 <a href="https://example.dataease.com/link/bcg48L2W">https://example.dataease.com/link/bcg48L2W</a>；</p>
+</div>
+<p><img alt="name" src="../../img/release_notes/1.9%20%E5%85%AC%E5%85%B1%E9%93%BE%E6%8E%A5%E5%A2%9E%E5%8A%A0%20Ticket%20%E6%9C%BA%E5%88%B61.png" width="500px" /></p>
+<div class="admonition abstract">
+<p>对其进行 Ticket 设置，设置参数为 {"name":"Tony","age":10}，获取到该条 Ticket 的 ticket 为“VMv5FH2o” ；</p>
+</div>
+<p><img alt="name" src="../../img/release_notes/1.9%20%E5%85%AC%E5%85%B1%E9%93%BE%E6%8E%A5%E5%A2%9E%E5%8A%A0%20Ticket%20%E6%9C%BA%E5%88%B63.png" width="500px" /></p>
+<p><img alt="name" src="../../img/release_notes/1.9%20%E5%85%AC%E5%85%B1%E9%93%BE%E6%8E%A5%E5%A2%9E%E5%8A%A0%20Ticket%20%E6%9C%BA%E5%88%B64.png" width="500px" /></p>
+<div class="admonition abstract">
+<p>使用 Ticket 的公共链接格式为 <a href="https://example.dataease.com/link/bcg48L2W?ticket=VMv5FH2o">https://example.dataease.com/link/bcg48L2W?ticket=VMv5FH2o</a>。 
+在此情况下，无需传递 Ticket 参数，DataEase 将从数据库自动获取 Ticket 相关参数。  <br />
+当启用 Ticket “必选”选项时，只有在 URL 中附带 ticket 参数的情况下，公共链接才能被成功访问。</p>
+</div>
+<p><img alt="name" src="../../img/release_notes/1.9%20%E5%85%AC%E5%85%B1%E9%93%BE%E6%8E%A5%E5%A2%9E%E5%8A%A0%20Ticket%E6%9C%BA%E5%88%B65.png" width="500px" /></p>
+<div class="admonition abstract">
 <p>公共链接查看仪表板时支持切换全屏预览。</p>
 </div>
 <p><img alt="name" src="../../img/release_notes/v1-18-14-13.png" width="900px" /></p>
@@ -5457,7 +5519,7 @@
     
     
     
-      <script src="../../assets/javascripts/bundle.bd41221c.min.js"></script>
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
       
     
     <script>
