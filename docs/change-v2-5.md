@@ -68,7 +68,7 @@
     支持从个人信息处绑定第三方平台账号，前提是已经在系统设置的平台对接中对接了第三方平台。
 ![更新1](./newimg/3.1%20支持从个人信息处绑定第三方平台账号.png){ width="900px" }
 
-## 4 系统设置
+## 4 其他
 ### 4.1 支持配置是否启用 HTML 缓存
 !!! Abstract ""
     支持在 /opt/dataease2.0/conf/application.yml 配置文件中，通过设置参数 dataease.http.cache 来控制是否启用 html 缓存，默认情况下关闭 html 缓存。
