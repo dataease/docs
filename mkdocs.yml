@@ -79,9 +79,6 @@ nav:
           - 在线升级: installation/online_ha_upgrade.md
           - 离线升级: installation/offline_ha_upgrade.md
           - 备份还原: installation/backup_faq.md
-      - Windows 单机部署:
-          - 离线安装（WSL）: installation/offline_installation_windows.md
-          - 离线安装（OVA）: installation/offline_installation_ova.md
       - 源码部署（前后端分离）:
           - 工具准备: dev_manual/dev_deployment/tool.md
           - 环境准备: dev_manual/dev_deployment/environment.md
