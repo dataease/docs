@@ -33,5 +33,5 @@
     - 前端：[Vue.js](https://vuejs.org/)、[Element](https://element.eleme.cn/)
     - 图库: [Antv](https://antv.antgroup.com/zh)
     - 中间件：[MySQL](https://www.mysql.com/)
-    - 数据处理：[Apache Calcite](https://calcite.apache.org/)、[Apache SeaTunnel]（https://github.com/apache/seatunnel）
+    - 数据处理：[Apache Calcite](https://calcite.apache.org/)、[Apache SeaTunnel](https://github.com/apache/seatunnel)
     - 基础设施：[Docker](https://www.docker.com/)
