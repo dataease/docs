@@ -1,5 +1,5 @@
 !!! Abstract ""
-    支持企业微信平、钉钉、飞书、国际飞书（Lark）接入，支持扫码登录。
+    支持企业微信平、钉钉、飞书、国际飞书（Lark）接入，支持扫码登录、免密登陆。
 ![对接企业微信](../img/xpack/平台对接扫码登录.png){ width="900px" }
 
 !!! Abstract ""
@@ -73,14 +73,12 @@
 
 ![对接企业微信](../img/xpack/企业微信校验成功.png){ width="900px" }
 
-<!--
-
 ### 1.3 企业微信免登设置
 
 !!! Abstract ""
     应用主页地址的构造可以参考企业微信的在线文档[《构造网页授权链接——构造企业oauth2链接》](https://developer.work.weixin.qq.com/document/path/91120#%E6%9E%84%E9%80%A0%E4%BC%81%E4%B8%9Aoauth2%E9%93%BE%E6%8E%A5)。  
     应用主页地址主要结构如下面的链接所示，注意下面的红字部分：  
-    https://open.weixin.qq.com/connect/oauth2/authorize?appid=CORPID&redirect_uri=REDIRECT_URI&response_type=code&scope=SCOPE&agentid=AGENTID#wechat_redirect  
+    https://open.weixin.qq.com/connect/oauth2/authorize?appid=CORPID&redirect_uri=REDIRECT_URI&response_type=code&scope=SCOPE&agentid=AGENTID#&state=fit2cloud-wecom-client#wechat_redirect
     详细说明如下：
 
     - CORPID - 企业 ID
@@ -89,18 +87,17 @@
     - AGENTID - 应用 ID
 
     主页地址示例：
-    https://open.weixin.qq.com/connect/oauth2/authorize?appid=ww8c9076cfd8ea1fc1&redirect_uri=https://dataease.fit2cloud.com/#/de-auto-login?type=wecom&response_type=code&scope=snsapi_base&agentid=1000010#wechat_redirect
+    https://open.weixin.qq.com/connect/oauth2/authorize?appid=ww8c9076cfd8ea1fc1&redirect_uri=https://dataease.fit2cloud.com/#/de-auto-login?type=wecom&response_type=code&scope=snsapi_base&agentid=1000001#&state=fit2cloud-wecom-client#wechat_redirect
 
 !!! Abstract ""
     在应用的【应用主页】栏点击【配置】，将上一步获取到的应用主页地址填入电脑端网址即可。
 
-![对接企业微信](../img/xpack/企微免登5.png){ width="900px" }
+![对接企业微信](../img/xpack/企业微信应用首页.png){ width="900px" }
 
 !!! Abstract ""
     在企业微信工作台中找到 DataEase 应用，点击该应用即可免登访问 DataEase。
- -->
 
-
+![对接企业微信](../img/xpack/企业微信应用界面.png){ width="900px" }
 ## 2 钉钉设置
 ### 2.1 配置平台对接信息
 !!! Abstract ""
@@ -155,26 +152,16 @@
 
 ![对接钉钉平台](../img/xpack/钉钉校验成功.png){ width="900px" }
 
-<!--
 
 ### 2.3 钉钉免登设置
 
 !!! Abstract ""
-    在钉钉开放平台的【应用能力】栏中，进入【网页应用】，设置【应用首页地址】和【PC端首页地址】。首页地址格式为：http(s)://xxx.xxx.xxx/#/de-auto-login?corpId=$CORPID$，corpId=$CORPID$ 无需替换成真正的 corpId，此处仅为变量。
+    在钉钉开放平台的【应用能力】栏中，进入【网页应用】，设置【PC端首页地址】。首页地址格式为：http(s)://xxx.xxx.xxx/?client=dingtalk&corpId=$CORPID$。注意 corpId=$CORPID$ 需替换成真正的 corpId。
 
-![对接钉钉平台](../img/xpack/钉钉添加网页应用.png){ width="900px" }
-![对接钉钉平台](../img/xpack/钉钉平台网页设置.png){ width="900px" }
+![对接钉钉平台](../img/xpack/钉钉免密登陆配置.png){ width="900px" }
+![对接钉钉平台](../img/xpack/钉钉应用内部界面.png){ width="900px" }
 
-!!! Abstract ""
-    在【登录与分享】页面中添加回调域名，域名格式为：http(s)://xxx.xxx.xxx/plugin/dingtalk/callBackWithoutLogin。
 
-![对接钉钉平台](../img/xpack/钉钉分享设置回调域名.png){ width="900px" }
-
-!!! Abstract ""
-    移动端免登，和桌面端类似，就是给每个应用添加上移动端的首页设置就可以了。
-
-![对接钉钉平台](../img/xpack/移动端免登.png){ width="900px" }
- -->
 
 
 ##  3 飞书设置
@@ -249,31 +236,15 @@
 
 ![对接飞书平台](../img/xpack/v2飞书对接1 (2).png){ width="900px" }
 
-<!--
 
 ### 3.3 飞书免登设置
 
 !!! Abstract ""
-    在飞书开放平台中，选择 DataEase 应用。在【应用功能】下的【网页】里，开启网页功能，并配置【桌面端主页】。主页地址格式：http(s)://xxx.xxx.xxx.xxx/#/de-auto-login?type=lark。
+    在飞书开放平台中，选择 DataEase 应用。在【应用功能】下的【网页】里，开启网页功能，并配置【桌面端主页】。主页地址格式：http(s)://xxx.xxx.xxx.xxx//?client=lark。
 
-![对接飞书平台](../img/xpack/飞书对接19.png){ width="900px" }
+![对接飞书平台](../img/xpack/飞书免密配置.png){ width="900px" }
 
-!!! Abstract ""
-    在【安全设置】里添加【重定向URL】。URL格式为：http(s)://xxx.xxx.xxx.xxx/#/de-auto-login?type=lark。
-
-![对接飞书平台](../img/xpack/飞书对接20.png){ width="900px" }
-
-!!! Abstract ""
-    滚动到页面下方，继续添加【可信域名】，将 DataEase 服务器的域名添加到可信域名中。此处支持 http(s)://192.168.1.101:9999 格式的内容。
-
-![对接飞书平台](../img/xpack/飞书对接22.png){ width="900px" }
-
-!!! Abstract ""
-    移动端免登，和桌面端类似，就是给每个应用添加上移动端的首页设置就可以了。
-
-![对接飞书平台](../img/xpack/飞书对接24.png){ width="900px" }
-
- -->
+![对接飞书平台](../img/xpack/飞书应用内部界面.png){ width="900px" }
 
 
 ## 4 Lark 设置
