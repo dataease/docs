@@ -177,9 +177,11 @@
 ![仪表板_预览](../img/dashboard_generation/仪表板_放大.png){ width="900px" }
 
 !!! Abstract ""
-	视图明细效果，支持对视图进行 Excel 导出。
+	视图侧支持导出原始明细数据，根据用户权限+视图的过滤条件+仪表板过滤组件+外部传参过滤数据，然后导出该视图所使用的数据集数据，包含数据集所有字段。  
+	**注意：公共链接无导出原始明细数据的功能。**
 
-![仪表板_预览](../img/dashboard_generation/查看明细.png){ width="900px" }  
+![name](../img/release_notes/1.4 支持在视图侧导出视图原始明细数据.png){ width="900px" }
+ 
 ![明细导出结果](../img/dashboard_generation/明细导出结果.png){ width="900px" }
 
 ### 8.2 导出视图图片
