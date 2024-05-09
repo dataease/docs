@@ -83,7 +83,7 @@
 
 ![空值处理](../../img/view_generation/空值处理.png){ width="900px" }
 
-## 趋势线
+## 6  趋势线
 !!! Abstract ""
     目前仅 AntV 折线图支持趋势线设置，支持的算法有：多项式、线性、指数、对数、二次项、幂函数、局部加权。
 ![name](../../img/release_notes/1.10%20AntV%20折线图支持趋势线1.png){ width="900px" }
