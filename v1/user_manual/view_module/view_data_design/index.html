@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.19">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
     
     
       
@@ -537,6 +537,8 @@
       
         
       
+        
+      
     
     
     
@@ -564,6 +566,27 @@
             更新说明
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../release_notes/v1.18.19/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v1.18.19
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -4925,7 +4948,18 @@
 </div>
 <p><img alt="维度_自定义排序调整" src="../../../img/view_generation/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%92%E5%BA%8F%E6%90%9C%E7%B4%A2%E7%BD%AE%E9%A1%B6.png" width="400px" /></p>
 <div class="admonition abstract">
-<p>AntV 和 ECharts 的明细表都支持隐藏列功能，允许用户将数据表中的某些字段设置为“隐藏”状态，这样这些列就不会被显示出来。这一功能特别适用于当用户需要使用特定字段进行排序，但又不希望这些字段在表中显示的情况。</p>
+<p>AntV 堆叠柱状图支持按照指标整体排序：</p>
+<ul>
+<li>类别轴排序优先级 &gt; 指标排序优先级，即两个都设置了排序规则，会按照类别排序；</li>
+<li>堆叠项排序仅影响堆叠项的排列顺序，只作用于每个柱子堆叠项的上下位置；</li>
+<li>当未设置维度排序，而设置了指标排序后，会按照指标总值，即所有堆叠项加和后的值排序。</li>
+</ul>
+</div>
+<p><img alt="name" src="../../../img/release_notes/1.6%20AntV%20%E5%A0%86%E5%8F%A0%E6%9F%B1%E7%8A%B6%E5%9B%BE%E6%94%AF%E6%8C%81%E6%8C%89%E7%85%A7%E6%8C%87%E6%A0%87%E6%95%B4%E4%BD%93%E6%8E%92%E5%BA%8F1.png" width="900px" />
+<img alt="name" src="../../../img/release_notes/1.6%20AntV%20%E5%A0%86%E5%8F%A0%E6%9F%B1%E7%8A%B6%E5%9B%BE%E6%94%AF%E6%8C%81%E6%8C%89%E7%85%A7%E6%8C%87%E6%A0%87%E6%95%B4%E4%BD%93%E6%8E%92%E5%BA%8F2.png" width="900px" />
+<img alt="name" src="../../../img/release_notes/1.6%20AntV%20%E5%A0%86%E5%8F%A0%E6%9F%B1%E7%8A%B6%E5%9B%BE%E6%94%AF%E6%8C%81%E6%8C%89%E7%85%A7%E6%8C%87%E6%A0%87%E6%95%B4%E4%BD%93%E6%8E%92%E5%BA%8F3.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>AntV 和 ECharts 的明细表支持隐藏列功能，允许用户将数据表中的某些字段设置为“隐藏”状态，这样这些列就不会被显示出来。这一功能特别适用于当用户需要使用特定字段进行排序，但又不希望这些字段在表中显示的情况。</p>
 </div>
 <p><img alt="name" src="../../../img/release_notes/1.7%20%E6%98%8E%E7%BB%86%E8%A1%A8%E6%94%AF%E6%8C%81%E9%9A%90%E8%97%8F%E5%88%971.png" width="900px" /></p>
 <h2 id="4">4 指标选择<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
@@ -5074,7 +5108,7 @@
     
     
     
-      <script src="../../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.a7c05c9e.min.js"></script>
       
     
     <script>

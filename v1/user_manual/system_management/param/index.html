@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.19">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
     
     
       
@@ -537,6 +537,8 @@
       
         
       
+        
+      
     
     
     
@@ -564,6 +566,27 @@
             更新说明
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../release_notes/v1.18.19/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v1.18.19
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -4979,6 +5002,12 @@
 “限制登录失败时间”：从禁止登录到可再次登录之间需要等待的时间。  </p>
 </div>
 <p><img alt="基础设置" src="../../../img/system_management/%E9%98%B2%E6%9A%B4%E5%8A%9B%E7%99%BB%E5%BD%95%E8%AE%BE%E7%BD%AE.png" width="900" /></p>
+<div class="admonition abstract">
+<p><strong>用户密码过期策略设置（XPack）:</strong> <br />
+支持管理员开启【启用强制修改密码】功能，并设置间隔时间（三个月/半年/一年）。开启后 DataEase 本地用户的密码更换周期受定期更换密码策略的约束。用户将在密码即将过期前一周收到密码即将到期的提醒。一旦密码过期，用户将无法登录，只有管理员能进行处理。  <br />
+通过 CAS、OIDC、LDAP 方式注册的用户不会受到此策略的影响。若 DataEase 本地用户已绑定其他第三方账户，密码过期也将不会影响通过第三方平台进行的扫码登录功能。</p>
+</div>
+<p><img alt="name" src="../../../img/release_notes/3.1%20%E6%94%AF%E6%8C%81%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81%E8%BF%87%E6%9C%9F%E7%AD%96%E7%95%A5%E8%AE%BE%E7%BD%AE%EF%BC%88XPack%EF%BC%89.png" width="900px" /></p>
 <h2 id="2">2 邮件设置<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>用户可通过配置邮件的基本信息，来接收仪表板分享、数据集同步或数据源失效的信息。   </p>
@@ -5161,7 +5190,7 @@
     
     
     
-      <script src="../../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.a7c05c9e.min.js"></script>
       
     
     <script>
