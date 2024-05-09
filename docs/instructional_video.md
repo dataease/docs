@@ -17,6 +17,7 @@
 [![可视化分析-操作实践](img/video/3.4 可视化分析-其他组件介绍.png){ width="280" }](https://www.bilibili.com/video/BV1WN4y1W7uv/)
 [![可视化分析-操作实践](img/video/3.5 可视化分析-操作实践.png){ width="280" }](https://www.bilibili.com/video/BV1Ke411S7Tk/)
 [![可视化分析-布局美化及分享](img/video/3.6 可视化分析-布局美化及分享.png){ width="280" }](https://www.bilibili.com/video/BV1ze411q7sG/)
+
 [![可视化分析-数据大屏制作](img/video/3.7 可视化分析-数据大屏制作.png){ width="280" }](https://www.bilibili.com/video/BV14C4y1i7Zr/) </br>
 
 ## 4 工作台及模板市场
