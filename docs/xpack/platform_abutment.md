@@ -1,5 +1,5 @@
 !!! Abstract ""
-    支持企业微信平、钉钉、飞书、国际飞书（Lark）接入，支持扫码登录、免密登陆。
+    支持企业微信平、钉钉、飞书、国际飞书（Lark）接入，支持扫码登录、免密登录。
 ![对接企业微信](../img/xpack/平台对接扫码登录.png){ width="900px" }
 
 !!! Abstract ""
@@ -156,7 +156,7 @@
 ### 2.3 钉钉免登设置
 
 !!! Abstract ""
-    在钉钉开放平台的【应用能力】栏中，进入【网页应用】，设置【PC端首页地址】。首页地址格式为：http(s)://xxx.xxx.xxx/?client=dingtalk&corpId=$CORPID$。注意 corpId=$CORPID$ 需替换成真正的 corpId。
+    在钉钉开放平台的【应用能力】栏中，进入【网页应用】，设置【PC端首页地址】。首页地址格式为：http(s)://xxx.xxx.xxx/?client=dingtalk&corpId=CORPID。注意 corpId=CORPID 需替换成真正的 CORPID。
 
 ![对接钉钉平台](../img/xpack/钉钉免密登陆配置.png){ width="900px" }
 ![对接钉钉平台](../img/xpack/钉钉应用内部界面.png){ width="900px" }

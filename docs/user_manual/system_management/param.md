@@ -63,7 +63,7 @@
 ## 3 引擎设置
 
 !!! Abstract ""
-    默认数据引擎是 DataEase 范围内的 MySQL，用以存储 Excel 及 API 数据集数据。目前该引擎只支持 MySQL 类型，支持使用外部 MySQL；  
+    默认数据引擎是 DataEase 自带的 MySQL，用以存储 Excel 及 API 数据集数据。目前该引擎只支持 MySQL 类型，支持使用外部 MySQL；  
     系统会自动检查是否设置了引擎参数，若无设置，则读取 dataease.properties 配置文件中 MySQL 连接信息，并填入其中。
 
 ![MySQL设置](../../img/system_management/引擎管理.png){ width="900" }
