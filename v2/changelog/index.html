@@ -18,11 +18,11 @@
         <link rel="prev" href="../quick_start/">
       
       
-        <link rel="next" href="../change-v2-5/">
+        <link rel="next" href="../change-v2-6/">
       
       
       <link rel="icon" href="../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
     
     
       
@@ -557,6 +557,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v260" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.6.0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v250" class="md-nav__link">
     <span class="md-ellipsis">
       v2.5.0
@@ -652,6 +661,8 @@
       
         
       
+        
+      
     
     
     
@@ -679,6 +690,27 @@
             更新说明
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../change-v2-6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v2.6.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -3098,6 +3130,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v260" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.6.0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v250" class="md-nav__link">
     <span class="md-ellipsis">
       v2.5.0
@@ -3195,6 +3236,123 @@ Bug 修复的小版本。<br />
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v260">v2.6.0<a class="headerlink" href="#v260" title="Permanent link">&para;</a></h3>
+<p>2024年5月9日</p>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>feat(嵌入式):  div 嵌入支持新增仪表板和新增数据大屏</li>
+<li>feat(X-Pack): 钉钉、飞书、企业微信客户端支持免密登录</li>
+<li>feat(X-Pack): 同步管理-任务管理中任务列表支持通过点击任务名称进入任务日志列表</li>
+<li>feat(X-Pack): 同步管理-任务管理支持数据同步 SQL 支持使用 %</li>
+<li>feat(仪表板): 增加配置项，下钻和联动可同时触发 #8701</li>
+<li>feat(仪表板): 外部参数支持配置到查询组件 #9033</li>
+<li>feat(仪表板): 支持批量拖拽字段</li>
+<li>feat(仪表板): 跳转支持匹配目标仪表板过滤组件 #8656</li>
+<li>feat(仪表板): 新增网页组件</li>
+<li>feat(查询组件): 查询组件文本下拉支持显示字段和排序字段设置 #8657, #7343</li>
+<li>feat(查询组件): 查询组件支持文本搜索 #7715</li>
+<li>feat(图表): 地图增加缩放按钮配配置项，适应浅色和深色模式</li>
+<li>feat(图表): 地图支持地名映射 #7514</li>
+<li>feat(图表): 地图深色模式按钮样式改为黑底白字</li>
+<li>feat(图表): 富文本组件支持设置垂直方向的位置 #6734</li>
+<li>feat(图表): 指标卡支持设置名称和值间距</li>
+<li>feat(图表): 新增柱线组合图 #7377, #8710</li>
+<li>feat(图表): 新增象限图 #8517</li>
+<li>feat(图表): 标题可识别空格</li>
+<li>feat(图表): 表格支持悬停展示表头和表格内容 #8540</li>
+<li>feat(图表): 词云图支持配置字号大小区间和文字间距</li>
+<li>feat(图表): 透视表支持树形展示 #8509</li>
+<li>feat(图表): 饼图/环形图支持合并数据为其他</li>
+<li>feat(数据大屏): 支持 ctrl 加鼠标点选组件批量操作</li>
+<li>feat(数据大屏): 支持批量选中组件变更组件大小</li>
+<li>feat(数据集): 增加数据集修改后不保存点返回按钮的二次确认提示 #8853</li>
+<li>feat(系统管理): 系统设置、组织管理中心、工具箱的侧边栏可展开收起</li>
+<li>feat: 公共链接后缀可自定义 #8195</li>
+<li>feat: 分享功能密码增强 #8593</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>perf:  Pad 端自动识别为 PC 端布局 #8858</li>
+<li>perf: redis 缓存增加前缀避免重复</li>
+<li>refactor(图表): 水波图和仪表盘无数据不渲染</li>
+<li>refactor(图表): 表格无数据不滚动</li>
+<li>refactor(图表): 优化富文本弹出样式</li>
+<li>refactor(图表): 优化表格拖拽区域，防止于表格滚动条冲突</li>
+<li>refactor(图表): 修改公共组件样式展示方式</li>
+<li>refactor(图表): 减小图例下方的留白，高度和字体匹配</li>
+<li>refactor(图表): 禁用地图方向键事件</li>
+<li>refactor(图表): 杭州市下属区县行政区划更新 #8439</li>
+<li>refactor(图表): 图表标题和绘图区间隔调整</li>
+<li>refactor(图表): 地图透明度位置调整</li>
+<li>refactor(仪表板): 优化外部参数，兼容查询组件</li>
+<li>refactor(仪表板): 优化联动跳转下钻同时配置时弹出界面显示逻辑，当联动配置同时触发下钻时，在弹出界面选择联动依然适用此逻辑 #8701</li>
+<li>refactor(仪表板): 调整仪表板矩阵密度，组件可以更精细化调整位置大小</li>
+<li>refactor(仪表板): 下拉框支持显示值和绑定值 #7343</li>
+<li>style(仪表板): 优化仪表板整体配置样式</li>
+<li>style(仪表板): 调整下钻弹框样式</li>
+<li>refactor(仪表板): 新增数据集模式自动选择显示字段逻辑优化</li>
+<li>refactor(仪表板): 查询组件按钮调整为居中</li>
+<li>refactor(数据大屏): 优化批量改变组件大小逻辑，修改为按照初始占比放大缩小</li>
+<li>refactor(数据大屏): 优化鼠标和 Mac 触控板方向探测逻辑，针对 Mac 触控板的内外伸缩可以控制大屏缩放，鼠标滚轮控制上下移动</li>
+<li>style(数据大屏): 图标组件样式调整</li>
+<li>refactor(工作台): AI 助手增加首次指引和样式修改</li>
+<li>refactor(工作台): 优化模板中心文案和图标样式</li>
+<li>refactor(工作台): 模板增加资源版本号等基础信息</li>
+<li>refactor(工作台): 调整模版市场新建模式，兼容嵌入式</li>
+<li>refactor(工作台): 工作台最近使用列表点击可以直接跳转到对应的资源界面</li>
+<li>style(同步管理): 同步频率 UX 优化</li>
+<li>style(数据源):  API 数据源的数据更新更新频率 UX 优化</li>
+<li>refactor(数据集): 编辑数据集页面首先验证数据源是否存在</li>
+<li>refactor(数据集): 单一数据源的数据集、图表使用对应数据库语法和函数</li>
+<li>refactor: 优化 dectl 备份脚本，支持备份前停止服务</li>
+<li>refactor: 优化 Dockerfile 启动命令</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>fix(仪表板): 修复仪表板控制台报错的问题</li>
+<li>fix(仪表板): 修复含有水印的仪表板在嵌入网页时可能出现底部部分空白区域的问题</li>
+<li>fix(仪表板): 修复圆角属性无法影响图片等组件的问题</li>
+<li>fix(仪表板): 修复复制配置联动的图表，联动标识未消失的问题</li>
+<li>fix(仪表板): 修复存量指标卡批量设置属性时可能因为缺少属性导致编辑区空白的问题</li>
+<li>fix(仪表板): 修复批量设置指标卡颜色未生效的问题</li>
+<li>fix(仪表板): 修复移动端布局后仪表板无法继续向 Tab 组件添加图表的问题</li>
+<li>fix(仪表板): 修复联动跳转弹出框可能被遮挡的问题</li>
+<li>fix(仪表板): 修复表格类联动跳转同时进行出现交互的错误的问题</li>
+<li>fix(仪表板): 修复被联动图表被删除后，联动配置没有清理的问题</li>
+<li>fix(图表): 修复地图从世界下钻到国家显示异常的问题</li>
+<li>fix(图表): 修复地图关闭悬浮后未隐藏缩放按钮的问题</li>
+<li>fix(图表): 修复明细表分页报错的问题</li>
+<li>fix(图表): 修复明细表有总数据条数在预览时被遮挡的问题</li>
+<li>fix(图表): 修复汇总表序号列斑马纹无效的问题</li>
+<li>fix(图表): 修复透视表行列定义，和 v1 保持一致 #9238</li>
+<li>fix(图表): 修复多序列提示删除失败的问题</li>
+<li>fix(图表): 修复提示中指标下拉框显示重复数据的问题</li>
+<li>fix(图表): 修复提示指标下拉框数据，有可能存在缺失的问题</li>
+<li>fix(数据大屏): 修复在点选组件后组合部分情况可能会删除选中组件问题</li>
+<li>fix(数据大屏): 修复指标卡图标不显示问题</li>
+<li>fix(数据大屏): 修复移动按键和地图内部位移事件冲突的问题</li>
+<li>fix(数据大屏): 修复组合大小变化后再点击组合按钮，时间生成的组合组件还是原来大小的问题</li>
+<li>fix(数据大屏): 修复组合移动在大屏那已经存在组合的情况下容易出现拖拽轨迹的问题</li>
+<li>fix(数据源): 修复获取字段重复的问题</li>
+<li>fix(数据集): 修复 MySQL 和 SQLServer 数据库的表跨源关联后，MySQL 数据表的字段重复显示，SQLServer 数据表的字段缺少的问题</li>
+<li>fix(数据集): 修复使用自定义 SQL 创建数据集，SQL 编辑器关闭后，没有获取并加载字段的问题</li>
+<li>fix(数据集): 修复修改数据集 SQL 没有弹出字段确认的问题</li>
+<li>fix(数据集): 修复数据集表名搜索不区分大小写的问题 #8852</li>
+<li>fix(移动端): 修复 Tab 组件布局丢失问题</li>
+<li>fix(移动端): 修复移动端布局后仪表板无法继续向 Tab 组件添加图表的问题</li>
+<li>fix(嵌入式): 修复数据源树 div 嵌入，设置 div 长度和高度，数据源左侧部分的高度变了，整体和右侧部分没变的问题</li>
+<li>fix(嵌入式): 修复大屏树 div 嵌入，新建数据大屏界面图层、画布、大屏配置错位的问题</li>
+<li>fix(X-Pack): 修复同步管理任务管理中新建任务时，SQLServer 数据源表中存在自增主键列时会报错的问题</li>
+<li>fix(X-Pack): 修复 OIDC 退出登录报错的问题</li>
+<li>fix: 修复 iframe 嵌入式使用模版新建丢失 Token 的问题</li>
+<li>fix: 修复日期过滤逻辑错误 #9155</li>
+</ul>
+</div>
 <h3 id="v250">v2.5.0<a class="headerlink" href="#v250" title="Permanent link">&para;</a></h3>
 <p>2024年4月7日</p>
 <div class="admonition abstract">
@@ -4340,7 +4498,7 @@ Bug 修复的小版本。<br />
     
     
     
-      <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      <script src="../assets/javascripts/bundle.a7c05c9e.min.js"></script>
       
     
     <script>
