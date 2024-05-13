@@ -234,10 +234,10 @@
             multipart:
                 max-file-size: 500MB
                 max-request-size: 500MB
-    datasource:
-        url: jdbc:mysql://YOUR_IP:PORTS/YOUR_DATABASE?autoReconnect=false&useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
-        username: YOUR_USER
-        password: YOUR_PASSWORD
+        datasource:
+            url: jdbc:mysql://YOUR_IP:PORTS/YOUR_DATABASE?autoReconnect=false&useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+            username: YOUR_USER
+            password: YOUR_PASSWORD
     ```
 
 ### 3.4 运行 jar
