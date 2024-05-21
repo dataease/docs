@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.22">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24">
     
     
       
@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="../../css/lightgallery.min.css">
     <link href="../../css/f2c-header.css" rel="stylesheet" type="text/css" />
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.732c4fb1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -3367,9 +3367,11 @@
 以公共链接的形式访问仪表板，关联的内容被过滤。  </p>
 </div>
 <div class="admonition abstract">
-<p>公共链接外部参数支持一参多传，可通过数组形式传入多值，对组件进行多选，如下示例，对参数进行处理。 <br />
+<p>公共链接外部参数支持一参多传、多参数传参，可通过数组形式传入多值，对组件进行多选，如下示例，对参数进行处理。 <br />
 提示： 传参处理时，若拼接后的 URL 带特殊符号，需做转换处理，示例如：+ 用 %2B 替代。<br />
 <div class="highlight"><pre><span></span><code>echo &#39;{&quot;省份&quot;:[&quot;山东省&quot;,&quot;四川省&quot;,&quot;广东省&quot;,&quot;河南省&quot;]}&#39;|base64
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>echo &#39;{&quot;省份&quot;:&quot;广东省&quot;,&quot;年份&quot;:&quot;2020&quot;}&#39;|base64
 </code></pre></div>
 注意： 在做完 base64 编码后，再做一次 encodeURIComponent 的 URL 编码，以防有些内容编码后存在特殊字符，浏览器无法解析的情况。<br />
 存在这类字符时，会提示”外部参数解析错误未生效，请按规定编码方式传参“。</p>
@@ -3491,7 +3493,7 @@
     
     
     
-      <script src="../../assets/javascripts/bundle.5cfa9459.min.js"></script>
+      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
       
     
     <script>
