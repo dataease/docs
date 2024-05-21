@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24">
     
     
       
@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="../../../css/lightgallery.min.css">
     <link href="../../../css/f2c-header.css" rel="stylesheet" type="text/css" />
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -4964,8 +4964,8 @@
 </div>
 <h3 id="14-nfs">1.4 创建 NFS 目录<a class="headerlink" href="#14-nfs" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>/opt/kettle<span class="w"> </span>/opt/plugins/thirdpart<span class="w"> </span>/opt/static-resource<span class="w"> </span>/opt/custom-drivers<span class="w"> </span>/opt/custom<span class="w"> </span>/opt/business
-chmod<span class="w"> </span><span class="m">666</span><span class="w"> </span>-R<span class="w"> </span>/opt/kettle<span class="w"> </span>/opt/plugins/thirdpart<span class="w"> </span>/opt/static-resource<span class="w"> </span>/opt/custom-drivers<span class="w"> </span>/opt/custom<span class="w"> </span>/opt/business
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>/opt/kettle<span class="w"> </span>/opt/plugins/thirdpart<span class="w"> </span>/opt/static-resource<span class="w"> </span>/opt/custom-drivers<span class="w"> </span>/opt/custom<span class="w"> </span>/opt/business<span class="w"> </span>/opt/dataease/data/exportData
+chmod<span class="w"> </span><span class="m">666</span><span class="w"> </span>-R<span class="w"> </span>/opt/kettle<span class="w"> </span>/opt/plugins/thirdpart<span class="w"> </span>/opt/static-resource<span class="w"> </span>/opt/custom-drivers<span class="w"> </span>/opt/custom<span class="w"> </span>/opt/business<span class="w"> </span>/opt/dataease/data/exportData
 </code></pre></div>
 </div>
 <h3 id="15-exports">1.5 编辑 exports 文件<a class="headerlink" href="#15-exports" title="Permanent link">&para;</a></h3>
@@ -4982,6 +4982,8 @@ chmod<span class="w"> </span><span class="m">666</span><span class="w"> </span>-
 <span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;/opt/custom 10.1.11.0/24(rw,no_root_squash,no_all_squash,sync)&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/exports
 
 <span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;/opt/business 10.1.11.0/24(rw,no_root_squash,no_all_squash,sync)&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/exports
+
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;/opt/dataease/data/exportData 10.1.11.0/24(rw,no_root_squash,no_all_squash,sync)&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/exports
 
 mount<span class="w"> </span>-a
 </code></pre></div>
@@ -5108,7 +5110,7 @@ showmount -e 10.1.11.64
     
     
     
-      <script src="../../../assets/javascripts/bundle.a7c05c9e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.081f42fc.min.js"></script>
       
     
     <script>
