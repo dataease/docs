@@ -103,6 +103,7 @@
     echo "10.1.11.64:/opt/custom-drivers /opt/dataease/custom-drivers nfs defaults 0 0" >> /etc/fstab
     echo "10.1.11.64:/opt/custom /opt/dataease/data/custom nfs defaults 0 0" >> /etc/fstab
     echo "10.1.11.64:/opt/business /opt/dataease/data/business nfs defaults 0 0" >> /etc/fstab
+    echo "10.1.11.64:/opt/dataease/data/exportData /opt/dataease/data/business nfs defaults 0 0" >> /etc/fstab
     mount -a
     ```
 

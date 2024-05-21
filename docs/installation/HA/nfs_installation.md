@@ -27,8 +27,8 @@
 
 !!! Abstract ""
     ```shell
-    mkdir -p /opt/kettle /opt/plugins/thirdpart /opt/static-resource /opt/custom-drivers /opt/custom /opt/business
-    chmod 666 -R /opt/kettle /opt/plugins/thirdpart /opt/static-resource /opt/custom-drivers /opt/custom /opt/business
+    mkdir -p /opt/kettle /opt/plugins/thirdpart /opt/static-resource /opt/custom-drivers /opt/custom /opt/business /opt/dataease/data/exportData
+    chmod 666 -R /opt/kettle /opt/plugins/thirdpart /opt/static-resource /opt/custom-drivers /opt/custom /opt/business /opt/dataease/data/exportData
     ```
 
 ### 1.5 编辑 exports 文件
@@ -48,6 +48,8 @@
     echo "/opt/custom 10.1.11.0/24(rw,no_root_squash,no_all_squash,sync)" >> /etc/exports
 
     echo "/opt/business 10.1.11.0/24(rw,no_root_squash,no_all_squash,sync)" >> /etc/exports
+
+    echo "/opt/dataease/data/exportData 10.1.11.0/24(rw,no_root_squash,no_all_squash,sync)" >> /etc/exports
 
     mount -a
     ```  
