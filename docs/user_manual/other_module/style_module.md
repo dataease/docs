@@ -35,15 +35,39 @@
 
 
 ## 2 媒体
+### 2.1 图片
 
 !!! Abstract ""
 	辅助类图片组件，如可作为组件的背景等。
 
-![仪表盘编辑_其他组件](../../img/dashboard_generation/2.0媒体组件.png){ width="900px" }
+![仪表盘编辑_其他组件](../../img/dashboard_generation/仪表板图片组件.png){ width="900px" }
 
 ![仪表盘编辑_其他组件](../../img/dashboard_generation/2.0点击上传图片.png){ width="900px" }
 
 ![仪表盘编辑_其他组件](../../img/dashboard_generation/2.0成功上传设置图片.png){ width="900px" }
+
+### 2.2 视频
+
+!!! Abstract ""
+	不能上传本地视频，需要填写视频链接信息。如果需要搭建视频服务器可参考知识库：https://kb.fit2cloud.com/?p=0e763f1d-a175-49e0-ac69-af8d39fb789b、https://kb.fit2cloud.com/?p=15 。
+
+![仪表盘编辑_其他组件](../../img/dashboard_generation/仪表板视频组件.png){ width="900px" }
+
+![更新1](../../newimg/1.16 新增视频组件.png){ width="900px" }
+
+### 2.3 流媒体
+
+!!! Abstract ""
+	流媒体只支持 flv 格式，如果需要使用 rtsp 格式，可参考知识库文章：https://kb.fit2cloud.com/?p=182 。
+
+![仪表盘编辑_其他组件](../../img/dashboard_generation/仪表板流媒体组件.png){ width="900px" }
+
+![更新1](../../newimg/1.15 新增流媒体组件.png){ width="900px" }
+
+
+
+
+### 1.16 新增视频组件
 
 ## 3 Tab 组件
 

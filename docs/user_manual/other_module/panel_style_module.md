@@ -1,10 +1,11 @@
-## 1 富文本
+## 1 文本
+### 1.1 富文本
 
 !!! Abstract ""
 	双击富文本组件，可定义样式，并支持在编辑区引用维度与指标中字段。
 	注意： 引用维度与指标字段时，富文本只选取第一条结果值。
 
-	![仪表板_富文本组件入口](../../img/view_generation/2.0数据大屏添加富文本.png){ width="900px" }
+	![仪表板_富文本组件入口](../../img/dashboard_generation/数据大屏富文本组件.png){ width="900px" }
 
 	![富文本组件_功能](../../img/view_generation/2.0数据大屏富文本填入指标.png){ width="900px" }
 
@@ -32,15 +33,36 @@
 
 ![富文本组件_媒体](../../img/view_generation/2.0数据大屏插入媒体.png){ width="900px" }
 
+### 1.2 跑马灯
+
+!!! Abstract ""
+	马灯组件可实现文字的循环滚动。支持设置文字颜色、字间距、字体大小、透明度、播放速度等选项。
+
+![仪表板_富文本组件入口](../../img/dashboard_generation/数据大屏跑马灯组件.png){ width="900px" }
+
+![更新1](../../newimg/1.18 数据大屏新增跑马灯组件.png){ width="900px" }
+
 
 ## 2 媒体
-
+### 2.1 图片
 !!! Abstract ""
 	辅助类图片组件，如可作为组件的背景等。
 
-![仪表盘编辑_其他组件](../../img/view_generation/2.0数据大屏媒体组件.png){ width="900px" }
+![更新1](../../newimg/数据大屏图片组件.png){ width="900px" }
 
 ![仪表盘编辑_其他组件](../../img/view_generation/2.0数据大屏添加图片.png){ width="900px" }
+
+### 2.2 视频
+!!! Abstract ""
+	不能上传本地视频，需要填写视频链接信息。如果需要搭建视频服务器可参考知识库：https://kb.fit2cloud.com/?p=0e763f1d-a175-49e0-ac69-af8d39fb789b、https://kb.fit2cloud.com/?p=15 。
+![更新1](../../newimg/数据大屏视频组件.png){ width="900px" }
+![更新1](../../newimg/1.16 新增视频组件.png){ width="900px" }
+
+### 2.3 流媒体
+!!! Abstract ""
+	流媒体只支持 flv 格式，如果需要使用 rtsp 格式，可参考知识库文章：https://kb.fit2cloud.com/?p=182 。
+![更新1](../../newimg/数据大屏流媒体组件.png){ width="900px" }
+![更新1](../../newimg/1.15 新增流媒体组件.png){ width="900px" }
 
 
 ## 3 素材
@@ -54,11 +76,19 @@
 
 ![更新1](../../newimg/更新v2-4-0-4.PNG){ width="900px" }
 
-## 4 更多
+## 4 日期时间
 
 !!! Abstract ""
 	数据大屏支持时钟组件
-![更新1](../../newimg/1.3%20数据大屏增加时钟组件.png){ width="900px" }
+![更新1](../../newimg/数据大屏时间组件.png){ width="900px" }
+![更新1](../../newimg/数据大屏时间显示.png){ width="900px" }
+
+## 5 网页
+
+!!! Abstract ""
+	数据大屏支持时钟组件
+![更新1](../../newimg/数据大屏网页组件.png){ width="900px" }
+![更新1](../../newimg/数据大屏网页填入.png){ width="900px" }
 
 
 

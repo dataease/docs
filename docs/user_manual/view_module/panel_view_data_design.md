@@ -100,14 +100,13 @@
 !!! Abstract ""
     可点击设置过滤条件，对汇总前的数据进行过滤。
 
-![图表样式](../../img/view_generation/2.0数据大屏过滤器.png){ width="900px" }
+![图表样式](../../img/view_generation/数据大屏过滤器.png){ width="900px" }
 
 !!! Abstract ""
     如下图所示，可设置多个过滤条件，并且支持逻辑条件过滤（或、与），可选择等于、不等于、包含、不包含、为空、不为空，支持字段枚举值过滤。
 
-![图表样式](../../img/view_generation/2.0数据大屏过滤器逻辑判断.png){ width="900px" }
 
-![图表样式](../../img/view_generation/2.0数据大屏过滤器枚举.png){ width="900px" }
+![图表样式](../../img/view_generation/数据大屏添加条件.png){ width="900px" }
 
 ## 7 刷新频率
 

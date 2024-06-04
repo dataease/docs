@@ -126,14 +126,12 @@
 !!! Abstract ""
     可点击设置过滤条件，对汇总前的数据进行过滤。
 
-![图表样式](../../img/view_generation/2.0过滤器.png){ width="900px" }
+![图表样式](../../img/view_generation/仪表板过滤器.png){ width="900px" }
 
 !!! Abstract ""
     如下图所示，可设置多个过滤条件，并且支持逻辑条件过滤（或、与），可选择等于、不等于、包含、不包含、为空、不为空，支持字段枚举值过滤。
 
-![图表样式](../../img/view_generation/2.0过滤器逻辑条件.png){ width="900px" }
-
-![图表样式](../../img/view_generation/2.0过滤器字段枚举.png){ width="900px" }
+![更新1](../../newimg/1.2 图表过滤器支持复杂的与或条件设置.png){ width="900px" }
 
 ## 8 刷新频率
 

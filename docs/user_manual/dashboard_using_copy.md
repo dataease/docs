@@ -55,10 +55,10 @@
 ### 4.2 导出视图图片
 
 !!! Abstract ""
-	在视图放大效果下，支持导出视图图片。
+	在视图放大效果下，支持导出视图图片,导出图片时支持选择尺寸。
 
 ![仪表板_导出图片](../img/dashboard_generation/进行放大.png){ width="900px" }
-![仪表板_导出图片](../img/dashboard_generation/放大导出图片.png){ width="900px" }
+![更新1](../../newimg/1.4 导出图片时支持选择尺寸.png){ width="900px" }
 
 
 ## 5 仪表板刷新

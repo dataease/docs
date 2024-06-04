@@ -45,6 +45,7 @@ nav:
   - 产品迭代:
       - 更新日志: changelog.md
       - 更新说明:
+          - v2.7.0: change-v2-7.md
           - v2.6.0: change-v2-6.md
           - v2.5.0: change-v2-5.md
           - v2.4.0: change-v2-4.md
@@ -117,8 +118,14 @@ nav:
               - 图表样式设计: user_manual/view_module/panel_view_style_design.md
               - 图表高级设计: user_manual/view_module/panel_view_advanced_design.md
               - 图表图库: user_manual/view_module/view_gallery.md
+          - 过滤组件:
+              - 过滤组件概览: user_manual/filter_module/filtert_module_panel.md
+              - 时间过滤组件: user_manual/filter_module/filtertime_module_panel.md
+              - 文本过滤组件: user_manual/filter_module/filtertext_module_panel.md
+              - 数字过滤组件: user_manual/filter_module/filternumber_module_panel.md
           - 其他组件: user_manual/other_module/panel_style_module.md
       - 模板市场: user_manual/template_market.md
+      - 数据导出中心: user_manual/system_management/data_export_center.md
       - 工具箱: user_manual/system_management/module.md
       - 系统参数: user_manual/system_management/param.md
       - X-Pack:
@@ -126,6 +133,7 @@ nav:
               - 用户管理: xpack/user_management_user.md
               - 组织管理: xpack/sys_management_organization.md
               - 权限配置: xpack/sys_management_permission.md
+              - 定时报告: xpack/sys_management_report.md
               - 同步管理: xpack/data_synchronization_management.md
           - 系统设置:
               - 平台对接: xpack/platform_abutment.md
@@ -134,7 +142,9 @@ nav:
               - 认证设置: xpack/identification_setting.md
               - 水印管理: xpack/watermark.md
           - 系统 API: xpack/sys_management_develop.md
-
+  - 常见问题:
+      - 系统管理: faq/system_management.md
+      - 企业版: faq/enterprise_faq.md
   - 教学视频: instructional_video.md
   - 联系我们: contact.md
 
