@@ -141,6 +141,7 @@ nav:
               - 多维嵌入: xpack/multidimensional_embedding.md
               - 认证设置: xpack/identification_setting.md
               - 水印管理: xpack/watermark.md
+              - 系统变量: xpack/system_variables.md
           - 系统 API: xpack/sys_management_develop.md
   - 常见问题:
       - 系统管理: faq/system_management.md
