@@ -103,7 +103,7 @@ nav:
               - 时间过滤组件: user_manual/filter_module/filtertime_module.md
               - 文本过滤组件: user_manual/filter_module/filtertext_module.md
               - 数字过滤组件: user_manual/filter_module/filternumber_module.md
-          - 样式组件: user_manual/other_module/style_module.md
+          - 其他组件: user_manual/other_module/style_module.md
           - 移动端: user_manual/app_description.md
       - 数据大屏:
           - 数据大屏概述: user_manual/panel_description.md
