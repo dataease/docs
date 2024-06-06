@@ -18,11 +18,11 @@
         <link rel="prev" href="../quick_start/">
       
       
-        <link rel="next" href="../release_notes/v1.18.19/">
+        <link rel="next" href="../release_notes/v1.18.20/">
       
       
       <link rel="icon" href="../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
     
     
       
@@ -508,6 +508,15 @@
   
     <nav class="md-nav" aria-label="2 更新内容">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v11820" class="md-nav__link">
+    <span class="md-ellipsis">
+      v1.18.20
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#v11819" class="md-nav__link">
@@ -1089,6 +1098,8 @@
       
         
       
+        
+      
     
     
     
@@ -1116,6 +1127,27 @@
             更新说明
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../release_notes/v1.18.20/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v1.18.20
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -5309,6 +5341,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v11820" class="md-nav__link">
+    <span class="md-ellipsis">
+      v1.18.20
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v11819" class="md-nav__link">
     <span class="md-ellipsis">
       v1.18.19
@@ -5874,6 +5915,66 @@ Bug 修复的小版本。<br />
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v11820">v1.18.20<a class="headerlink" href="#v11820" title="Permanent link">&para;</a></h3>
+<p>2024年6月6日</p>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>feat(X-Pack): 数据填报&gt;编辑表单&gt;删除表单组建时，对应变更表内字段名称，且在创建索引时过滤掉该字段</li>
+<li>feat(X-Pack): 数据填报批量上传 Excel 模版增加 unique 字段提示</li>
+<li>feat(X-Pack): 数据填报表单日期组件支持设置年/年月</li>
+<li>feat(X-Pack): 数据填报创建表单可选择数据源增加配置项</li>
+<li>feat(X-Pack): 数据填报创建表单选择数据源增加选择内建数据库</li>
+<li>feat(X-Pack): 数据填报支持编辑历史表单</li>
+<li>feat(X-Pack): 数据填报数据源配置项样式调整</li>
+<li>feat(X-Pack): 数据填报新增表单复制功能</li>
+<li>feat(X-Pack): 数据填报表单填报下拉框数据增加根据选项过滤功能</li>
+<li>feat(仪表板): 新增移动端仪表板的排序功能 #9080</li>
+<li>feat(视图): AntV 基础折线图和柱状图支持数据预测</li>
+<li>feat(视图): 表格固定宽度支持自适应缩放</li>
+<li>feat(视图): 透视表支持滚动</li>
+<li>feat(视图): 地图空值区域颜色支持跟随主题变化</li>
+<li>feat(视图): 下钻字段支持设置显示名称 #9226</li>
+<li>feat(视图): AntV 矩形树图标签支持显示维度和占比</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>refactor: 动态配置访问路径前缀代码优化</li>
+<li>refactor(视图): 文本组件最大字号调整为 128</li>
+<li>refactor(移动端): 移动端日期组件默认从今年开始 #9778 </li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>fix(X-Pack): 修复动态排序图轴标签会跳动的问题</li>
+<li>fix(X-Pack): 修复数据填报单选框修改了选项之后，没有清空单选框内被清理掉选项数据的问题</li>
+<li>fix(X-Pack): 修复数据填报提交数据包含必填时间范围时提示必填的问题</li>
+<li>fix(X-Pack): 修复数据填报明细页面不展示编辑按钮的问题</li>
+<li>fix(X-Pack): 修复数据填报编辑表单时切换下拉框是否多选时，在表单保存页面上数据库字段类型展示不正确的问题</li>
+<li>fix(X-Pack): 修复定时报告选择名称带“/”的仪表板会报错的问题</li>
+<li>fix(仪表板): 仪表板对删除的视图在前端只检查一次状态，解决因重复检查视图状态导致后端错误日志过多的情况 #9926</li>
+<li>fix(仪表板): 修复 CAS 重新登录后看不到数据列表的问题</li>
+<li>fix(仪表板): 修复全屏预览时过滤组件位于仪表板下方，点击过滤组件无法出现下拉框的问题 #9833</li>
+<li>fix(仪表板): 修复图片组件不能使用相对路径访问的问题</li>
+<li>fix(仪表板): 修复导出原始明细可能出现越权导出数据的情况，修复部分明细表无法导出的问题 #9702</li>
+<li>fix(仪表板): 修复未授权仪表板管理权限时可以在根目录创建文件夹的问题</li>
+<li>fix(仪表板): 修复过滤组件在移动端布局变形的问题</li>
+<li>fix(仪表板): 修复部分模板创建仪表板可能会出错的问题</li>
+<li>fix(仪表板): 修复图表标题的备注显示问题 #9321</li>
+<li>fix(仪表板): 修复视图过滤器使用视图计算字段不生效的问题 #9807</li>
+<li>fix(系统设置): 修复 Pad 访问下显示适配的问题</li>
+<li>fix(视图): 修复世界地图下钻到中国地图失败的问题 #9201</li>
+<li>fix(视图): 修复同环比差值百分比分母没取绝对值的问题</li>
+<li>fix(视图): 修复自定义列宽时明细表和汇总表下钻异常的问题 #9727</li>
+<li>fix: 修复 poi 以及 cas-client 安全漏洞</li>
+<li>fix: 修复 MySQL 查询时间边界不准确的问题</li>
+<li>fix: 修复导出中心文件大小显示错误</li>
+<li>fix: 修复数据导出中心导出文件失败的问题</li>
+</ul>
+</div>
 <h3 id="v11819">v1.18.19<a class="headerlink" href="#v11819" title="Permanent link">&para;</a></h3>
 <p>2024年5月9日</p>
 <div class="admonition abstract">

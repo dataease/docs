@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
     
     
       
@@ -492,6 +492,8 @@
       
         
       
+        
+      
     
     
     
@@ -519,6 +521,27 @@
             更新说明
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release_notes/v1.18.20/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v1.18.20
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -3999,7 +4022,16 @@
           <li class="md-nav__item">
   <a href="#23" class="md-nav__link">
     <span class="md-ellipsis">
-      2.3 任务管理
+      2.3 表单修改
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 任务管理
     </span>
   </a>
   
@@ -4830,7 +4862,16 @@
           <li class="md-nav__item">
   <a href="#23" class="md-nav__link">
     <span class="md-ellipsis">
-      2.3 任务管理
+      2.3 表单修改
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 任务管理
     </span>
   </a>
   
@@ -4889,6 +4930,10 @@
 <p>保存表单：选择一个具体的数据源，并设置对应表名及表单各个字段对应的数据库表字段名称。后续所填写的表单数据将会被保存至该数据源的库表下。</p>
 </div>
 <p><img alt="name" src="../../img/release_notes/2.1%20%E6%95%B0%E6%8D%AE%E5%A1%AB%E6%8A%A5%E4%BF%9D%E5%AD%98%E8%A1%A8%E5%8D%95.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>支持复制表单。</p>
+</div>
+<p><img alt="name" src="../../img/release_notes/2.3%20%E6%96%B0%E5%A2%9E%E5%A4%8D%E5%88%B6%E8%A1%A8%E5%8D%95%E5%8A%9F%E8%83%BD.png" width="900px" /></p>
 <h3 id="22">2.2 表单数据<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p>选择对应对表单，可以查看表单的填报数据以及对应的填报时间、填报人，并且可对表单记录进行修改、查看、删除。<br />
@@ -4899,7 +4944,26 @@
 <p>切换至【提交记录】，可查看对应提交人的操作动作。</p>
 </div>
 <p><img alt="创建表单" src="../../img/xpack/2%E6%8F%90%E4%BA%A4%E8%AE%B0%E5%BD%95.png" width="900px" /></p>
-<h3 id="23">2.3 任务管理<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
+<h3 id="23">2.3 表单修改<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>支持【编辑】对历史表单修改。但需要注意:      <br />
+数字不能切换为其他类型，其他格式类型也不允许切换为数字。</p>
+</div>
+<p><img alt="name" src="../../img/release_notes/2.2%20%E6%94%AF%E6%8C%81%E7%BC%96%E8%BE%91%E5%8E%86%E5%8F%B2%E8%A1%A8%E5%8D%952.png" width="900px" /></p>
+<p><img alt="name" src="../../img/release_notes/2.2%20%E6%94%AF%E6%8C%81%E7%BC%96%E8%BE%91%E5%8E%86%E5%8F%B2%E8%A1%A8%E5%8D%953.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>原组件若允许多选，在编辑时无法修改为非允许多选，该选项为置灰状态。</p>
+</div>
+<p><img alt="name" src="../../img/release_notes/2.2%20%E6%94%AF%E6%8C%81%E7%BC%96%E8%BE%91%E5%8E%86%E5%8F%B2%E8%A1%A8%E5%8D%954.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>下拉框、单选、多选框组件的选项值允许编辑，表单的历史数据不做处理，如果历史数据该字段内容不在选项值范围内，那么可以对该数据编辑时，按照最新的选项值选择后，点击「确定」，完成对该条数据的修改。</p>
+</div>
+<p><img alt="name" src="../../img/release_notes/2.2%20%E6%94%AF%E6%8C%81%E7%BC%96%E8%BE%91%E5%8E%86%E5%8F%B2%E8%A1%A8%E5%8D%954.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>将组件从当前表单中删除后，后台数据表中的物理字段会保留。表单预览数据时，均按照表单中的组件展示，被删除的组件不做展示。</p>
+</div>
+<p><img alt="name" src="../../img/release_notes/2.2%20%E6%94%AF%E6%8C%81%E7%BC%96%E8%BE%91%E5%8E%86%E5%8F%B2%E8%A1%A8%E5%8D%954.png" width="900px" /></p>
+<h3 id="24">2.4 任务管理<a class="headerlink" href="#24" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p>切换至任务管理页面，可设置表单任务。支持对历史对表单任务进行编辑、启动和删除。</p>
 </div>
