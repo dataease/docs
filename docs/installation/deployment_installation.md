@@ -24,7 +24,7 @@
 
 ### 2.1 安装 JDK 21
 !!! Abstract ""
-    DataEase v2 使用 JDK21， [Oracle 官网下载 JDK17 安装包](https://www.oracle.com/java/technologies/downloads/#java17)，根据 CPU 架构，选择对应安装包。本文档所用测试服务器 CPU 架构为 x64，下载的 x64 架构的 rpm 安装包。
+    DataEase v2 使用 JDK21， [Oracle 官网下载 JDK21 安装包](https://www.oracle.com/java/technologies/downloads/#java17)，根据 CPU 架构，选择对应安装包。本文档所用测试服务器 CPU 架构为 x64，下载的 x64 架构的 rpm 安装包。
     ```
     # 下载 JDK21 RPM 安装包
     wget https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.rpm
