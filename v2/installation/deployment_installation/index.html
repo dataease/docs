@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.26">
     
     
       
@@ -282,7 +282,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             正在初始化搜索引擎
@@ -895,9 +895,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-jdk-17" class="md-nav__link">
+  <a href="#21-jdk-21" class="md-nav__link">
     <span class="md-ellipsis">
-      2.1 安装 JDK 17
+      2.1 安装 JDK 21
     </span>
   </a>
   
@@ -3479,9 +3479,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-jdk-17" class="md-nav__link">
+  <a href="#21-jdk-21" class="md-nav__link">
     <span class="md-ellipsis">
-      2.1 安装 JDK 17
+      2.1 安装 JDK 21
     </span>
   </a>
   
@@ -3680,22 +3680,22 @@
 </code></pre></div>
 
 <h2 id="2">2 配置环境<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
-<h3 id="21-jdk-17">2.1 安装 JDK 17<a class="headerlink" href="#21-jdk-17" title="Permanent link">&para;</a></h3>
+<h3 id="21-jdk-21">2.1 安装 JDK 21<a class="headerlink" href="#21-jdk-21" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p>DataEase v2 使用 JDK17， <a href="https://www.oracle.com/java/technologies/downloads/#java17">Oracle 官网下载 JDK17 安装包</a>，根据 CPU 架构，选择对应安装包。本文档所用测试服务器 CPU 架构为 x64，下载的 x64 架构的 rpm 安装包。
-<div class="highlight"><pre><span></span><code># 下载 JDK17 RPM 安装包
-wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.rpm
+<p>DataEase v2 使用 JDK21， <a href="https://www.oracle.com/java/technologies/downloads/#java17">Oracle 官网下载 JDK17 安装包</a>，根据 CPU 架构，选择对应安装包。本文档所用测试服务器 CPU 架构为 x64，下载的 x64 架构的 rpm 安装包。
+<div class="highlight"><pre><span></span><code># 下载 JDK21 RPM 安装包
+wget https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.rpm
 
 # 安装 RPM 安装包
-yum -y install jdk-17_linux-x64_bin.rpm
+yum -y install jdk-21_linux-x64_bin.rpm
 </code></pre></div></p>
 </div>
 <div class="admonition abstract">
 <p>验证 JDK 正确安装。
 <div class="highlight"><pre><span></span><code>[root@iZt4n8oa58aqukyv8sf1ciZ ~]# java -version
-java version &quot;17.0.10&quot; 2024-01-16 LTS
-Java(TM) SE Runtime Environment (build 17.0.10+11-LTS-240)
-Java HotSpot(TM) 64-Bit Server VM (build 17.0.10+11-LTS-240, mixed mode, sharing)
+java version &quot;21.0.10&quot; 2024-01-16 LTS
+Java(TM) SE Runtime Environment (build 21.0.10+11-LTS-240)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.10+11-LTS-240, mixed mode, sharing)
 </code></pre></div></p>
 </div>
 <h3 id="22-git">2.2 安装 Git<a class="headerlink" href="#22-git" title="Permanent link">&para;</a></h3>
@@ -4054,7 +4054,7 @@ spring:
     
     
     
-      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
       
     
     <script>
