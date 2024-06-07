@@ -22,23 +22,23 @@
 
 ## 2 配置环境
 
-### 2.1 安装 JDK 17
+### 2.1 安装 JDK 21
 !!! Abstract ""
-    DataEase v2 使用 JDK17， [Oracle 官网下载 JDK17 安装包](https://www.oracle.com/java/technologies/downloads/#java17)，根据 CPU 架构，选择对应安装包。本文档所用测试服务器 CPU 架构为 x64，下载的 x64 架构的 rpm 安装包。
+    DataEase v2 使用 JDK21， [Oracle 官网下载 JDK17 安装包](https://www.oracle.com/java/technologies/downloads/#java17)，根据 CPU 架构，选择对应安装包。本文档所用测试服务器 CPU 架构为 x64，下载的 x64 架构的 rpm 安装包。
     ```
-    # 下载 JDK17 RPM 安装包
-    wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.rpm
+    # 下载 JDK21 RPM 安装包
+    wget https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.rpm
 
     # 安装 RPM 安装包
-    yum -y install jdk-17_linux-x64_bin.rpm
+    yum -y install jdk-21_linux-x64_bin.rpm
     ```
 !!! Abstract ""
     验证 JDK 正确安装。
     ```
     [root@iZt4n8oa58aqukyv8sf1ciZ ~]# java -version
-    java version "17.0.10" 2024-01-16 LTS
-    Java(TM) SE Runtime Environment (build 17.0.10+11-LTS-240)
-    Java HotSpot(TM) 64-Bit Server VM (build 17.0.10+11-LTS-240, mixed mode, sharing)
+    java version "21.0.10" 2024-01-16 LTS
+    Java(TM) SE Runtime Environment (build 21.0.10+11-LTS-240)
+    Java HotSpot(TM) 64-Bit Server VM (build 21.0.10+11-LTS-240, mixed mode, sharing)
     ```
 ### 2.2 安装 Git
 !!! Abstract ""
