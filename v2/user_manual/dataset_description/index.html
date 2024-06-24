@@ -3488,7 +3488,7 @@
 情况三：有多个过滤组件时，要用括号将它们组合在一起，否则图表无法更新：
 <div class="highlight"><pre><span></span><code>SELECT ORDER_ID, ORDER_DATE, PROJ_ID, ORDER_EMP FROM ORDERS WHERE (ORDER_EMP IN ${USER_NAME} AND PROJ_ID IN ${USER_PROJ_ID})
 </code></pre></div>
-情况四：日期范围：
+情况四：日期范围（时间字段需为 13 位时间戳）：
 <div class="highlight"><pre><span></span><code>SELECT * FROM SALES WHERE 记录时间 BETWEEN &#39;${BEGINTIME}&#39; AND &#39;${ENDTIME}&#39;
 </code></pre></div></p>
 </div>
