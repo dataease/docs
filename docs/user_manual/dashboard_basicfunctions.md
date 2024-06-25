@@ -146,7 +146,9 @@
 ![外部参数设置](../img/dashboard_generation/外部参数设置.png){ width="900" }
 
 !!! Abstract ""
-	**公共链接参数组装，对传参进行 base64 处理，以下为示例：**  
+	**[推荐直接在公共链接的  Ticket 机制中直接设置参数](http://127.0.0.1:8000/docs/user_manual/dashboard_using/#31:~:text=%E5%AF%B9%E5%85%B6%E8%BF%9B%E8%A1%8C%20Ticket%20%E8%AE%BE%E7%BD%AE%EF%BC%8C%E8%AE%BE%E7%BD%AE%E5%8F%82%E6%95%B0%E4%B8%BA%20%7B%22name%22%3A%22Tony%22%2C%22age%22%3A10%7D%EF%BC%8C%E8%8E%B7%E5%8F%96%E5%88%B0%E8%AF%A5%E6%9D%A1%20Ticket%20%E7%9A%84%20ticket%20%E4%B8%BA%E2%80%9CVMv5FH2o%E2%80%9D%20%EF%BC%9B)。**  
+
+	也可进行公共链接参数组装，对传参进行 base64 处理，以下为示例：
 	配置参数名为"省份"，关联了 “2021 年全国 GDP 数据” 仪表板中“今年上半年 GDP” 和 “GDP 前十强城市” 的 province
 	字段，组装参数为 {"省份":"北京市"}，使用 base64 加密处理，该示例通过电脑终端进行，其它方式均可。
 	```shell
