@@ -95,7 +95,7 @@
 ![对接企业微信](../img/xpack/企业微信应用首页.png){ width="900px" }
 
 !!! Abstract ""
-    在企业微信工作台中找到 DataEase 应用，点击该应用即可免登访问 DataEase。
+    在企业微信工作台中找到 DataEase 应用，PC 端和移动端点击该应用即可免登访问 DataEase。
 
 ![对接企业微信](../img/xpack/企业微信应用界面.png){ width="900px" }
 ## 2 钉钉设置
@@ -156,9 +156,10 @@
 ### 2.3 钉钉免登设置
 
 !!! Abstract ""
-    在钉钉开放平台的【应用能力】栏中，进入【网页应用】，设置【PC端首页地址】。首页地址格式为：http(s)://xxx.xxx.xxx/?client=dingtalk&corpId=CORPID。注意 corpId=CORPID 需替换成真正的 CORPID。
+    在钉钉开放平台的【应用能力】栏中，进入【网页应用】，设置【应用首页】和【PC端首页地址】。地址格式为：http(s)://xxx.xxx.xxx/?client=dingtalk&corpId=CORPID。注意 corpId=CORPID 需替换成真正的 CORPID。可实现 PC 端和移动端免密登陆。
 
-![对接钉钉平台](../img/xpack/钉钉免密登陆配置.png){ width="900px" }
+![对接钉钉平台](../img/xpack/钉钉免密.png){ width="900px" }
+
 ![对接钉钉平台](../img/xpack/钉钉应用内部界面.png){ width="900px" }
 
 
@@ -240,9 +241,9 @@
 ### 3.3 飞书免登设置
 
 !!! Abstract ""
-    在飞书开放平台中，选择 DataEase 应用。在【应用功能】下的【网页】里，开启网页功能，并配置【桌面端主页】。主页地址格式：http(s)://xxx.xxx.xxx.xxx//?client=lark。
+    在飞书开放平台中，选择 DataEase 应用。在【应用功能】下的【网页】里，开启网页功能，并配置【桌面端主页】和【移动端主页】。地址格式：http(s)://xxx.xxx.xxx.xxx//?client=lark。可实现 PC 端和移动端免密登陆。
 
-![对接飞书平台](../img/xpack/飞书免密配置.png){ width="900px" }
+![对接飞书平台](../img/xpack/飞书免密登录.png){ width="900px" }
 
 ![对接飞书平台](../img/xpack/飞书应用内部界面.png){ width="900px" }
 
