@@ -40,6 +40,15 @@
 
 ![请求参数4](../img/datasource_configuration/API数据结构.png){ width="900" }
 
+!!! Abstract ""
+    API 数据源支持参数提取。API 数据源新增接口参数设置，支持从 API 请求的响应数据中提取结果作为 API 数据表的请求参数，可以用于 API  token 获取等场景。
+    提取参数：
+![更新1](../../newimg/2.2%20API%20数据源支持参数提取.png){ width="900px" }
+
+!!! Abstract ""
+    配置参数：
+![更新1](../../newimg/2.2%20API%20数据源支持参数提取2.png){ width="900px" }
+
 ## 5 数据源校验
 
 !!! Abstract ""

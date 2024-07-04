@@ -45,6 +45,7 @@ nav:
   - 产品迭代:
       - 更新日志: changelog.md
       - 更新说明:
+          - v2.8.0: change-v2-8.md
           - v2.7.0: change-v2-7.md
           - v2.6.0: change-v2-6.md
           - v2.5.0: change-v2-5.md
@@ -142,6 +143,7 @@ nav:
               - 认证设置: xpack/identification_setting.md
               - 水印管理: xpack/watermark.md
               - 系统变量: xpack/system_variables.md
+              - 插件管理: user_manual/system_management/plugin_management.md
           - 系统 API: xpack/sys_management_develop.md
   - 常见问题:
       - 系统管理: faq/system_management.md

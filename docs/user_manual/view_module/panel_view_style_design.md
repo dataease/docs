@@ -29,6 +29,14 @@
 ![图形属性_自定义配色](../../img/view_generation/2.0数据大屏自定义颜色.png){ width="900px" }
 
 !!! Abstract ""
+    地图颜色支持设置渐变色及自定义渐变色
+![更新1](../../newimg/数据大屏地图渐变色.png){ width="900px" }
+
+!!! Abstract ""
+    在自定义渐变色时，可以通过设置起始和结束颜色，DataEase 会自动计算中间渐变色。
+![更新1](../../newimg/数据大屏地图自动计算渐变色.png){ width="900px" }
+
+!!! Abstract ""
     如下图所示，支持开启渐变色和透明度调整 。
 
 ![图形属性](../../img/view_generation/2.0数据大屏透明度.png){ width="900px" }

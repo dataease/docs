@@ -85,6 +85,12 @@
 
 ![Tab页展示视图](../../img/dashboard_generation/2.0选择tab2.png){ width="900px" }
 
+!!! Abstract ""
+	Tab 组件支持排序：
+
+![更新1](../../newimg/1.1%20Tab%20组件支持排序.PNG){ width="900px" }
+
+
 
 ## 4 网页组件
 

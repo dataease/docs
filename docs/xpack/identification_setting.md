@@ -7,3 +7,7 @@
 !!! Abstract ""
     OIDC 配置信息。
 ![更新1](../newimg/oidc认证设置.png){ width="900px" }
+
+!!! Abstract ""
+    CAS 配置信息。
+![更新1](../../newimg/3.2 支持 CAS 配置时填写回调域名.png){ width="900px" }
