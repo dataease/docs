@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
     
     
       
@@ -480,6 +480,8 @@
       
         
       
+        
+      
     
     
     
@@ -507,6 +509,27 @@
             更新说明
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../change-v2-8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v2.8.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1807,6 +1830,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 仪表板全屏
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3001,6 +3033,8 @@
       
         
       
+        
+      
     
     
     
@@ -3146,6 +3180,27 @@
   
   <span class="md-ellipsis">
     系统变量
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system_management/plugin_management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    插件管理
   </span>
   
 
@@ -3422,6 +3477,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 仪表板全屏
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3446,8 +3510,8 @@
 <div class="admonition abstract">
 <p>点击下图中所示位置，创建公共链接进行仪表板分享。</p>
 </div>
-<p><img alt="仪表板_创建公共链接" src="../../img/dashboard_generation/%E4%BB%AA%E8%A1%A8%E6%9D%BF%E8%BF%9B%E8%A1%8C%E5%88%86%E4%BA%AB.png" width="900px" /></p>
-<p><img alt="仪表板_创建公共链接" src="../../img/dashboard_generation/%E5%88%9B%E5%BB%BA%E5%85%AC%E5%85%B1%E9%93%BE%E6%8E%A5.png" width="900px" /></p>
+<p><img alt="更新1" src="../../newimg/1.2%20公共链接分享支持%20Ticket%20方式.PNG" width="900px" /></p>
+<p><img alt="仪表板_创建公共链接" src="../img/dashboard_generation/创建公共链接.png" width="900px" /></p>
 <div class="admonition abstract">
 <p>打开下图中所示链接分享的按钮，链接自动生成，点击【复制链接】进行分享。<br />
 <strong>分享链接可设置有效期及密码保护。</strong></p>
@@ -3461,6 +3525,19 @@
 <p>支持自定义公共链接密码。</p>
 </div>
 <p><img alt="更新1" src="../../newimg/1.22 公共链接支持自定义密码.png" width="500px" /></p>
+<div class="admonition abstract">
+<p>公共链接功能现已集成 Ticket 机制，增强了链接的安全性和灵活性。每个 Ticket 均可独立设定有效期。此外，相较于之前版本需要对外部参数进行 base64 编码处理，现在的公共链接外部参数可以直接在 Ticket 参数中简易设置。  <br />
+打开 Ticket 设置 并单独配置其有效期与参数，例如配置有效期为 30 天，参数为 {"name":"Tony","age":10}：</p>
+</div>
+<p><img alt="更新1" src="../../newimg/1.2%20公共链接分享支持%20Ticket%20方式2.PNG" width="500px" /></p>
+<div class="admonition abstract">
+<p>复制 Ticket 链接，那么，使用 Ticket 的公共链接格式为 <a href="https://example.dataease.com/link/bcg48L2W?ticket=xk59xiHJ">https://example.dataease.com/link/bcg48L2W?ticket=xk59xiHJ</a>。在此情况下，无需传递 Ticket 参数，DataEase 将从数据库自动获取 Ticket 相关参数。</p>
+</div>
+<p><img alt="更新1" src="../../newimg/1.2%20公共链接分享支持%20Ticket%20方式3.PNG" width="500px" /></p>
+<div class="admonition abstract">
+<p>当启用 Ticket “必选”选项时，只有在 URL 中附带 ticket 参数的情况下，公共链接才能被成功访问。</p>
+</div>
+<p><img alt="更新1" src="../../newimg/1.2%20公共链接分享支持%20Ticket%20方式4.PNG" width="500px" /></p>
 <h2 id="2">2 仪表板导出<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>点击下图中所示位置，导出仪表板的模板、PDF、图片到本地，可在本地的下载目录中查看。</p>
@@ -3497,6 +3574,11 @@
 <p>同时，仪表板提供手动刷新按钮，用户需要时可自行点击进行刷新。</p>
 </div>
 <p><img alt="仪表板_刷新" src="../../img/dashboard_generation/%E8%BF%9B%E8%A1%8C%E5%88%B7%E6%96%B0.png" width="900px" /></p>
+<h2 id="6">6 仪表板全屏<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p>仪表板新支持一键全屏预览</p>
+</div>
+<p><img alt="仪表板_刷新" src="../../img/dashboard_generation/%E4%BB%AA%E8%A1%A8%E6%9D%BF%E5%85%A8%E5%B1%8F.png" width="900px" /></p>
 
 
 
@@ -3586,7 +3668,7 @@
     
     
     
-      <script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
     
     <script>
