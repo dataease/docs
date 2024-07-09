@@ -3,7 +3,7 @@
 !!! Abstract ""
 	点击下图中所示位置，创建公共链接进行仪表板分享。
 
-![更新1](../../newimg/1.2%20公共链接分享支持%20Ticket%20方式.PNG){ width="900px" }
+![更新1](../../newimg/仪表板开启公共链接分享.png){ width="900px" }
 
 ![仪表板_创建公共链接](../img/dashboard_generation/创建公共链接.png){ width="900px" }
 
@@ -21,8 +21,9 @@
 ![更新1](../../newimg/1.22 公共链接支持自定义密码.png){ width="500px" }
 
 !!! Abstract ""
-	公共链接功能现已集成 Ticket 机制，增强了链接的安全性和灵活性。每个 Ticket 均可独立设定有效期。此外，相较于之前版本需要对外部参数进行 base64 编码处理，现在的公共链接外部参数可以直接在 Ticket 参数中简易设置。    
-	打开 Ticket 设置 并单独配置其有效期与参数，例如配置有效期为 30 天，参数为 {"name":"Tony","age":10}：
+	公共链接功能现已集成 Ticket 机制，公共链接外部参数可以直接在 Ticket 参数中简易设置，增强外部传参的安全性和灵活性。    
+	**注意：设置 Ticket 的同时，需要开启 [设置仪表板外部参数](https://dataease.io/docs/v2/user_manual/dashboard_basicfunctions/#5)。**     
+	打开 Ticket 设置，并单独配置其有效期与参数，每个 Ticket 均可独立设定有效期，例如配置有效期为 30 天，参数为 {"name":"Tony","age":10}：  
 ![更新1](../../newimg/1.2%20公共链接分享支持%20Ticket%20方式2.PNG){ width="500px" }
 
 !!! Abstract ""
