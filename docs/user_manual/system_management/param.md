@@ -14,7 +14,14 @@
 
 ![数据源检测时间](../../img/system_management/数据源检测时间.png){ width="900" }
 
-## 2 地图设置
+## 2 邮件设置
+!!! Abstract ""
+    用户可通过配置邮件的基本信息，来接收仪表板分享、数据集同步或数据源失效的信息。
+![地图设置1](../../img/system_management/邮件设置.png){ width="900" }
+
+## 3 地图设置
+
+### 3.1 地理信息
 
 !!! Abstract ""
     支持设置自定义地图文件。
@@ -60,7 +67,48 @@
 
 ![世界地图](../../img/system_management/世界地图.png){ width="900" }
 
-## 3 引擎设置
+### 3.2 在线地图
+
+!!! Abstract ""
+    在线地图：支持配置高德地图 Key（符号地图、流向地图）。
+
+!!! Abstract ""
+    进入高德开放平台官网：https://lbs.amap.com/
+
+![高德【平台](../../img/system_management/高德平台.PNG){ width="900" }
+
+!!! Abstract ""
+    选择【文档与支持】->【API】->【web 服务 API】。
+
+![web服务](../../img/system_management/高德平台.PNG){ width="900" }
+
+!!! Abstract ""
+    点开【开发指南】->【获取 Key】。
+
+![开发指南](../../img/system_management/高德开发指南.PNG){ width="900" }
+
+!!! Abstract ""
+    登录【高德开放平台控制台】，注册开发者，后续按照文档进行即可。
+
+![地图指南](../../img/system_management/高德地图指南.PNG){ width="900" }
+
+!!! Abstract ""
+    如下即为验证成功，以及创建应用获取 Key。
+
+![高德验证成功](../../img/system_management/高德验证成功.PNG){ width="900" }
+
+![高德创建应用](../../img/system_management/高德创建应用.png){ width="900" }
+
+![高德添加KEY](../../img/system_management/高德添加KEY.png){ width="900" }
+
+
+!!! Abstract ""
+    在 DataEase 在线地图 Key 配置中，填入获取的地图服务 Key，点击保持即可。
+
+![配置KEY](../../img/system_management/配置KEY.png){ width="900" }
+
+
+## 4 引擎设置
 
 !!! Abstract ""
     默认数据引擎是 DataEase 自带的 MySQL，用以存储 Excel 及 API 数据集数据。目前该引擎只支持 MySQL 类型，支持使用外部 MySQL；  
