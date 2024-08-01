@@ -158,6 +158,7 @@
 	视图明细效果，支持对视图进行 Excel 导出。
 
 ![仪表板_预览](../img/dashboard_generation/查看明细.png){ width="900px" }  
+
 ![明细导出结果](../img/dashboard_generation/明细导出结果.png){ width="900px" }
 
 ### 8.2 导出视图图片

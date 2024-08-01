@@ -41,7 +41,7 @@
 ## 2 仪表板导出
 
 !!! Abstract ""
-	点击下图中所示位置，导出仪表板的模板、PDF、图片到本地，可在本地的下载目录中查看。
+	点击下图中所示位置，导出仪表板的模板、应用、PDF、图片到本地，可在本地的下载目录中查看。
 
 ![仪表板_导出为模版](../img/dashboard_generation/仪表板导出.png){ width="900px" }
 
@@ -65,7 +65,9 @@
 
 !!! Abstract ""
 	视图明细效果，支持对视图进行 Excel 导出。
+
 ![仪表板_预览](../img/dashboard_generation/查看明细.png){ width="900px" }
+
 ![明细导出结果](../img/dashboard_generation/视图导出.png){ width="900px" }
 
 ### 4.2 导出视图图片
@@ -74,6 +76,7 @@
 	在视图放大效果下，支持导出视图图片,导出图片时支持选择尺寸。
 
 ![仪表板_导出图片](../img/dashboard_generation/进行放大.png){ width="900px" }
+
 ![更新1](../../newimg/1.4 导出图片时支持选择尺寸.png){ width="900px" }
 
 
