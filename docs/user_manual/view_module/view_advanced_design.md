@@ -90,3 +90,15 @@
 ![高级设置_表格滚动](../../img/view_generation/2.0滚动设置.png){ width="900px" }  
 ![高级设置_表格滚动](../../img/view_generation/2.0滚动开启.png){ width="900px" }
 
+## 6 气泡动效
+
+!!! Abstract ""
+    流向地图、气泡地图配置数据后，支持配置气泡动效。进入【高级】并打开【气泡动效】开关。  
+    **注意：流向地图需先在【样式】中设置标注点气泡大小。此外，流向地图为在线地图需要[配置地图 Key](https://dataease.io/docs/v2/user_manual/system_management/param/#32)。**
+
+![气泡动效](../../newimg/1.10%20气泡地图添加水波纹动画配置.gif){ width="900px" }
+
+
+![气泡动效](../../newimg/1.11%20流向地图支持配置起止点名称及更多动效.gif){ width="900px" }
+
+

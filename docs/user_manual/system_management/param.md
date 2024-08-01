@@ -14,6 +14,15 @@
 
 ![数据源检测时间](../../img/system_management/数据源检测时间.png){ width="900" }
 
+
+!!! Abstract ""
+    在已配置其他登录方式（LDAP、CAS、OIDC）的情况下，并将其配置为默认登录方式，则在访问 DataEase 时，登录页面会自动跳转到相应登录页面。在配置了其他默认登录方式的情况下，如果需要使用 DataEase 原有登录方式，可以访问 URL：http(s)://de_server_ip:de_port/#/admin-login，可支持所有用户的普通登录。
+
+![更新1](../../newimg/3.2%20支持配置默认登录方式.png){ width="900px" }
+
+![更新1](../../newimg/3.2%20支持配置默认登录方式2.png){ width="900px" }
+
+
 ## 2 邮件设置
 !!! Abstract ""
     用户可通过配置邮件的基本信息，来接收仪表板分享、数据集同步或数据源失效的信息。
