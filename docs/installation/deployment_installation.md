@@ -1,6 +1,6 @@
 !!! Abstract ""
-    请使用 v2.3、v2.2 等已发布分支的代码运行 DataEase。请勿使用 dev 等分支，dev 等分支代码均处于开发或测试阶段，部分依赖并没有上传到中央仓库，编译时可能出现依赖缺失。   
-    本文所使用源码为 DataEase v2.3 分支，操作系统为 CentOS 7.9，举例说明如何以源码的形式编译 DataEase 工程。所有操作均在阿里云（新加坡区） 4核8G 环境中执行。
+    请使用 v2.9、v2.8 等已发布分支的代码运行 DataEase。请勿使用 dev 等分支，dev 等分支代码均处于开发或测试阶段，部分依赖并没有上传到中央仓库，编译时可能出现依赖缺失。   
+    本文所使用源码为 DataEase v2.9 分支，操作系统为 CentOS 7.9，举例说明如何以源码的形式编译 DataEase 工程。所有操作均在阿里云（新加坡区） 4核8G 环境中执行。
 ## 1 项目结构
 
      ```
@@ -128,7 +128,7 @@
     下载源码到本地
     ```
     cd /opt
-    git clone -b v2.3 https://github.com/dataease/dataease.git
+    git clone -b v2.9 https://github.com/dataease/dataease.git
     ```
     **注意：前后端项目目录在下载后的内容的 core 目录下。**
 
