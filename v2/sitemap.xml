@@ -69,10 +69,6 @@
          <lastmod>2024-09-05</lastmod>
     </url>
     <url>
-         <loc>https://dataease.io/docs/v2/datarelationships_charttypes/</loc>
-         <lastmod>2024-09-05</lastmod>
-    </url>
-    <url>
          <loc>https://dataease.io/docs/v2/high_precision_problem_solving/</loc>
          <lastmod>2024-09-05</lastmod>
     </url>
@@ -82,14 +78,6 @@
     </url>
     <url>
          <loc>https://dataease.io/docs/v2/quick_start/</loc>
-         <lastmod>2024-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://dataease.io/docs/v2/securitybulletin/</loc>
-         <lastmod>2024-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://dataease.io/docs/v2/spacing_design/</loc>
          <lastmod>2024-09-05</lastmod>
     </url>
     <url>
@@ -317,30 +305,6 @@
          <lastmod>2024-09-05</lastmod>
     </url>
     <url>
-         <loc>https://dataease.io/docs/v2/user_manual/dataset_configuration/dataset_Excel/</loc>
-         <lastmod>2024-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://dataease.io/docs/v2/user_manual/dataset_configuration/dataset_SQL/</loc>
-         <lastmod>2024-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://dataease.io/docs/v2/user_manual/dataset_configuration/dataset_api/</loc>
-         <lastmod>2024-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://dataease.io/docs/v2/user_manual/dataset_configuration/dataset_connection/</loc>
-         <lastmod>2024-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://dataease.io/docs/v2/user_manual/dataset_configuration/dataset_database/</loc>
-         <lastmod>2024-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://dataease.io/docs/v2/user_manual/dataset_configuration/dataset_definision/</loc>
-         <lastmod>2024-09-05</lastmod>
-    </url>
-    <url>
          <loc>https://dataease.io/docs/v2/user_manual/datasource_configuration/AWS_Redshift_datasource_configuration/</loc>
          <lastmod>2024-09-05</lastmod>
     </url>
@@ -353,19 +317,7 @@
          <lastmod>2024-09-05</lastmod>
     </url>
     <url>
-         <loc>https://dataease.io/docs/v2/user_manual/datasource_configuration/DM_datasource_configuration/</loc>
-         <lastmod>2024-09-05</lastmod>
-    </url>
-    <url>
          <loc>https://dataease.io/docs/v2/user_manual/datasource_configuration/Doris_datasource_configuration/</loc>
-         <lastmod>2024-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://dataease.io/docs/v2/user_manual/datasource_configuration/Elasticsearch_datasource_configuration/</loc>
-         <lastmod>2024-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://dataease.io/docs/v2/user_manual/datasource_configuration/Hive_datasource_configuration/</loc>
          <lastmod>2024-09-05</lastmod>
     </url>
     <url>
@@ -373,27 +325,11 @@
          <lastmod>2024-09-05</lastmod>
     </url>
     <url>
-         <loc>https://dataease.io/docs/v2/user_manual/datasource_configuration/KingBase_datasource_configuration/</loc>
-         <lastmod>2024-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://dataease.io/docs/v2/user_manual/datasource_configuration/Kylin_datasource_configuration/</loc>
-         <lastmod>2024-09-05</lastmod>
-    </url>
-    <url>
          <loc>https://dataease.io/docs/v2/user_manual/datasource_configuration/MariaDB_datasource_configuration/</loc>
          <lastmod>2024-09-05</lastmod>
     </url>
     <url>
-         <loc>https://dataease.io/docs/v2/user_manual/datasource_configuration/Maxcompute_datasource_configuration/</loc>
-         <lastmod>2024-09-05</lastmod>
-    </url>
-    <url>
          <loc>https://dataease.io/docs/v2/user_manual/datasource_configuration/MongoDB-BI_datasource_configuration/</loc>
-         <lastmod>2024-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://dataease.io/docs/v2/user_manual/datasource_configuration/MongoDB_datasource_configuration/</loc>
          <lastmod>2024-09-05</lastmod>
     </url>
     <url>
@@ -406,10 +342,6 @@
     </url>
     <url>
          <loc>https://dataease.io/docs/v2/user_manual/datasource_configuration/PostgreSQL_datasource_configuration/</loc>
-         <lastmod>2024-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://dataease.io/docs/v2/user_manual/datasource_configuration/Presto_datasource_configuration/</loc>
          <lastmod>2024-09-05</lastmod>
     </url>
     <url>
@@ -426,10 +358,6 @@
     </url>
     <url>
          <loc>https://dataease.io/docs/v2/user_manual/datasource_configuration/datasource_configuration_excel/</loc>
-         <lastmod>2024-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://dataease.io/docs/v2/user_manual/filter_module/clear_button_module/</loc>
          <lastmod>2024-09-05</lastmod>
     </url>
     <url>
@@ -473,27 +401,11 @@
          <lastmod>2024-09-05</lastmod>
     </url>
     <url>
-         <loc>https://dataease.io/docs/v2/user_manual/filter_module/inquire_button_module/</loc>
-         <lastmod>2024-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://dataease.io/docs/v2/user_manual/other_module/multimedia_module/</loc>
-         <lastmod>2024-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://dataease.io/docs/v2/user_manual/other_module/other_module/</loc>
-         <lastmod>2024-09-05</lastmod>
-    </url>
-    <url>
          <loc>https://dataease.io/docs/v2/user_manual/other_module/panel_style_module/</loc>
          <lastmod>2024-09-05</lastmod>
     </url>
     <url>
          <loc>https://dataease.io/docs/v2/user_manual/other_module/style_module/</loc>
-         <lastmod>2024-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://dataease.io/docs/v2/user_manual/system_management/apps_management/</loc>
          <lastmod>2024-09-05</lastmod>
     </url>
     <url>
