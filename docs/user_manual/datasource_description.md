@@ -10,8 +10,8 @@
 ## 2 支持的数据源类型
 
 !!! Abstract ""
-    - **数据仓库/数据湖：** AWS RedShift
-    - **OLTP 型数据库：** MySQL、MongoDB-BI、SQL Server、Oracle、PostgreSQL、MariaDB、Db2、TiDB
+    - **数据仓库/数据湖：** AWS RedShift、 Apache Hive（插件）
+    - **OLTP 型数据库：** MySQL、MongoDB-BI、SQL Server、Oracle、PostgreSQL、MariaDB、Db2、TiDB、达梦（插件）
     - **OLAP 型数据库：** ClickHouse、Apache Doris、Apache Impala、StarRocks
     - **数据文件：** Excel、CSV
     - **API 数据源**
