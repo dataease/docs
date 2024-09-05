@@ -86,18 +86,23 @@
 
 ![仪表盘编辑_其他组件](../../img/dashboard_generation/2.0Tab组件.png){ width="900px" }
 
-!!! Abstract ""
-	如下图所示，可通过 Tab 页展示多个图表和组件。
-
 ![Tab页展示视图](../../img/dashboard_generation/2.0选择tab1.png){ width="900px" }
 
-![Tab页展示视图](../../img/dashboard_generation/2.0选择tab2.png){ width="900px" }
+
+!!! Abstract ""
+	Tab 组件支持轮播。
+
+![更新1](../../newimg/1.1%20Tab%20组件支持轮播1.PNG){ width="900px" }
+
+!!! Abstract ""
+	Tab 组件的轮播在编辑状态下不生效，在预览模式下才会生效。
+
+![更新1](../../newimg/1.1%20Tab%20组件支持轮播2.gif){ width="900px" }
 
 !!! Abstract ""
 	Tab 组件支持排序：
 
 ![更新1](../../newimg/1.1%20Tab%20组件支持排序.PNG){ width="900px" }
-
 
 
 ## 4 网页组件

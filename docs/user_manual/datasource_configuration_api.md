@@ -49,6 +49,11 @@
     配置参数：
 ![更新1](../../newimg/2.2%20API%20数据源支持参数提取2.png){ width="900px" }
 
+!!! Abstract ""
+    API 数据源在请求参数的请求头、QUERY 参数、请求体（form-data、x-www-form-urlencoded）均增加时间函数支持。目前内置的时间函数有当天（yyyy-MM-DD）、当天（yyyy/MM/DD）。
+
+![更新1](../../newimg/2.2%20API%20数据源支持时间函数.png){ width="900px" } 
+
 ## 5 数据源校验
 
 !!! Abstract ""

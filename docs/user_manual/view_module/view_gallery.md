@@ -51,6 +51,11 @@
     ![echarts明细表](../../img/view_generation/view_gallery/ECharts/透视图.png){ width="900px" }
 
 
+### 2.4 热力图
+!!! Abstract ""
+    热力图
+![echarts明细表](../../img/view_generation/view_gallery/ECharts/热力图.png){ width="900px" }
+
 ## 3 线/面图
 
 !!! Abstract ""

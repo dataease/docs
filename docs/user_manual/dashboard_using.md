@@ -161,6 +161,8 @@
 
 ![明细导出结果](../img/dashboard_generation/明细导出结果.png){ width="900px" }
 
+
+
 ### 8.2 导出视图图片
 
 !!! Abstract ""

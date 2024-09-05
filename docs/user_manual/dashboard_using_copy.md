@@ -61,7 +61,10 @@
 
 ![仪表板_预览](../img/dashboard_generation/查看明细和放大.png){ width="900px" }  
 
+!!! Abstract ""
+	明细表中的图片，鼠标点击单元格图片，图片会放大展示。
 
+![更新1](../../newimg/1.7%20明细表支持显示图片5.png){ width="900px" }
 
 !!! Abstract ""
 	视图明细效果，支持对视图进行 Excel 导出。
@@ -69,6 +72,11 @@
 ![仪表板_预览](../img/dashboard_generation/查看明细.png){ width="900px" }
 
 ![明细导出结果](../img/dashboard_generation/视图导出.png){ width="900px" }
+
+!!! Abstract ""
+ 	支持原始明细数据导出
+
+![更新1](../../newimg/1.3%20支持原始明细数据导出.PNG){ width="900px" }
 
 ### 4.2 导出视图图片
 
@@ -78,6 +86,7 @@
 ![仪表板_导出图片](../img/dashboard_generation/进行放大.png){ width="900px" }
 
 ![更新1](../../newimg/1.4 导出图片时支持选择尺寸.png){ width="900px" }
+
 
 
 ## 5 仪表板刷新

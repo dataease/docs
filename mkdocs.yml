@@ -130,7 +130,9 @@ nav:
       - 模板市场: user_manual/template_market.md
       - 数据导出中心: user_manual/system_management/data_export_center.md
       - 工具箱: user_manual/system_management/module.md
-      - 系统参数: user_manual/system_management/param.md
+      - 系统设置:
+           - 系统参数: user_manual/system_management/param.md
+           - 字体管理: user_manual/system_management/font_management.md
       - X-Pack:
           - 组织管理中心:
               - 用户管理: xpack/user_management_user.md
@@ -138,6 +140,8 @@ nav:
               - 权限配置: xpack/sys_management_permission.md
               - 定时报告: xpack/sys_management_report.md
               - 同步管理: xpack/data_synchronization_management.md
+              - 血缘分析: xpack/blood_relationship.md
+              - 告警管理: xpack/alarm_management.md
           - 系统设置:
               - 平台对接: xpack/platform_abutment.md
               - 外观配置: xpack/appearance_configuration.md
@@ -147,6 +151,7 @@ nav:
               - 系统变量: xpack/system_variables.md
               - 插件管理: user_manual/system_management/plugin_management.md
           - 系统 API: xpack/sys_management_develop.md
+          - 数据填报: xpack/data_filing.md
   - 常见问题:
       - 系统管理: faq/system_management.md
       - 企业版: faq/enterprise_faq.md
