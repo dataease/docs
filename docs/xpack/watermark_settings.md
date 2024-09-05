@@ -26,5 +26,5 @@
 ![数据管理2](../img/xpack/数据管理2.png){ width="900px" }
 !!! Abstract ""
     选择目标数据库，进行字段映射。
-![数据管理3](../img/xpack/数据管理3.png){ width="900px" }
+![数据管理3](../img/xpack/数据管理3.png){ width="900px" }  
 
