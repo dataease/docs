@@ -282,12 +282,15 @@
 
 
 ### 3.2 新增告警管理（XPack）
+
 !!! Abstract ""
-    待补充。
+    富文本、图表、表格支持在【高级】中设置阈值告警。 配置通知机制，告警及时传达给相关人员。
 
-![更新1](./newimg/3.2 新增告警管理（XPack）1.png){ width="900px" }
+![更新1](../newimg/3.2 新增告警管理（XPack）1.png){ width="900px" }
 
-![更新1](./newimg/3.2 新增告警管理（XPack）2.png){ width="900px" }
+![告警通知](../img/xpack/创建告警机制.png){ width="900px" }
+
+![告警通知](../img/xpack/告警通知.png){ width="900px" }
 
 
 
