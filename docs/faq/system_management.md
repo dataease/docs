@@ -16,7 +16,7 @@
     先查看 /opt/dataease2.0/conf/mysql.env 文件，获取当前系统数据库的密码。 使用该数据库密码连接到 DataEase 使用的 MySQL 数据库。  
     执行以下 SQL 语句来重置密码，将 DataEase 的用户信息存放在数据库中的 `per_user` 表中，其中 password 字段为用户密码的 `md5` 值。
     ```sql
-    update per_user set password='504c8c8dfcbbe5b50d676ad65ef43909' where username='admin';
+    update per_user set pwd='504c8c8dfcbbe5b50d676ad65ef43909' where account='admin';
     ```
     连接到数据库后，执行上面的 SQL 语句可以将用户 `admin` 的密码重置为 `DataEase@123456`。
 
