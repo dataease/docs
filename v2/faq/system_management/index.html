@@ -3617,7 +3617,7 @@
 <p><strong>当系统管理员忘记密码时，需要通过数据库操作重置密码：</strong><br />
 先查看 /opt/dataease2.0/conf/mysql.env 文件，获取当前系统数据库的密码。 使用该数据库密码连接到 DataEase 使用的 MySQL 数据库。<br />
 执行以下 SQL 语句来重置密码，将 DataEase 的用户信息存放在数据库中的 <code>per_user</code> 表中，其中 password 字段为用户密码的 <code>md5</code> 值。
-<div class="highlight"><pre><span></span><code><span class="k">update</span><span class="w"> </span><span class="n">per_user</span><span class="w"> </span><span class="k">set</span><span class="w"> </span><span class="n">password</span><span class="o">=</span><span class="s1">&#39;504c8c8dfcbbe5b50d676ad65ef43909&#39;</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">username</span><span class="o">=</span><span class="s1">&#39;admin&#39;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">update</span><span class="w"> </span><span class="n">per_user</span><span class="w"> </span><span class="k">set</span><span class="w"> </span><span class="n">pwd</span><span class="o">=</span><span class="s1">&#39;504c8c8dfcbbe5b50d676ad65ef43909&#39;</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">account</span><span class="o">=</span><span class="s1">&#39;admin&#39;</span><span class="p">;</span>
 </code></pre></div>
 连接到数据库后，执行上面的 SQL 语句可以将用户 <code>admin</code> 的密码重置为 <code>DataEase@123456</code>。</p>
 </div>
