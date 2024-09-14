@@ -154,7 +154,7 @@
 !!! Abstract ""
     core-backend 源码引用到 calcite-core 依赖，是 DataEase 基于 Apache Calcite 工程修改后的依赖包，不属于开源部分。该依赖包会持续迭代，并上传到公共仓库中，对社区版源码的编译和使用不会造成任何影响。     
     **注意：编译前端代码如果出现网络问题导致编译失败，可以将 npm 镜像源换为淘宝镜像源，并使用 pnpm 进行编译。手动编译前端，将下图前端 pom 文件相关插件注释,然后再执行 mvn clean package -Pstandalone -U -Dmaven.test.skip=true。**
-![源码部署](../img/installation/镜像.png){ width="900px" }
+
 
 ### 3.3 配置运行环境
 !!! Abstract ""
