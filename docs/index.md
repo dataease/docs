@@ -47,7 +47,7 @@
 
 !!! Abstract ""
 
-    - **如何向团队介绍 DataEase？：** https://dataease.io/download/introduce-dataease_202409.pdf
-    - **获取新一代数据可视化分析平台建设指南：** https://fit2cloud.com/whitepaper/dataease-whitepaper_202203.pdf
+    - **如何向团队介绍 DataEase？：** [人人可用的开源 BI 工具](https://dataease.io/download/introduce-dataease_202409.pdf)
+    - **获取新一代数据可视化分析平台应用指南：** [新一代数据可视化分析工具应用指南](https://fit2cloud-support.oss-cn-beijing.aliyuncs.com/%E3%80%8A%E6%96%B0%E4%B8%80%E4%BB%A3%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7%E5%BA%94%E7%94%A8%E6%8C%87%E5%8D%97%E3%80%8B%EF%BC%88DataEase%E7%BC%96%E8%91%97%EF%BC%89.pdf)
     - **DataEase 知识库：** https://kb.fit2cloud.com/categories/dataease
     - **飞致云学堂：** https://edu.fit2cloud.com/index 
