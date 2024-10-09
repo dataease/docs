@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
     
     
       
@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="../css/lightgallery.min.css">
     <link href="../css/f2c-header.css" rel="stylesheet" type="text/css" />
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.8c3ca2c6.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -508,6 +508,15 @@
   
     <nav class="md-nav" aria-label="2 更新内容">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v11825" class="md-nav__link">
+    <span class="md-ellipsis">
+      v1.18.25
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#v11824" class="md-nav__link">
@@ -5377,6 +5386,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v11825" class="md-nav__link">
+    <span class="md-ellipsis">
+      v1.18.25
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v11824" class="md-nav__link">
     <span class="md-ellipsis">
       v1.18.24
@@ -5987,6 +6005,44 @@ Bug 修复的小版本。<br />
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v11825">v1.18.25<a class="headerlink" href="#v11825" title="Permanent link">&para;</a></h3>
+<p>2024年10月9日</p>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>feat(视图): 指标卡支持同环比配置</li>
+<li>feat(视图): 新增 K 线图</li>
+<li>feat(视图):透视表平铺模式支持导出格式化内容</li>
+<li>feat(x-Pack):数据填报提交表单数据页面，下拉框支持快速搜索</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>refactor(X-Pack): 定时报告 PDF 文件名根据仪表板名称生成</li>
+<li>refactor(仪表板): 编辑仪表板时，不保存返回支持同步恢复最后更改的视图信息 #11472</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>fix(仪表板): 修复分享查看仪表板下拉框过滤器提示没有权限的问题 #11465, #12295</li>
+<li>fix(仪表板): 修复世界地图缺失新加坡的问题 #5588</li>
+<li>fix(仪表板): 修复分享仪表板导出错误的问题</li>
+<li>fix(仪表板): 修复因延迟执行导致的指标卡批量操作字体和名称加粗失效的问题 #11543</li>
+<li>fix(仪表板): 修复应用仪表板部分打开可能提示联动错误的问题</li>
+<li>fix(视图): 修复明细表翻页后查询无数据的问题 #12125</li>
+<li>fix(视图): 修复组合图插件不支持周环比的问题</li>
+<li>fix(数据源): Postgre 数据源对 JDBC 字符串进行非法字符校验</li>
+<li>fix(数据集): 修复计算字段无法使用带[]的函数 (by @UncleNine)</li>
+<li>fix(数据集): 修复 Excel 时间转文本，使用文本下拉框搜索失败的问题</li>
+<li>fix(X-Pack): 修复 CAS 登录 Session 过期后系统未退出的问题</li>
+<li>fix(X-Pack): 修复定时报告导出视图 Excel 出现的数组越界的问题</li>
+<li>fix(X-Pack): 修复定时报告导出视图 Excel 时出现的空指针</li>
+<li>fix(X-Pack): 修复定时报告 PDF 格式错误</li>
+<li>fix: 修复任务列表加载不出来的问题 #12323</li>
+</ul>
+</div>
 <h3 id="v11824">v1.18.24<a class="headerlink" href="#v11824" title="Permanent link">&para;</a></h3>
 <p>2024年9月9日</p>
 <div class="admonition abstract">
@@ -9672,11 +9728,11 @@ Bug 修复的小版本。<br />
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide", "content.tabs.link"], "search": "../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide", "content.tabs.link"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
     
     
     
-      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../assets/javascripts/bundle.525ec568.min.js"></script>
       
     
     <script>
