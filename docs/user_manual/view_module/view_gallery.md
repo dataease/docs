@@ -477,3 +477,13 @@
 
     ![antv流向地图](../../img/view_generation/view_gallery/AntV/antv流向地图.gif){ width="900px" }
 
+### 2.27 K 线图
+
+!!! Abstract ""
+
+    K 线图是一种金融图表，用于显示特定时间段内证券价格的开盘价、收盘价、最高价和最低价。
+
+!!! Abstract ""
+
+    ![antv流向地图](../../img/view_generation/view_gallery/AntV/AntVK线图.png){ width="900px" }
+
