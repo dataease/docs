@@ -75,7 +75,7 @@
     [root@iZt4n8oa58aqukyv8sf1ciZ ~]# mvn -v
     Apache Maven 3.9.6 (bc0240f3c744dd6b6ec2920b3cd08dcc295161ae)
     Maven home: /opt/apache-maven-3.9.6
-    Java version: 17.0.10, vendor: Oracle Corporation, runtime: /usr/lib/jvm/jdk-17-oracle-x64
+    Java version: 17.0.10, vendor: Oracle Corporation, runtime: /usr/lib/jvm/jdk-21-oracle-x64
     Default locale: zh_CN, platform encoding: UTF-8
     OS name: "linux", version: "3.10.0-1160.105.1.el7.x86_64", arch: "amd64", family: "unix"
     ```
