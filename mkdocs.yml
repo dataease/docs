@@ -45,6 +45,7 @@ nav:
   - 产品迭代:
       - 更新日志: changelog.md
       - 更新说明:
+          - v2.10.1: change-v2-10-1.md
           - v2.10.0: change-v2-10.md
           - v2.9.0: change-v2-9.md
           - v2.8.0: change-v2-8.md
