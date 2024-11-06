@@ -33,6 +33,11 @@
 ![更新1](../../img/dashboard_generation/数据大屏文本搜索匹配模式.png){ width="900px" }
 ![更新1](../../img/dashboard_generation/数据大屏文本模糊搜索.png){ width="900px" }
 
+!!! Abstract ""
+	查询组件支持配置外部显示或隐藏精确匹配和模糊匹配
+
+![更新1](../../newimg/数据大屏查询组件支持配置外部显示或隐藏精确匹配和模糊匹配.png){ width="900px" }
+
 
 ## 3 下拉树组件
 
