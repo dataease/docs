@@ -30,3 +30,11 @@
 
 ![Excel保存成功](../../img/datasource_configuration/Excel保存成功.png){ width="900" }
 
+
+!!! Abstract ""
+    **替换 Excel 数据源时，按以下规则处理：**
+
+    - 若新文件中包含相同的 sheet 页，则直接替换。
+    - 若新文件的 sheet 页不一致（发生变化）：
+        - 对于新文件中缺失的原有 sheet 页，保持不变。
+        - 对于新文件中新增的 sheet 页，自动创建新数据集。

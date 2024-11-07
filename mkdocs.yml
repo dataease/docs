@@ -86,6 +86,7 @@ nav:
               - 配置 AWS Redshift 数据源: user_manual/datasource_configuration/AWS_Redshift_datasource_configuration.md
               - 配置 API 数据源: user_manual/datasource_configuration_api.md
               - 配置 DB2 数据源: user_manual/datasource_configuration/DB2_datasource_configuration.md
+              - 配置 Elasticsearch 数据源: user_manual/datasource_configuration/Elasticsearch_datasource_configuration.md
               - 配置 Excel 数据源: user_manual/datasource_configuration/datasource_configuration_excel.md
           - 数据集:
               - 数据集概述: user_manual/dataset_description.md
