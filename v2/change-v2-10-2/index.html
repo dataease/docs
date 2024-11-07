@@ -1,0 +1,4753 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Document">
+      
+      
+        <meta name="author" content="Dataease">
+      
+      
+        <link rel="canonical" href="https://dataease.io/docs/v2/change-v2-10-2/">
+      
+      
+        <link rel="prev" href="../changelog/">
+      
+      
+        <link rel="next" href="../change-v2-10-1/">
+      
+      
+      <link rel="icon" href="../img/facio.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
+    
+    
+      
+        <title>v2.10.2 - DataEase 文档</title>
+      
+    
+    
+    <link rel="stylesheet" href="../css/lightgallery.min.css">
+    <link href="../css/f2c-header.css" rel="stylesheet" type="text/css" />
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+
+
+    
+    
+      
+    
+    <script src="../js/lightgallery.min.js"></script>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/mega.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script 
+        async
+        defer
+        src="https://maxkb.fit2cloud.com/api/application/embed?protocol=https&host=maxkb.fit2cloud.com&token=2ddd8b594ce09dbb">
+    </script>
+
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","UA-147297392-11"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","UA-147297392-11",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=UA-147297392-11",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+<script>
+    function closeDiv(){
+        document.getElementsByClassName('md-header')[0].style.top='48px';
+        document.getElementsByClassName('md-main__inner')[0].style.marginTop='3rem';
+        const leftButton = document.getElementById("leftButton");
+        leftButton.parentNode.removeChild(leftButton);
+        const rightButton = document.getElementById("rightButton");
+        rightButton.parentNode.removeChild(rightButton);
+        document.getElementById("myCarousel").style.cssText += 'display: none !important';
+    }
+</script>
+<header id="topnav" class="defaultscroll sticky">
+    <svg class="hidden-print" aria-hidden="true" style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="mega-nav-icon-angle" viewBox="0 0 13 7">
+                <polygon points="6.5,6.5 0.7,1.6 1.3,0.8 6.5,5.2 11.7,0.8 12.3,1.6 "></polygon>
+            </symbol>
+            <symbol id="mega-nav-icon-close" viewBox="0 0 13 15">
+                <path vector-effect="non-scaling-stroke" d="M1.1 14L11.9 1M11.9 14L1.1 1"></path>
+            </symbol>
+        </defs>
+    </svg>
+    <div class="hidden-print mega-nav-sandbox">
+        <div class="mega-nav-banner">
+            <div class="container">
+                <div class="mega-nav-banner-item">
+                    <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../img/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD Logo" /></a>
+                </div>
+                <div class="mega-nav-banner-item">
+                    <p class="mega-nav-tagline">
+                        <span class="visible-xs text-muted">了解飞致云旗下开源产品</span>
+                    </p>
+                    <div id="#mega-nav" class="mega-nav">
+                        <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
+                            <div class="mega-nav-ctrl-items">
+                                <span class="mega-nav-icon-outline">
+                                    <svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use>
+                                    </svg>
+                                    <span class="visuallyhidden">Open</span>
+                                </span>
+                            </div>
+                        </button>
+
+                        <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none;">
+                            <div class="mega-nav-body" style="margin-top: 0.5rem">
+                                <ul class="mega-nav-ul">
+                                    <li><a href="https://1panel.cn/" target="_blank">1Panel - 现代化、开源的 Linux 面板</a></li>
+                                    <li><a href="https://www.fit2cloud.com/jumpserver/index.html" target="_blank">JumpServer - 广受欢迎的开源堡垒机</a></li>
+                                    <li><a href="https://www.fit2cloud.com/dataease/index.html" target="_blank">DataEase - 人人可用的开源 BI 工具</a></li>
+                                    <li><a href="https://www.fit2cloud.com/metersphere/index.html" target="_blank">MeterSphere - 开源持续测试平台</a></li>
+                                    <li><a href="https://halo.run/" target="_blank">Halo - 强大易用的开源建站工具</a></li>
+                                    <li><a href="https://github.com/1Panel-dev/MaxKB" target="_blank">MaxKB - 基于大模型的开源知识库问答系统</a></li>
+                                    <li><a href="https://www.fit2cloud.com/cloudexplorer-lite/index.html" target="_blank">CloudExplorer Lite - 开源轻量级云管平台</a></li>
+                                    <li><a href="https://www.fit2cloud.com/gitea/index.html" target="_blank">Gitea - 新一代的代码托管平台（By 上海吉谛）</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="DataEase 文档" class="md-header__button md-logo" aria-label="DataEase 文档" data-md-component="logo">
+      
+  <img src="../img/logo-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DataEase 文档
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              v2.10.2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dataease/dataease" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    DataEase
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="DataEase 文档" class="md-nav__button md-logo" aria-label="DataEase 文档" data-md-component="logo">
+      
+  <img src="../img/logo-white.png" alt="logo">
+
+    </a>
+    DataEase 文档
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dataease/dataease" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    DataEase
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    产品介绍
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick_start/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    快速入门
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    产品迭代
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            产品迭代
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    更新日志
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    更新说明
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            更新说明
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    v2.10.2
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    v2.10.2
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 仪表板与数据大屏
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1 仪表板与数据大屏">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 更新地图文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 表格条件样式支持动态值设定
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 表格自适应模式铺满组件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 查询组件支持自定义背景图片
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 查询组件支持在年月日时间参数下选择时间粒度为年、年月或年月日
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6 时间范围组件支持分别绑定开始时间和结束时间参数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7 查询组件支持配置外部显示或隐藏精确匹配和模糊匹配
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8 查询组件支持数值区间
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.9 查询组件支持配置清空和重置按钮的颜色
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#110" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.10 查询组件支持自定义提示词内容设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#111" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.11 图表过滤条件的日期字段新增“为空/不为空”筛选选项
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-k" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.12 柱状图均支持圆角设置（不包括瀑布图、K 线图）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.13 堆叠柱状图的总计标签与主标签支持单独控制
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#114" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.14 符号地图现支持自定义气泡大小范围
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#115-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.15 Tab 组件操作优化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#116" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.16 地图和气泡地图支持区域填充功能
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#117" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.17 新增图片组组件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#118" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.18 明细表和汇总表支持行列冻结
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#119" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.19 明细表和汇总表支持隐藏字段
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#120" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.20 地图支持自定义图例区间
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#121" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.21 支持自定义地图风格
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.22 在线地图功能增强，支持设置标签控制、默认缩放等级和中心点
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.23 下钻字段支持自定义显示名称和排序设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#124" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.24 标签显示支持全量和自适应两种模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#125" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.25 符号地图支持自定义符号形状
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#126" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.26 表格支持用复制多个单元格的数据
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#127" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.27 移动端支持独立样式配置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#128-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.28 图表、仪表板、数据大屏支持查看资源 ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#129" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.29 明细表支持单元格合并
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 数据准备
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 数据准备">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 数据集的批量管理中字段增加表名列
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-elasticsearch" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 支持 Elasticsearch 数据源
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 增加数据源状态显示
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-excel-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 调整替换 Excel 数据源时 sheet 变化的处理方式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-xpack" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 数据填报添加任务时支持设置校验字段及相应的规则（XPack）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-xpack" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 组织管理这些（XPack）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3 组织管理这些（XPack）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 阈值告警规则支持动态值设置
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 系统设置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 系统设置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 新增全局禁用分享链接设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 新增全局分享链接有效期和密码必填设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-xpack" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 默认文案跟随外观配置网站名称（XPack）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../change-v2-10-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v2.10.1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../change-v2-10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v2.10.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../change-v2-9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v2.9.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../change-v2-8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v2.8.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../change-v2-7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v2.7.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../change-v2-6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v2.6.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../change-v2-5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v2.5.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../change-v2-4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v2.4.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../change-v2-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v2.3.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../change-v2-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v2.2.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../change-v2-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v2.1.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system_arch/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    系统架构
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    安装部署
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            安装部署
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/offline_INSTL_and_UPG/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    离线安装
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/offline_upgrade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    离线升级
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/1panel_installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1Panel 安装
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/online_installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    在线安装
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/deployment_installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    源码部署
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/cli/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    命令行工具
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/backup_faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    备份还原
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    功能手册
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            功能手册
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/general/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    通用功能
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/homepage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    工作台
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    数据准备
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            数据准备
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_1" id="__nav_6_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    数据源
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            数据源
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/datasource_description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据源概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/datasource_configuration/MySQL_datasource_configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    配置 MySQL 数据源
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/datasource_configuration/ClickHouse_datasource_configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    配置 ClickHouse 数据源
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/datasource_configuration/Doris_datasource_configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    配置 Doris 数据源
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/datasource_configuration/Impala_datasource_configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    配置 Impala 数据源
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/datasource_configuration/MariaDB_datasource_configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    配置 MariaDB 数据源
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/datasource_configuration/MongoDB-BI_datasource_configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    配置 MongoDB-BI 数据源
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/datasource_configuration/Oracle_datasource_configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    配置 Oracle 数据源
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/datasource_configuration/PostgreSQL_datasource_configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    配置 PostgreSQL 数据源
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/datasource_configuration/SQL%20Server_datasource_configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    配置 SQL Server 数据源
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/datasource_configuration/StarRocks_datasource_configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    配置 StarRocks 数据源
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/datasource_configuration/TiDB_datasource_configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    配置 TiDB 数据源
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/datasource_configuration/AWS_Redshift_datasource_configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    配置 AWS Redshift 数据源
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/datasource_configuration_api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    配置 API 数据源
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/datasource_configuration/DB2_datasource_configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    配置 DB2 数据源
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/datasource_configuration/Elasticsearch_datasource_configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    配置 Elasticsearch 数据源
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/datasource_configuration/datasource_configuration_excel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    配置 Excel 数据源
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3_2" id="__nav_6_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    数据集
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            数据集
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/dataset_description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据集概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/dataset_design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据集功能设计
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    仪表板
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            仪表板
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/dashboard_description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    仪表板概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/dashboard_create/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    创建仪表板
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/dashboard_basicfunctions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    仪表板基础功能
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/module_basicfunctions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    组件基础功能
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/dashboard_using_copy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    仪表板使用
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4_6" id="__nav_6_4_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    图表
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            图表
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/view_module/view_generation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    图表概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/view_module/view_create/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    添加图表
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/view_module/view_data_design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    图表数据设计
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/view_module/view_style_design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    图表样式设计
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/view_module/view_advanced_design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    图表高级设计
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/view_module/view_gallery/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    图表图库
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4_7" id="__nav_6_4_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    过滤组件
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            过滤组件
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/filter_module/filtert_module/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    过滤组件概览
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/filter_module/filtertime_module/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    时间过滤组件
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/filter_module/filtertext_module/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    文本过滤组件
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/filter_module/filternumber_module/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数字过滤组件
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/other_module/style_module/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    其他组件
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/app_description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    移动端
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    数据大屏
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            数据大屏
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/panel_description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据大屏概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/panel_create/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    创建数据大屏
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/panel_basicfunctions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据大屏基础功能
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/panel_module_basicfunctions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    组件基础功能
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/panel_using/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据大屏使用
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5_6" id="__nav_6_5_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    图表
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_5_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5_6">
+            <span class="md-nav__icon md-icon"></span>
+            图表
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/view_module/panel_generation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    图表概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/view_module/panel_view_create/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    添加图表
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/view_module/panel_view_data_design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    图表数据设计
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/view_module/panel_view_style_design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    图表样式设计
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/view_module/panel_view_advanced_design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    图表高级设计
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/view_module/view_gallery/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    图表图库
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5_7" id="__nav_6_5_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    过滤组件
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_5_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5_7">
+            <span class="md-nav__icon md-icon"></span>
+            过滤组件
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/filter_module/filtert_module_panel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    过滤组件概览
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/filter_module/filtertime_module_panel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    时间过滤组件
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/filter_module/filtertext_module_panel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    文本过滤组件
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/filter_module/filternumber_module_panel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数字过滤组件
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/other_module/panel_style_module/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    其他组件
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/template_market/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    模板市场
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/system_management/data_export_center/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据导出中心
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/system_management/module/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    工具箱
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_9" id="__nav_6_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    系统设置
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_9">
+            <span class="md-nav__icon md-icon"></span>
+            系统设置
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/system_management/param/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    系统参数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/system_management/font_management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    字体管理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_10" id="__nav_6_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    X-Pack
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_10">
+            <span class="md-nav__icon md-icon"></span>
+            X-Pack
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_10_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_10_1" id="__nav_6_10_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    组织管理中心
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_10_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_10_1">
+            <span class="md-nav__icon md-icon"></span>
+            组织管理中心
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xpack/user_management_user/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    用户管理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xpack/sys_management_organization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    组织管理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xpack/sys_management_permission/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    权限配置
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xpack/sys_management_report/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    定时报告
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xpack/data_synchronization_management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    同步管理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xpack/blood_relationship/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    血缘分析
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xpack/alarm_management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    告警管理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_10_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_10_2" id="__nav_6_10_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    系统设置
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_10_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_10_2">
+            <span class="md-nav__icon md-icon"></span>
+            系统设置
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xpack/platform_abutment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    平台对接
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xpack/appearance_configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    外观配置
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xpack/multidimensional_embedding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    多维嵌入
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xpack/identification_setting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    认证设置
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xpack/watermark/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    水印管理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xpack/system_variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    系统变量
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/system_management/plugin_management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    插件管理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xpack/sys_management_develop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    系统 API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xpack/data_filing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据填报
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    常见问题
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            常见问题
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/system_management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    系统管理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/enterprise_faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    企业版
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../instructional_video/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    教学视频
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    联系我们
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 仪表板与数据大屏
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1 仪表板与数据大屏">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 更新地图文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 表格条件样式支持动态值设定
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 表格自适应模式铺满组件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 查询组件支持自定义背景图片
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 查询组件支持在年月日时间参数下选择时间粒度为年、年月或年月日
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6 时间范围组件支持分别绑定开始时间和结束时间参数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7 查询组件支持配置外部显示或隐藏精确匹配和模糊匹配
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8 查询组件支持数值区间
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.9 查询组件支持配置清空和重置按钮的颜色
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#110" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.10 查询组件支持自定义提示词内容设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#111" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.11 图表过滤条件的日期字段新增“为空/不为空”筛选选项
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-k" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.12 柱状图均支持圆角设置（不包括瀑布图、K 线图）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.13 堆叠柱状图的总计标签与主标签支持单独控制
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#114" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.14 符号地图现支持自定义气泡大小范围
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#115-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.15 Tab 组件操作优化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#116" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.16 地图和气泡地图支持区域填充功能
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#117" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.17 新增图片组组件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#118" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.18 明细表和汇总表支持行列冻结
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#119" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.19 明细表和汇总表支持隐藏字段
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#120" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.20 地图支持自定义图例区间
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#121" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.21 支持自定义地图风格
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.22 在线地图功能增强，支持设置标签控制、默认缩放等级和中心点
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.23 下钻字段支持自定义显示名称和排序设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#124" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.24 标签显示支持全量和自适应两种模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#125" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.25 符号地图支持自定义符号形状
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#126" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.26 表格支持用复制多个单元格的数据
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#127" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.27 移动端支持独立样式配置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#128-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.28 图表、仪表板、数据大屏支持查看资源 ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#129" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.29 明细表支持单元格合并
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 数据准备
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 数据准备">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 数据集的批量管理中字段增加表名列
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-elasticsearch" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 支持 Elasticsearch 数据源
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 增加数据源状态显示
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-excel-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 调整替换 Excel 数据源时 sheet 变化的处理方式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-xpack" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 数据填报添加任务时支持设置校验字段及相应的规则（XPack）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-xpack" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 组织管理这些（XPack）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3 组织管理这些（XPack）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 阈值告警规则支持动态值设置
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 系统设置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 系统设置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 新增全局禁用分享链接设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 新增全局分享链接有效期和密码必填设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-xpack" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 默认文案跟随外观配置网站名称（XPack）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="_1">更新日志<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="1">1  仪表板与数据大屏<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h3 id="11">1.1 更新地图文件<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>新增了新加坡和深圳大鹏新区等地区的详细地图支持。</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E6%9B%B4%E6%96%B0%E5%9C%B0%E5%9B%BE%E6%96%87%E4%BB%B61.PNG" width="900px" /></p>
+<p><img alt="更新1" src="../newimg/%E6%9B%B4%E6%96%B0%E5%9C%B0%E5%9B%BE%E6%96%87%E4%BB%B62.PNG" width="900px" /></p>
+<h3 id="12">1.2 表格条件样式支持动态值设定<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
+<p><img alt="更新1" src="../newimg/%E8%A1%A8%E6%A0%BC%E6%9D%A1%E4%BB%B6%E6%A0%B7%E5%BC%8F%E6%94%AF%E6%8C%81%E5%8A%A8%E6%80%81%E5%80%BC%E8%AE%BE%E5%AE%9A1.PNG" width="900px" /></p>
+<p><img alt="更新1" src="../newimg/%E8%A1%A8%E6%A0%BC%E6%9D%A1%E4%BB%B6%E6%A0%B7%E5%BC%8F%E6%94%AF%E6%8C%81%E5%8A%A8%E6%80%81%E5%80%BC%E8%AE%BE%E5%AE%9A2.PNG" width="900px" /></p>
+<h3 id="13">1.3 表格自适应模式铺满组件<a class="headerlink" href="#13" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>明细表和汇总表列宽的【自适应】选项，会根据内容宽度比例自动调整组件容器宽度，实现组件的全宽铺满显示。</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E8%A1%A8%E6%A0%BC%E8%87%AA%E9%80%82%E5%BA%94%E6%A8%A1%E5%BC%8F%E9%93%BA%E6%BB%A1%E7%BB%84%E4%BB%B6.PNG" width="900px" /></p>
+<h3 id="14">1.4 查询组件支持自定义背景图片<a class="headerlink" href="#14" title="Permanent link">&para;</a></h3>
+<p><img alt="更新1" src="../newimg/%E6%9F%A5%E8%AF%A2%E7%BB%84%E4%BB%B6%E6%94%AF%E6%8C%81%E8%87%AA%E5%AE%9A%E4%B9%89%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87.png" width="900px" /></p>
+<h3 id="15">1.5 查询组件支持在年月日时间参数下选择时间粒度为年、年月或年月日<a class="headerlink" href="#15" title="Permanent link">&para;</a></h3>
+<p><img alt="更新1" src="../newimg/%E6%9F%A5%E8%AF%A2%E7%BB%84%E4%BB%B6%E6%94%AF%E6%8C%81%E5%9C%A8%E5%B9%B4%E6%9C%88%E6%97%A5%E6%97%B6%E9%97%B4%E5%8F%82%E6%95%B0%E4%B8%8B%E9%80%89%E6%8B%A9%E6%97%B6%E9%97%B4%E7%B2%92%E5%BA%A6%E4%B8%BA%E5%B9%B4%E3%80%81%E5%B9%B4%E6%9C%88%E6%88%96%E5%B9%B4%E6%9C%88%E6%97%A5.png" width="900px" /></p>
+<h3 id="16">1.6 时间范围组件支持分别绑定开始时间和结束时间参数<a class="headerlink" href="#16" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>当选择时间类型参数时，系统默认设置为时间类型。点击【时间】后的编辑按钮，可以进一步选择该参数为开始时间或结束时间。</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E6%97%B6%E9%97%B4%E8%8C%83%E5%9B%B4%E7%BB%84%E4%BB%B6%E6%94%AF%E6%8C%81%E5%88%86%E5%88%AB%E7%BB%91%E5%AE%9A%E5%BC%80%E5%A7%8B%E6%97%B6%E9%97%B4%E5%92%8C%E7%BB%93%E6%9D%9F%E6%97%B6%E9%97%B4%E5%8F%82%E6%95%B01.png" width="900px" /></p>
+<p><img alt="更新1" src="../newimg/%E6%97%B6%E9%97%B4%E8%8C%83%E5%9B%B4%E7%BB%84%E4%BB%B6%E6%94%AF%E6%8C%81%E5%88%86%E5%88%AB%E7%BB%91%E5%AE%9A%E5%BC%80%E5%A7%8B%E6%97%B6%E9%97%B4%E5%92%8C%E7%BB%93%E6%9D%9F%E6%97%B6%E9%97%B4%E5%8F%82%E6%95%B02.png" width="900px" /></p>
+<h3 id="17">1.7 查询组件支持配置外部显示或隐藏精确匹配和模糊匹配<a class="headerlink" href="#17" title="Permanent link">&para;</a></h3>
+<p><img alt="更新1" src="../newimg/%E6%9F%A5%E8%AF%A2%E7%BB%84%E4%BB%B6%E6%94%AF%E6%8C%81%E9%85%8D%E7%BD%AE%E5%A4%96%E9%83%A8%E6%98%BE%E7%A4%BA%E6%88%96%E9%9A%90%E8%97%8F%E7%B2%BE%E7%A1%AE%E5%8C%B9%E9%85%8D%E5%92%8C%E6%A8%A1%E7%B3%8A%E5%8C%B9%E9%85%8D%20%5B%E5%9B%BE%E7%89%87%5D.png" width="900px" /></p>
+<h3 id="18">1.8 查询组件支持数值区间<a class="headerlink" href="#18" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>在设置查询条件时，支持选择指标字段选择【数值区间】作为过滤组件，便于根据特定数值范围筛选数据。</p>
+<ul>
+<li>应用场景：适用于需要在特定数值范围内进行数据筛选的场景，例如筛选预算、实际金额等数值类型字段。</li>
+</ul>
+</div>
+<p><img alt="更新1" src="../newimg/%E6%9F%A5%E8%AF%A2%E7%BB%84%E4%BB%B6%E6%94%AF%E6%8C%81%E6%95%B0%E5%80%BC%E5%8C%BA%E9%97%B41.png" width="900px" /></p>
+<p><img alt="更新1" src="../newimg/%E6%9F%A5%E8%AF%A2%E7%BB%84%E4%BB%B6%E6%94%AF%E6%8C%81%E6%95%B0%E5%80%BC%E5%8C%BA%E9%97%B42.png" width="900px" /></p>
+<h3 id="19">1.9 查询组件支持配置清空和重置按钮的颜色<a class="headerlink" href="#19" title="Permanent link">&para;</a></h3>
+<p><img alt="更新1" src="../newimg/%E6%9F%A5%E8%AF%A2%E7%BB%84%E4%BB%B6%E6%94%AF%E6%8C%81%E9%85%8D%E7%BD%AE%E6%B8%85%E7%A9%BA%E5%92%8C%E9%87%8D%E7%BD%AE%E6%8C%89%E9%92%AE%E7%9A%84%E9%A2%9C%E8%89%B2%20%5B%E5%9B%BE%E7%89%87%5D.png" width="900px" /></p>
+<h3 id="110">1.10 查询组件支持自定义提示词内容设置<a class="headerlink" href="#110" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>可以针对每个查询条件设置不同的提示词，同时支持文字颜色和大小的自定义设置。</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E6%9F%A5%E8%AF%A2%E7%BB%84%E4%BB%B6%E6%94%AF%E6%8C%81%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%86%85%E5%AE%B9%E8%AE%BE%E7%BD%AE.png" width="900px" /></p>
+<h3 id="111">1.11 图表过滤条件的日期字段新增“为空/不为空”筛选选项<a class="headerlink" href="#111" title="Permanent link">&para;</a></h3>
+<p><img alt="更新1" src="../newimg/%E5%9B%BE%E8%A1%A8%E8%BF%87%E6%BB%A4%E6%9D%A1%E4%BB%B6%E7%9A%84%E6%97%A5%E6%9C%9F%E5%AD%97%E6%AE%B5%E6%96%B0%E5%A2%9E%E4%B8%BA%E7%A9%BA%E4%B8%8D%E4%B8%BA%E7%A9%BA%E7%AD%9B%E9%80%89%E9%80%89%E9%A1%B9.png" width="900px" /></p>
+<h3 id="112-k">1.12 柱状图均支持圆角设置（不包括瀑布图、K 线图）<a class="headerlink" href="#112-k" title="Permanent link">&para;</a></h3>
+<p><img alt="更新1" src="../newimg/%E6%9F%B1%E7%8A%B6%E5%9B%BE%E5%9D%87%E6%94%AF%E6%8C%81%E5%9C%86%E8%A7%92%E8%AE%BE%E7%BD%AE.png" width="900px" /></p>
+<h3 id="113">1.13 堆叠柱状图的总计标签与主标签支持单独控制<a class="headerlink" href="#113" title="Permanent link">&para;</a></h3>
+<p><img alt="更新1" src="../newimg/%E5%A0%86%E5%8F%A0%E6%9F%B1%E7%8A%B6%E5%9B%BE%E7%9A%84%E6%80%BB%E8%AE%A1%E6%A0%87%E7%AD%BE%E4%B8%8E%E4%B8%BB%E6%A0%87%E7%AD%BE%E6%94%AF%E6%8C%81%E5%8D%95%E7%8B%AC%E6%8E%A7%E5%88%B61.png" width="900px" /></p>
+<p><img alt="更新1" src="../newimg/%E5%A0%86%E5%8F%A0%E6%9F%B1%E7%8A%B6%E5%9B%BE%E7%9A%84%E6%80%BB%E8%AE%A1%E6%A0%87%E7%AD%BE%E4%B8%8E%E4%B8%BB%E6%A0%87%E7%AD%BE%E6%94%AF%E6%8C%81%E5%8D%95%E7%8B%AC%E6%8E%A7%E5%88%B62.png" width="900px" /></p>
+<h3 id="114">1.14 符号地图现支持自定义气泡大小范围<a class="headerlink" href="#114" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<ul>
+<li>【数据】中拖入字段到【气泡大小】栏后，【样式】中的【大小】会自动禁用，同时启用【大小区间】设置。通过调整【大小区间】的最小值和最大值，可灵活控制气泡的尺寸范围。</li>
+<li>【气泡大小】中未拖入字段时，【样式】中的【大小】滑块将保持启用，允许手动统一调整气泡大小。</li>
+</ul>
+</div>
+<p><img alt="更新1" src="../newimg/%E7%AC%A6%E5%8F%B7%E5%9C%B0%E5%9B%BE%E7%8E%B0%E6%94%AF%E6%8C%81%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B0%94%E6%B3%A1%E5%A4%A7%E5%B0%8F%E8%8C%83%E5%9B%B4.png" width="900px" /></p>
+<h3 id="115-tab">1.15 Tab 组件操作优化<a class="headerlink" href="#115-tab" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>支持从上部拖动组件移出 Tab 组件。当图表从 Tab 组件中移出后，图表将自动放置在鼠标当前位置。</p>
+</div>
+<p><img alt="更新1" src="../newimg/Tab%20%E7%BB%84%E4%BB%B6%E6%93%8D%E4%BD%9C%E4%BC%98%E5%8C%96.gif" width="900px" /></p>
+<h3 id="116">1.16 地图和气泡地图支持区域填充功能<a class="headerlink" href="#116" title="Permanent link">&para;</a></h3>
+<p><img alt="更新1" src="../newimg/%E5%9C%B0%E5%9B%BE%E5%92%8C%E6%B0%94%E6%B3%A1%E5%9C%B0%E5%9B%BE%E6%94%AF%E6%8C%81%E5%8C%BA%E5%9F%9F%E5%A1%AB%E5%85%85%E5%8A%9F%E8%83%BD.png" width="900px" /></p>
+<h3 id="117">1.17 新增图片组组件<a class="headerlink" href="#117" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>支持简单的图片上传和轮播功能。</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E6%96%B0%E5%A2%9E%E5%9B%BE%E7%89%87%E7%BB%84%E7%BB%84%E4%BB%B61.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>图片组还支持与指定数据集关联设置条件样式，根据数据集的变化展示不同的图片。</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E6%96%B0%E5%A2%9E%E5%9B%BE%E7%89%87%E7%BB%84%E7%BB%84%E4%BB%B62.png" width="900px" />
+<img alt="更新1" src="../newimg/%E6%96%B0%E5%A2%9E%E5%9B%BE%E7%89%87%E7%BB%84%E7%BB%84%E4%BB%B6.gif" width="900px" /></p>
+<h3 id="118">1.18 明细表和汇总表支持行列冻结<a class="headerlink" href="#118" title="Permanent link">&para;</a></h3>
+<p><img alt="更新1" src="../newimg/%E6%98%8E%E7%BB%86%E8%A1%A8%E5%92%8C%E6%B1%87%E6%80%BB%E8%A1%A8%E6%94%AF%E6%8C%81%E8%A1%8C%E5%88%97%E5%86%BB%E7%BB%93.png" width="900px" /></p>
+<p><img alt="更新1" src="../newimg/%E6%98%8E%E7%BB%86%E8%A1%A8%E5%92%8C%E6%B1%87%E6%80%BB%E8%A1%A8%E6%94%AF%E6%8C%81%E8%A1%8C%E5%88%97%E5%86%BB%E7%BB%93.gif" width="900px" /></p>
+<h3 id="119">1.19 明细表和汇总表支持隐藏字段<a class="headerlink" href="#119" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>允许用户将数据表中的某些字段设置为“隐藏”状态，这样这些列就不会被显示出来。</p>
+<ul>
+<li>适用于当用户需要使用特定字段进行排序，但又不希望这些字段在表中显示的情况。</li>
+</ul>
+</div>
+<p><img alt="更新1" src="../newimg/%E6%98%8E%E7%BB%86%E8%A1%A8%E5%92%8C%E6%B1%87%E6%80%BB%E8%A1%A8%E6%94%AF%E6%8C%81%E9%9A%90%E8%97%8F%E5%AD%97%E6%AE%B5.png" width="900px" /></p>
+<h3 id="120">1.20 地图支持自定义图例区间<a class="headerlink" href="#120" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>地图图例提供【自动】和【自定义】两种模式，用户通过【自定义】选择【等分区间】或【自定义区间】，可以更加灵活控制各区域的颜色填充，从而更清晰地反映不同区间的数据分布情况。</p>
+<ul>
+<li>等分区间：系统自动将最小值和最大值之间的区间等分成指定数量的图例。</li>
+<li>自定义区间：用户可以手动设置每个图例的区间值，实现更灵活的展示效果。</li>
+</ul>
+</div>
+<p><img alt="更新1" src="../newimg/%E5%9C%B0%E5%9B%BE%E6%94%AF%E6%8C%81%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9B%BE%E4%BE%8B%E5%8C%BA%E9%97%B41.png" width="900px" /></p>
+<p><img alt="更新1" src="../newimg/%E5%9C%B0%E5%9B%BE%E6%94%AF%E6%8C%81%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9B%BE%E4%BE%8B%E5%8C%BA%E9%97%B42.png" width="900px" /></p>
+<h3 id="121">1.21 支持自定义地图风格<a class="headerlink" href="#121" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>用户可在高德地图上创建并发布自定义地图样式，并将生成的地图 URL 及 API Key 添加至 DataEase 的地图设置中。设置完成后，可在地图图表中选择自定义地图风格，以实现个性化的地图展示效果求。  <br />
+登录高德地图网站，访问高德地图的样式编辑页面：<a href="https://geohub.amap.com/mapstyle/index">https://geohub.amap.com/mapstyle/index</a>。</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9C%B0%E5%9B%BE%E9%A3%8E%E6%A0%BC1.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>创建自定义地图：在已有地图的基础上，选择“标准地图”作为模板，进入编辑界面。可在地图编辑界面中找到相应的资源选项，通过改变显隐、颜色纹理等来更改地图元素。</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9C%B0%E5%9B%BE%E9%A3%8E%E6%A0%BC2.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>在发布后的自定义地图页面，点击“分享”按钮。复制生成的地图访问 URL，用于后续的地图配置。</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9C%B0%E5%9B%BE%E9%A3%8E%E6%A0%BC3.png" width="900px" /></p>
+<p><img alt="更新1" src="../newimg/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9C%B0%E5%9B%BE%E9%A3%8E%E6%A0%BC4.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>登录高德地图开发者控制台：<a href="https://console.amap.com/dev/key/app">https://console.amap.com/dev/key/app</a>。在【我的应用】中找到对应的 API Key 和安全密钥。</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9C%B0%E5%9B%BE%E9%A3%8E%E6%A0%BC5.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>如果没有应用，可以新建应用和添加 Web 端(JS API) 的 Key 获取。</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9C%B0%E5%9B%BE%E9%A3%8E%E6%A0%BC6.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>在 DataEase 的【系统设置】页面，将从高德地图获取的 API Key 和安全密钥填入相应位置。</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9C%B0%E5%9B%BE%E9%A3%8E%E6%A0%BC7.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>在制作在线地图时，地图风格选择【自定义】，URL 填入高德自定义地图分享的 URL 即可。</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9C%B0%E5%9B%BE%E9%A3%8E%E6%A0%BC8.png" width="900px" /></p>
+<h3 id="122">1.22 在线地图功能增强，支持设置标签控制、默认缩放等级和中心点<a class="headerlink" href="#122" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<ul>
+<li>地名标签控制：支持在线地图的地名标签显示设置，用户可自由开启或关闭地名标签。</li>
+<li>缩放级别：新增默认缩放级别配置（取消自适应缩放后生效），用户可指定地图加载时的初始缩放比例。</li>
+<li>中心点：支持设置地图的默认中心点经纬度（取消自适应缩放后生效），便于地图聚焦于特定区域。</li>
+</ul>
+</div>
+<p><img alt="更新1" src="../newimg/%E5%9C%A8%E7%BA%BF%E5%9C%B0%E5%9B%BE%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA.png" width="900px" /></p>
+<h3 id="123">1.23 下钻字段支持自定义显示名称和排序设置<a class="headerlink" href="#123" title="Permanent link">&para;</a></h3>
+<p><img alt="更新1" src="../newimg/%E4%B8%8B%E9%92%BB%E5%AD%97%E6%AE%B5%E6%94%AF%E6%8C%81%E8%87%AA%E5%AE%9A%E4%B9%89%E6%98%BE%E7%A4%BA%E5%90%8D%E7%A7%B0%E5%92%8C%E6%8E%92%E5%BA%8F%E8%AE%BE%E7%BD%AE.png" width="900px" /></p>
+<h3 id="124">1.24 标签显示支持全量和自适应两种模式<a class="headerlink" href="#124" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<ul>
+<li>全量显示：所有标签全部展示，无论重叠与否均展示。</li>
+<li>自适应显示：标签根据布局自动调整显示，避免重叠，确保清晰度。</li>
+</ul>
+</div>
+<p><img alt="更新1" src="../newimg/%E6%A0%87%E7%AD%BE%E6%98%BE%E7%A4%BA%E6%94%AF%E6%8C%81%E5%85%A8%E9%87%8F%E5%92%8C%E8%87%AA%E9%80%82%E5%BA%94%E4%B8%A4%E7%A7%8D%E6%A8%A1%E5%BC%8F.png" width="900px" /></p>
+<h3 id="125">1.25 符号地图支持自定义符号形状<a class="headerlink" href="#125" title="Permanent link">&para;</a></h3>
+<p><img alt="更新1" src="../newimg/%E7%AC%A6%E5%8F%B7%E5%9C%B0%E5%9B%BE%E6%94%AF%E6%8C%81%E8%87%AA%E5%AE%9A%E4%B9%89%E7%AC%A6%E5%8F%B7%E5%BD%A2%E7%8A%B6.png" width="900px" /></p>
+<h3 id="126">1.26 表格支持用复制多个单元格的数据<a class="headerlink" href="#126" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>可通过鼠标拖动选择表格中的多个数据单元格，右键点击后即可快速复制所选数据。</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E8%A1%A8%E6%A0%BC%E6%94%AF%E6%8C%81%E7%94%A8%E5%A4%8D%E5%88%B6%E5%A4%9A%E4%B8%AA%E5%8D%95%E5%85%83%E6%A0%BC%E7%9A%84%E6%95%B0%E6%8D%AE.png" width="900px" /></p>
+<p><img alt="更新1" src="../newimg/%E8%A1%A8%E6%A0%BC%E6%94%AF%E6%8C%81%E7%94%A8%E5%A4%8D%E5%88%B6%E5%A4%9A%E4%B8%AA%E5%8D%95%E5%85%83%E6%A0%BC%E7%9A%84%E6%95%B0%E6%8D%AE.gif" width="900px" /></p>
+<h3 id="127">1.27 移动端支持独立样式配置<a class="headerlink" href="#127" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>仪表板组件在移动端支持独立样式配置，便于与PC端样式区分，更好地适配移动端展示需求。</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%94%AF%E6%8C%81%E7%8B%AC%E7%AB%8B%E6%A0%B7%E5%BC%8F%E9%85%8D%E7%BD%AE1.png" width="900px" /></p>
+<p><img alt="更新1" src="../newimg/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%94%AF%E6%8C%81%E7%8B%AC%E7%AB%8B%E6%A0%B7%E5%BC%8F%E9%85%8D%E7%BD%AE2.png" width="900px" /></p>
+<h3 id="128-id">1.28 图表、仪表板、数据大屏支持查看资源 ID<a class="headerlink" href="#128-id" title="Permanent link">&para;</a></h3>
+<p><img alt="更新1" src="../newimg/%E6%9F%A5%E7%9C%8B%E8%B5%84%E6%BA%90%20ID1.png" width="900px" /></p>
+<p><img alt="更新1" src="../newimg/%E6%9F%A5%E7%9C%8B%E8%B5%84%E6%BA%90%20ID2.png" width="900px" /></p>
+<p><img alt="更新1" src="../newimg/%E6%9F%A5%E7%9C%8B%E8%B5%84%E6%BA%90%20ID3.png" width="900px" /></p>
+<h3 id="129">1.29 明细表支持单元格合并<a class="headerlink" href="#129" title="Permanent link">&para;</a></h3>
+<p><img alt="更新1" src="../newimg/%E6%98%8E%E7%BB%86%E8%A1%A8%E6%94%AF%E6%8C%81%E5%8D%95%E5%85%83%E6%A0%BC%E5%90%88%E5%B9%B6.png" width="900px" /></p>
+<h2 id="2">2 数据准备<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="21">2.1 数据集的批量管理中字段增加表名列<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
+<p><img alt="更新1" src="../newimg/%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9A%84%E6%89%B9%E9%87%8F%E7%AE%A1%E7%90%86%E4%B8%AD%E5%AD%97%E6%AE%B5%E5%A2%9E%E5%8A%A0%E8%A1%A8%E5%90%8D%E5%88%97.png" width="900px" /></p>
+<h3 id="22-elasticsearch">2.2 支持 Elasticsearch 数据源<a class="headerlink" href="#22-elasticsearch" title="Permanent link">&para;</a></h3>
+<p><img alt="更新1" src="../newimg/%E6%94%AF%E6%8C%81%20Elasticsearch%20%E6%95%B0%E6%8D%AE%E6%BA%901.png" width="900px" /></p>
+<p><img alt="更新1" src="../newimg/%E6%94%AF%E6%8C%81%20Elasticsearch%20%E6%95%B0%E6%8D%AE%E6%BA%902.png" width="900px" /></p>
+<h3 id="23">2.3 增加数据源状态显示<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
+<p><img alt="更新1" src="../newimg/%E5%A2%9E%E5%8A%A0%E6%95%B0%E6%8D%AE%E6%BA%90%E7%8A%B6%E6%80%81%E6%98%BE%E7%A4%BA.png" width="900px" /></p>
+<h3 id="24-excel-sheet">2.4 调整替换 Excel 数据源时 sheet 变化的处理方式<a class="headerlink" href="#24-excel-sheet" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>替换 Excel 数据源时，按以下规则处理：</p>
+<ul>
+<li>若新文件中包含相同的 sheet 页，则直接替换。</li>
+<li>若新文件的 sheet 页不一致（发生变化）：<ul>
+<li>对于新文件中缺失的原有 sheet 页，保持不变。</li>
+<li>对于新文件中新增的 sheet 页，自动创建新数据集。</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3 id="25-xpack">2.5  数据填报添加任务时支持设置校验字段及相应的规则（XPack）<a class="headerlink" href="#25-xpack" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>在创建或更新数据类型的填报任务时，在填报任务的【模板设置】中支持设置校验字段及其规则。</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E6%95%B0%E6%8D%AE%E5%A1%AB%E6%8A%A5%E6%B7%BB%E5%8A%A0%E4%BB%BB%E5%8A%A1%E6%97%B6%E6%94%AF%E6%8C%81%E8%AE%BE%E7%BD%AE%E6%A0%A1%E9%AA%8C%E5%AD%97%E6%AE%B5%E5%8F%8A%E7%9B%B8%E5%BA%94%E7%9A%84%E8%A7%84%E5%88%992.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>目前支持的规则之间的逻辑关系为“与”（AND）。</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E6%95%B0%E6%8D%AE%E5%A1%AB%E6%8A%A5%E6%B7%BB%E5%8A%A0%E4%BB%BB%E5%8A%A1%E6%97%B6%E6%94%AF%E6%8C%81%E8%AE%BE%E7%BD%AE%E6%A0%A1%E9%AA%8C%E5%AD%97%E6%AE%B5%E5%8F%8A%E7%9B%B8%E5%BA%94%E7%9A%84%E8%A7%84%E5%88%991.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>当用户在界面中填写数据时，系统会实时检查每个字段的输入是否符合已设置的校验规则。如果发现不符合要求的输入，系统会进行提示，</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E6%95%B0%E6%8D%AE%E5%A1%AB%E6%8A%A5%E6%B7%BB%E5%8A%A0%E4%BB%BB%E5%8A%A1%E6%97%B6%E6%94%AF%E6%8C%81%E8%AE%BE%E7%BD%AE%E6%A0%A1%E9%AA%8C%E5%AD%97%E6%AE%B5%E5%8F%8A%E7%9B%B8%E5%BA%94%E7%9A%84%E8%A7%84%E5%88%993.png" width="900px" /></p>
+<h2 id="3-xpack">3 组织管理这些（XPack）<a class="headerlink" href="#3-xpack" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 阈值告警规则支持动态值设置<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>数值类型字段则支持二次计算选项，例如最小值、最大值和平均值。</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E9%98%88%E5%80%BC%E5%91%8A%E8%AD%A6%E8%A7%84%E5%88%99%E6%94%AF%E6%8C%81%E5%8A%A8%E6%80%81%E5%80%BC%E8%AE%BE%E7%BD%AE1.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>时间类型字段的动态值类似于查询组件中的时间组件，能够根据图表中时间字段的显示格式自动设定时间粒度。</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E9%98%88%E5%80%BC%E5%91%8A%E8%AD%A6%E8%A7%84%E5%88%99%E6%94%AF%E6%8C%81%E5%8A%A8%E6%80%81%E5%80%BC%E8%AE%BE%E7%BD%AE2.png" width="900px" /></p>
+<h2 id="4">4 系统设置<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<h3 id="41">4.1 新增全局禁用分享链接设置<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>系统设置支持全局禁用分享链接功能。禁用后，所有在此之前创建的分享链接将无法访问。</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E6%96%B0%E5%A2%9E%E5%85%A8%E5%B1%80%E7%A6%81%E7%94%A8%E5%88%86%E4%BA%AB%E9%93%BE%E6%8E%A5%E8%AE%BE%E7%BD%AE1.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>禁用分享后访问分享链接将显示以下页面：</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E6%96%B0%E5%A2%9E%E5%85%A8%E5%B1%80%E7%A6%81%E7%94%A8%E5%88%86%E4%BA%AB%E9%93%BE%E6%8E%A5%E8%AE%BE%E7%BD%AE2.png" width="900px" /></p>
+<h3 id="42">4.2 新增全局分享链接有效期和密码必填设置<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>系统设置支持分享链接的有效期和密码必填设置。开启该选项后，之前创建的所有分享链接将无法访问。</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E6%96%B0%E5%A2%9E%E5%85%A8%E5%B1%80%E5%88%86%E4%BA%AB%E9%93%BE%E6%8E%A5%E6%9C%89%E6%95%88%E6%9C%9F%E5%92%8C%E5%AF%86%E7%A0%81%E5%BF%85%E5%A1%AB%E8%AE%BE%E7%BD%AE1.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>创建分享链接时，系统将提示有效期和密码为必填项。</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E6%96%B0%E5%A2%9E%E5%85%A8%E5%B1%80%E5%88%86%E4%BA%AB%E9%93%BE%E6%8E%A5%E6%9C%89%E6%95%88%E6%9C%9F%E5%92%8C%E5%AF%86%E7%A0%81%E5%BF%85%E5%A1%AB%E8%AE%BE%E7%BD%AE2.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>未设置有效期和密码的分享链接访问时会显示以下页面：</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E6%96%B0%E5%A2%9E%E5%85%A8%E5%B1%80%E5%88%86%E4%BA%AB%E9%93%BE%E6%8E%A5%E6%9C%89%E6%95%88%E6%9C%9F%E5%92%8C%E5%AF%86%E7%A0%81%E5%BF%85%E5%A1%AB%E8%AE%BE%E7%BD%AE3.png" width="900px" /></p>
+<h3 id="43-xpack">4.3 默认文案跟随外观配置网站名称（XPack）<a class="headerlink" href="#43-xpack" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>页面相关文案也跟随网站名称设置。</p>
+</div>
+<p><img alt="更新1" src="../newimg/%E9%BB%98%E8%AE%A4%E6%96%87%E6%A1%88%E8%B7%9F%E9%9A%8F%E5%A4%96%E8%A7%82%E9%85%8D%E7%BD%AE%E7%BD%91%E7%AB%99%E5%90%8D%E7%A7%B0.png" width="900px" /></p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+    <footer class="md-footer">
+      <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+          <div class="md-copyright">
+            
+              <div class="md-copyright__highlight">
+                Copyright &copy; 2014-2024 <a href="https://www.fit2cloud.com">杭州飞致云信息科技有限公司</a>, All Rights Reserved. <a href="http://www.beian.miit.gov.cn" target="_blank">京ICP备15023818号</a>
+              </div>
+            
+          </div>
+          <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/dataease" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:support@fit2cloud.com" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="tel://400-052-0755" target="_blank" rel="noopener" title="400-052-0755" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64c0 247.4 200.6 448 448 448 18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368c-70.4-33.3-127.4-90.3-160.7-160.7l49.3-40.3c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+    </a>
+  
+</div>
+        </div>
+      </div>
+    </footer>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide", "content.tabs.link"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+    <script>
+    var elements = document.getElementsByClassName("lightgallery");
+    for(var i=0; i<elements.length; i++) {
+       lightGallery(elements[i]);
+    }
+    </script>
+
+  </body>
+</html>
