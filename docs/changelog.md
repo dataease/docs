@@ -137,7 +137,6 @@
 
 !!! Abstract "问题修复 :palm_tree:"
 
-    - fix(数据集): 修复程序运行一定时间后，数据源失效的问题 #9065
     - fix(数据集): 修复 postgre 数据源，数据库数据集定时同步后数据缺失的问题
     - fix(数据集):选择 default 驱动，数据集无法进行定时同步
     - fix(数据集): 修复 postgre 数据源填写数据库名称有横杠，报错 invalid database name 的问题
