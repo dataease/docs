@@ -59,6 +59,7 @@ nav:
           - 在线安装: installation/online_installation.md
           - 离线安装: installation/offline_installation.md
           - 1Panel 安装: installation/1panel_installation.md
+          - 阿里云计算巢安装: installation/alibaba_cloud_computenest_installation.md
           - 在线升级: installation/online_upgrade.md
           - 离线升级: installation/offline_upgrade.md
       - Linux HA 部署:
