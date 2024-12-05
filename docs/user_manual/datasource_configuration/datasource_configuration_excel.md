@@ -23,7 +23,13 @@
 
 ![Excel上传](../../img/datasource_configuration/Excel上传.png){ width="900" }
 
-![Excel上传成功预览](../../img/datasource_configuration/Excel上传成功预览.png){ width="900" }
+!!! Abstract ""
+    **上传 Excel 数据源时支持字段选择：**
+
+    - 在上传 Excel 数据源时，支持选择指定字段进行导入，无需导入全部数据。选择字段时可自定义设置字段长度。
+    - 对已有 Excel 数据源进行数据替换时，同样支持字段选择和字段长度调整。
+
+![更新1](../../newimg/上传%20Excel%20数据源时支持字段选择.png){ width="900px" }
 
 !!! Abstract ""
     步骤四：点击保存即可，如下图所示。

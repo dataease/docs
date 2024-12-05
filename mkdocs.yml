@@ -45,6 +45,7 @@ nav:
   - 产品迭代:
       - 更新日志: changelog.md
       - 更新说明:
+          - v2.10.3: change-v2-10-3.md
           - v2.10.2: change-v2-10-2.md
           - v2.10.1: change-v2-10-1.md
           - v2.10.0: change-v2-10.md
@@ -153,6 +154,7 @@ nav:
               - 水印管理: xpack/watermark.md
               - 系统变量: xpack/system_variables.md
               - 插件管理: user_manual/system_management/plugin_management.md
+              - 游离资源管理: xpack/free_resource_management.md
           - 系统 API: xpack/sys_management_develop.md
           - 数据填报: xpack/data_filing.md
   - 常见问题:

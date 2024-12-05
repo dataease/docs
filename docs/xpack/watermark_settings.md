@@ -28,3 +28,9 @@
     选择目标数据库，进行字段映射。
 ![数据管理3](../img/xpack/数据管理3.png){ width="900px" }  
 
+
+!!! Abstract ""
+    目标数据源支持自定义配置 Doris 的 FE/BE 端口地址。
+
+![更新1](../../newimg/同步管理目标数据源支持自定义配置 Doris 的 FE:BE 端口地址.png){ width="900px" }
+
