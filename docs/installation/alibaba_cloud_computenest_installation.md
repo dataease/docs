@@ -3,7 +3,7 @@
 阿里云计算巢提供了软件与资源的一体化交付的完善基础能力，助力服务商、开发者的提升服务能力和降低运营成本。计算巢已经支持快速部署 DataEase 社区版。
 
 ## 部署流程
-1.访问计算巢 DataEase 社区版服务[部署链接](https://computenest.console.aliyun.com/service/instance/create/default?type=user&ServiceName=%20DataEase%E7%A4%BE%E5%8C%BA%E7%89%88)，按提示填写部署参数：
+1.访问云市场计算巢 DataEase 社区版服务[部署链接](https://market.aliyun.com/products/9000000174/cmgj00068875.html)，按提示填写部署参数：
 
 ![install_1](../img/installation/alibaba_cloud_install_1.png){ width="900px" }
 
