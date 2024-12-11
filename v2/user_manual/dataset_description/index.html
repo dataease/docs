@@ -3837,7 +3837,7 @@
 <div class="highlight"><pre><span></span><code>SELECT ORDER_ID, ORDER_DATE, PROJ_ID, ORDER_EMP FROM ORDERS WHERE ORDER_EMP = &#39;${USER_NAME}&#39;
 </code></pre></div>
 情况二：过滤组件为多选时，要用 IN （用 IN 可单选也可多选，但相反地用 = 只能单选），注意变量外需要用括号包起来：
-<div class="highlight"><pre><span></span><code>SELECT ORDER_ID, ORDER_DATE, PROJ_ID, ORDER_EMP FROM ORDERS WHERE ORDER_EMP IN ${USER_NAME}  
+<div class="highlight"><pre><span></span><code>SELECT ORDER_ID, ORDER_DATE, PROJ_ID, ORDER_EMP FROM ORDERS WHERE ORDER_EMP IN （${USER_NAME}）  
 </code></pre></div>
 情况三：有多个过滤组件时，要用括号将它们组合在一起，否则图表无法更新：
 <div class="highlight"><pre><span></span><code>SELECT ORDER_ID, ORDER_DATE, PROJ_ID, ORDER_EMP FROM ORDERS WHERE (ORDER_EMP IN ${USER_NAME} AND PROJ_ID IN ${USER_PROJ_ID})
