@@ -162,6 +162,7 @@ nav:
       - 企业版: faq/enterprise_faq.md
   - 教学视频: instructional_video.md
   - 联系我们: contact.md
+  - 桌面版: desktop.md
 
 markdown_extensions:
   - admonition
