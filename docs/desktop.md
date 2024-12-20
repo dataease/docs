@@ -32,7 +32,7 @@
 
     - 在终端执行命令 sudo spctl --master-disable，并且在系统偏好设置 – 安全性与隐私 – 通用 ，选择“任何来源”选项
     - 在终端中输入 xattr -cr (这里要注意后面有个空格，不进行回车)，再将提示已损坏无法打开的程序图标拖到命令栏中，然后回车再次打开程序即可正常运行。
-    - 如 M1 等 arm 架构的设备提示文件损坏，可参考：https://zhuanlan.zhihu.com/p/464949181。
+    - 如 M1 等 arm 架构的设备提示文件损坏，可参考：https://kb.fit2cloud.com/?p=2b3dcedd-bec9-47dd-863f-ef8e1571fc51。
 
 
 !!! Abstract ""
@@ -40,10 +40,10 @@
     以 Ubuntu 系统为例的安装步骤： 
 
     - 安装命令：sudo dpkg -i [package]，例如：sudo dpkg -i dataease_1.0.0_amd64.deb。  
-    - 启动前需赋予 /opt 目录写权限：sudo chmod -R 777 /opt。  
+    - 启动前需赋予 /opt 目录和 /usr/lib/dataease 目录的写权限，如 sudo chmod -R a+w /opt /usr/lib/dataease。
     - 在启动台找到 DataEase 图标，点击启动。    
 
-    注意：Ubuntu、Debian、openSUSE 等系统时，请勿使用 root 用户，需使用普通用户安装。
+    注意：Ubuntu、Debian、openSUSE 等系统时，请勿使用 root 用户，需使用普通用户安装。卸载使用 sudo dpkg -P dataease。
 
 
 ### 2.3 升级操作
