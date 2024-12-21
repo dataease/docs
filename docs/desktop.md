@@ -22,6 +22,7 @@
     - Windows(x86)
     - Linux(x86)
     - MacOS(arm64)
+    
     其他平台暂不支持。
 
 ### 2.2 安装步骤
