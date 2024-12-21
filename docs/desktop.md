@@ -19,9 +19,9 @@
 
     注意：当前支持的平台有：
     
-    - Windows(x86)
-    - Linux(x86)
-    - MacOS(arm64)
+    - [Windows(x86)](https://community.fit2cloud.com/download/de-desktop/latest?arch=win_amd64)
+    - [Linux(x86)](https://community.fit2cloud.com/download/de-desktop/latest?arch=linux_amd64)
+    - [MacOS(arm64)](https://community.fit2cloud.com/download/de-desktop/latest?arch=mac_arm64)
     
     其他平台暂不支持。
 
