@@ -18,6 +18,7 @@
     - 离线安装包下载：[**访问 DataEase 桌面版官方网站**](https://www.dataease.cn/)，点击 【立即下载】 按钮，系统将根据您的操作系统自动下载对应版本的安装包。
 
     注意：当前支持的平台有：
+    
     - Windows(x86)
     - Linux(x86)
     - MacOS(arm64)
