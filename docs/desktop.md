@@ -20,7 +20,7 @@
     **注意：当前支持的系统和版本（其他平台暂不支持）**：
     
     - Windows 系统 - [Windows(x86)](https://community.fit2cloud.com/download/de-desktop/latest?arch=win_amd64) ：支持 Windows 10 或更高版本。
-    - MacOS 系统 - [MacOS(arm64)](https://community.fit2cloud.com/download/de-desktop/latest?arch=mac_arm64)：支持 MacOS 11（Big Sur）或更高版本。
+    - MacOS 系统 - MacOS ([x86](https://community.fit2cloud.com/download/de-desktop/latest?arch=mac_amd64) & [arm64](https://community.fit2cloud.com/download/de-desktop/latest?arch=mac_arm64))：支持 MacOS 11（Big Sur）或更高版本。
     - Linux 系统 - [Linux(x86)](https://community.fit2cloud.com/download/de-desktop/latest?arch=linux_amd64)：只支持 64 位 Linux，不支持 32 位 Linux。
 
 
