@@ -17,13 +17,12 @@
     - 版本检查：请确认本机未安装其他版本的 DataEase（如社区版、企业版等），以防止配置冲突。
     - 离线安装包下载：[**访问 DataEase 桌面版官方网站**](https://www.dataease.cn/)，点击 【立即下载】 按钮，系统将根据您的操作系统自动下载对应版本的安装包。
 
-    注意：当前支持的平台有：
+    **注意：当前支持的系统和版本（其他平台暂不支持）**：
     
-    - [Windows(x86)](https://community.fit2cloud.com/download/de-desktop/latest?arch=win_amd64)
-    - [Linux(x86)](https://community.fit2cloud.com/download/de-desktop/latest?arch=linux_amd64)
-    - [MacOS(arm64)](https://community.fit2cloud.com/download/de-desktop/latest?arch=mac_arm64)
-    
-    其他平台暂不支持。
+    - Windows 系统 - [Windows(x86)](https://community.fit2cloud.com/download/de-desktop/latest?arch=win_amd64) ：支持 Windows 10 或更高版本。
+    - MacOS 系统 - [MacOS(arm64)](https://community.fit2cloud.com/download/de-desktop/latest?arch=mac_arm64)：支持 MacOS 11（Big Sur）或更高版本。
+    - Linux 系统 - [Linux(x86)](https://community.fit2cloud.com/download/de-desktop/latest?arch=linux_amd64)：只支持 64 位 Linux，不支持 32 位 Linux。
+
 
 ### 2.2 安装步骤
 
