@@ -8,14 +8,14 @@
 
 ## 1 界面展示
 
-![功能架构图](./newimg/product_acceptance/界面展示.jpg){ width="900px" }
+![界面展示图](./newimg/product_acceptance/界面展示.jpg){ width="900px" }
 
 ## 2 模板市场
 
 !!! Abstract ""
     模板市场链接地址：https://templates.dataease.cn 。
 
-![功能架构图](./newimg/product_acceptance/模板市场.gif){ width="900px" }
+![模板市场图](./newimg/product_acceptance/模板市场.gif){ width="900px" }
 
 ## 3 产品优势
 
