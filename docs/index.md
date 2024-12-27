@@ -6,10 +6,9 @@
 
 ![功能架构图](./newimg/product_acceptance/功能架构图.jpg){ width="900px" }
 
-
 ## 1 界面展示
 
-![功能架构图](./newimg/product_acceptance/2.0界面.gif){ width="900px" }
+![功能架构图](./newimg/product_acceptance/界面展示.jpg){ width="900px" }
 
 ## 2 模板市场
 
@@ -35,7 +34,6 @@
     - 图表制作: 支持丰富的图表类型、支持拖拉拽方式快速制作仪表板或数据大屏；
     - 数据查询：支持基于 Calcite 的跨源数据查询；
     - 数据连接: 支持关系型数据库、数据文件、数据仓库、API 等各种数据源。
-
 
 ## 5 版本对比
 
