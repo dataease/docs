@@ -159,7 +159,7 @@ nav:
           - 数据填报: xpack/data_filing.md
   - 常见问题:
       - 系统管理: faq/system_management.md
-      - 企业版: faq/enterprise_faq.md
+      - 版本对比: faq/enterprise_faq.md
   - 教学视频: instructional_video.md
   - 联系我们: contact.md
   - 桌面版: desktop.md
