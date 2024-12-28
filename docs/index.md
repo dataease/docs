@@ -15,7 +15,7 @@
 !!! Abstract ""
     模板市场链接地址：https://templates.dataease.cn 。
 
-![模板市场图](./newimg/product_acceptance/模板市场.gif){ width="1024px" }
+![模板市场图](./newimg/product_acceptance/模板市场.png){ width="1024px" }
 
 ## 3 产品优势
 
