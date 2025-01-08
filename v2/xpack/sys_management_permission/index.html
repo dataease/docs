@@ -492,6 +492,8 @@
       
         
       
+        
+      
     
     
     
@@ -519,6 +521,27 @@
             更新说明
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../change-v2-10-4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v2.10.4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -2973,6 +2996,8 @@
       
         
       
+        
+      
     
     
     
@@ -3244,6 +3269,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Webhook/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Webhook 管理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3260,6 +3306,8 @@
   
     
     
+      
+        
       
         
       
@@ -3464,6 +3512,27 @@
   
   <span class="md-ellipsis">
     游离资源管理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Security_settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    安全管理
   </span>
   
 
@@ -3836,6 +3905,28 @@
 </ul>
 </div>
 <p><img alt="更新1" src="../../newimg/权限管理新增导出控制.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>数据源新增查看权限说明：</p>
+<ul>
+<li>
+<p>允许操作：</p>
+<ul>
+<li>查看数据源的基本信息（例如名称、描述、连接方式、数据表结构等）。</li>
+<li>通过数据集读取数据（用户有权限访问与该数据源相关联的已公开数据集）。</li>
+</ul>
+</li>
+<li>
+<p>禁止操作：</p>
+<ul>
+<li>编辑数据源：用户无权修改数据源配置，如连接字符串、用户名和密码。</li>
+<li>基于数据源创建数据集：用户在创建数据集时，无法选择该数据源作为基础数据源。</li>
+<li>数据源不可见：在“创建数据集”界面，用户无权看到该数据源。</li>
+<li>修改已包含数据源的数据集：如果用户对某数据集有编辑权限，但该数据集依赖一个用户无查看权限的数据源，则在编辑数据集时，将提示“权限不足，无法修改”。禁止保存对数据集的任何更改。</li>
+</ul>
+</li>
+</ul>
+</div>
+<p><img alt="更新1" src="../../newimg/3.1 数据源新增查看权限.png" width="900px" /></p>
 <h2 id="4">4 行列权限<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>"行列权限"是数据集的权限类型之一，对行列权限的设置可以达到针对同一个数据集数据，不同的维度能查看对应权限的数据资源的目的；<br />
