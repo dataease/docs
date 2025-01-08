@@ -199,7 +199,7 @@
     新建 App，添加网页应用，设置桌面端主页为 DataEase 服务器地址。如果是 IP 地址，则填入 http(s)://域名/。
 ![对接飞书平台](../img/xpack/添加网页应用能力.png){ width="900px" }
 
-![对接飞书平台](../img/xpack/v2飞书对接1 (8).png){ width="900px" }
+![对接飞书平台](../img/xpack/v2飞书对接29.png){ width="900px" }
 
 ### 3.2 应用权限设置
 
