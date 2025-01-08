@@ -45,6 +45,7 @@ nav:
   - 产品迭代:
       - 更新日志: changelog.md
       - 更新说明:
+          - v2.10.4: change-v2-10-4.md
           - v2.10.3: change-v2-10-3.md
           - v2.10.2: change-v2-10-2.md
           - v2.10.1: change-v2-10-1.md
@@ -146,6 +147,7 @@ nav:
               - 同步管理: xpack/data_synchronization_management.md
               - 血缘分析: xpack/blood_relationship.md
               - 告警管理: xpack/alarm_management.md
+              - Webhook 管理: xpack/Webhook.md
           - 系统设置:
               - 平台对接: xpack/platform_abutment.md
               - 外观配置: xpack/appearance_configuration.md
@@ -155,6 +157,7 @@ nav:
               - 系统变量: xpack/system_variables.md
               - 插件管理: user_manual/system_management/plugin_management.md
               - 游离资源管理: xpack/free_resource_management.md
+              - 安全管理: xpack/Security_settings.md
           - 系统 API: xpack/sys_management_develop.md
           - 数据填报: xpack/data_filing.md
   - 常见问题:

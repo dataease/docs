@@ -3,7 +3,7 @@
 !!! Abstract ""
     支持将用户自己数据库里的数据同步到如 Apache Doris 等高性能实时的分析型数据库中。
 
-    - 当前支持同步的源数据库：Db2、MySQL、Oracle、SQL Server
+    - 当前支持同步的源数据库：Db2、MySQL、Oracle、SQL Server、Elasticsearch
     - 当前支持的目标数据库：Apache Doris（v1.2 及以上版本）
 ![同步管理首页](../img/xpack/同步管理首页.png){ width="900px" }
 

@@ -43,17 +43,46 @@
 !!! Abstract ""
     API 数据源支持参数提取。API 数据源接口参数设置支持从 API 请求的响应数据中提取结果作为 API 数据表的请求参数，可以用于 API  token 获取等场景。
     提取参数：
-![更新1](../../newimg/2.2%20API%20数据源支持参数提取.png){ width="900px" }
+![更新1](../img/datasource_configuration/数据源支持参数提取.png){ width="900px" }
 
 !!! Abstract ""
     配置参数：
-![更新1](../../newimg/2.2%20API%20数据源支持参数提取2.png){ width="900px" }
+![更新1](../img/datasource_configuration/数据源支持参数提取2.png){ width="900px" }
 
 !!! Abstract ""
     API 数据源在请求参数的请求头、QUERY 参数、请求体（form-data、x-www-form-urlencoded）均增加时间函数支持。目前内置的时间函数有当天（yyyy-MM-DD）、当天（yyyy/MM/DD）。
 
-![更新1](../../newimg/2.2%20API%20数据源支持时间函数.png){ width="900px" } 
+![更新1](../img/datasource_configuration/数据源支持时间函数.png){ width="900px" } 
 
+
+!!! Abstract ""
+    API 数据源支持分页获取数据支持两种分页方式：【页码+大小】和【游标+大小】。  
+    【页码+大小】示例：
+
+    - 选择分页方式为“页码+大小”。
+    - 在请求参数中设置页码和分页大小的默认值。
+    - 在响应参数中填写总数字段的 JsonPath。
+    - 在 Query 参数中，将页码和大小参数与内置分页参数进行映射。
+
+![更新1](../../newimg/2.1%20API%20数据源支持分页获取数据1.png){ width="900px" }
+
+![更新1](../../newimg/2.1%20API%20数据源支持分页获取数据2.png){ width="900px" }
+
+!!! Abstract ""
+    【页码+大小】同时支持将页码和大小参数嵌入 URL 路径中（如 DataEase 分页 API）。使用时，可按照下图所示，在路径中直接使用 ${pageNumber} 和 ${pageSize} 引用内置分页参数，总数字段的设置与前述方法一致。
+
+![更新1](../../newimg/2.1%20API%20数据源支持分页获取数据3.png){ width="900px" }
+
+!!! Abstract ""
+    【游标+大小】示例：
+
+    - 在请求参数中设置游标和分页大小的默认值。
+    - 在响应参数中，指定游标字段的 JsonPath。
+    - 在 Query 参数中，将页码和大小参数映射到内置分页参数。
+
+![更新1](../../newimg/2.1%20API%20数据源支持分页获取数据4.png){ width="900px" }
+
+![更新1](../..//newimg/2.1%20API%20数据源支持分页获取数据5.png){ width="900px" }
 
 !!! Abstract ""
     API 数据源支持主键设置及基于主键的增量同步更新。  

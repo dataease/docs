@@ -6,7 +6,7 @@
 
 !!! Abstract ""
     OIDC 配置信息。配置项 Realm 为非必填项。
-![更新1](../newimg/oidc认证设置.png){ width="900px" }
+![更新1](../newimg/OIDC认证配置新.png){ width="900px" }
 
 !!! Abstract ""
     CAS 配置信息。
