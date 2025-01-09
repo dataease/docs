@@ -3933,23 +3933,17 @@
 </div>
 <div class="admonition abstract">
 <p><strong>MacOS 系统</strong>：</p>
-<p>启动前需赋予 /opt 目录写权限：sudo chmod -R 777 /opt，双击解压文件后，点击应用图标启动程序。如有安全提示，一律信任。<br />
-注意：若提示“已损坏无法打开”问题，可进行以下尝试： </p>
-<ul>
-<li>在终端执行命令 sudo spctl --master-disable，并且在系统偏好设置 – 安全性与隐私 – 通用 ，选择“任何来源”选项</li>
-<li>在终端中输入sudo xattr -cr (这里要注意后面有个空格，不进行回车)，再将提示已损坏无法打开的程序图标拖到命令栏中，然后回车再次打开程序即可正常运行。</li>
-<li>如 M1 等 arm 架构的设备提示文件损坏，可参考：<a href="https://kb.fit2cloud.com/?p=2b3dcedd-bec9-47dd-863f-ef8e1571fc51">https://kb.fit2cloud.com/?p=2b3dcedd-bec9-47dd-863f-ef8e1571fc51</a>。</li>
-</ul>
+<p>双击解压文件后，点击应用图标启动程序。如有安全提示，一律信任。 </p>
+<p>注意：如 M1 等 arm 架构的设备提示文件损坏，可参考：<a href="https://kb.fit2cloud.com/?p=2b3dcedd-bec9-47dd-863f-ef8e1571fc51">https://kb.fit2cloud.com/?p=2b3dcedd-bec9-47dd-863f-ef8e1571fc51</a>。</p>
 </div>
 <div class="admonition abstract">
 <p><strong>Linux 系统</strong>：<br />
 以 Ubuntu 系统为例的安装步骤： </p>
 <ul>
-<li>安装命令：sudo dpkg -i [package]，例如：sudo dpkg -i dataease_1.0.0_amd64.deb。  </li>
-<li>启动前需赋予 /opt 目录和 /usr/lib/dataease 目录的写权限，如 sudo chmod -R a+w /opt /usr/lib/dataease。</li>
+<li>安装命令：sudo dpkg -i [package]，例如：sudo dpkg -i dataease_1.0.0_amd64.deb。</li>
 <li>在启动台找到 DataEase 图标，点击启动。    </li>
 </ul>
-<p>注意：Ubuntu、Debian、openSUSE 等系统时，请勿使用 root 用户，需使用普通用户安装。卸载使用 sudo dpkg -P dataease。</p>
+<p>注意：Ubuntu、Debian、openSUSE 等系统时，请勿使用 root 用户，需使用普通用户安装。卸载使用 sudo dpkg -P dataease。卸载使用 sudo dpkg -P dataease。</p>
 </div>
 <h3 id="23">2.3 升级操作<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
@@ -3961,18 +3955,20 @@
 </div>
 <h3 id="24">2.4 备份还原<a class="headerlink" href="#24" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p>DataEase 桌面版安装后，相关文件和运行数据存储在 /opt/dataease2.0 路径下。包括 DataEase 运行时所需的配置文件及运行时产生的数据，包括日志文件等。 <br />
-具体存放位置根据系统有所区别：   </p>
-<p>Windows 系统：</p>
+<p>DataEase 静态资源目录为用户主目录，具体存放位置根据系统有所区别：   </p>
 <ul>
-<li>如果将桌面版解压至 C 盘，运行后会在 C 盘下生成 <code>opt/dataease2.0</code> 文件夹。 </li>
-<li>若再解压至 D 盘 并运行 D 盘下的可执行文件（exe），则会在 D 盘下创建 <code>opt/dataease2.0</code> 文件夹，相当于生成了一个全新运行环境。</li>
+<li>Windows：&lt;系统盘&gt;:/Users/&lt;用户名&gt;</li>
+<li>Mac：/Users/&lt;用户名&gt;</li>
+<li>Linux：/home/&lt;用户名&gt;</li>
 </ul>
-<p>MacOS 系统和 Linux 系统：</p>
+<p><strong>注意：桌面版不支持回退操作，如果要运行新版本，建议先数据备份。备份 DataEase 将数据目录进行备份压缩即可。还原 DataEase 则把原环境里的运行目录进行覆盖。</strong></p>
+</div>
+<div class="admonition abstract">
+<p>如果曾使用过公测版的 DataEase 桌面版，在切换到正式版后，需要手动调整引擎设置中的 URL，将其修改为用户主目录路径。例如：</p>
 <ul>
-<li>数据固定存放在 /opt/dataease2.0 目录。</li>
+<li>公测版 URL：jdbc:h2:/opt/...  </li>
+<li>正式版 URL：jdbc:h2:/Users/<your_username>/opt/...</li>
 </ul>
-<p><strong>备份 DataEase 将 /opt/dataease2.0 目录进行备份压缩即可。还原 DataEase 则把原环境里的运行目录 /opt/dataease2.0 ，整个目录覆盖掉新环境里的 /opt/dataease2.0 目录。</strong></p>
 </div>
 <h2 id="3">3 注意事项<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 <h3 id="31">3.1 桌面版与服务器版差异<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
