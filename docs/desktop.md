@@ -34,23 +34,20 @@
 !!! Abstract ""
     **MacOS 系统**：
 
-    启动前需赋予 /opt 目录写权限：sudo chmod -R 777 /opt，双击解压文件后，点击应用图标启动程序。如有安全提示，一律信任。  
-    注意：若提示“已损坏无法打开”问题，可进行以下尝试： 
+    双击解压文件后，点击应用图标启动程序。如有安全提示，一律信任。 
 
-    - 在终端执行命令 sudo spctl --master-disable，并且在系统偏好设置 – 安全性与隐私 – 通用 ，选择“任何来源”选项
-    - 在终端中输入sudo xattr -cr (这里要注意后面有个空格，不进行回车)，再将提示已损坏无法打开的程序图标拖到命令栏中，然后回车再次打开程序即可正常运行。
-    - 如 M1 等 arm 架构的设备提示文件损坏，可参考：https://kb.fit2cloud.com/?p=2b3dcedd-bec9-47dd-863f-ef8e1571fc51。
+    注意：如 M1 等 arm 架构的设备提示文件损坏，可参考：https://kb.fit2cloud.com/?p=2b3dcedd-bec9-47dd-863f-ef8e1571fc51。
 
 
 !!! Abstract ""
     **Linux 系统**：  
     以 Ubuntu 系统为例的安装步骤： 
 
-    - 安装命令：sudo dpkg -i [package]，例如：sudo dpkg -i dataease_1.0.0_amd64.deb。  
-    - 启动前需赋予 /opt 目录和 /usr/lib/dataease 目录的写权限，如 sudo chmod -R a+w /opt /usr/lib/dataease。
+    - 安装命令：sudo dpkg -i [package]，例如：sudo dpkg -i dataease_1.0.0_amd64.deb。
     - 在启动台找到 DataEase 图标，点击启动。    
 
-    注意：Ubuntu、Debian、openSUSE 等系统时，请勿使用 root 用户，需使用普通用户安装。卸载使用 sudo dpkg -P dataease。
+    注意：Ubuntu、Debian、openSUSE 等系统时，请勿使用 root 用户，需使用普通用户安装。卸载使用 sudo dpkg -P dataease。卸载使用 sudo dpkg -P dataease。
+
 
 
 ### 2.3 升级操作
@@ -64,20 +61,20 @@
 ### 2.4 备份还原
 
 !!! Abstract ""
-    DataEase 桌面版安装后，相关文件和运行数据存储在 /opt/dataease2.0 路径下。包括 DataEase 运行时所需的配置文件及运行时产生的数据，包括日志文件等。   
-    具体存放位置根据系统有所区别：   
+    DataEase 静态资源目录为用户主目录，具体存放位置根据系统有所区别：   
 
-     Windows 系统：
+    - Windows：<系统盘>:/Users/<用户名>
+    - Mac：/Users/<用户名>
+    - Linux：/home/<用户名>
 
-    - 如果将桌面版解压至 C 盘，运行后会在 C 盘下生成 `opt/dataease2.0` 文件夹。 
-    - 若再解压至 D 盘 并运行 D 盘下的可执行文件（exe），则会在 D 盘下创建 `opt/dataease2.0` 文件夹，相当于生成了一个全新运行环境。
 
-     MacOS 系统和 Linux 系统：
+    **注意：桌面版不支持回退操作，如果要运行新版本，建议先数据备份。备份 DataEase 将数据目录进行备份压缩即可。还原 DataEase 则把原环境里的运行目录进行覆盖。**
 
-    - 数据固定存放在 /opt/dataease2.0 目录。
+!!! Abstract ""
+    如果曾使用过公测版的 DataEase 桌面版，在切换到正式版后，需要手动调整引擎设置中的 URL，将其修改为用户主目录路径。例如：
 
-    **备份 DataEase 将 /opt/dataease2.0 目录进行备份压缩即可。还原 DataEase 则把原环境里的运行目录 /opt/dataease2.0 ，整个目录覆盖掉新环境里的 /opt/dataease2.0 目录。**
-
+    - 公测版 URL：jdbc:h2:/opt/...  
+    - 正式版 URL：jdbc:h2:/Users/<your_username>/opt/...
 
 
 ## 3 注意事项
