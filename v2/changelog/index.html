@@ -18,7 +18,7 @@
         <link rel="prev" href="../quick_start/">
       
       
-        <link rel="next" href="../change-v2-10-4/">
+        <link rel="next" href="../change-v2-10-5/">
       
       
       <link rel="icon" href="../img/facio.ico">
@@ -510,6 +510,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v2105" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.10.5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v2104" class="md-nav__link">
     <span class="md-ellipsis">
       v2.10.4
@@ -722,6 +731,8 @@
       
         
       
+        
+      
     
     
     
@@ -749,6 +760,27 @@
             更新说明
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../change-v2-10-5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v2.10.5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -3929,6 +3961,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v2105" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.10.5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v2104" class="md-nav__link">
     <span class="md-ellipsis">
       v2.10.4
@@ -4125,6 +4166,76 @@ Bug 修复的小版本。<br />
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v2105">v2.10.5<a class="headerlink" href="#v2105" title="Permanent link">&para;</a></h3>
+<p>2025年1月23日</p>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>feat(仪表板): 仪表板支持画布比例和组件比例两种缩放方式设置 #14027</li>
+<li>feat(仪表板、数据大屏): Tab 组件轮播支持鼠标悬停停止 #13838</li>
+<li>feat(仪表板、数据大屏): 仪表板、数据大屏更多的组件支持改名，且标题栏和图层栏名称保持一致 #14110</li>
+<li>feat(数据集): 计算字段编辑页面支持校验计算字段语法 #14332</li>
+<li>feat(数据集): SQL 参数支持写在 join on 条件后</li>
+<li>feat(数据源): PostgreSQL 支持外部表 #14324</li>
+<li>feat(查询组件): 查询条件首次从”自动“切到”选择数据集“时，自动选择当前图表对应的数据集，以及图表当前选择的字段作为查询、显示和排序字段 #14033</li>
+<li>feat(X-Pack): 同步管理中存量定时同步任务在未同步过任何数据到目标表时，允许修改目标表的结构 #14362</li>
+<li>feat(X-Pack): 权限配置中的资源树排序规则与资源列表页排序一致 #14117</li>
+<li>feat(数据填报): 单选和单选框组件支持增加额外关联字段查询展示功能</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>refactor(数据大屏): 数据大屏新建图表后画布区域定位到屏幕中心点 #13946</li>
+<li>refactor(数据大屏): 新 Tab 预览无需进行浏览器刷新，防止请求阻塞造成异常退出 #14498</li>
+<li>refactor(数据大屏): 调整滚轮连续移动缩放计算时间，防止卡顿情况</li>
+<li>refactor(仪表板、数据大屏): 当前页面跳转的弹窗样式变更为内嵌式弹窗 #14264</li>
+<li>refactor(仪表板、数据大屏): 优化批量操作字段 #14169</li>
+<li>refactor(图表): 富文本支持同环比，优化富文本返回数据性能</li>
+<li>refactor(图表): 指标卡条件样式弹窗样式调整</li>
+<li>refactor(图表): 优化基础样式配色方案，以及多维度时维度名称的显示样式</li>
+<li>refactor(图表): 去掉词云图、K线图维度以及指标的排序功能</li>
+<li>refactor(图表): 计算字段变更后，维度、指标栏自动更新</li>
+<li>refactor(数据集): SQL 片段去掉 JSqlParser</li>
+<li>refactor(X-Pack): 禁止移动资源到【迁移资源】目录</li>
+<li>refactor: 保存资源名称时，去掉名称开头和结尾用户添加上去的空格 #14125</li>
+<li>refactor: Copilot 仅支持 MySQL 数据源</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>fix(仪表板): 修复 SQLServer 跨源数据集做图表联动无效的问题 #13486</li>
+<li>fix(仪表板): 修复仅剩一个 Ticket 时无法删除 Ticket 的问题</li>
+<li>fix(数据大屏): 修复过滤组件图层标题名称未同步的问题</li>
+<li>fix(仪表板、数据大屏): 修复直接输入数字的属性样式变更可能导致仪表板编辑时保存按钮被重复激活的问题</li>
+<li>fix(仪表板、数据大屏): 图表数据导出 excel，如果做空值处理时按照处理后的结果导出 #13976</li>
+<li>fix(图表): 修复仪表盘、水波图拖入计算字段报错的问题 #14466</li>
+<li>fix(图表): 修复图表样式中修改的标题，图层名称没有同步的问题</li>
+<li>fix(图表): 修复外部参数跳转，级联条件容易受初始条件影响而不准确问题 #14656 #14352</li>
+<li>fix(图表): 修复存量透视表表头颜色的错误</li>
+<li>fix(图表): 修复明细表常规分页模式切换分页数量后序号计算的错误 #14601</li>
+<li>fix(图表): 修复水波图指标是记录数时，大小栏的最大最小值无法选择动态值的问题</li>
+<li>fix(图表): 修复地图导出图片空白的问题 #12319</li>
+<li>fix(图表): 修复跳转弹窗打开，图表提示框容易遮挡弹框的问题</li>
+<li>fix(图表): 修复堆叠柱状图辅助线平均值的错误 #14464</li>
+<li>fix(数据源): 数据源与文件夹名称不能为空</li>
+<li>fix(数据源): 修复不同组织数据源根目录下无法创建同名资源的问题</li>
+<li>fix(数据源): 修复 API 数据源校验的错误</li>
+<li>fix(数据源): 修复旧版本 AP I数据源在升级到 v2.10.4 版本后无法正常同步的问题 #14682</li>
+<li>fix(数据源): 修复 API 名称输入后可以触发回车事件</li>
+<li>fix(数据源): 修复 API 数据源分页的错误</li>
+<li>fix(数据源): 修复 Doris 数据源间隔一天左右就提示连接无效的问题 #14561</li>
+<li>fix(数据集): 修复 Excel 数据导出格式化的问题</li>
+<li>fix(数据集): 修复数据集执行 SQL 的报错</li>
+<li>fix(数据导出中心): 修复数据集字段为带小数数值类型时，表格导出为 Excel 会将 0 存为 0E-8 的问题</li>
+<li>fix(X-Pack): 修复定时报告地图空白的问题 #12319</li>
+<li>fix(X-Pack): 修复同步管理中，ES 数据类型不支持 GEO_POINT, GEO_SHAPE 的问题</li>
+<li>fix(X-Pack): 修复数据集权限控制中角色名称显示的问题 #14704</li>
+<li>fix: 修复硬编码API凭据的漏洞</li>
+<li>fix: 修复部分包含富文本的模版导入失败的问题</li>
+</ul>
+</div>
 <h3 id="v2104">v2.10.4<a class="headerlink" href="#v2104" title="Permanent link">&para;</a></h3>
 <p>2025年1月9日</p>
 <div class="admonition abstract">
