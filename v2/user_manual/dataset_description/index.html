@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -4082,7 +4082,7 @@
 情况三：有多个过滤组件时，要用括号将它们组合在一起，否则图表无法更新：
 <div class="highlight"><pre><span></span><code>SELECT ORDER_ID, ORDER_DATE, PROJ_ID, ORDER_EMP FROM ORDERS WHERE (ORDER_EMP IN ${USER_NAME} AND PROJ_ID IN ${USER_PROJ_ID})
 </code></pre></div>
-情况四：结合两个时间过滤组件进行日期范围（时间字段需为 13 位时间戳）传参，使用 BETWEEN 或者用 &lt;、 &gt; ：
+情况四：结合两个时间过滤组件进行日期范围（变以文本格式传入的需在 SQL 中自行处理时间格式）传参，使用 BETWEEN 或者用 &lt;、 &gt; ：
 <div class="highlight"><pre><span></span><code>SELECT * FROM SALES WHERE 记录时间 BETWEEN &#39;${BEGINTIME}&#39; AND &#39;${ENDTIME}&#39;;
 
 SELECT * FROM SALES WHERE 记录时间 &gt; &#39;${BEGINTIME}&#39; AND 记录时间 &lt; &#39;${ENDTIME}&#39;
@@ -4108,7 +4108,8 @@ SELECT * FROM SALES WHERE 记录时间 &gt; &#39;${BEGINTIME}&#39; AND 记录时
 <p><img alt="更新1" src="../../newimg/2.3%20数据集自定义%20SQL%20时支持选择系统变量作为查询条件（XPack）.png" width="900px" /></p>
 <h2 id="5">5 设置数据表间关联关系<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p>在新建数据集页面，勾选添加数据集对应数据源，将左侧要关联的数据表拖拽到右侧数据集编辑区。</p>
+<p>在新建数据集页面，勾选添加数据集对应数据源，将左侧要关联的数据表拖拽到右侧数据集编辑区。    </p>
+<p><strong>注意：如果是跨数据库关联，对应的自定义 SQL 需要使用的是 Calcite 的函数。</strong></p>
 </div>
 <p><img alt="拖拽关联表" src="../../img/dataset_configuration/拖拽关联表.png" width="900px" /></p>
 <div class="admonition abstract">
@@ -4213,7 +4214,7 @@ SELECT * FROM SALES WHERE 记录时间 &gt; &#39;${BEGINTIME}&#39; AND 记录时
     
     
     
-      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
     <script>
