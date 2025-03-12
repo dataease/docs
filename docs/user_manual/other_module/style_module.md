@@ -98,6 +98,11 @@
 
 ![Tab页展示视图](../../img/dashboard_generation/2.0选择tab1.png){ width="900px" }
 
+!!! Abstract ""
+	Tab 组件标签支持标题背景设置，可自定义内边距、圆角、背景色、背景图和边框样式。
+
+![更新1](../../newimg/Tab 组件的标题支持背景设置.PNG){ width="900px" }
+
 
 !!! Abstract ""
 	Tab 组件支持轮播。

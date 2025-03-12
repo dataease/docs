@@ -2,7 +2,12 @@
 
 !!! Abstract ""
     支持在系统设置中进行 CAS、OIDC、LDAP、OAuth2 配置，开启此功能跳转到登录页面即可使用相应方式登录。
-![更新1](../newimg/4.4%20支持在系统设置中配置认证对接信息.png){ width="900px" }
+![数据连接页面](../img/xpack/认证对接.png){ width="900px" }
+
+!!! Abstract ""
+    移动端支持 OIDC、LDAP、CAS、OAuth2 等认证方式登录。
+
+![更新1](../../newimg/移动端支持 OIDC、LDAP、CAS、OAuth2 等认证方式登录.png){ width="400px" }
 
 !!! Abstract ""
     OIDC 配置信息。配置项 Realm 为非必填项。
