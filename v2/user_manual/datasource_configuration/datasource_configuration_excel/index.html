@@ -18,7 +18,7 @@
         <link rel="prev" href="../Elasticsearch_datasource_configuration/">
       
       
-        <link rel="next" href="../../dataset_description/">
+        <link rel="next" href="../datasource_configuration_remote_excel/">
       
       
       <link rel="icon" href="../../../img/facio.ico">
@@ -26,7 +26,7 @@
     
     
       
-        <title>配置 Excel 数据源 - DataEase 文档</title>
+        <title>配置本地 Excel/CSV 数据 - DataEase 文档</title>
       
     
     
@@ -212,7 +212,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              配置 Excel 数据源
+              配置本地 Excel/CSV 数据
             
           </span>
         </div>
@@ -500,6 +500,8 @@
       
         
       
+        
+      
     
     
     
@@ -528,6 +530,28 @@
             更新说明
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../change-v2-10-6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v2.10.6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1301,6 +1325,8 @@
       
         
       
+        
+      
     
     
     
@@ -1700,7 +1726,7 @@
           
   
   <span class="md-ellipsis">
-    配置 Excel 数据源
+    配置本地 Excel/CSV 数据
     
   </span>
   
@@ -1712,7 +1738,7 @@
         
   
   <span class="md-ellipsis">
-    配置 Excel 数据源
+    配置本地 Excel/CSV 数据
     
   </span>
   
@@ -1754,6 +1780,28 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datasource_configuration_remote_excel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    配置远程 Excel/CSV 数据
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -3927,15 +3975,15 @@
   
 
 
-  <h1>配置 Excel 数据源</h1>
+  <h1>配置本地 Excel/CSV 数据</h1>
 
 <h2 id="1">1 前提条件<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p>上传 Excel 数据表之前，请收集以下信息：</p>
+<p>上传 Excel/CSV 数据表之前，请收集以下信息：</p>
 <ul>
-<li>数据质量检查： 确保 Excel 数据表中的数据质量良好，无合并单元格、缺失值、错误格式或其他异常；</li>
+<li>数据质量检查： 确保 Excel/CSV 数据表中的数据质量良好，无合并单元格、缺失值、错误格式或其他异常；</li>
 <li>格式标准化： 统一日期、时间和数字的格式，以确保数据在不同系统之间的兼容性，文件的第一行为标题行不能为空，百分比转为数值格式；</li>
-<li>合理的文件大小：Excel 文件大小请确保在 500M 以内。</li>
+<li>合理的文件大小：Excel/CSV 文件大小请确保在 500M 以内。</li>
 </ul>
 </div>
 <h2 id="2">2 配置数据源链接步骤<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
@@ -3943,7 +3991,8 @@
 <p>步骤一：登入 DataEase 系统。</p>
 </div>
 <div class="admonition abstract">
-<p>步骤二：按照以下步骤，选择 Excel 图标。</p>
+<p>步骤二：按照以下步骤，选择 本地 Excel/CSV 图标。</p>
+<p><strong>注意：本地 Excel/CSV 指的是用户通过浏览器，将本地的  Excel/CSV  文件上传到 DataEase 中。而远程 Excel/CSV 数据源是  DataEase  从远程服务器读取的 Excel 或 CSV 文件。</strong></p>
 </div>
 <p><img alt="Excel1" src="../../../img/datasource_configuration/%E6%B7%BB%E5%8A%A0Excel.png" width="900" /></p>
 <div class="admonition abstract">
@@ -3953,8 +4002,8 @@
 <div class="admonition abstract">
 <p><strong>上传 Excel 数据源时支持字段选择：</strong></p>
 <ul>
-<li>在上传 Excel 数据源时，支持选择指定字段进行导入，无需导入全部数据。选择字段时可自定义设置字段长度。</li>
-<li>对已有 Excel 数据源进行数据替换时，同样支持字段选择和字段长度调整。</li>
+<li>在上传 Excel/CSV 数据源时，支持选择指定字段进行导入，无需导入全部数据。选择字段时可自定义设置字段长度。</li>
+<li>对已有 Excel/CSV 数据源进行数据替换时，同样支持字段选择和字段长度调整。</li>
 </ul>
 </div>
 <p><img alt="更新1" src="../../../newimg/%E4%B8%8A%E4%BC%A0%20Excel%20%E6%95%B0%E6%8D%AE%E6%BA%90%E6%97%B6%E6%94%AF%E6%8C%81%E5%AD%97%E6%AE%B5%E9%80%89%E6%8B%A9.png" width="900px" /></p>
@@ -3963,7 +4012,7 @@
 </div>
 <p><img alt="Excel保存成功" src="../../../img/datasource_configuration/Excel%E4%BF%9D%E5%AD%98%E6%88%90%E5%8A%9F.png" width="900" /></p>
 <div class="admonition abstract">
-<p><strong>替换 Excel 数据源时，按以下规则处理：</strong></p>
+<p><strong>替换 Excel/CSV 数据源时，按以下规则处理：</strong></p>
 <ul>
 <li>若新文件中包含相同的 sheet 页，则直接替换。</li>
 <li>若新文件的 sheet 页不一致（发生变化）：<ul>
@@ -3972,10 +4021,10 @@
 </ul>
 </li>
 </ul>
-<p><strong>追加 Excel 数据源时，按以下规则处理：</strong></p>
+<p><strong>追加 Excel/CSV 数据源时，按以下规则处理：</strong></p>
 <ul>
-<li>只有新上传的 Excel 文件的 Sheet 页与原数据源的 Sheet 页匹配时，才会执行数据追加。匹配后，将新数据追加到原 Sheet 页，且不进行主键替换。</li>
-<li>如果新上传的 Excel 文件中包含原数据源中不存在的 Sheet 页，则不处理这些不匹配的 Sheet 页。</li>
+<li>只有新上传的 Excel/CSV 文件的 Sheet 页与原数据源的 Sheet 页匹配时，才会执行数据追加。匹配后，将新数据追加到原 Sheet 页，且不进行主键替换。</li>
+<li>如果新上传的 Excel/CSV 文件中包含原数据源中不存在的 Sheet 页，则不处理这些不匹配的 Sheet 页。</li>
 </ul>
 </div>
 

@@ -500,6 +500,8 @@
       
         
       
+        
+      
     
     
     
@@ -528,6 +530,28 @@
             更新说明
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../change-v2-10-6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v2.10.6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1297,6 +1321,8 @@
       
         
       
+        
+      
     
     
     
@@ -1689,7 +1715,29 @@
         
   
   <span class="md-ellipsis">
-    配置 Excel 数据源
+    配置本地 Excel/CSV 数据
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/datasource_configuration/datasource_configuration_remote_excel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    配置远程 Excel/CSV 数据
     
   </span>
   
@@ -4032,15 +4080,23 @@
 <p><img alt="更新1" src="../../newimg/数据填表单选和单选框组件支持额外关联字段查询与展示功能1.png" width="900px" /></p>
 <p><img alt="更新1" src="../../newimg/数据填表单选和单选框组件支持额外关联字段查询与展示功能2.png" width="900px" /></p>
 <div class="admonition abstract">
+<p>数据填报的表单中的下拉框和多选框组件支持关联所有有效数据源。</p>
+</div>
+<p><img alt="更新1" src="../../newimg/数据填报的表单中的下拉框和多选框组件支持关联所有有效数据源.png" width="900px" /></p>
+<div class="admonition abstract">
 <p>在单选或下拉框中选择选项后，设置的字段描述将显示在下方。如果描述内容超过 6 个，可以点击【查看更多】以查看完整描述。</p>
 </div>
 <p><img alt="更新1" src="../../newimg/数据填表单选和单选框组件支持额外关联字段查询与展示功能3.png" width="900px" /></p>
 <div class="admonition abstract">
-<p>保存表单：选择一个具体的数据源，并设置对应表名及表单各个字段对应的数据库表字段名称。后续所填写的表单数据将会被保存至该数据源的库表下。</p>
+<p>数据填报的日期组件支持设置默认值，默认填充当前日期时间。</p>
 </div>
-<p><img alt="创建表单" src="../../img/xpack/%E4%BF%9D%E5%AD%98%E8%A1%A8%E5%8D%95.png" width="900px" /></p>
+<p><img alt="更新1" src="../../newimg/数据填报的日期组件支持设置默认值，默认填充当前日期时间.png" width="900px" /></p>
 <div class="admonition abstract">
-<p><strong>注意：仅支持存储在 MySQL 数据库中，默认选择内置数据库。若需要将数据存储在其他数据库，需先创建 MySQL 数据源并开启数据填报。</strong></p>
+<p>数据填报表单可绑定现有数据库表，表单字段可选择与数据库表字段绑定，系统将自动匹配字段类型。对于未绑定的新增字段，系统将在目标数据表中创建对应的数据库字段，填报数据也将同步插入原数据表。</p>
+</div>
+<p><img alt="更新1" src="../../newimg/%20数据填报支持绑定已有数据表.png" width="900px" /></p>
+<div class="admonition abstract">
+<p><strong>注意：若需要将数据存储在其他数据库，需先创建数据源并开启数据填报。</strong></p>
 </div>
 <p><img alt="创建表单" src="../../img/xpack/%E6%95%B0%E6%8D%AE%E6%BA%90%E5%BC%80%E5%90%AF%E6%95%B0%E6%8D%AE%E5%A1%AB%E6%8A%A5.png" width="900px" /></p>
 <div class="admonition abstract">
@@ -4052,7 +4108,18 @@
 <p>选择对应对表单，可以查看表单的填报数据以及对应的填报时间、填报人，并且可对表单记录进行修改、查看、删除。<br />
 支持下载表单模板、通过 Excel 批量上传数据。</p>
 </div>
-<p><img alt="创建表单" src="../../img/xpack/%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE.png" width="900px" /></p>
+<p><img alt="创建表单" src="../../img/xpack/%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE%E6%96%B0.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>数据填报的表单数据支持按字段过滤查询。</p>
+</div>
+<p><img alt="更新1" src="../../newimg/数据填报的表单数据支持按字段过滤查询1.png" width="900px" /></p>
+<p><img alt="更新1" src="../../newimg/数据填报的表单数据支持按字段过滤查询2.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>数据填报的表单数据支持一键清空。一键清空时会弹出删除确认，确认后成功删除数据。</p>
+</div>
+<p><img alt="更新1" src="../../newimg/数据填报的表单数据支持一键清空1.png" width="900px" /></p>
+<p><img alt="更新1" src="../../newimg/数据填报的表单数据支持一键清空2.png" width="900px" /></p>
+<p><img alt="更新1" src="../../newimg/数据填报的表单数据支持一键清空3.png" width="900px" /></p>
 <div class="admonition abstract">
 <p>切换至【提交记录】，可查看对应提交人的操作动作。</p>
 </div>

@@ -500,6 +500,8 @@
       
         
       
+        
+      
     
     
     
@@ -528,6 +530,28 @@
             更新说明
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../change-v2-10-6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v2.10.6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1297,6 +1321,8 @@
       
         
       
+        
+      
     
     
     
@@ -1689,7 +1715,29 @@
         
   
   <span class="md-ellipsis">
-    配置 Excel 数据源
+    配置本地 Excel/CSV 数据
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datasource_configuration/datasource_configuration_remote_excel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    配置远程 Excel/CSV 数据
     
   </span>
   
@@ -2079,7 +2127,7 @@
         <li class="md-nav__item">
   <a href="#6" class="md-nav__link">
     <span class="md-ellipsis">
-      6 批量操作
+      6 组件隐藏
     </span>
   </a>
   
@@ -2088,7 +2136,7 @@
         <li class="md-nav__item">
   <a href="#7" class="md-nav__link">
     <span class="md-ellipsis">
-      7 复用
+      7 批量操作
     </span>
   </a>
   
@@ -2097,7 +2145,7 @@
         <li class="md-nav__item">
   <a href="#8" class="md-nav__link">
     <span class="md-ellipsis">
-      8 保存
+      8 复用
     </span>
   </a>
   
@@ -2106,7 +2154,16 @@
         <li class="md-nav__item">
   <a href="#9" class="md-nav__link">
     <span class="md-ellipsis">
-      9 返回
+      9 保存
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      10 返回
     </span>
   </a>
   
@@ -4137,7 +4194,7 @@
         <li class="md-nav__item">
   <a href="#6" class="md-nav__link">
     <span class="md-ellipsis">
-      6 批量操作
+      6 组件隐藏
     </span>
   </a>
   
@@ -4146,7 +4203,7 @@
         <li class="md-nav__item">
   <a href="#7" class="md-nav__link">
     <span class="md-ellipsis">
-      7 复用
+      7 批量操作
     </span>
   </a>
   
@@ -4155,7 +4212,7 @@
         <li class="md-nav__item">
   <a href="#8" class="md-nav__link">
     <span class="md-ellipsis">
-      8 保存
+      8 复用
     </span>
   </a>
   
@@ -4164,7 +4221,16 @@
         <li class="md-nav__item">
   <a href="#9" class="md-nav__link">
     <span class="md-ellipsis">
-      9 返回
+      9 保存
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      10 返回
     </span>
   </a>
   
@@ -4299,7 +4365,32 @@
 注意： 在做完 base64 编码后，再做一次 encodeURIComponent 的 URL 编码，以防有些内容编码后存在特殊字符，浏览器无法解析的情况。<br />
 存在这类字符时，会提示”外部参数解析错误未生效，请按规定编码方式传参“。</p>
 </div>
-<h2 id="6">6 批量操作<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<h2 id="6">6 组件隐藏<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p>仪表板编辑页面【隐藏设置】 按钮，可在 PC 端样式中隐藏指定组件。隐藏后原有布局会受到影响，其他组件将自动补位，但不影响移动端显示。</p>
+<p>隐藏设置操作：</p>
+<ul>
+<li>组件隐藏入口：点击仪表板顶部菜单栏【隐藏设置】按钮，进入组件隐藏设置状态。</li>
+<li>隐藏组件：左侧组件的隐藏图标，点击该图标可将组件加入 已隐藏组件列表。</li>
+<li>查看已隐藏组件：右侧显示已隐藏组件列表，可随时查看隐藏的组件状态。点击已隐藏组件，即可恢复显示。</li>
+</ul>
+<p>隐藏设置状态的退出方式：</p>
+<ul>
+<li>点击仪表板顶部菜单栏【隐藏设置】按钮可退出。</li>
+<li>点击除组件右上角隐藏图标以外的任意区域，如点击仪表板，显示仪表板属性设置栏。</li>
+<li>点击顶部功能按钮（如外部参数、仪表板配置、移动端布局、图表、复用等），退出隐藏设置状态并执行相应操作。</li>
+</ul>
+</div>
+<p><img alt="更新1" src="../../newimg/仪表板支持组件隐藏1.PNG" width="900px" /></p>
+<div class="admonition abstract">
+<p>在单个组件的右上角菜单中，点击【隐藏】选项，可直接进入隐藏设置状态，并将该组件添加至【已隐藏组件列表】。其余操作与隐藏设置流程一致。</p>
+</div>
+<p><img alt="更新1" src="../../newimg/仪表板支持组件隐藏2.PNG" width="900px" /></p>
+<div class="admonition abstract">
+<p>在【已隐藏组件】列表中，点击组件可恢复显示，操作方式与移动端布局一致。</p>
+</div>
+<p><img alt="更新1" src="../../newimg/仪表板支持组件隐藏3.gif" width="900px" /></p>
+<h2 id="7">7 批量操作<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>点击批量操作按钮，选择图表，可批量设置图表样式属性，且根据所选择的图表不同，可修改的属性不同，如下图所示。</p>
 </div>
@@ -4308,7 +4399,7 @@
 <p><strong>请注意：当勾选多个不同类别的图形时，只能批量修改共性的属性。</strong></p>
 </div>
 <p><img alt="仪表板_批量操作" src="../../img/dashboard_generation/2.0%E6%89%B9%E9%87%8F%E6%A0%B7%E5%BC%8F%E8%B0%83%E6%95%B4.png" width="900px" /></p>
-<h2 id="7">7 复用<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
+<h2 id="8">8 复用<a class="headerlink" href="#8" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>支持复用所有的组件，复用图表支持适配当前仪表板样式。</p>
 </div>
@@ -4317,12 +4408,12 @@
 <p>复制上图不一样样式的仪表板中的图表会自动适配当前仪表板下的样式。</p>
 </div>
 <p><img alt="仪表板_复用" src="../../img/dashboard_generation/2.0%E8%BF%9B%E8%A1%8C%E5%A4%8D%E7%94%A8.png" width="900px" /></p>
-<h2 id="8">8 保存<a class="headerlink" href="#8" title="Permanent link">&para;</a></h2>
+<h2 id="9">9 保存<a class="headerlink" href="#9" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>点击下图所示的保存按钮，保存仪表板。</p>
 </div>
 <p><img alt="仪表板_保存" src="../../img/dashboard_generation/2.0%E4%BF%9D%E5%AD%98.png" width="900px" /></p>
-<h2 id="9">9 返回<a class="headerlink" href="#9" title="Permanent link">&para;</a></h2>
+<h2 id="10">10 返回<a class="headerlink" href="#10" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>点击下图所示的返回按钮，关闭仪表板。</p>
 </div>

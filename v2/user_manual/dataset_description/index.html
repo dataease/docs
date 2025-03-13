@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://dataease.io/docs/v2/user_manual/dataset_description/">
       
       
-        <link rel="prev" href="../datasource_configuration/datasource_configuration_excel/">
+        <link rel="prev" href="../datasource_configuration/datasource_configuration_remote_excel/">
       
       
         <link rel="next" href="../dataset_design/">
@@ -500,6 +500,8 @@
       
         
       
+        
+      
     
     
     
@@ -528,6 +530,28 @@
             更新说明
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../change-v2-10-6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v2.10.6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1299,6 +1323,8 @@
       
         
       
+        
+      
     
     
     
@@ -1691,7 +1717,29 @@
         
   
   <span class="md-ellipsis">
-    配置 Excel 数据源
+    配置本地 Excel/CSV 数据
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datasource_configuration/datasource_configuration_remote_excel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    配置远程 Excel/CSV 数据
     
   </span>
   
@@ -4000,7 +4048,7 @@
 <div class="admonition abstract">
 <p>数据集编辑界面支持下拉框搜索。</p>
 </div>
-<p><img alt="更新1" src="../../newimg/v2-2-3.PNG" width="900px" /></p>
+<p><img alt="更新1" src="../../newimg/%E6%95%B0%E6%8D%AE%E9%9B%86%E9%80%89%E6%8B%A9%E6%95%B0%E6%8D%AE%E6%BA%90%E5%92%8C%E6%95%B0%E6%8D%AE%E8%A1%A8.png" width="900px" /></p>
 <h2 id="2">2 新建数据集<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>如下图所示，点击序号位置【添加数据集】，跳转到添加数据集页面。 </p>
@@ -4037,7 +4085,6 @@
 <strong>注意：单源数据集写 SQL 时使用对应数据库的 JDBC 语法。</strong></p>
 </div>
 <p><img alt="SQL语句编写" src="../../img/dataset_configuration/SQL语句编写.png" width="900px" /></p>
-<p><img alt="SQL查询运行" src="../../img/dataset_configuration/SQL查询运行.png" width="900px" /></p>
 <div class="admonition abstract">
 <p>SQL 片段支持注释</p>
 </div>
@@ -4109,7 +4156,7 @@ SELECT * FROM SALES WHERE 记录时间 &gt; &#39;${BEGINTIME}&#39; AND 记录时
 <h2 id="5">5 设置数据表间关联关系<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>在新建数据集页面，勾选添加数据集对应数据源，将左侧要关联的数据表拖拽到右侧数据集编辑区。    </p>
-<p><strong>注意：如果是跨数据库关联，对应的自定义 SQL 需要使用的是 Calcite 的函数。</strong></p>
+<p><strong>注意：如果是跨数据库关联，对应的自定义 SQL 需要使用的是标准 SQL 语法。</strong></p>
 </div>
 <p><img alt="拖拽关联表" src="../../img/dataset_configuration/拖拽关联表.png" width="900px" /></p>
 <div class="admonition abstract">
@@ -4124,7 +4171,7 @@ SELECT * FROM SALES WHERE 记录时间 &gt; &#39;${BEGINTIME}&#39; AND 记录时
 <div class="admonition abstract">
 <p>创建数据集时，同一个数据表可被多次引用。</p>
 </div>
-<p><img alt="更新1" src="../../newimg/2.2 创建数据集时，同一个数据表可被多次引用.png" width="900px" /></p>
+<p><img alt="拖拽关联表" src="../../img/dataset_configuration/多次引用.png" width="900px" /></p>
 
 
 

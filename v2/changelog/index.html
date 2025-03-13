@@ -18,7 +18,7 @@
         <link rel="prev" href="../quick_start/">
       
       
-        <link rel="next" href="../change-v2-10-5/">
+        <link rel="next" href="../change-v2-10-6/">
       
       
       <link rel="icon" href="../img/facio.ico">
@@ -515,6 +515,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v2106" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.10.6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v2105" class="md-nav__link">
     <span class="md-ellipsis">
       v2.10.5
@@ -738,6 +747,8 @@
       
         
       
+        
+      
     
     
     
@@ -766,6 +777,28 @@
             更新说明
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../change-v2-10-6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v2.10.6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1533,6 +1566,8 @@
       
         
       
+        
+      
     
     
     
@@ -1925,7 +1960,29 @@
         
   
   <span class="md-ellipsis">
-    配置 Excel 数据源
+    配置本地 Excel/CSV 数据
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_manual/datasource_configuration/datasource_configuration_remote_excel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    配置远程 Excel/CSV 数据
     
   </span>
   
@@ -4089,6 +4146,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v2106" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.10.6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v2105" class="md-nav__link">
     <span class="md-ellipsis">
       v2.10.5
@@ -4295,6 +4361,175 @@ Bug 修复的小版本。<br />
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v2106">v2.10.6<a class="headerlink" href="#v2106" title="Permanent link">&para;</a></h3>
+<p>2025年3月13日</p>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>feat(图表): 图表指标的快速计算支持累加计算 #8939</li>
+<li>feat(图表): 明细表支持字段分组</li>
+<li>feat(图表): 缩略轴的图表在联动时不刷新当前图表 #13338 #13722</li>
+<li>feat(图表): 横纵轴支持轴名称快捷启用与禁用 #14120</li>
+<li>feat(图表): 移动端点击表格单元格支持查看对应内容 #14769</li>
+<li>feat(图表): 表格合并单元格状态下禁用斑马纹的配置</li>
+<li>feat(图表): 优化图表过滤器枚举筛选时文字过多显示 #14124</li>
+<li>feat(图表): 透视表树形模式下支持设置默认展开层级 #14460</li>
+<li>feat(图表): 透视表总计显示支持设置为无 #9732</li>
+<li>feat(图表): 透视表自适应模式下自动填满图表 #13402</li>
+<li>feat(图表): 横轴和纵轴的轴线支持自定义配置颜色、线条样式、线宽#14102</li>
+<li>feat(查询组件): 取色器增加透明度设置项</li>
+<li>feat(查询组件): 数字下拉组件的显示字段支持选择文本类型字段 #14731</li>
+<li>feat(查询组件): 时间范围筛选组件可以同时支持动态参数和时间维度 #14421</li>
+<li>feat(查询组件): 查询组件文本搜索时，支持回车触发查询 #14809</li>
+<li>feat(仪表板): 仪表板支持组件的隐藏设置 #14749</li>
+<li>feat(数据大屏): 分组选择后支持按住 Ctrl 键取消其中一个已选中的组件 #13698</li>
+<li>feat(仪表板、数据大屏): Tab 组件标题支持设置背景 #13384</li>
+<li>feat(仪表板、数据大屏): 仪表板或者数据大屏支持嵌入加载完成后的回调事件</li>
+<li>feat(仪表板、数据大屏): 预览增加加载动画</li>
+<li>feat(数据集): 数据集增加分组字段功能</li>
+<li>feat(数据源): 新增远程 Excel/CSV 数据源 #14681</li>
+<li>feat(嵌入式): 仪表板和数据大屏编辑器在 DIV 嵌入方式下支持宽高自适应 #14869</li>
+<li>feat(X-Pack): 支持飞书数据源插件</li>
+<li>feat(X-Pack): 数据填报新建表单支持绑定已有数据表 #12788</li>
+<li>feat(X-Pack): 数据填报的日期组件增加设置默认项，默认当前日期时间 #14040</li>
+<li>feat(X-Pack): 数据填报表单的下拉框和多选框组件支持绑定所有有效数据源表</li>
+<li>feat(X-Pack): 数据填报表单数据支持字段过滤查询</li>
+<li>feat(X-Pack): 同步管理任务列表添加查看任务ID，增加执行一次接口</li>
+<li>feat(X-Pack): 同步管理目标数据源 Doris 支持配置 BE 副本数 #13614</li>
+<li>feat(X-Pack): 移动端支持第三方平台认证 #14747</li>
+<li>feat(X-Pack): 创建组织、角色的 API 接口返回对应资源 ID</li>
+<li>feat(X-Pack): 组织管理页面增加分页以及懒加载</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>refactor(图表): 去除进度条的纵轴位置设置</li>
+<li>refactor(图表): 优化明细表合并单元格关于序号计算的提示</li>
+<li>refactor(图表): 优化条件样式配置界面的初始化配置</li>
+<li>refactor(图表): 优化折线图提示在移动端的显示样式</li>
+<li>refactor(图表): 调整辅助线的配置样式</li>
+<li>refactor(图表): 分组堆叠柱状图堆叠项支持联动</li>
+<li>refactor(图表): 调整图表异常时明细显示的样式问题</li>
+<li>refactor(图表): 优化圆形填充图的现实以及操作逻辑</li>
+<li>refactor(图表): 优化柱条分组堆叠联动时的高亮效果</li>
+<li>refactor(仪表板): 仪表板拖拽定位到第二屏时可以直接拖入第二屏 #11849</li>
+<li>refactor(仪表板): 仪表板预览显示，文案等优化</li>
+<li>refactor(仪表板): 移动端组件增加 PC 样式同步功能</li>
+<li>refactor(仪表板): 调整模板图表在移动端的配置显示</li>
+<li>refactor(数据大屏): 数据大屏过滤弹窗按钮如果出现滚动，固定到屏幕指定位置</li>
+<li>refactor(数据大屏): 数据大屏中滚动条默认样式优化 #15240</li>
+<li>refactor(仪表板、数据大屏): 模版更换数据集的提示优化 #13626 #14101</li>
+<li>refactor(仪表板、数据大屏): 优化跳转、联动、提示同时存在，操作上小菜单会被遮挡问题 #15037</li>
+<li>refactor(工作台): 当系统打开模式是当前页面时，应用增加返回功能 #14367</li>
+<li>refactor(X-Pack): 同步管理的目标数据源文案修改</li>
+<li>refactor(X-Pack): 阈值告警的高级内容的富文本编辑器删除表格、多媒体、链接组件</li>
+<li>refactor(文档): 优化 API 文档信息</li>
+<li>refactor: 登录页面表单输入框高度样式优化</li>
+<li>refactor: 删除存在 SQL 注入风险的代码</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>fix(图表): 修复 iOS 设备明细表分页位置不对问题</li>
+<li>fix(图表): 修复富文本内表格的宽高设置无效的问题 #13872</li>
+<li>fix(图表): 修复仪表板页面导出 PDF 及图片时，最值标签显示空白的问题 #15093</li>
+<li>fix(图表): 修复仪表盘、水波图遇空数据时的显示错误</li>
+<li>fix(图表): 修复仪表盘、水波图配置固定值失效的问题 #14922 #14952</li>
+<li>fix(图表): 修复地图图例划分为自定义时，部分地图内容无法正常显示的问题</li>
+<li>fix(图表): 修复及优化地图、符号地图的提示样式</li>
+<li>fix(图表): 修复以div方式同时嵌入多个仪表板时，富文本部分内容不显示的问题</li>
+<li>fix(图表): 修复图表放大后提示无法显示的问题</li>
+<li>fix(图表): 修复圆形填充图点击标签区域无法触发事件的问题</li>
+<li>fix(图表): 修复图表导出图片时不携带最值标签的问题</li>
+<li>fix(图表): 修复地图指标为 0 时标签不显示指标值的问题 #14918</li>
+<li>fix(图表): 修复以 DIV 方式迁入多仪表板时，部分公共属性相互影响问题</li>
+<li>fix(图表): 修复对称条形图右轴禁用轴名称设置但不生效的问题</li>
+<li>fix(图表): 修复在非预览状态下导出地图图片或者PDF时地图空白的问题</li>
+<li>fix(图表): 修复 DIV 方式嵌入仪表板指标卡/富文本，无法跳转到其他仪表板的问题</li>
+<li>fix(图表): 修复新建仪表盘、水波图时出现的异常问题</li>
+<li>fix(图表): 修复最值及标签没有按照自定义轴值的最大最小值进行显示，以及轴值中有 0 值时，最值显示不正确的问题</li>
+<li>fix(图表): 修复标签数值为小数时的四舍五入错误</li>
+<li>fix(图表): 修复表格 TINYINT 字段类型没有提示的问题</li>
+<li>fix(图表): 修复视图提示名称过长导致展示错位的问题 #14639</li>
+<li>fix(图表): 修复计算参数不生效的问题 #14991</li>
+<li>fix(图表): 修复透明度在渐变状态下仅对上半部分起作用的问题 #14761</li>
+<li>fix(图表): 修复透视表在列维度为空时首次列总计显示为 0 的问题</li>
+<li>fix(图表): 修复透视表带格式导出无响应的问题 #15051</li>
+<li>fix(图表): 修复透视表标题带特殊字符无法带格式导出的问题</li>
+<li>fix(图表): 修复透视表自定义汇总失效的问题</li>
+<li>fix(图表): 修复轴值配置了最小值时，数据不显示最小值的问题</li>
+<li>fix(图表): 修复饼图中存在负数数据时显示异常的问题</li>
+<li>fix(图表): 修复全屏状态下组件标题会随机丢失的问题 #13218</li>
+<li>fix(图表): 隐藏透视表不支持的自动换行选项 #15078</li>
+<li>fix(图表): 修复透视表和汇总表斑马纹失效的问题</li>
+<li>fix(图表): 修复组合图纵轴线无法修改颜色、样式、大小的问题</li>
+<li>fix(图表): 修复移动端图表的提示无法正常隐藏的问题 #15117</li>
+<li>fix(图表): 修复透视表列小计自定义汇总未定义导致图表渲染失败的问题</li>
+<li>fix(图表): 修复移动端明细表表头排序失效的问题</li>
+<li>fix(图表): 修复导出 Excel 时数值格式设置失效的问题</li>
+<li>fix(图表): 修复明细表数据导出格式问题 #14946</li>
+<li>fix(图表): 修复明细表斑马纹透明度保存无效的问题</li>
+<li>fix(图表): 修复柱线图的轴线宽度和网格线宽度缩放不一致的问题</li>
+<li>fix(图表): 修复仪表盘的自定义配色重置按钮无效的问题</li>
+<li>fix(查询组件): 修复文本搜索的边框颜色不生效的问题</li>
+<li>fix(查询组件): 修复查询条件宽度设置不生效的问题</li>
+<li>fix(查询组件): 修复移动端在 iOS 下使用时间筛选组件会报错的问题 #12396</li>
+<li>fix(查询组件): 修复级联查询组件下级配置了默认值和必填值的情况下，点击查询会报错的问题 #14949</li>
+<li>fix(查询组件): 修复查询组件没法过滤 Tab 组件下的组合的问题 #15189</li>
+<li>fix(仪表板): 修复部分组件删除异常</li>
+<li>fix(仪表板): 修复嵌入式下以新窗口打开跳转的目标仪表板时会报错的问题</li>
+<li>fix(仪表板): 修复明细表调整单元格背景颜色的不透明度，保存后仍是百分之百的问题</li>
+<li>fix(仪表板): 修复未登录状态访问仪表板预览页面未能正常跳转到登录页面的问题</li>
+<li>fix(仪表板): 修复仪表板图表分享后无法导出的问题 #14830</li>
+<li>fix(仪表板): 修复批量设置查询组件时部分样式不适用问题</li>
+<li>fix(数据大屏): 修复全屏预览时会存在数据集下拉框的问题</li>
+<li>fix(数据大屏): 修复大屏配置了缩放方式，在不做缩放的情况下画板没有居中显示的问题</li>
+<li>fix(数据大屏): 修复弹窗区查询组件右键菜单出现偏移、时间过滤弹框编辑时不显示、控制台异常等问题</li>
+<li>fix(数据大屏): 修复 Tab 内图表在放大查看时，背景色叠加不准确的问题 #14803</li>
+<li>fix(数据大屏): 修复数据大屏设置图层组合后，从全屏预览回到编辑状态时，组件会聚集的问题 #14998</li>
+<li>fix(数据大屏): 修复数据大屏在复用组件时选择保持原样式，组件的尺寸有出入的问题</li>
+<li>fix(数据大屏): 修复组合中的查询组件，移动到大屏弹窗区没有生效问题</li>
+<li>fix(数据大屏): 修复编辑状态下，大比例放大画布时可能出现组件超出画布的问题</li>
+<li>fix(数据大屏): 修复查询组件右键菜单二级弹窗可能悬浮在编辑栏上的问题</li>
+<li>fix(数据大屏): 修复查询组件右键菜单弹窗位置不准确问题</li>
+<li>fix(数据大屏): 修复组件组合后拖入 Tab 组件后，数据大屏无法导出应用的问题 #15248</li>
+<li>fix(仪表板、数据大屏): 修复 iOS 系统中富文本文字会跟着数值一起刷新问题 #12555</li>
+<li>fix(仪表板、数据大屏): 修复 Iframe 嵌入图表时，图表没有明细下载选项的问题</li>
+<li>fix(仪表板、数据大屏): 修复不同定时任务使用同一个仪表板或数据大屏时，配置查询组件可能报错的问题</li>
+<li>fix(仪表板、数据大屏): 修复仪表板改名后，在移动端无法查看，需要再进去保存才看得见的问题 #14423</li>
+<li>fix(仪表板、数据大屏): 修复外部参数对跳转链接的影响</li>
+<li>fix(仪表板、数据大屏): 修复查询组件显示字段和查询字段不一致，在跳转配置查询组件时，与查询组件相关的图表过滤失败的问题</li>
+<li>fix(仪表板、数据大屏): 修复导出图片或者 PDF 时水印会出现变色的问题</li>
+<li>fix(仪表板、数据大屏): 修复数据大屏 Tab 组件标题缩放的问题 #13441</li>
+<li>fix(仪表板、数据大屏): 修复新建的 Tab 组件可能无法拖动的问题</li>
+<li>fix(仪表板、数据大屏): 钉钉全屏问题修复</li>
+<li>fix(仪表板、数据大屏): 修复联动配置页面可能出现两个滚动条的问题</li>
+<li>fix(仪表板、数据大屏): 修复数据大屏图表跳转无法选择 Tab 页内的过滤条件的问题 #15203</li>
+<li>fix(数据集): 修复 SQL 数据集系统变量替换问题</li>
+<li>fix(数据源): 修复 Oracl e数据源 Schema 过多时页面会崩溃的问题 #14920</li>
+<li>fix(数据源): 修复数据源重命名报错的问题</li>
+<li>fix(数据源): 修复数据源点击编辑后不弹出确认框的问题</li>
+<li>fix(数据源): 解决 API 数据源同步日志较多时，切换数据源查看页面卡顿的问题</li>
+<li>fix(数据源): 修复 MySQL的 JDBC 连接参数可能导致任意文件读取的漏洞</li>
+<li>fix(数据源): 修复 cron 表达式设置页面存在滚动条的问题</li>
+<li>fix(X-Pack): 移动端修复切换至「我的」页面后，下侧的菜单栏不显示的问题</li>
+<li>fix(X-Pack): 移动端修复组织数量较多的情况下无法查看全部组织进行组织切换的问题</li>
+<li>fix(X-Pack): 定时报告修复仪表板中如果存在空的查询条件时，定时报告发送失败的问题 #14880</li>
+<li>fix(X-Pack): 同步管理修复可能出现的任务一直处于同步中状态的问题</li>
+<li>fix(X-Pack): 同步管理修复从任务列表查看任务日志时查询日志无效的问题</li>
+<li>fix(X-Pack): 同步管理修复同步失败时，提示非法 BASE64 字符的问题</li>
+<li>fix(X-Pack): 同步管理修复增量同步时，出现数据遗漏的问题</li>
+<li>fix(X-Pack): 同步管理修复无法新建目标数据源的问题，优化同步任务执行逻辑</li>
+<li>fix(X-Pack): 同步管理源数据源、目标数据源列表以及任务列表-查询条件存在 SQL 注入风险</li>
+<li>fix(X-Pack): 同步管理修复 SQL 中包含双引号时无法创建同步任务的问题</li>
+<li>fix(X-Pack): 修复嵌入式下，弹窗方式进行跳转时会缺失T oken 的问题</li>
+<li>fix(X-Pack): 修复用户管理列表查询条件存在的 SQL 注入风险</li>
+<li>fix: 修复 SQL Injection 漏洞</li>
+<li>fix: 修复数据源插件加载问题</li>
+</ul>
+</div>
 <h3 id="v2105">v2.10.5<a class="headerlink" href="#v2105" title="Permanent link">&para;</a></h3>
 <p>2025年1月23日</p>
 <div class="admonition abstract">
@@ -4361,7 +4596,7 @@ Bug 修复的小版本。<br />
 <li>fix(X-Pack): 修复定时报告地图空白的问题 #12319</li>
 <li>fix(X-Pack): 修复同步管理中，ES 数据类型不支持 GEO_POINT, GEO_SHAPE 的问题</li>
 <li>fix(X-Pack): 修复数据集权限控制中角色名称显示的问题 #14704</li>
-<li>fix: 修复硬编码API凭据的漏洞</li>
+<li>fix: 修复硬编码 API 凭据的漏洞</li>
 <li>fix: 修复部分包含富文本的模版导入失败的问题</li>
 </ul>
 </div>
