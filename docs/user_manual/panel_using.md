@@ -23,19 +23,18 @@
 !!! Abstract ""
 	公共链接功能现已集成 Ticket 机制，公共链接外部参数可以直接在 Ticket 参数中简易设置，增强外部传参的安全性和灵活性。  
 	**注意：设置 Ticket 的同时，需要开启 [设置仪表板外部参数](https://dataease.io/docs/v2/user_manual/panel_basicfunctions/#7)。**   
-	打开 Ticket 设置，并单独配置其有效期与参数，每个 Ticket 均可独立设定有效期，例如配置有效期为 30 天，参数为 {"name":"Tony","age":10}：  
+	打开 Ticket 设置，并单独配置其有效期与参数，每个 Ticket 均可独立设定有效期，例如配置有效期为 30 天，参数为 {"国家":"Lebanon"}：
 
-![更新1](../../newimg/1.2%20公共链接分享支持%20Ticket%20方式2.PNG){ width="500px" }
+![更新1](../../newimg/ticket设置.png){ width="500px" }
 
-!!! Abstract ""
-	复制 Ticket 链接，那么，使用 Ticket 的公共链接格式为 https://example.dataease.com/link/bcg48L2W?ticket=xk59xiHJ。在此情况下，无需传递 Ticket 参数，DataEase 将从数据库自动获取 Ticket 相关参数。
-
-![更新1](../../newimg/1.2%20公共链接分享支持%20Ticket%20方式3.PNG){ width="500px" }
+![更新1](../../newimg/添加ticket.png){ width="500px" }
 
 !!! Abstract ""
-	当启用 Ticket “必选”选项时，只有在 URL 中附带 ticket 参数的情况下，公共链接才能被成功访问。
+	复制 Ticket 链接，那么，使用 Ticket 的公共链接格式为 https://example.dataease.com/link/bcg48L2W?ticket=xk59xiHJ。在此情况下，无需传递 Ticket 参数，DataEase 将从数据库自动获取 Ticket 相关参数。当启用 Ticket “必选”选项时，只有在 URL 中附带 ticket 参数的情况下，公共链接才能被成功访问。
 
-![更新1](../../newimg/1.2%20公共链接分享支持%20Ticket%20方式4.PNG){ width="500px" }
+
+![更新1](../../newimg/复制ticket链接.png){ width="500px" }
+
 
 
 ## 2 数据大屏导出
