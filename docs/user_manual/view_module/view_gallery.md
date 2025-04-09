@@ -169,6 +169,12 @@
 
     ![echarts横向堆叠柱状图](../../img/view_generation/股票图.png){ width="900px" }
 
+### 4.14 子弹图
+!!! Abstract ""
+    弹图支持在同一图形中展示实际值、目标值与参考值，用于衡量业务完成情况，常用于 KPI 监控等场景。
+
+    ![echarts横向堆叠柱状图](../../img/view_generation/子弹图.png){ width="900px" }
+
 
 ## 5 分布图
 

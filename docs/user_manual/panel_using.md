@@ -3,9 +3,9 @@
 !!! Abstract ""
 	点击下图中所示位置，创建公共链接进行数据大屏分享。
 
-![仪表板_创建公共链接](../img/dashboard_generation/数据大屏进行分享.png){ width="900px" }
+![仪表板_创建公共链接](../img/panel_generation/数据大屏进行分享.png){ width="900px" }
 
-![仪表板_创建公共链接](../img/dashboard_generation/数据大屏进行分享2.png){ width="900px" }
+![仪表板_创建公共链接](../img/panel_generation/数据大屏进行分享2.png){ width="900px" }
 
 !!! Abstract ""
 	打开下图中所示链接分享的按钮，链接自动生成，点击【复制链接】进行分享。  
@@ -18,7 +18,14 @@
 ![更新1](../../newimg/1.21 支持自定义公共链接后缀1.png){ width="400px" }![更新1](../../newimg/1.21 支持自定义公共链接后缀2.png){ width="400px" }
 !!! Abstract ""
 	支持自定义公共链接密码。
+
 ![更新1](../../newimg/1.22 公共链接支持自定义密码.png){ width="500px" }
+
+
+!!! Abstract ""
+	公共连接复制链接和密码可以直接访问。
+
+![更新1](../../newimg/数据大屏公共连接复制链接和密码可以直接访问.png){ width="900px" }
 
 !!! Abstract ""
 	公共链接功能现已集成 Ticket 机制，公共链接外部参数可以直接在 Ticket 参数中简易设置，增强外部传参的安全性和灵活性。  
@@ -32,9 +39,7 @@
 !!! Abstract ""
 	复制 Ticket 链接，那么，使用 Ticket 的公共链接格式为 https://example.dataease.com/link/bcg48L2W?ticket=xk59xiHJ。在此情况下，无需传递 Ticket 参数，DataEase 将从数据库自动获取 Ticket 相关参数。当启用 Ticket “必选”选项时，只有在 URL 中附带 ticket 参数的情况下，公共链接才能被成功访问。
 
-
 ![更新1](../../newimg/复制ticket链接.png){ width="500px" }
-
 
 
 ## 2 数据大屏导出

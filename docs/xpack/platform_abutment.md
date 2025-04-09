@@ -239,14 +239,12 @@
 ![对接飞书平台](../img/xpack/v2飞书对接1 (2).png){ width="900px" }
 
 !!! Abstract ""
-    飞书平台对接发送定时报告，需要另外开启机器人能力，以及开通“获取与上传图片或文件资源”权限。
+    平台对接发送定时报告和推送群组消息，需要另外开启机器人能力，以及开通“获取与上传图片或文件资源”以及获取群组的权限。
 ![对接飞书平台](../img/xpack/添加机器人.png){ width="900px" }
 
 ![对接飞书平台](../img/xpack/定时报告数据权限.png){ width="900px" }
 
-
-
-
+![对接飞书平台](../img/xpack/飞书群组相关权限.png){ width="900px" }
 
 
 ### 3.3 飞书免登设置
@@ -302,9 +300,8 @@
 
 !!! Abstract ""
     【安全设置】中设置回调 URL 和 IP 白名单，假设 DataEase 服务器的域名为 https://dataease.fit2cloud.com，对应的 IP 为111.222.111.222，则在【Security Settings】的【Redirect URLs】里，添加两条记录：  
-    https://dataease.fit2cloud.com/plugin/larksuite/callBack，即 http(s)://域名/plugin/larksuite/callBack；  
-    https://dataease.fit2cloud.com/plugin/larksuite/bind，即 http(s)://域名/plugin/larksuite/bind；  
-    在【IP allowlist】中加入 DataEase 服务器对应的 IP，如111.222.111.222。
+    https://dataease.fit2cloud.com/?client=lark，即 http(s)://域名/?client=lark；  
+    https://dataease.fit2cloud.com/，即 http(s)://域名/；
 
 ![对接国际飞书平台](../img/xpack/lark安全设置.png){ width="900px" }
 
@@ -312,6 +309,11 @@
     应用授权，在应用的【权限管理】里进行应用的相关授权，具体权限参考下图。
 
 ![对接国际飞书平台](../img/xpack/lark开通权限.png){ width="900px" }
+
+!!! Abstract ""
+    平台对接发送定时报告和推送群组消息，需要另外开启机器人能力，以及开通“获取与上传图片或文件资源”以及群组相关权限。
+
+![对接国际飞书平台](../img/xpack/发送群组机器人消息.png){ width="900px" }
 
 !!! Abstract ""
     新建完应用版本后，点击【创建版本】，请求发布应用版本；  

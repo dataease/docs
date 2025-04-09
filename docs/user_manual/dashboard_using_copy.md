@@ -12,13 +12,20 @@
 	**分享链接可设置有效期及密码保护。**
 
 ![仪表板_创建公共链接_复制链接](../img/dashboard_generation/设置公共链接.png){ width="900px" }
-
+                                    
 !!! Abstract ""
 	支持自定义公共链接后缀。
-![更新1](../../newimg/1.21 支持自定义公共链接后缀1.png){ width="400px" }![更新1](../../newimg/1.21 支持自定义公共链接后缀2.png){ width="400px" }
+![更新1](../../newimg/1.21 支持自定义公共链接后缀1.png){ width="400px" }  ![更新1](../../newimg/1.21 支持自定义公共链接后缀2.png){ width="400px" }
 !!! Abstract ""
 	支持自定义公共链接密码。
-![更新1](../../newimg/1.22 公共链接支持自定义密码.png){ width="500px" }
+![更新1](../img/dashboard_generation/设置密码保护.png){ width="400px" }  ![更新1](../img/dashboard_generation/修改密码.png){ width="400px" }
+
+
+!!! Abstract ""
+	公共连接复制链接和密码可以直接访问。
+
+![更新1](../../newimg/公共连接复制链接和密码可以直接访问.PNG){ width="900px" }
+
 
 !!! Abstract ""
 	公共链接功能现已集成 Ticket 机制，公共链接外部参数可以直接在 Ticket 参数中简易设置，增强外部传参的安全性和灵活性。    
@@ -118,7 +125,7 @@
 ## 6 仪表板全屏
 
 !!! Abstract ""
-	仪表板新支持一键全屏预览
+	仪表板新支持一键全屏预览。
 
 ![仪表板_刷新](../img/dashboard_generation/仪表板全屏.png){ width="900px" }
 

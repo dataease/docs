@@ -130,10 +130,30 @@
 ### 3.3 在线地图
 
 !!! Abstract ""
-    在线地图：支持配置高德地图 Key（符号地图、流向地图）。
+
+    在线地图（符号地图、流向地图、热力地图））目前支持高德、天地图和腾讯地图，可申请配置对应对的地图 Key。当前页面保存地图服务即为 DataEase 仪表板和数据大屏中使用的地图服务。更改地图服务后，需刷新仪表板或数据大屏以使更改生效。
+
+    天地图：
+
+    - 创建 Key 的官方文档：[天地图授权指南](http://lbs.tianditu.gov.cn/authorization/authorization.html)。
+    - 限制：
+        - 不支持去除地图标注。
+        - 不支持地图倾斜。  
+
+    腾讯地图：
+
+    - 创建 Key 的官方文档：[腾讯地图开发指南](https://lbs.qq.com/mobile/androidMapSDK/developerGuide/getKey)。
+    - 主题配置参考：[个性地图](https://lbs.qq.com/dev/console/custom/mapStyle)。
+
+    高德地图：
+
+    - 创建 Key 的官方文档：[高德开放平台官网](https://lbs.amap.com/)。
+    - 支持自定义地图风格：[自定义地图风格步骤参考](../change-v2-10-2/#121)。
+
+![更新1](../../newimg/在线地图支持天地图、腾讯地图1.PNG){ width="900px" }
 
 !!! Abstract ""
-    进入高德开放平台官网：https://lbs.amap.com/
+    举例配置高德地图 Key 步骤：
 
 ![高德【平台](../../img/system_management/高德平台.PNG){ width="900" }
 

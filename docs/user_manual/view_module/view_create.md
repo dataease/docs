@@ -35,7 +35,6 @@
 
 ![复用视图_入口](../../img/view_generation/2.0视图点击复用.png){ width="900px" }
 
-![复用视图_选择视图](../../img/view_generation/2.0复用其他仪表板视图.png){ width="900px" }
 
 !!! Abstract ""
     复用时可多选，引用进的图表按一行两个图表的排列水平平铺，如下图所示。

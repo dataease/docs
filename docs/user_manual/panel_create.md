@@ -17,7 +17,7 @@
 
 ![2.0复制仪表板2](../img/panel_generation/2.0复制数据大屏确认.png){ width="900px" }
 
-![2.0复制仪表板2](../img/panel_generation/2.0成功复制数据大屏.png){ width="900px" }
+
 
 
 ## 3 使用模板创建

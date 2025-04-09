@@ -136,6 +136,6 @@
 !!! Abstract ""
     分享复制的链接，其他人可查看你创建的仪表板。
 
-![访问公共链接](./newimg/product_acceptance/访问公共链接.png){ width="900px" }
+![访问公共链接](./newimg/product_acceptance/访问公共连接.png){ width="900px" }
 
 
