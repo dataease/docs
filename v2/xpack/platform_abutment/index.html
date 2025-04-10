@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.10">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
@@ -250,11 +250,13 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -293,6 +295,7 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
@@ -507,6 +510,8 @@
       
         
       
+        
+      
     
     
     
@@ -537,6 +542,29 @@
             更新说明
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../change-v2-10-7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    v2.10.7
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -4601,10 +4629,11 @@
 <p><img alt="对接飞书平台" src="../../img/xpack/v2%E9%A3%9E%E4%B9%A6%E5%AF%B9%E6%8E%A51%20%283%29.png" width="900px" /></p>
 <p><img alt="对接飞书平台" src="../../img/xpack/v2%E9%A3%9E%E4%B9%A6%E5%AF%B9%E6%8E%A51%20%282%29.png" width="900px" /></p>
 <div class="admonition abstract">
-<p>飞书平台对接发送定时报告，需要另外开启机器人能力，以及开通“获取与上传图片或文件资源”权限。</p>
+<p>平台对接发送定时报告和推送群组消息，需要另外开启机器人能力，以及开通“获取与上传图片或文件资源”以及获取群组的权限。</p>
 </div>
 <p><img alt="对接飞书平台" src="../../img/xpack/%E6%B7%BB%E5%8A%A0%E6%9C%BA%E5%99%A8%E4%BA%BA.png" width="900px" /></p>
 <p><img alt="对接飞书平台" src="../../img/xpack/%E5%AE%9A%E6%97%B6%E6%8A%A5%E5%91%8A%E6%95%B0%E6%8D%AE%E6%9D%83%E9%99%90.png" width="900px" /></p>
+<p><img alt="对接飞书平台" src="../../img/xpack/%E9%A3%9E%E4%B9%A6%E7%BE%A4%E7%BB%84%E7%9B%B8%E5%85%B3%E6%9D%83%E9%99%90.png" width="900px" /></p>
 <h3 id="33">3.3 飞书免登设置<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p>在飞书开放平台中，选择 DataEase 应用。在【应用功能】下的【网页】里，开启网页功能，并配置【桌面端主页】和【移动端主页】。地址格式：http(s)://xxx.xxx.xxx.xxx/?client=lark。可实现 PC 端和移动端免密登陆。</p>
@@ -4648,15 +4677,18 @@
 <h3 id="42">4.2 应用权限设置<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p>【安全设置】中设置回调 URL 和 IP 白名单，假设 DataEase 服务器的域名为 <a href="https://dataease.fit2cloud.com">https://dataease.fit2cloud.com</a>，对应的 IP 为111.222.111.222，则在【Security Settings】的【Redirect URLs】里，添加两条记录：<br />
-<a href="https://dataease.fit2cloud.com/plugin/larksuite/callBack">https://dataease.fit2cloud.com/plugin/larksuite/callBack</a>，即 http(s)://域名/plugin/larksuite/callBack；<br />
-<a href="https://dataease.fit2cloud.com/plugin/larksuite/bind">https://dataease.fit2cloud.com/plugin/larksuite/bind</a>，即 http(s)://域名/plugin/larksuite/bind；<br />
-在【IP allowlist】中加入 DataEase 服务器对应的 IP，如111.222.111.222。</p>
+<a href="https://dataease.fit2cloud.com/?client=lark">https://dataease.fit2cloud.com/?client=lark</a>，即 http(s)://域名/?client=lark；<br />
+<a href="https://dataease.fit2cloud.com/">https://dataease.fit2cloud.com/</a>，即 http(s)://域名/；</p>
 </div>
 <p><img alt="对接国际飞书平台" src="../../img/xpack/lark%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE.png" width="900px" /></p>
 <div class="admonition abstract">
 <p>应用授权，在应用的【权限管理】里进行应用的相关授权，具体权限参考下图。</p>
 </div>
 <p><img alt="对接国际飞书平台" src="../../img/xpack/lark%E5%BC%80%E9%80%9A%E6%9D%83%E9%99%90.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>平台对接发送定时报告和推送群组消息，需要另外开启机器人能力，以及开通“获取与上传图片或文件资源”以及群组相关权限。</p>
+</div>
+<p><img alt="对接国际飞书平台" src="../../img/xpack/%E5%8F%91%E9%80%81%E7%BE%A4%E7%BB%84%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%B6%88%E6%81%AF.png" width="900px" /></p>
 <div class="admonition abstract">
 <p>新建完应用版本后，点击【创建版本】，请求发布应用版本；<br />
 管理员在飞书管理后台的【应用管理】里可以看到申请发布的应用，通过审核即可。</p>

@@ -18,11 +18,11 @@
         <link rel="prev" href="../quick_start/">
       
       
-        <link rel="next" href="../change-v2-10-6/">
+        <link rel="next" href="../change-v2-10-7/">
       
       
       <link rel="icon" href="../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.10">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
@@ -250,11 +250,13 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -293,6 +295,7 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
@@ -519,6 +522,15 @@
   
     <nav class="md-nav" aria-label="2 更新内容">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v2107" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.10.7
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#v2106" class="md-nav__link">
@@ -755,6 +767,8 @@
       
         
       
+        
+      
     
     
     
@@ -785,6 +799,29 @@
             更新说明
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../change-v2-10-7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    v2.10.7
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -4294,6 +4331,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v2107" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.10.7
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v2106" class="md-nav__link">
     <span class="md-ellipsis">
       v2.10.6
@@ -4509,6 +4555,95 @@ Bug 修复的小版本。<br />
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v2107">v2.10.7<a class="headerlink" href="#v2107" title="Permanent link">&para;</a></h3>
+<p>2025年4月10日</p>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>feat(图表): 分组柱状图支持组内按指标排序 #14154</li>
+<li>feat(图表): 折线图图例支持排序 #13256</li>
+<li>feat(图表): 新增子弹图 #12362</li>
+<li>feat(图表): 在线地图支持天地图 #14449</li>
+<li>feat(图表): 在线地图支持腾讯地图</li>
+<li>feat(图表): 数值格式的数量单位支持配置英文简称 #14335</li>
+<li>feat(图表): 明细表支持图片字段的合并 #14767</li>
+<li>feat(图表): 柱状图、双轴图、饼图等图表组件的提示支持轮播 #13275</li>
+<li>feat(图表): 汇总表总计支持数值类字段汇总进行计算方式选择 #12878</li>
+<li>feat(图表): 汇总表支持分页 #11689 #12662</li>
+<li>feat(图表): 双轴图副轴支持同环比 #15034</li>
+<li>feat(图表): 辅助线动态值支持选择最后一项 #14417</li>
+<li>feat(图表): 透视表支持将指标进行行头展示 #15095</li>
+<li>feat(图表): 透视表支持单独配置指标的总计名称 #14790</li>
+<li>feat(图表): 图表数据栏新增字段排序优先级支持 #12551 #12454</li>
+<li>feat(查询组件): 时间范围组件默认值设置支持常用时间范围 #14253 #15128</li>
+<li>feat(查询组件): 下拉树支持关联不同数据集的图表组件 #14728</li>
+<li>feat(仪表板): 分享链接带密码支持直接访问 #15392</li>
+<li>feat(仪表板): 仪表板查询组件支持悬浮在顶部 #15435</li>
+<li>feat(仪表板): 组件间距支持自定义设置大小 #15009</li>
+<li>feat(数据大屏): 时间组件支持显示星期 #14937</li>
+<li>feat(仪表板、数据大屏): 新增发布功能 #12628 #12905 #13460</li>
+<li>feat(仪表板、数据大屏): 联动按钮固定悬浮在页面右上角 #15276</li>
+<li>feat(数据源): 本地 Excel/CSV 和远程 Excel/CSV 数据源在创建时支持修改字段类型</li>
+<li>feat(数据源): Oracle 数据源支持获取与查询物化视图 #15511</li>
+<li>feat(数据源): PostgreSql 数据源可获取视图 、实体化视图 #15429</li>
+<li>feat(数据源): Oracle 数据源支持指定编码 #15032</li>
+<li>feat(移动端): 移动端支持收藏仪表板 #15094</li>
+<li>feat(嵌入式): 模板管理页面支持嵌入 #14924</li>
+<li>feat(X-Pack): [数据填报]提交记录支持日志清理</li>
+<li>feat(X-Pack): [数据填报]移动端支持展示「我的填报」，并支持移动端填报 #12110 #15005</li>
+<li>feat(X-Pack): OAuth2 对接用户支持多集属性映射 #15523</li>
+<li>feat: dectl 命令增加清理日志功能 #15563</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>refactor(图表): 优化组件事件弹窗的窗口打开方式 #15087</li>
+<li>refactor(图表): 优化条形图、区间条形图、散点图的点击效果，点击标签可直接跳转 #11355 #12727</li>
+<li>refactor(仪表板): 分享 Ticket 参数格式适配外部参数</li>
+<li>refactor(仪表板): 创建文件夹或资源时，左侧资源树保持原状 #15423</li>
+<li>refactor(仪表板、数据大屏): 地图点击激活后，鼠标滚动可缩放地图大小 #14921</li>
+<li>refactor(数据集): 计算字段中的 SQL 片段在传输过程中进行加密处理 #15446</li>
+<li>refactor(X-Pack): OAuth2 支持 client_secret_jwt 方式认证</li>
+<li>refactor(X-Pack): OAuth2 跳转 state 参数禁用横线 #15039</li>
+<li>refactor(X-Pack): [数据填报]对于批量导入的操作在日志中只记录一次 #15352</li>
+<li>refactor: 资源名称区分字母大小写 #15426</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>fix(图表): 修复分组柱状图子维度为空时不显示的问题</li>
+<li>fix(图表): 修复地图在部分设备上显示异常的问题</li>
+<li>fix(图表): 修复地图设置图例等分区间钻取后显示数值不正确的问题</li>
+<li>fix(图表): 修复嵌入式场景下表格无法复制的问题</li>
+<li>fix(图表): 修复明细表和汇总表开启总计后，序号列计算错误以及图片不显示的问题</li>
+<li>fix(图表): 修复表格显示总计时滚动条遮挡内容的问题 #15244 #15210</li>
+<li>fix(图表): 修复透视表树形模式下自定义汇总列小计不显示的问题</li>
+<li>fix(图表): 修复透视表自定义汇总列总计中的行小计不显示的问题</li>
+<li>fix(图表): 修复明细表表头合并后导出数据样式的问题</li>
+<li>fix(图表): 修复 NVARCHAR 字段类型无法过滤的问题 #15597</li>
+<li>fix(图表): 修复仪表盘底部显示不全的问题 #15197</li>
+<li>fix(查询组件): 修复日期范围组件配置查询范围时，设置结束时间为月底时不生效的问题 #15465</li>
+<li>fix(查询组件): 修复查询条件名称设置为上方显示并进行隐藏时，选项框的位置未变化的问题 #15491</li>
+<li>fix(查询组件): 修复查询组件在级联时，下级配置了默认值和必填选项导致的错误 #14949</li>
+<li>fix(仪表板): 修复切换 Tab 页明细表无法显示的问题</li>
+<li>fix(仪表板): 修复动态路径场景下，移动端分享链接无法访问的问题</li>
+<li>fix(仪表板): 修复图表类型选择页面左右窗口未联动滚动的问题 #15424</li>
+<li>fix(仪表板、数据大屏): 修复跳转目标是空仪表板或者含有空过滤组件时可能无法加载的问题</li>
+<li>fix(数据源)：修复 http 方式添加远程文件，文件名中包含空格，获取数据失败的问题</li>
+<li>fix(数据源): 修复 Excel 数据源中文本类数值被转换成数值类型字段的问题</li>
+<li>fix(X-Pack): 修复同步管理新建任务时在自定义 SQL 中没办法识别注释的问题</li>
+<li>fix(X-Pack): 修复定时报告导出的图表数据只有一页的问题</li>
+<li>fix(X-Pack): 修复定时报告查询组件没有作用于导出的图表数据的问题</li>
+<li>fix(X-Pack): 修复移动端开启 MFA 后使用 CAS、OIDC 无法登录的问题</li>
+<li>fix(X-Pack): 修复定时报告下载附件时的错误</li>
+<li>fix(X-Pack): 修复复制浏览器选项卡导致 Token 失效的问题</li>
+<li>fix: 修复 Token 失效后会停留在空白页面的问题</li>
+<li>fix: 修复数据大屏导出图表数据没有表头的问题</li>
+<li>fix: 修复 Demo 数据源删掉后，重启系统又恢复的问题 #15393</li>
+</ul>
+</div>
 <h3 id="v2106">v2.10.6<a class="headerlink" href="#v2106" title="Permanent link">&para;</a></h3>
 <p>2025年3月13日</p>
 <div class="admonition abstract">
