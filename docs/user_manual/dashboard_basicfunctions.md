@@ -95,7 +95,7 @@
 !!! Abstract ""
 	仪表板支持字体更换。
 
-![更新1](../../newimg/仪表板和数据大屏支持字体更换.png){ width="900px" }
+![更新1](../img/dashboard_generation/仪表板和数据大屏支持字体更换.png){ width="900px" }
 
 
 !!! Abstract ""
