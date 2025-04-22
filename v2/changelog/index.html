@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="../css/lightgallery.min.css">
     <link href="../css/f2c-header.css" rel="stylesheet" type="text/css" />
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -525,6 +525,15 @@
         
           <li class="md-nav__item">
   <a href="#v2107" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.10.7
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v2107_1" class="md-nav__link">
     <span class="md-ellipsis">
       v2.10.7
     </span>
@@ -4340,6 +4349,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#v2107_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.10.7
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v2106" class="md-nav__link">
     <span class="md-ellipsis">
       v2.10.6
@@ -4556,6 +4574,84 @@ Bug 修复的小版本。<br />
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <h3 id="v2107">v2.10.7<a class="headerlink" href="#v2107" title="Permanent link">&para;</a></h3>
+<p>2025年4月22日</p>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>feat(图表): 柱形图、条形图图、柱线组合图增加顶部圆角选项 #15759</li>
+<li>feat(数据集): 数据节点支持跨源单源类型设置</li>
+<li>feat(X-Pack): [数据填报]支持 Oracle 数据源插件</li>
+<li>feat(X-Pack): [数据填报]支持 Oracle 的 CLOB 字段类型</li>
+<li>feat(X-Pack): [数据填报]支持跟随数据源管理配置的字符集编码</li>
+<li>feat(X-Pack): [数据填报]表单绑定 MySQL 与 PostgreSQL 的已有表，支持使用其自增主键</li>
+<li>feat(X-Pack): 新增还原至社区版功能</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>refactor(图表): 优化鼠标点击图表的定位精度</li>
+<li>refactor(图表): 指标卡同时使用联动和外部事件时，在非编辑界面可以使用弹框选择执行事件</li>
+<li>refactor(图表): 指标卡字体大小上限调整 #15882</li>
+<li>refactor(图表): 优化图表操作下拉菜单与 tooltip 的显示问题</li>
+<li>refactor(图表): 仪表盘水波图动态字段显示优化</li>
+<li>refactor(图表): 图表操作弹窗优化，下拉菜单显示隐藏时，仅操作图表的 tooltip</li>
+<li>refactor(仪表板): 对仪表板计算字段进行加密</li>
+<li>refactor(移动端): 移动端图表在 Tab 内进行修改时，增加 Tab 内图表样式的同步功能</li>
+<li>refactor(X-Pack): 优化因异步执行导致默认登录方式无效的情况</li>
+<li>refactor: 优化外部参数名称长度校验规则</li>
+<li>refactor: 国际化文案变更 #15464</li>
+<li>refactor: 接口 SQL 参数加密</li>
+<li>refactor: 接口计算字段加密</li>
+<li>refactor: 移除外部参数请求中包含的 SQL 片段 #15770</li>
+<li>refactor: 轮播文案调整</li>
+<li>refactor: 优化工作台未发布资源操作按钮样式</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>fix(X-Pack): [同步管理]修复使用表同步报错的问题</li>
+<li>fix(图表): 修复部分图表导出图片失败的问题</li>
+<li>fix(图表): 仪表盘在动态字段中除数值、数值小数字段以外其他字段类型汇总方式为计数</li>
+<li>fix(图表): 修复仪表盘大小选项中的动态字段无法选择计算字段的问题 #15693</li>
+<li>fix(图表): 修复区间条形图数据不全，配置圆角导致前端报错的问题</li>
+<li>fix(图表): 修复双轴图无法显示的问题</li>
+<li>fix(图表): 修复图表获取数据出错之后没有显示错误信息的问题</li>
+<li>fix(图表): 修复堆叠柱状图以及百分比柱状图没有提示轮播配置项的问题</li>
+<li>fix(图表): 修复开启条件样式后，圆角失效的问题</li>
+<li>fix(图表): 修复汇总表同环比失效的问题</li>
+<li>fix(图表): 修复组合图右轴的线图空值处理置为 0 不生效的问题</li>
+<li>fix(图表): 修复组合图左轴与横轴字体设置不生效的问题 #15876</li>
+<li>fix(图表): 修复表格选中单个单元格复制出错的问题 #15836</li>
+<li>fix(图表): 修复象限图隐藏纵轴轴名称后，整个图表都不显示的问题 #15628</li>
+<li>fix(图表): 修复透视表行列排序不生效的问题 #15798</li>
+<li>fix(图表): 修复仪表板中存在空的查询组件时，联动失效的问题</li>
+<li>fix(图表): 修复汇总表导出 Excel 只有第一页数据的问题 #15899</li>
+<li>fix(图表): 修复富文本内容不能复制的问题 #15858</li>
+<li>fix(查询组件): 修复查询组件完成级联配置后，新开页面预览时级联查询数据显示不正确的问题</li>
+<li>fix(查询组件): 修复外部参数关联下拉树和数值区间组件时，组件未生效的问题</li>
+<li>fix(仪表板): 修复移动端设计，明细表同步 PC 端设计时一直 loading 的问题</li>
+<li>fix(数据大屏): 修复 Tab 内组合中的组件，跳转外部 Tab 时，没有跟随大小改变问题，以及全屏预览突然出现的大小变化问题 #15380</li>
+<li>fix(数据大屏): 修复当前页面打开方式，退出编辑到预览时也可粘贴图表的问题</li>
+<li>fix(数据大屏): 修复复用大屏时，界面发生变化的问题</li>
+<li>fix(数据大屏): 修复大屏编辑界面全屏预览未发布的图表，跳转到目标仪表板资源未产生联动的问题</li>
+<li>fix(数据大屏): 修复 Tab 组件中的组合取消并修改内容后出现的显示异常 #15532</li>
+<li>fix(仪表板、数据大屏): 修复设置外部参数时，可能显示已删除的图表的问题</li>
+<li>fix(仪表板、数据大屏): 修复图表设置跳转到其他仪表板，联动图表为 Tab 中图表时，跳转后联动没有生效的问题</li>
+<li>fix(仪表板、数据大屏): 修复仪表板跳转，目标仪表板重新发布后，源仪表板的联动图表，携带查询条件被删除的问题</li>
+<li>fix(数据集): 修复新建分组字段后，没有转换指标/维度按钮，且批量设置里修改了数据类型，刷新数据后不生效的问题 #15854</li>
+<li>fix(数据集): 修复新建计算字段函数包含空格会报错的问题 #15797</li>
+<li>fix(数据源): API 数据源某条记录不包含某个字段时置空处理</li>
+<li>fix(移动端): 修复移动端访问时，如果当前仪表板未发布，Tab 内预览会显示未发布标志的问题</li>
+<li>fix(移动端): 修复 iOS 设备水印显示过小的问题</li>
+<li>fix: 修复数据导出中心切换 Tab 页导致 CPU 暴增的问题</li>
+<li>fix: 修复 H2 存在的 SQL 远程执行漏洞</li>
+<li>fix: 修复 SQL 加密导致的一些问题</li>
+<li>fix: 修复应用模板时，设置的数据集分组的名称与已有数据集的名称相同时， 会提示"数据集分组名称已存在"的问题 #15611</li>
+</ul>
+</div>
+<h3 id="v2107_1">v2.10.7<a class="headerlink" href="#v2107_1" title="Permanent link">&para;</a></h3>
 <p>2025年4月10日</p>
 <div class="admonition abstract">
 <p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
