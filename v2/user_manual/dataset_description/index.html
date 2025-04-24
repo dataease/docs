@@ -4221,28 +4221,31 @@
 <p>数据集数据支持导出。</p>
 </div>
 <p><img alt="更新1" src="../../newimg/2.4%20支持数据集数据导出1.png" width="900px" /></p>
-<div class="admonition abstract">
-<p>数据集编辑界面支持下拉框搜索。</p>
-</div>
-<p><img alt="更新1" src="../../newimg/%E6%95%B0%E6%8D%AE%E9%9B%86%E9%80%89%E6%8B%A9%E6%95%B0%E6%8D%AE%E6%BA%90%E5%92%8C%E6%95%B0%E6%8D%AE%E8%A1%A8.png" width="900px" /></p>
 <h2 id="2">2 新建数据集<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>如下图所示，点击序号位置【添加数据集】，跳转到添加数据集页面。 </p>
 </div>
 <p><img alt="新建数据集" src="../../img/dataset_configuration/新建数据集.png" width="900px" /></p>
 <div class="admonition abstract">
-<p>在新建数据集页面，勾选添加数据集对应的数据源，将左侧数据库数据表（可利用搜索功能进行快速筛选）后拖拽到右侧数据集编辑区。</p>
+<p><strong>单源与跨源设置项：</strong></p>
+<ul>
+<li>
+<p>当数据集选择为【单源】时，自定义 SQL 采用数据源自身的 JDBC 语法进行运行校验；若为【跨源】则使用 Calcite 语法进行运行校验。</p>
+</li>
+<li>
+<p>当数据集选择为不同数据源时，多个节点实际构成跨源（跨库），应把选项切换为【跨源】模式。</p>
+</li>
+</ul>
 </div>
-<p><img alt="新建数据库数据集" src="../../img/dataset_configuration/新建数据库数据集.png" width="900px" /></p>
+<p><img alt="新建数据库数据集" src="../../img/dataset_configuration/单源跨源选项.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>数据集编辑界面支持下拉框搜索。</p>
+</div>
+<p><img alt="更新1" src="../../img/dataset_configuration/数据集选择数据源和数据表.png" width="900px" /></p>
 <div class="admonition abstract">
 <p>在新建数据集页面，勾选添加数据集对应的数据源，将左侧数据库数据表（可利用搜索功能进行快速筛选）后拖拽到右侧数据集编辑区。</p>
 </div>
 <p><img alt="新建数据库数据集" src="../../img/dataset_configuration/新建数据库数据集.png" width="900px" /></p>
-<div class="admonition abstract">
-<p>支持获取数据源数据表以及数据集字段的描述信息</p>
-</div>
-<p><img alt="更新1" src="../../newimg/2.1%20支持获取数据源数据表以及数据集字段的描述信息.png" width="900px" />
-<img alt="更新1" src="../../newimg/2.1%20支持获取数据源数据表以及数据集字段的描述信息2.png" width="900px" /></p>
 <div class="admonition abstract">
 <p>如下图所示，点击【保存】，设置对应名称以及保存文件夹位置，点击【确认】即成功添加数据集。</p>
 </div>
@@ -4258,7 +4261,7 @@
 <p>【序号1】位置选择数据库；<br />
 【序号2】位置为 SQL 语句输入区，在此区域输入正确的 SQL 语句；<br />
 【序号3】点击可展示预览数据；<br />
-<strong>注意：单源数据集写 SQL 时使用对应数据库的 JDBC 语法。</strong></p>
+<strong>注意：当数据集选择为【单源】时，自定义 SQL 采用数据源自身的 JDBC 语法进行运行校验；若为【跨源】则使用 Calcite 语法进行运行校验。</strong></p>
 </div>
 <p><img alt="SQL语句编写" src="../../img/dataset_configuration/SQL语句编写.png" width="900px" /></p>
 <div class="admonition abstract">
@@ -4269,7 +4272,6 @@
 <p>如下图所示，点击【保存】，SQL 查询添加成功。</p>
 </div>
 <p><img alt="保存SQL数据集" src="../../img/dataset_configuration/保存SQL数据集.png" width="900px" /></p>
-<p><img alt="SQL数据集预览" src="../../img/dataset_configuration/SQL数据集预览.png" width="900px" /></p>
 <h2 id="4-sql">4 SQL 语句动态传参设置<a class="headerlink" href="#4-sql" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p><strong>SQL 数据集支持参数传递，如下图所示。</strong></p>
@@ -4314,7 +4316,6 @@ SELECT * FROM SALES WHERE 记录时间 &gt; &#39;${BEGINTIME}&#39; AND 记录时
 <div class="admonition abstract">
 <p>时间范围传参使用两个时查询条件间，分别绑定【开始时间】和【结束时间】参数，设置展示类型为时间。</p>
 </div>
-<p><img alt="过滤组件设置参数设置" src="../../img/dataset_configuration/时间过滤传参.png" width="900px" />   </p>
 <p><img alt="过滤组件设置参数设置" src="../../img/dataset_configuration/时间传参搭配过滤组件.png" width="900px" /></p>
 <div class="admonition abstract">
 <p><strong>SQL 动态参数与过滤组件的区别：</strong></p>
@@ -4331,8 +4332,8 @@ SELECT * FROM SALES WHERE 记录时间 &gt; &#39;${BEGINTIME}&#39; AND 记录时
 <p><img alt="更新1" src="../../newimg/2.3%20数据集自定义%20SQL%20时支持选择系统变量作为查询条件（XPack）.png" width="900px" /></p>
 <h2 id="5">5 设置数据表间关联关系<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p>在新建数据集页面，勾选添加数据集对应数据源，将左侧要关联的数据表拖拽到右侧数据集编辑区。    </p>
-<p><strong>注意：如果是跨数据库关联，对应的自定义 SQL 需要使用的是标准 SQL 语法。</strong></p>
+<p>在新建数据集页面，需要先设置为【跨源】模式，勾选添加数据集对应数据源，将左侧要关联的数据表拖拽到右侧数据集编辑区。    </p>
+<p><strong>注意：如果是跨数据库关联，对应的自定义 SQL 需要使用的是 Calcite 语法。</strong></p>
 </div>
 <p><img alt="拖拽关联表" src="../../img/dataset_configuration/拖拽关联表.png" width="900px" /></p>
 <div class="admonition abstract">
