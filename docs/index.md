@@ -8,7 +8,7 @@
 
 ## 1 界面展示
 
-![界面展示图](./newimg/product_acceptance/界面展示.png){ width="1024px" }
+![界面展示图](./newimg/product_acceptance/界面介绍.gif){ width="1024px" }
 
 ## 2 模板市场
 
