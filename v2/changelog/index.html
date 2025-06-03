@@ -524,6 +524,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v21010" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.10.10
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v2109" class="md-nav__link">
     <span class="md-ellipsis">
       v2.10.9
@@ -4349,6 +4358,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v21010" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.10.10
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v2109" class="md-nav__link">
     <span class="md-ellipsis">
       v2.10.9
@@ -4591,6 +4609,66 @@ Bug 修复的小版本。<br />
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v21010">v2.10.10<a class="headerlink" href="#v21010" title="Permanent link">&para;</a></h3>
+<p>2025年6月03日</p>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>feat(查询组件): 下拉树支持末级为空的数据 #15959</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>refactor(图表): 图表的数据导出名称优化 #16126</li>
+<li>refactor(图表): 图形和图标内边距支持设置为 0 #16143</li>
+<li>refactor(仪表板、数据大屏): 增加仪表板大屏查询索引，同时过滤非必要的图表信息以优化查询速度</li>
+<li>refactor(仪表板、数据大屏): 复用图表组件时不展示当前仪表板或者大屏 #15917</li>
+<li>refactor(数据集): 取消数据集 SQL 的重重解析，降低耗时</li>
+<li>refactor(数据集): 重构 SQL 变量实现，支持数据源原生函数</li>
+<li>refactor: UI 库升级</li>
+<li>refactor: 优化用户列表接口</li>
+<li>refactor: 修改 MySQL 日志保留时间</li>
+<li>refactor:【操作日志】新增操作类型"导出"和"下载"</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>fix(图表): 修复堆叠条形图标签数值格式配置失效问题 #16056</li>
+<li>fix(图表): 修复查询组件通过新建计算字段关联组合图报错的问题</li>
+<li>fix(图表): 对热力图的空值数据进行过滤 #16130</li>
+<li>fix(图表): 修复汇总表同环比在查询组件过滤之后失效的问题 #16161</li>
+<li>fix(图表): 修复透视表平铺模式下，指标在行头带格式导出时出现行头错位的问题 #16134</li>
+<li>fix(图表): 修复汇总表分页场景下，在分享链接界面导出时只导出第一页数据的问题 #16167</li>
+<li>fix(图表): 修复条形图类别轴文本字段有数字时指标排序失效的问题</li>
+<li>fix(图表): 修复仪表盘动态值数值为 0 时无法渲染的问题</li>
+<li>fix(图表): 修复柱条图配置圆角会影响条件样式的问题</li>
+<li>fix(图表): 修复折线图开启动态标签后，鼠标悬浮至点位显示异常的问题</li>
+<li>fix(图表): 修复表格动态字段为空导致图表渲染错误</li>
+<li>fix(图表): 修复地图图表自定义图例数量，当图例为1时，最大值显示异常的问题</li>
+<li>fix(图表): 修复散点图标签格式化失效的问题</li>
+<li>fix(查询组件): 修复 iPhone 手机不显示时间查询框中动态时间的问题 #16011</li>
+<li>fix(查询组件): 修复查询组件的时间范围默认预览MySQL数据源数据会缺少一个月数据的问题</li>
+<li>fix(仪表板): 修复移动端访问带密码的分享链接报错的问题 #15961</li>
+<li>fix(数据大屏): 修复调整视窗大小会导致Tab组件内的图表大小发生变化问题</li>
+<li>fix(数据大屏): 修复大屏复用图表名称时依旧显示修改前名称的问题 #15917</li>
+<li>fix(数据大屏): 修复跳转配置界面联动配置高度不够，部分信息被隐藏问题</li>
+<li>fix(仪表板、数据大屏): 修复 Tab 组件拖入图表，图表会消失的问题 #16145</li>
+<li>fix(仪表板、数据大屏): 修复图片组导出模版未导出图片的问题 #16162</li>
+<li>fix(仪表板、数据大屏): 修复外部参数请求完成后级联时二级级联查询没有被筛选的问题 #16059</li>
+<li>fix(数据源): 修复 Oracle 数据库文本转日期有格式错误时，导致查询组件查询报错的问题 #16035</li>
+<li>fix(数据源): 修复对接版本小于 10 的 PostgreSQL 数据源时，获取表结构方法报错的问题</li>
+<li>fix(数据源): Excel 中的空值，导入到数据源后，保持为空 #16204</li>
+<li>fix(嵌入式): 修复数据集以 iframe 方式嵌入，保存数据集并返回时，能保存成功但是会报错的问题</li>
+<li>fix(嵌入式): 修复编辑数据集时页面无响应，控制台报错的问题</li>
+<li>fix: editMode为"preview"时，禁用 v-query 的查询条件编辑功能</li>
+<li>fix: 修复定时器报错</li>
+<li>fix: 修复导出中心权限错误</li>
+<li>fix: 修复社区版存在的权限绕过漏洞</li>
+<li>fix: 过滤 MySQL、Redshift 的非法参数</li>
+</ul>
+</div>
 <h3 id="v2109">v2.10.9<a class="headerlink" href="#v2109" title="Permanent link">&para;</a></h3>
 <p>2025年4月30日</p>
 <div class="admonition abstract">
