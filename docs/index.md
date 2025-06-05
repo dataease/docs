@@ -1,43 +1,31 @@
 # 产品介绍
 
 ??? warning "重要通知 | DataEase 漏洞通知及修复方案（DE-2025.04）"
-    **2025年4月和5月，有用户反馈发现DataEase开源BI工具存在安全漏洞，并向 DataEase 开源项目组进行上报。**
+    **2025年 4 月和 5 月，有用户反馈发现 DataEase 开源 BI 工具存在安全漏洞，并向 DataEase 开源项目组进行上报。**
 
     **漏洞信息：** 
-    <br> DataEase H2数据源存在远程代码执行漏洞，CVE编号为CVE-2025-49002。
-    <br> 漏洞详情：https://github.com/dataease/dataease/security/advisories/GHSA-999m-jv2p-5h34。
+    <br> [DataEase H2 数据源存在远程代码执行漏洞，CVE 编号为 CVE-2025-49002。](https://github.com/dataease/dataease/security/advisories/GHSA-999m-jv2p-5h34)
+    <br> [DataEase 存在鉴权绕过漏洞，CVE 编号为 CVE-2025-49001。](https://github.com/dataease/dataease/security/advisories/GHSA-xx2m-gmwg-mf3r)
+    <br> [DataEase Redshift 数据源存在远程代码执行漏洞，CVE 编号为 CVE-2025-48999。](https://github.com/dataease/dataease/security/advisories/GHSA-6pq2-6q8x-mp2r)
+    <br> [DataEase MySQL 数据源存在文件读取漏洞，CVE 编号为 CVE-2025-48998。](https://github.com/dataease/dataease/security/advisories/GHSA-2wfc-qwx7-w692)
+    <br> [DataEase Redshift 数据源存在远程代码执行漏洞，CVE 编号为 CVE-2025-46566。](https://github.com/dataease/dataease/security/advisories/GHSA-hxw4-vpfp-frgv)
+    <br> [DataEase H2 数据源存在远程代码执行漏洞，CVE 编号为 CVE-2025-32966。](https://github.com/dataease/dataease/security/advisories/GHSA-h7hj-4j78-cvc7)
 
-    <br> DataEase存在鉴权绕过漏洞，CVE编号为CVE-2025-49001。
-    <br>漏洞详情：https://github.com/dataease/dataease/security/advisories/GHSA-xx2m-gmwg-mf3r。
+    **以上漏洞影响版本为：** <br> DataEase v2.10.10 之前的版本
 
-    <br> DataEase Redshift数据源存在远程代码执行漏洞，CVE编号为CVE-2025-48999。
-    <br> 漏洞详情：https://github.com/dataease/dataease/security/advisories/GHSA-6pq2-6q8x-mp2r。
-
-    <br> DataEase MySQL数据源存在文件读取漏洞，CVE编号为CVE-2025-48998。
-    <br> 漏洞详情：https://github.com/dataease/dataease/security/advisories/GHSA-2wfc-qwx7-w692。
-
-    <br> DataEase Redshift数据源存在远程代码执行漏洞，CVE编号为CVE-2025-46566。
-    <br> 漏洞详情：https://github.com/dataease/dataease/security/advisories/GHSA-hxw4-vpfp-frgv。
-
-    <br> DataEase H2数据源存在远程代码执行漏洞，CVE编号为CVE-2025-32966。
-    <br> 漏洞详情：https://github.com/dataease/dataease/security/advisories/GHSA-h7hj-4j78-cvc7。
-
-
-    <br> **以上漏洞影响版本为：** <br> DataEase v2.10.10之前的版本
-
-    **安全版本为：** <br> DataEase版本>=v2.10.10版本
-    <br> 注：DataEase v2.10.10版本已经于2025年5月30日发布。
+    **安全版本为：** <br> DataEase版本 >= v2.10.10 版本
+    <br> 注：DataEase v2.10.10 版本已经于 2025 年 5 月 30 日 发布。
 
     **修复方案：**
-    <br>升级DataEase软件至上述安全版本。
+    <br>升级 DataEase 软件至上述安全版本。
 
-    **特别鸣谢：** <br> 感谢以下社区用户向DataEase开源社区及时反馈上述漏洞。
-    <br> CVE-2025-49002：@Le1a @ph0ebus
-    <br> CVE-2025-49001：@Le1a @ph0ebus
-    <br> CVE-2025-48999：@Le1a @ph0ebus
-    <br> CVE-2025-48998：@ph0ebus
-    <br> CVE-2025-46566：@h3h3qaq @Drun1baby @hack-umbrella
-    <br> CVE-2025-32966：@N1etzsche0 @Fushuling @Esonhugh
+    **特别鸣谢：** <br> 感谢以下社区用户向 DataEase 开源社区及时反馈上述漏洞。
+    <br> CVE-2025-49002：[@Le1a](https://github.com/Le1a) [@ph0ebus](https://github.com/ph0ebus)
+    <br> CVE-2025-49001：[@Le1a](https://github.com/Le1a) [@ph0ebus](https://github.com/ph0ebus)
+    <br> CVE-2025-48999：[@Le1a](https://github.com/Le1a) [@ph0ebus](https://github.com/ph0ebus)
+    <br> CVE-2025-48998：[@ph0ebus](https://github.com/ph0ebus)
+    <br> CVE-2025-46566：[@h3h3qaq](https://github.com/h3h3qaq) [@Drun1baby](https://github.com/Drun1baby) [@hack-umbrella](https://github.com/hack-umbrella)
+    <br> CVE-2025-32966：[@N1etzsche0](https://github.com/N1etzsche0) [@Fushuling](https://github.com/Fushuling) [@Esonhugh](https://github.com/Esonhugh)
 
 
 !!! Abstract ""
