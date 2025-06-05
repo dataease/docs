@@ -1,5 +1,45 @@
 # 产品介绍
 
+??? warning "重要通知 | DataEase 漏洞通知及修复方案（DE-2025.04）"
+    **2025年4月和5月，有用户反馈发现DataEase开源BI工具存在安全漏洞，并向 DataEase 开源项目组进行上报。**
+
+    **漏洞信息：** 
+    <br> DataEase H2数据源存在远程代码执行漏洞，CVE编号为CVE-2025-49002。
+    <br> 漏洞详情：https://github.com/dataease/dataease/security/advisories/GHSA-999m-jv2p-5h34。
+
+    <br> DataEase存在鉴权绕过漏洞，CVE编号为CVE-2025-49001。
+    <br>漏洞详情：https://github.com/dataease/dataease/security/advisories/GHSA-xx2m-gmwg-mf3r。
+
+    <br> DataEase Redshift数据源存在远程代码执行漏洞，CVE编号为CVE-2025-48999。
+    <br> 漏洞详情：https://github.com/dataease/dataease/security/advisories/GHSA-6pq2-6q8x-mp2r。
+
+    <br> DataEase MySQL数据源存在文件读取漏洞，CVE编号为CVE-2025-48998。
+    <br> 漏洞详情：https://github.com/dataease/dataease/security/advisories/GHSA-2wfc-qwx7-w692。
+
+    <br> DataEase Redshift数据源存在远程代码执行漏洞，CVE编号为CVE-2025-46566。
+    <br> 漏洞详情：https://github.com/dataease/dataease/security/advisories/GHSA-hxw4-vpfp-frgv。
+
+    <br> DataEase H2数据源存在远程代码执行漏洞，CVE编号为CVE-2025-32966。
+    <br> 漏洞详情：https://github.com/dataease/dataease/security/advisories/GHSA-h7hj-4j78-cvc7。
+
+
+    <br> **以上漏洞影响版本为：** <br> DataEase v2.10.10之前的版本
+
+    **安全版本为：** <br> DataEase版本>=v2.10.10版本
+    <br> 注：DataEase v2.10.10版本已经于2025年5月30日发布。
+
+    **修复方案：**
+    <br>升级DataEase软件至上述安全版本。
+
+    **特别鸣谢：** <br> 感谢以下社区用户向DataEase开源社区及时反馈上述漏洞。
+    <br> CVE-2025-49002：@Le1a @ph0ebus
+    <br> CVE-2025-49001：@Le1a @ph0ebus
+    <br> CVE-2025-48999：@Le1a @ph0ebus
+    <br> CVE-2025-48998：@ph0ebus
+    <br> CVE-2025-46566：@h3h3qaq @Drun1baby @hack-umbrella
+    <br> CVE-2025-32966：@N1etzsche0 @Fushuling @Esonhugh
+
+
 !!! Abstract ""
     DataEase 是开源的数据可视化分析工具，帮助用户快速分析数据并洞察业务趋势，从而实现业务的改进与优化。  
     DataEase 支持丰富的数据源连接，能够通过拖拉拽方式快速制作图表，并可以方便地与他人分享。
