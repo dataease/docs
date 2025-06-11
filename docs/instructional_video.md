@@ -12,10 +12,10 @@
 
 [![可视化分析-仪表板基础介绍](img/video/3-1%20可视化分析-仪表板基础介绍.png){ width="280"}](https://www.bilibili.com/video/BV13w4m1q7Xa/)
 [![可视化分析-图表样式及高级配置](img/video/3-2%20可视化分析-图表样式及高级配置.png){ width="280"}](https://www.bilibili.com/video/BV1SS411N7Ez/)
-[![可视化分析-图表交互配置](img/video/3-3%20可视化分析-图表交互配置.png){ width="280"}](tps://www.bilibili.com/video/BV17M4m167Y5/)</br>
+[![可视化分析-图表交互配置](img/video/3-3%20可视化分析-图表交互配置.png){ width="280"}](https://www.bilibili.com/video/BV17M4m167Y5/)</br>
 
 [![可视化分析-操作实践](img/video/3-4%20可视化分析-其他组件介绍.png){ width="280" }](https://www.bilibili.com/video/BV1Wn4y1d7mc/)
-[![可视化分析-操作实践](img/video/3-5%20可视化分析-操作实践.png){ width="280" }](hhttps://www.bilibili.com/video/BV17S411K7wo/)
+[![可视化分析-操作实践](img/video/3-5%20可视化分析-操作实践.png){ width="280" }](https://www.bilibili.com/video/BV17S411K7wo/)
 [![可视化分析-布局美化及分享](img/video/3-6%20可视化分析-布局美化及分享.png){ width="280" }](https://www.bilibili.com/video/BV1q142127zs/)</br>
 
 
