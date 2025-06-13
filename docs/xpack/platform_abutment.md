@@ -59,7 +59,7 @@
 ![对接企业微信](../img/xpack/对接企业微信7.png){ width="900px" }
 
 !!! Abstract ""
-    在 Web 网页里授权回调域，注意域名需要和 DataEase 平台里填写的【回调域名】一致,例如 https://dataease.fit2cloud.com，域名请根据实际情况进行修改。
+    在 Web 网页里授权回调域，注意域名需要和 DataEase 平台里填写的【回调域名】一致,例如 [dataease.fit2cloud.com](https://dataease.fit2cloud.com)，域名请根据实际情况进行修改。
 
 ![对接企业微信](../img/xpack/对接企业微信9.png){ width="900px" }
 
