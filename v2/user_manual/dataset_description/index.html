@@ -4298,6 +4298,7 @@
 <p><img alt="更新1" src="../../newimg/1.20 查询组件绑定参数的方式优化.png" width="900px" /></p>
 <div class="admonition abstract">
 <p><strong>SQL 数据集带参数传递，根据过滤组件的不同，SQL 语法用法上有差异。</strong></p>
+<p>【 2.10.9 及之前版本用法 】</p>
 <p>情况一：过滤组件为单选时，要用 = ：
 <div class="highlight"><pre><span></span><code>SELECT ORDER_ID, ORDER_DATE, PROJ_ID, ORDER_EMP FROM ORDERS WHERE ORDER_EMP = &#39;${USER_NAME}&#39;
 </code></pre></div>
@@ -4311,6 +4312,13 @@
 <div class="highlight"><pre><span></span><code>SELECT * FROM SALES WHERE 记录时间 BETWEEN &#39;${BEGINTIME}&#39; AND &#39;${ENDTIME}&#39;;
 
 SELECT * FROM SALES WHERE 记录时间 &gt; &#39;${BEGINTIME}&#39; AND 记录时间 &lt; &#39;${ENDTIME}&#39;
+</code></pre></div></p>
+<p>【 2.10.10 及及之后版本变量使用方法 】</p>
+<p>兼容之前版本用法的同时，如果存在无法解析数据库自有语法问题，可以使用以下格式修改：
+<div class="highlight"><pre><span></span><code>select * from table where name = &#39;${p}&#39;
+</code></pre></div>
+改为：
+<div class="highlight"><pre><span></span><code>select * from table where $DE_PARAM{name = &#39;$[p]&#39;}
 </code></pre></div></p>
 </div>
 <div class="admonition abstract">
