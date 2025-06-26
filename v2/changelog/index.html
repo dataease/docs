@@ -524,6 +524,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v21011" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.10.11
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v21010" class="md-nav__link">
     <span class="md-ellipsis">
       v2.10.10
@@ -4358,6 +4367,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v21011" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.10.11
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v21010" class="md-nav__link">
     <span class="md-ellipsis">
       v2.10.10
@@ -4609,6 +4627,63 @@ Bug 修复的小版本。<br />
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v21011">v2.10.11<a class="headerlink" href="#v21011" title="Permanent link">&para;</a></h3>
+<p>2025年6月26日</p>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>feat(图表): 汇总表支持表头分组 #16302</li>
+<li>feat(查询组件): 查询框可以调整高度 #16027</li>
+<li>feat(查询组件): 文本下拉框默认值支持设置为首项 #12071</li>
+<li>feat(仪表板、数据大屏): 仪表板、数据大屏配置增加透视表的颜色配置 #16347</li>
+<li>feat(嵌入式): div嵌入数据集页时，导出数据集可直接下载</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>fix(图表): 修复直辖市地图下钻时无法正常跳转的问题</li>
+<li>fix(图表): 修复下钻时导出的图表部分数据不显示的问题</li>
+<li>fix(图表): 修复透视表数值维度排序错误 #16321</li>
+<li>fix(图表): 修复热力地图标签未居中 #16187</li>
+<li>fix(图表): 透视表带格式导出显示数值类型</li>
+<li>fix(图表): 修复明细表表头分组后导出表头出现的名称错误</li>
+<li>fix(图表): 修复透视表指标排序不生效的问题</li>
+<li>fix(图表): 修复散点图下钻之后提示显示错误 #16345</li>
+<li>fix(图表): 修复子弹图提示中，实际值与目标值显示错误的问题 #16308</li>
+<li>fix(图表): 修复子弹图，当实际值与目标值中任意字段与区间字段是同一个字段时，字段数据被求和的问题</li>
+<li>fix(查询组件): 修复查询组件在查询条件内容过长时，选择全选或者多选出现的下拉框样式错位问题 #15554</li>
+<li>fix(查询组件): 修复时间范围组件在选择时间范围后，切换浏览器Tab页导致再次查看时，选项依旧处于展示状态的问题</li>
+<li>fix(仪表板): 修复图表插件在使用了查询组件并设置默认值后，初次渲染未做过滤的问题 #15955</li>
+<li>fix(仪表板): 修复长时间不登录，再次登录时首次访问仪表板会出现数据加载失败的问题 #16285</li>
+<li>fix(仪表板): 修复排序优先级表头文案存在白底白字的问题</li>
+<li>fix(仪表板): 修复删除过滤规则没有对数据进行更新的问题</li>
+<li>fix(仪表板、数据大屏): 修复仪表板、数据大屏整体资源复制后复制的图表不展示的问题</li>
+<li>fix(仪表板、数据大屏): 修复即使关闭了图表加载提示，仍然会有loading遮罩层的问题 #16247</li>
+<li>fix(仪表板、数据大屏): 修复tooltips轮播导致tab组件内的tooltips显示叠加问题 #16271</li>
+<li>fix(仪表板、数据大屏): 修复置顶查询组件与取消联动按钮发生重叠的问题</li>
+<li>fix(仪表板、数据大屏): 修复Tab中图表提示重复问题</li>
+<li>fix(数据集): 修复在删除包含异常计算字段节点时出现的错误 #16314</li>
+<li>fix(数据集): 修复PostgreSQL数据集导出的数据超过5万行的所有数值格式都成文本类型的错误 #16128</li>
+<li>fix(数据集): 修复编辑SQL时默认值不生效的问题</li>
+<li>fix(数据集): 修复分组字段参与计算字段的计算时出现的取值错误 #16380</li>
+<li>fix(数据源): 修复DM数据源在schema带"-"的情况下，数据集拖拽表报错的问题 #16310</li>
+<li>fix(数据源): 远程Excel认证时对密码中的特殊字符进行编码处理 #16089</li>
+<li>fix(工作台): 修复特殊情况下查看全部模板时无法显示模板的问题</li>
+<li>fix(X-Pack): 修复阈值告警数字格式错误</li>
+<li>fix(X-Pack): 修复血缘分析无法找到创建的大屏和仪表板的问题</li>
+<li>fix(X-Pack): 修复用户查看数据填报已填报列表可能为空的问题</li>
+<li>fix(X-Pack): 修复编辑或查看数据填报时，下拉框值为空的情况下，会展示模版中设置值的问题</li>
+<li>fix(X-Pack): 修复阈值告警指标重复的问题 #16301</li>
+<li>fix(X-Pack): 修复权限配置在按资源授权时，菜单授权只有用户列表的问题 #16338</li>
+<li>fix(X-Pack): 修复因过滤组件复制导致定时报告编辑失败问题</li>
+<li>fix(X-Pack): 修复阈值告警在表格场景下仅根据第一页数据判断的问题</li>
+<li>fix(漏洞): 修复H2 JDBC远程代码执行漏洞</li>
+<li>fix(数据导出中心): 明细表字段隐藏后，导出数据不包含隐藏字段</li>
+<li>fix(数据导出中心): 修复高可用环境下，导出Excel文件报错的问题 #16287</li>
+<li>fix: 升级MySQL版本到v8.4.5 #16254</li>
+</ul>
+</div>
 <h3 id="v21010">v2.10.10<a class="headerlink" href="#v21010" title="Permanent link">&para;</a></h3>
 <p>2025年6月03日</p>
 <div class="admonition abstract">
