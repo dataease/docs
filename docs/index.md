@@ -18,10 +18,10 @@
     <br>升级 DataEase 软件至上述安全版本。
 
     **特别鸣谢：** <br> 感谢Java-Chains Team和以下社区用户向 DataEase 开源社区及时反馈上述漏洞。
-    <br> CVE-2025-49003：@Fushuling @Lych1e1
-    <br> CVE-2025-53004：@Le1a @for-A1kaid
-    <br> CVE-2025-53005：@Le1a @for-A1kaid @Z1Tanuki
-    <br> CVE-2025-53006：@unam4
+    <br> CVE-2025-49003：[@Fushuling](https://github.com/Fushuling) [@Lych1e1](https://github.com/Lych1e1)
+    <br> CVE-2025-53004：[@Le1a](https://github.com/Le1a) [@for-A1kaid](https://github.com/for-A1kaid)
+    <br> CVE-2025-53005：[@Le1a](https://github.com/Le1a) [@for-A1kaid](https://github.com/for-A1kaid) [@Z1Tanuki](https://github.com/Z1Tanuki)
+    <br> CVE-2025-53006：[@unam4](https://github.com/unam4)
 
 
 !!! Abstract ""
