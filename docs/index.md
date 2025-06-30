@@ -1,31 +1,27 @@
 # 产品介绍
 
 ??? warning "重要通知 | DataEase 漏洞通知及修复方案（DE-2025.06）"
-    **2025年 4 月和 5 月，有用户反馈发现 DataEase 开源 BI 工具存在安全漏洞，并向 DataEase 开源项目组进行上报。**
+    **2025年 5 月和 6 月，有用户反馈发现 DataEase 开源 BI 工具存在安全漏洞，并向 DataEase 开源项目组进行上报。**
 
     **漏洞信息：** 
-    <br> [DataEase H2 数据源存在远程代码执行漏洞，CVE 编号为 CVE-2025-49002。](https://github.com/dataease/dataease/security/advisories/GHSA-999m-jv2p-5h34)
-    <br> [DataEase 存在鉴权绕过漏洞，CVE 编号为 CVE-2025-49001。](https://github.com/dataease/dataease/security/advisories/GHSA-xx2m-gmwg-mf3r)
-    <br> [DataEase Redshift 数据源存在远程代码执行漏洞，CVE 编号为 CVE-2025-48999。](https://github.com/dataease/dataease/security/advisories/GHSA-6pq2-6q8x-mp2r)
-    <br> [DataEase MySQL 数据源存在文件读取漏洞，CVE 编号为 CVE-2025-48998。](https://github.com/dataease/dataease/security/advisories/GHSA-2wfc-qwx7-w692)
-    <br> [DataEase Redshift 数据源存在远程代码执行漏洞，CVE 编号为 CVE-2025-46566。](https://github.com/dataease/dataease/security/advisories/GHSA-hxw4-vpfp-frgv)
-    <br> [DataEase H2 数据源存在远程代码执行漏洞，CVE 编号为 CVE-2025-32966。](https://github.com/dataease/dataease/security/advisories/GHSA-h7hj-4j78-cvc7)
+    <br> [DataEase H2数据源存在远程代码执行漏洞，CVE编号为CVE-2025-49003。](https://github.com/dataease/dataease/security/advisories/GHSA-x97w-69ff-r55q)
+    <br> [DataEase Redshift数据源JDBC参数存在绕过漏洞，CVE编号为CVE-2025-53004。](https://github.com/dataease/dataease/security/advisories/GHSA-mfg2-qr5c-99pp)
+    <br> [DataEase PostgreSQL数据源JDBC参数存在绕过漏洞，CVE编号为CVE-2025-53005。](https://github.com/dataease/dataease/security/advisories/GHSA-99c4-h4fq-r23v)
+    <br> [DataEase PostgreSQL和Redshift数据源JDBC参数存在绕过漏洞，CVE编号为CVE-2025-53006。](https://github.com/dataease/dataease/security/advisories/GHSA-q726-5pr9-x7gm)
 
-    **以上漏洞影响版本为：** <br> DataEase v2.10.10 之前的版本
+    **以上漏洞影响版本为：** <br> DataEase v2.10.11 之前的版本
 
-    **安全版本为：** <br> DataEase版本 >= v2.10.10 版本
-    <br> 注：DataEase v2.10.10 版本已经于 2025 年 5 月 30 日 发布。
+    **安全版本为：** <br> DataEase版本 >= v2.10.11 版本
+    <br> 注：DataEase v2.10.11 版本已经于 2025 年 6 月 26 日 发布。
 
     **修复方案：**
     <br>升级 DataEase 软件至上述安全版本。
 
-    **特别鸣谢：** <br> 感谢以下社区用户向 DataEase 开源社区及时反馈上述漏洞。
-    <br> CVE-2025-49002：[@Le1a](https://github.com/Le1a) [@ph0ebus](https://github.com/ph0ebus)
-    <br> CVE-2025-49001：[@Le1a](https://github.com/Le1a) [@ph0ebus](https://github.com/ph0ebus)
-    <br> CVE-2025-48999：[@Le1a](https://github.com/Le1a) [@ph0ebus](https://github.com/ph0ebus)
-    <br> CVE-2025-48998：[@ph0ebus](https://github.com/ph0ebus)
-    <br> CVE-2025-46566：[@h3h3qaq](https://github.com/h3h3qaq) [@Drun1baby](https://github.com/Drun1baby) [@hack-umbrella](https://github.com/hack-umbrella)
-    <br> CVE-2025-32966：[@N1etzsche0](https://github.com/N1etzsche0) [@Fushuling](https://github.com/Fushuling) [@Esonhugh](https://github.com/Esonhugh)
+    **特别鸣谢：** <br> 感谢Java-Chains Team和以下社区用户向 DataEase 开源社区及时反馈上述漏洞。
+    <br> CVE-2025-49003：@Fushuling @Lych1e1
+    <br> CVE-2025-53004：@Le1a @for-A1kaid
+    <br> CVE-2025-53005：@Le1a @for-A1kaid @Z1Tanuki
+    <br> CVE-2025-53006：@unam4
 
 
 !!! Abstract ""
