@@ -4224,26 +4224,22 @@
 <h1 id="_1">产品介绍<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <details class="warning">
 <summary>重要通知 | DataEase 漏洞通知及修复方案（DE-2025.06）</summary>
-<p><strong>2025年 4 月和 5 月，有用户反馈发现 DataEase 开源 BI 工具存在安全漏洞，并向 DataEase 开源项目组进行上报。</strong></p>
+<p><strong>2025年 5 月和 6 月，有用户反馈发现 DataEase 开源 BI 工具存在安全漏洞，并向 DataEase 开源项目组进行上报。</strong></p>
 <p><strong>漏洞信息：</strong> 
-<br> <a href="https://github.com/dataease/dataease/security/advisories/GHSA-999m-jv2p-5h34">DataEase H2 数据源存在远程代码执行漏洞，CVE 编号为 CVE-2025-49002。</a>
-<br> <a href="https://github.com/dataease/dataease/security/advisories/GHSA-xx2m-gmwg-mf3r">DataEase 存在鉴权绕过漏洞，CVE 编号为 CVE-2025-49001。</a>
-<br> <a href="https://github.com/dataease/dataease/security/advisories/GHSA-6pq2-6q8x-mp2r">DataEase Redshift 数据源存在远程代码执行漏洞，CVE 编号为 CVE-2025-48999。</a>
-<br> <a href="https://github.com/dataease/dataease/security/advisories/GHSA-2wfc-qwx7-w692">DataEase MySQL 数据源存在文件读取漏洞，CVE 编号为 CVE-2025-48998。</a>
-<br> <a href="https://github.com/dataease/dataease/security/advisories/GHSA-hxw4-vpfp-frgv">DataEase Redshift 数据源存在远程代码执行漏洞，CVE 编号为 CVE-2025-46566。</a>
-<br> <a href="https://github.com/dataease/dataease/security/advisories/GHSA-h7hj-4j78-cvc7">DataEase H2 数据源存在远程代码执行漏洞，CVE 编号为 CVE-2025-32966。</a></p>
-<p><strong>以上漏洞影响版本为：</strong> <br> DataEase v2.10.10 之前的版本</p>
-<p><strong>安全版本为：</strong> <br> DataEase版本 &gt;= v2.10.10 版本
-<br> 注：DataEase v2.10.10 版本已经于 2025 年 5 月 30 日 发布。</p>
+<br> <a href="https://github.com/dataease/dataease/security/advisories/GHSA-x97w-69ff-r55q">DataEase H2数据源存在远程代码执行漏洞，CVE编号为CVE-2025-49003。</a>
+<br> <a href="https://github.com/dataease/dataease/security/advisories/GHSA-mfg2-qr5c-99pp">DataEase Redshift数据源JDBC参数存在绕过漏洞，CVE编号为CVE-2025-53004。</a>
+<br> <a href="https://github.com/dataease/dataease/security/advisories/GHSA-99c4-h4fq-r23v">DataEase PostgreSQL数据源JDBC参数存在绕过漏洞，CVE编号为CVE-2025-53005。</a>
+<br> <a href="https://github.com/dataease/dataease/security/advisories/GHSA-q726-5pr9-x7gm">DataEase PostgreSQL和Redshift数据源JDBC参数存在绕过漏洞，CVE编号为CVE-2025-53006。</a></p>
+<p><strong>以上漏洞影响版本为：</strong> <br> DataEase v2.10.11 之前的版本</p>
+<p><strong>安全版本为：</strong> <br> DataEase版本 &gt;= v2.10.11 版本
+<br> 注：DataEase v2.10.11 版本已经于 2025 年 6 月 26 日 发布。</p>
 <p><strong>修复方案：</strong>
 <br>升级 DataEase 软件至上述安全版本。</p>
-<p><strong>特别鸣谢：</strong> <br> 感谢以下社区用户向 DataEase 开源社区及时反馈上述漏洞。
-<br> CVE-2025-49002：<a href="https://github.com/Le1a">@Le1a</a> <a href="https://github.com/ph0ebus">@ph0ebus</a>
-<br> CVE-2025-49001：<a href="https://github.com/Le1a">@Le1a</a> <a href="https://github.com/ph0ebus">@ph0ebus</a>
-<br> CVE-2025-48999：<a href="https://github.com/Le1a">@Le1a</a> <a href="https://github.com/ph0ebus">@ph0ebus</a>
-<br> CVE-2025-48998：<a href="https://github.com/ph0ebus">@ph0ebus</a>
-<br> CVE-2025-46566：<a href="https://github.com/h3h3qaq">@h3h3qaq</a> <a href="https://github.com/Drun1baby">@Drun1baby</a> <a href="https://github.com/hack-umbrella">@hack-umbrella</a>
-<br> CVE-2025-32966：<a href="https://github.com/N1etzsche0">@N1etzsche0</a> <a href="https://github.com/Fushuling">@Fushuling</a> <a href="https://github.com/Esonhugh">@Esonhugh</a></p>
+<p><strong>特别鸣谢：</strong> <br> 感谢Java-Chains Team和以下社区用户向 DataEase 开源社区及时反馈上述漏洞。
+<br> CVE-2025-49003：@Fushuling @Lych1e1
+<br> CVE-2025-53004：@Le1a @for-A1kaid
+<br> CVE-2025-53005：@Le1a @for-A1kaid @Z1Tanuki
+<br> CVE-2025-53006：@unam4</p>
 </details>
 <div class="admonition abstract">
 <p>DataEase 是开源的数据可视化分析工具，帮助用户快速分析数据并洞察业务趋势，从而实现业务的改进与优化。<br />
