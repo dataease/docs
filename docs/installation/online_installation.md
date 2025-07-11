@@ -51,7 +51,7 @@
 	innodb_flush_log_at_trx_commit=0
 	sync_binlog=0
 	group_concat_max_len=1024000
-	sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+    sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
 	skip-name-resolve
 
 	[mysql]
@@ -81,7 +81,6 @@
     /opt/dataease/
 	├── bin                                         #-- 安装过程中需要加载到容器中的脚本
 	├── conf                                        #-- DataEase 各组件及数据库等中间件的配置文件
-    ├── custom-drivers                              #-- DataEase 自定义驱动程序目录 
 	├── data                                        #-- DataEase 各组件及数据库等中间件的数据持久化目录
 	├── docker-compose-doris.yml                    #-- DataEase 内建的 Doris 所需的 Docker Compose 文件
     ├── docker-compose-kettle.yml                   #-- DataEase 内建的 Kettle 所需的 Docker Compose 文件 
