@@ -4574,7 +4574,7 @@
 </div>
 <div class="admonition abstract">
 <p>公共链接参数组装对传参进行 Base64 处理，以下为示例：配置参数名为"省份"，关联了仪表板中【省份】文本下拉过滤组件（也可关联对应的图表字段），组装参数为 {"省份":"北京市"}，使用 base64 加密处理，该示例通过电脑终端进行，其它方式均可。
-<div class="highlight"><pre><span></span><code>echo &#39;{&quot;省份&quot;:&quot;北京市&quot;}&#39;|Base64
+<div class="highlight"><pre><span></span><code>echo &#39;{&quot;省份&quot;:&quot;北京市&quot;}&#39;|base64
 </code></pre></div>
 加密结果为：eyLnnIHku70iOiLljJfkuqzluIIifQo= ，组装规则如下:<br />
 &lt; 仪表板公共链接 &gt; + &lt; ?attachParams= &gt; + &lt; 加密后的结果 &gt;<br />
