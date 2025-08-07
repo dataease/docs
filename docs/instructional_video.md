@@ -25,3 +25,12 @@
 ## 4 工作台及模板市场
 
 [![其他组件](img/video/4.1%20工作台及模板市场介绍.png){ width="280"}](https://www.bilibili.com/video/BV1Qx4y1E7fx/)
+
+## 5 更新部分
+
+[![更新部分-API数据源](img/01-API数据源.png){ width="280" }](https://www.bilibili.com/video/BV1iEutzjECQ/?spm_id_from=333.337.search-card.all.click&vd_source=382799cdaef68652d83ae854bea03e34)
+[![更新部分-表格高级功能](img/02-表格高级功能.png){ width="280" }](https://www.bilibili.com/video/BV1ZjutzmE3x?spm_id_from=333.788.videopod.sections&vd_source=382799cdaef68652d83ae854bea03e34) 
+[![更新部分-查询组件及SQL传参](img/03-查询组件及SQL传参.png){ width="280" }](https://www.bilibili.com/video/BV1qjutzmEgH?spm_id_from=333.788.videopod.sections&vd_source=382799cdaef68652d83ae854bea03e34) </br>
+
+[![更新部分-外部参数与Ticket](img/04-外部参数与Ticket.png){ width="280" }](https://www.bilibili.com/video/BV1qjutzmEpP?spm_id_from=333.788.videopod.sections&vd_source=382799cdaef68652d83ae854bea03e34) 
+[![更新部分-图片组件和事件绑定](img/05-图片组件和事件绑定.png){ width="280" }](https://www.bilibili.com/video/BV1ruutzpENG?spm_id_from=333.788.videopod.sections&vd_source=382799cdaef68652d83ae854bea03e34) </br>
