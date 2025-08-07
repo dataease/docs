@@ -1,6 +1,6 @@
 ## 1 课程简介
 
-[![课程简介](./img/video/1-1%20课程简介.png){ width="280"}](https://www.bilibili.com/video/BV1p1421272j/)
+[![课程简介](./img/1-1 课程简介.png){ width="280"}](https://www.bilibili.com/video/BV1p1421272j/)
 
 ## 2 数据准备
 
