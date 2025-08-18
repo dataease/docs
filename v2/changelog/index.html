@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
     
     
       
@@ -520,6 +520,15 @@
   
     <nav class="md-nav" aria-label="2 更新内容">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v21012" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.10.12
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#v21011" class="md-nav__link">
@@ -4365,6 +4374,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v21012" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.10.12
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v21011" class="md-nav__link">
     <span class="md-ellipsis">
       v2.10.11
@@ -4625,6 +4643,106 @@ Bug 修复的小版本。<br />
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v21012">v2.10.12<a class="headerlink" href="#v21012" title="Permanent link">&para;</a></h3>
+<p>2025年6月26日</p>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>feat(图表): 图表提示的背景颜色支持配置透明度</li>
+<li>feat(图表): 桑基图提示信息支持配置总出占比显示 #16476</li>
+<li>feat(图表): 线面图纵轴轴值自动分档的最小值，根据数据自动计算最小刻度值</li>
+<li>feat(图表): 堆叠条形图/柱状图可以设置图例排序 #16424</li>
+<li>feat(图表): 基础条形图/柱状图支持点击阴影部分执行下钻、联动、跳转 #16489</li>
+<li>feat(查询组件): 下拉组件 tag 背景颜色支持自定义</li>
+<li>feat(仪表板、数据大屏): 图片组支持设置刷新频率 #16584</li>
+<li>feat(数据源): API 数据源接口参数可以调用已创建接口参数 #16470</li>
+<li>feat(X-Pack): 【同步管理】增量同步支持指定正负偏移量</li>
+<li>feat(X-Pack): 【同步管理】支持 CTE 查询 #16281</li>
+<li>feat(X-Pack): 【数据填报】批量上传增加单条记录的提交信息</li>
+<li>feat(X-Pack): 【外观设置】增加是否显示 Slogan 配置项 #16437</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>refactor(图表): 跳转配置时不生效的指标字段不再显示 #16525</li>
+<li>refactor(图表): 气泡地图、符号地图动效支持小数设置</li>
+<li>refactor(图表): 表格分组名称长度限制增加到 50 #16552</li>
+<li>refactor(图表): 透视表汇总行列字体默认加粗 #16436</li>
+<li>refactor(数据大屏): 装饰组件支持配色</li>
+<li>refactor(仪表板、数据大屏): 图片组样式调整</li>
+<li>refactor(仪表板、数据大屏): 调整查询组件的文字大小范围 #16517</li>
+<li>refactor(仪表板、数据大屏): 空值不参与联动</li>
+<li>refactor(移动端): 修改未开启移动端访问时的错误提示 #16514</li>
+<li>refactor(数据大屏): SVG 性能优化</li>
+<li>refactor(X-Pack): 阈值告警-标题优化为三级标题 #16482</li>
+<li>refactor(X-Pack): 阈值告警-告警内容包含多个指标值的消息模版 #16480</li>
+<li>refactor(X-Pack): 调整外部用户字符串长度限制 #16578</li>
+<li>refactor(X-Pack): 认证对接-认证失败禁止注销SSO信息 #16615</li>
+<li>refactor(嵌入式): 滚动条 css 样式加上类名，避免在 div 嵌入时冲突 #16455</li>
+<li>build: 修复依赖错误导致打包失败 #16520</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>fix(图表): 修复仪表盘和水波图值为 0 时显示异常 #16419</li>
+<li>fix(图表): 修复热力图颜色字段为计算字段时，图表报错的问题 #16471</li>
+<li>fix(图表): 修复线面图开启缩略轴时，纵轴最小值不立即自动计算的问题</li>
+<li>fix(图表): 修复透视表设置数值格式之后带格式导出单元格为非数值类型的问题 #16431</li>
+<li>fix(图表): 修复公共链接携带参数，刷新图表数据导致参数丢失，没有传入富文本中的问题 #16579</li>
+<li>fix(图表): 修复明细表下载表头缺失的问题 #16497</li>
+<li>fix(图表): 修复地图配色存在相同颜色时图例显示异常 #16203</li>
+<li>fix(图表): 修复最值在部分浏览器（Safari）中不显示的问题 #16479</li>
+<li>fix(图表): 修复多个tab 页中，tab2 的提示显示到 tab1 的问题 #16271</li>
+<li>fix(图表): 修复明细表合并单元格之后导出的表格没有合并单元格 #16589</li>
+<li>fix(图表): 修复移动端表格第二层无法下钻的问题 #16633 #16485</li>
+<li>fix(仪表板): 修复移动端部分查询组件悬浮移位问题</li>
+<li>fix(数据大屏): 修复图层名称长度未校验的问题</li>
+<li>fix(查询组件): 修复升级后文本下拉多选 UI 发生变化的问题 #16443</li>
+<li>fix(查询组件): 修复查询组件默认值"首项"搭配行权限使用时，会使得查询组件失效的问题</li>
+<li>fix(查询组件): 修复数字下拉组件无法设置默认值的问题</li>
+<li>fix(查询组件): 查询组件背景色匹配仪表板深色模式</li>
+<li>fix(数据大屏): 修复跑马灯组件预览字体和编辑字体大小不一致问题 #16323</li>
+<li>fix(数据大屏): 修复地图类图表隐藏再显示导致图表变形问题</li>
+<li>fix(数据大屏): 修复部分场景放大缩小按钮无效问题</li>
+<li>fix(仪表板、数据大屏): 优化空资源提示 #16567</li>
+<li>fix(仪表板、数据大屏): 修复历史数据中出现重复 id 的组件无法删除的问题</li>
+<li>fix(仪表板、数据大屏): 修复图表，数据集、外置参数配置等文本标题超出问题</li>
+<li>fix(仪表板、数据大屏): 修复富文本双击出现悬浮设置，导致页面出现滚动条问题</li>
+<li>fix(仪表板、数据大屏): 修复模板更换数据集时提示偏移问题</li>
+<li>fix(仪表板、数据大屏): 修复调用浏览器打印功能，出现部分页码空白问题</li>
+<li>fix(仪表板、数据大屏): 修复看板的外部参数使用默认值向自定义 SQL 传参时，拼接的 SQL 存在问题导致数据无法正常显示的问题 #16577</li>
+<li>fix(仪表板、数据大屏): 修复外部参数关联数据集参数时，参数类型显示不正确问题</li>
+<li>fix(仪表板、数据大屏): 修复导出应用模板不会将筛选器使用的数据集也一起导出的问题 #16362</li>
+<li>fix(仪表板、数据大屏): 修复部分 tab 组件可能在控制台打印异常问题</li>
+<li>fix(仪表板、数据大屏): 修复部分富文本下拉选项不显示问题</li>
+<li>fix(仪表板、数据大屏): 修复双击富文本进入编辑模式时，画布可能出现滚动条问题</li>
+<li>fix(仪表板、数据大屏): 修复从告警管理的告警入口进入仪表板，无法保存告警的问题</li>
+<li>fix(仪表板、数据大屏): 修复跳转时可能出现控制台异常信息打印的问题</li>
+<li>fix(数据集): 修复 SQLServer 数据集导出按日期过滤时无法导出数据的问题 #16519</li>
+<li>fix(数据集): 修复 Doris、SQLServer ( holo 数据库)数据源，数据库原始数据不存在重复，数据集导出时存在重复数据的问题 #16452</li>
+<li>fix(数据源): 修复复制数据源丢失信息的问题</li>
+<li>fix(X-Pack): 修复编辑页面数据集选择框下的数据集新建按钮权限控制</li>
+<li>fix(X-Pack): 【数据填报】修复字符串类型的主键会强制校验为数值类型的问题</li>
+<li>fix(X-Pack): 修复阈值告警以 div 方式嵌入时，告警表单无法弹出的问题</li>
+<li>fix(X-Pack): 修复定时报告选项卡组件中的视图无法导出数据的问题</li>
+<li>fix(X-Pack): 修复阈值告警中动态时间小时粒度格式错误</li>
+<li>fix(X-Pack): 数据同步，创建任务增量同步时，禁止 date 类型可偏移天以下的单位</li>
+<li>fix(X-Pack): 修复调用定时报告导出接口设置额外等待时间无效的问题 #16528</li>
+<li>fix(X-Pack): 修复绑定 MFA 导致 MFA_KEY 重复的问题</li>
+<li>fix(X-Pack): 【数据同步】修复 Oracle 的 Schemas 是 C## 前缀时，无法同步的问题</li>
+<li>fix(X-Pack): 【数据同步】修复 Oracle 查询 SQL 语句末尾添加分号后查询失败的问题</li>
+<li>fix(X-Pack): 【数据同步】修复 DB2 查询语句不支持反引号，导致增量同步失败的问题</li>
+<li>fix(X-Pack): 【数据同步】修复 DB2 首次同步数据时，增量字段为空，导致第二次同步失败的问题</li>
+<li>fix(X-Pack): 【数据同步】修复 Elasticsearch、SQL Server 未支持数据类型，无法创建任务的问题</li>
+<li>fix(X-Pack): 修复账号校验规则错误 #16569</li>
+<li>fix(X-Pack): 修复组织管理中可以操作无权限组织的问题</li>
+<li>fix: 【漏洞】Dataease H2 JDBC RCE Bypass's Bypass</li>
+<li>fix: 【漏洞】修复桌面版Aspectjweaver 反序列化任意文件写入漏洞</li>
+<li>fix: close FileOutputStream to prevent resource leak in downloadFile</li>
+</ul>
+</div>
 <h3 id="v21011">v2.10.11<a class="headerlink" href="#v21011" title="Permanent link">&para;</a></h3>
 <p>2025年6月26日</p>
 <div class="admonition abstract">
@@ -7835,11 +7953,11 @@ Bug 修复的小版本。<br />
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide", "content.tabs.link"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide", "content.tabs.link"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
     
     
     
-      <script src="../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
     <script>
