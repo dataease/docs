@@ -138,3 +138,22 @@
 .md-typeset {
   border-color: rgb(10, 123, 224);
 }
+
+/* 为 tip 类型提示块的标题设置蓝色背景 */
+.md-typeset .admonition.tip .admonition-title {
+  background-color: #EBF7FF;
+  color: #000000;
+  padding: 0.5rem 2rem;
+  border-radius: 2px 2px 0 0;
+}
+
+/* 提示块整体：调整左侧竖线为蓝色 */
+.md-typeset .admonition.tip {
+  border-left-color: #01B0FF;
+}
+
+/* 提示块标题前的图标：调整为蓝色 */
+.md-typeset .admonition.tip .admonition-title:before {
+  background-color: #01B0FF;
+  margin-top: 2px;
+}
