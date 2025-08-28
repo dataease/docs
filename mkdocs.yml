@@ -43,6 +43,7 @@ nav:
   - 产品介绍: index.md
   - 快速入门: quick_start.md
   - 版本迭代:
+      - 生命周期: lifecycle.md
       - 更新日志: changelog.md
       - 更新说明:
           - v1.18.20: release_notes/v1.18.20.md
