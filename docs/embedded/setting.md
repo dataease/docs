@@ -1,3 +1,6 @@
+!!! Abstract ""
+    注意；本文当所使用代码均为嵌入式官方 [demo 代码](https://github.com/dataease/embedded-demo/tree/isv-embedded-demo)。并在此基础上进行代码的修改进行演示。
+
 ## 1 嵌入式 Token
 !!! Abstract ""
     采用 JWT 认证 ，官方嵌入式代码生成 token 方式如下，需要获取 DataEase 嵌入式应用的 APP ID、APP Secret，以及 DataEase 中的用户账号。

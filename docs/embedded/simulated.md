@@ -29,7 +29,7 @@
 !!! Abstract ""
     此方案需要 A 系统提供一个模拟登录接口，模拟登陆接口中获取用户 Token（如果需要使用动态的用户进行登陆认证，则需要调用获取用户接口和修改用户密码接口来保证模拟登录成功），前端将获取到的token写入当前域名的LocalStorage下，然后再跳转到 DataEase 正常的访问路径，至此完成模拟登录。
 
-     参考示例代码：dataease-login-adpter-demo
+     参考示例代码：[dataease-login-adpter-demo](https://github.com/liuboF2c/dataease-login-adpter-demo/tree/dev_v2)
 ![5.2模拟登录（2）.png](../img/embedded/5.2模拟登录（2）.png){ width="900px" }
 ![5.2模拟登录（3）.png](../img/embedded/5.2模拟登录（3）.png){ width="900px" }
 
@@ -53,7 +53,7 @@
 
     Nginx 通过特定路径拦截到请求重定向至自定义的 HTML 页面，然后通过 HTML 页面中的 JS 代码将 Token 信息写入到 LocalStorage 中去，然后再跳转到 DataEase 正常的访问路径，至此完成模拟登录。
    
-    参考示例代码：dataease-login-adpter-demo
+    参考示例代码：[dataease-login-adpter-demo](https://github.com/liuboF2c/dataease-login-adpter-demo/tree/dev_v2)
 ![5.2模拟登录（5）.png](../img/embedded/5.2模拟登录（5）.png){ width="900px" }
 ![5.2模拟登录（6）.png](../img/embedded/5.2模拟登录（6）.png){ width="900px" }
 

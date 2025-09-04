@@ -14,7 +14,7 @@
     - Client Secret：客户端密码。
     - Discovery：OIDC 发现服务。
     - Realm：用于身份验证的领域，此处可自定义。
-    - Scope：返回的有关经过身份验证的用户的信息，也称为声明，可通过发现服务获取，多个参数使用英文逗号分开。
+    - Scope：返回的有关经过身份验证的用户的信息，也称为[声明](https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims)，可通过发现服务获取，多个参数使用英文逗号分开。
     - Use Pkce：访问令牌。设置为 true 时，在请求标头中设置访问令牌。
     - Redirect Uri：重定向回的 URL。
 ![5.1 单点登录（2）.png](../img/embedded/5.1 单点登录（2）.png){ width="900px" }

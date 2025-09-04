@@ -9,3 +9,4 @@
     DataEase 同时提供了丰富的 API 接口，包括仪表板管理、数据大屏管理，数据集管理、权限管理、用户管理等模块，可根据实际的业务需求调用 DataEase 的接口完成业务要求，API 说明入口位于 【系统设置】->【API Key】->【查看 API】。
  ![1.1嵌入式BI功能架构（1）.png](../img/embedded/1.1嵌入式BI功能架构（1）.png){ width="900px" }
  ![1.1 嵌入式BI功能架构（2）](../img/embedded/1.1 嵌入式BI功能架构（2）.png){ width="900px" }
+ 
