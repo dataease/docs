@@ -170,6 +170,26 @@ nav:
   - 教学视频: instructional_video.md
   - 联系我们: contact.md
   - 桌面版: desktop.md
+  - 嵌入式指南:
+      - 嵌入式概述:
+        - 模块说明: embedded/module.md
+        - 场景效果预览: embedded/effect.md
+      - 嵌入式流程:
+        - 流程概述: embedded/process.md
+        - 端口说明: embedded/port.md
+        - 嵌入式 APP 创建: embedded/app.md
+        - 跨域说明: embedded/cross.md
+        - ID 获取: embedded/id.md
+      - 嵌入式示例:
+        - 基础设置说明: embedded/setting.md
+        - DIV 嵌入: embedded/div.md
+        - Iframe 嵌入: embedded/iframe.md
+        - 外部参数-嵌入式数据交互: embedded/interaction.md
+      - 嵌入式常见问题: embedded/question.md
+      - 嵌入式附加功能:
+        - 单点登录: embedded/sso.md
+        - 模拟登录: embedded/simulated.md
+
 
 markdown_extensions:
   - admonition
