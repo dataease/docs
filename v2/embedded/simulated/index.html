@@ -4652,9 +4652,10 @@
   <h1>模拟登录</h1>
 
 <div class="admonition abstract">
+<p>本文假设需要将DataEase嵌入第三方业务系统(简称A系统)。</p>
+<p>有时受限于实际情况，比如企业内部未搭建 SS0 系统，这时可以使用模拟登录方式实现嵌入式用户登录集成</p>
 <p>模拟登录指：A 系统后台请求 DataEase 的登录接口，将登录成功的 Token 写入 LocalStorage 中，来模拟用户登录的过程，省去用户自己输入密码登录的过程。</p>
 <p>模拟登录又分同域和跨域两种方式，文章中会详细介绍。</p>
-<p>但有时受限于实际情况，比如没有搭建 SSO 系统，这时则可使用模拟登录方式，需要做一些开发，同样可以实现集成。</p>
 </div>
 <h2 id="1">1 模拟登录方案介绍<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
@@ -4664,7 +4665,7 @@
 </div>
 <h2 id="2">2 同域模拟登陆<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <h3 id="21">2.1 流程描述<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
-<p><img alt="5.2模拟登录（1）.png" src="../../img/embedded/5.2%E6%A8%A1%E6%8B%9F%E7%99%BB%E5%BD%95%EF%BC%881%EF%BC%89.png" width="900px" /></p>
+<p><img alt="同域.pic.jpg" src="../../img/embedded/%E5%90%8C%E5%9F%9F.pic.jpg" width="900px" /></p>
 <div class="admonition abstract">
 <ol>
 <li>用户登录 A 系统</li>
@@ -4684,7 +4685,7 @@
 <img alt="5.2模拟登录（3）.png" src="../../img/embedded/5.2%E6%A8%A1%E6%8B%9F%E7%99%BB%E5%BD%95%EF%BC%883%EF%BC%89.png" width="900px" /></p>
 <h2 id="3">3  跨域模拟登陆<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 <h3 id="31">3.1  流程描述<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
-<p><img alt="5.2模拟登录（4）.png" src="../../img/embedded/5.2%E6%A8%A1%E6%8B%9F%E7%99%BB%E5%BD%95%EF%BC%884%EF%BC%89.png" width="900px" /></p>
+<p><img alt="跨域.pic.jpg" src="../../img/embedded/%E8%B7%A8%E5%9F%9F.pic.jpg" width="900px" /></p>
 <div class="admonition abstract">
 <ol>
 <li>用户登录 A 系统</li>
