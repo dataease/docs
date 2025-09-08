@@ -182,6 +182,7 @@ nav:
       - 嵌入式附加功能:
         - 单点登录: embedded/sso.md
         - 模拟登录: embedded/simulated.md
+  - 智能问数: https://dataease.cn/sqlbot
 
 
 markdown_extensions:
