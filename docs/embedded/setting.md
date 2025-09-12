@@ -1,9 +1,13 @@
 !!! Abstract ""
-    注意；本文当所使用代码均为嵌入式官方 [demo 代码](https://github.com/dataease/embedded-demo/tree/isv-embedded-demo)。并在此基础上进行代码的修改进行演示。
+    注意：本文档所使用代码均为嵌入式官方 [demo 代码](https://github.com/dataease/embedded-demo/tree/isv-embedded-demo)。并在此基础上进行代码的修改进行演示。
 
 ## 1 嵌入式 Token
 !!! Abstract ""
     采用 JWT 认证 ，官方嵌入式代码生成 token 方式如下，需要获取 DataEase 嵌入式应用的 APP ID、APP Secret，以及 DataEase 中的用户账号。
+
+    - APP ID：嵌入式获取 JWT token 需要填写的 ID。
+
+    - APP Secret ：嵌入式获取 JWT token 需要填写的 Secret。
 
     2.10.0 版本开始，支持设置 token 有效时间。 Token 可根据实际情况使用其它类型语言生成，代码实现方式不唯一。
    
@@ -63,7 +67,7 @@
     **注意：需要将 js 引入到页面的 head 中，保证依赖的正确加载。**
 
     ```
-    ## {domain}js/div_import_0.0.0-dataease.js DataEase 提供好的 js 模版，
+    ## 将下方代码中的 src 地址改为静态 js 的访问地址即可。
     ## 访问地址为 http://ip:9080/js/div_import_0.0.0-dataease.js
     <script crossorigin  type="module" th:src="@{{domain}/js/div_import_0.0.0-dataease.js(domain=${vo.domain})}"></script>
     ```

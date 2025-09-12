@@ -2,7 +2,7 @@
 !!! Abstract ""
     DataEase 支持使用 Iframe 以及 DIV 进行嵌入，两种方法的流程如下。
 
-    **注意：嵌入需要在 DataEase 的配置文件 /opt/dataease2.0/conf/application.yml 里增加 origin-list 配置，并重启服务。详细见常见问题 4.2。**
+    **注意：嵌入需要在 DataEase 的配置文件 /opt/dataease2.0/conf/application.yml 里增加 origin-list 配置，并重启服务。详细见[嵌入式常见问题 2](https://dataease.io/docs/v2/embedded/question/#2-iframe-div)。**
 ### 1.1 DIV 嵌入式流程
 
 !!! Abstract ""

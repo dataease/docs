@@ -3,9 +3,9 @@
 
     使用 postMessage 方式实现 DataEase 和嵌入系统的页面信息交互。
 
-    （postMessage 是挂载在 window下的一个方法，用于不同域名下的两个页面的信息交互，父子页面通过  postMessage（）发送消息，再通过监听 message 事件接收信息。）Iframe 嵌入必须在监听触发后，再初始化图表。
+    （postMessage 是挂载在 window下的一个方法，用于不同域名下的两个页面的信息交互，父子页面通过  postMessage() 发送消息，再通过监听 message 事件接收信息。）Iframe 嵌入必须在监听触发后，再初始化图表。
 
-    **注意：嵌入需要在 DataEase 的配置文件 /opt/dataease2.0/conf/application.yml 里增加 origin-list 配置，并重启服务。详细见常见问题 4.2。**
+    **注意：嵌入需要在 DataEase 的配置文件 /opt/dataease2.0/conf/application.yml 里增加 origin-list 配置，并重启服务。详细见[嵌入式常见问题 2](https://dataease.io/docs/v2/embedded/question/#2-iframe-div)。**
 
 ##  1 仪表板嵌入
 !!! Abstract ""
@@ -103,9 +103,9 @@
 !!! Abstract ""
     第三方系统向 DataEase 传参，依赖于 DataEase 仪表板/数据大屏外部参数实现。
 
-    1.初始化看板时，由第三方系统向 DataEase 传参过滤数据。
-    a) 公共链接拼接 attachParams 过滤数据。
+    1.初始化看板时，由第三方系统向 DataEase 传参过滤数据。</br>
 
+    a) 公共链接拼接 attachParams 过滤数据。
     ```
     #
     一、公共链接嵌入（数据不敏感或内网环境可用，使用 ticket 的方式会较为安全）。
@@ -380,7 +380,7 @@
         ],
         "quotaList": [ ]}
     ```
-
+    示例代码：
     ```
     #
     二、DataEase 嵌入式推荐的 iframe 嵌入
@@ -517,7 +517,7 @@
 
 ##  3 数据大屏嵌入
 !!! Abstract ""
-    数据大屏嵌入支持嵌入整个数据大屏，用户可以浏览嵌入的数据大屏，数据大屏嵌入还支持外部参数设置。
+    可以将数据大屏嵌入到第三方业务系统中，用户通过第三方系统访问数据大屏，同时支持外部参数过滤设置。 
 
     ```
     #
@@ -603,11 +603,14 @@
     ```
 ### 3.1 数据大屏双向参数传递
 !!! Abstract ""
-    参考 Ifram 仪表板双向参数传递以及 Iframe 数据大屏嵌入，将相应 busiFlag 修改对应。
+    参考 [1.1 仪表板双向参数传递](https://dataease.io/docs/v2/embedded/iframe/#11)以及 [3 数据大屏嵌入](https://dataease.io/docs/v2/embedded/iframe/#3)。以及 Iframe 数据大屏嵌入，将相应 busiFlag 修改对应。
+    
+    - 仪表板图表 busiFlag: dashboard
+    - 数据大屏图表 busiFlag: dataV
 
 ##  4 数据大屏设计器嵌入
 !!! Abstract ""
-    数据大屏设计器嵌入支持嵌入整个数据大屏设计器界面，用户不仅可以浏览嵌入的数据大屏，还可以对其进行编辑：
+    支持嵌入整个数据大屏设计器界面，用户不仅可以浏览嵌入的数据大屏，还可以对其进行编辑：
 
     ```
     #
@@ -828,7 +831,7 @@
 
 ### 7.1 仪表板模块
 !!! Abstract ""
-    嵌入整个仪表板模块后，可以实现对仪表板模块的整体使用，包括新建、编辑和删除仪表板：
+    嵌入整个仪表板模块后，可以实现对仪表板模块的整体使用，包括新建、编辑和删除仪表板。
 
     ```
     #
