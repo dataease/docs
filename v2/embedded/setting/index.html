@@ -4544,11 +4544,19 @@
   <h1>基础设置说明</h1>
 
 <div class="admonition abstract">
-<p>注意；本文当所使用代码均为嵌入式官方 <a href="https://github.com/dataease/embedded-demo/tree/isv-embedded-demo">demo 代码</a>。并在此基础上进行代码的修改进行演示。</p>
+<p>注意：本文档所使用代码均为嵌入式官方 <a href="https://github.com/dataease/embedded-demo/tree/isv-embedded-demo">demo 代码</a>。并在此基础上进行代码的修改进行演示。</p>
 </div>
 <h2 id="1-token">1 嵌入式 Token<a class="headerlink" href="#1-token" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <p>采用 JWT 认证 ，官方嵌入式代码生成 token 方式如下，需要获取 DataEase 嵌入式应用的 APP ID、APP Secret，以及 DataEase 中的用户账号。</p>
+<ul>
+<li>
+<p>APP ID：嵌入式获取 JWT token 需要填写的 ID。</p>
+</li>
+<li>
+<p>APP Secret ：嵌入式获取 JWT token 需要填写的 Secret。</p>
+</li>
+</ul>
 <p>2.10.0 版本开始，支持设置 token 有效时间。 Token 可根据实际情况使用其它类型语言生成，代码实现方式不唯一。</p>
 <div class="highlight"><pre><span></span><code>@RestController
 public class IndexController {
@@ -4602,7 +4610,7 @@ public class IndexController {
 <p>当使用 DIV 嵌入时，需引入 DataEase 提供内置的 js 模块，如下 。</p>
 <p>引入 js 后，即可使用 js 模块提供好的类及方法完成 DIV 的嵌入。</p>
 <p><strong>注意：需要将 js 引入到页面的 head 中，保证依赖的正确加载。</strong></p>
-<div class="highlight"><pre><span></span><code>## {domain}js/div_import_0.0.0-dataease.js DataEase 提供好的 js 模版，
+<div class="highlight"><pre><span></span><code>## 将下方代码中的 src 地址改为静态 js 的访问地址即可。
 ## 访问地址为 http://ip:9080/js/div_import_0.0.0-dataease.js
 &lt;script crossorigin  type=&quot;module&quot; th:src=&quot;@{{domain}/js/div_import_0.0.0-dataease.js(domain=${vo.domain})}&quot;&gt;&lt;/script&gt;
 </code></pre></div>
