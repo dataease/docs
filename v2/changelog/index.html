@@ -522,6 +522,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v21013" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.10.13
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v21012" class="md-nav__link">
     <span class="md-ellipsis">
       v2.10.12
@@ -4768,6 +4777,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v21013" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.10.13
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v21012" class="md-nav__link">
     <span class="md-ellipsis">
       v2.10.12
@@ -5037,6 +5055,86 @@ Bug 修复的小版本。<br />
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v21013">v2.10.13<a class="headerlink" href="#v21013" title="Permanent link">&para;</a></h3>
+<p>2025年9月12日</p>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>eat(智能问数): 支持嵌入 SQLBot 实现 AI 智能问数</li>
+<li>feat(仪表板、数据大屏): 通用配色增加斑马纹配色</li>
+<li>feat(查询组件): 日期查询组件增加快捷选项</li>
+<li>feat(系统设置): 系统变量值支持设置别名 #16713</li>
+<li>feat(X-Pack): [数据填报]内置数据源增加支持数据填报功能配置</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>refactor(图表): 优化移动端跳转问题</li>
+<li>refactor(数据大屏、仪表板): 资源发布时，清理无用数据 #16749</li>
+<li>refactor(X-Pack): [定时报告]页面增加额外等待时间设置</li>
+<li>refactor(X-Pack): [用户管理]创建用户 API 接口返回数据增加用户 ID #16825</li>
+<li>refactor(X-Pack): [同步管理]使用 Quartz 统一管理任务调度</li>
+<li>refactor(X-Pack): [同步管理]对 Elasticsearch 数据源时间类型字段优化，默认映射为 Doris 的 String 类型</li>
+<li>refactor(X-Pack): [同步管理]优化任务状态刷新机制</li>
+<li>refactor(X-Pack): [同步管理]优化数据同步结果处理</li>
+<li>refactor(X-Pack): [同步管理]优化同步日志提示信息</li>
+<li>refactor(X-Pack): [同步管理]优化同步配置参数传递逻辑</li>
+<li>refactor: 更新移动端样式</li>
+<li>refactor: 更新 APISIX 镜像版本到 3.13.0-debian</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>fix(图表): 修复放大 Tab 中图表并执行导出图片操作后，轮播提示显示异常的问题</li>
+<li>fix(图表): 修复明细表合并单元格后，维度存在空值时导出失败的问题 #16777</li>
+<li>fix(图表): 修复明细表基础样式勾选“自动换行”后，表头会出现部分信息不显示的问题 #16804</li>
+<li>fix(图表): 修复明细表字段全都是维度时，导出的 Excel 文件中单元格合并失效的问题</li>
+<li>fix(图表): 修复水波图标签被裁剪的问题 #16798 </li>
+<li>fix(图表): 修复查询组件首选项会影响跳转条件的问题</li>
+<li>fix(图表): 修复透视表列维度为空时，带格式导出会失败的问题</li>
+<li>fix(图表): 开启轮播提示的图表启用缩略轴时，禁用轮播提示</li>
+<li>fix(图表): 修复透视表自定义汇总时，通过搜索添加字段会报错的问题</li>
+<li>fix(图表): 修复地图中福州与福清、平潭的连线出现多余连接线的问题 #16877</li>
+<li>fix(图表): 字段自定义排序去除空值 #16307</li>
+<li>fix(图表): 修复明细表隐藏列后，导出数据出现错乱的问题 #16785</li>
+<li>fix(查询组件): 修复设置默认值+必填项+隐藏查询按钮时，输入任意值回车后均会重置为默认值的问题 #16750</li>
+<li>fix(查询组件): 修复手动输入型选项值在查看时，默认值显示为未勾选状态的问题 #16709</li>
+<li>fix(查询组件): 修复开启首选项时未关闭查询按钮，导致查询按钮失效的问题 #16894</li>
+<li>fix(查询组件): 修复文本搜索需两次回车才能返回结果，首次触发显示"暂无数据"的问题</li>
+<li>fix(查询组件): 修复时间范围组件默认值提示"超出日期筛选范围"的问题 #16914</li>
+<li>fix(查询组件): 修复行权限与过滤组件"首项"默认值同时使用时，导致过滤功能失效的问题</li>
+<li>fix(仪表板): 修复手动输入型查询组件出现样式错位的问题</li>
+<li>fix(仪表板): 修复仪表板缩放模式切换为"按组件比例缩放"后，保存发布再次查看不生效问题 #16885</li>
+<li>fix(数据大屏): 修复 Tab 及内部组件的右键菜单定位偏移问题</li>
+<li>fix(仪表板、数据大屏): 修复设置图表背景图时出现多余滚动条问题</li>
+<li>fix(数据源): 修复调整浏览器窗口大小时，Excel 字段选择器的选中状态被隐藏的问题</li>
+<li>fix(数据源): 修复无数据源时点击创建数据集，页面卡死且控制台报错的问题 #16831</li>
+<li>fix(数据源): 修复飞书渠道查看更新记录提示异常</li>
+<li>fix(数据源): 修复 SQL Server 数据过滤异常</li>
+<li>fix(数据源): 修复 Calcite 转 SQL Server 时 CONCAT 函数异常 #16860</li>
+<li>fix(数据源): 修复 SQL Server 下拉树组件报错问题</li>
+<li>fix(数据集): 修复字段表达式引用新建计算参数失效的问题</li>
+<li>fix(数据集): 修复自定义 SQL 未保存直接关闭时缺少提示信息的问题</li>
+<li>fix(系统设置): 修复三方嵌入配置仅保存不验证时，错误触发应用状态变更的问题</li>
+<li>fix(系统设置): 修复弹窗层级显示异常</li>
+<li>fix(X-Pack): [同步管理]修复 SQL 查询验证错误</li>
+<li>fix(X-Pack): [同步管理]修复 SqlServer 表名含 @ 符号时任务创建失败的问题</li>
+<li>fix(X-Pack): [同步管理]修复下次执行时间计算错乱</li>
+<li>fix(X-Pack): [同步管理]修复数据源异常时同步日志丢失问题</li>
+<li>fix(X-Pack): [同步管理]修复 SqlServer uniqueidentifier 字段导致定时任务创建失败</li>
+<li>fix(X-Pack): [同步管理]修复字段数量过多导致任务创建失败</li>
+<li>fix(X-Pack): 修复权限配置-按用户配置时，用户量过大导致页面卡顿的问题</li>
+<li>fix(X-Pack): 修复移动仪表板后后台缓存未即时刷新的问题</li>
+<li>fix(X-Pack): 修复组织管理中修改名称需刷新浏览器才能生效的问题 #16751</li>
+<li>fix(漏洞): 修复 DB2 LDAP 存在的 SSRF 漏洞</li>
+<li>fix(漏洞): 修复 Impala 数据源 JDBC 攻击漏洞</li>
+<li>fix: 修复模板市场地址提示错误 #16858</li>
+<li>fix: 统一数据大屏与仪表板事件触发规则，编辑状态下禁止触发</li>
+<li>fix: 修复存储单位判断脚本中非 GB 单位的处理问题</li>
+</ul>
+</div>
 <h3 id="v21012">v2.10.12<a class="headerlink" href="#v21012" title="Permanent link">&para;</a></h3>
 <p>2025年8月15日</p>
 <div class="admonition abstract">
