@@ -15,7 +15,7 @@
 2025年9月12日
 !!! Abstract "新增功能 :star2:"
 
-    - eat(智能问数): 支持嵌入 SQLBot 实现 AI 智能问数
+    - feat(智能问数): 支持嵌入 SQLBot 实现 AI 智能问数
     - feat(仪表板、数据大屏): 通用配色增加斑马纹配色
     - feat(查询组件): 日期查询组件增加快捷选项
     - feat(系统设置): 系统变量值支持设置别名 #16713
@@ -34,7 +34,6 @@
     - refactor(X-Pack): [同步管理]优化同步日志提示信息
     - refactor(X-Pack): [同步管理]优化同步配置参数传递逻辑
     - refactor: 更新移动端样式
-    - refactor: 更新 APISIX 镜像版本到 3.13.0-debian
 
 !!! Abstract "问题修复 :palm_tree:"
 
