@@ -1,8 +1,7 @@
 site_name: 'DataEase 文档'
 site_url: 'https://dataease.io/docs'
-site_description: 'Document'
-site_author: 'Dataease'
-google_analytics: ['UA-147297392-11', 'dataease.io']
+site_description: 'DataEase 在线文档'
+site_author: '飞致云'
 
 repo_name: 'DataEase'
 repo_url: 'https://github.com/dataease/dataease'
@@ -82,12 +81,6 @@ nav:
           - 在线升级: installation/online_ha_upgrade.md
           - 离线升级: installation/offline_ha_upgrade.md
           - 备份还原: installation/backup_faq.md
-      - 源码部署（前后端分离）:
-          - 工具准备: dev_manual/dev_deployment/tool.md
-          - 环境准备: dev_manual/dev_deployment/environment.md
-          - 源码准备: dev_manual/dev_deployment/code.md
-          - 编译运行: dev_manual/dev_deployment/compile.md
-          - 注意事项: dev_manual/dev_deployment/attention.md
       - 其他部署方式: installation/other_installation.md
       - 命令行工具: installation/cli.md
       - 备份还原: faq/backup_faq.md
@@ -257,7 +250,7 @@ extra:
     provider: mike
   analytics:
     provider: google
-    property: UA-147297392-11
+    property: G-9362Z0KNSP
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/dataease
