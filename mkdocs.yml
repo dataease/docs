@@ -1,8 +1,7 @@
 site_name: 'DataEase 文档'
 site_url: 'https://dataease.io/docs'
-site_description: 'Document'
-site_author: 'Dataease'
-google_analytics: ['UA-147297392-11', 'dataease.io']
+site_description: 'DataEase 在线文档'
+site_author: '飞致云'
 
 repo_name: 'DataEase'
 repo_url: 'https://github.com/dataease/dataease'
@@ -234,7 +233,7 @@ extra:
     provider: mike
   analytics:
     provider: google
-    property: UA-147297392-11
+    property: G-9362Z0KNSP
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/dataease
