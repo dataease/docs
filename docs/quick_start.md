@@ -1,21 +1,14 @@
-## 1 快速部署
+## 1 安装 DataEase
 
-!!! Abstract ""
-    按照部署服务器要求准备好部署环境后，可通过 DataEase 安装脚本快速部署。   
-    **部署服务器要求：**
+!!! tip ""
+    - 支持主流 Linux 发行版本（基于 Debian / RedHat，包括国产操作系统）
+    - 推荐使用 [离线安装包方式](installation/offline_INSTL_and_UPG) 来部署 DataEase
 
-    * 操作系统: Ubuntu 22.04 / CentOS 7.6 64 位系统
-    * CPU/内存: 4核8G
-    * 磁盘空间: 200G
-
-    将上传至服务器的安装包解压好，在安装包目录里执行以下脚本进行快速安装：
-    ```
-    /bin/bash install.sh
-    ```
-    DataEase 服务器版是一款 B/S 架构的产品，即浏览器/服务器结构，在服务器安装完成后，客户端通过浏览器访问以下地址，即可开始使用。
-    ```
-    http://服务器 IP 地址：服务运行端口（若没有修改则默认为 8100）
-    使用默认用户名 admin 密码 DataEase@123456 进行登录。
+!!! info "安装成功后，通过浏览器访问登录 DataEase"
+    ```sh
+    地址: http://<DataEase服务器IP地址>:<服务运行端口>
+    用户名: admin
+    密码: DataEase@123456
     ```
 
 ## 2 界面介绍
