@@ -2,7 +2,7 @@
 
 !!! tip ""
     - 支持主流 Linux 发行版本（基于 Debian / RedHat，包括国产操作系统）
-    - 推荐使用 [离线安装包方式](installation/offline_INSTL_and_UPG) 来部署 DataEase
+    - 推荐使用 [离线安装包方式](../installation/offline_INSTL_and_UPG/) 来部署 DataEase
 
 !!! info "安装成功后，通过浏览器访问登录 DataEase"
     ```sh
