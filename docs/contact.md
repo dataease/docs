@@ -10,7 +10,7 @@
 
 ## 3 学习认证
 
-![wechat-official](img/wechat-official2.jpg){ width="156px" }
+![wechat-official](img/学习认证.jpg){ width="156px" }
 
 ## 4 项目地址
 
