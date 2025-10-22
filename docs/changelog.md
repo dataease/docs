@@ -15,7 +15,7 @@
 ### v2.10.14
 2025 年10月20日
 
-!!! Warning "**安全漏洞修复** "
+!!! Warning "**安全漏洞修复（DE - 2025.10.17）** "
 
     - fix(漏洞): 修复H2 RCE漏洞 [(CVE-2025-62420)](https://github.com/dataease/dataease/security/advisories/GHSA-7wcv-j6gc-qc7q)
     - fix(漏洞): 修复 jdbc 绕过漏洞 [(CVE-2025-62419)](https://github.com/dataease/dataease/security/advisories/GHSA-x4x9-mjcf-99r9)
