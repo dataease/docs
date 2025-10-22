@@ -11,6 +11,72 @@
     - v2.1.0 是 v2.0.0 之后的功能版本
 
 ## 2 更新内容
+
+### v2.10.14
+2025 年10月20日
+
+
+??? warning "安全漏洞修复"
+
+    - fix(漏洞): 修复H2 RCE漏洞 [(CVE-2025-62420)](https://github.com/dataease/dataease/security/advisories/GHSA-7wcv-j6gc-qc7q)
+    - fix(漏洞): 修复 jdbc 绕过漏洞 [(CVE-2025-62419)](https://github.com/dataease/dataease/security/advisories/GHSA-x4x9-mjcf-99r9)
+    - fix(漏洞): 修复 XSS 漏洞 [(CVE-2025-62421)](https://github.com/dataease/dataease/security/advisories/GHSA-2wmv-rr3p-pf43)
+    - fix(漏洞): 修复数据集存在 SQL 注入漏洞 [(CVE-2025-62422)](https://github.com/dataease/dataease/security/advisories/GHSA-54m5-xrw4-mv36)
+
+    感谢[腾讯悟空代码安全团队](https://github.com/TencentAISec)，社区用户 [zoiltin](https://github.com/zoiltin)、[wude1988](https://github.com/wude1988)、[httpwwwcom](https://github.com/httpwwwcom) 发现并向 DataEase 开源社区反馈上述漏洞。
+
+
+!!! Abstract "新增功能 :star2:"
+
+    - feat(图表): 组合图副值轴支持设置同环比
+    - feat(图表): 指标卡支持跳转设置，支持携带查询组件的值
+    - feat(查询组件): 筛选时间时，支持通过控件的形式选择日期
+    - feat(查询组件): 文本下拉组件，选项值设置为多选时，也可以设置首选默认值 #17088
+    - feat(查询组件): 时间范围在年月的时候增加年初至本月 #17101
+    - feat(查询组件): 查询条件【选项值数量】的【默认】加个提示 #17091
+    - feat(仪表板): 添加组件内边距模式选择功能
+    - feat(数据集): 筛选时间时，支持通过控件的形式选择日期
+    - feat(应用): 应用导入的时候可以选择已有的数据集创建仪表板
+    - feat(X-Pack): 支持 SAML2 认证
+
+!!! Abstract "功能优化 :sunflower:"
+
+    - refactor(图表): 明细表跳转字段支持一个跳转字段自定义携带的跳转维度
+    - refactor(图表): 汇总表支持指标联动
+    - refactor(查询组件): 查询组件去除聚合字段
+    - refactor(仪表板): 仪表板导出增加日志记录
+    - refactor(数据大屏): 修改大屏最小尺寸 #17097
+    - refactor(数据大屏): 优化大屏联动图标显示方式
+    - refactor(仪表板、数据大屏): 空值不参与跳转
+    - refactor(仪表板、数据大屏): 优化静态图片上传，防止伪装文件上传到服务器
+    - refactor(仪表板、数据大屏): 优化携带查询组件跳转时，目标仪表板内含有 key-value 配置的查询组件时，防止出现 value 未匹配的情况
+    - refactor(数据源): 添加数据源校验失败日志
+    - refactor(数据源): 调整API数据源的查询超时时间
+    - refactor(定时报告): 优化定时报告查询组件默认值设置
+    - refactor(X-Pack): 扩大 OIDC 中的 Scope 字段长度
+    - refactor: 前端缓存清除机制优化
+
+!!! Abstract "问题修复 :palm_tree:"
+
+    - fix(图表): 去除地图地名映射中名称为空的选项
+    - fix(图表): 修复明细表在隐藏某一列后，导出数据出现错乱的问题 #16785
+    - fix(查询组件): 时间范围的动态时间自定义会出现 默认值超出日期筛选范围内
+    - fix(查询组件): 修复移动端查询组件异常 #17074
+    - fix(仪表板): 修复开启首选项后禁用默认值，但规则中依然显示的问题
+    - fix(仪表板、数据大屏): 修复设置多组级联，搭配外部参数使用传入多参数，只有一组生效的问题 #17035
+    - fix(仪表板、数据大屏): 修复跳转关联多个字段，部分字段存在空值时跳转失败问题
+    - fix(仪表板、数据大屏): 修复部分联动报错问题
+    - fix(同步管理): 优化任务的启动停止逻辑
+    - fix(工作台): 修复名称过长导致超出显示范围的问题
+    - fix(数据集): 修复导出条件中无法删除条件的问题
+    - fix(数据源): 修复 API 数据源提取字段时，字段名称显示不完整的问题
+    - fix(数据源): 修复对接 SQLBot 列权限全字段禁用无效的问题
+    - fix(数据源): 修复H2数据源报错的问题
+    - fix(数据源): 修复数据源国际化问题
+    - fix(定时报告): 修复定时报告开启首选项定时报告的默认参数赋值问题
+    - fix(X-Pack): 修复权限配置-按用户配置资源，在数据量大的场景下页面卡死的问题
+    - fix: 修复安装时磁盘大小包含小数导致安装脚本报错问题
+
 ### v2.10.13
 2025年9月12日
 !!! Abstract "新增功能 :star2:"
