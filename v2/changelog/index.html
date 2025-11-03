@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
     
     
       
@@ -520,6 +520,15 @@
   
     <nav class="md-nav" aria-label="2 更新内容">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v21015" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.10.15
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#v21014" class="md-nav__link">
@@ -4811,6 +4820,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v21015" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.10.15
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v21014" class="md-nav__link">
     <span class="md-ellipsis">
       v2.10.14
@@ -5098,6 +5116,52 @@ Bug 修复的小版本。<br />
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v21015">v2.10.15<a class="headerlink" href="#v21015" title="Permanent link">&para;</a></h3>
+<p>2025 年11月1日</p>
+<div class="admonition warning">
+<p class="admonition-title"><strong>安全漏洞修复（DE - 2025.10.17）</strong> </p>
+<ul>
+<li>fix(漏洞): 修复 Oracle JNDI 注入漏洞 <a href="https://github.com/dataease/dataease/security/advisories/GHSA-q754-4pc2-wjqw">(CVE-2025-64164)</a></li>
+<li>fix(漏洞): 修复 DB2 SSRF 漏洞 <a href="https://github.com/dataease/dataease/security/advisories/GHSA-8397-v66p-539m">(CVE-2025-64163)</a></li>
+</ul>
+<p>感谢用户<a href="https://github.com/ez-lbz">ez-lbz</a>发现并向 DataEase 开源社区反馈上述漏洞。</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>feat(图表): 堆叠条形图标签支持显示总计 #16795</li>
+<li>feat(X-Pack): [数据填报] 增加定时任务清理操作日志</li>
+<li>feat(X-Pack): [数据填报] 用户追加填报页面支持批量添加多条数据</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>refactor(图表): 优化明细表合并单元格的显示效果，不显示被覆盖单元格的文字和背景颜色</li>
+<li>refactor(数据大屏): 运行大屏移动端访问时使用事件配置</li>
+<li>refactor(X-Pack): 默认登录方式支持设置为 Saml2</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>fix(仪表板): 修复某些情况下文件夹需要多次移动的问题</li>
+<li>fix(仪表板、数据大屏): 修复边框背景圆角历史模板适配问题</li>
+<li>fix(仪表板、数据大屏): 修复边框背景圆角编辑预览不一致的问题</li>
+<li>fix(仪表板、数据大屏): 修复部分模板标题错位的问题</li>
+<li>fix(图表): 修复 Safari 浏览器导出图表为 PNG 图片时报错的问题 #17210</li>
+<li>fix(图表): 修复折线图在所有指标值均为 1 的情况下无法渲染的问题 #17205</li>
+<li>fix(图表): 修复指标卡弹窗区域事件不生效的问题</li>
+<li>fix(图表): 图表导出图片功能兼容 Safari 浏览器</li>
+<li>fix(图表): 修复表格条件样式设置 [小于等于] 或 [大于等于] 0 时,空数据也会被标记样式的问题 #17191</li>
+<li>fix(嵌入式): 修复div嵌入报错的问题</li>
+<li>fix(数据大屏): 修复批量复制粘贴时聚焦组件多一个的问题</li>
+<li>fix(数据大屏): 修复数据大屏指标卡事件跳转相关问题</li>
+<li>fix(查询组件): 修复设置首项导致无法保存的问题</li>
+<li>fix(X-Pack): 同步管理中添加或修改数据源时，用户名称为必填项</li>
+<li>fix(X-Pack): 修复第三方平台用户解绑后无法登录的问题</li>
+</ul>
+</div>
 <h3 id="v21014">v2.10.14<a class="headerlink" href="#v21014" title="Permanent link">&para;</a></h3>
 <p>2025 年10月20日</p>
 <div class="admonition warning">
