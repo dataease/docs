@@ -17,8 +17,8 @@
 
 !!! Warning "**安全漏洞修复（DE - 2025.10.17）** "
 
-    - fix(漏洞): 修复Oracle JNDI注入漏洞 [(CVE-2025-64164)](https://github.com/dataease/dataease/security/advisories/GHSA-q754-4pc2-wjqw)
-    - fix(漏洞): 修复DB2 SSRF漏洞 [(CVE-2025-64163)](https://github.com/dataease/dataease/security/advisories/GHSA-8397-v66p-539m)
+    - fix(漏洞): 修复 Oracle JNDI 注入漏洞 [(CVE-2025-64164)](https://github.com/dataease/dataease/security/advisories/GHSA-q754-4pc2-wjqw)
+    - fix(漏洞): 修复 DB2 SSRF 漏洞 [(CVE-2025-64163)](https://github.com/dataease/dataease/security/advisories/GHSA-8397-v66p-539m)
 
     感谢用户[ez-lbz](https://github.com/ez-lbz)发现并向 DataEase 开源社区反馈上述漏洞。
 
@@ -39,6 +39,18 @@
     - fix(仪表板): 修复某些情况下文件夹需要多次移动的问题
     - fix(仪表板、数据大屏): 修复边框背景圆角历史模板适配问题
     - fix(仪表板、数据大屏): 修复边框背景圆角编辑预览不一致的问题
+    - fix(仪表板、数据大屏): 修复部分模板标题错位的问题
+    - fix(图表): 修复 Safari 浏览器导出图表为 PNG 图片时报错的问题 #17210
+    - fix(图表): 修复折线图在所有指标值均为 1 的情况下无法渲染的问题 #17205
+    - fix(图表): 修复指标卡弹窗区域事件不生效的问题
+    - fix(图表): 图表导出图片功能兼容 Safari 浏览器
+    - fix(图表): 修复表格条件样式设置 [小于等于] 或 [大于等于] 0 时,空数据也会被标记样式的问题 #17191
+    - fix(嵌入式): 修复div嵌入报错的问题
+    - fix(数据大屏): 修复批量复制粘贴时聚焦组件多一个的问题
+    - fix(数据大屏): 修复数据大屏指标卡事件跳转相关问题
+    - fix(查询组件): 修复设置首项导致无法保存的问题
+    - fix(X-Pack): 同步管理中添加或修改数据源时，用户名称为必填项
+    - fix(X-Pack): 修复第三方平台用户解绑后无法登录的问题
 
 ### v2.10.14
 2025 年10月20日
