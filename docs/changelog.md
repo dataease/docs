@@ -12,6 +12,34 @@
 
 ## 2 更新内容
 
+### v2.10.15
+2025 年11月1日
+
+!!! Warning "**安全漏洞修复（DE - 2025.10.17）** "
+
+    - fix(漏洞): 修复Oracle JNDI注入漏洞 [(CVE-2025-64164)](https://github.com/dataease/dataease/security/advisories/GHSA-q754-4pc2-wjqw)
+    - fix(漏洞): 修复DB2 SSRF漏洞 [(CVE-2025-64163)](https://github.com/dataease/dataease/security/advisories/GHSA-8397-v66p-539m)
+
+    感谢用户[ez-lbz](https://github.com/ez-lbz)发现并向 DataEase 开源社区反馈上述漏洞。
+
+!!! Abstract "新增功能 :star2:"
+
+    - feat(图表): 堆叠条形图标签支持显示总计 #16795
+    - feat(X-Pack): [数据填报] 增加定时任务清理操作日志
+    - feat(X-Pack): [数据填报] 用户追加填报页面支持批量添加多条数据
+
+!!! Abstract "功能优化 :sunflower:"
+
+    - refactor(图表): 优化明细表合并单元格的显示效果，不显示被覆盖单元格的文字和背景颜色
+    - refactor(数据大屏): 运行大屏移动端访问时使用事件配置
+    - refactor(X-Pack): 默认登录方式支持设置为 Saml2
+
+!!! Abstract "问题修复 :palm_tree:"
+
+    - fix(仪表板): 修复某些情况下文件夹需要多次移动的问题
+    - fix(仪表板、数据大屏): 修复边框背景圆角历史模板适配问题
+    - fix(仪表板、数据大屏): 修复边框背景圆角编辑预览不一致的问题
+
 ### v2.10.14
 2025 年10月20日
 
