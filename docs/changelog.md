@@ -15,7 +15,7 @@
 ### v2.10.15
 2025 年11月1日
 
-!!! Warning "**安全漏洞修复（DE - 2025.10.17）** "
+!!! Warning "**安全漏洞修复（DE - 2025.10.17）** " 
 
     - fix(漏洞): 修复 Oracle JNDI 注入漏洞 [(CVE-2025-64164)](https://github.com/dataease/dataease/security/advisories/GHSA-q754-4pc2-wjqw)
     - fix(漏洞): 修复 DB2 SSRF 漏洞 [(CVE-2025-64163)](https://github.com/dataease/dataease/security/advisories/GHSA-8397-v66p-539m)
