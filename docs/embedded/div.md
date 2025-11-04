@@ -38,7 +38,7 @@
     import {getToken} from "@/api/common";
     # 仪表板 ID
     let dvId = "";
-    # DataEase 企业版访问地址
+    # 如：DataEase 企业版访问地址：https://embedded-bi-inner.dataease.cn/
     let baseUrl = "";
 
     getToken().then(result => {
