@@ -83,14 +83,42 @@
 !!! Abstract ""
     执行命令安装 nodejs。
     ```
-    # 下载并安装 nodejs
-    wget https://nodejs.org/dist/v16.15.0/node-v16.15.0-linux-x64.tar.xz
-    tar xvf node-v16.15.0-linux-x64.tar.xz
-    mv node-v16.15.0-linux-x64 /opt
-    
-    echo "export PATH=\$PATH:/opt/node-v16.15.0-linux-x64/bin" >> ~/.bashrc
-    
+    #下载并安装 nodejs
+    wget https://nodejs.org/dist/latest-v18.x/node-v18.20.8-linux-x64.tar.gz
+    tar zxvf node-v18.20.8-linux-x64.tar.gz
+    mv node-v18.20.8-linux-x64 /opt
+    echo "export PATH=\$PATH:/opt/node-v18.20.8-linux-x64/bin" >> ~/.bashrc
     source ~/.bashrc
+    
+    node --version
+    v18.20.8
+
+    npm version
+    {
+        npm: '10.8.2',
+        node: '18.20.8',
+        acorn: '8.14.0',
+        ada: '2.8.0',
+        ares: '1.29.0',
+        base64: '0.5.2',
+        brotli: '1.1.0',
+        cjs_module_lexer: '1.2.2',
+        cldr: '44.1',
+        icu: '74.2',
+        llhttp: '6.1.1',
+        modules: '108',
+        napi: '9',
+        nghttp2: '1.61.0',
+        openssl: '3.0.16',
+        simdutf: '5.6.4',
+        tz: '2024a',
+        undici: '5.29.0',
+        unicode: '15.1',
+        uv: '1.44.2',
+        uvwasi: '0.0.19',
+        v8: '10.2.154.26-node.39',
+        zlib: '1.3.0.1-motley'
+    }
     ```
 !!! Abstract ""
     验证 nodejs。
