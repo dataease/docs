@@ -5525,12 +5525,12 @@
 <div class="admonition abstract">
 <p><strong>SQL 数据集支持参数传递，如下图所示。</strong></p>
 <ul>
-<li>在 SQL 数据集中编写带变量的 SQL 语句，变量定义格式为 ${xxx}，其中 xxx 为变量名；  </li>
+<li>在 SQL 数据集中编写带变量的 SQL 语句，变量定义格式为 $DE_PARAM{ field = '$[xxx]' }，其中 xxx 为变量名；  </li>
 <li>在右上角【参数设置】里对变量进行相关设置，如变量类型、生效模式、默认值（非必填），此处变量为系统根据 SQL 语句自动识别的，例如 province 会被自动带出来；</li>
 <li>在仪表板的过滤组件中（文本下拉和数字下拉组件）勾选【参数选项】，并将下拉字段与 SQL 数据集中的变量关联，如下示例以 MySQL 数据库 SQL 语法为例，不同数据库请根据实际情况调整。</li>
 </ul>
 </div>
-<p><img alt="SQL填写参数" src="../../img/dataset_configuration/SQL填写参数.png" width="900px" /></p>
+<p><img alt="SQL填写参数2" src="../../img/dataset_configuration/SQL填写参数2.png" width="900px" /></p>
 <div class="admonition abstract">
 <p>编写带变量的 SQL 语句后，系统默认将参数类型设置为文本，根据需要可在右上角【参数设置】里对变量进行相关设置，示例如：<br />
 若该变量为时间类型，请手动调整该参数类型的时间类型及时间格式。</p>
