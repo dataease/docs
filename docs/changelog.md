@@ -17,9 +17,9 @@
 
 !!! Warning "**安全漏洞修复（DE - 2025.11.20）** "
 
-    - fix(漏洞): 修复 DataEase DB2 JNDI 注入漏洞 (CVE-2025-64428)
+    - fix(漏洞): 修复 DataEase DB2 JNDI 注入漏洞 [(CVE-2025-64428)](https://github.com/dataease/dataease/security/advisories/GHSA-88ph-3236-2m2h)
 
-    感谢社区用户 ez-lbz 发现并向 DataEase 开源社区反馈上述漏洞。
+    感谢社区用户 [ez-lbz](https://github.com/ez-lbz) 发现并向 DataEase 开源社区反馈上述漏洞。
 
 !!! Abstract "新增功能 :star2:"
 
