@@ -557,6 +557,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v21017" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.10.17
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v21016" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5708,6 +5719,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v21017" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.10.17
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v21016" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6074,6 +6096,48 @@ Bug 修复的小版本。<br />
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v21017">v2.10.17<a class="headerlink" href="#v21017" title="Permanent link">&para;</a></h3>
+<p>2025 年11月20日</p>
+<div class="admonition warning">
+<p class="admonition-title"><strong>安全漏洞修复（DE - 2025.11.20）</strong> </p>
+<ul>
+<li>fix(漏洞): 修复 DataEase DB2 JNDI 注入漏洞 <a href="https://github.com/dataease/dataease/security/advisories/GHSA-88ph-3236-2m2h">(CVE-2025-64428)</a></li>
+</ul>
+<p>感谢社区用户 <a href="https://github.com/ez-lbz">ez-lbz</a> 发现并向 DataEase 开源社区反馈上述漏洞。</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>feat(图表): 柱状图维度字段支持设置长度限制 #16566</li>
+<li>feat(图表): 表格条件样式支持指标和日期字段的空值判断 #17193</li>
+<li>feat(查询组件): 文本下拉组件支持平铺展示风格 #13146</li>
+<li>feat(数据源): API 数据源支持添加时间戳参数 #17244</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>refactor(查询组件): 优化查询组件下拉框的加载速度</li>
+<li>refactor(缓存): 优化集群环境中 Redis 缓存中间件的 KEYS 操作使用</li>
+<li>refactor(图表): 优化组合图中折线图的标签显示效果</li>
+<li>refactor(图表): 调整图表背景配置模式</li>
+<li>refactor(数据大屏/仪表板): 更换图片导出组件，优化导出逻辑</li>
+<li>refactor(数据大屏): 调整数据大屏 Tab 组件的设置样式</li>
+<li>refactor(X-Pack): 优化同步管理任务超时时间与失败重试次数的前端设置</li>
+<li>refactor(X-Pack): 操作日志支持记录定时报告的变更 #17153</li>
+<li>refactor(X-Pack): 移动端打开预览链接时正确跳转到资源页面</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>fix(仪表板): 修复配置图表时字段无法拖拽至目标位置的问题 #17406</li>
+<li>fix(仪表板): 修复嵌入式场景下复制仪表板报无权限错误的问题</li>
+<li>fix(仪表板/数据大屏): 修复部分组件边框圆角设置仅在编辑时生效的问题 #17393</li>
+<li>fix(图表): 修复柱状图开启条件样式后提示无法关闭的问题</li>
+<li>fix(图表): 修复表格字段较多时表头分组设置菜单显示错位的问题 #16791</li>
+</ul>
+</div>
 <h3 id="v21016">v2.10.16<a class="headerlink" href="#v21016" title="Permanent link">&para;</a></h3>
 <p>2025 年11月5日 </p>
 <div class="admonition abstract">
