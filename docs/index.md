@@ -1,33 +1,25 @@
 # 产品介绍
 
 ??? warning "重要通知 | DataEase 漏洞通知及修复方案"
-    **2025 年 5-9 月，有用户反馈发现 DataEase 开源 BI 工具存在安全漏洞，并向 DataEase 开源项目组进行上报。**
+    **尊敬的飞致云 DataEase 企业用户：**
 
-    **漏洞信息：** 
-    <br> [DataEase H2数据源存在远程代码执行漏洞，CVE编号为CVE-2025-49003。](https://github.com/dataease/dataease/security/advisories/GHSA-x97w-69ff-r55q)
-    <br> [DataEase Redshift数据源JDBC参数存在绕过漏洞，CVE编号为CVE-2025-53004。](https://github.com/dataease/dataease/security/advisories/GHSA-mfg2-qr5c-99pp)
-    <br> [DataEase PostgreSQL数据源JDBC参数存在绕过漏洞，CVE编号为CVE-2025-53005。](https://github.com/dataease/dataease/security/advisories/GHSA-99c4-h4fq-r23v)
-    <br> [DataEase PostgreSQL和Redshift数据源JDBC参数存在绕过漏洞，CVE编号为CVE-2025-53006。](https://github.com/dataease/dataease/security/advisories/GHSA-q726-5pr9-x7gm)
-    <br> [DataEase H2 RCE漏洞，CVE编号为CVE-2025-62420。](https://github.com/dataease/dataease/security/advisories/GHSA-7wcv-j6gc-qc7q)
-    <br> [DataEase jdbc绕过漏洞，CVE编号为CVE-2025-62419。](https://github.com/dataease/dataease/security/advisories/GHSA-x4x9-mjcf-99r9)
-    <br> [DataEase XSS漏洞，CVE编号为CVE-2025-62421。](https://github.com/dataease/dataease/security/advisories/GHSA-2wmv-rr3p-pf43)
-    <br> [DataEase 数据集存在SQL注入漏洞，CVE编号为CVE-2025-62422。](https://github.com/dataease/dataease/security/advisories/GHSA-54m5-xrw4-mv36)
+    **您好，近日有用户反馈 DataEase 存在安全漏洞：**
 
-    **安全版本为：** <br> DataEase版本 >= v2.10.14 版本
-    <br> 注：DataEase v2.10.14 版本已经于 2025 年 10 月 17 日 发布。
+     [【CVE-2025-64164】Oracle JNDI 注入漏洞；](https://github.com/dataease/dataease/security/advisories/GHSA-q754-4pc2-wjqw) <br> 
+     [【CVE-2025-64163】DB2 SSRF 漏洞；](https://github.com/dataease/dataease/security/advisories/GHSA-8397-v66p-539m)<br> 
+     [【CVE-2025-64428】DataEase DB2 JNDI 注入漏洞；](https://github.com/dataease/dataease/security/advisories/GHSA-88ph-3236-2m2h) <br> 
+
+    **影响版本：**<br>
+        2 版本：<= v2.10.16 版本。<br>
+         注：v1 版本不受影响。 <br> 
+    **安全版本：** <br> 
+        v2 版本：>= v2.10.17 版本。<br>
+         注: DataEase v2.10.17 版本已于 2025 年 11 月 20 日发布。
 
     **修复方案：**
-    <br>升级 DataEase 软件至上述安全版本。
+    <br>升级至安全版本如下: DataEase 版本 >= v2.10.17 版本
 
-    **特别鸣谢：** <br> 感谢Java-Chains Team和以下社区用户向 DataEase 开源社区及时反馈上述漏洞。
-    <br> CVE-2025-49003：[@Fushuling](https://github.com/Fushuling) [@Lych1e1](https://github.com/Lych1e1)
-    <br> CVE-2025-53004：[@Le1a](https://github.com/Le1a) [@for-A1kaid](https://github.com/for-A1kaid)
-    <br> CVE-2025-53005：[@Le1a](https://github.com/Le1a) [@for-A1kaid](https://github.com/for-A1kaid) [@Z1Tanuki](https://github.com/Z1Tanuki)
-    <br> CVE-2025-53006：[@unam4](https://github.com/unam4)
-    <br> CVE-2025-62420：[@TencentAISec](https://github.com/TencentAISec)
-    <br> CVE-2025-62419：[@zoiltin](https://github.com/zoiltin)
-    <br> CVE-2025-62421：[@wude1988](https://github.com/wude1988)
-    <br> CVE-2025-62422：[@httpwwwcom](https://github.com/httpwwwcom)
+    漏洞详情请查阅 DataEase 20251121 漏洞说明(企业客户版).pdf
 
 !!! Abstract ""
     DataEase 是开源的数据可视化分析工具，帮助用户快速分析数据并洞察业务趋势，从而实现业务的改进与优化。  
