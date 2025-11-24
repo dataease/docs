@@ -4,7 +4,7 @@
     **2025 年 11 月，有用户反馈发现 DataEase 开源 BI 工具存在安全漏洞，并向 DataEase 开源项目组进行上报。**
 
     **漏洞信息：**<br>
-     [【CVE-2025-64164】Oracle JNDI 注入漏洞；](https://github.com/dataease/dataease/security/advisories/GHSA-q754-4pc2-wjqw) <br> 
+     [【CVE-2025-64164】Oracle JNDI 注入漏洞；](https://github.com/dataease/dataease/security/advisories/GHSA-q754-4pc2-wjqw)  <br> 
      [【CVE-2025-64163】DB2 SSRF 漏洞；](https://github.com/dataease/dataease/security/advisories/GHSA-8397-v66p-539m)<br> 
      [【CVE-2025-64428】DataEase DB2 JNDI 注入漏洞；](https://github.com/dataease/dataease/security/advisories/GHSA-88ph-3236-2m2h) <br> 
 
