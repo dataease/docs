@@ -3,8 +3,9 @@
 ??? warning "重要通知 | DataEase 漏洞通知及修复方案"
     **尊敬的飞致云 DataEase 企业用户：**
 
-    **您好，近日有用户反馈 DataEase 存在安全漏洞：**
+    您好，近日有用户反馈 DataEase 存在安全漏洞
 
+    **漏洞信息：**<br>
      [【CVE-2025-64164】Oracle JNDI 注入漏洞；](https://github.com/dataease/dataease/security/advisories/GHSA-q754-4pc2-wjqw) <br> 
      [【CVE-2025-64163】DB2 SSRF 漏洞；](https://github.com/dataease/dataease/security/advisories/GHSA-8397-v66p-539m)<br> 
      [【CVE-2025-64428】DataEase DB2 JNDI 注入漏洞；](https://github.com/dataease/dataease/security/advisories/GHSA-88ph-3236-2m2h) <br> 
