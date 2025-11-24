@@ -1,7 +1,7 @@
 # 产品介绍
 
 ??? warning "重要通知 | DataEase 漏洞通知及修复方案"
-    **2025 年 11 月，有用户反馈发现 DataEase 开源 BI 工具存在安全漏洞，并向 DataEase 开源项目组进行上报**
+    **2025 年 11 月，有用户反馈发现 DataEase 开源 BI 工具存在安全漏洞，并向 DataEase 开源项目组进行上报 **
 
     **漏洞信息：**<br>
      [【CVE-2025-64164】Oracle JNDI 注入漏洞；](https://github.com/dataease/dataease/security/advisories/GHSA-q754-4pc2-wjqw) <br> 
