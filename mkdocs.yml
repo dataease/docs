@@ -63,14 +63,12 @@ nav:
           - v2.1.0: change-v2-1.md
   - 系统架构: system_arch.md
   - 安装部署:
-      - 离线安装: installation/offline_INSTL_and_UPG.md
-      - 离线升级: installation/offline_upgrade.md
-      - 阿里云安装: installation/aliyun_installtion.md
-      - 1Panel 安装: installation/1panel_installation.md
-      - 在线安装: installation/online_installation.md
-      - 源码部署: installation/deployment_installation.md
-      - 命令行工具: installation/cli.md
-      - 备份还原: installation/backup_faq.md
+      - 安装指南: installation/offline_INSTL_and_UPG.md
+      - 升级指南: installation/offline_upgrade.md
+      - 阿里云安装指南: installation/aliyun_installtion.md
+      - 1Panel 安装指南: installation/1panel_installation.md
+      - 命令行工具使用指南: installation/cli.md
+      - 备份还原指南: installation/backup_faq.md
   - 功能手册:
       - 通用功能: user_manual/general.md
       - 工作台: user_manual/homepage.md
@@ -167,6 +165,7 @@ nav:
   - 常见问题:
       - 系统管理: faq/system_management.md
       - 版本对比: faq/enterprise_faq.md
+      - 源码部署: installation/deployment_installation.md      
   - 教学视频: instructional_video.md
   - 联系我们: contact.md
   - 桌面版: desktop.md
@@ -182,7 +181,7 @@ nav:
       - 嵌入式附加功能:
         - 单点登录: embedded/sso.md
         - 模拟登录: embedded/simulated.md
-  - 智能问数: https://dataease.cn/sqlbot
+  - SQLBot 智能问数: https://sqlbot.org/
 
 
 markdown_extensions:
