@@ -144,6 +144,7 @@
 
 ![仪表板_过滤组件](../img/dashboard_generation/2.0查询组件样式.png){ width="900px" }
 
+
 ## 6 外部参数设置
 
 !!! Abstract ""
