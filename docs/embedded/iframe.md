@@ -317,14 +317,20 @@
          window.addEventListener("message" , onMessage , false);
         })
     })
-    
+
     const onMessage = function (event: any){
-        if (event.data?.msgOrigin === "de-fit2cloud") {
+        if (event.data?.eventName === 'de_inner_params') {
+            console.log("内部消息 Iframe DashboardView："+JSON.stringify(event.data))
+            // 可选：弹窗提示（按需保留/删除）
+            // alert('DataEase 内部消息 Iframe DashboardView：'+JSON.stringify(event.data))
+        }else if(event.data?.eventName === 'canvas_init_ready'){
+            console.log("内部消息："+JSON.stringify(event.data))
+        }else if (event.data?.msgOrigin === "de-fit2cloud") {
             const contentWindow = iframe.contentWindow;
             contentWindow.postMessage(params , "*")
         }
     }
-    
+        
     const changeUser = function (command: String) {
         postMsg(command);
     }
