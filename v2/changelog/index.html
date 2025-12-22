@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="../css/lightgallery.min.css">
     <link href="../css/f2c-header.css" rel="stylesheet" type="text/css" />
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -557,6 +557,17 @@
   
     <nav class="md-nav" aria-label="2 更新内容">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v21018" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.10.18
+      
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#v21017" class="md-nav__link">
@@ -5691,6 +5702,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v21018" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.10.18
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v21017" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6068,6 +6090,82 @@ Bug 修复的小版本。<br />
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v21018">v2.10.18<a class="headerlink" href="#v21018" title="Permanent link">&para;</a></h3>
+<p>2025 年12月19日</p>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>feat(仪表板)：通过预览链接访问仪表板时，现同样支持移动端样式适配。</li>
+<li>feat(仪表板、数据大屏)：通用设置中新增对数值格式的统一处理功能。</li>
+<li>feat(图表)：当地图、气泡地图设置为不显示缩放按钮时，将同步禁用地图的缩放与拖拽交互。#17506</li>
+<li>feat(图表)：热力图的指标支持格式设置。#17529</li>
+<li>feat(数据集)：数据集新增排序字段，便于在导出时对数据进行排序。</li>
+<li>feat(组件)：级联组件支持下拉树形态。</li>
+<li>feat(X-Pack): 阈值告警支持设置告警数据 #17526</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>refactor(仪表板、数据大屏)：仪表板与数据大屏的弹窗现支持配色设置。#17503</li>
+<li>refactor(仪表板、数据大屏)：优化复用功能，使其能够适配主题中的数字格式。</li>
+<li>refactor(数据大屏)：数据大屏的跳转弹框现支持配色设置。</li>
+<li>refactor(组件)：优化下拉树组件的查询逻辑。</li>
+<li>refactor(图表)：调整图表属性配置区域的样式。</li>
+<li>refactor(图表): 优化气泡和符号地图速率和环数最小值限制不能等于 0，并且最小值为 0.1</li>
+<li>refactor(X-Pack)：优化同步管理界面，解决任务与数据源列表分页器被批量操作栏遮盖的问题。</li>
+<li>refactor(X-Pack)：操作日志功能扩展，支持记录数据同步任务及相关数据源的操作。#17153</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>fix(查询组件)：修复查询组件绑定图表时，因图表数据请求晚于组件完成而导致数据加载异常的问题。</li>
+<li>fix(查询组件)：修复查询组件切换过快时，偶发缺失获取数据请求的问题。#17498</li>
+<li>fix(仪表板)：修复下拉树创建级联时，当为相同数据集且无关联字段时仍需用户手动设置的问题。</li>
+<li>fix(仪表板)：修复仪表板创建查询条件后，关闭窗口失败并提示前端异常的问题。</li>
+<li>fix(仪表板)：修复新建目录后，所有之前已收起的目录被自动展开的问题。</li>
+<li>fix(仪表板): 修复查询组件的宽度较小时，勾选的图标会偏移在框外的问题 #17563</li>
+<li>fix(图表)：修复创建并执行任务后，无相应记录产生的问题。</li>
+<li>fix(图表)：修复在图表中可重复拖入相同字段的问题。#17576</li>
+<li>fix(图表)：修复地图、气泡地图在隐藏缩放按钮后，双击地图仍会放大的问题。</li>
+<li>fix(图表)：修复子弹图显示数据错误的问题。#17559</li>
+<li>fix(图表)：修复拖拽多个字段到数据列指定位置时，顺序发生颠倒的问题。#17490</li>
+<li>fix(图表)：修复通过插件导出原始明细数据失败的问题。</li>
+<li>fix(图表)：修复当 SQL Server 数据源在IP地址后附加实例名时，任务执行失败的问题。</li>
+<li>fix(图表)：修复瀑布图联动与跳转设置项不显示的问题。#17521</li>
+<li>fix(图表)：修复百分比条形图数据标签不显示的问题。#17509</li>
+<li>fix(图表)：修复表格提示信息消失过快的问题。#15359 #17360</li>
+<li>fix(图表)：修复象限图中点击标签无法触发联动与跳转的问题。</li>
+<li>fix(图表)：修复透视表在列维度为空时，排序优先级失效的问题。#17217</li>
+<li>fix(图表): 修复弹窗跳转后提示还会留在页面的问题 #17513</li>
+<li>fix(图表): 修复滚动提示位置偏移不及时的问题</li>
+<li>fix(图表): 修复透视表树形模式表头条件样式不生效 #17585</li>
+<li>fix(图表): 修复瀑布图提示的格式化错误</li>
+<li>fix(图表): 修复含有地图数据的仪表板以及大屏，导出应用模版和样式模版，snapshop快照中地图缺失的问题 #17051</li>
+<li>fix(图表): 修复堆叠条形图，当堆叠项/维度是数值时，下钻异常的问题</li>
+<li>fix(图表): 修复混合图副值轴和过滤组件日期字段联动时同环比计算错误</li>
+<li>fix(图表): 修复汇总表设置自定义汇总后排序报错 #17594</li>
+<li>fix(嵌入式)：修复嵌入式应用中富文本组件报错的问题。</li>
+<li>fix(数据大屏)：修复开启分享后，修改密码触发校验异常，且关闭窗口后校验状态持续存在的问题。</li>
+<li>fix(数据大屏)：优化查询组件在移动端的适配性。</li>
+<li>fix(数据大屏)：修复跑马灯组件样式显示不正确的问题。</li>
+<li>fix(数据大屏)：修复鼠标悬浮时显示异常的问题。</li>
+<li>fix(仪表板、数据大屏): 修复外部参数默认值被组件默认值覆盖问题</li>
+<li>fix(数据集)：修复关联 MySQL 数据表时刷新数据出错的问题。#17531</li>
+<li>fix(数据集)：修复创建数据集保存后，点击返回按钮仍提示未保存的问题。</li>
+<li>fix(数据集)：修复关联表字段重名引发的报错问题。</li>
+<li>fix(SQLBot)：修复 SQLBot 高级应用无法使用 Elasticsearch 的问题。</li>
+<li>fix(应用)：修复应用导出后文件内容空白的问题。</li>
+<li>fix(应用)：修复应用模板导入名称与导出名称不一致的问题。</li>
+<li>fix(主题)：修复标签数字格式未跟随大屏/仪表板整体格式设置的问题。</li>
+<li>fix(X-Pack)：修复同步管理任务日志中缺少操作日志记录的问题。</li>
+<li>fix(X-Pack)：修复创建同步任务页面存在缓存的问题。</li>
+<li>fix(X-Pack)：修复同步任务无法同步中文字段的问题。</li>
+<li>fix(X-Pack)：优化同步管理中的任务终止逻辑。</li>
+<li>fix(X-Pack): 修复清理日志提示异常和日志中没有对终止同步进行归类的问题</li>
+</ul>
+</div>
 <h3 id="v21017">v2.10.17<a class="headerlink" href="#v21017" title="Permanent link">&para;</a></h3>
 <p>2025 年11月20日</p>
 <div class="admonition warning">
@@ -9655,11 +9753,11 @@ Bug 修复的小版本。<br />
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide", "content.tabs.link"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
     
     
     
-      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
     <script>
