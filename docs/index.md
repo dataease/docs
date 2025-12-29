@@ -70,4 +70,4 @@
     - **DataEase 技术白皮书：**  https://whitepaper.dataease.cn/
     - **DataEase 知识库：** https://kb.fit2cloud.com/categories/dataease
     - **DataEase 认证培训：** https://edu.fit2cloud.com/index 
-    - **DataEase 书籍：**：[《数据可视化分析与实践》（https://item.jd.com/10207058297099.html）
+    - **DataEase 书籍：**：[《数据可视化分析与实践》]（https://item.jd.com/10207058297099.html）
