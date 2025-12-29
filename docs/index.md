@@ -11,6 +11,7 @@
     <br/>
     **点击购买：**
     [《数据可视化分析与实践》](https://item.jd.com/10207058297099.html?spmTag=YTAyMTkuYjAwMjM1Ni5jMDAwMDQ2ODkuc2VhcmNoX2NvbmZpcm0lMkNhMDI0MC5iMDAyNDkzLmMwMDAwNDAyNy4xNiUyM3NrdV9jYXJk&pvid=cca9a55613874d1c8bcb78f3bf337f5a)
+    <br/>
     ![书籍封面](./newimg/ad/数据可视化分析与实践书籍封面.jpg){ width="1024px" }
 
 
