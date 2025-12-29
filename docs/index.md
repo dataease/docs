@@ -1,26 +1,17 @@
 # 产品介绍
 
-??? warning "重要通知 | DataEase 漏洞通知及修复方案"
-    **2025 年 11 月，有用户反馈发现 DataEase 开源 BI 工具存在安全漏洞，并向 DataEase 开源项目组进行上报。**
+??? Warning "📘《数据可视化分析与实践》新书上线！华东师大 ✖ DataEase 联合出品！"
 
-    **漏洞信息：**<br>
-     [【CVE-2025-64164】Oracle JNDI 注入漏洞；](https://github.com/dataease/dataease/security/advisories/GHSA-q754-4pc2-wjqw)  <br> 
-     [【CVE-2025-64163】DB2 SSRF 漏洞；](https://github.com/dataease/dataease/security/advisories/GHSA-8397-v66p-539m)<br> 
-     [【CVE-2025-64428】DataEase DB2 JNDI 注入漏洞；](https://github.com/dataease/dataease/security/advisories/GHSA-88ph-3236-2m2h) <br> 
-
-    **影响版本：**<br>
-    v2 版本：<= v2.10.16 版本。<br>
-    注：v1 版本不受影响。 <br> 
-
-    **安全版本：** <br> 
-    v2 版本：>= v2.10.17 版本。<br>
-    注: DataEase v2.10.17 版本已于 2025 年 11 月 20 日发布。
-
-    **修复方案：**<br>
-    升级至安全版本如下: DataEase 版本 >= v2.10.17 版本
-
-    **特别鸣谢：** <br> 
-    感谢社区用户 [ez-lbz](https://github.com/ez-lbz) 发现并向 DataEase 开源社区反馈上述漏洞。
+[//]: # (    **华东师大 ✖️ DataEase 联合出品！**<br/>)
+    **高校理论与企业案例深度结合的数据可视化实战指南！**<br/>
+    <br/>
+    理论+工具+实战，一站式打通数据可视化全链路，配套视频、PPT、案例素材完整覆盖。<br/>
+    无论你是新手、实战派，还是教学培训，都能轻松上手，真正实现“数据会看、图表会做”。
+    <br/>
+    <br/>
+    **点击购买：**
+    [《数据可视化分析与实践》](https://item.jd.com/10207058297099.html?spmTag=YTAyMTkuYjAwMjM1Ni5jMDAwMDQ2ODkuc2VhcmNoX2NvbmZpcm0lMkNhMDI0MC5iMDAyNDkzLmMwMDAwNDAyNy4xNiUyM3NrdV9jYXJk&pvid=cca9a55613874d1c8bcb78f3bf337f5a)
+    ![书籍封面](./newimg/ad/数据可视化分析与实践书籍封面.jpg){ width="1024px" }
 
 
 !!! Abstract ""
