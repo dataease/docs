@@ -1,5 +1,10 @@
 # 产品介绍
 
+!!! note ""
+	🎉 **DataEase 荣获 Gitee 年度开源项目评选「大数据与云计算赛道」第一名**  
+	👉 活动结果：https://gitee.com/activity/2025opensource/top
+
+
 ??? Warning "📘《数据可视化分析与实践》新书上线！华东师大 ✖ DataEase 联合出品！"
 
 [//]: # (    **华东师大 ✖️ DataEase 联合出品！**<br/>)
