@@ -3,4 +3,3 @@ mkdocs-material
 mdx_gh_links
 markdown
 mkdocs-glightbox
-setuptools>=8.0.0,<8.1.0
