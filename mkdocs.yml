@@ -157,6 +157,7 @@ nav:
               - 认证设置: xpack/identification_setting.md
               - 水印管理: xpack/watermark.md
               - 系统变量: xpack/system_variables.md
+              - 系统参数: xpack/Param_configuration.md
               - 插件管理: user_manual/system_management/plugin_management.md
               - 游离资源管理: xpack/free_resource_management.md
               - 安全管理: xpack/Security_settings.md
