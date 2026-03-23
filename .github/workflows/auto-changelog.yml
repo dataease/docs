@@ -87,9 +87,9 @@ jobs:
 
             目标基础分支: `${{ steps.detect.outputs.base }}`
 
-            请 @liuboF2c 审核。
+            请 @XUJIAYIMVMV 审核。
           base: ${{ steps.detect.outputs.base }}
-          reviewers: liuboF2c
+          reviewers: XUJIAYIMVMV
           delete-branch: true
 
       - name: Skip
