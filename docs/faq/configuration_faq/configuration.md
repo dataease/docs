@@ -241,7 +241,7 @@
     1.报错详情  
     安装 DataEase 时，日志报错 “Schema dataease contains a failed migration to version 43 !” 说明有 SQL 执行失败；  
     有可能用户使用了外置 MySQL，没有修改 max_allowed_packet 的值引起的，先确认 my.cnf 的配置与官网文档指定的配置一致；  
-    （使用外置MySQL my.cnf 配置：https://dataease.io/docs/installation/offline_installation/#5）  
+    （使用外置MySQL my.cnf 配置：https://dataease.cn/docs/installation/offline_installation/#5）  
     **如果安装环境配置均正确，请尝试以下步骤，手动执行产生失败的 SQL。**  
       
     2.下载 SQL  

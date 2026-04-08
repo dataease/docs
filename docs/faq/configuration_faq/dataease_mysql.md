@@ -184,6 +184,6 @@
 ![大小写](../../img/faq/Mysql异常.png){ width="900px" }
 !!! Abstract ""
     MySQL 外置数据库的数据库配置不一致，需要调整下 MySQL 的 sql_mode 配置，建议其它配置也参照调整下，避免因配置导致的其它问题出现。  
-    参考配置链接：https://dataease.io/docs/v1/installation/offline_installation/#5
+    参考配置链接：https://dataease.cn/docs/v1/installation/offline_installation/#5
 
 

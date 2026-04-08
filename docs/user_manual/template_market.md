@@ -33,14 +33,14 @@
 ### 2.3 关闭模板市场
 
 !!! Abstract ""
-    查看内置的模板市场需要与模板市场（https://dataease.io/templates/）网络连通，若不需要使用模板市场模块，可在【系统管理】的【系统参数】关闭模板市场显示。
+    查看内置的模板市场需要与模板市场（https://dataease.cn/templates/）网络连通，若不需要使用模板市场模块，可在【系统管理】的【系统参数】关闭模板市场显示。
 
 ## 3 线上模板市场
 
 ### 3.1 下载模板
 
 !!! Abstract ""
-    点击[模板市场](https://dataease.io/templates/)，如下图所示，打开模板市场主页。
+    点击[模板市场](https://dataease.cn/templates/)，如下图所示，打开模板市场主页。
 
 ![模板市场_主页](../img/template_market/模板市场_主页.png){ width="900px" }
 
