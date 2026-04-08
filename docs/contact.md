@@ -20,7 +20,7 @@
 ## 5 联系方式
 
 !!! Abstract ""
-    - 官网：http://www.dataease.io
+    - 官网：http://www.dataease.cn
     - 邮箱：support@fit2cloud.com
     - 电话：400-052-0755
 

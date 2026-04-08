@@ -33,5 +33,5 @@
 ## 4 流向地图、符号地图等在线地图添加后白屏、无法使用
 
 !!! Abstract ""
-    **流向地图、符号地图等组件使用的是高德在线地图，需能够连接外网高德服务器，如遇组件白屏，可自行申请在线地图 Key 并配置，参考[在线地图 Key 申请](https://dataease.io/docs/v2/user_manual/system_management/param/#31)。**
+    **流向地图、符号地图等组件使用的是高德在线地图，需能够连接外网高德服务器，如遇组件白屏，可自行申请在线地图 Key 并配置，参考[在线地图 Key 申请](https://dataease.cn/docs/v2/user_manual/system_management/param/#31)。**
 

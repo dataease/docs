@@ -272,7 +272,7 @@
 
 !!! Abstract ""
     地图支持自定义区域及其区域下钻。在【系统设置】→【系统参数】→【地图设置】中，可以添加自定义地理区域，并对中国省份进行自定义组合。
-    具体设置可参考：https://dataease.io/docs/v2/user_manual/system_management/param/#3 。
+    具体设置可参考：https://dataease.cn/docs/v2/user_manual/system_management/param/#3 。
 
 !!! Abstract ""
     符号地图支持自定义符号形状。
