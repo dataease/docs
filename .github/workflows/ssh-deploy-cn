@@ -1,0 +1,21 @@
+name: Deploy to dataease.cn server
+on:
+  workflow_dispatch:
+jobs:
+  deploy-to-server:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check
+        uses: actions/checkout@v4
+      - name: ssh deploy
+        uses: easingthemes/ssh-deploy@v2.2.11
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.DE_CN_HOST_KEY }}
+          REMOTE_HOST: ${{ secrets.DE_CN_HOST }}
+          REMOTE_USER: ${{ secrets.DE_CN_HOST_USERNAME }}
+          SOURCE: ./
+          TARGET: /opt/dataease/docs/
+          # Arguments to pass to rsync
+          ARGS: "-rltgoDzvO --delete"
+          # An array of folder to exclude
+          EXCLUDE: ".git/"
