@@ -559,6 +559,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v21021" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.10.21
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v21020" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5754,6 +5765,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v21021" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.10.21
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v21020" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6164,6 +6186,128 @@ Bug 修复的小版本。<br />
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v21021">v2.10.21<a class="headerlink" href="#v21021" title="Permanent link">&para;</a></h3>
+<p>2026 年04月16日</p>
+<div class="admonition warning">
+<p class="admonition-title"><strong>注意（DE - 2026.04.16）</strong> </p>
+<p>v2.10.21版本前端用户信息增加前缀，之前对接时用到的凭证名称会有相应的修改，例如user.token需要改成de_v2_user.token。</p>
+<p>相关产品影响:SQLBot高级应用需要调整凭证名称  </p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title"><strong>安全漏洞修复</strong> </p>
+<ul>
+<li>fix(漏洞): 修复数据集导出中的 SQL 注入漏洞<a href="https://github.com/dataease/dataease/security/advisories/GHSA-xxpw-2c8q-g693">(CVE-2026-33082)</a></li>
+<li>fix(漏洞): 修复 ORDER BY 子句中的 SQL 注入漏洞<a href="https://github.com/dataease/dataease/security/advisories/GHSA-f443-95cf-m837">(CVE-2026-33083)</a></li>
+<li>fix(漏洞): 修复 getFieldEnumObj 端点中的 SQL 注入漏洞<a href="https://github.com/dataease/dataease/security/advisories/GHSA-r897-r9q8-3p2x">(CVE-2026-33084)</a></li>
+<li>fix(漏洞): 修复数据源保存流中的 SQL 注入漏洞<a href="https://github.com/dataease/dataease/security/advisories/GHSA-fg4m-q7ch-jqv5">(CVE-2026-33121)</a></li>
+<li>fix(漏洞): 修复数据源管理中的 SQL 注入漏洞<a href="https://github.com/dataease/dataease/security/advisories/GHSA-28vg-3hv7-w92f">(CVE-2026-33122)</a></li>
+<li>fix(漏洞):  修复CalciteProvider 存在的SQL注入漏洞<a href="https://github.com/dataease/dataease/security/advisories/GHSA-pgh3-rgw3-xjmm">(CVE-2026-33207)</a></li>
+<li>fix(漏洞): 修复Arbitrary File Read (Credential Exfiltration)<a href="https://github.com/dataease/dataease/security/advisories/GHSA-944x-93jf-h3rx">漏洞</a></li>
+<li>fix(漏洞): 修复Quartz中包含的远程执行<a href="https://github.com/dataease/dataease/security/advisories/GHSA-gm5q-g72w-c466">漏洞组件</a></li>
+<li>fix(漏洞):  修复SQL Injection via Stacked Queries<a href="https://github.com/dataease/dataease/security/advisories/GHSA-vqxf-84ph-j3vx">漏洞</a></li>
+<li>fix(漏洞): 修复分享链接认证机制存在认证伪造绕过漏洞问题</li>
+<li>fix(漏洞): 修复XXE Injection in SAML Response Parser漏洞</li>
+</ul>
+<p>感谢社区用户 <a href="https://github.com/PineBlizz">PineBlizz</a>发现并向 DataEase 开源社区反馈上述漏洞。</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">Skills <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>新增（Skills): 新增 DataEase Skills技能，详见 <a href="https://github.com/dataease/DataEase-skills">GitHub 仓库</a></li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>feat(图表): 新增仪表板/数据大屏默认标签字体颜色设置功能 #17881</li>
+<li>feat(图表): 新增多维散点图支持</li>
+<li>feat(图表): 明细表分页字体大小支持配置 #18000</li>
+<li>feat(组件): 下拉树层级支持默认字母升序 #18096</li>
+<li>feat(仪表板、数据大屏): Tab 组件支持单Tab的隐藏与显示设置 #17984</li>
+<li>feat(数据源): API数据时间参数新增前一天选项 #18184</li>
+<li>feat(移动端): 移动端新增改密功能 #18143</li>
+<li>feat(移动端): 新增骨架屏显示</li>
+<li>feat(X-Pack):  权限配置中系统变量新增"手机号"字段，支持基于用户手机号进行数据权限匹配与控制</li>
+<li>feat(X-Pack):  数据填报新增SQL SERVER数据源插件</li>
+<li>feat(X-Pack): 数据填报新建表时支持为记录设置表备注</li>
+<li>feat(X-Pack): 定时报告新增钉钉群推送渠道</li>
+<li>feat(X-Pack): 定时报告 Playwright 增加默认时区设置</li>
+<li>feat(X-Pack): 新增系统变量规则行权限白名单指定角色功能 #18126</li>
+<li>feat(X-Pack):  新增嵌入式 Token 注销 API</li>
+<li>feat(X-Pack):  新增 Hmac-auth 配置支持</li>
+<li>feat(X-Pack): LDAP 用户支持配置默认邮箱后缀</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>refactor: 优化查询组件修改 PC 端默认值，移动端也能更新 #17895</li>
+<li>refactor(仪表板、数据大屏): 升级流媒体播放器插件，支持H.265编码</li>
+<li>refactor: 优化组件嵌入自动适配缩放功能</li>
+<li>refactor: 优化tab排序标题双击修改名称功能</li>
+<li>refactor: 优化tab页隐藏后不参与轮播功能</li>
+<li>refactor: 优化图表表头样式</li>
+<li>refactor (X-Pack): 优化第三方认证平台表单校验</li>
+<li>refactor (X-Pack): 优化嵌入式 Token 黑名单清理机制</li>
+<li>refactor (X-Pack): 定时报告条件配置样式优化</li>
+<li>refactor (X-Pack): 定时报告消息渠道相互阻塞问题优化</li>
+<li>refactor (X-Pack): 定时报告视图显示优化</li>
+<li>refactor (X-Pack): 前端用户信息增加前缀避免 localStorage-key 冲突</li>
+<li>refactor (X-Pack): 同步管理模块升级 Spring Boot 版本为 3.3.8</li>
+<li>refactor: 更新 calcite</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>fix (图表): 修复明细表导出时包含隐藏字段，导致指标格式化错误的问题 #17737</li>
+<li>fix (图表): 修复分组堆叠柱状图子维度或堆叠项为空时图表渲染异常问题</li>
+<li>fix (图表): 修复汇总表同环比和占比计算同时开启时占比计算错误问题 #17995</li>
+<li>fix (图表): 修复明细表隐藏字段后导出失败问题</li>
+<li>fix (图表): 修复从支持下钻的图表下钻后切换到不支持下钻图表时下钻路径及字段不清空问题</li>
+<li>fix (图表): 修复当图表标题字体过小时鼠标悬浮图表存在抖动问题</li>
+<li>fix (图表): 修复查询条件值存在单引号时无法匹配数据问题</li>
+<li>fix (图表): 修复编辑页面开启图表刷新后退出编辑再进入关闭刷新时联动图表仍继续刷新问题</li>
+<li>fix (图表): 修复表格总计行标签复制错误问题</li>
+<li>fix (图表): 修复数据大屏隐藏图表轮播提示显示在左上角问题</li>
+<li>fix (图表): 修复气泡地图轮播时鼠标悬浮提示没有消失问题</li>
+<li>fix (图表): 修复鼠标悬浮在图表上轮播提示不会暂停问题</li>
+<li>fix (图表): 修复图表提示配置自定义显示指标字段时非数值类型图表报错问题</li>
+<li>fix (图表): 修复Edge浏览器中公共链接图表带轮播全屏预览放大后退出全屏轮播提示显示位置不正确问题</li>
+<li>fix (图表): 修复折线图子维度为日期时图例显示和提示不一致问题</li>
+<li>fix (图表): 修复子弹图调整图例图标时区间背景配置被还原问题</li>
+<li>fix (图表): 修复子弹图横轴标签长度限制失效问题</li>
+<li>fix (图表): 修复子弹图禁用区间背景提示字段依然存在提示可正常显示问题</li>
+<li>fix (图表): 修复子弹图区间背景设置固定值后调整图例大小导致图例显示形状变化问题</li>
+<li>fix (图表): 修复子弹图区间背景选择固定值配置项输入空时调整图例图标报错问题</li>
+<li>fix (图表): 优化子弹图图例配置中图标配置选择器长度</li>
+<li>fix (图表): 修复明细表开启总计导出excel时，总计没有导出 #18114</li>
+<li>fix (查询组件): 修复默认日期为动态时间点击重置总是重置到设置查询组件日期没有动态变化问题 #18219</li>
+<li>fix (查询组件): 修复时间范围1号选择月初至昨天（当月）无法保存问题 #18178</li>
+<li>fix (地图): 修复数据大屏中默认图表尺寸无法显示世界地图边界问题</li>
+<li>fix (数据大屏): 修复大屏导出为模板再应用模板新建大屏时图表标题显示不全问题</li>
+<li>fix (数据大屏): 修复指标卡条件样式背景颜色样式不正确问题</li>
+<li>fix (数据大屏): 修复tab组件三个标识颜色不统一问题</li>
+<li>fix (数据集): 修复过滤器筛选包含逗号固定值时被错误解析为多个值导致筛选失效问题 #18082</li>
+<li>fix (仪表板、数据大屏): 修复配置查询条件不点击查询但放大图表时过滤条件已生效问题 #18089</li>
+<li>fix (仪表板、数据大屏): 修复图表刷新后使用下拉树组件勾选选项但不点击查询图表依然发生过滤问题</li>
+<li>fix (仪表板、数据大屏): 修复仪表板预览界面跳转弹窗按钮高度较低时无法显示完整问题</li>
+<li>fix (仪表板、数据大屏): 修复应用跳转链接带字段显示[undefined]问题</li>
+<li>fix (仪表板、数据大屏): 修复批量配置tab组件边框不生效问题</li>
+<li>fix (仪表板、数据大屏): 修复编辑状态下有查询组件的删除后图表仍维持过滤状态问题</li>
+<li>fix (仪表板、数据大屏): 修复组合组件嵌入式缩放问题</li>
+<li>fix (仪表板、数据大屏): 修复跳转联动小菜单可能被上方组件遮挡问题</li>
+<li>fix (仪表板): 修复移动端跳转问题</li>
+<li>fix (X-Pack): 修复组织管理中心导航栏内容显示不全问题</li>
+<li>fix (X-Pack): 修复查询角色接口参数 keyword 失效问题 #18001</li>
+<li>fix (X-Pack): 修复定时报告选择导出图表双线组合图缺失对应图标问题</li>
+<li>fix (X-Pack): 修复阈值告警条件判断为空时没有提示内容问题</li>
+<li>fix (数据源): 修复Oracle concat function问题 #18208</li>
+<li>fix (数据源): 修复远程Excel数据源对接大屏应用模板时匹配本地Excel数据源报错问题 #18102</li>
+<li>fix: 修复移动端配置过滤组件查询条件部分样式不生效问题 #18103</li>
+<li>fix: 优化部分页面控制台报错问题</li>
+</ul>
+</div>
 <h3 id="v21020">v2.10.20<a class="headerlink" href="#v21020" title="Permanent link">&para;</a></h3>
 <p>2026 年03月12日</p>
 <div class="admonition warning">
