@@ -11,6 +11,120 @@
     - v2.1.0 是 v2.0.0 之后的功能版本
 
 ## 2 更新内容
+### v2.10.21
+2026 年04月16日
+!!! Warning "**注意（DE - 2026.04.16）** "
+
+    v2.10.21版本前端用户信息增加前缀，之前对接时用到的凭证名称会有相应的修改，例如user.token需要改成de_v2_user.token。
+
+    相关产品影响:SQLBot高级应用需要调整凭证名称  
+
+!!! Warning "**安全漏洞修复** "
+
+    - fix(漏洞): 修复数据集导出中的 SQL 注入漏洞[(CVE-2026-33082)](https://github.com/dataease/dataease/security/advisories/GHSA-xxpw-2c8q-g693)
+    - fix(漏洞): 修复 ORDER BY 子句中的 SQL 注入漏洞[(CVE-2026-33083)](https://github.com/dataease/dataease/security/advisories/GHSA-f443-95cf-m837)
+    - fix(漏洞): 修复 getFieldEnumObj 端点中的 SQL 注入漏洞[(CVE-2026-33084)](https://github.com/dataease/dataease/security/advisories/GHSA-r897-r9q8-3p2x)
+    - fix(漏洞): 修复数据源保存流中的 SQL 注入漏洞[(CVE-2026-33121)](https://github.com/dataease/dataease/security/advisories/GHSA-fg4m-q7ch-jqv5)
+    - fix(漏洞): 修复数据源管理中的 SQL 注入漏洞[(CVE-2026-33122)](https://github.com/dataease/dataease/security/advisories/GHSA-28vg-3hv7-w92f)
+    - fix(漏洞):  修复CalciteProvider 存在的SQL注入漏洞[(CVE-2026-33207)](https://github.com/dataease/dataease/security/advisories/GHSA-pgh3-rgw3-xjmm)
+    - fix(漏洞): 修复Arbitrary File Read (Credential Exfiltration)[漏洞](https://github.com/dataease/dataease/security/advisories/GHSA-944x-93jf-h3rx)
+    - fix(漏洞): 修复Quartz中包含的远程执行[漏洞组件](https://github.com/dataease/dataease/security/advisories/GHSA-gm5q-g72w-c466)
+    - fix(漏洞):  修复SQL Injection via Stacked Queries[漏洞](https://github.com/dataease/dataease/security/advisories/GHSA-vqxf-84ph-j3vx)
+    - fix(漏洞): 修复分享链接认证机制存在认证伪造绕过漏洞问题
+    - fix(漏洞): 修复XXE Injection in SAML Response Parser漏洞
+
+    感谢社区用户 [PineBlizz](https://github.com/PineBlizz)发现并向 DataEase 开源社区反馈上述漏洞。
+
+!!! Abstract "Skills :star2:"
+
+    - 新增（Skills): 新增 DataEase Skills技能，详见 [GitHub 仓库](https://github.com/dataease/DataEase-skills)
+
+!!! Abstract "新增功能 :star2:"
+
+    - feat(图表): 新增仪表板/数据大屏默认标签字体颜色设置功能 #17881
+    - feat(图表): 新增多维散点图支持
+    - feat(图表): 明细表分页字体大小支持配置 #18000
+    - feat(组件): 下拉树层级支持默认字母升序 #18096
+    - feat(仪表板、数据大屏): Tab 组件支持单Tab的隐藏与显示设置 #17984
+    - feat(数据源): API数据时间参数新增前一天选项 #18184
+    - feat(移动端): 移动端新增改密功能 #18143
+    - feat(移动端): 新增骨架屏显示
+    - feat(X-Pack):  权限配置中系统变量新增"手机号"字段，支持基于用户手机号进行数据权限匹配与控制
+    - feat(X-Pack):  数据填报新增SQL SERVER数据源插件
+    - feat(X-Pack): 数据填报新建表时支持为记录设置表备注
+    - feat(X-Pack): 定时报告新增钉钉群推送渠道
+    - feat(X-Pack): 定时报告 Playwright 增加默认时区设置
+    - feat(X-Pack): 新增系统变量规则行权限白名单指定角色功能 #18126
+    - feat(X-Pack):  新增嵌入式 Token 注销 API
+    - feat(X-Pack):  新增 Hmac-auth 配置支持
+    - feat(X-Pack): LDAP 用户支持配置默认邮箱后缀
+
+!!! Abstract "功能优化 :sunflower:"
+
+    - refactor: 优化查询组件修改 PC 端默认值，移动端也能更新 #17895
+    - refactor(仪表板、数据大屏): 升级流媒体播放器插件，支持H.265编码
+    - refactor: 优化组件嵌入自动适配缩放功能
+    - refactor: 优化tab排序标题双击修改名称功能
+    - refactor: 优化tab页隐藏后不参与轮播功能
+    - refactor: 优化图表表头样式
+    - refactor (X-Pack): 优化第三方认证平台表单校验
+    - refactor (X-Pack): 优化嵌入式 Token 黑名单清理机制
+    - refactor (X-Pack): 定时报告条件配置样式优化
+    - refactor (X-Pack): 定时报告消息渠道相互阻塞问题优化
+    - refactor (X-Pack): 定时报告视图显示优化
+    - refactor (X-Pack): 前端用户信息增加前缀避免 localStorage-key 冲突
+    - refactor (X-Pack): 同步管理模块升级 Spring Boot 版本为 3.3.8
+    - refactor: 更新 calcite
+
+!!! Abstract "问题修复 :palm_tree:"
+
+    - fix (图表): 修复明细表导出时包含隐藏字段，导致指标格式化错误的问题 #17737
+    - fix (图表): 修复分组堆叠柱状图子维度或堆叠项为空时图表渲染异常问题
+    - fix (图表): 修复汇总表同环比和占比计算同时开启时占比计算错误问题 #17995
+    - fix (图表): 修复明细表隐藏字段后导出失败问题
+    - fix (图表): 修复从支持下钻的图表下钻后切换到不支持下钻图表时下钻路径及字段不清空问题
+    - fix (图表): 修复当图表标题字体过小时鼠标悬浮图表存在抖动问题
+    - fix (图表): 修复查询条件值存在单引号时无法匹配数据问题
+    - fix (图表): 修复编辑页面开启图表刷新后退出编辑再进入关闭刷新时联动图表仍继续刷新问题
+    - fix (图表): 修复表格总计行标签复制错误问题
+    - fix (图表): 修复数据大屏隐藏图表轮播提示显示在左上角问题
+    - fix (图表): 修复气泡地图轮播时鼠标悬浮提示没有消失问题
+    - fix (图表): 修复鼠标悬浮在图表上轮播提示不会暂停问题
+    - fix (图表): 修复图表提示配置自定义显示指标字段时非数值类型图表报错问题
+    - fix (图表): 修复Edge浏览器中公共链接图表带轮播全屏预览放大后退出全屏轮播提示显示位置不正确问题
+    - fix (图表): 修复折线图子维度为日期时图例显示和提示不一致问题
+    - fix (图表): 修复子弹图调整图例图标时区间背景配置被还原问题
+    - fix (图表): 修复子弹图横轴标签长度限制失效问题
+    - fix (图表): 修复子弹图禁用区间背景提示字段依然存在提示可正常显示问题
+    - fix (图表): 修复子弹图区间背景设置固定值后调整图例大小导致图例显示形状变化问题
+    - fix (图表): 修复子弹图区间背景选择固定值配置项输入空时调整图例图标报错问题
+    - fix (图表): 优化子弹图图例配置中图标配置选择器长度
+    - fix (图表): 修复明细表开启总计导出excel时，总计没有导出 #18114
+    - fix (查询组件): 修复默认日期为动态时间点击重置总是重置到设置查询组件日期没有动态变化问题 #18219
+    - fix (查询组件): 修复时间范围1号选择月初至昨天（当月）无法保存问题 #18178
+    - fix (地图): 修复数据大屏中默认图表尺寸无法显示世界地图边界问题
+    - fix (数据大屏): 修复大屏导出为模板再应用模板新建大屏时图表标题显示不全问题
+    - fix (数据大屏): 修复指标卡条件样式背景颜色样式不正确问题
+    - fix (数据大屏): 修复tab组件三个标识颜色不统一问题
+    - fix (数据集): 修复过滤器筛选包含逗号固定值时被错误解析为多个值导致筛选失效问题 #18082
+    - fix (仪表板、数据大屏): 修复配置查询条件不点击查询但放大图表时过滤条件已生效问题 #18089
+    - fix (仪表板、数据大屏): 修复图表刷新后使用下拉树组件勾选选项但不点击查询图表依然发生过滤问题
+    - fix (仪表板、数据大屏): 修复仪表板预览界面跳转弹窗按钮高度较低时无法显示完整问题
+    - fix (仪表板、数据大屏): 修复应用跳转链接带字段显示[undefined]问题
+    - fix (仪表板、数据大屏): 修复批量配置tab组件边框不生效问题
+    - fix (仪表板、数据大屏): 修复编辑状态下有查询组件的删除后图表仍维持过滤状态问题
+    - fix (仪表板、数据大屏): 修复组合组件嵌入式缩放问题
+    - fix (仪表板、数据大屏): 修复跳转联动小菜单可能被上方组件遮挡问题
+    - fix (仪表板): 修复移动端跳转问题
+    - fix (X-Pack): 修复组织管理中心导航栏内容显示不全问题
+    - fix (X-Pack): 修复查询角色接口参数 keyword 失效问题 #18001
+    - fix (X-Pack): 修复定时报告选择导出图表双线组合图缺失对应图标问题
+    - fix (X-Pack): 修复阈值告警条件判断为空时没有提示内容问题
+    - fix (数据源): 修复Oracle concat function问题 #18208
+    - fix (数据源): 修复远程Excel数据源对接大屏应用模板时匹配本地Excel数据源报错问题 #18102
+    - fix: 修复移动端配置过滤组件查询条件部分样式不生效问题 #18103
+    - fix: 优化部分页面控制台报错问题
+
 ### v2.10.20
 2026 年03月12日
 
