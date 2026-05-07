@@ -169,6 +169,7 @@ nav:
       - 源码部署: installation/deployment_installation.md      
   - 教学视频: instructional_video.md
   - 联系我们: contact.md
+  - Skill 技能: skill/index.md
   - 桌面版指南: desktop.md
   - 嵌入式指南:
       - 嵌入式概述: embedded/summary.md
