@@ -54,6 +54,8 @@ jobs:
       - name: Generate changelog entry
         if: ${{ steps.detect.outputs.update == 'true' }}
         run: |
+          # 先切换到目标基础分支，确保读取正确的 changelog.md
+          git checkout -B "${{ steps.detect.outputs.base }}" "origin/${{ steps.detect.outputs.base }}"
           python .github/scripts/gen_changelog.py "${{ steps.detect.outputs.version }}"
           echo 'Preview:'
           grep -n "^${{ steps.detect.outputs.version }}$" -A12 docs/changelog.md || true
