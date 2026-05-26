@@ -3,7 +3,7 @@ name: Auto Changelog
 on:
   workflow_dispatch:
   schedule:
-    - cron: '00 10-20/1 * * *'
+    - cron: '00 2-12/2 * * *'
 
 permissions:
   contents: write
@@ -27,7 +27,7 @@ jobs:
         id: detect
         run: |
           set -e
-          raw=$(curl -s https://community.fit2cloud.com/v1/products/dataease/releases | jq -r '.[2].version')
+          raw=$(curl -s https://community.fit2cloud.com/v1/products/dataease/releases | jq -r '.[0].version')
           if [ -z "$raw" ] || [ "$raw" = "null" ]; then echo "No version"; exit 1; fi
           version=${raw%-lts}
           major=$(echo "$version" | sed -E 's/^v([0-9]+).*/\1/')
