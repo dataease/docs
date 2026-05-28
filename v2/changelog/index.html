@@ -559,6 +559,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v21023" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.10.23
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v21022" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5803,6 +5814,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v21023" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.10.23
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v21022" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6235,6 +6257,116 @@ Bug 修复的小版本。<br />
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="v21023">v2.10.23<a class="headerlink" href="#v21023" title="Permanent link">&para;</a></h3>
+<p>2026年5月28日</p>
+<div class="admonition warning">
+<p class="admonition-title"><strong>安全漏洞修复（DE - 2026.05.28）</strong> </p>
+<ul>
+<li>fix(漏洞): 修复DataEase模板静态资源存在认证型存储型跨站脚本（XSS）漏洞</li>
+<li>fix(漏洞): 修复数据集SQL变量存在的SQL注入漏洞(<a href="https://github.com/dataease/dataease/security/advisories/GHSA-pv23-p64m-4pxf">(CVE-2026-45535)</a>)</li>
+<li>fix(漏洞): 修复JDBC RCE漏洞(<a href="https://github.com/dataease/dataease/security/advisories/GHSA-cv4c-8rpv-2x97">(CVE-2026-45534)</a>)</li>
+<li>fix(漏洞): 修复路径遍历漏洞(<a href="https://github.com/dataease/dataease/security/advisories/GHSA-mwr5-hw6p-cqmg">(CVE-2026-45533)</a>)</li>
+<li>fix(漏洞): 修复路径遍历漏洞(<a href="https://github.com/dataease/dataease/security/advisories/GHSA-2mqc-w4hm-f3p9">(CVE-2026-45532)</a>)</li>
+<li>fix(漏洞): 修复公开外观图片接口存在Base64解码后路径穿越读文件风险(<a href="https://github.com/dataease/dataease/security/advisories/GHSA-83fh-fgh3-g9f9">(CVE-2026-45419)</a>)</li>
+<li>fix(漏洞): 修复DataEase存在的SQL注入漏洞(<a href="https://github.com/dataease/dataease/security/advisories/GHSA-rg6c-r9mv-39fr">(CVE-2026-45417)</a>)</li>
+<li>fix(漏洞): 修复通过 Zip 协议和文件投放器进行远程代码执行 (RCE)的漏洞</li>
+<li>fix(漏洞): 修复角色、用户接口排序字段的SQL注入漏洞</li>
+<li>fix(漏洞): 修复在预览路径中执行任意SQL的漏洞</li>
+<li>fix(漏洞): 修复File upload/path有效性校验漏洞</li>
+<li>fix(漏洞): 修复在数据导出中心存在的IDOR（不安全直接对象引用）漏洞</li>
+<li>fix(漏洞): 修复XSS漏洞：多处v-html渲染用户可控内容</li>
+<li>fix(漏洞): 修复同步模块JDBC URL安全校验，增强数据源配置安全性</li>
+<li>fix(漏洞): 修复第三方登录平台token未验签即可换正式token问题</li>
+<li>fix(漏洞): 修复全局静态后缀白名单匹配过宽漏洞</li>
+<li>fix(漏洞): 修复核心JDBC URL/Driver校验分散漏洞</li>
+<li>fix(漏洞)：导出中心公开下载链接有效期接口存在未授权请求漏洞</li>
+</ul>
+<p>感谢社区用户 sondt99、 vinch3s、 unam4、 Zjackky、 4ra1n、 PineBlizz、 Yuremin、 FORIMOC、 invoke1442、 xpp3901、 28Hus发现并向 DataEase 开源社区反馈上述漏洞。</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">新增功能 <img alt="🌟" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f31f.png" title=":star2:" /></p>
+<ul>
+<li>feat(图表): 新增表格空数据提示样式设置功能</li>
+<li>feat(仪表板、数据大屏): 图表预览操作按钮支持显示控制</li>
+<li>feat(嵌入式): 嵌入式场景支持嵌入数据导出中心模块</li>
+<li>feat(查询组件): 新增年到上月月末时间范围筛选</li>
+<li>feat(X-Pack): [数据填报]新增发送填报任务支持邮件或企业微信通知功能</li>
+<li>feat(X-Pack): [数据填报]新增数据填报异步导出功能</li>
+<li>feat(X-Pack): 数据集行权限新增"开始以""结束以"筛选方式 #18322</li>
+<li>feat(X-Pack): 系统设置中新增嵌入式场景下数据导出方式配置</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">功能优化 <img alt="🌻" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f33b.png" title=":sunflower:" /></p>
+<ul>
+<li>refactor(仪表板、数据大屏): 优化表格无数据提示，支持自定义提示字体大小和颜色 #18296</li>
+<li>refactor(仪表板、数据大屏): 优化Tab组件，支持Tab组件懒加载</li>
+<li>refactor: 优化application.yml文件，支持指定包含其他配置文件</li>
+<li>refactor(X-Pack): 优化数据同步功能，源数据源Oracle支持同步视图数据 #18344</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">问题修复 <img alt="🌴" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f334.png" title=":palm_tree:" /></p>
+<ul>
+<li>fix(数据源): 修复PostgreSQL视图描述问题</li>
+<li>fix(数据源): 修复远程数据源加载数据后置空必填参数提示不明显问题</li>
+<li>fix(数据源): 修复远程数据源新增sheet页后点击立即执行数据出现重叠问题</li>
+<li>fix(数据源): 修复数据源重命名接口参数字段异常问题</li>
+<li>fix(图表): 修复条件样式提示文案异常</li>
+<li>fix(图表): 修复隐藏指标字段导出Excel表格后指标后维度字段数据显示问题 #18367</li>
+<li>fix(图表): 修复堆叠柱线组合图堆叠项排序后右值轴渲染错误 #18283</li>
+<li>fix(图表): 修复表格初始化时总计标签位置渲染错误</li>
+<li>fix(图表): 修复表格分组配置页面数据较少时表头渲染错误</li>
+<li>fix(图表): 修复表格开启总计后导出总计标签位置显示错误</li>
+<li>fix(图表): 修复表格序号列左边框线和最右列边框线不显示问题</li>
+<li>fix(图表): 修复表格自定义模式最右侧边框不显示问题</li>
+<li>fix(图表): 修复表格下钻后调整浏览器窗口大小表格恢复初始显示状态问题</li>
+<li>fix(图表): 修复对称条形图空值处理设置为忽略空值后显示错误</li>
+<li>fix(图表): 修复图表预览界面双击可以修改标题问题</li>
+<li>fix(图表): 修复下钻到最后一层后继续下钻时没有提示的问题</li>
+<li>fix(图表): 修复透视表表头颜色与大屏配置表头颜色不一致问题</li>
+<li>fix(图表): 修复多维散点图横轴缺少对应数值格式化问题</li>
+<li>fix(图表): 修复图表样式设置边框样式不一致问题</li>
+<li>fix(图表): 修复表格明细表开启自动换行缩小列宽后换行出错 #18376</li>
+<li>fix(图表): 修复表格明细表自动换行时带换行符的数据居中不生效问题</li>
+<li>fix(图表): 修复在数据大屏中图层管理缺少多维散点图标识问题</li>
+<li>fix(图表): 修复导出过程中对图片进行了修改的问题</li>
+<li>fix(图表): 拆分了双向条形图标签的格式化器</li>
+<li>fix(图表): 拆分了组合图图表的提示框格式化器</li>
+<li>fix(图表): 修复下钻后导出格式错位问题</li>
+<li>fix(图表): 修复图表条件样式提示文案异常问题</li>
+<li>fix(仪表板、数据大屏): 修复Tab组件在Tab组件中图表二次联动后点击清除联动设置不完全生效问题 #18347</li>
+<li>fix(仪表板、数据大屏): 修复Tab组件内图表在关闭图标操作按钮情况下依然可见问题</li>
+<li>fix(仪表板、数据大屏): 修复透视表表头颜色与大屏配置表头颜色不一致问题</li>
+<li>fix(仪表板、数据大屏): 修复外部参数匹配过滤组件可能出现类型不匹配问题</li>
+<li>fix(嵌入式): 修复iframe嵌入数据填报新建任务页面无法向下滚动问题</li>
+<li>fix(嵌入式): 修复iframe嵌入的汇总表下钻后导出excel缺失表头问题</li>
+<li>fix(嵌入式): 修复嵌入式环境无法正常打开问题</li>
+<li>fix(工作台): 修复模板中心数据大屏无法正常显示问题</li>
+<li>fix(数据集): 修复参数数据集预览时全局生效保存提示异常问题</li>
+<li>fix(数据集): 修复数据集在可编辑数据集越权查看并选择未授权数据源问题</li>
+<li>fix(数据集): 修复时间参数筛选失效问题</li>
+<li>fix(查询组件): 修复级联父项清空后，子级选择器未同步清空问题</li>
+<li>fix(查询组件): 修复日期、数值类型字段转为文本类型后筛选报错问题</li>
+<li>fix: 修复Excel下载路径失效问题</li>
+<li>fix: 修复导出行数限制配置未生效问题</li>
+<li>fix(X-Pack): 修复定时报告-设置额外等待时间过长导致超时错误</li>
+<li>fix(X-Pack): 修复阈值告警-消息预览没有实时更新问题</li>
+<li>fix(X-Pack): 修复钉钉客户端环境无法加载问题</li>
+<li>fix(X-Pack): 修复数据同步取消目标数据源Doris自动获取以及校验Backend节点数的逻辑</li>
+<li>fix(X-Pack): 修复数据同步添加任务Oracle源数据库表出现已删除在回收站中表的问题</li>
+<li>fix(X-Pack): 修复数据同步Oracle无法获取物化视图问题</li>
+<li>fix(X-Pack): 修复数据同步同步管理创建任务源数据源表格列表选项显示不安全问题</li>
+<li>fix(X-Pack): 修复数据集行权限类型为角色时编辑不显示角色下全部用户问题</li>
+<li>fix(X-Pack): 修复数据填报上传Excel文件校验重复值提示文字错误</li>
+<li>fix(X-Pack): 修复数据填报下拉选项框点击后跳回顶部问题</li>
+<li>fix(X-Pack): 修复数据填报任务管理-模版设置-预览表单时禁用状态不正确问题</li>
+<li>fix(X-Pack): 修复数据填报勾选角色接收人导致搜索框发生变化问题</li>
+<li>fix(X-Pack): 修复数据填报输入多个字符导致预览超界问题</li>
+<li>fix(X-Pack): 修复切换数据库后登录报错问题 #18359</li>
+<li>fix(X-Pack): 修复系统设置更新或添加插件刷新页面提示异常问题</li>
+</ul>
+</div>
 <h3 id="v21022">v2.10.22<a class="headerlink" href="#v21022" title="Permanent link">&para;</a></h3>
 <p>2026 年04月22日</p>
 <div class="admonition abstract">
