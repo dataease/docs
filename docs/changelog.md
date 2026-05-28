@@ -15,7 +15,7 @@
 ### v2.10.23
 2026年5月28日
 
-!!! info "漏洞修复"
+!!! Warning "**安全漏洞修复（DE - 2026.05.28）** "
 
     - fix(漏洞): 修复DataEase模板静态资源存在认证型存储型跨站脚本（XSS）漏洞
     - fix(漏洞): 修复数据集SQL变量存在的SQL注入漏洞([(CVE-2026-45535)](https://github.com/dataease/dataease/security/advisories/GHSA-pv23-p64m-4pxf))
