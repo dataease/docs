@@ -13,30 +13,30 @@
 ## 2 更新内容
 
 ### v2.10.23
-2026年5月28日
+2026 年 5 月 28 日
 
-!!! Warning "**安全漏洞修复（DE - 2026.05.28）** "
+!!! Warning "**安全漏洞修复（DE - 2026.05.28）**"
 
-    - fix(漏洞): 修复DataEase模板静态资源存在认证型存储型跨站脚本（XSS）漏洞
-    - fix(漏洞): 修复数据集SQL变量存在的SQL注入漏洞([(CVE-2026-45535)](https://github.com/dataease/dataease/security/advisories/GHSA-pv23-p64m-4pxf))
-    - fix(漏洞): 修复JDBC RCE漏洞([(CVE-2026-45534)](https://github.com/dataease/dataease/security/advisories/GHSA-cv4c-8rpv-2x97))
-    - fix(漏洞): 修复路径遍历漏洞([(CVE-2026-45533)](https://github.com/dataease/dataease/security/advisories/GHSA-mwr5-hw6p-cqmg))
-    - fix(漏洞): 修复路径遍历漏洞([(CVE-2026-45532)](https://github.com/dataease/dataease/security/advisories/GHSA-2mqc-w4hm-f3p9))
-    - fix(漏洞): 修复公开外观图片接口存在Base64解码后路径穿越读文件风险([(CVE-2026-45419)](https://github.com/dataease/dataease/security/advisories/GHSA-83fh-fgh3-g9f9))
-    - fix(漏洞): 修复DataEase存在的SQL注入漏洞([(CVE-2026-45417)](https://github.com/dataease/dataease/security/advisories/GHSA-rg6c-r9mv-39fr))
-    - fix(漏洞): 修复通过 Zip 协议和文件投放器进行远程代码执行 (RCE)的漏洞
-    - fix(漏洞): 修复角色、用户接口排序字段的SQL注入漏洞
-    - fix(漏洞): 修复在预览路径中执行任意SQL的漏洞
-    - fix(漏洞): 修复File upload/path有效性校验漏洞
-    - fix(漏洞): 修复在数据导出中心存在的IDOR（不安全直接对象引用）漏洞
-    - fix(漏洞): 修复XSS漏洞：多处v-html渲染用户可控内容
-    - fix(漏洞): 修复同步模块JDBC URL安全校验，增强数据源配置安全性
-    - fix(漏洞): 修复第三方登录平台token未验签即可换正式token问题
+    - fix(漏洞): 修复 DataEase 模板静态资源存在认证型存储型跨站脚本（XSS）漏洞
+    - fix(漏洞): 修复数据集 SQL 变量存在的 SQL 注入漏洞（[CVE-2026-45535](https://github.com/dataease/dataease/security/advisories/GHSA-pv23-p64m-4pxf)）
+    - fix(漏洞): 修复 JDBC RCE 漏洞（[CVE-2026-45534](https://github.com/dataease/dataease/security/advisories/GHSA-cv4c-8rpv-2x97)）
+    - fix(漏洞): 修复路径遍历漏洞（[CVE-2026-45533](https://github.com/dataease/dataease/security/advisories/GHSA-mwr5-hw6p-cqmg)）
+    - fix(漏洞): 修复路径遍历漏洞（[CVE-2026-45532](https://github.com/dataease/dataease/security/advisories/GHSA-2mqc-w4hm-f3p9)）
+    - fix(漏洞): 修复公开外观图片接口存在 Base64 解码后路径穿越读文件风险（[CVE-2026-45419](https://github.com/dataease/dataease/security/advisories/GHSA-83fh-fgh3-g9f9)）
+    - fix(漏洞): 修复 DataEase 存在的 SQL 注入漏洞（[CVE-2026-45417](https://github.com/dataease/dataease/security/advisories/GHSA-rg6c-r9mv-39fr)）
+    - fix(漏洞): 修复通过 Zip 协议和文件投放器进行远程代码执行（RCE）的漏洞
+    - fix(漏洞): 修复角色、用户接口排序字段的 SQL 注入漏洞
+    - fix(漏洞): 修复在预览路径中执行任意 SQL 的漏洞
+    - fix(漏洞): 修复 File upload/path 有效性校验漏洞
+    - fix(漏洞): 修复在数据导出中心存在的 IDOR（不安全直接对象引用）漏洞
+    - fix(漏洞): 修复 XSS 漏洞：多处 v-html 渲染用户可控内容
+    - fix(漏洞): 修复同步模块 JDBC URL 安全校验，增强数据源配置安全性
+    - fix(漏洞): 修复第三方登录平台 Token 未验签即可换正式 Token 问题
     - fix(漏洞): 修复全局静态后缀白名单匹配过宽漏洞
-    - fix(漏洞): 修复核心JDBC URL/Driver校验分散漏洞
-    - fix(漏洞)：导出中心公开下载链接有效期接口存在未授权请求漏洞
+    - fix(漏洞): 修复核心 JDBC URL/Driver 校验分散漏洞
+    - fix(漏洞): 修复导出中心公开下载链接有效期接口存在未授权请求漏洞
 
-    感谢社区用户 sondt99、 vinch3s、 unam4、 Zjackky、 4ra1n、 PineBlizz、 Yuremin、 FORIMOC、 invoke1442、 xpp3901、 28Hus发现并向 DataEase 开源社区反馈上述漏洞。
+    感谢社区用户 [sondt99](https://github.com/sondt99)、[vinch3s](https://github.com/vinch3s)、[unam4](https://github.com/unam4)、[Zjackky](https://github.com/Zjackky)、[4ra1n](https://github.com/4ra1n)、[PineBlizz](https://github.com/PineBlizz)、[Yuremin](https://github.com/Yuremin)、[FORIMOC](https://github.com/FORIMOC)、[invoke1442](https://github.com/invoke1442)、[xpp3901](https://github.com/xpp3901)、[28Hus](https://github.com/28Hus) 发现并向 DataEase 开源社区反馈上述漏洞。
 
 !!! Abstract "新增功能 :star2:"
 
@@ -46,15 +46,15 @@
     - feat(查询组件): 新增年到上月月末时间范围筛选
     - feat(X-Pack): [数据填报]新增发送填报任务支持邮件或企业微信通知功能
     - feat(X-Pack): [数据填报]新增数据填报异步导出功能
-    - feat(X-Pack): 数据集行权限新增"开始以""结束以"筛选方式 #18322
+    - feat(X-Pack): 数据集行权限新增“开始以”“结束以”筛选方式 #18322
     - feat(X-Pack): 系统设置中新增嵌入式场景下数据导出方式配置
 
 !!! Abstract "功能优化 :sunflower:"
 
     - refactor(仪表板、数据大屏): 优化表格无数据提示，支持自定义提示字体大小和颜色 #18296
-    - refactor(仪表板、数据大屏): 优化Tab组件，支持Tab组件懒加载
-    - refactor: 优化application.yml文件，支持指定包含其他配置文件
-    - refactor(X-Pack): 优化数据同步功能，源数据源Oracle支持同步视图数据 #18344
+    - refactor(仪表板、数据大屏): 优化 Tab 组件，支持 Tab 组件懒加载
+    - refactor: 优化 application.yml 文件，支持指定包含其他配置文件
+    - refactor(X-Pack): 优化数据同步功能，源数据源 Oracle 支持同步视图数据 #18344
 
 !!! Abstract "问题修复 :palm_tree:"
 
