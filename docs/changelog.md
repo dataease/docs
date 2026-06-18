@@ -12,6 +12,69 @@
 
 ## 2 更新内容
 
+### v2.10.24
+2026 年 6 月 18 日
+
+!!! Warning "**安全漏洞修复（DE - 2026.06.18）**"
+
+    - fix(漏洞): 修复共享密码/票据验证前链接令牌泄露的问题（[CVE-2026-50529](https://github.com/dataease/dataease/security/advisories/GHSA-7287-qqj9-phr6)）
+    - fix(漏洞): 修复可越权访问未授权数据集的漏洞（[CVE-2026-50530](https://github.com/dataease/dataease/security/advisories/GHSA-qcf4-345v-6vg9)）
+    - fix(漏洞): 修复数据导出中心存在的 IDOR 漏洞（[CVE-2026-53729](https://github.com/dataease/dataease/security/advisories/GHSA-9423-78gr-xjj5)）
+    - fix(漏洞): 修复通过 previewSql 接口越权访问数据库的漏洞（[CVE-2026-53730](https://github.com/dataease/dataease/security/advisories/GHSA-2jmq-vffm-4qmj)）
+    - fix(漏洞): 修复字体管理路径穿越导致任意文件删除漏洞（[CVE-2026-55631](https://github.com/dataease/dataease/security/advisories/GHSA-r99p-w8fc-93g6)）
+    - fix(漏洞): 修复通过字体文件上传接口投放 zip 文件，导致远程代码执行的漏洞（[CVE-2026-55633](https://github.com/dataease/dataease/security/advisories/GHSA-8x36-774q-pwqg)）
+    - fix(漏洞): 修复 H2 JDBC RCE Bypass 漏洞（[CVE-2026-53751](https://github.com/dataease/dataease/security/advisories/GHSA-xjhm-r8p8-c2cg)）
+    - fix(漏洞): 修复图表筛选器中存在的已认证 SQL 注入漏洞（[CVE-2026-55635](https://github.com/dataease/dataease/security/advisories/GHSA-p758-rx6v-hc8g)）
+    - fix(漏洞): 修复仪表板文本组件中存在的 XSS 漏洞（[CVE-2026-55647](https://github.com/dataease/dataease/security/advisories/GHSA-4v63-24fg-pfg7)）
+    - fix(漏洞): 修复 symmetricKey 接口白名单公开返回对称密钥的问题
+    - fix(漏洞): 修复路径穿越漏洞
+    - fix(漏洞): 修复敏感信息泄露漏洞
+    - fix(漏洞): 修复数据源元数据 SQL 存在的注入漏洞
+    - fix(漏洞): 修复远程 Excel 数据源存在的密码泄露漏洞
+    - fix(漏洞): 修复 CalciteProvider 存在的 SQL 注入漏洞
+    - fix(漏洞): 修复 ExcelWatermarkUtils 存在的资源注入漏洞
+    - fix(漏洞): 修复 DataEase 静态资源 Base64 接口任意文件读取漏洞
+    - fix(漏洞): 修复 v-html 引起的 XSS 漏洞
+    - fix(漏洞): 增加 Content-Security-Policy 等安全标识
+
+!!! Abstract "新增功能 :star2:"
+
+    - feat(查询组件): 丰富时间范围组件快捷查询范围选项
+    - feat(嵌入式): 数据导出中心支持弹窗显示
+    - feat(X-Pack): Webhook 支持自定义 body 参数 #18445
+
+!!! Abstract "功能优化 :sunflower:"
+
+    - refactor(图表): 图表下钻的维度支持跳转
+    - refactor(X-Pack): 优化邮件文件名称，避免在某些客户端产生乱码的情况
+    - refactor(X-Pack): 定时报告-企业微信渠道重试机制优化
+    - refactor(X-Pack): 定时报告-增加导出全部数据选项
+    - refactor(X-Pack): 定时报告-增加重试日志
+    - refactor(X-Pack): 邮件支持免认证配置
+    - refactor(X-Pack): 操作日志-授权时添加相关日志
+
+!!! Abstract "问题修复 :palm_tree:"
+
+    - fix(数据集): 修复 SQL 参数拼接报错的问题
+    - fix(数据集): 修复系统变量 SQL 替换未参数化问题
+    - fix(数据集): 修复行权限的系统变量只有一层正常生效的问题
+    - fix: 修复数据导出中心-下载较大数值的数据时会出现科学记数法的问题
+    - fix: 修复下载 Excel 文件路径失效问题
+    - fix(图表): 修复表格初始化时总计标签位置渲染错误
+    - fix(图表): 修复地图图例数输入框在鼠标移开后不恢复原数值的问题
+    - fix(图表): 修复数值格式化遇到科学计数法时，数值无法完成格式化，显示空的问题
+    - fix(图表): 修复图表插件拖拽添加异常
+    - fix(图表): 修复图表存在隐藏指标字段，导出 Excel 表格后，隐藏指标字段后的维度字段数据不显示的问题
+    - fix(X-Pack): 修改 QRTZ_JOB_DETAILS 和 QRTZ_TRIGGERS 表的 JOB_DATA 字段为 MEDIUMBLOB 类型
+    - fix(X-Pack): 修复第三方平台二维码无法加载问题
+    - fix(X-Pack): 修复定时报告-查询组件设置默认值对导出 Excel 无效的问题 #18491
+    - fix(X-Pack): 修复定时报告-数据权限-使用系统变量的行列权限无效的问题
+    - fix(X-Pack): 修复定时报告-失败后重试发送时，上次成功收到报告的接收者会重复收到报告的问题
+    - fix(X-Pack): 修复同步管理-任务列表在同步日志量较大时查询失败，提示 MySQL Out of sort memory 的问题，并给相关表添加了必要索引
+    - fix(X-Pack): 修复从告警管理跳转到具体的大屏，告警信息没有及时更新的问题
+    - fix(X-Pack): 修复在线地图无法加载的问题
+    - fix(X-Pack): 修复数据填报-数据源表数据量过大导致浏览器崩溃卡死的问题 #18516
+
 ### v2.10.23
 2026 年 5 月 28 日
 
