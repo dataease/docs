@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="../../css/lightgallery.min.css">
     <link href="../../css/f2c-header.css" rel="stylesheet" type="text/css" />
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -5600,15 +5600,9 @@ SELECT * FROM SALES WHERE 记录时间 &gt; &#39;${BEGINTIME}&#39; AND 记录时
 </code></pre></div></p>
 </div>
 <div class="admonition abstract">
-<p><strong>时间范围参数绑定：</strong>当需要按时间范围查询时，需要在 SQL 中定义两个参数，分别用于接收开始时间和结束时间；并在查询组件中分别绑定这两个参数。</p>
-<ol>
-<li>在 SQL 数据集的【参数设置】中，将开始时间和结束时间参数的参数类型设置为【时间】，并根据字段实际格式设置时间格式。</li>
-<li>在仪表板中添加时间范围查询组件。</li>
-<li>在查询组件配置中，将展示类型设置为【时间范围】；在【参数】页签中，分别将开始时间参数和结束时间参数关联为【开始时间】和【结束时间】。</li>
-<li>保存后，查询组件选择的时间范围会分别传入两个 SQL 参数。</li>
-</ol>
+<p>时间范围传参使用两个时查询条件间，分别绑定【开始时间】和【结束时间】参数，设置展示类型为时间。</p>
 </div>
-<p><img alt="时间范围查询组件参数绑定示例" src="../../img/dataset_configuration/时间范围参数绑定.png" width="900px" /></p>
+<p><img alt="过滤组件设置参数设置" src="../../img/dataset_configuration/时间传参搭配过滤组件.png" width="900px" /></p>
 <div class="admonition abstract">
 <p><strong>SQL 动态参数与过滤组件的区别：</strong></p>
 <ul>
@@ -5734,7 +5728,7 @@ SELECT * FROM SALES WHERE 记录时间 &gt; &#39;${BEGINTIME}&#39; AND 记录时
     
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
     <script>
