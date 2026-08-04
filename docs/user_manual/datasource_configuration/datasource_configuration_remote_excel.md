@@ -23,14 +23,14 @@
     - 填写认证信息（如适用）：如果远程服务器需要身份验证，输入用户名和对应密码。
     可点击 【加载数据】进行数据预览，以确保远程文件能够正确解析。点击 【校验】 以验证数据源的连通性。
 
-![更新1](../../newimg/新增远程 Excel:CSV 数据源2.png){ width="900px" }
+![更新1](../../newimg/新增远程 Excel：CSV 数据源2.png){ width="900px" }
 
 
 !!! Abstract ""
     步骤四：设置更新方式和更新频率，可定期拉取远程 Excel/CSV 文件实现数据自动更新。
 
-![更新1](../../newimg/新增远程 Excel:CSV 数据源3.png){ width="900px" }
+![更新1](../../newimg/新增远程 Excel：CSV 数据源3.png){ width="900px" }
 
-![更新1](../../newimg/新增远程 Excel:CSV 数据源4.png){ width="900px" }
+![更新1](../../newimg/新增远程 Excel：CSV 数据源4.png){ width="900px" }
 
 

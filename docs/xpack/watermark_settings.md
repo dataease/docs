@@ -32,5 +32,5 @@
 !!! Abstract ""
     目标数据源支持自定义配置 Doris 的 FE/BE 端口地址。
 
-![更新1](../../newimg/同步管理目标数据源支持自定义配置 Doris 的 FE:BE 端口地址.png){ width="900px" }
+![更新1](../newimg/同步管理目标数据源支持自定义配置 Doris 的 FE：BE 端口地址.png){ width="900px" }
 
