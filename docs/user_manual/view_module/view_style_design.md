@@ -35,7 +35,7 @@
 !!! Abstract ""
     AntV 和 ECharts 图库的饼图和环形图均支持 TopN 设置，即显示 TopN，其余的可以合并为其他 。
 
-![name](../../img/release_notes/1.4 饼图:环形图支持显示 TopN.png){ width="900px" }
+![name](../../img/release_notes/1.4 饼图：环形图支持显示 TopN.png){ width="900px" }
 
 ### 1.2 大小
 
@@ -98,7 +98,7 @@
 !!! Abstract ""
     AntV 明细表/汇总表可控制是否启用表头排序
 
-![name](../../img/release_notes/1.13  AntV 明细表:汇总表可控制是否启用表头排序.png){ width="900px" }
+![name](../../img/release_notes/1.13  AntV 明细表：汇总表可控制是否启用表头排序.png){ width="900px" }
 
 ![name](../../img/release_notes/v1-18-16-3.PNG){ width="900px" }
 
