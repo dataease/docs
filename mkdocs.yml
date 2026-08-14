@@ -1,5 +1,5 @@
 site_name: 'DataEase 文档'
-site_url: 'https://dataease.cn/docs'
+site_url: 'https://dataease.cn/docs/v3/'
 site_description: 'DataEase 在线文档'
 site_author: '飞致云'
 
@@ -44,6 +44,7 @@ nav:
   - 产品迭代:
       - 更新日志: changelog.md
       - 更新说明:
+          - v3.0.0: change-v3-0-0.md
           - v2.10.7: change-v2-10-7.md
           - v2.10.6: change-v2-10-6.md
           - v2.10.5: change-v2-10-5.md
@@ -64,6 +65,7 @@ nav:
   - 系统架构: system_arch.md
   - 安装部署:
       - 安装指南: installation/offline_INSTL_and_UPG.md
+      - 多数据库部署: installation/multi_database_deployment.md
       - 升级指南: installation/offline_upgrade.md
       - 阿里云安装指南: installation/aliyun_installtion.md
       - 1Panel 安装指南: installation/1panel_installation.md
@@ -83,6 +85,7 @@ nav:
               - 配置 MongoDB-BI 数据源: user_manual/datasource_configuration/MongoDB-BI_datasource_configuration.md
               - 配置 Oracle 数据源: user_manual/datasource_configuration/Oracle_datasource_configuration.md
               - 配置 PostgreSQL 数据源: user_manual/datasource_configuration/PostgreSQL_datasource_configuration.md
+              - 配置 Kingbase 数据源: user_manual/datasource_configuration/Kingbase_datasource_configuration.md
               - 配置 SQL Server 数据源: user_manual/datasource_configuration/SQL Server_datasource_configuration.md
               - 配置 StarRocks 数据源: user_manual/datasource_configuration/StarRocks_datasource_configuration.md
               - 配置 TiDB 数据源: user_manual/datasource_configuration/TiDB_datasource_configuration.md
@@ -141,6 +144,7 @@ nav:
            - 系统参数: user_manual/system_management/param.md
            - 字体管理: user_manual/system_management/font_management.md
       - X-Pack:
+          - 电子表格: xpack/spreadsheet.md
           - 组织管理中心:
               - 用户管理: xpack/user_management_user.md
               - 组织管理: xpack/sys_management_organization.md
@@ -159,7 +163,6 @@ nav:
               - 系统变量: xpack/system_variables.md
               - 系统参数: xpack/Param_configuration.md
               - 插件管理: user_manual/system_management/plugin_management.md
-              - 游离资源管理: xpack/free_resource_management.md
               - 安全管理: xpack/Security_settings.md
           - 系统 API: xpack/sys_management_develop.md
           - 数据填报: xpack/data_filing.md

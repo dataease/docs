@@ -7,9 +7,10 @@
 !!! Abstract ""
     - **Frontend**:  DataEase 的前端工程, 基于 Vue.js 进行开发；
     - **Backend**:  DataEase 的后端工程, 基于 Spring Boot 进行开发, 为 DataEase 的功能主体；
-    - **MySQL**:  DataEase 项目的主要数据均存储在 MySQL；
+    - **元数据库**:  DataEase 项目的主要数据存储，v3.0.0 起支持 7 种数据库（MySQL、GreatSQL、达梦、KingbaseES、Oracle、PostgreSQL、SQL Server）；
     - **Apache Calcite**: 用于对各个数据源做 SQL 方面的统一处理；
-    - **Apache Apisix**: API 网关，用来处理路由、认证、IP 访问限制等。
+    - **Apache Apisix**: API 网关，用来处理路由、认证、IP 访问限制等；
+    - **Quartz**: 定时任务调度框架，任务状态持久化于元数据库。
 
 各个组件间的关系可参考下图  
 ![组件说明](./newimg/product_acceptance/2.0组件关系图.png){ width="900px" }
@@ -29,9 +30,10 @@
 ## 4 技术栈
 
 !!! Abstract ""
-    - 后端：[Spring Boot](https://spring.io/projects/spring-boot)
+    - 后端：[Spring Boot](https://spring.io/projects/spring-boot)、[Spring Data JPA](https://spring.io/projects/spring-data-jpa)/[Hibernate](https://hibernate.org/)
     - 前端：[Vue.js](https://vuejs.org/)、[Element](https://element.eleme.cn/)
     - 图库: [Antv](https://antv.antgroup.com/zh)
-    - 中间件：[MySQL](https://www.mysql.com/)
+    - 中间件：[MySQL](https://www.mysql.com/)（v3.0.0 起支持 MySQL、GreatSQL、达梦、KingbaseES、Oracle、PostgreSQL、SQL Server 共 7 种元数据库）
     - 数据处理：[Apache Calcite](https://calcite.apache.org/)、[Apache SeaTunnel](https://github.com/apache/seatunnel)
+    - 调度框架：[Quartz](https://www.quartz-scheduler.org/)
     - 基础设施：[Docker](https://www.docker.com/)

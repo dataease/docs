@@ -9,6 +9,9 @@
 
     **提示：Docker 版本太老可能会导致安装失败，建议使用安装包内的 Docker，或者使用 v23.0.5 版本及以上的 Docker。**
 
+!!! Abstract ""
+    **v3.0.0 起支持 7 种元数据库（MySQL、GreatSQL、达梦、KingbaseES、Oracle、PostgreSQL、SQL Server），** 默认使用 MySQL 部署。需要切换元数据库时，请参考 [多数据库部署](multi_database_deployment.md)。
+
 ## 2 下载离线安装包
 
 !!! Abstract ""
