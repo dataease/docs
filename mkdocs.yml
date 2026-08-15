@@ -139,31 +139,31 @@ nav:
           - 其他组件: user_manual/other_module/panel_style_module.md
       - 模板市场: user_manual/template_market.md
       - 数据导出中心: user_manual/system_management/data_export_center.md
-      - 工具箱: user_manual/system_management/module.md
-      - 系统设置:
-           - 系统参数: user_manual/system_management/param.md
-           - 字体管理: user_manual/system_management/font_management.md
       - X-Pack:
           - 电子表格: xpack/spreadsheet.md
-          - 组织管理中心:
+          - 系统设置:
               - 用户管理: xpack/user_management_user.md
               - 组织管理: xpack/sys_management_organization.md
               - 权限配置: xpack/sys_management_permission.md
-              - 定时报告: xpack/sys_management_report.md
               - 同步管理: xpack/data_synchronization_management.md
-              - 血缘分析: xpack/blood_relationship.md
-              - 告警管理: xpack/alarm_management.md
               - Webhook 管理: xpack/Webhook.md
-          - 系统设置:
-              - 平台对接: xpack/platform_abutment.md
-              - 外观配置: xpack/appearance_configuration.md
-              - 多维嵌入: xpack/multidimensional_embedding.md
-              - 认证设置: xpack/identification_setting.md
-              - 水印管理: xpack/watermark.md
+              - 系统参数: user_manual/system_management/param.md
               - 系统变量: xpack/system_variables.md
-              - 系统参数: xpack/Param_configuration.md
+              - 外观配置: xpack/appearance_configuration.md
+              - 认证设置: xpack/identification_setting.md
+              - 嵌入式管理: xpack/multidimensional_embedding.md
+              - 平台对接: xpack/platform_abutment.md
+              - 字体管理: user_manual/system_management/font_management.md
               - 插件管理: user_manual/system_management/plugin_management.md
+              - 水印管理: xpack/watermark.md
               - 安全管理: xpack/Security_settings.md
+          - 工具箱:
+              - 工具箱概述: xpack/toolbox.md
+              - 定时报告: xpack/sys_management_report.md
+              - 告警管理: xpack/alarm_management.md
+              - 血缘分析: xpack/blood_relationship.md
+              - 模板管理: user_manual/system_management/module.md
+              - 操作日志: user_manual/system_management/operation_log.md
           - 系统 API: xpack/sys_management_develop.md
           - 数据填报: xpack/data_filing.md
   - 常见问题:
