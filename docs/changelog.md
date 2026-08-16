@@ -21,7 +21,7 @@
     - 支持 7 种部署数据库：MySQL、GreatSQL、达梦、KingbaseES、Oracle、PostgreSQL、SQL Server
     - 定时任务框架升级为 Quartz JDBC JobStore
     - 新增 KingbaseES 数据源支持，数据源类型增至 20 种
-    - X-Pack 新增电子表格功能模块（支持明细表、透视表）
+    - X-Pack 新增电子表格功能模块（支持明细表、汇总表）
     - 权限模型统一为资源权限管理模型
     - 系统设置移除【游离资源管理】功能
 
