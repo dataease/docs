@@ -1,7 +1,7 @@
 ## 1 概述
 
 !!! Abstract ""
-    同步管理位于【系统设置】下，支持将用户自己数据库里的数据同步到如 Apache Doris 等高性能实时的分析型数据库中。
+    同步管理位于【组织管理中心】下，支持将用户自己数据库里的数据同步到如 Apache Doris 等高性能实时的分析型数据库中。
 
     - 当前支持同步的源数据库：Db2、MySQL、Oracle、SQL Server、Elasticsearch
     - 当前支持的目标数据库：Apache Doris（v1.2 及以上版本）
@@ -15,9 +15,9 @@
 !!! Abstract ""
     Doris 类型的目标数据源的 BE 节点设置为可选非必选项，并允许配置副本数，但 BE 副本数必须小于等于 BE 节点数。
 
-![更新1](../../newimg/Doris 类型的目标数据源支持忽略 BE 节点设置，并允许配置副本数1.png){ width="900px" }
+![更新1](../newimg/Doris 类型的目标数据源支持忽略 BE 节点设置，并允许配置副本数1.png){ width="900px" }
 
-![更新1](../../newimg/Doris 类型的目标数据源支持忽略 BE 节点设置，并允许配置副本数2.png){ width="900px" }
+![更新1](../newimg/Doris 类型的目标数据源支持忽略 BE 节点设置，并允许配置副本数2.png){ width="900px" }
 
 !!! Abstract ""
     任务管理页面：任务列表管理、任务日志管理 。

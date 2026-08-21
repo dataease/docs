@@ -7,7 +7,7 @@
 !!! Abstract ""
     - **Frontend**:  DataEase 的前端工程, 基于 Vue.js 进行开发；
     - **Backend**:  DataEase 的后端工程, 基于 Spring Boot 进行开发, 为 DataEase 的功能主体；
-    - **元数据库**:  DataEase 项目的主要数据存储，v3.0.0 起支持 7 种数据库（MySQL、GreatSQL、达梦、KingbaseES、Oracle、PostgreSQL、SQL Server）；
+    - **元数据库**:  DataEase 项目的主要数据存储。安装器默认使用内置 MySQL，也可将元数据库部署到 MySQL、GreatSQL、达梦、KingbaseES、Oracle、PostgreSQL、SQL Server；
     - **Apache Calcite**: 用于对各个数据源做 SQL 方面的统一处理；
     - **Apache Apisix**: API 网关，用来处理路由、认证、IP 访问限制等；
     - **Quartz**: 定时任务调度框架，任务状态持久化于元数据库。
@@ -25,6 +25,8 @@
     - **图表**: 可视化展示的最小单元，是组成仪表板或数据大屏的基本元素，可以是折线图、柱状图、饼状图等可视化图形；
     - **仪表板**: 通过可视化效果展示具体数据常见的图形面板，倾向于快速创建及交互操作；
     - **数据大屏**: 通过可视化效果展示具体数据常见的图形面板，更倾向展示效果；
+    - **电子表格**: 类 Excel 表格分析载体，支持绑定数据集自动填充数据，具备公式计算、自由排版能力，可实现中国式复杂报表，兼顾数据展示与轻量分析；
+    - **数据填报**: 企业级数据采集模块，支持可视化制作填报表单，填报数据可直接回写数据库，具备数据校验、批量录入与移动端填报能力；
     - **组件**: 仪表板或数据大屏中各种元素的统称，例如图表组件、图片组件、筛选组件等。
     
 ## 4 技术栈
@@ -33,7 +35,7 @@
     - 后端：[Spring Boot](https://spring.io/projects/spring-boot)、[Spring Data JPA](https://spring.io/projects/spring-data-jpa)/[Hibernate](https://hibernate.org/)
     - 前端：[Vue.js](https://vuejs.org/)、[Element](https://element.eleme.cn/)
     - 图库: [Antv](https://antv.antgroup.com/zh)
-    - 中间件：[MySQL](https://www.mysql.com/)（v3.0.0 起支持 MySQL、GreatSQL、达梦、KingbaseES、Oracle、PostgreSQL、SQL Server 共 7 种元数据库）
+    - 元数据库：[MySQL](https://www.mysql.com/)、[GreatSQL](https://greatsql.cn/)、[达梦](https://www.dameng.com/)、[KingbaseES](https://www.kingbase.com.cn/)、[Oracle](https://www.oracle.com/database/)、[PostgreSQL](https://www.postgresql.org/)、[SQL Server](https://www.microsoft.com/sql-server)
     - 数据处理：[Apache Calcite](https://calcite.apache.org/)、[Apache SeaTunnel](https://github.com/apache/seatunnel)
     - 调度框架：[Quartz](https://www.quartz-scheduler.org/)
     - 基础设施：[Docker](https://www.docker.com/)

@@ -9,7 +9,7 @@
 
     - APP Secret ：嵌入式获取 JWT token 需要填写的 Secret。
 
-    2.10.0 版本开始，支持设置 token 有效时间。 Token 可根据实际情况使用其它类型语言生成，代码实现方式不唯一。
+    v3 起支持设置 token 有效时间。Token 可根据实际情况使用其它类型语言生成，代码实现方式不唯一。
    
     ```
     @RestController

@@ -285,13 +285,13 @@
 ![更新1](../../newimg/在线地图功能增强.png){ width="900px" }
 
 !!! Abstract ""
-    在制作在线地图时，地图风格选择【自定义】，URL 填入高德自定义地图分享的 URL 即可。详细设置可参考[地图自定义风格设置](../../change-v2-10-2.md/#121-支持自定义地图风格)。
+    在制作在线地图时，地图风格选择【自定义】，URL 填入高德自定义地图分享的 URL 即可。详细设置可参考[地图设置](../system_management/param.md#3)。
 
 ![更新1](../../newimg/自定义地图风格8.png){ width="900px" }
 
 !!! Abstract ""
     地图支持自定义区域及其区域下钻。在【系统设置】→【系统参数】→【地图设置】中，可以添加自定义地理区域，并对中国省份进行自定义组合。   
-    具体设置可参考：https://dataease.cn/docs/v2/user_manual/system_management/param/#3 。
+    具体设置可参考：../system_management/param.md#3 。
 
 !!! Abstract ""
     符号地图支持自定义符号形状。

@@ -6,7 +6,7 @@ site_author: '飞致云'
 repo_name: 'DataEase'
 repo_url: 'https://github.com/dataease/dataease'
 
-edit_uri: https://github.com/dataease/docs/edit/master/docs/
+edit_uri: https://github.com/dataease/docs/edit/v3/docs/
 theme:
   name: 'material'
   logo: 'img/logo-white.png'
@@ -45,28 +45,13 @@ nav:
       - 更新日志: changelog.md
       - 更新说明:
           - v3.0.0: change-v3-0-0.md
-          - v2.10.7: change-v2-10-7.md
-          - v2.10.6: change-v2-10-6.md
-          - v2.10.5: change-v2-10-5.md
-          - v2.10.4: change-v2-10-4.md
-          - v2.10.3: change-v2-10-3.md
-          - v2.10.2: change-v2-10-2.md
-          - v2.10.1: change-v2-10-1.md
-          - v2.10.0: change-v2-10.md
-          - v2.9.0: change-v2-9.md
-          - v2.8.0: change-v2-8.md
-          - v2.7.0: change-v2-7.md
-          - v2.6.0: change-v2-6.md
-          - v2.5.0: change-v2-5.md
-          - v2.4.0: change-v2-4.md
-          - v2.3.0: change-v2-3.md
-          - v2.2.0: change-v2-2.md
-          - v2.1.0: change-v2-1.md
   - 系统架构: system_arch.md
   - 安装部署:
       - 安装指南: installation/offline_INSTL_and_UPG.md
-      - 多数据库部署: installation/multi_database_deployment.md
+      - 在线安装指南: installation/online_INSTL_and_UPG.md
+      - 外部数据库部署: installation/multi_database_deployment.md
       - 升级指南: installation/offline_upgrade.md
+      - 在线升级: installation/online_upgrade.md
       - 阿里云安装指南: installation/aliyun_installtion.md
       - 1Panel 安装指南: installation/1panel_installation.md
       - 命令行工具使用指南: installation/cli.md
@@ -139,22 +124,33 @@ nav:
           - 其他组件: user_manual/other_module/panel_style_module.md
       - 模板市场: user_manual/template_market.md
       - 数据导出中心: user_manual/system_management/data_export_center.md
+      - 工具箱: user_manual/system_management/module.md
+      - 系统设置:
+          - 系统参数: user_manual/system_management/param.md
+          - 字体管理: user_manual/system_management/font_management.md
       - X-Pack:
-          - 电子表格: xpack/spreadsheet.md
+          - 电子表格:
+              - 电子表格概述: xpack/spreadsheet_description.md
+              - 资源目录与管理: xpack/spreadsheet_resource.md
+              - 电子表格功能详解: xpack/spreadsheet_features.md
+              - 电子表格特殊功能: xpack/spreadsheet_special.md
+              - 发布运维: xpack/spreadsheet_publish.md
+          - 组织管理中心:
+              - 成员管理: xpack/org_center_member.md
+              - 权限配置: xpack/org_center_permission.md
+              - 同步管理: xpack/data_synchronization_management.md
+              - Webhook 管理: xpack/Webhook.md
           - 系统设置:
               - 用户管理: xpack/user_management_user.md
               - 组织管理: xpack/sys_management_organization.md
               - 权限配置: xpack/sys_management_permission.md
-              - 同步管理: xpack/data_synchronization_management.md
-              - Webhook 管理: xpack/Webhook.md
-              - 系统参数: user_manual/system_management/param.md
+              - 系统参数: xpack/Param_configuration.md
               - 系统变量: xpack/system_variables.md
               - 外观配置: xpack/appearance_configuration.md
               - 认证设置: xpack/identification_setting.md
               - 嵌入式管理: xpack/multidimensional_embedding.md
               - 平台对接: xpack/platform_abutment.md
-              - 字体管理: user_manual/system_management/font_management.md
-              - 插件管理: user_manual/system_management/plugin_management.md
+              - 插件管理: xpack/plugin_management.md
               - 水印管理: xpack/watermark.md
               - 安全管理: xpack/Security_settings.md
           - 工具箱:
@@ -162,17 +158,17 @@ nav:
               - 定时报告: xpack/sys_management_report.md
               - 告警管理: xpack/alarm_management.md
               - 血缘分析: xpack/blood_relationship.md
-              - 模板管理: user_manual/system_management/module.md
-              - 操作日志: user_manual/system_management/operation_log.md
+              - 操作日志: xpack/operation_log.md
           - 系统 API: xpack/sys_management_develop.md
+          - 数据集: xpack/dataset.md
           - 数据填报: xpack/data_filing.md
   - 常见问题:
       - 系统管理: faq/system_management.md
       - 版本对比: faq/enterprise_faq.md
-      - 源码部署: installation/deployment_installation.md      
+      # - 源码部署: installation/deployment_installation.md  # v3 官方源码部署文档待完善后恢复
   - 教学视频: instructional_video.md
   - 联系我们: contact.md
-  - Skill 技能: skill/index.md
+  # - Skill 技能: skill/index.md  # v3 暂隐藏，后续恢复
   - 桌面版指南: desktop.md
   - 嵌入式指南:
       - 嵌入式概述: embedded/summary.md

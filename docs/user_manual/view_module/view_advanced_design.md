@@ -1,4 +1,4 @@
-!!! Abstract ""
+﻿!!! Abstract ""
     图表编辑区【高级】模块，不同图表存在差异，根据各图表特性具备不同的高级功能。
 
 ![高级设置](../../img/view_generation/2.0高级设置.png){ width="900" }
@@ -108,7 +108,7 @@
 
 !!! Abstract ""
     流向地图、气泡地图配置数据后，支持配置气泡动效。进入【高级】并打开【气泡动效】开关。  
-    **注意：流向地图需先在【样式】中设置标注点气泡大小。此外，流向地图为在线地图需要[配置地图 Key](https://dataease.cn/docs/v2/user_manual/system_management/param/#32)。**
+    **注意：流向地图需先在【样式】中设置标注点气泡大小。此外，流向地图为在线地图需要[配置地图 Key](../system_management/param.md#33)。**
 
 ![气泡动效](../../newimg/1.10%20气泡地图添加水波纹动画配置.gif){ width="900px" }
 

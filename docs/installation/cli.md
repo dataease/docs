@@ -11,8 +11,7 @@
 ## 2 dectl
 
 !!! Abstract ""
-    DataEase 默认内置了命令行运维工具（dectl），通过执行 dectl help 命令，可以查看相关的帮助文档。  
-    **请注意**，backup、restore 命令需要 DataEase 版本在 v2.4 及以上，使用方式见：https://dataease.cn/docs/v2/change-v2-4/#71-dectl 
+    DataEase 默认内置了命令行运维工具（dectl），通过执行 `dectl help` 命令可查看帮助。常用命令如下：
 
     ```
     Usage:

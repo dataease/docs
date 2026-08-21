@@ -35,8 +35,8 @@
 
     ``` 
     cd /tmp
-    # 解压安装包（dataease-online-installer-v2.0.0.tar.gz 为示例安装包名称，操作时可根据实际安装包名称替换）
-    tar zxvf dataease-online-installer-v2.0.0.tar.gz
+    # 解压安装包（dataease-online-installer-v3.0.0.tar.gz 为示例安装包名称，操作时可根据实际安装包名称替换）
+    tar zxvf dataease-online-installer-v3.0.0.tar.gz
     ```
 
 ### 4.2  设置安装参数（可选）
@@ -68,6 +68,8 @@
     DE_MYSQL_PASSWORD=Password123@mysql
     ## 数据库参数
     DE_MYSQL_PARAMS="autoReconnect=false&useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true"
+    ## application.yml 可引入的其他配置文件。外部 MySQL 可留空；其他元数据库请填写对应 profile，见 [外部数据库部署](multi_database_deployment.md)
+    DE_SPRING_PROFILE=
     ```
 
 ### 4.3  执行安装脚本
@@ -75,15 +77,17 @@
 !!! Abstract "" 
 
 	```
-    # 进入安装包目录（dataease-online-installer-v2.0.0 为示例安装包目录名称，操作时可根据实际安装包名称替换）
-    cd dataease-online-installer-v2.0.0
+    # 进入安装包目录（dataease-online-installer-v3.0.0 为示例安装包目录名称，操作时可根据实际安装包名称替换）
+    cd dataease-online-installer-v3.0.0
 
     # 运行安装脚本
     /bin/bash install.sh
 	```
 
 !!! Abstract ""
-    如果使用外部数据库进行安装，只能使用 MySQL  8.0.16 版本以上数据库。同时 DataEase 对数据库部分配置项有要求，请参考下附的数据库配置，修改环境中的数据库配置文件
+    使用外部数据库时，请先完成建库，并参考 [外部数据库部署](multi_database_deployment.md) 修改 `install.conf`（外部 MySQL 设置 `DE_EXTERNAL_MYSQL`；其他库还需设置 `DE_SPRING_PROFILE`）。DataEase 服务启动时会自动在配置的库中创建所需的表结构及初始化数据。
+
+    若外部库为 MySQL 8.0.16 及以上，对数据库部分配置项有要求，请参考下附配置修改环境中的数据库配置文件
 
     ```
     [mysqld]
@@ -125,11 +129,11 @@
     ```
 
 !!! Abstract ""
-    安装脚本使用 /opt/dataease2.0 作为默认安装目录，DataEase 的配置文件、数据及日志等均存放在该安装目录
+    安装脚本使用 /opt/dataease3.0 作为默认安装目录，DataEase 的配置文件、数据及日志等均存放在该安装目录
     安装目录目录结构说明：
 
     ```
-    /opt/dataease2.0/
+    /opt/dataease3.0/
     ├── apisix                                      #-- 存放 APISIX 组件的配置文件以及其日志文件持久化目录
     ├── bin                                         #-- 安装过程中需要加载到容器中的脚本
     ├── cache                                       #-- 存放 Ehcache 的缓存文件，主要缓存的是权限相关的数据
@@ -153,7 +157,7 @@
 
 ## 5 升级步骤
 !!! Abstract ""
-    在可连接互联网的情况下，执行以下命令即可完成在线升级步骤（升级前备份是个良好的习惯哦，备份参考见： [备份还原](./installation/backup_faq.md) ）：
+    在可连接互联网的情况下，执行以下命令即可完成在线升级步骤（升级前备份是个良好的习惯哦，备份参考见：[备份还原](backup_faq.md)）：
 
     ```
     # 升级至最新版本 

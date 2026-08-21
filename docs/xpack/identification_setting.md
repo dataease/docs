@@ -7,7 +7,7 @@
 !!! Abstract ""
     移动端支持 OIDC、LDAP、CAS、OAuth2 等认证方式登录。
 
-![更新1](../../newimg/移动端支持 OIDC、LDAP、CAS、OAuth2 等认证方式登录.png){ width="400px" }
+![更新1](../newimg/移动端支持 OIDC、LDAP、CAS、OAuth2 等认证方式登录.png){ width="400px" }
 
 !!! Abstract ""
     OIDC 配置信息。配置项 Realm 为非必填项。
@@ -15,12 +15,12 @@
 
 !!! Abstract ""
     CAS 配置信息。
-![更新1](../../newimg/3.2 支持 CAS 配置时填写回调域名.png){ width="900px" }
+![更新1](../newimg/3.2 支持 CAS 配置时填写回调域名.png){ width="900px" }
 
 !!! Abstract ""
     LDAP 配置信息。
-![更新1](../../newimg/3.1 支持 LDAP 认证.png){ width="900px" }
+![更新1](../newimg/3.1 支持 LDAP 认证.png){ width="900px" }
 
 !!! Abstract ""
     OAuth2 配置信息。
-![更新1](../../newimg/oauth2设置.png){ width="900px" }
+![更新1](../newimg/oauth2设置.png){ width="900px" }

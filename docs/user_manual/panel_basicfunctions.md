@@ -1,4 +1,4 @@
-## 1 编辑数据大屏
+﻿## 1 编辑数据大屏
 
 !!! Abstract ""
 	点击下图所示的位置或者新建数据大屏，进入数据大屏编辑界面。
@@ -312,7 +312,7 @@
 ![更新1](../img/panel_generation/外部参数设置页面.png){ width="900px" }
 
 !!! Abstract ""
-	**推荐直接在公共链接的 [Ticket 机制](https://dataease.cn/docs/v2/user_manual/panel_using/#1)中进行设置。相较于外部参数进行 Base64 编码处理后拼接，公共链接外部参数可以直接在 Ticket 参数中简易设置。  
+	**推荐直接在公共链接的 [Ticket 机制](panel_using.md)中进行设置。相较于外部参数进行 Base64 编码处理后拼接，公共链接外部参数可以直接在 Ticket 参数中简易设置。  
 	注意：使用 Ticket 设置和 Base64 加密组装均需要开启外部参数，进行参数设置。**   
 
 !!! Abstract ""	

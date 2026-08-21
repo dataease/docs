@@ -14,7 +14,7 @@
 ## 2 界面介绍
 
 !!! Abstract ""
-    进入 DataEase 主界面后可以看到界面上方导航栏，有【工作台】【仪表板】【数据大屏】【数据准备】四大模块。
+    进入 DataEase 主界面后可以看到界面上方导航栏，有【工作台】【仪表板】【数据大屏】【数据准备】【电子表格】五大模块。
 ![界面介绍](./newimg/product_acceptance/首页.png){ width="900px" }
 === "工作台"
     !!! Abstract ""  
@@ -57,6 +57,17 @@
 ![数据源](./newimg/product_acceptance/数据源.png){ width="900px" }
 
 ![数据集](./newimg/product_acceptance/数据集.png){ width="900px" }
+
+=== "电子表格"
+    !!! Abstract ""  
+        【电子表格】模块界面主要分为目录区域与预览区域，业务人员可在此创建表格进行可视化分析，更倾向于复杂表格的制作。
+
+        - 目录区域：添加目录/电子表格，对电子表格进行编辑等；
+        - 预览区域：预览、收藏电子表格等操作。
+
+         详细功能请参考本文档功能手册[电子表格](./xpack/spreadsheet_description.md)。
+![电子表格](./newimg/product_acceptance/电子表格.png){ width="900px" }
+
 ## 3 三分钟快速上手
 
 !!! Abstract ""
@@ -66,14 +77,14 @@
 ###　3.1 创建数据源
 
 !!! Abstract ""
-    在数据准备模块，切换到数据源菜单，新建一个数据源链接，名称为 "GDP 分析"，类型选择 "MySQL"，主机名 "mysql"，数据库名 "dataease"，用户名 "root"，密码 "Password123@mysql" 检验通过后点击保存即可。
+    在数据准备模块，切换到数据源菜单，新建一个数据源链接，名称为 "销售额分析"，类型选择 "MySQL"，主机名 "mysql"，数据库名 "dataease"，用户名 "root"，密码 "Password123@mysql" 检验通过后点击保存即可。
 
 ![添加数据源](./newimg/product_acceptance/连接数据源.png){ width="900px" }
 
 ### 3.2 创建数据集
 
 !!! Abstract ""
-    在数据准备模块，切换到数据集菜单，在【官方示例】分组下添加数据库数据集，选择上一步创建的数据源 "demo"，勾选数据表 "demo_gdp_by_city" 点击确认即可。 
+    在数据准备模块，切换到数据集菜单，在【官方示例】分组下添加数据库数据集，选择上一步创建的数据源 "demo"，勾选数据表 "各市实际销售额" 点击确认即可。 
 
 ![添加数据集](./newimg/product_acceptance/新建数据集.png){ width="900px" }
 
@@ -84,7 +95,7 @@
 ### 3.3 可视化分析
 
 !!! Abstract ""
-    切换到仪表板菜单，在【官方示例】分组下创建仪表板【2021 年全国GDP数据】。
+    切换到仪表板菜单，创建仪表板【2021 年全国GDP数据】。
 
 ![新建仪表板](./newimg/product_acceptance/新建仪表板.png){ width="900px" }
 

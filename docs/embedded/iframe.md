@@ -5,7 +5,7 @@
 
     （postMessage 是挂载在 window下的一个方法，用于不同域名下的两个页面的信息交互，父子页面通过  postMessage() 发送消息，再通过监听 message 事件接收信息。）Iframe 嵌入必须在监听触发后，再初始化图表。
 
-    **注意：嵌入需要在 DataEase 的配置文件 /opt/dataease2.0/conf/application.yml 里增加 origin-list 配置，并重启服务。详细见[嵌入式常见问题 2](https://dataease.cn/docs/v2/embedded/question/#2-iframe-div)。**
+    **注意：嵌入需要在 DataEase 的配置文件 `/opt/dataease3.0/conf/application.yml` 里增加 origin-list 配置，并重启服务。详细见[嵌入式常见问题](question.md)。**
 
 ##  1 仪表板嵌入
 !!! Abstract ""
@@ -609,7 +609,7 @@
     ```
 ### 3.1 数据大屏双向参数传递
 !!! Abstract ""
-    参考 [1.1 仪表板双向参数传递](https://dataease.cn/docs/v2/embedded/iframe/#11)以及 [3 数据大屏嵌入](https://dataease.cn/docs/v2/embedded/iframe/#3)。以及 Iframe 数据大屏嵌入，将相应 busiFlag 修改对应。
+    参考 [1.1 仪表板双向参数传递](iframe.md#11)以及 [3 数据大屏嵌入](iframe.md#3)。以及 Iframe 数据大屏嵌入，将相应 busiFlag 修改对应。
     
     - 仪表板图表 busiFlag: dashboard
     - 数据大屏图表 busiFlag: dataV

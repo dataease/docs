@@ -16,13 +16,11 @@
 
 !!! Abstract ""
     - **数据仓库/数据湖：** AWS RedShift、 Apache Hive（插件）
-    - **OLTP 型数据库：** MySQL、MongoDB-BI、SQL Server、Oracle、PostgreSQL、MariaDB、Db2、TiDB、KingbaseES、达梦（插件）
-    - **OLAP 型数据库：** ClickHouse、Apache Doris、Apache Impala、StarRocks
+    - **OLTP 型数据库：** MySQL、MongoDB-BI、SQL Server、Oracle、PostgreSQL、MariaDB、Db2、TiDB、Kingbase、达梦（插件）
+    - **OLAP 型数据库：** ClickHouse、Apache Doris、Apache Impala、StarRocks、Elasticsearch
     - **数据文件：** Excel、CSV
-    - **API 数据源**
+    - **API 数据源：** API、飞书数据源（插件）
 
-!!! Abstract ""
-    v3.0.0 起新增支持 KingbaseES 数据源，详细配置请参考 [配置 Kingbase 数据源](datasource_configuration/Kingbase_datasource_configuration.md)。
 
 ![支持数据源类型](../newimg/user_manual/支持数据源类型.png){ width="900px" }
 
@@ -40,6 +38,8 @@
     - Doris - 0.15、1.0.0、1.1.0
     - StarRocks  - 3.0.0
     - MariaDB - 10.7.8
+    - Db2 - 10.5.0
+    - kingbase - 8.6.0
 
 
 ## 3 数据源设置

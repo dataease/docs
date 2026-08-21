@@ -1,4 +1,4 @@
-!!! Abstract ""
+﻿!!! Abstract ""
     嵌入式支持外部参数传递，可以使用该功能根据第三方系统传递的参数在 DataEase 中进行数据的过滤，或者 DataEase 向第三方系统传递参数，外部参数可根据业务需求选择使用或者不使用。
 !!! Abstract ""
     目前支持参数及场景如下，使用参数需在仪表板或者数据大屏首先做好参数设置。
@@ -10,7 +10,7 @@
 
 ## 2 外部参数设置
 !!! Abstract ""
-    使用外部参数，需要先在 DataEase 系统中设置好数据大屏或者仪表板外部参数，具体设置可见[操作手册](https://dataease.cn/docs/v2/user_manual/dashboard_basicfunctions/#6)。
+    使用外部参数，需要先在 DataEase 系统中设置好数据大屏或者仪表板外部参数，具体设置可见[操作手册](../user_manual/dashboard_basicfunctions.md)。
 ![3.3.2 外部参数设置.png](../img/embedded/3.3.2 外部参数设置.png){ width="900px" }
 
 ## 3 嵌入式参数以及外部参数说明

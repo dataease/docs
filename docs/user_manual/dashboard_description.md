@@ -15,4 +15,4 @@
 	- 【序号 5】查看仪表板信息，在仪表板预览界面点击此感叹号，仪表板信息则弹出提示。
 
 
-![2.0仪表板概览](../img/dashboard_generation/2.0仪表板概览.png){ width="900px" }
+![3.0仪表板概览](../img/dashboard_generation/3.0仪表板概览.png){ width="900px" }

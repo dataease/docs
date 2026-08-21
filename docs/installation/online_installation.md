@@ -9,6 +9,7 @@
     * **可访问互联网**
 
     **提示：支持云平台部署，安装成功后请检查公有云端口开通情况。Docker 版本太老可能会导致安装失败，建议使用安装包内的 Docker。**
+
 ## 2 端口要求
 
 !!! Abstract ""
@@ -22,15 +23,12 @@
 ## 3 安装部署
 
 !!! Abstract ""
-    GitHub release 链接: https://github.com/dataease/dataease/releases  
+    GitHub release 链接: https://github.com/dataease/dataease/releases
 
-    **在服务器上执行一键安装命令：**
-    ```properties
-    curl -sSL https://dataease.oss-cn-hangzhou.aliyuncs.com/quick_start_v2.sh | bash
-    ```
+    v3 一键在线安装脚本尚未正式发布。当前请优先使用 [离线安装包](offline_INSTL_and_UPG.md) 完成部署；若官方后续发布 v3 在线安装脚本，再按发布说明执行。
 
 !!! Abstract ""
-    如果使用外部数据库进行安装，推荐使用 MySQL 8.X 版本。同时 DataEase 对数据库部分配置项有要求，请参考下附的数据库配置，修改环境中的数据库配置文件
+    如果使用外部数据库进行安装，请参考 [外部数据库部署](multi_database_deployment.md)。外部 MySQL 推荐 8.X，部分配置项要求如下。
 
     ```
     [mysqld]
@@ -51,7 +49,7 @@
 	innodb_flush_log_at_trx_commit=0
 	sync_binlog=0
 	group_concat_max_len=1024000
-    sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+	sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
 	skip-name-resolve
 
 	[mysql]
@@ -61,40 +59,26 @@
 	default-character-set=utf8
     ```
 
-	**特别注意以下几个参数的设置：**
-	```
-	character_set_server=utf8
-	lower_case_table_names=1
-	group_concat_max_len=1024000
-	```
+!!! Abstract ""
+    特别注意以下几个参数的设置：
 
-    请参考文档中的建库语句创建 DataEase 使用的数据库，DataEase 服务启动时会自动在配置的库中创建所需的表结构及初始化数据。
+    ```
+    character_set_server=utf8
+    lower_case_table_names=1
+    group_concat_max_len=1024000
+    ```
+
+    建库语句示例：
+
     ```mysql
-    CREATE DATABASE `dataease` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+    CREATE DATABASE `dataease` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
     ```
 
 !!! Abstract ""
-    安装脚本使用 /opt/dataease 作为默认安装目录，DataEase 的配置文件、数据及日志等均存放在该安装目录  
+    安装成功后，默认运行目录为 `/opt/dataease3.0`。通过浏览器访问登录：
 
-    **安装目录目录结构说明：**  
     ```
-    /opt/dataease/
-	├── bin                                         #-- 安装过程中需要加载到容器中的脚本
-	├── conf                                        #-- DataEase 各组件及数据库等中间件的配置文件
-	├── data                                        #-- DataEase 各组件及数据库等中间件的数据持久化目录
-	├── docker-compose-doris.yml                    #-- DataEase 内建的 Doris 所需的 Docker Compose 文件
-    ├── docker-compose-kettle.yml                   #-- DataEase 内建的 Kettle 所需的 Docker Compose 文件 
-	├── docker-compose-mysql.yml                    #-- DataEase 内建的 MySQl 所需的 Docker Compose 文件 
-	├── docker-compose.yml                          #-- DataEase 基础 Docker Compose 文件，定义了网络等基础信息 
-	├── logs                                        #-- DataEase 各组件的日志文件持久化目录
-    ├── plugins                                     #-- DataEase 第三方插件目录 
-	└── templates                                   #-- DataEase 各组件及数据库等中间件的配置文件的原始文件
+    地址: http://目标服务器IP地址:服务运行端口
+    用户名: admin
+    密码: DataEase@123456
     ```
-
-## 4 登录访问
-
-!!! Abstract ""
-    安装成功后，通过浏览器访问如下页面登录：  
-    - **访问地址** : http://目标服务器IP地址:服务运行端口  
-    - **登录用户名**: admin  
-    - **登录密码**: DataEase@123456  

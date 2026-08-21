@@ -31,7 +31,7 @@
 ## 3 安装 DataEase
 
 !!! Abstract ""
-    安装好 MySQL 后，进入应用商店应用列表，找到 DataEase 应用进行安装。在应用详情页选择 v2.0 最新的 DataEase 版本进行安装。
+    安装好 MySQL 后，进入应用商店应用列表，找到 DataEase 应用进行安装。在应用详情页选择 **v3** 最新版本进行安装。
 ![安装DataEase](../img/installation/找到v2.png){ width="900px" }
 
 !!! Abstract ""

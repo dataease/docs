@@ -101,4 +101,4 @@
 
 
 !!! Abstract ""
-	安装包下载完成就可以开始部署 DataEase。按照 [DataEase 离线部署]( https://dataease.cn/docs/v2/installation/offline_installation/)步骤进行操作，即可部署 DataEase。
+	安装包下载完成就可以开始部署 DataEase。按照 [DataEase 离线部署](offline_INSTL_and_UPG.md) 步骤进行操作，即可部署 DataEase。

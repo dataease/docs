@@ -199,11 +199,14 @@
 ## 5 第三方嵌入
 
 !!! Abstract ""
-    第三方嵌入用于配置 SQLBot 智能问数等第三方服务的嵌入信息，需与 DataEase 嵌入式应用配合使用。
+    第三方嵌入用于配置 SQLBot 智能问数等第三方服务的嵌入信息。配置前需先在 SQLBot 中创建用于嵌入 DataEase 的小助手，并记录应用 ID。具体步骤可参考[DataEase 接入文档](https://sqlbot.org/docs/v1/dataease_integration/){ target="_blank" rel="noopener" }。
 
 !!! Abstract ""
-    - 嵌入密钥：第三方系统调用 DataEase 接口时的认证密钥，需与嵌入式应用中配置的密钥保持一致；
-    - 回调地址：第三方系统接收 DataEase 回调的地址。
+    点击【编辑】后，在【SQLBot 设置】中填写以下参数：
 
-!!! tip "说明"
-    v3.0.0 起，原【系统参数-第三方嵌入】页签保留在【系统设置-系统参数】下，与【嵌入式管理】模块配合使用。
+    - SQLBot 服务器 URL：SQLBot 服务的访问地址，须以 `http://` 或 `https://` 开头，例如 `https://sqlbot.example.com`。DataEase 按该地址加载并嵌入 SQLBot 智能问数页面。
+    - 应用 ID：在 SQLBot【小助手管理】中创建小助手应用后生成的应用标识。SQLBot 侧该应用的跨域设置需填写 DataEase 的访问地址。
+
+    填写完成后可先点击【校验】确认连通，再点击【保存】。校验通过后，列表中会显示为有效。
+
+![SQLBot 嵌入](../../img/system_management/sqlbot嵌入.png){ width="900" }

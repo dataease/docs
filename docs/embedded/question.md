@@ -16,7 +16,7 @@
 ![4. 嵌入式常见问题（3）.png](../img/embedded/4. 嵌入式常见问题（3）.png){ width="900px" }
 
 !!! Abstract ""
-    解决方案 1：Iframe DIV 嵌入需要在 DataEase 的配置文件 /opt/dataease2.0/conf/application.yml 里增加 origin-list 配置访问 DataEase 地址，多个地址以逗号隔开并重启 DataEase 服务，如下所示：
+    解决方案 1：Iframe DIV 嵌入需要在 DataEase 的配置文件 /opt/dataease3.0/conf/application.yml 里增加 origin-list 配置访问 DataEase 地址，多个地址以逗号隔开并重启 DataEase 服务，如下所示：
 
     ```
     origin-list: http://localhost:8000，访问 DataEase 地址1（9080）,访问 DataEase 地址2（9080)
@@ -84,7 +84,7 @@
 ![4. 嵌入式常见问题（11）.png](../img/embedded/4. 嵌入式常见问题（11）.png){ width="900px" }
 
 !!! Abstract ""
-    解决方案：需要新开标签页访问的的地址都要配置 origin-list，参考 4.2 处理。
+    解决方案：需要新开标签页访问的地址都要配置 origin-list，参考本文第 2 节处理。
 
 
 ## 8 DIV 嵌入白屏，网络请求 401，iFrame 嵌入网络请求状态码 400

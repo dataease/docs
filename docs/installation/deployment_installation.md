@@ -196,7 +196,7 @@
     使用 MySQL 8.0 及以上版本进行，以下是推荐的 MySQL 配置。
 
 !!! Abstract ""
-    **说明：** v3.0.0 起元数据库支持 7 种（MySQL、GreatSQL、达梦、KingbaseES、Oracle、PostgreSQL、SQL Server），以下以 MySQL 为例，其他数据库的部署配置请参考 [多数据库部署](multi_database_deployment.md)。
+    **说明：** 安装器默认使用内置 MySQL。如需改用外部 MySQL 或其他元数据库（达梦、KingbaseES、Oracle、PostgreSQL、SQL Server、GreatSQL），请参考 [外部数据库部署](multi_database_deployment.md)。
     ```
     [mysqld]
     datadir=/var/lib/mysql
