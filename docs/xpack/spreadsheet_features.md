@@ -30,7 +30,7 @@
     | 预览 | 预览当前表格；下拉支持【全屏预览】 |
     | 保存 | 保存当前编辑 |
     | 发布 | 发布上线。下拉项随状态变化：已发布时可【取消发布】；已发布后又修改并保存、尚未再次发布时，可【恢复到发布版本】 |
-    | 替换数据集 | 右上角循环箭头图标，批量替换表格内使用的数据集（详见 [数据集替换](spreadsheet_publish.md#1-数据集替换)） |
+    | 替换数据集 | 右上角循环箭头图标，批量替换表格内使用的数据集（详见 [数据集替换](spreadsheet_publish.md#dataset-replace)） |
 
 !!! Abstract ""
     **典型操作**：预览 → 保存 → 发布。
@@ -58,7 +58,7 @@
     | 数字格式 | 数字格式面板（默认显示「常规」）、百分比、货币、增加小数位、减少小数位 |
     | 数据 | 冻结、筛选、排序、数据验证、条件格式、函数 |
     | 辅助 | 表格、快捷键面板、查找替换 |
-    | 查询控件 | 【查询控件】（详见 [电子表格特殊功能 - 查询控件](spreadsheet_special.md#5-查询控件)） |
+    | 查询控件 | 【查询控件】（详见 [电子表格特殊功能 - 查询控件](spreadsheet_special.md#query-control)） |
 ![工具栏](../newimg/xpack/工具栏分组总览.png){ width="900px" }
 
 ### 3.2 插入
@@ -66,8 +66,8 @@
 !!! Abstract ""
     | 菜单项 | 说明 |
     | --- | --- |
-    | 透视表 | 按行 / 列维度汇总指标，详见 [透视表](spreadsheet_special.md#4-透视表) |
-    | 明细表 | 逐行展示数据集明细，详见 [明细表](spreadsheet_special.md#3-明细表) |
+    | 透视表 | 按行 / 列维度汇总指标，详见 [透视表](spreadsheet_special.md#pivot-table) |
+    | 明细表 | 逐行展示数据集明细，详见 [明细表](spreadsheet_special.md#detail-table) |
     | 链接 | 插入超链接 |
     | 批注 | 单元格批注 |
 
@@ -129,7 +129,7 @@
     | 按钮 | 作用 |
     | --- | --- |
     | 冻结 | 下拉：【冻结至当前行】【冻结至当前列】【冻结至当前行列】【取消冻结】 |
-    | 筛选 | Excel 式区域筛选（与查询控件不同，见 [筛选 vs 查询控件](spreadsheet_special.md#5-查询控件)） |
+    | 筛选 | Excel 式区域筛选|
     | 排序 | 对选中区域排序 |
     | 数据验证 | 按规则限制或校验单元格可输入内容（如下拉、数值范围等） |
     | 条件格式 | 按规则美化单元格显示：突出显示、最前/最后/平均值、自定义公式、色阶、数据条、图标集； |
@@ -145,7 +145,7 @@
     | 表格 | 将区域转换为表格对象 |
     | 快捷键面板 | 查看快捷键 |
     | 查找替换 | 在表格内查找 / 替换 |
-    | 查询控件 | 打开 / 关闭查询栏，详见 [查询控件](spreadsheet_special.md#5-查询控件) |
+    | 查询控件 | 打开 / 关闭查询栏，详见 [查询控件](spreadsheet_special.md#query-control) |
 
 ![辅助菜单](../newimg/xpack/辅助1.png){ width="900px" }
 
@@ -171,13 +171,13 @@
 
     | 能力 | 简要说明 | 详细文档 |
     | --- | --- | --- |
-    | 明细表 / 透视表 | 【插入】中绑定数据集展示数据 | [明细表](spreadsheet_special.md#3-明细表)、[透视表](spreadsheet_special.md#4-透视表) |
-    | 查询控件 | 配置条件并联动数据对象 | [查询控件](spreadsheet_special.md#5-查询控件) |
-    | 数据集复制粘贴 | 在表格内复用数据对象 | [数据集复制粘贴](spreadsheet_special.md#6-数据集复制粘贴) |
-    | 右侧配置面板 | 选中对象后配置字段与样式 | [右侧配置面板](spreadsheet_special.md#7-右侧配置面板) |
-    | 替换数据集 | 批量切换数据集并映射字段 | [数据集替换](spreadsheet_publish.md#1-数据集替换) |
+    | 明细表 / 透视表 | 【插入】中绑定数据集展示数据 | [明细表](spreadsheet_special.md#detail-table)、[透视表](spreadsheet_special.md#pivot-table) |
+    | 查询控件 | 配置条件并联动数据对象 | [查询控件](spreadsheet_special.md#query-control) |
+    | 数据集复制粘贴 | 在表格内复用数据对象 | [数据集复制粘贴](spreadsheet_special.md#dataset-copy-paste) |
+    | 右侧配置面板 | 选中对象后配置字段与样式 | [右侧配置面板](spreadsheet_special.md#config-panel) |
+    | 替换数据集 | 批量切换数据集并映射字段 | [数据集替换](spreadsheet_publish.md#dataset-replace) |
 
-## 5 与 Excel / Univer 的关系
+## 5 与 Excel / Univer 的关系 {#excel-univer}
 
 !!! Abstract ""
     | 能力 | 来源 | 说明 |
