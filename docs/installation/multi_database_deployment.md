@@ -142,8 +142,8 @@
 ### 3.1 安装前准备 (pgsql 举例)
 
 !!! Abstract ""
-    1. 在目标库中准备空库（或 Schema）和账号，授予建表、读写权限。
-    2. 编辑安装包里的 `install.conf`：
+    第一步，在目标库中准备空库（或 Schema）和账号，授予建表、读写权限。
+    第二步，编辑安装包里的 `install.conf`：
 
     ```
     DE_EXTERNAL_MYSQL=true
@@ -152,7 +152,7 @@
 
     把 `standalone-pg` 换成上表中的 profile 名，例如 `standalone-dm`、`standalone-kingbase`。
 
-    3. 执行 `install.sh`。安装完成后、首次访问前，先按下一节写好连接文件、按需补齐 JDBC 驱动，再启动（或改完后 `dectl restart`）。
+    第三步，执行 `install.sh`。安装完成后、首次访问前，先按下一节写好连接文件、按需补齐 JDBC 驱动，再启动（或改完后 `dectl restart`）。
 
 ### 3.2 写入真实连接（必做）
 
@@ -198,7 +198,7 @@
         include: standalone-pg
     ```
 
-    建议主配置里**不要**再保留旧的 `jdbc:mariadb://` 数据源段，避免与 profile 冲突。其他库按同样方式放置文件，连接串和方言用第 1 节表格。拷贝 jar 内 profile 到 `conf/` 时，请一并保留 Quartz 的 `driverDelegateClass`：
+    建议主配置里 **不要** 再保留旧的 `jdbc:mariadb://` 数据源段，避免与 profile 冲突。其他库按同样方式放置文件，连接串和方言用第 1 节表格。拷贝 jar 内 profile 到 `conf/` 时，请一并保留 Quartz 的 `driverDelegateClass`：
 
     - PostgreSQL / KingbaseES：`org.quartz.impl.jdbcjobstore.PostgreSQLDelegate`
     - SQL Server：`org.quartz.impl.jdbcjobstore.MSSQLDelegate`
@@ -223,7 +223,7 @@
     /opt/dataease3.0/data/driver/
     ```
 
-    官方镜像的 `JAVA_OPTIONS` 已包含 `-Dloader.path=/opt/apps,/opt/dataease3.0/data/driver/`，把 jar 放进该目录即可被 PropertiesLauncher 加载，**一般不必**再改 `docker-compose` 或额外设置 `LOADER_PATH`。
+    官方镜像的 `JAVA_OPTIONS` 已包含 `-Dloader.path=/opt/apps,/opt/dataease3.0/data/driver/`，把 jar 放进该目录即可被 PropertiesLauncher 加载，**一般不必** 再改 `docker-compose` 或额外设置 `LOADER_PATH`。
 
     操作步骤：
 

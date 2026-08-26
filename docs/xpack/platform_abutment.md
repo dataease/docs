@@ -322,7 +322,7 @@
 ![对接国际飞书平台](../img/xpack/lark发布新版本.png){ width="900px" }
 
 !!! Abstract ""
-    获取应用 key 和应用密钥，在应用的【基础信息】里可以获取到 App ID 和 App Secret,到 DataEase 进行校验和保存。
+    获取应用 key 和应用密钥，在应用的【基础信息】里可以获取到 App ID 和 App Secret，到 DataEase 进行校验和保存。
 
 ![对接国际飞书平台](../img/xpack/lark调用成功.png){ width="900px" }
 

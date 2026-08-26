@@ -47,17 +47,17 @@
     **Linux 系统**：  
     以 Ubuntu 系统为例的安装步骤： 
 
-    - 安装命令：sudo dpkg -i [package]，例如：sudo dpkg -i dataease_1.0.0_amd64.deb。
+    - 安装命令：sudo dpkg -i [package]，例如：sudo dpkg -i dataease_3.0.0_amd64.deb。
     - 在启动台找到 DataEase 图标，点击启动。    
 
-    注意：Ubuntu、Debian、openSUSE 等系统时，请勿使用 root 用户，需使用普通用户安装。卸载使用 sudo dpkg -P dataease。卸载使用 sudo dpkg -P dataease。
+    注意：Ubuntu、Debian、openSUSE 等系统时，请勿使用 root 用户，需使用普通用户安装。卸载使用 sudo dpkg -P dataease。
 
 
 
 ### 2.3 升级操作
 
 !!! Abstract ""
-    下载最新版对离线安装包：[**DataEase 桌面版官方网站**](https://www.dataease.cn/)。
+    下载最新版离线安装包：[**DataEase 桌面版官方网站**](https://www.dataease.cn/)。
     
     - Windows 系统和 MacOS 系统在原存储位置进行解压，解压完成即可完成升级。
     - Linux 系统利用命令行安装后完成升级，
