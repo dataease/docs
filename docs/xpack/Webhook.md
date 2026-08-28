@@ -9,7 +9,7 @@
     - Secret（可选）：如果填写 Secret，DataEase 会使用它计算加密的哈希签名，用于数据加密和验证。
     - 消息模板：支持自定义 Webhook 请求 Body 内容，用于适配企业微信、钉钉、飞书或其他第三方系统对请求体格式的要求。可用占位符：`${title}`、`${content}`、`${messageId}`，发送告警时系统会自动替换为对应的告警标题、告警内容和消息 ID。
 
-![更新1](../newimg/3.2%20新增%20Webhook%20管理1.png){ width="900px" }
+![更新1](../newimg/新增Webhook管理1.png){ width="900px" }
 
 ## 1 消息模板示例
 

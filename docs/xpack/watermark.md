@@ -21,6 +21,15 @@
 ![水印管理](../img/xpack/水印预览.png){ width="900px" }
 
 !!! Abstract ""
+    若开启导出数据文件开启水印，导出的 Excel 数据也会携带水印。
+
+![水印管理](../img/xpack/文件携带水印1.png){ width="900px" }
+
+![水印管理](../img/xpack/文件携带水印2.png){ width="900px" }
+
+![水印管理](../img/xpack/文件携带水印3.png){ width="900px" }
+
+!!! Abstract ""
     若开启允许仪表板和数据大屏单独打开或者关闭水印，则在仪表板和数据大屏编辑界面中可选择水印开关。
 
 ![水印管理](../img/xpack/单独开水印.png){ width="900px" }

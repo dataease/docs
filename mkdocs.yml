@@ -52,10 +52,10 @@ nav:
       - 外部数据库部署: installation/multi_database_deployment.md
       - 升级指南: installation/offline_upgrade.md
       - 在线升级: installation/online_upgrade.md
-      - 阿里云安装指南: installation/aliyun_installtion.md
-      - 1Panel 安装指南: installation/1panel_installation.md
+      # - 阿里云安装指南: installation/aliyun_installtion.md  # 暂未上线
+      # - 1Panel 安装指南: installation/1panel_installation.md  # 暂未上线
       - 命令行工具使用指南: installation/cli.md
-      - 备份还原指南: installation/backup_faq.md
+      # - 备份还原指南: installation/backup_faq.md  # 外部库场景暂未处理，文档暂下线
   - 功能手册:
       #- 通用功能: user_manual/general.md
       - 工作台: user_manual/homepage.md
@@ -96,11 +96,11 @@ nav:
               - 图表样式设计: user_manual/view_module/view_style_design.md
               - 图表高级设计: user_manual/view_module/view_advanced_design.md
               - 图表图库: user_manual/view_module/view_gallery.md
-          - 过滤组件:
-              - 过滤组件概览: user_manual/filter_module/filtert_module.md
-              - 时间过滤组件: user_manual/filter_module/filtertime_module.md
-              - 文本过滤组件: user_manual/filter_module/filtertext_module.md
-              - 数字过滤组件: user_manual/filter_module/filternumber_module.md
+          - 查询组件:
+              - 查询组件概览: user_manual/filter_module/filtert_module.md
+              - 时间查询组件: user_manual/filter_module/filtertime_module.md
+              - 文本查询组件: user_manual/filter_module/filtertext_module.md
+              - 数字查询组件: user_manual/filter_module/filternumber_module.md
           - 其他组件: user_manual/other_module/style_module.md
           - 移动端: user_manual/app_description.md
       - 数据大屏:
@@ -116,11 +116,11 @@ nav:
               - 图表样式设计: user_manual/view_module/panel_view_style_design.md
               - 图表高级设计: user_manual/view_module/panel_view_advanced_design.md
               - 图表图库: user_manual/view_module/view_gallery.md
-          - 过滤组件:
-              - 过滤组件概览: user_manual/filter_module/filtert_module_panel.md
-              - 时间过滤组件: user_manual/filter_module/filtertime_module_panel.md
-              - 文本过滤组件: user_manual/filter_module/filtertext_module_panel.md
-              - 数字过滤组件: user_manual/filter_module/filternumber_module_panel.md
+          - 查询组件:
+              - 查询组件概览: user_manual/filter_module/filtert_module_panel.md
+              - 时间查询组件: user_manual/filter_module/filtertime_module_panel.md
+              - 文本查询组件: user_manual/filter_module/filtertext_module_panel.md
+              - 数字查询组件: user_manual/filter_module/filternumber_module_panel.md
           - 其他组件: user_manual/other_module/panel_style_module.md
       - 模板市场: user_manual/template_market.md
       - 数据导出中心: user_manual/system_management/data_export_center.md
@@ -169,7 +169,7 @@ nav:
   - 教学视频: instructional_video.md
   - 联系我们: contact.md
   # - Skill 技能: skill/index.md  # v3 暂隐藏，后续恢复
-  - 桌面版指南: desktop.md
+  # - 桌面版指南: desktop.md  # v3 桌面版尚未推出，暂下线
   - 嵌入式指南:
       - 嵌入式概述: embedded/summary.md
       - 嵌入式流程: embedded/process.md
@@ -182,7 +182,6 @@ nav:
       - 嵌入式附加功能:
         - 单点登录: embedded/sso.md
         - 模拟登录: embedded/simulated.md
-  - SQLBot 智能问数: https://sqlbot.org/
 
 
 markdown_extensions:

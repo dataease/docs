@@ -5,7 +5,7 @@
 	年份组件支持默认设置，可根据设置相对年份。
 
 ![年份组件入口](../../img/dashboard_generation/数据大屏过滤组件年.png){ width="900px" }  
-![仪表盘编辑_过滤组件](../../img/dashboard_generation/数据大屏过滤组件筛选年.png){ width="900px" }  
+![仪表盘编辑_查询组件](../../img/dashboard_generation/数据大屏过滤组件筛选年.png){ width="900px" }  
 
 
 ## 2 年月组件
@@ -15,7 +15,7 @@
 	年月组件支持默认设置，可根据设置相对月份。
 
 ![年份组件入口](../../img/dashboard_generation/数据大屏过滤组件年月.png){ width="900px" }  
-![仪表盘编辑_过滤组件](../../img/dashboard_generation/数据大屏过滤组件筛选年月.png){ width="900px" }
+![仪表盘编辑_查询组件](../../img/dashboard_generation/数据大屏过滤组件筛选年月.png){ width="900px" }
 
 
 ## 3 日期组件
@@ -24,10 +24,10 @@
 	可通过与图表的日期字段绑定，按日期过滤图表的数据。支持设置默认日期，展示展示具体日期的数据。
 
 ![年份组件入口](../../img/dashboard_generation/数据大屏过滤组件年月日.png){ width="900px" }  
-![仪表盘编辑_过滤组件](../../img/dashboard_generation/数据大屏年月日筛选.png){ width="900px" }
+![仪表盘编辑_查询组件](../../img/dashboard_generation/数据大屏年月日筛选.png){ width="900px" }
 
 !!! Abstract ""
-	日期过滤组件支持时分秒级别的设置。
+	日期查询组件支持时分秒级别的设置。
 ![年份组件入口](../../img/dashboard_generation/数据大屏过滤设置时分秒.png){ width="900px" }  
 
 
@@ -65,7 +65,7 @@
 
 !!! Abstract ""
 	**区间类型支持以下设置：开始于、结束于、时间区间、动态查询时间窗口（单次查询对多 N 天）。**
-![仪表盘编辑_过滤组件](../../img/dashboard_generation/数据大屏时间范围区间设置.png){ width="900px" }
+![仪表盘编辑_查询组件](../../img/dashboard_generation/数据大屏时间范围区间设置.png){ width="900px" }
 
 !!! Abstract ""
 	开始于：【开始于】日期前的日期无法被选择，支持设置【固定时间】与【动态时间】。比如，以下设置【开始于】日期为 2024-03-29，则 2024-03-29 前的日期无法再被选择。

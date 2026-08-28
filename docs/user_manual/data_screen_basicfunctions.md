@@ -164,12 +164,12 @@
 ![组件背景设置](../img/dashboard_generation/组件背景设置.png){ width="900px" }
 
 !!! Abstract ""
-	过滤组件支持边框、文字、背景色设置，如下图所示。
+	查询组件支持边框、文字、背景色设置，如下图所示。
 
 ![组件样式](../img/dashboard_generation/组件样式.png){ width="900" }
 
 !!! Abstract ""
-	所有过滤组件样式边框支持自定义颜色，系统内置边框图片文件为 SVG 图片，系统支持边框色设置，可替换 SVG 图片的颜色。
+	所有查询组件样式边框支持自定义颜色，系统内置边框图片文件为 SVG 图片，系统支持边框色设置，可替换 SVG 图片的颜色。
 
 ![组件样式](../img/dashboard_generation/组件样式边框.png){ width="900" }
 

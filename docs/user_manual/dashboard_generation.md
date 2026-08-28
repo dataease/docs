@@ -40,76 +40,76 @@
 	2.选择已有视图
 
 ![仪表板编辑_视图添加](../img/dashboard_generation/仪表板编辑_视图添加.png)
-### 2.3 添加过滤组件
+### 2.3 添加查询组件
 
 !!! Abstract ""
 	点击左侧【组件】，弹出组件选择框，可拖拉组件至仪表板的画板中，弹出组件编辑框。
 
 ![仪表板编辑_组件添加](../img/dashboard_generation/仪表板编辑_组件添加.png)
 
-!!! Abstract "过滤组件通用功能"
+!!! Abstract "查询组件通用功能"
     - 选择【按表选择】或者【按组件选择】，页面左侧列出可选择的组件列表
-    - 选择多个数据集的字段，用一个过滤组件过滤多个视图的数据
+    - 选择多个数据集的字段，用一个查询组件过滤多个视图的数据
     - 控制单选、多选
     - 设置组件默认值
     - 设置组件标题
-    - 自定义过滤组件的控制范围
+    - 自定义查询组件的控制范围
 
-![仪表盘编辑_过滤组件](../img/dashboard_generation/过滤组件通用功能.png)
+![仪表盘编辑_查询组件](../img/dashboard_generation/过滤组件通用功能.png)
 
 !!! Abstract "年份组件"
 	可通过与图表组件的日期字段绑定，按年过滤图表组件的数据。  
 	年份组件支持固定年份与动态年份，动态年份可根据设置自动使用相对年份。
 
-![仪表盘编辑_过滤组件](../img/dashboard_generation/年份组件.png)
-![仪表盘编辑_过滤组件](../img/dashboard_generation/年份组件-动态年份设置.png)
+![仪表盘编辑_查询组件](../img/dashboard_generation/年份组件.png)
+![仪表盘编辑_查询组件](../img/dashboard_generation/年份组件-动态年份设置.png)
 
 !!! Abstract "年月组件"
 	可通过与图表组件的日期字段绑定，按年份和月份过滤图表组件的数据。  
 	年月组件支持固定年月与动态年月，动态年月根据设置自动使用相对月份。
 
-![仪表盘编辑_过滤组件](../img/dashboard_generation/年月组件.png)
-![仪表盘编辑_过滤组件](../img/dashboard_generation/年月组件-动态年月设置.png)
+![仪表盘编辑_查询组件](../img/dashboard_generation/年月组件.png)
+![仪表盘编辑_查询组件](../img/dashboard_generation/年月组件-动态年月设置.png)
 
 !!! Abstract "日期组件"
 	可通过与图表的日期字段绑定，按日期过滤图表的数据。支持动态设置默认日期，比如需要看当天的数据，即可将该组件的默认值设置为当天，那么不论何时打开仪表板，均展示当天数据。
 
-![仪表盘编辑_过滤组件](../img/dashboard_generation/日期组件.png)
+![仪表盘编辑_查询组件](../img/dashboard_generation/日期组件.png)
 
 !!! Abstract "日期范围组件"
 	可通过与图表的日期字段绑定，自定义日期范围过滤图表的数据。支持动态设置日期范围，比如需要看本月的数据，可通过设置组件的默认起始日期来实现，那么不论何时打开仪表板，均展示当月数据。
 
-![仪表盘编辑_过滤组件](../img/dashboard_generation/日期范围组件.png)
+![仪表盘编辑_查询组件](../img/dashboard_generation/日期范围组件.png)
 
 !!! Abstract "文本下拉组件"
 	可通过与图表的文本型字段绑定，过滤图表的数据。
 
-![仪表盘编辑_过滤组件](../img/dashboard_generation/文本下拉组件.jpeg)
+![仪表盘编辑_查询组件](../img/dashboard_generation/文本下拉组件.jpeg)
 
 !!! Abstract "文本列表组件"
 	可通过与图表的文本型字段绑定，过滤图表的数据。
 
-![仪表盘编辑_过滤组件](../img/dashboard_generation/文本列表组件.png)
+![仪表盘编辑_查询组件](../img/dashboard_generation/文本列表组件.png)
 
 !!! Abstract "文本搜索组件"
 	可通过与图表的文本型字段绑定，搜索并展示符合条件的图表的数据。
 
-![仪表盘编辑_过滤组件](../img/dashboard_generation/文本搜索组件.png)
+![仪表盘编辑_查询组件](../img/dashboard_generation/文本搜索组件.png)
 
 !!! Abstract "数字下拉组件"
 	可通过与图表的数值型字段绑定，过滤图表的数据。
 
-![仪表盘编辑_过滤组件](../img/dashboard_generation/数字下拉组件.png)
+![仪表盘编辑_查询组件](../img/dashboard_generation/数字下拉组件.png)
 
 !!! Abstract "数字列表组件"
 	可通过与图表的数值型字段绑定，过滤图表的数据。
 
-![仪表盘编辑_过滤组件](../img/dashboard_generation/数字列表组件.png)
+![仪表盘编辑_查询组件](../img/dashboard_generation/数字列表组件.png)
 
 !!! Abstract "数值区间组件"
 	可通过与图表的数值型字段绑定，自定义数值区间过滤视图数据。
 
-![仪表盘编辑_过滤组件](../img/dashboard_generation/数值区间组件.png)
+![仪表盘编辑_查询组件](../img/dashboard_generation/数值区间组件.png)
 
 ### 2.4 添加其他组件
 
