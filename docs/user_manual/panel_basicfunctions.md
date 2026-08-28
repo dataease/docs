@@ -122,14 +122,14 @@
 !!! Abstract ""
 	图层隐藏功能，可以迅速隐藏不需要显示的图层，以便更清晰地查看和编辑目标图层。
 	
-![仪表板主题](../img/panel_generation/2.0图层隐藏.png){ width="900px" }
+![仪表板主题](../img/panel_generation/3.0图层隐藏.png){ width="900px" }
 
 ### 5.3 图层锁定
 
 !!! Abstract ""
 	通过图层锁定功能，可以确保在设计过程中不会误操作或修改已经设置好的图层。
 
-![仪表板主题](../img/panel_generation/2.0图层锁定.png){ width="900px" }
+![仪表板主题](../img/panel_generation/3.0图层锁定.png){ width="900px" }
 
 ### 5.4 图层组合
 !!! Abstract ""
@@ -140,33 +140,33 @@
 	- 在图层管理中，选中图层后进行组合；
 	- 在画布区域选择图层后，右键选择组合。
 
-![仪表板主题](../img/panel_generation/2.0图层组合2.png){ width="900px" }
-![仪表板主题](../img/panel_generation/2.0视图图层组合.png){ width="900px" }
+![仪表板主题](../img/panel_generation/3.0图层组合2.png){ width="900px" }
+![仪表板主题](../img/panel_generation/3.0视图图层组合.png){ width="900px" }
 !!! Abstract ""
 	组件组合后，在图层管理中可以按照分组查看组件列表。 
 
-![更新1](../newimg/v2-2-9.png){ width="900px" }
+![更新1](../newimg/v3.0.png){ width="900px" }
 
 !!! Abstract ""
 	多个组件创建分组后，可以作为分组整体移动，如果需要单独调整分组内组件的位置，可以通过双击该组件，然后移动该组件的所在位置。 
 
-![更新1](../newimg/v2-2-10.gif){ width="900px" }
+![更新1](../newimg/v3.0-1.png){ width="900px" }
 
 !!! Abstract ""
 	放大缩小组合时其内部组件同比放大缩小。
 
-![更新1](../newimg/v2-2-11.gif){ width="900px" }
+![更新1](../newimg/v3.0-2.png){ width="900px" }
 
 !!! Abstract ""
 	画布放大缩小其图表支持同比放大缩小。
-![更新1](../newimg/v2-2-12.gif){ width="900px" }
+![更新1](../newimg/v3.0-3.png){ width="900px" }
 
 ### 5.5 图层顺序
 
 !!! Abstract ""
 	图层顺序：可以直接在图层管理中直接拖拽图层顺序。或者在图层操作通过点击【上移一层】、【下移一层】、【置于顶层】、【置于底层】这些操作，来调整组件。
 
-![仪表版_其他样式](../img/panel_generation/2.0图层顺序设置.png){ width="900px" }
+![仪表版_其他样式](../img/panel_generation/3.0图层顺序设置.png){ width="900px" }
 
 
 ### 5.6 快速对齐
@@ -189,11 +189,11 @@
 !!! Abstract ""
 	可通过鼠标框选或按住 Ctrl 点选的方式完成多选，可批量支持选择多个组件后批量移动。
 
-![更新1](../../newimg/1.4%20数据大屏支持多个组件批量移动.gif){ width="900px" }
+![更新1](../../newimg/数据大屏支持多个组件批量移动.png){ width="900px" }
 
 !!! Abstract ""
 	选中后可整体调整组件大小。
-![更新1](../../newimg/1.18 数据大屏多选组件后，可在没有组合的情况下整体变更组件大小.gif){ width="900px" }
+![更新1](../../newimg/数据大屏多选组件后，可在没有组合的情况下整体变更组件大小.png){ width="900px" }
 
 !!! Abstract ""
 	数据大屏支持批量设置样式。

@@ -19,8 +19,6 @@
 
 ![添加视图](../../img/view_generation/2.0数据大屏数据设计.png){ width="900px" }
 
-![添加视图](../../img/view_generation/2.0数据大屏图表效果.png){ width="900px" }
-
 
 ## 2 更换图表
 !!! Abstract ""
