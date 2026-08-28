@@ -22,7 +22,7 @@
     - **PostgreSQL**
     - **SQL Server**
 
-    安装器默认仍拉起内置 MySQL 8.4.5。改用其他库时，通过 `DE_SPRING_PROFILE` 引入对应的 `application-standalone-*.yml`，并填写真实 JDBC 连接。详见 [外部数据库部署](installation/multi_database_deployment.md)。
+    安装器默认仍拉起内置 MySQL 8.4.5。需要改用其他库时，详见 [外部数据库部署](installation/multi_database_deployment.md)。
 
 ### 1.3 定时任务框架升级
 !!! Abstract ""

@@ -37,4 +37,5 @@
     - 【序号 13】：数据刷新按钮
     - 【序号 14】：图表展示
 
-![视图主功能区](../../img/view_generation/2.0视图概览.png){ width="900px" }
+
+![视图主功能区](../../img/view_generation/视图概览.png){ width="900px" }

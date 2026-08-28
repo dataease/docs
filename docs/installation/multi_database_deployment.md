@@ -3,7 +3,7 @@
 !!! Abstract ""
     v3 元数据库除默认内置 MySQL 外，还支持 GreatSQL、达梦（DM）、KingbaseES、Oracle、PostgreSQL、SQL Server 等。
 
-    **数据库类型与 JPA / Hibernate 方言等配置已集成到安装脚本中。** 安装时按提示选择数据库类型即可，无需再按旧版方式手工编写 `application-standalone-*.yml` 或单独配置 Profile。
+    **数据库类型与 JPA / Hibernate 方言等配置已集成到安装脚本中。** 安装时按提示选择数据库类型即可。
 
 ## 1 支持的元数据库
 
@@ -20,8 +20,6 @@
 | `PostgreSQL` | PostgreSQL |
 | `SQLServer` | SQL Server |
 
-!!! Abstract ""
-    桌面版另有 H2，不走安装器，此处不展开。
 
 ## 2 安装时选用外部数据库
 

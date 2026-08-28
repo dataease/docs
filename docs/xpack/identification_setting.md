@@ -1,11 +1,11 @@
 ## 认证设置
 
 !!! Abstract ""
-    支持在系统设置中进行 CAS、OIDC、LDAP、OAuth2 配置，开启此功能跳转到登录页面即可使用相应方式登录。
+    支持在系统设置中进行 CAS、OIDC、LDAP、OAuth2、SAML2 配置，开启此功能跳转到登录页面即可使用相应方式登录。
 ![数据连接页面](../img/xpack/认证对接.png){ width="900px" }
 
 !!! Abstract ""
-    移动端支持 OIDC、LDAP、CAS、OAuth2 等认证方式登录。
+    移动端支持 OIDC、LDAP、CAS、OAuth2、SAML2  等认证方式登录。
 
 ![更新1](../newimg/移动端支持 OIDC、LDAP、CAS、OAuth2 等认证方式登录.png){ width="400px" }
 
@@ -24,3 +24,7 @@
 !!! Abstract ""
     OAuth2 配置信息。
 ![更新1](../newimg/oauth2设置.png){ width="900px" }
+
+!!! Abstract ""
+    SAML2 配置信息。
+![更新1](../newimg/SAML2配置.png){ width="900px" }
