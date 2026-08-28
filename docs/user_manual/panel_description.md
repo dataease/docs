@@ -15,4 +15,4 @@
 	- 【序号 5】查看数据大屏信息，在数据大屏预览界面点击此感叹号，数据大屏信息则弹出提示。
 
 
-![2.0仪表板概览](../img/panel_generation/2.0大屏概览.png){ width="900px" }
+![2.0仪表板概览](../img/panel_generation/3.0大屏概览.png){ width="900px" }
