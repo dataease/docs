@@ -4,7 +4,7 @@
 	可通过与图表的文本型字段绑定，点击文本下拉组件，即弹出下拉选项框，选定下拉框内的文本，点击【查询】按钮，过滤图表的数据。
 
 ![文本下拉组件入口](../../img/dashboard_generation/2.0设置文本下拉过滤.png){ width="900px" }  
-![仪表盘编辑_过滤组件](../../img/dashboard_generation/2.0文本下拉过滤结果.png){ width="900px" }
+![仪表盘编辑_查询组件](../../img/dashboard_generation/2.0文本下拉过滤结果.png){ width="900px" }
 
 !!! Abstract ""
 	文本下拉和数字下拉查询组件支持设置显示字段和排序字段

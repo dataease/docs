@@ -755,41 +755,7 @@
     @/api/hook
     ```
 
-###  7.6 Copilot 模块
-!!! Abstract ""
-    嵌入 Copilot 模块。
-
-    ```
-    <template>
-      <div class="card content-box">
-        <div style="width: 100%; height: 100%" id="div-copilot-module-view"></div>
-      </div>
-    </template>
-    <script setup lang="ts" name="copilotmodule">
-    
-    import {getToken} from "@/api/common";
-    
-    # DataEase 访问地址
-    let baseUrl = "";
-    
-    getToken().then(result => {
-        # Copilot： Copilot 模块嵌入固定写法。
-        const dataease = new DataEaseBi("Copilot", {
-            baseUrl: baseUrl,
-            // token: JWT token 认证
-            token: result
-        });
-    
-        dataease.initialize({container: "#div-copilot-module-view"});
-    
-    })
-    </script>
-    <style scoped lang="scss">
-    @import "index";
-    </style>
-    @/api/hook
-    ```
-###  7.7 模版管理模块
+###  7.6 模版管理模块
 !!! Abstract ""
 
     ```

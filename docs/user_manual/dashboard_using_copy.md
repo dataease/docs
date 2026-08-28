@@ -3,7 +3,7 @@
 !!! Abstract ""
 	点击下图中所示位置，创建公共链接进行仪表板分享。
 
-![更新1](../../newimg/仪表板开启公共链接分享.png){ width="900px" }
+![更新1](../newimg/仪表板开启公共链接分享.png){ width="900px" }
 
 ![仪表板_创建公共链接](../img/dashboard_generation/创建公共链接.png){ width="900px" }
 
@@ -15,7 +15,7 @@
                                     
 !!! Abstract ""
 	支持自定义公共链接后缀。
-![更新1](../../newimg/1.21 支持自定义公共链接后缀1.png){ width="400px" }  ![更新1](../../newimg/1.21 支持自定义公共链接后缀2.png){ width="400px" }
+![更新1](../newimg/支持自定义公共链接后缀1.png){ width="400px" }  ![更新1](../newimg/支持自定义公共链接后缀2.png){ width="400px" }
 !!! Abstract ""
 	支持自定义公共链接密码。
 ![更新1](../img/dashboard_generation/设置密码保护.png){ width="400px" }  ![更新1](../img/dashboard_generation/修改密码.png){ width="400px" }
@@ -24,22 +24,22 @@
 !!! Abstract ""
 	公共连接复制链接和密码可以直接访问。
 
-![更新1](../../newimg/公共连接复制链接和密码可以直接访问.png){ width="900px" }
+![更新1](../newimg/公共连接复制链接和密码可以直接访问.png){ width="900px" }
 
 
 !!! Abstract ""
-	公共链接功能现已集成 Ticket 机制，公共链接外部参数可以直接在 Ticket 参数中简易设置，增强外部传参的安全性和灵活性。    
+	公共链接功能集成 Ticket 机制，公共链接外部参数可以直接在 Ticket 参数中简易设置，增强外部传参的安全性和灵活性。    
 	**注意：设置 Ticket 的同时，需要开启 [设置仪表板外部参数](dashboard_basicfunctions.md)。**     
 	打开 Ticket 设置，并单独配置其有效期与参数，每个 Ticket 均可独立设定有效期，例如配置有效期为 30 天，参数为 {"国家":"Lebanon"}：  
-![更新1](../../newimg/ticket设置.png){ width="500px" }
+![更新1](../newimg/ticket设置.png){ width="500px" }
 
-![更新1](../../newimg/添加ticket.png){ width="500px" }
+![更新1](../newimg/添加ticket.png){ width="900px" }
 
 !!! Abstract ""
 	复制 Ticket 链接，那么，使用 Ticket 的公共链接格式为 https://example.dataease.com/link/bcg48L2W?ticket=xk59xiHJ。在此情况下，无需传递 Ticket 参数，DataEase 将从数据库自动获取 Ticket 相关参数。当启用 Ticket “必选”选项时，只有在 URL 中附带 ticket 参数的情况下，公共链接才能被成功访问。
 	
 
-![更新1](../../newimg/复制ticket链接.png){ width="500px" }
+![更新1](../newimg/复制ticket链接.png){ width="900px" }
 
 
 
@@ -67,41 +67,24 @@
 
 ![仪表板_预览](../img/dashboard_generation/仪表板预览.png){ width="900px" }
 
-## 4 查看明细与放大
+## 4 查看明细放大与导出
 
-### 4.1 导出视图 Excel
-
-!!! Abstract ""
-	预览模式下，视图放大页面支持导出视图图片，查看视图明细页面支持导出视图图表数据。
-
-![仪表板_预览](../img/dashboard_generation/查看明细和放大.png){ width="900px" }  
 
 !!! Abstract ""
-	明细表中的图片，鼠标点击单元格图片，图片会放大展示。
+	预览模式下，视图支持放大，查看图表明细以及图表数据导出功能。
 
-![更新1](../../newimg/1.7%20明细表支持显示图片5.png){ width="900px" }
+![仪表板_预览](../img/dashboard_generation/查看明细和放大.png){ width="900px" }
 
 !!! Abstract ""
-	视图明细效果，支持对视图进行 Excel 导出。
+    查看图表明细界面，支持对图表数据进行 Excel 导出。
 
 ![仪表板_预览](../img/dashboard_generation/查看明细.png){ width="900px" }
 
+![仪表板_预览](../img/dashboard_generation/查看明细2.png){ width="900px" }
+
+!!! Abstract ""
+    点击下载按钮，支持对图表进行 Excel 与图片格式的导出。
 ![明细导出结果](../img/dashboard_generation/视图导出.png){ width="900px" }
-
-!!! Abstract ""
- 	支持原始明细数据导出
-
-![更新1](../../newimg/1.3%20支持原始明细数据导出.PNG){ width="900px" }
-
-### 4.2 导出视图图片
-
-!!! Abstract ""
-	在视图放大效果下，支持导出视图图片，导出图片时支持选择尺寸。
-
-![仪表板_导出图片](../img/dashboard_generation/进行放大.png){ width="900px" }
-
-![更新1](../../newimg/1.4 导出图片时支持选择尺寸.png){ width="900px" }
-
 
 
 ## 5 仪表板刷新
@@ -120,13 +103,5 @@
 	同时，仪表板提供手动刷新按钮，用户需要时可自行点击进行刷新。
 
 ![仪表板_刷新](../img/dashboard_generation/进行刷新.png){ width="900px" }
-
-
-## 6 仪表板全屏
-
-!!! Abstract ""
-	仪表板新支持一键全屏预览。
-
-![仪表板_刷新](../img/dashboard_generation/仪表板全屏.png){ width="900px" }
 
 
