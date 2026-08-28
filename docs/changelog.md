@@ -13,7 +13,7 @@
 ## 2 更新内容
 
 ### v3.0.0
-2026年8月
+2026年8月29日
 
 <table>
 	<tr>
@@ -40,7 +40,7 @@
 	</tr>
 	<tr>
 		<td>
-			支持快速创建数据源、数据集、仪表板、数据大屏；
+			支持快速创建数据源、数据集、仪表板、数据大屏
 		</td>
 	</tr>
 	<tr>
@@ -741,17 +741,6 @@
 		</td>
 	</tr>
 	<tr>
-		<td rowspan="1">
-			DataEase 小助手
-		</td>
-		<td>
-			DataEase 小助手
-		</td>
-		<td>
-			为 DataEase 用户提供实时指导与建议，包括但不限于功能使用方法、技术问题解决等
-		</td>
-	</tr>
-	<tr>
 		<td rowspan="9">
 			组织管理中心（X-Pack）
 		</td>
@@ -926,7 +915,7 @@
 			认证设置
 		</td>
 		<td>
-			支持 CAS、OIDC、LDAP 对接
+			支持 CAS、OIDC、LDAP、OAuth2、SAML2 对接
 		</td>
 	</tr>
 	<tr>
