@@ -115,7 +115,7 @@ nav:
               - 图表数据设计: user_manual/view_module/panel_view_data_design.md
               - 图表样式设计: user_manual/view_module/panel_view_style_design.md
               - 图表高级设计: user_manual/view_module/panel_view_advanced_design.md
-              - 图表图库: user_manual/view_module/view_gallery.md
+              - 图表图库: user_manual/view_module/panel_view_gallery.md
           - 查询组件:
               - 查询组件概览: user_manual/filter_module/filtert_module_panel.md
               - 时间查询组件: user_manual/filter_module/filtertime_module_panel.md

@@ -32,14 +32,14 @@
 	**注意：设置 Ticket 的同时，需要开启 [设置仪表板外部参数](panel_basicfunctions.md)。**   
 	打开 Ticket 设置，并单独配置其有效期与参数，每个 Ticket 均可独立设定有效期，例如配置有效期为 30 天，参数为 {"国家":"Lebanon"}：
 
-![更新1](../../newimg/ticket设置.png){ width="500px" }
+![更新1](../newimg/数据大屏ticket设置.png){ width="500px" }
 
-![更新1](../../newimg/添加ticket.png){ width="500px" }
+![更新1](../newimg/数据大屏添加ticket.png){ width="500px" }
 
 !!! Abstract ""
 	复制 Ticket 链接，那么，使用 Ticket 的公共链接格式为 https://example.dataease.com/link/bcg48L2W?ticket=xk59xiHJ。在此情况下，无需传递 Ticket 参数，DataEase 将从数据库自动获取 Ticket 相关参数。当启用 Ticket “必选”选项时，只有在 URL 中附带 ticket 参数的情况下，公共链接才能被成功访问。
 
-![更新1](../../newimg/复制ticket链接.png){ width="500px" }
+![更新1](../newimg/数据大屏复制ticket链接.png){ width="500px" }
 
 
 ## 2 数据大屏导出
