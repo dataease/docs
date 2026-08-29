@@ -70,7 +70,7 @@
 !!! Abstract ""
 	流媒体只支持 flv 格式，如果需要使用 rtsp 格式，可参考知识库文章：https://kb.fit2cloud.com/?p=182 。
 ![更新1](../../newimg/数据大屏流媒体组件.png){ width="900px" }
-![更新1](../../newimg/1.15 新增流媒体组件.png){ width="900px" }
+![更新1](../../newimg/新增流媒体组件.png){ width="900px" }
 
 ### 2.4 图片组
 !!! Abstract ""

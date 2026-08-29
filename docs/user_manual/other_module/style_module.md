@@ -70,7 +70,7 @@
 
 ![仪表盘编辑_其他组件](../../img/dashboard_generation/仪表板流媒体组件.png){ width="900px" }
 
-![更新1](../../newimg/1.15 新增流媒体组件.png){ width="900px" }
+![更新1](../../newimg/新增流媒体组件.png){ width="900px" }
 
 ### 2.4 图片组
 !!! Abstract ""
