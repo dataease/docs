@@ -2,7 +2,7 @@ name: Mkdocs Build
 
 on:
   push:
-    branches: [ "v1", "v2" ]
+    branches: [ "v1", "v2", "v3" ]
   workflow_dispatch:   
 
 jobs:
