@@ -8,7 +8,7 @@
     ```sh
     地址: http://<DataEase服务器IP地址>:<服务运行端口>
     用户名: admin
-    密码: DataEase123456
+    密码: DataEase@123456
     ```
 
 ## 2 界面介绍
