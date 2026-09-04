@@ -15,7 +15,7 @@
 ## 2 下载离线安装包
 
 !!! Abstract ""
-    请自行下载 DataEase 最新版本的基础安装包，并复制到目标机器的 `/tmp` 目录下。
+    请到 [DataEase 下载中心](https://community.fit2cloud.com/#/products/dataease/downloads) 下载最新版本的基础安装包，并复制到目标机器的 `/tmp` 目录下。
 
 ## 3 端口要求
 
