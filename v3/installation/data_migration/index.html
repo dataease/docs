@@ -12,9 +12,13 @@
         <meta name="author" content="飞致云">
       
       
-        <link rel="canonical" href="https://dataease.cn/docs/v3/v3/user_manual/data_screen_basicfunctions/">
+        <link rel="canonical" href="https://dataease.cn/docs/v3/v3/installation/data_migration/">
       
       
+        <link rel="prev" href="../deployment_installation/">
+      
+      
+        <link rel="next" href="../cli/">
       
       
         
@@ -25,7 +29,7 @@
     
     
       
-        <title>Data screen basicfunctions - DataEase 文档</title>
+        <title>数据迁移 - DataEase 文档</title>
       
     
     
@@ -206,7 +210,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Data screen basicfunctions
+              数据迁移
             
           </span>
         </div>
@@ -612,8 +616,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -637,11 +643,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -662,7 +668,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -680,7 +686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/offline_INSTL_and_UPG/" class="md-nav__link">
+      <a href="../offline_INSTL_and_UPG/" class="md-nav__link">
         
   
   
@@ -708,7 +714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/online_INSTL_and_UPG/" class="md-nav__link">
+      <a href="../online_INSTL_and_UPG/" class="md-nav__link">
         
   
   
@@ -736,7 +742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/multi_database_deployment/" class="md-nav__link">
+      <a href="../multi_database_deployment/" class="md-nav__link">
         
   
   
@@ -764,7 +770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/offline_upgrade/" class="md-nav__link">
+      <a href="../offline_upgrade/" class="md-nav__link">
         
   
   
@@ -792,7 +798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/online_upgrade/" class="md-nav__link">
+      <a href="../online_upgrade/" class="md-nav__link">
         
   
   
@@ -820,7 +826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/deployment_installation/" class="md-nav__link">
+      <a href="../deployment_installation/" class="md-nav__link">
         
   
   
@@ -845,10 +851,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../installation/data_migration/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据迁移
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -864,6 +895,129 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 概述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 适用条件
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 迁移前准备
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 启动迁移工具
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 启动迁移工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 使用 Docker 镜像（推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-jar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 使用 JAR
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 执行迁移
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 迁移完成后
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 注意事项
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -876,7 +1030,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/cli/" class="md-nav__link">
+      <a href="../cli/" class="md-nav__link">
         
   
   
@@ -978,7 +1132,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../homepage/" class="md-nav__link">
+      <a href="../../user_manual/homepage/" class="md-nav__link">
         
   
   
@@ -1146,7 +1300,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datasource_description/" class="md-nav__link">
+      <a href="../../user_manual/datasource_description/" class="md-nav__link">
         
   
   
@@ -1174,7 +1328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datasource_configuration/MySQL_datasource_configuration/" class="md-nav__link">
+      <a href="../../user_manual/datasource_configuration/MySQL_datasource_configuration/" class="md-nav__link">
         
   
   
@@ -1202,7 +1356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datasource_configuration/ClickHouse_datasource_configuration/" class="md-nav__link">
+      <a href="../../user_manual/datasource_configuration/ClickHouse_datasource_configuration/" class="md-nav__link">
         
   
   
@@ -1230,7 +1384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datasource_configuration/Doris_datasource_configuration/" class="md-nav__link">
+      <a href="../../user_manual/datasource_configuration/Doris_datasource_configuration/" class="md-nav__link">
         
   
   
@@ -1258,7 +1412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datasource_configuration/Impala_datasource_configuration/" class="md-nav__link">
+      <a href="../../user_manual/datasource_configuration/Impala_datasource_configuration/" class="md-nav__link">
         
   
   
@@ -1286,7 +1440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datasource_configuration/MariaDB_datasource_configuration/" class="md-nav__link">
+      <a href="../../user_manual/datasource_configuration/MariaDB_datasource_configuration/" class="md-nav__link">
         
   
   
@@ -1314,7 +1468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datasource_configuration/MongoDB-BI_datasource_configuration/" class="md-nav__link">
+      <a href="../../user_manual/datasource_configuration/MongoDB-BI_datasource_configuration/" class="md-nav__link">
         
   
   
@@ -1342,7 +1496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datasource_configuration/Oracle_datasource_configuration/" class="md-nav__link">
+      <a href="../../user_manual/datasource_configuration/Oracle_datasource_configuration/" class="md-nav__link">
         
   
   
@@ -1370,7 +1524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datasource_configuration/PostgreSQL_datasource_configuration/" class="md-nav__link">
+      <a href="../../user_manual/datasource_configuration/PostgreSQL_datasource_configuration/" class="md-nav__link">
         
   
   
@@ -1398,7 +1552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datasource_configuration/Kingbase_datasource_configuration/" class="md-nav__link">
+      <a href="../../user_manual/datasource_configuration/Kingbase_datasource_configuration/" class="md-nav__link">
         
   
   
@@ -1426,7 +1580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datasource_configuration/SQL%20Server_datasource_configuration/" class="md-nav__link">
+      <a href="../../user_manual/datasource_configuration/SQL%20Server_datasource_configuration/" class="md-nav__link">
         
   
   
@@ -1454,7 +1608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datasource_configuration/StarRocks_datasource_configuration/" class="md-nav__link">
+      <a href="../../user_manual/datasource_configuration/StarRocks_datasource_configuration/" class="md-nav__link">
         
   
   
@@ -1482,7 +1636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datasource_configuration/TiDB_datasource_configuration/" class="md-nav__link">
+      <a href="../../user_manual/datasource_configuration/TiDB_datasource_configuration/" class="md-nav__link">
         
   
   
@@ -1510,7 +1664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datasource_configuration/AWS_Redshift_datasource_configuration/" class="md-nav__link">
+      <a href="../../user_manual/datasource_configuration/AWS_Redshift_datasource_configuration/" class="md-nav__link">
         
   
   
@@ -1538,7 +1692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datasource_configuration_api/" class="md-nav__link">
+      <a href="../../user_manual/datasource_configuration_api/" class="md-nav__link">
         
   
   
@@ -1566,7 +1720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datasource_configuration/DB2_datasource_configuration/" class="md-nav__link">
+      <a href="../../user_manual/datasource_configuration/DB2_datasource_configuration/" class="md-nav__link">
         
   
   
@@ -1594,7 +1748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datasource_configuration/Elasticsearch_datasource_configuration/" class="md-nav__link">
+      <a href="../../user_manual/datasource_configuration/Elasticsearch_datasource_configuration/" class="md-nav__link">
         
   
   
@@ -1622,7 +1776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datasource_configuration/datasource_configuration_excel/" class="md-nav__link">
+      <a href="../../user_manual/datasource_configuration/datasource_configuration_excel/" class="md-nav__link">
         
   
   
@@ -1650,7 +1804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datasource_configuration/datasource_configuration_remote_excel/" class="md-nav__link">
+      <a href="../../user_manual/datasource_configuration/datasource_configuration_remote_excel/" class="md-nav__link">
         
   
   
@@ -1739,7 +1893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dataset_description/" class="md-nav__link">
+      <a href="../../user_manual/dataset_description/" class="md-nav__link">
         
   
   
@@ -1767,7 +1921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dataset_design/" class="md-nav__link">
+      <a href="../../user_manual/dataset_design/" class="md-nav__link">
         
   
   
@@ -1878,7 +2032,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dashboard_description/" class="md-nav__link">
+      <a href="../../user_manual/dashboard_description/" class="md-nav__link">
         
   
   
@@ -1906,7 +2060,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dashboard_create/" class="md-nav__link">
+      <a href="../../user_manual/dashboard_create/" class="md-nav__link">
         
   
   
@@ -1934,7 +2088,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dashboard_basicfunctions/" class="md-nav__link">
+      <a href="../../user_manual/dashboard_basicfunctions/" class="md-nav__link">
         
   
   
@@ -1962,7 +2116,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../module_basicfunctions/" class="md-nav__link">
+      <a href="../../user_manual/module_basicfunctions/" class="md-nav__link">
         
   
   
@@ -1990,7 +2144,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dashboard_using_copy/" class="md-nav__link">
+      <a href="../../user_manual/dashboard_using_copy/" class="md-nav__link">
         
   
   
@@ -2079,7 +2233,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../view_module/view_generation/" class="md-nav__link">
+      <a href="../../user_manual/view_module/view_generation/" class="md-nav__link">
         
   
   
@@ -2107,7 +2261,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../view_module/view_create/" class="md-nav__link">
+      <a href="../../user_manual/view_module/view_create/" class="md-nav__link">
         
   
   
@@ -2135,7 +2289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../view_module/view_data_design/" class="md-nav__link">
+      <a href="../../user_manual/view_module/view_data_design/" class="md-nav__link">
         
   
   
@@ -2163,7 +2317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../view_module/view_style_design/" class="md-nav__link">
+      <a href="../../user_manual/view_module/view_style_design/" class="md-nav__link">
         
   
   
@@ -2191,7 +2345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../view_module/view_advanced_design/" class="md-nav__link">
+      <a href="../../user_manual/view_module/view_advanced_design/" class="md-nav__link">
         
   
   
@@ -2219,7 +2373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../view_module/view_gallery/" class="md-nav__link">
+      <a href="../../user_manual/view_module/view_gallery/" class="md-nav__link">
         
   
   
@@ -2312,7 +2466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../filter_module/filtert_module/" class="md-nav__link">
+      <a href="../../user_manual/filter_module/filtert_module/" class="md-nav__link">
         
   
   
@@ -2340,7 +2494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../filter_module/filtertime_module/" class="md-nav__link">
+      <a href="../../user_manual/filter_module/filtertime_module/" class="md-nav__link">
         
   
   
@@ -2368,7 +2522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../filter_module/filtertext_module/" class="md-nav__link">
+      <a href="../../user_manual/filter_module/filtertext_module/" class="md-nav__link">
         
   
   
@@ -2396,7 +2550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../filter_module/filternumber_module/" class="md-nav__link">
+      <a href="../../user_manual/filter_module/filternumber_module/" class="md-nav__link">
         
   
   
@@ -2432,7 +2586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../other_module/style_module/" class="md-nav__link">
+      <a href="../../user_manual/other_module/style_module/" class="md-nav__link">
         
   
   
@@ -2460,7 +2614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../app_description/" class="md-nav__link">
+      <a href="../../user_manual/app_description/" class="md-nav__link">
         
   
   
@@ -2561,7 +2715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../panel_description/" class="md-nav__link">
+      <a href="../../user_manual/panel_description/" class="md-nav__link">
         
   
   
@@ -2589,7 +2743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../panel_create/" class="md-nav__link">
+      <a href="../../user_manual/panel_create/" class="md-nav__link">
         
   
   
@@ -2617,7 +2771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../panel_basicfunctions/" class="md-nav__link">
+      <a href="../../user_manual/panel_basicfunctions/" class="md-nav__link">
         
   
   
@@ -2645,7 +2799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../panel_module_basicfunctions/" class="md-nav__link">
+      <a href="../../user_manual/panel_module_basicfunctions/" class="md-nav__link">
         
   
   
@@ -2673,7 +2827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../panel_using/" class="md-nav__link">
+      <a href="../../user_manual/panel_using/" class="md-nav__link">
         
   
   
@@ -2762,7 +2916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../view_module/panel_generation/" class="md-nav__link">
+      <a href="../../user_manual/view_module/panel_generation/" class="md-nav__link">
         
   
   
@@ -2790,7 +2944,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../view_module/panel_view_create/" class="md-nav__link">
+      <a href="../../user_manual/view_module/panel_view_create/" class="md-nav__link">
         
   
   
@@ -2818,7 +2972,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../view_module/panel_view_data_design/" class="md-nav__link">
+      <a href="../../user_manual/view_module/panel_view_data_design/" class="md-nav__link">
         
   
   
@@ -2846,7 +3000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../view_module/panel_view_style_design/" class="md-nav__link">
+      <a href="../../user_manual/view_module/panel_view_style_design/" class="md-nav__link">
         
   
   
@@ -2874,7 +3028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../view_module/panel_view_advanced_design/" class="md-nav__link">
+      <a href="../../user_manual/view_module/panel_view_advanced_design/" class="md-nav__link">
         
   
   
@@ -2902,7 +3056,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../view_module/panel_view_gallery/" class="md-nav__link">
+      <a href="../../user_manual/view_module/panel_view_gallery/" class="md-nav__link">
         
   
   
@@ -2995,7 +3149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../filter_module/filtert_module_panel/" class="md-nav__link">
+      <a href="../../user_manual/filter_module/filtert_module_panel/" class="md-nav__link">
         
   
   
@@ -3023,7 +3177,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../filter_module/filtertime_module_panel/" class="md-nav__link">
+      <a href="../../user_manual/filter_module/filtertime_module_panel/" class="md-nav__link">
         
   
   
@@ -3051,7 +3205,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../filter_module/filtertext_module_panel/" class="md-nav__link">
+      <a href="../../user_manual/filter_module/filtertext_module_panel/" class="md-nav__link">
         
   
   
@@ -3079,7 +3233,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../filter_module/filternumber_module_panel/" class="md-nav__link">
+      <a href="../../user_manual/filter_module/filternumber_module_panel/" class="md-nav__link">
         
   
   
@@ -3115,7 +3269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../other_module/panel_style_module/" class="md-nav__link">
+      <a href="../../user_manual/other_module/panel_style_module/" class="md-nav__link">
         
   
   
@@ -3151,7 +3305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../template_market/" class="md-nav__link">
+      <a href="../../user_manual/template_market/" class="md-nav__link">
         
   
   
@@ -3179,7 +3333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../system_management/data_export_center/" class="md-nav__link">
+      <a href="../../user_manual/system_management/data_export_center/" class="md-nav__link">
         
   
   
@@ -3207,7 +3361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../system_management/module/" class="md-nav__link">
+      <a href="../../user_manual/system_management/module/" class="md-nav__link">
         
   
   
@@ -3288,7 +3442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../system_management/param/" class="md-nav__link">
+      <a href="../../user_manual/system_management/param/" class="md-nav__link">
         
   
   
@@ -3316,7 +3470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../system_management/font_management/" class="md-nav__link">
+      <a href="../../user_manual/system_management/font_management/" class="md-nav__link">
         
   
   
@@ -5157,7 +5311,7 @@
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1 编辑
+        1 概述
       
     </span>
   </a>
@@ -5168,7 +5322,7 @@
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2 复制
+        2 适用条件
       
     </span>
   </a>
@@ -5179,7 +5333,7 @@
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3 删除
+        3 迁移前准备
       
     </span>
   </a>
@@ -5190,19 +5344,19 @@
   <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4 层级设置
+        4 启动迁移工具
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4 层级设置">
+    <nav class="md-nav" aria-label="4 启动迁移工具">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#41" class="md-nav__link">
+  <a href="#41-docker" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.1 图层置顶
+        4.1 使用 Docker 镜像（推荐）
       
     </span>
   </a>
@@ -5210,32 +5364,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#42" class="md-nav__link">
+  <a href="#42-jar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.2 图层置底
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#43" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.3 图层上移
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#44" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.4 图层下移
+        4.2 使用 JAR
       
     </span>
   </a>
@@ -5251,7 +5383,7 @@
   <a href="#5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5 分布方式调整
+        5 执行迁移
       
     </span>
   </a>
@@ -5262,7 +5394,7 @@
   <a href="#6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6 组件位置及大小调整
+        6 迁移完成后
       
     </span>
   </a>
@@ -5273,40 +5405,7 @@
   <a href="#7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7 联动设置
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        8 跳转设置
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#9" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        9 组件样式
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        10 超链接
+        7 注意事项
       
     </span>
   </a>
@@ -5333,154 +5432,137 @@
   
 
 
-  <h1>Data screen basicfunctions</h1>
+  <h1>数据迁移</h1>
 
-<h2 id="1">1 编辑<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h2 id="1">1 概述<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p>创建一个新的视图后，仪表板右侧会默认展开该视图的配置界面，点击【收回】也可将右侧视图编辑区隐藏。<br />
-<strong>提示：</strong> 鼠标切换其他视图，右侧配置项也会跟随变动为新视图的内容。</p>
-</div>
-<p><img alt="组建编辑_基础功能" src="../../img/dashboard_generation/%E7%BB%84%E4%BB%B6%E7%BC%96%E8%BE%91_%E5%9F%BA%E7%A1%80%E5%8A%9F%E8%83%BD.png" width="900px" /></p>
-<h2 id="2">2 复制<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<p>点击下图中所示的位置，复制组件。</p>
-</div>
-<p><img alt="组件复制_基础功能" src="../../img/dashboard_generation/%E7%BB%84%E4%BB%B6%E5%A4%8D%E5%88%B6_%E5%9F%BA%E7%A1%80%E5%8A%9F%E8%83%BD.png" width="900px" /></p>
-<div class="admonition abstract">
-<p>表格支持右键复制单元格内容鼠标悬浮到某一单元格上，点击右键，即可复制当前单元格内容。（注意，这里不会另外弹出复制按钮，右键之后就已经完成了复制）
-<img alt="更新1" src="../../newimg/%E6%9B%B4%E6%96%B0v2-4-0-10.gif" width="900px" /></p>
-</div>
-<h2 id="3">3 删除<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<p>点击下图所示的位置，删除组件。</p>
-</div>
-<p><img alt="组件删除_基础功能" src="../../img/dashboard_generation/%E7%BB%84%E4%BB%B6%E5%88%A0%E9%99%A4_%E5%9F%BA%E7%A1%80%E5%8A%9F%E8%83%BD.png" width="900px" /></p>
-<h2 id="4">4 层级设置<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<p>悬浮模式下的组件，支持图层设置。</p>
-</div>
-<h3 id="41">4.1 图层置顶<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
-<div class="admonition abstract">
-<p>点击下图所示的位置，组件图层置顶。</p>
-</div>
-<p><img alt="组件置顶_基础功能" src="../../img/dashboard_generation/%E7%BB%84%E4%BB%B6%E7%BD%AE%E9%A1%B6_%E5%9F%BA%E7%A1%80%E5%8A%9F%E8%83%BD.png" width="900px" /></p>
-<h3 id="42">4.2 图层置底<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
-<div class="admonition abstract">
-<p>点击下图所示的位置，组件图层置底。</p>
-</div>
-<p><img alt="组件置底_基础功能" src="../../img/dashboard_generation/%E7%BB%84%E4%BB%B6%E7%BD%AE%E5%BA%95_%E5%9F%BA%E7%A1%80%E5%8A%9F%E8%83%BD.png" width="900px" /></p>
-<h3 id="43">4.3 图层上移<a class="headerlink" href="#43" title="Permanent link">&para;</a></h3>
-<div class="admonition abstract">
-<p>点击下图所示的位置，组件图层上移一层。</p>
-</div>
-<p><img alt="组件上移_基础功能" src="../../img/dashboard_generation/%E7%BB%84%E4%BB%B6%E4%B8%8A%E7%A7%BB_%E5%9F%BA%E7%A1%80%E5%8A%9F%E8%83%BD.png" width="900px" /></p>
-<h3 id="44">4.4 图层下移<a class="headerlink" href="#44" title="Permanent link">&para;</a></h3>
-<div class="admonition abstract">
-<p>点击下图所示的位置，组件图层下移一层。</p>
-</div>
-<p><img alt="组件下移_基础功能" src="../../img/dashboard_generation/%E7%BB%84%E4%BB%B6%E4%B8%8B%E7%A7%BB_%E5%9F%BA%E7%A1%80%E5%8A%9F%E8%83%BD.png" width="900px" /></p>
-<h2 id="5">5 分布方式调整<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<p>点击下图所示的位置，切换组件在仪表板中的分布方式，可切换为悬浮或矩阵。</p>
-</div>
-<p><img alt="切换组件分布方式_基础功能" src="../../img/dashboard_generation/%E5%88%87%E6%8D%A2%E7%BB%84%E4%BB%B6%E5%88%86%E5%B8%83%E6%96%B9%E5%BC%8F_%E5%9F%BA%E7%A1%80%E5%8A%9F%E8%83%BD.png" width="900px" /></p>
-<h2 id="6">6 组件位置及大小调整<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<p>悬浮模式下组件支持精确位置及大小设置。</p>
+<p>DataEase 提供官方迁移工具，用于将 <strong>DataEase 2.0</strong> 的文件与元数据库迁移到 <strong>DataEase 3.0</strong>。</p>
+<p>工具仓库：<a href="https://github.com/dataease/dataease-migration">https://github.com/dataease/dataease-migration</a></p>
+<p>官方已发布公共镜像，可直接拉取使用（多架构，含 amd64 与 arm64），无需自行构建：</p>
+<div class="highlight"><pre><span></span><code>registry.cn-qingdao.aliyuncs.com/dataease/dataease-migration:latest
+</code></pre></div>
+<p>启动示例：</p>
+<div class="highlight"><pre><span></span><code>docker run -d --name migration \
+  -p 8080:8080 \
+  -e SERVER_PORT=8080 \
+  registry.cn-qingdao.aliyuncs.com/dataease/dataease-migration:latest
+</code></pre></div>
+<p>浏览器访问 <code>http://本机IP:8080</code>。也可克隆仓库后自行编译 JAR，或按仓库说明用 Dockerfile 构建镜像。</p>
+<p>工具通过网页填写源端、目标端信息后执行完整迁移，支持：</p>
 <ul>
-<li>支持设置组件相对于上方和左方的间距；</li>
-<li>支持设置组件的高度和宽度值。</li>
+<li>本地到本地、本地到远程、远程到本地、远程到远程</li>
+<li>远程服务器通过 SSH 操作；本机地址直接读写本地安装目录</li>
+<li>直接运行 JAR，或使用 Docker 镜像</li>
+</ul>
+<p>迁移内容包括业务数据目录、MySQL 元数据库，以及必要的 V3 升级脚本与插件数据更新。</p>
+</div>
+<h2 id="2">2 适用条件<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>要求</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>源端版本</td>
+<td>DataEase 2.0，镜像标签为 <strong>v2.10.26 及以上</strong></td>
+</tr>
+<tr>
+<td>目标端版本</td>
+<td>已安装 DataEase 3.0（如 v3.0.0）</td>
+</tr>
+<tr>
+<td>元数据库</td>
+<td><strong>仅支持 MySQL</strong>，JDBC URL 形如 <code>jdbc:mysql://127.0.0.1:3306/dataease</code></td>
+</tr>
+<tr>
+<td>安装目录</td>
+<td>源端、目标端均需填写对应服务器上的非根目录绝对路径，默认分别为 <code>/opt/dataease2.0</code>、<code>/opt/dataease3.0</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition abstract">
+<p>运行迁移程序的机器必须能通过 JDBC <strong>直连</strong> 源库和目标库。内置 MySQL 默认不把 3306 映射到宿主机，请提前确认连通性（例如加入同一 Docker 网络、临时映射端口，或改用外部库）。</p>
+</div>
+<h2 id="3">3 迁移前准备<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<ol>
+<li>在目标环境安装好 DataEase 3.0，并准备一个可连接的 <strong>空目标数据库</strong>（迁移开始后该库仍会被删除并重建）。</li>
+<li><strong>停止</strong> 源端 V2、目标端 V3 的 DataEase 应用容器，<strong>不要停止 MySQL 容器</strong> 。</li>
+<li>迁移期间暂停源端业务写入，避免文件与库数据被并发修改。</li>
+<li>数据库用户需具备：源库读取权限；目标库 <code>DROP</code>、<code>CREATE</code>、写入，以及执行升级脚本所需的 <code>ALTER</code>、<code>UPDATE</code>、<code>INSERT</code>、<code>DELETE</code> 权限。</li>
+<li>源库与目标库不能是同一个库。</li>
+</ol>
+</div>
+<h2 id="4">4 启动迁移工具<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<h3 id="41-docker">4.1 使用 Docker 镜像（推荐）<a class="headerlink" href="#41-docker" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>可直接使用官方已发布的公共镜像（<code>docker run</code> 时会自动拉取）：</p>
+<div class="highlight"><pre><span></span><code>docker run -d --name migration \
+  -p 8080:8080 \
+  -e SERVER_PORT=8080 \
+  registry.cn-qingdao.aliyuncs.com/dataease/dataease-migration:latest
+</code></pre></div>
+<p>浏览器访问 <code>http://本机IP:8080</code>。</p>
+</div>
+<h3 id="42-jar">4.2 使用 JAR<a class="headerlink" href="#42-jar" title="Permanent link">&para;</a></h3>
+<div class="admonition abstract">
+<p>也可在具备 JDK 的机器上直接运行发行包中的 JAR（发行包同时包含 <code>tools</code>、<code>plugins</code> 目录）：</p>
+<div class="highlight"><pre><span></span><code>java -jar dataease-migration-1.0.0.jar
+</code></pre></div>
+<p>默认控制台端口为 <strong>8080</strong>。</p>
+</div>
+<h2 id="5">5 执行迁移<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p>在页面中分别填写 DataEase 2.0（源端）与 DataEase 3.0（目标端）：</p>
+<ul>
+<li>服务器 IP / 主机名</li>
+<li>SSH 端口、用户名、密码（远程地址必填；本机可留空）</li>
+<li>数据库 JDBC URL、用户名、密码</li>
+<li>DataEase 安装目录</li>
+</ul>
+<p>本机地址可填写 <code>localhost</code>、<code>127.x</code>、<code>::1</code> 或本机网卡地址，工具会直接操作本地目录。</p>
+<p>确认目标库可被覆盖后，点击「执行迁移」。页面日志会显示各阶段进度。填写完成后如下图所示：</p>
+</div>
+<p><img alt="迁移填写信息" src="../../img/installation/%E8%BF%81%E7%A7%BB%E5%A1%AB%E5%86%99%E4%BF%A1%E6%81%AF.png" width="900px" /></p>
+<div class="admonition abstract">
+<p>迁移顺序概览：</p>
+<ol>
+<li>复制源端实际存在的数据目录（如 <code>i18n</code>、<code>font</code>、<code>exportData</code>、<code>map</code>、<code>geo</code>、<code>appearance</code>、<code>static-resource</code>、<code>excel</code>）到目标端 <code>data</code> 目录，并写入 V3 插件 JAR。</li>
+<li>复制 MySQL 库结构与数据（优先使用配套 <code>mysql</code> / <code>mysqldump</code>，否则回退到内置 JDBC）。</li>
+<li>删除并重建目标库，写入迁移内容。</li>
+<li>执行内置 <code>upgrade.sql</code>。</li>
+<li>更新已支持的插件数据（如飞书多维表格、Hive、达梦、同步管理 PostgreSQL 等）。源端若存在其他插件，日志会提示需另行升级。</li>
+</ol>
+<p>同步任务物理日志默认不复制。如需复制，可在页面勾选，或启动时增加：</p>
+<div class="highlight"><pre><span></span><code>java -jar dataease-migration-1.0.0.jar --migration.files.copy-sync-task-logs=true
+</code></pre></div>
+</div>
+<h2 id="6">6 迁移完成后<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p>操作日志出现「迁移任务成功完成」即表示本次迁移结束，如下图所示：</p>
+</div>
+<p><img alt="迁移任务成功" src="../../img/installation/%E8%BF%81%E7%A7%BB%E4%BB%BB%E5%8A%A1%E6%88%90%E5%8A%9F.png" width="900px" /></p>
+<div class="admonition abstract">
+<ol>
+<li>启动目标端 DataEase 3.0 服务。</li>
+<li>使用原 V2 账号登录，抽查数据源、数据集、仪表板、大屏及附件类资源。</li>
+<li>企业版如使用插件，请按日志提示更新不兼容插件后重启。</li>
+</ol>
+</div>
+<h2 id="7">7 注意事项<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<ul>
+<li>目标库会被 <strong>删除并重建</strong> ，请勿填写仍需保留的库。</li>
+<li>任一阶段失败会终止整个任务，已完成的文件复制或目标库重建 <strong>不会自动回滚</strong> ，也不会修改 V2 源库。失败后请按日志处理后，换全新目标库重新完整迁移，不要在失败库上补跑。</li>
+<li>本地直接操作文件目前适用于 macOS / Linux，并需要本机提供 <code>/bin/sh</code> 与 <code>tar</code>。</li>
+<li>同版本环境搬迁（非 2.0 → 3.0）不属于本工具范围。</li>
 </ul>
 </div>
-<p><img alt="组件位置及大小" src="../../img/dashboard_generation/%E7%BB%84%E4%BB%B6%E4%BD%8D%E7%BD%AE%E5%8F%8A%E5%A4%A7%E5%B0%8F%E8%B0%83%E6%95%B4.png" width="900px" /></p>
-<h2 id="7">7 联动设置<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<p>如下图，点击展开功能菜单，开始【联动设置】。<br />
-<strong>提示：</strong> 文本卡、指标卡、仪表盘、水波图、富文本视图不支持联动设置。</p>
-</div>
-<p><img alt="联动设置" src="../../img/dashboard_generation/%E8%81%94%E5%8A%A8%E8%AE%BE%E7%BD%AE%E5%85%A5%E5%8F%A3.png" width="900px" /></p>
-<div class="admonition abstract">
-<p>如下图，当设置两个视图联动时，设置相对应的数据集的联动字段，设置完成后，点击【确定】，联动设置完成。</p>
-</div>
-<p><img alt="设置联动字段" src="../../img/dashboard_generation/%E8%81%94%E5%8A%A8%E8%AE%BE%E7%BD%AE_%E5%AD%97%E6%AE%B5%E5%85%B3%E8%81%94.png" width="900px" /></p>
-<div class="admonition abstract">
-<p>第一步，点击【浙江省】，并选择【联动】。</p>
-</div>
-<div class="admonition abstract">
-<p>如果视图同时设置了联动和钻取，那么当点击时由用户选择执行联动或者钻取，当只设置了联动时，默认执行联动；当只设置了钻取时，默认执行钻取。</p>
-</div>
-<p><img alt="联动展示" src="../../img/dashboard_generation/%E8%81%94%E5%8A%A8%E9%80%89%E6%8B%A9.png" width="900px" /></p>
-<div class="admonition abstract">
-<p>第二步，联动结果展示，如下图，设置了联动的视图，只展示浙江省的数据，视图联动时，支持联动部分高亮显示。</p>
-</div>
-<p><img alt="联动展示" src="../../img/dashboard_generation/%E8%81%94%E5%8A%A8%E7%BB%93%E6%9E%9C.png" width="900px" /></p>
-<div class="admonition abstract">
-<p>第三步，可点击下图所示位置，清除局部联动和所有联动。</p>
-</div>
-<p><img alt="地图联动" src="../../img/dashboard_generation/%E8%81%94%E5%8A%A8%E6%B8%85%E9%99%A4.png" width="900px" /></p>
-<h2 id="8">8 跳转设置<a class="headerlink" href="#8" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<p>如下图，点击展开功能菜单，开始【跳转设置】。<br />
-<strong>提示：</strong> 文本卡、指标卡、仪表盘、水波图、词云图、富文本视图不支持跳转。</p>
-</div>
-<p><img alt="跳转设置入口" src="../../img/dashboard_generation/%E8%B7%B3%E8%BD%AC%E8%AE%BE%E7%BD%AE%E5%85%A5%E5%8F%A3.png" width="900px" /></p>
-<div class="admonition abstract">
-<p><strong>第一种，仪表板间跳转，如下图所示，设置原视图与目标仪表板的跳转：</strong><br />
-第一步：设置启用字段；<br />
-第二步：选择仪表板链接类型；<br />
-第三步：选定跳转的仪表板（系统默认会追加一个字段选择）；<br />
-第四步：选择关联视图和联动字段；<br />
-第五步：点击【确定】，完成跳转设置。<br />
-<strong>注意：</strong> 当前用户至少拥有目标仪表板的查看权限，跳转时，若启用字段是指标字段，则提示”未获取跳转信息“。</p>
-</div>
-<p><img alt="跳转设置" src="../../img/dashboard_generation/%E8%B7%B3%E8%BD%AC%E8%AE%BE%E7%BD%AE_%E4%BB%AA%E8%A1%A8%E6%9D%BF%E9%97%B4.png" width="900px" /></p>
-<div class="admonition abstract">
-<p><strong>第二种，外部链接跳转，支持将视图的点击值作为参数传递给第三方公共链接，作为第三方链接的参数：</strong><br />
-第一步：设置启用字段；<br />
-第二步：选择外部链接链接类型；<br />
-第三步：填写外部链接地址，同时支持点击字段用来拼接 URL 或者参数（AntV 图库，若为折线图、柱状图等图形，不能出现叠加维度的情况）；<br />
-第四步：点击【确定】，完成跳转设置。<br />
-<strong>注意：</strong> 跳转时，若启用字段是指标字段，则提示”未获取跳转信息“。 </p>
-</div>
-<p><img alt="跳转设置" src="../../img/dashboard_generation/%E8%B7%B3%E8%BD%AC%E8%AE%BE%E7%BD%AE_%E5%A4%96%E9%83%A8%E9%93%BE%E6%8E%A5.png" width="900px" /></p>
-<div class="admonition abstract">
-<p>点击视图中的维度字段，即可触发跳转。</p>
-</div>
-<p><img alt="跳转展示" src="../../img/dashboard_generation/%E8%B7%B3%E8%BD%AC%E7%BB%93%E6%9E%9C%E5%85%A5%E5%8F%A3.png" width="900px" /></p>
-<div class="admonition abstract">
-<p>如果选择的是仪表板跳转，那么跳转至目标仪表板，并联动目标仪表板的视图，如果不需要，可点击右上角清除联动。</p>
-</div>
-<p><img alt="跳转设置" src="../../img/dashboard_generation/%E8%B7%B3%E8%BD%AC%E7%BB%93%E6%9E%9C_%E4%BB%AA%E8%A1%A8%E6%9D%BF%E9%97%B4.png" width="900px" /></p>
-<div class="admonition abstract">
-<p>如果选择的是外部链接跳转，那么跳转至第三方平台，同时点击值传递给第三方链接。</p>
-</div>
-<p><img alt="跳转设置" src="../../img/dashboard_generation/%E8%B7%B3%E8%BD%AC%E7%BB%93%E6%9E%9C_%E5%A4%96%E9%83%A8%E9%93%BE%E6%8E%A5.png" width="900px" /></p>
-<h2 id="9">9 组件样式<a class="headerlink" href="#9" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<p>如下图，点击展开功能菜单，开始【组件样式】设置。</p>
-</div>
-<p><img alt="组件样式入口" src="../../img/dashboard_generation/%E7%BB%84%E4%BB%B6%E6%A0%B7%E5%BC%8F%E5%85%A5%E5%8F%A3.png" width="900px" /></p>
-<div class="admonition abstract">
-<p>支持设置组件的内边距，边框半径与组件背景，背景支持颜色类背景、图片类背景与边框类背景；<br />
-以下图为示例，勾选【背景】，背景选择【边框 1】，点击【确定】，完成背景设置。</p>
-</div>
-<p><img alt="组件背景设置" src="../../img/dashboard_generation/%E7%BB%84%E4%BB%B6%E8%83%8C%E6%99%AF%E8%AE%BE%E7%BD%AE.png" width="900px" /></p>
-<div class="admonition abstract">
-<p>查询组件支持边框、文字、背景色设置，如下图所示。</p>
-</div>
-<p><img alt="组件样式" src="../../img/dashboard_generation/%E7%BB%84%E4%BB%B6%E6%A0%B7%E5%BC%8F.png" width="900" /></p>
-<div class="admonition abstract">
-<p>所有查询组件样式边框支持自定义颜色，系统内置边框图片文件为 SVG 图片，系统支持边框色设置，可替换 SVG 图片的颜色。</p>
-</div>
-<p><img alt="组件样式" src="../../img/dashboard_generation/%E7%BB%84%E4%BB%B6%E6%A0%B7%E5%BC%8F%E8%BE%B9%E6%A1%86.png" width="900" /></p>
-<h2 id="10">10 超链接<a class="headerlink" href="#10" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<p>如下图所示，点击展开功能菜单，开始【超链接】设置。<br />
-<strong>提示：</strong> 视图及组件均支持超链接的设置。</p>
-</div>
-<p><img alt="超链接入口" src="../../img/view_generation/%E8%B6%85%E9%93%BE%E6%8E%A5%E5%85%A5%E5%8F%A3.png" width="900px" /><br />
-<img alt="超链接启用" src="../../img/view_generation/%E8%B6%85%E9%93%BE%E6%8E%A5%E5%90%AF%E7%94%A8.png" width="900px" /><br />
-<img alt="超链接跳转" src="../../img/view_generation/%E8%B6%85%E9%93%BE%E6%8E%A5%E8%B7%B3%E8%BD%AC.png" width="900" /></p>
 
 
 
