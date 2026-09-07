@@ -68,6 +68,7 @@
     - 点击下方的刷新图表数据按钮即可展示数据。
 ![电子表格模块](../newimg/xpack/插入数据对象1.png){ width="900px" }
 ![电子表格模块](../newimg/xpack/插入数据对象2.png){ width="900px" }
+![电子表格模块](../newimg/xpack/插入透视表.png){ width="900px" }
 
 !!! Abstract ""
     **第 4 步：设置样式**

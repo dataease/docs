@@ -80,7 +80,7 @@
 
     - 渲染区域受保护；
     - 支持行列冻结。
-![插入透视表](../newimg/xpack/插入数据对象2.png){ width="900px" }
+![插入透视表](../newimg/xpack/插入透视表.png){ width="900px" }
 
 !!! Abstract ""
     **明细表 vs 透视表**
