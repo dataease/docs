@@ -57,10 +57,7 @@
     <script src="../js/mega.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 
-    <script 
-        async
-        defer
-        src="https://maxkb.fit2cloud.com/api/application/embed?protocol=https&host=maxkb.fit2cloud.com&token=2ddd8b594ce09dbb">
+    <script async defer src="https://maxkb-internal.fit2cloud.com/chat/api/embed?protocol=https&host=maxkb-internal.fit2cloud.com&token=2ddd8b594ce09dbb">
     </script>
 
     
@@ -6084,15 +6081,15 @@
 <p>在仪表板和数据大屏中，支持嵌入网页组件实现组件内操作与外部仪表板视图的联动。网页组件通过类似 PostMessage 的方式向外层仪表板传递包含图表 ID 和参数值的消息，触发视图更新。</p>
 <div class="highlight"><pre><span></span><code>参数说明：
 {
-    type: &#39;webParams&#39;,
-    targetSourceId: &#39;${仪表板或数据大屏ID}&#39;,
+    type: 'webParams',
+    targetSourceId: '${仪表板或数据大屏ID}',
     params: {
-        &#39;${图表ID}&#39;: [
+        '${图表ID}': [
          {
-             fieldId: &#39;${数据集字段ID}&#39;,
-             operator: &#39;in&#39;,
-             value: [&#39;${字段值}&#39;],
-             viewIds: [&#39;${图表ID}&#39;&#39;]
+             fieldId: '${数据集字段ID}',
+             operator: 'in',
+             value: ['${字段值}'],
+             viewIds: ['${图表ID}'']
            }
         ]
     }

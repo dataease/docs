@@ -57,10 +57,7 @@
     <script src="../../js/mega.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
 
-    <script 
-        async
-        defer
-        src="https://maxkb.fit2cloud.com/api/application/embed?protocol=https&host=maxkb.fit2cloud.com&token=2ddd8b594ce09dbb">
+    <script async defer src="https://maxkb-internal.fit2cloud.com/chat/api/embed?protocol=https&host=maxkb-internal.fit2cloud.com&token=2ddd8b594ce09dbb">
     </script>
 
     
@@ -5466,22 +5463,22 @@ const params = {
     busiFlag: busiFlag,         ## 业务标识 仪表板 dashboard / 数据大屏 dataV
     type:type                   ## 类型
     dvId: dvId,                 ## 看板id
-    &quot;de-embedded&quot; : true        ## 嵌入式标志
+    "de-embedded" : true        ## 嵌入式标志
     chartId: chartId,           ## 图表 id
     embeddedToken: token,       ## 嵌入式 token
     outerParams: JSON.stringify(initParams)  ## 外部参数
 }
 ## 外部参数
 const initParams = {
-    callBackFlag: &quot;yes&quot;,        ## 打开 DataEase 往外部系统传参数开关
+    callBackFlag: "yes",        ## 打开 DataEase 往外部系统传参数开关
     attachParams: {             ## json 拼接外部参数，如有多个外部参数，则拼接多个 json key
-    name: &quot;name1&quot;
+    name: "name1"
     }
 }
 </code></pre></div>
 <p>DIV 嵌入式参数以及外部参数示例。</p>
 <div class="highlight"><pre><span></span><code>## 嵌入式参数
-const dataease = new DataEaseBi(&#39;ViewWrapper&#39;, {
+const dataease = new DataEaseBi('ViewWrapper', {
     baseUrl: domain,                         ## baseUrl：DataEase 企业版访问地址。
     token: token,                            ## 嵌入式 token
     dvId: dvId,                              ## 看板id
@@ -5492,9 +5489,9 @@ const dataease = new DataEaseBi(&#39;ViewWrapper&#39;, {
 })
 ## 外部参数
 const initParams = {
-    callBackFlag: &quot;yes&quot;,                     ## 打开 DataEase 往外部系统传参数开关
+    callBackFlag: "yes",                     ## 打开 DataEase 往外部系统传参数开关
     attachParams: {                          ## json 拼接外部参数，如有多个外部参数，则拼接多个 json key
-    name: &quot;name1&quot;
+    name: "name1"
     }
 }
 </code></pre></div>

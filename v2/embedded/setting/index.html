@@ -57,10 +57,7 @@
     <script src="../../js/mega.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
 
-    <script 
-        async
-        defer
-        src="https://maxkb.fit2cloud.com/api/application/embed?protocol=https&host=maxkb.fit2cloud.com&token=2ddd8b594ce09dbb">
+    <script async defer src="https://maxkb-internal.fit2cloud.com/chat/api/embed?protocol=https&host=maxkb-internal.fit2cloud.com&token=2ddd8b594ce09dbb">
     </script>
 
     
@@ -5436,13 +5433,13 @@
 public class IndexController {
 
     # 嵌入式 appId
-    private static String appId = &quot;&quot;;
+    private static String appId = "";
 
     # 嵌入式 appSecret
-    private static String appSecret = &quot;&quot;;
+    private static String appSecret = "";
 
     #DataEase 用户名
-    private static String account = &quot;&quot;;
+    private static String account = "";
 
     #
     ## 获取 DataEase 嵌入式 Token
@@ -5451,25 +5448,25 @@ public class IndexController {
     ## 注意，嵌入式 Token 的过期时间默认为 480 分钟，可通过修改 application.yml 进行调整
     ## 配置参数名称为 dataease.embedded-exp
 
-    @GetMapping(&quot;/api/token&quot;)
+    @GetMapping("/api/token")
     public String generateToken () {
 
-        String user = &quot;小王&quot;;
-        List&lt;String&gt; users = Arrays.asList(&quot;小王&quot;,&quot;小李&quot;);
-        String status = &quot;ASSIGNED&quot;;
+        String user = "小王";
+        List&lt;String&gt; users = Arrays.asList("小王","小李");
+        String status = "ASSIGNED";
 
         Algorithm algorithm = Algorithm.HMAC256(appSecret);
         JWTCreator.Builder builder = JWT.create();
-        builder.withClaim(&quot;account&quot;, account).withClaim(&quot;appId&quot;, appId);
+        builder.withClaim("account", account).withClaim("appId", appId);
         builder.withIssuedAt(new Date());
         ## 只过滤 user = 小王
-        ## builder.withClaim(&quot;user&quot;, user);
+        ## builder.withClaim("user", user);
         ## 过滤 user = 小王 或者 小李的数据
-        ## builder.withClaim(&quot;user&quot;, JSONObject.toJSONString(users));
+        ## builder.withClaim("user", JSONObject.toJSONString(users));
         ## 过滤 user = 小王 或者 小李 以及 设备状态等于 ASSIGNED 的数据
         ## 参数可根据业务需要选择设置或者不设置
         ## user 、设备状态 为仪表板参数设置里面的参数名
-        ## builder.withClaim(&quot;user&quot;, JSONObject.toJSONString(users)).withClaim(&quot;设备状态&quot;, status);
+        ## builder.withClaim("user", JSONObject.toJSONString(users)).withClaim("设备状态", status);
         return builder.sign(algorithm);
     }
  }
@@ -5486,7 +5483,7 @@ public class IndexController {
 <p><strong>注意：需要将 js 引入到页面的 head 中，保证依赖的正确加载。</strong></p>
 <div class="highlight"><pre><span></span><code>## 将下方代码中的 src 地址改为静态 js 的访问地址即可。
 ## 访问地址为 http://ip:9080/js/div_import_0.0.0-dataease.js
-&lt;script crossorigin  type=&quot;module&quot; th:src=&quot;@{{domain}/js/div_import_0.0.0-dataease.js(domain=${vo.domain})}&quot;&gt;&lt;/script&gt;
+&lt;script crossorigin  type="module" th:src="@{{domain}/js/div_import_0.0.0-dataease.js(domain=${vo.domain})}"&gt;&lt;/script&gt;
 </code></pre></div>
 </div>
 

@@ -57,10 +57,7 @@
     <script src="../../js/mega.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
 
-    <script 
-        async
-        defer
-        src="https://maxkb.fit2cloud.com/api/application/embed?protocol=https&host=maxkb.fit2cloud.com&token=2ddd8b594ce09dbb">
+    <script async defer src="https://maxkb-internal.fit2cloud.com/chat/api/embed?protocol=https&host=maxkb-internal.fit2cloud.com&token=2ddd8b594ce09dbb">
     </script>
 
     
@@ -6143,7 +6140,7 @@
 </div>
 <div class="admonition abstract">
 <p>公共链接参数组装对传参进行 Base64 处理，以下为示例：配置参数名为"省份"，关联了仪表板中【省份】文本下拉过滤组件（也可关联对应的图表字段），组装参数为 {"省份":"北京市"}，使用 base64 加密处理，该示例通过电脑终端进行，其它方式均可。
-<div class="highlight"><pre><span></span><code>echo &#39;{&quot;省份&quot;:&quot;北京市&quot;}&#39;|base64
+<div class="highlight"><pre><span></span><code>echo '{"省份":"北京市"}'|base64
 </code></pre></div>
 加密结果为：eyLnnIHku70iOiLljJfkuqzluIIifQo= ，组装规则如下:  <br />
 &lt; 仪表板公共链接 &gt; + &lt; ?attachParams= &gt; + &lt; 加密后的结果 &gt;  <br />
@@ -6154,9 +6151,9 @@
 <div class="admonition abstract">
 <p>公共链接外部参数支持一参多传、多参数传参，可通过数组形式传入多值，对组件进行多选，如下示例，对参数进行处理。 <br />
 提示： 传参处理时，若拼接后的 URL 带特殊符号，需做转换处理，示例如：+ 用 %2B 替代。<br />
-<div class="highlight"><pre><span></span><code>echo &#39;{&quot;省份&quot;:[&quot;山东省&quot;,&quot;四川省&quot;,&quot;广东省&quot;,&quot;河南省&quot;]}&#39;|base64
+<div class="highlight"><pre><span></span><code>echo '{"省份":["山东省","四川省","广东省","河南省"]}'|base64
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>echo &#39;{&quot;省份&quot;:&quot;广东省&quot;,&quot;年份&quot;:&quot;2023&quot;}&#39;|base64
+<div class="highlight"><pre><span></span><code>echo '{"省份":"广东省","年份":"2023"}'|base64
 </code></pre></div>
 注意： 在做完 Base64 编码后，再做一次 encodeURIComponent 的 URL 编码，以防有些内容编码后存在特殊字符，浏览器无法解析的情况。  <br />
 存在这类字符时，会提示”外部参数解析错误未生效，请按规定编码方式传参“。</p>

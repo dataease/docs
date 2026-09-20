@@ -57,10 +57,7 @@
     <script src="../../js/mega.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
 
-    <script 
-        async
-        defer
-        src="https://maxkb.fit2cloud.com/api/application/embed?protocol=https&host=maxkb.fit2cloud.com&token=2ddd8b594ce09dbb">
+    <script async defer src="https://maxkb-internal.fit2cloud.com/chat/api/embed?protocol=https&host=maxkb-internal.fit2cloud.com&token=2ddd8b594ce09dbb">
     </script>
 
     
@@ -5821,36 +5818,36 @@
   1、查看看板时，可点击 DataEase 里的各个组件，向第三方系统传递当前点击的内容。
 #
 &lt;template&gt;
-    &lt;div class=&quot;card content-box&quot;&gt;
-     &lt;div style=&quot;width: 100%; height: 100%&quot; id=&quot;div-dashboard-view&quot;&gt;&lt;/div&gt;
+    &lt;div class="card content-box"&gt;
+     &lt;div style="width: 100%; height: 100%" id="div-dashboard-view"&gt;&lt;/div&gt;
     &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;dashboard&quot;&gt;
+&lt;script setup lang="ts" name="dashboard"&gt;
 
-import {getToken} from &quot;@/api/common&quot;;
+import {getToken} from "@/api/common";
 # 仪表板 ID
-let dvId = &quot;&quot;;
+let dvId = "";
 # 如：DataEase 企业版访问地址：https://embedded-bi-inner.dataease.cn/
-let baseUrl = &quot;&quot;;
+let baseUrl = "";
 
 getToken().then(result =&gt; {
     # Dashboard：仪表板数据大屏嵌入固定写法。
-    const dataease = new DataEaseBi(&quot;Dashboard&quot;, {
+    const dataease = new DataEaseBi("Dashboard", {
 
     baseUrl: baseUrl,
     #  token: JWT token 认证。
     token: result,
     dvId: dvId,
     # 固定写法：dashboard 仪表板、dataV 数据大屏
-    busiFlag: &quot;dashboard&quot;
+    busiFlag: "dashboard"
 });
 
-    dataease.initialize({container: &quot;#div-dashboard-view&quot;});
+    dataease.initialize({container: "#div-dashboard-view"});
 
 })
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 @/api/hook
 </code></pre></div>
@@ -5873,36 +5870,36 @@ getToken().then(result =&gt; {
 4、获取仪表板 ID。
 5、创建 DataEaseBi 对象，传入相应参数，渲染 DIV 容器，完成嵌入。
 #
-&lt;script setup lang=&quot;ts&quot; name=&quot;dashboard&quot;&gt;
+&lt;script setup lang="ts" name="dashboard"&gt;
 
-import {getToken} from &quot;@/api/common&quot;;
+import {getToken} from "@/api/common";
 
 # 外部参数
 const initParams = {
   attachParams: {
-    参数名1: [&quot;参数值1&quot;,&quot;参数值2&quot;],
-    参数名2: &quot;参数值&quot;
+    参数名1: ["参数值1","参数值2"],
+    参数名2: "参数值"
   }
 }
 
 # 仪表板 ID
-let dvId = &quot;&quot;;
+let dvId = "";
 //DataEase 访问地址
-let baseUrl = &quot;&quot;;
+let baseUrl = "";
 
 getToken().then(result =&gt; {
 
-  const dataease = new DataEaseBi(&quot;Dashboard&quot;, {
+  const dataease = new DataEaseBi("Dashboard", {
     baseUrl: baseUrl,
     token: result,
     dvId: dvId,
     # 默认写法
-    busiFlag: &quot;dashboard&quot;,
+    busiFlag: "dashboard",
     # 外部参数
     outerParams: JSON.stringify(initParams)
   });
 
-  dataease.initialize({container: &quot;#div-dashboard-view&quot;});
+  dataease.initialize({container: "#div-dashboard-view"});
 
 })
 &lt;/script&gt;
@@ -5919,20 +5916,20 @@ public class TokenApi {
 ## 配置参数名称为 dataease.embedded-exp
 #
 
-@GetMapping(&quot;/token/{account}&quot;)
-public String generate(@PathVariable(&quot;account&quot;) String account) throws JsonProcessingException {
+@GetMapping("/token/{account}")
+public String generate(@PathVariable("account") String account) throws JsonProcessingException {
         SettingVO vo = SettingUtils.read();
         # vo.getAppSecret() 实际为创建的嵌入式应用的 APP Secret 。
         Algorithm algorithm = Algorithm.HMAC256(vo.getAppSecret());
         JWTCreator.Builder builder = JWT.create();
         List&lt;String&gt; ipList = new ArrayList&lt;&gt;();
-        ipList.add(&quot;192.168.1.10&quot;);
-        ipList.add(&quot;192.168.1.20&quot;);
+        ipList.add("192.168.1.10");
+        ipList.add("192.168.1.20");
         ObjectMapper objectMapper = new ObjectMapper();
         String json = objectMapper.writeValueAsString(ipList);
         # vo.getAppId(): 实际为创建的嵌入式应用的 APP ID。account 用户账号。
         # arg 参数，参数值多个使用 json 格式
-        builder.withClaim(&quot;account&quot;, account).withClaim(&quot;appId&quot;, vo.getAppId()).withClaim(&quot;arg1&quot;, &quot;参数值1&quot;).withClaim(&quot;arg2&quot;, json);
+        builder.withClaim("account", account).withClaim("appId", vo.getAppId()).withClaim("arg1", "参数值1").withClaim("arg2", json);
         #设置令牌生成时间，
         builder.withIssuedAt(new Date());
         # 返回 token
@@ -5942,56 +5939,56 @@ public String generate(@PathVariable(&quot;account&quot;) String account) throws
 </code></pre></div>
 2. 查看看板时，可点击第三方系统的查询组件等，过滤 DataEase 的看板数据。
 <div class="highlight"><pre><span></span><code>&lt;template&gt;
-  &lt;div class=&quot;card content-box&quot;&gt;
-    &lt;div style=&quot;float: right; cursor: pointer; margin-top: 0.5vh&quot;&gt;
-      &lt;el-dropdown trigger=&quot;click&quot; @command=&quot;changeUser&quot;&gt;
-            &lt;span class=&quot;el-dropdown-link&quot;&gt;
+  &lt;div class="card content-box"&gt;
+    &lt;div style="float: right; cursor: pointer; margin-top: 0.5vh"&gt;
+      &lt;el-dropdown trigger="click" @command="changeUser"&gt;
+            &lt;span class="el-dropdown-link"&gt;
               点我切换参数
             &lt;/span&gt;
         &lt;template #dropdown&gt;
           &lt;el-dropdown-menu&gt;
-            &lt;el-dropdown-item command=&quot;参数1&quot;&gt;参数1&lt;/el-dropdown-item&gt;
-            &lt;el-dropdown-item command=&quot;参数2&quot;&gt;参数2&lt;/el-dropdown-item&gt;
-            &lt;el-dropdown-item command=&quot;参数3&quot;&gt;参数3&lt;/el-dropdown-item&gt;
+            &lt;el-dropdown-item command="参数1"&gt;参数1&lt;/el-dropdown-item&gt;
+            &lt;el-dropdown-item command="参数2"&gt;参数2&lt;/el-dropdown-item&gt;
+            &lt;el-dropdown-item command="参数3"&gt;参数3&lt;/el-dropdown-item&gt;
           &lt;/el-dropdown-menu&gt;
         &lt;/template&gt;
       &lt;/el-dropdown&gt;
     &lt;/div&gt;
-    &lt;div style=&quot;width: 100%; height: 100%&quot; id=&quot;div-dashboard-view&quot;&gt;&lt;/div&gt;
+    &lt;div style="width: 100%; height: 100%" id="div-dashboard-view"&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;dashboard&quot;&gt;
+&lt;script setup lang="ts" name="dashboard"&gt;
 
-import {getToken} from &quot;@/api/common&quot;;
+import {getToken} from "@/api/common";
 
 const changeUser = function (command: String) {
 postMsg(command);
 }
 
 ## 仪表板 ID
-let dvId = &quot;&quot;;
+let dvId = "";
 ## DataEase 访问地址
-let baseUrl = &quot;&quot;;
+let baseUrl = "";
 
 const postMsg = function (user: String) {
     const param = {
-        type: &quot;attachParams&quot;,
+        type: "attachParams",
         targetSourceId: dvId,
         params: {
           参数名: 参数值
         }
     }
-    window.postMessage( JSON.parse(JSON.stringify(param)) , &quot;*&quot; );
+    window.postMessage( JSON.parse(JSON.stringify(param)) , "*" );
 }
 
 getToken().then(result =&gt; {
-    const dataease = new DataEaseBi(&quot;Dashboard&quot;, {
+    const dataease = new DataEaseBi("Dashboard", {
         baseUrl: baseUrl,
         token: result,
         dvId: dvId,
-        busiFlag: &quot;dashboard&quot;
+        busiFlag: "dashboard"
     });
-    dataease.initialize({container: &quot;#div-dashboard-view&quot;});
+    dataease.initialize({container: "#div-dashboard-view"});
 })
 &lt;/script&gt;
 </code></pre></div></p>
@@ -6002,32 +5999,32 @@ getToken().then(result =&gt; {
 <p>以下为 DataEase 传递内部消息的解析后得到的参数例子，这些参数均可以在 DataEase 获取数据大屏的接口详情里得到。</p>
 <div class="highlight"><pre><span></span><code>1.完整 data json 如下。
 {
-    &quot;msgOrigin&quot;: &quot;de-fit2cloud&quot;,
-    &quot;type&quot;: &quot;dataease-embedded-interactive&quot;,
-    &quot;eventName&quot;: &quot;de_inner_params&quot;,
-    &quot;args&quot;: {
-            &quot;sourceDvId&quot;: &quot;1029081671057674240&quot;,
-            &quot;sourceViewId&quot;: &quot;7237349581229395968&quot;,
-            &quot;message&quot;:               
-&quot;eyJvcHRpb24iOiJwb2ludENsaWNrIiwibmFtZSI6IjE3MTQwOTczMjY2OTQiLCJ2aWV3SWQiOiI3MjM3MzQ5NTgxMjI5Mzk1OTY4IiwiZGltZW5zaW9uTGlzdCI6W3siaWQiOiIxNzE0MDk3MzI2NjkzIiwidmFsdWUiOjB9LHsiaWQiOiIxNzE0MDk3MzI2Njk0IiwidmFsdWUiOiJCb2IifV0sInF1b3RhTGlzdCI6W119&quot;
+    "msgOrigin": "de-fit2cloud",
+    "type": "dataease-embedded-interactive",
+    "eventName": "de_inner_params",
+    "args": {
+            "sourceDvId": "1029081671057674240",
+            "sourceViewId": "7237349581229395968",
+            "message":               
+"eyJvcHRpb24iOiJwb2ludENsaWNrIiwibmFtZSI6IjE3MTQwOTczMjY2OTQiLCJ2aWV3SWQiOiI3MjM3MzQ5NTgxMjI5Mzk1OTY4IiwiZGltZW5zaW9uTGlzdCI6W3siaWQiOiIxNzE0MDk3MzI2NjkzIiwidmFsdWUiOjB9LHsiaWQiOiIxNzE0MDk3MzI2Njk0IiwidmFsdWUiOiJCb2IifV0sInF1b3RhTGlzdCI6W119"
             }
 }
 
 2.message base64解码 json 如下。
 {
-    &quot;option&quot;: &quot;pointClick&quot;,
-    &quot;name&quot;: &quot;1714097326694&quot;,
-    &quot;viewId&quot;: &quot;7237349581229395968&quot;,
-    &quot;dimensionList&quot;: [
+    "option": "pointClick",
+    "name": "1714097326694",
+    "viewId": "7237349581229395968",
+    "dimensionList": [
         {
-            &quot;id&quot;: &quot;1714097326693&quot;,
-            &quot;value&quot;: 0
+            "id": "1714097326693",
+            "value": 0
         },
         {
-             &quot;id&quot;: &quot;1714097326694&quot;,
-             &quot;value&quot;: &quot;Bob&quot;}
+             "id": "1714097326694",
+             "value": "Bob"}
 ],
-&quot;quotaList&quot;: [ ]}
+"quotaList": [ ]}
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>#
 1、DIV 嵌入需要引用嵌入式 JS，一般可以在 index.html 里进行引用.
@@ -6037,53 +6034,53 @@ getToken().then(result =&gt; {
 5、创建 DataEaseBi 对象，传入相应参数，渲染 DIV 容器，完成嵌入。
 #
 
-&lt;script setup lang=&quot;ts&quot; name=&quot;dashboard&quot;&gt;
+&lt;script setup lang="ts" name="dashboard"&gt;
 
-import {getToken} from &quot;@/api/common&quot;;
-import { onMounted , onUnmounted } from &quot;vue&quot;;
-import { Base64 } from &quot;js-base64&quot;;
+import {getToken} from "@/api/common";
+import { onMounted , onUnmounted } from "vue";
+import { Base64 } from "js-base64";
 
 onMounted(() =&gt; {
-  window.addEventListener(&quot;message&quot; , onMessage , false);
+  window.addEventListener("message" , onMessage , false);
 })
 
 onUnmounted( () =&gt; {
-  window.removeEventListener(&quot;message&quot; , onMessage , false);
+  window.removeEventListener("message" , onMessage , false);
 })
 
 const initParams = {
   attachParams: {
-    user: &quot;参数值&quot;
+    user: "参数值"
   },
   # DataEase 向外部传惨开关
-  callBackFlag: &quot;yes&quot;
+  callBackFlag: "yes"
 }
 
 # 仪表板 ID
-let dvId = &quot;&quot;;
+let dvId = "";
 # DataEase 访问地址
-let baseUrl = &quot;&quot;;
+let baseUrl = "";
 
 getToken().then(result =&gt; {
-  const dataease = new DataEaseBi(&quot;Dashboard&quot;, {
+  const dataease = new DataEaseBi("Dashboard", {
     baseUrl: baseUrl,
     token: result,
     dvId: dvId,
-    busiFlag: &quot;dashboard&quot;,
+    busiFlag: "dashboard",
     outerParams: JSON.stringify(initParams)
   });
 
-  dataease.initialize({container: &quot;#div-dashboard-view&quot;});
+  dataease.initialize({container: "#div-dashboard-view"});
 
 })
 # 解析传递消息，若为 de_inner_params，则获取对应信息，并解析 message，base64 编码
 const onMessage = function (event: any) {
-  if (event.data?.eventName === &quot;de_inner_params&quot;) {
+  if (event.data?.eventName === "de_inner_params") {
     const dvId = event.data.args.sourceDvId;
     const viewId = event.data.args.sourceViewId;
     const message = event.data.args.message;
     const messageDecode = Base64.decode(message);
-    alert(&quot;仪表板ID : &quot;+ dvId + &quot; ; 图表ID : &quot; + viewId + &quot; ; 点击详情 : &quot; + messageDecode);
+    alert("仪表板ID : "+ dvId + " ; 图表ID : " + viewId + " ; 点击详情 : " + messageDecode);
   }
 }
 
@@ -6101,34 +6098,34 @@ const onMessage = function (event: any) {
    5、创建 DataEaseBi 对象，传入相应参数，渲染 DIV 容器，完成嵌入。
 #
 &lt;template&gt;
-  &lt;div class=&quot;card content-box&quot;&gt;
-    &lt;div style=&quot;width: 100%; height: 100%&quot; id=&quot;div-dashboard-designer-view&quot;&gt;&lt;/div&gt;
+  &lt;div class="card content-box"&gt;
+    &lt;div style="width: 100%; height: 100%" id="div-dashboard-designer-view"&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;dashboardDesigner&quot;&gt;
+&lt;script setup lang="ts" name="dashboardDesigner"&gt;
 
-import {getToken} from &quot;@/api/common&quot;;
+import {getToken} from "@/api/common";
 # 仪表板 ID
-let dvId = &quot;&quot;;
+let dvId = "";
 # DataEase 企业版访问地址
-let baseUrl = &quot;&quot;;
+let baseUrl = "";
 
 getToken().then(result =&gt; {
     # DashboardEditor：仪表板设计器嵌入固定写法。
-  const dataease = new DataEaseBi(&quot;DashboardEditor&quot;, {
+  const dataease = new DataEaseBi("DashboardEditor", {
      baseUrl: baseUrl,
      token: result,
      resourceId: dvId,
      # 固定写法
-     opt: &quot;create&quot;
+     opt: "create"
     });
 
-    dataease.initialize({container: &quot;#div-dashboard-designer-view&quot;});
+    dataease.initialize({container: "#div-dashboard-designer-view"});
 
 })
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 @/api/hook
 </code></pre></div>
@@ -6153,34 +6150,34 @@ getToken().then(result =&gt; {
      1、查看看板时，可点击 DataEase 里的各个组件，向第三方系统传递当前点击的内容。
 #
 &lt;template&gt;
-  &lt;div class=&quot;card content-box&quot;&gt;
-    &lt;div style=&quot;width: 100%; height: 100%&quot; id=&quot;div-dataV-view&quot;&gt;&lt;/div&gt;
+  &lt;div class="card content-box"&gt;
+    &lt;div style="width: 100%; height: 100%" id="div-dataV-view"&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;dashboard&quot;&gt;
+&lt;script setup lang="ts" name="dashboard"&gt;
 
-import {getToken} from &quot;@/api/common&quot;;
+import {getToken} from "@/api/common";
 # 数据大屏 ID
-let dvId = &quot;&quot;;
+let dvId = "";
 # DataEase 企业版访问地址
-let baseUrl = &quot;&quot;;
+let baseUrl = "";
 getToken().then(result =&gt; {
     # Dashboard：仪表板数据大屏嵌入固定写法。
-    const dataease = new DataEaseBi(&quot;Dashboard&quot;, {
+    const dataease = new DataEaseBi("Dashboard", {
         baseUrl: baseUrl,
         # token: JWT token 认证。
         token: result,
         dvId: dvId,
         # 固定写法：dashboard 仪表板、dataV 数据大屏
-        busiFlag: &quot;dataV&quot;
+        busiFlag: "dataV"
     });
 
-    dataease.initialize({container: &quot;#div-dataV-view&quot;});
+    dataease.initialize({container: "#div-dataV-view"});
 
 })
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 @/api/hook
 </code></pre></div>
@@ -6204,34 +6201,34 @@ getToken().then(result =&gt; {
    5、创建 DataEaseBi 对象，传入相应参数，渲染 DIV 容器，完成嵌入。
 #
 &lt;template&gt;
-  &lt;div class=&quot;card content-box&quot;&gt;
-    &lt;div style=&quot;width: 100%; height: 100%&quot; id=&quot;div-dataV-editor-view&quot;&gt;&lt;/div&gt;
+  &lt;div class="card content-box"&gt;
+    &lt;div style="width: 100%; height: 100%" id="div-dataV-editor-view"&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;dataVEditor&quot;&gt;
+&lt;script setup lang="ts" name="dataVEditor"&gt;
 
-import {getToken} from &quot;@/api/common&quot;;
+import {getToken} from "@/api/common";
 # 数据大屏 ID
-let dvId = &quot;&quot;;
+let dvId = "";
 # DataEase 企业版访问地址
-let baseUrl = &quot;&quot;;
+let baseUrl = "";
 
 getToken().then(result =&gt; {
 # VisualizationEditor：仪表板设计器嵌入固定写法。
-    const dataease = new DataEaseBi(&quot;VisualizationEditor&quot;, {
+    const dataease = new DataEaseBi("VisualizationEditor", {
         baseUrl: baseUrl,
         token: result,
         dvId: dvId,
         # 固定写法
-        opt: &quot;create&quot;
+        opt: "create"
     });
 
-    dataease.initialize({container: &quot;#div-dataV-editor-view&quot;});
+    dataease.initialize({container: "#div-dataV-editor-view"});
 
 })
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 @/api/hook
 </code></pre></div>
@@ -6256,39 +6253,39 @@ getToken().then(result =&gt; {
      1、查看看板时，可点击 DataEase 里的各个组件，向第三方系统传递当前点击的内容。
 #
 &lt;template&gt;
-  &lt;div class=&quot;card content-box&quot;&gt;
-    &lt;div style=&quot;width: 100%; height: 100%&quot; id=&quot;div-view&quot;&gt;&lt;/div&gt;
+  &lt;div class="card content-box"&gt;
+    &lt;div style="width: 100%; height: 100%" id="div-view"&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;view&quot;&gt;
+&lt;script setup lang="ts" name="view"&gt;
 
-import {getToken} from &quot;@/api/common&quot;;
+import {getToken} from "@/api/common";
 # 仪表板 ID / 数据大屏 ID
-let dvId = &quot;&quot;;
+let dvId = "";
 # 图表 ID
-let chartId = &quot;&quot;;
+let chartId = "";
 # DataEase 企业版访问地址
-let baseUrl = &quot;&quot;;
+let baseUrl = "";
 
 
 getToken().then(result =&gt; {
     # Dashboard：仪表板数据大屏嵌入固定写法。
-    const dataease = new DataEaseBi(&quot;ViewWrapper&quot;, {
+    const dataease = new DataEaseBi("ViewWrapper", {
         baseUrl: baseUrl,
         # token: JWT token 认证。
         token: result,
         dvId: dvId,
         chartId: chartId,
         # 固定写法：dashboard 仪表板、dataV 数据大屏
-        busiFlag: &quot;dashboard&quot;
+        busiFlag: "dashboard"
     });
 
-    dataease.initialize({container: &quot;#div-view&quot;});
+    dataease.initialize({container: "#div-view"});
 
 })
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 @/api/hook
 </code></pre></div>
@@ -6307,29 +6304,29 @@ getToken().then(result =&gt; {
    5、创建 DataEaseBi 对象，传入相应参数，渲染 DIV 容器，完成嵌入。
 #
 &lt;template&gt;
-  &lt;div class=&quot;card content-box&quot;&gt;
-    &lt;div style=&quot;width: 100%; height: 100%&quot; id=&quot;div-datafillinghandler-view&quot;&gt;&lt;/div&gt;
+  &lt;div class="card content-box"&gt;
+    &lt;div style="width: 100%; height: 100%" id="div-datafillinghandler-view"&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;datafillinghandler&quot;&gt;
+&lt;script setup lang="ts" name="datafillinghandler"&gt;
 
-import {getToken} from &quot;@/api/common&quot;;
+import {getToken} from "@/api/common";
 
 # DataEase 访问地址
-let baseUrl = &quot;&quot;;
+let baseUrl = "";
 
 getToken().then(result =&gt; {
-    const dataease = new DataEaseBi(&quot;DataFillingHandler&quot;, {
+    const dataease = new DataEaseBi("DataFillingHandler", {
         baseUrl: baseUrl,
         token: result
     });
 
-    dataease.initialize({container: &quot;#div-datafillinghandler-view&quot;});
+    dataease.initialize({container: "#div-datafillinghandler-view"});
 
 })
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 </code></pre></div>
 </div>
@@ -6341,32 +6338,32 @@ getToken().then(result =&gt; {
 <div class="admonition abstract">
 <p>嵌入整个仪表板模块，嵌入后可实现仪表板模块的整体使用，包括新建仪表板，编辑仪表板、删除仪表板。</p>
 <div class="highlight"><pre><span></span><code>&lt;template&gt;
-    &lt;div class=&quot;card content-box&quot;&gt;
-        &lt;div style=&quot;width: 100%; height: 100%&quot; id=&quot;div-dashboard-module-view&quot;&gt;&lt;/div&gt;
+    &lt;div class="card content-box"&gt;
+        &lt;div style="width: 100%; height: 100%" id="div-dashboard-module-view"&gt;&lt;/div&gt;
     &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;dashboardModule&quot;&gt;
+&lt;script setup lang="ts" name="dashboardModule"&gt;
 
-import {getToken} from &quot;@/api/common&quot;;
+import {getToken} from "@/api/common";
 
 # DataEase 企业版访问地址
-let baseUrl = &quot;&quot;;
+let baseUrl = "";
 
 getToken().then(result =&gt; {
     # DashboardPanel：仪表板模块嵌入固定写法。
-        const dataease = new DataEaseBi(&quot;DashboardPanel&quot;, {
+        const dataease = new DataEaseBi("DashboardPanel", {
             # baseUrl：DataEase 企业版访问地址。
             baseUrl: baseUrl,
             # token: JWT token 认证。
             token: result
         });
 
-        dataease.initialize({container: &quot;#div-dashboard-module-view&quot;});
+        dataease.initialize({container: "#div-dashboard-module-view"});
 
 })
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 @/api/hook
 </code></pre></div>
@@ -6381,31 +6378,31 @@ getToken().then(result =&gt; {
    4、创建 DataEaseBi 对象，传入相应参数，渲染 DIV 容器，完成嵌入。
 #
 &lt;template&gt;
-    &lt;div class=&quot;card content-box&quot;&gt;
-        &lt;div style=&quot;width: 100%; height: 100%&quot; id=&quot;div-dataV-module-view&quot;&gt;&lt;/div&gt;
+    &lt;div class="card content-box"&gt;
+        &lt;div style="width: 100%; height: 100%" id="div-dataV-module-view"&gt;&lt;/div&gt;
     &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;dataVModule&quot;&gt;
+&lt;script setup lang="ts" name="dataVModule"&gt;
 
-import {getToken} from &quot;@/api/common&quot;;
+import {getToken} from "@/api/common";
 
 # DataEase 访问地址
-let baseUrl = &quot;&quot;;
+let baseUrl = "";
 
 getToken().then(result =&gt; {
     # ScreenPanel：数据大屏模块嵌入固定写法。
-    const dataease = new DataEaseBi(&quot;ScreenPanel&quot;, {
+    const dataease = new DataEaseBi("ScreenPanel", {
         baseUrl: baseUrl,
         # token: JWT token 认证
         token: result
     });
 
-    dataease.initialize({container: &quot;#div-dataV-module-view&quot;});
+    dataease.initialize({container: "#div-dataV-module-view"});
 
 })
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 </code></pre></div>
 </div>
@@ -6420,30 +6417,30 @@ getToken().then(result =&gt; {
 #
 
 &lt;template&gt;
-  &lt;div class=&quot;card content-box&quot;&gt;
-    &lt;div style=&quot;width: 100%; height: 100%&quot; id=&quot;div-dataset-module-view&quot;&gt;&lt;/div&gt;
+  &lt;div class="card content-box"&gt;
+    &lt;div style="width: 100%; height: 100%" id="div-dataset-module-view"&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;datasetModule&quot;&gt;
+&lt;script setup lang="ts" name="datasetModule"&gt;
 
-import {getToken} from &quot;@/api/common&quot;;
+import {getToken} from "@/api/common";
 # DataEase 访问地址
-let baseUrl = &quot;&quot;;
+let baseUrl = "";
 
 getToken().then(result =&gt; {
     # Dataset：数据集模块嵌入固定写法。
-        const dataease = new DataEaseBi(&quot;Dataset&quot;, {
+        const dataease = new DataEaseBi("Dataset", {
             baseUrl: baseUrl,
             # token: JWT token 认证
             token: result
         });
 
-    dataease.initialize({container: &quot;#div-dataset-module-view&quot;});
+    dataease.initialize({container: "#div-dataset-module-view"});
 
 })
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 @/api/hook
 </code></pre></div>
@@ -6459,31 +6456,31 @@ getToken().then(result =&gt; {
 #
 
 &lt;template&gt;
-    &lt;div class=&quot;card content-box&quot;&gt;
-        &lt;div style=&quot;width: 100%; height: 100%&quot; id=&quot;div-datasource-module-view&quot;&gt;&lt;/div&gt;
+    &lt;div class="card content-box"&gt;
+        &lt;div style="width: 100%; height: 100%" id="div-datasource-module-view"&gt;&lt;/div&gt;
     &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;datasourceModule&quot;&gt;
+&lt;script setup lang="ts" name="datasourceModule"&gt;
 
-import {getToken} from &quot;@/api/common&quot;;
+import {getToken} from "@/api/common";
 
 # DataEase 访问地址
-let baseUrl = &quot;&quot;;
+let baseUrl = "";
 
 getToken().then(result =&gt; {
     # Datasource：数据源模块嵌入固定写法。
-    const dataease = new DataEaseBi(&quot;Datasource&quot;, {
+    const dataease = new DataEaseBi("Datasource", {
         baseUrl: baseUrl,
         # token: JWT token 认证
         token: result
     });
 
-    dataease.initialize({container: &quot;#div-datasource-module-view&quot;});
+    dataease.initialize({container: "#div-datasource-module-view"});
 
 })
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 @/api/hook
 </code></pre></div>
@@ -6492,31 +6489,31 @@ getToken().then(result =&gt; {
 <div class="admonition abstract">
 <p>嵌入整个数据源，嵌入后可实现数据源模块的整体使用，包括新建数据源，编辑数据源，删除数源。</p>
 <div class="highlight"><pre><span></span><code>&lt;template&gt;
-  &lt;div class=&quot;card content-box&quot;&gt;
-    &lt;div style=&quot;width: 100%; height: 100%&quot; id=&quot;div-datafilling-module-view&quot;&gt;&lt;/div&gt;
+  &lt;div class="card content-box"&gt;
+    &lt;div style="width: 100%; height: 100%" id="div-datafilling-module-view"&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;datafillingModule&quot;&gt;
+&lt;script setup lang="ts" name="datafillingModule"&gt;
 
-import {getToken} from &quot;@/api/common&quot;;
+import {getToken} from "@/api/common";
 
 # DataEase 访问地址
-let baseUrl = &quot;&quot;;
+let baseUrl = "";
 
 getToken().then(result =&gt; {
 # DataFilling：数据填报模块嵌入固定写法。
-    const dataease = new DataEaseBi(&quot;DataFilling&quot;, {
+    const dataease = new DataEaseBi("DataFilling", {
         baseUrl: baseUrl,
         # token: JWT token 认证
         token: result
     });
 
-    dataease.initialize({container: &quot;#div-datafilling-module-view&quot;});
+    dataease.initialize({container: "#div-datafilling-module-view"});
 
 })
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 @/api/hook
 </code></pre></div>
@@ -6525,31 +6522,31 @@ getToken().then(result =&gt; {
 <div class="admonition abstract">
 <p>嵌入 Copilot 模块。</p>
 <div class="highlight"><pre><span></span><code>&lt;template&gt;
-  &lt;div class=&quot;card content-box&quot;&gt;
-    &lt;div style=&quot;width: 100%; height: 100%&quot; id=&quot;div-copilot-module-view&quot;&gt;&lt;/div&gt;
+  &lt;div class="card content-box"&gt;
+    &lt;div style="width: 100%; height: 100%" id="div-copilot-module-view"&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;copilotmodule&quot;&gt;
+&lt;script setup lang="ts" name="copilotmodule"&gt;
 
-import {getToken} from &quot;@/api/common&quot;;
+import {getToken} from "@/api/common";
 
 # DataEase 访问地址
-let baseUrl = &quot;&quot;;
+let baseUrl = "";
 
 getToken().then(result =&gt; {
     # Copilot： Copilot 模块嵌入固定写法。
-    const dataease = new DataEaseBi(&quot;Copilot&quot;, {
+    const dataease = new DataEaseBi("Copilot", {
         baseUrl: baseUrl,
         // token: JWT token 认证
         token: result
     });
 
-    dataease.initialize({container: &quot;#div-copilot-module-view&quot;});
+    dataease.initialize({container: "#div-copilot-module-view"});
 
 })
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 @/api/hook
 </code></pre></div>
@@ -6557,32 +6554,32 @@ getToken().then(result =&gt; {
 <h3 id="77">7.7 模版管理模块<a class="headerlink" href="#77" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <div class="highlight"><pre><span></span><code>&lt;template&gt;
-  &lt;div class=&quot;card content-box&quot;&gt;
-    &lt;div style=&quot;width: 100%; height: 100%&quot; id=&quot;div-templatemanage-module-view&quot;&gt;&lt;/div&gt;
+  &lt;div class="card content-box"&gt;
+    &lt;div style="width: 100%; height: 100%" id="div-templatemanage-module-view"&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;templatemanage&quot;&gt;
+&lt;script setup lang="ts" name="templatemanage"&gt;
 
-import {getToken} from &quot;@/api/common&quot;;
+import {getToken} from "@/api/common";
 
 # DataEase 访问地址
-let baseUrl = &quot;&quot;;
-let opt = &quot;create&quot;
+let baseUrl = "";
+let opt = "create"
 getToken().then(result =&gt; {
     # TemplateManage：模版管理模块嵌入固定写法。
-    const dataease = new DataEaseBi(&quot;TemplateManage&quot;, {
+    const dataease = new DataEaseBi("TemplateManage", {
         baseUrl: baseUrl,
         #  token: JWT token 认证
         token: result
         opt: opt
     });
 
-    dataease.initialize({container: &quot;#div-templatemanage-module-view&quot;});
+    dataease.initialize({container: "#div-templatemanage-module-view"});
 
 })
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 @/api/hook
 </code></pre></div>

@@ -57,10 +57,7 @@
     <script src="../js/mega.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 
-    <script 
-        async
-        defer
-        src="https://maxkb.fit2cloud.com/api/application/embed?protocol=https&host=maxkb.fit2cloud.com&token=2ddd8b594ce09dbb">
+    <script async defer src="https://maxkb-internal.fit2cloud.com/chat/api/embed?protocol=https&host=maxkb-internal.fit2cloud.com&token=2ddd8b594ce09dbb">
     </script>
 
     
@@ -5721,16 +5718,16 @@
 示例外部表结构：</p>
 <div class="highlight"><pre><span></span><code>CREATE foreign TABLE jinlong.foreign_books
 (
-&quot;_id&quot; varchar(255) NOT NULL,
+"_id" varchar(255) NOT NULL,
 author varchar(255) NULL,
 category varchar(255) NULL,
-&quot;createdDate&quot; date NULL,
-&quot;onSale&quot; varchar(255) NULL,
+"createdDate" date NULL,
+"onSale" varchar(255) NULL,
 price float4 NULL,
 title varchar(255) NULL
 )
 SERVER foreign_server_pg
-OPTIONS (schema_name &#39;public&#39;, table_name &#39;books&#39;);
+OPTIONS (schema_name 'public', table_name 'books');
 </code></pre></div>
 </div>
 <div class="admonition abstract">

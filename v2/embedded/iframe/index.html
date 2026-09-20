@@ -57,10 +57,7 @@
     <script src="../../js/mega.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
 
-    <script 
-        async
-        defer
-        src="https://maxkb.fit2cloud.com/api/application/embed?protocol=https&host=maxkb.fit2cloud.com&token=2ddd8b594ce09dbb">
+    <script async defer src="https://maxkb-internal.fit2cloud.com/chat/api/embed?protocol=https&host=maxkb-internal.fit2cloud.com&token=2ddd8b594ce09dbb">
     </script>
 
     
@@ -5831,58 +5828,58 @@
 #
 
 &lt;template&gt;
-  &lt;div class=&quot;card-iframe content-box&quot;&gt;
-      &lt;iframe style=&quot;height: 100%; width: 100%; border: 0&quot; src=&quot;&quot;  id=&quot;iframe-dashboard-view&quot; &gt;&lt;/iframe&gt;
+  &lt;div class="card-iframe content-box"&gt;
+      &lt;iframe style="height: 100%; width: 100%; border: 0" src=""  id="iframe-dashboard-view" &gt;&lt;/iframe&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;dashboard&quot;&gt;
-import {getToken} from &quot;@/api/common&quot;;
-import {nextTick , onUnmounted} from &quot;vue&quot;;
+&lt;script setup lang="ts" name="dashboard"&gt;
+import {getToken} from "@/api/common";
+import {nextTick , onUnmounted} from "vue";
 
 # 仪表板 ID
-let dvId = &quot;&quot;;
+let dvId = "";
 # 固定写法，如 https://embedded-bi-inner.dataease.cn/#/chart-view
-let url = &quot;&quot;;
+let url = "";
 
 const params = {
     # 固定写法：dashboard 仪表板、dataV 数据大屏
-    busiFlag: &quot;dashboard&quot;,
+    busiFlag: "dashboard",
     dvId: dvId,
     # 固定写法
-    type: &quot;Dashboard&quot;,
+    type: "Dashboard",
     #  JWT token 认证。
-    embeddedToken: &quot;&quot;,
+    embeddedToken: "",
     # 固定写法
-    &quot;de-embedded&quot;: true
+    "de-embedded": true
 }
 
 let iframe = null;
 
 onUnmounted(()=&gt;{
-    window.removeEventListener(&quot;message&quot;,onMessage,false);
+    window.removeEventListener("message",onMessage,false);
 })
 
 nextTick(()=&gt;{
-    iframe = document.getElementById(&quot;iframe-dashboard-view&quot;);
+    iframe = document.getElementById("iframe-dashboard-view");
 
     getToken().then(result =&gt; {
         params.embeddedToken = result;
         iframe.src = url;
 
-        window.addEventListener(&quot;message&quot; , onMessage , false);
+        window.addEventListener("message" , onMessage , false);
     })
 })
 
 const onMessage = function (event: any){
-    if (event.data?.msgOrigin === &quot;de-fit2cloud&quot;) {
+    if (event.data?.msgOrigin === "de-fit2cloud") {
         const contentWindow = iframe.contentWindow;
-        contentWindow.postMessage(params , &quot;*&quot;)
+        contentWindow.postMessage(params , "*")
     }
 }
 
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 </code></pre></div>
 </div>
@@ -5903,20 +5900,20 @@ const onMessage = function (event: any){
 3、设置 iframe 容器的 src 为仪表板公共链接。
 #
 
-&lt;script setup lang=&quot;ts&quot; name=&quot;dashboard&quot;&gt;
-import {Base64} from &quot;js-base64&quot;;
-import {nextTick} from &quot;vue&quot;;
+&lt;script setup lang="ts" name="dashboard"&gt;
+import {Base64} from "js-base64";
+import {nextTick} from "vue";
 
 nextTick(()=&gt;{
 
   const params = {
-    参数名1: [&quot;参数值1&quot; , &quot;参数值2&quot;],
-    参数名2: &quot;参数值2&quot;
+    参数名1: ["参数值1" , "参数值2"],
+    参数名2: "参数值2"
   }
 # 公共链接拼接 attachParams
-  let url = &quot;https://embedded-bi-inner.dataease.cn/#/de-link/uY6HGgCD?attachParams=&quot;+Base64.encodeURL(JSON.stringify(params));
+  let url = "https://embedded-bi-inner.dataease.cn/#/de-link/uY6HGgCD?attachParams="+Base64.encodeURL(JSON.stringify(params));
 
-  document.getElementById(&quot;iframe-dashboard-view&quot;).src = url;
+  document.getElementById("iframe-dashboard-view").src = url;
 })
 
 &lt;/script&gt;
@@ -5928,20 +5925,20 @@ b) 公共链接使用 ticket 设置参数过滤数据。
 2、定义一个 iframe 容器，并且设置好宽高。
 3、设置 iframe 容器的 src 为仪表板公共链接。
 # 
-&lt;script setup lang=&quot;ts&quot; name=&quot;dashboard&quot;&gt;
-import {Base64} from &quot;js-base64&quot;;
-import {nextTick} from &quot;vue&quot;;
+&lt;script setup lang="ts" name="dashboard"&gt;
+import {Base64} from "js-base64";
+import {nextTick} from "vue";
 
 nextTick(()=&gt;{
 
   const params = {
-    参数名1: [&quot;参数值1&quot; , &quot;参数值2&quot;],
-    参数名2: &quot;参数值2&quot;
+    参数名1: ["参数值1" , "参数值2"],
+    参数名2: "参数值2"
   }
 
 # 公共链接使用 ticket 设置参数
- let url = &quot;https://embedded-bi-inner.dataease.cn/#/de-link/uY6HGgCD?ticket=rGD7gNBN&quot;
-  document.getElementById(&quot;iframe-dashboard-view&quot;).src = url;
+ let url = "https://embedded-bi-inner.dataease.cn/#/de-link/uY6HGgCD?ticket=rGD7gNBN"
+  document.getElementById("iframe-dashboard-view").src = url;
 })
 
 &lt;/script&gt;
@@ -5957,53 +5954,53 @@ c) DataEase 推荐的 iframe 嵌入方式前端传参过滤数据。
 6、监听来自 DataEase 事件的 msgOrigin ，如果 msgOrigin 为 de-fit2cloud ，则通过 postMessage 发送初始化参数，渲染看板。
 #
 
-&lt;script setup lang=&quot;ts&quot; name=&quot;dashboard&quot;&gt;
-import {getToken} from &quot;@/api/common&quot;;
-import {nextTick , onUnmounted} from &quot;vue&quot;;
+&lt;script setup lang="ts" name="dashboard"&gt;
+import {getToken} from "@/api/common";
+import {nextTick , onUnmounted} from "vue";
 
 # 仪表板 ID
-let dvId = &quot;&quot;;
+let dvId = "";
 # 固定写法，如 https://embedded-bi-inner.dataease.cn/#/chart-view
-let url = &quot;&quot;;
+let url = "";
 
 # 外部参数
 const initParams = {
   attachParams: {
-    &quot;参数名&quot;:&quot;参数值&quot;
+    "参数名":"参数值"
   }
 }
 
 # 嵌入式参数
 const params = {
-  busiFlag: &quot;dashboard&quot;,
+  busiFlag: "dashboard",
   dvId: dvId,
-  type: &quot;Dashboard&quot;,
-  embeddedToken: &quot;&quot;,
-  &quot;de-embedded&quot;: true,
+  type: "Dashboard",
+  embeddedToken: "",
+  "de-embedded": true,
   outerParams: JSON.stringify(initParams)
 }
 
 let iframe = null;
 
 onUnmounted(()=&gt;{
-  window.removeEventListener(&quot;message&quot;,onMessage,false);
+  window.removeEventListener("message",onMessage,false);
 })
 
 nextTick(()=&gt;{
-  iframe = document.getElementById(&quot;iframe-dashboard-view&quot;);
+  iframe = document.getElementById("iframe-dashboard-view");
 
   getToken().then(result =&gt; {
     params.embeddedToken = result;
     iframe.src = url;
 
-    window.addEventListener(&quot;message&quot; , onMessage , false);
+    window.addEventListener("message" , onMessage , false);
   })
 })
 
 const onMessage = function (event: any){
-  if (event.data?.msgOrigin === &quot;de-fit2cloud&quot;) {
+  if (event.data?.msgOrigin === "de-fit2cloud") {
     const contentWindow = iframe.contentWindow;
-    contentWindow.postMessage(params , &quot;*&quot;)
+    contentWindow.postMessage(params , "*")
   }
 }
 </code></pre></div>
@@ -6018,20 +6015,20 @@ public class TokenApi {
 ## 配置参数名称为 dataease.embedded-exp
 #
 
-    @GetMapping(&quot;/token/{account}&quot;)
-    public String generate(@PathVariable(&quot;account&quot;) String account) throws JsonProcessingException {
+    @GetMapping("/token/{account}")
+    public String generate(@PathVariable("account") String account) throws JsonProcessingException {
         SettingVO vo = SettingUtils.read();
         # vo.getAppSecret() 实际为创建的嵌入式应用的 APP Secret 。
         Algorithm algorithm = Algorithm.HMAC256(vo.getAppSecret());
         JWTCreator.Builder builder = JWT.create();
         List&lt;String&gt; ipList = new ArrayList&lt;&gt;();
-        ipList.add(&quot;192.168.1.10&quot;);
-        ipList.add(&quot;192.168.1.20&quot;);
+        ipList.add("192.168.1.10");
+        ipList.add("192.168.1.20");
         ObjectMapper objectMapper = new ObjectMapper();
         String json = objectMapper.writeValueAsString(ipList);
         # vo.getAppId(): 实际为创建的嵌入式应用的 APP ID。account 用户账号。
         # arg 参数，参数值多个使用 json 格式
-        builder.withClaim(&quot;account&quot;, account).withClaim(&quot;appId&quot;, vo.getAppId()).withClaim(&quot;arg1&quot;, &quot;参数值1&quot;).withClaim(&quot;arg2&quot;, json);
+        builder.withClaim("account", account).withClaim("appId", vo.getAppId()).withClaim("arg1", "参数值1").withClaim("arg2", json);
         # 设置令牌生成时间，
         builder.withIssuedAt(new Date());
         # 返回 token
@@ -6051,68 +6048,68 @@ public class TokenApi {
 #
 
 &lt;template&gt;
-  &lt;div class=&quot;card-iframe content-box&quot;&gt;
-    &lt;div style=&quot;float: right; cursor: pointer; margin-top: 0.5vh&quot;&gt;
-      &lt;el-dropdown trigger=&quot;click&quot; @command=&quot;changeUser&quot;&gt;
-            &lt;span class=&quot;el-dropdown-link&quot;&gt;
+  &lt;div class="card-iframe content-box"&gt;
+    &lt;div style="float: right; cursor: pointer; margin-top: 0.5vh"&gt;
+      &lt;el-dropdown trigger="click" @command="changeUser"&gt;
+            &lt;span class="el-dropdown-link"&gt;
               点我切换参数
             &lt;/span&gt;
         &lt;template #dropdown&gt;
           &lt;el-dropdown-menu&gt;
-            &lt;el-dropdown-item command=&quot;参数1&quot;&gt;参数1&lt;/el-dropdown-item&gt;
-            &lt;el-dropdown-item command=&quot;参数2&quot;&gt;参数2&lt;/el-dropdown-item&gt;
-            &lt;el-dropdown-item command=&quot;参数3&quot;&gt;参数3&lt;/el-dropdown-item&gt;
+            &lt;el-dropdown-item command="参数1"&gt;参数1&lt;/el-dropdown-item&gt;
+            &lt;el-dropdown-item command="参数2"&gt;参数2&lt;/el-dropdown-item&gt;
+            &lt;el-dropdown-item command="参数3"&gt;参数3&lt;/el-dropdown-item&gt;
           &lt;/el-dropdown-menu&gt;
         &lt;/template&gt;
       &lt;/el-dropdown&gt;
     &lt;/div&gt;
-      &lt;iframe style=&quot;height: 100%; width: 100%; border: 0&quot; src=&quot;&quot;  id=&quot;iframe-dashboard-view&quot; &gt;&lt;/iframe&gt;
+      &lt;iframe style="height: 100%; width: 100%; border: 0" src=""  id="iframe-dashboard-view" &gt;&lt;/iframe&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;dashboard&quot;&gt;
-import {getToken} from &quot;@/api/common&quot;;
-import {nextTick , onUnmounted} from &quot;vue&quot;;
+&lt;script setup lang="ts" name="dashboard"&gt;
+import {getToken} from "@/api/common";
+import {nextTick , onUnmounted} from "vue";
 
 # 仪表板 ID
-let dvId = &quot;&quot;;
+let dvId = "";
 # 固定写法，如 https://embedded-bi-inner.dataease.cn/#/chart-view
-let url = &quot;&quot;;
+let url = "";
 
 const params = {
-    busiFlag: &quot;dashboard&quot;,
+    busiFlag: "dashboard",
     dvId: dvId,
-    type: &quot;Dashboard&quot;,
-    embeddedToken: &quot;&quot;,
-    &quot;de-embedded&quot;: true
+    type: "Dashboard",
+    embeddedToken: "",
+    "de-embedded": true
 }
 
 let iframe = null;
 
 onUnmounted(()=&gt;{
-    window.removeEventListener(&quot;message&quot;,onMessage,false);
+    window.removeEventListener("message",onMessage,false);
 })
 
 nextTick(()=&gt;{
-    iframe = document.getElementById(&quot;iframe-dashboard-view&quot;);
+    iframe = document.getElementById("iframe-dashboard-view");
 
     getToken().then(result =&gt; {
         params.embeddedToken = result;
         iframe.src = url;
 
-     window.addEventListener(&quot;message&quot; , onMessage , false);
+     window.addEventListener("message" , onMessage , false);
     })
 })
 
 const onMessage = function (event: any){
-    if (event.data?.eventName === &#39;de_inner_params&#39;) {
-        console.log(&quot;内部消息 Iframe DashboardView：&quot;+JSON.stringify(event.data))
+    if (event.data?.eventName === 'de_inner_params') {
+        console.log("内部消息 Iframe DashboardView："+JSON.stringify(event.data))
         // 可选：弹窗提示（按需保留/删除）
-        // alert(&#39;DataEase 内部消息 Iframe DashboardView：&#39;+JSON.stringify(event.data))
-    }else if(event.data?.eventName === &#39;canvas_init_ready&#39;){
-        console.log(&quot;内部消息：&quot;+JSON.stringify(event.data))
-    }else if (event.data?.msgOrigin === &quot;de-fit2cloud&quot;) {
+        // alert('DataEase 内部消息 Iframe DashboardView：'+JSON.stringify(event.data))
+    }else if(event.data?.eventName === 'canvas_init_ready'){
+        console.log("内部消息："+JSON.stringify(event.data))
+    }else if (event.data?.msgOrigin === "de-fit2cloud") {
         const contentWindow = iframe.contentWindow;
-        contentWindow.postMessage(params , &quot;*&quot;)
+        contentWindow.postMessage(params , "*")
     }
 }
 
@@ -6122,14 +6119,14 @@ const changeUser = function (command: String) {
 
 const postMsg = function (user: String) {
     const param = {
-        type: &quot;attachParams&quot;,
+        type: "attachParams",
         targetSourceId: dvId,
         params: {
         参数名: 参数值
         }
     }
     const contentWindow = iframe.contentWindow;
-    contentWindow.postMessage( JSON.parse(JSON.stringify(param)) , &quot;*&quot; );
+    contentWindow.postMessage( JSON.parse(JSON.stringify(param)) , "*" );
 }
 
 &lt;/script&gt;
@@ -6141,32 +6138,32 @@ const postMsg = function (user: String) {
 <p>以下为 DataEase 传递内部消息的解析后得到的参数例子，这些参数均可以在 DataEase 获取数据大屏的接口详情里得到。</p>
 <p><div class="highlight"><pre><span></span><code>1.完整 data json 如下。
 {
-    &quot;msgOrigin&quot;: &quot;de-fit2cloud&quot;,
-    &quot;type&quot;: &quot;dataease-embedded-interactive&quot;,
-    &quot;eventName&quot;: &quot;de_inner_params&quot;,
-    &quot;args&quot;: {
-            &quot;sourceDvId&quot;: &quot;1029081671057674240&quot;,
-            &quot;sourceViewId&quot;: &quot;7237349581229395968&quot;,
-            &quot;message&quot;:               
-&quot;eyJvcHRpb24iOiJwb2ludENsaWNrIiwibmFtZSI6IjE3MTQwOTczMjY2OTQiLCJ2aWV3SWQiOiI3MjM3MzQ5NTgxMjI5Mzk1OTY4IiwiZGltZW5zaW9uTGlzdCI6W3siaWQiOiIxNzE0MDk3MzI2NjkzIiwidmFsdWUiOjB9LHsiaWQiOiIxNzE0MDk3MzI2Njk0IiwidmFsdWUiOiJCb2IifV0sInF1b3RhTGlzdCI6W119&quot;
+    "msgOrigin": "de-fit2cloud",
+    "type": "dataease-embedded-interactive",
+    "eventName": "de_inner_params",
+    "args": {
+            "sourceDvId": "1029081671057674240",
+            "sourceViewId": "7237349581229395968",
+            "message":               
+"eyJvcHRpb24iOiJwb2ludENsaWNrIiwibmFtZSI6IjE3MTQwOTczMjY2OTQiLCJ2aWV3SWQiOiI3MjM3MzQ5NTgxMjI5Mzk1OTY4IiwiZGltZW5zaW9uTGlzdCI6W3siaWQiOiIxNzE0MDk3MzI2NjkzIiwidmFsdWUiOjB9LHsiaWQiOiIxNzE0MDk3MzI2Njk0IiwidmFsdWUiOiJCb2IifV0sInF1b3RhTGlzdCI6W119"
             }
 }
 
 2.message base64解码 json 如下。
 {
-    &quot;option&quot;: &quot;pointClick&quot;,
-    &quot;name&quot;: &quot;1714097326694&quot;,
-    &quot;viewId&quot;: &quot;7237349581229395968&quot;,
-    &quot;dimensionList&quot;: [
+    "option": "pointClick",
+    "name": "1714097326694",
+    "viewId": "7237349581229395968",
+    "dimensionList": [
         {
-            &quot;id&quot;: &quot;1714097326693&quot;,
-            &quot;value&quot;: 0
+            "id": "1714097326693",
+            "value": 0
         },
         {
-            &quot;id&quot;: &quot;1714097326694&quot;,
-            &quot;value&quot;: &quot;Bob&quot;}
+            "id": "1714097326694",
+            "value": "Bob"}
     ],
-    &quot;quotaList&quot;: [ ]}
+    "quotaList": [ ]}
 </code></pre></div>
 示例代码：
 <div class="highlight"><pre><span></span><code>#
@@ -6179,57 +6176,57 @@ const postMsg = function (user: String) {
 6、监听来自 DataEase 事件的 msgOrigin ，如果 msgOrigin 为 de-fit2cloud ，则通过 postMessage 发送初始化参数，渲染看板。
 #
 
-&lt;script setup lang=&quot;ts&quot; name=&quot;dashboard&quot;&gt;
-import {getToken} from &quot;@/api/common&quot;;
-import {nextTick , onUnmounted} from &quot;vue&quot;;
-import {Base64} from &quot;js-base64&quot;;
+&lt;script setup lang="ts" name="dashboard"&gt;
+import {getToken} from "@/api/common";
+import {nextTick , onUnmounted} from "vue";
+import {Base64} from "js-base64";
 
 # 仪表板 ID
-let dvId = &quot;&quot;;
+let dvId = "";
 # 固定写法，如 https://embedded-bi-inner.dataease.cn/#/chart-view
-let url = &quot;&quot;;
+let url = "";
 
 const initParams = {
-  callBackFlag: &quot;yes&quot;
+  callBackFlag: "yes"
 }
 
 const params = {
-  busiFlag: &quot;dashboard&quot;,
+  busiFlag: "dashboard",
   dvId: dvId,
-  type: &quot;Dashboard&quot;,
-  embeddedToken: &quot;&quot;,
-  &quot;de-embedded&quot;: true,
+  type: "Dashboard",
+  embeddedToken: "",
+  "de-embedded": true,
   outerParams: JSON.stringify(initParams)
 }
 
 let iframe = null;
 
 onUnmounted(()=&gt;{
-  window.removeEventListener(&quot;message&quot;,onMessage,false);
+  window.removeEventListener("message",onMessage,false);
 })
 
 nextTick(()=&gt;{
-  iframe = document.getElementById(&quot;iframe-dashboard-view&quot;);
+  iframe = document.getElementById("iframe-dashboard-view");
 
   getToken().then(result =&gt; {
     params.embeddedToken = result;
     iframe.src = url;
 
-    window.addEventListener(&quot;message&quot; , onMessage , false);
+    window.addEventListener("message" , onMessage , false);
   })
 })
 
 const onMessage = function (event: any){
-  if (event.data?.eventName === &quot;de_inner_params&quot;) {
+  if (event.data?.eventName === "de_inner_params") {
     const dvId = event.data.args.sourceDvId;
     const viewId = event.data.args.sourceViewId;
     const message = event.data.args.message;
     const messageDecode = Base64.decode(message);
-    alert(&quot;仪表板ID : &quot;+ dvId + &quot; ; 图表ID : &quot; + viewId + &quot; ; 点击详情 : &quot; + messageDecode);
+    alert("仪表板ID : "+ dvId + " ; 图表ID : " + viewId + " ; 点击详情 : " + messageDecode);
   }
-  if (event.data?.msgOrigin === &quot;de-fit2cloud&quot;) {
+  if (event.data?.msgOrigin === "de-fit2cloud") {
     const contentWindow = iframe.contentWindow;
-    contentWindow.postMessage(params , &quot;*&quot;)
+    contentWindow.postMessage(params , "*")
   }
 }
 
@@ -6250,51 +6247,51 @@ const onMessage = function (event: any){
 #
 
 &lt;template&gt;
-  &lt;div class=&quot;card-iframe content-box&quot;&gt;
-      &lt;iframe style=&quot;height: 100%; width: 100%; border: 0&quot; src=&quot;&quot;  id=&quot;iframe-dashboard-view&quot; &gt;&lt;/iframe&gt;
+  &lt;div class="card-iframe content-box"&gt;
+      &lt;iframe style="height: 100%; width: 100%; border: 0" src=""  id="iframe-dashboard-view" &gt;&lt;/iframe&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;dashboard&quot;&gt;
-import {getToken} from &quot;@/api/common&quot;;
-import {nextTick , onUnmounted} from &quot;vue&quot;;
+&lt;script setup lang="ts" name="dashboard"&gt;
+import {getToken} from "@/api/common";
+import {nextTick , onUnmounted} from "vue";
 
 # 仪表板 ID
-let dvId = &quot;&quot;;
+let dvId = "";
 # 固定写法，如 https://embedded-bi-inner.dataease.cn/#/chart-view
-let url = &quot;&quot;;
+let url = "";
 
 const params = {
     # 固定写法：dashboard 仪表板、dataV 数据大屏
-    busiFlag: &quot;dashboard&quot;,
+    busiFlag: "dashboard",
     resourceId: dvId,
     # 固定写法
-    type: &quot;DashboardEditor&quot;,
-    embeddedToken: &quot;&quot;,
+    type: "DashboardEditor",
+    embeddedToken: "",
     # 固定写法
-    &quot;de-embedded&quot;: true
+    "de-embedded": true
 }
 
 let iframe = null;
 
 onUnmounted(()=&gt;{
-    window.removeEventListener(&quot;message&quot;,onMessage,false);
+    window.removeEventListener("message",onMessage,false);
 })
 
 nextTick(()=&gt;{
-    iframe = document.getElementById(&quot;iframe-dashboard-view&quot;);
+    iframe = document.getElementById("iframe-dashboard-view");
 
     getToken().then(result =&gt; {
         params.embeddedToken = result;
         iframe.src = url;
 
-        window.addEventListener(&quot;message&quot; , onMessage , false);
+        window.addEventListener("message" , onMessage , false);
  })
 })
 
 const onMessage = function (event: any){
-    if (event.data?.msgOrigin === &quot;de-fit2cloud&quot;) {
+    if (event.data?.msgOrigin === "de-fit2cloud") {
         const contentWindow = iframe.contentWindow;
-        contentWindow.postMessage(params , &quot;*&quot;)
+        contentWindow.postMessage(params , "*")
     }
 }
 
@@ -6331,58 +6328,58 @@ const onMessage = function (event: any){
 #
 
 &lt;template&gt;
-  &lt;div class=&quot;card-iframe content-box&quot;&gt;
-      &lt;iframe style=&quot;height: 100%; width: 100%; border: 0&quot; src=&quot;&quot;  id=&quot;iframe-dashboard-view&quot; &gt;&lt;/iframe&gt;
+  &lt;div class="card-iframe content-box"&gt;
+      &lt;iframe style="height: 100%; width: 100%; border: 0" src=""  id="iframe-dashboard-view" &gt;&lt;/iframe&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;dashboard&quot;&gt;
-import {getToken} from &quot;@/api/common&quot;;
-import {nextTick , onUnmounted} from &quot;vue&quot;;
+&lt;script setup lang="ts" name="dashboard"&gt;
+import {getToken} from "@/api/common";
+import {nextTick , onUnmounted} from "vue";
 
 # 数据大屏 ID
-let dvId = &quot;&quot;;
+let dvId = "";
 # 固定写法，如 https://embedded-bi-inner.dataease.cn/#/chart-view
-let url = &quot;&quot;;
+let url = "";
 
 const params = {
     # 固定写法：dashboard 仪表板、dataV 数据大屏
-    busiFlag: &quot;dataV&quot;,
+    busiFlag: "dataV",
     dvId: dvId,
     # 固定写法
-    type: &quot;Dashboard&quot;,
+    type: "Dashboard",
     #  JWT token 认证。
-    embeddedToken: &quot;&quot;,
+    embeddedToken: "",
     # 固定写法
-    &quot;de-embedded&quot;: true
+    "de-embedded": true
 }
 
 let iframe = null;
 
 onUnmounted(()=&gt;{
-    window.removeEventListener(&quot;message&quot;,onMessage,false);
+    window.removeEventListener("message",onMessage,false);
 })
 
 nextTick(()=&gt;{
-    iframe = document.getElementById(&quot;iframe-dashboard-view&quot;);
+    iframe = document.getElementById("iframe-dashboard-view");
 
     getToken().then(result =&gt; {
         params.embeddedToken = result;
         iframe.src = url;
 
-        window.addEventListener(&quot;message&quot; , onMessage , false);
+        window.addEventListener("message" , onMessage , false);
     })
 })
 
 const onMessage = function (event: any){
-    if (event.data?.msgOrigin === &quot;de-fit2cloud&quot;) {
+    if (event.data?.msgOrigin === "de-fit2cloud") {
         const contentWindow = iframe.contentWindow;
-        contentWindow.postMessage(params , &quot;*&quot;)
+        contentWindow.postMessage(params , "*")
     }
 }
 
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 </code></pre></div>
 </div>
@@ -6408,57 +6405,57 @@ const onMessage = function (event: any){
 #
 
 &lt;template&gt;
-  &lt;div class=&quot;card-iframe content-box&quot;&gt;
-      &lt;iframe style=&quot;height: 100%; width: 100%; border: 0&quot; src=&quot;&quot;  id=&quot;iframe-dashboard-view&quot; &gt;&lt;/iframe&gt;
+  &lt;div class="card-iframe content-box"&gt;
+      &lt;iframe style="height: 100%; width: 100%; border: 0" src=""  id="iframe-dashboard-view" &gt;&lt;/iframe&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;dashboard&quot;&gt;
-import {getToken} from &quot;@/api/common&quot;;
-import {nextTick , onUnmounted} from &quot;vue&quot;;
+&lt;script setup lang="ts" name="dashboard"&gt;
+import {getToken} from "@/api/common";
+import {nextTick , onUnmounted} from "vue";
 
-let dvId = &quot;967564651451781120&quot;;
+let dvId = "967564651451781120";
 # 固定写法，如 https://embedded-bi-inner.dataease.cn/#/chart-view
-let url = &quot;https://embedded-bi-inner.dataease.cn/#/chart-view&quot;;
+let url = "https://embedded-bi-inner.dataease.cn/#/chart-view";
 
 const params = {
     # 固定写法：dashboard 仪表板、dataV 数据大屏
-    busiFlag: &quot;dataV&quot;,
+    busiFlag: "dataV",
     dvId: dvId,
     # 固定写法
-    type: &quot;VisualizationEditor&quot;,
+    type: "VisualizationEditor",
     #  JWT token 认证。
-    embeddedToken: &quot;&quot;,
+    embeddedToken: "",
     # 固定写法
-    &quot;de-embedded&quot;: true
+    "de-embedded": true
 }
 
 let iframe = null;
 
 onUnmounted(()=&gt;{
-    window.removeEventListener(&quot;message&quot;,onMessage,false);
+    window.removeEventListener("message",onMessage,false);
 })
 
 nextTick(()=&gt;{
-    iframe = document.getElementById(&quot;iframe-dashboard-view&quot;);
+    iframe = document.getElementById("iframe-dashboard-view");
 
     getToken().then(result =&gt; {
         params.embeddedToken = result;
         iframe.src = url;
 
-        window.addEventListener(&quot;message&quot; , onMessage , false);
+        window.addEventListener("message" , onMessage , false);
     })
 })
 
 const onMessage = function (event: any){
-if (event.data?.msgOrigin === &quot;de-fit2cloud&quot;) {
+if (event.data?.msgOrigin === "de-fit2cloud") {
 const contentWindow = iframe.contentWindow;
-contentWindow.postMessage(params , &quot;*&quot;)
+contentWindow.postMessage(params , "*")
 }
 }
 
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 </code></pre></div>
 </div>
@@ -6485,20 +6482,20 @@ contentWindow.postMessage(params , &quot;*&quot;)
 #
 
 &lt;template&gt;
-  &lt;div class=&quot;card-iframe content-box&quot;&gt;
-      &lt;iframe style=&quot;height: 100%; width: 100%; border: 0&quot; src=&quot;&quot;  id=&quot;iframe-dashboard-view&quot; &gt;&lt;/iframe&gt;
+  &lt;div class="card-iframe content-box"&gt;
+      &lt;iframe style="height: 100%; width: 100%; border: 0" src=""  id="iframe-dashboard-view" &gt;&lt;/iframe&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;dashboard&quot;&gt;
-import {getToken} from &quot;@/api/common&quot;;
-import {nextTick , onUnmounted} from &quot;vue&quot;;
+&lt;script setup lang="ts" name="dashboard"&gt;
+import {getToken} from "@/api/common";
+import {nextTick , onUnmounted} from "vue";
 
 # 仪表板 ID / 数据大屏 ID
-let dvId = &quot;&quot;;
+let dvId = "";
 # 图表 ID
-let chartId = &quot;&quot;;
+let chartId = "";
 # 固定写法，如 https://embedded-bi-inner.dataease.cn/#/chart-view
-let url = &quot;&quot;;
+let url = "";
 
 #
 ## 仪表板图表 busiFlag：dashboard
@@ -6506,42 +6503,42 @@ let url = &quot;&quot;;
 
   const params = {
     # 固定写法：dashboard 仪表板、dataV 数据大屏
-    busiFlag: &quot;dashboard&quot;,
+    busiFlag: "dashboard",
     dvId: dvId,
     chartId: chartId,
     #  JWT token 认证
-    embeddedToken: &quot;&quot;,
+    embeddedToken: "",
     # 固定写法
-    &quot;de-embedded&quot;: true
+    "de-embedded": true
   }
 
 let iframe = null;
 
 onUnmounted(()=&gt;{
-    window.removeEventListener(&quot;message&quot;,onMessage,false);
+    window.removeEventListener("message",onMessage,false);
 })
 
 nextTick(()=&gt;{
-    iframe = document.getElementById(&quot;iframe-dashboard-view&quot;);
+    iframe = document.getElementById("iframe-dashboard-view");
 
     getToken().then(result =&gt; {
         params.embeddedToken = result;
         iframe.src = url;
 
-        window.addEventListener(&quot;message&quot; , onMessage , false);
+        window.addEventListener("message" , onMessage , false);
     })
 })
 
 const onMessage = function (event: any){
-    if (event.data?.msgOrigin === &quot;de-fit2cloud&quot;) {
+    if (event.data?.msgOrigin === "de-fit2cloud") {
         const contentWindow = iframe.contentWindow;
-        contentWindow.postMessage(params , &quot;*&quot;)
+        contentWindow.postMessage(params , "*")
     }
 }
 
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 </code></pre></div>
 </div>
@@ -6562,49 +6559,49 @@ const onMessage = function (event: any){
 #
 
 &lt;template&gt;
-  &lt;div class=&quot;card-iframe content-box&quot;&gt;
-      &lt;iframe style=&quot;height: 100%; width: 100%; border: 0&quot; src=&quot;&quot;  id=&quot;iframe-datafillinghandler-view&quot; &gt;&lt;/iframe&gt;
+  &lt;div class="card-iframe content-box"&gt;
+      &lt;iframe style="height: 100%; width: 100%; border: 0" src=""  id="iframe-datafillinghandler-view" &gt;&lt;/iframe&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;datafillinghandler&quot;&gt;
-import {getToken} from &quot;@/api/common&quot;;
-import {nextTick , onUnmounted} from &quot;vue&quot;;
+&lt;script setup lang="ts" name="datafillinghandler"&gt;
+import {getToken} from "@/api/common";
+import {nextTick , onUnmounted} from "vue";
 # 固定写法，如 https://embedded-bi-inner.dataease.cn/#/chart-view
-let url = &quot;&quot;;
+let url = "";
 
 const params = {
-    type: &quot;DataFillingHandler&quot;,
-    embeddedToken: &quot;&quot;,
-    &quot;de-embedded&quot;: true
+    type: "DataFillingHandler",
+    embeddedToken: "",
+    "de-embedded": true
 }
 
 let iframe = null;
 
 onUnmounted(()=&gt;{
-    window.removeEventListener(&quot;message&quot;,onMessage,false);
+    window.removeEventListener("message",onMessage,false);
 })
 
 nextTick(()=&gt;{
-    iframe = document.getElementById(&quot;iframe-datafillinghandler-view&quot;);
+    iframe = document.getElementById("iframe-datafillinghandler-view");
 
     getToken().then(result =&gt; {
         params.embeddedToken = result;
         iframe.src = url;
 
-         window.addEventListener(&quot;message&quot; , onMessage , false);
+         window.addEventListener("message" , onMessage , false);
     })
 })
 
 const onMessage = function (event: any){
-    if (event.data?.msgOrigin === &quot;de-fit2cloud&quot; &amp;&amp; event.data?.type !== &#39;dataease-embedded-interactive&#39;) {
+    if (event.data?.msgOrigin === "de-fit2cloud" &amp;&amp; event.data?.type !== 'dataease-embedded-interactive') {
         const contentWindow = iframe.contentWindow;
-        contentWindow.postMessage(params , &quot;*&quot;)
+        contentWindow.postMessage(params , "*")
     }
 }
 
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 </code></pre></div>
 </div>
@@ -6622,49 +6619,49 @@ const onMessage = function (event: any){
 #
 
 &lt;template&gt;
-  &lt;div class=&quot;card-iframe content-box&quot;&gt;
-      &lt;iframe style=&quot;height: 100%; width: 100%; border: 0&quot; src=&quot;&quot;  id=&quot;iframe-datafillinghandler-view&quot; &gt;&lt;/iframe&gt;
+  &lt;div class="card-iframe content-box"&gt;
+      &lt;iframe style="height: 100%; width: 100%; border: 0" src=""  id="iframe-datafillinghandler-view" &gt;&lt;/iframe&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;datafillinghandler&quot;&gt;
-import {getToken} from &quot;@/api/common&quot;;
-import {nextTick , onUnmounted} from &quot;vue&quot;;
+&lt;script setup lang="ts" name="datafillinghandler"&gt;
+import {getToken} from "@/api/common";
+import {nextTick , onUnmounted} from "vue";
 # 固定写法，如 https://embedded-bi-inner.dataease.cn/#/chart-view
-let url = &quot;&quot;;
+let url = "";
 
 const params = {
-    type: &quot;DataFillingHandler&quot;,
-    embeddedToken: &quot;&quot;,
-    &quot;de-embedded&quot;: true
+    type: "DataFillingHandler",
+    embeddedToken: "",
+    "de-embedded": true
 }
 
 let iframe = null;
 
 onUnmounted(()=&gt;{
-    window.removeEventListener(&quot;message&quot;,onMessage,false);
+    window.removeEventListener("message",onMessage,false);
 })
 
 nextTick(()=&gt;{
-    iframe = document.getElementById(&quot;iframe-datafillinghandler-view&quot;);
+    iframe = document.getElementById("iframe-datafillinghandler-view");
 
     getToken().then(result =&gt; {
         params.embeddedToken = result;
         iframe.src = url;
 
-        window.addEventListener(&quot;message&quot; , onMessage , false);
+        window.addEventListener("message" , onMessage , false);
     })
 })
 
 const onMessage = function (event: any){
-    if (event.data?.msgOrigin === &quot;de-fit2cloud&quot; &amp;&amp; event.data?.type !== &#39;dataease-embedded-interactive&#39;) {
+    if (event.data?.msgOrigin === "de-fit2cloud" &amp;&amp; event.data?.type !== 'dataease-embedded-interactive') {
         const contentWindow = iframe.contentWindow;
-        contentWindow.postMessage(params , &quot;*&quot;)
+        contentWindow.postMessage(params , "*")
     }
 }
 
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 </code></pre></div>
 </div>
@@ -6681,53 +6678,53 @@ const onMessage = function (event: any){
 #
 
 &lt;template&gt;
-  &lt;div class=&quot;card-iframe content-box&quot;&gt;
-    &lt;iframe style=&quot;height: 100%; width: 100%; border: 0&quot; src=&quot;&quot;  id=&quot;iframe-dashboard-view&quot; &gt;&lt;/iframe&gt;
+  &lt;div class="card-iframe content-box"&gt;
+    &lt;iframe style="height: 100%; width: 100%; border: 0" src=""  id="iframe-dashboard-view" &gt;&lt;/iframe&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;dashboard&quot;&gt;
-import {getToken} from &quot;@/api/common&quot;;
-import {nextTick , onUnmounted} from &quot;vue&quot;;
+&lt;script setup lang="ts" name="dashboard"&gt;
+import {getToken} from "@/api/common";
+import {nextTick , onUnmounted} from "vue";
 
 # 固定写法，如 https://embedded-bi-inner.dataease.cn/#/char-view
-let url = &quot;&quot;;
+let url = "";
 
 const params = {
     # 固定写法 ScreenPanel 数据大屏模块。
-    type: &quot;ScreenPanel&quot;,
+    type: "ScreenPanel",
     #  JWT token 认证
-    embeddedToken: &quot;&quot;,
+    embeddedToken: "",
     # 固定写法
-    &quot;de-embedded&quot;: true
+    "de-embedded": true
 }
 
 let iframe = null;
 
 onUnmounted(()=&gt;{
-    window.removeEventListener(&quot;message&quot;,onMessage,false);
+    window.removeEventListener("message",onMessage,false);
 })
 
 nextTick(()=&gt;{
-    iframe = document.getElementById(&quot;iframe-dashboard-view&quot;);
+    iframe = document.getElementById("iframe-dashboard-view");
 
     getToken().then(result =&gt; {
         params.embeddedToken = result;
         iframe.src = url;
 
-        window.addEventListener(&quot;message&quot; , onMessage , false);
+        window.addEventListener("message" , onMessage , false);
     })
 })
 
 const onMessage = function (event: any){
-    if (event.data?.msgOrigin === &quot;de-fit2cloud&quot;) {
+    if (event.data?.msgOrigin === "de-fit2cloud") {
         const contentWindow = iframe.contentWindow;
-        contentWindow.postMessage(params , &quot;*&quot;)
+        contentWindow.postMessage(params , "*")
     }
 }
 
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 </code></pre></div>
 </div>
@@ -6744,53 +6741,53 @@ const onMessage = function (event: any){
 #
 
 &lt;template&gt;
-  &lt;div class=&quot;card-iframe content-box&quot;&gt;
-    &lt;iframe style=&quot;height: 100%; width: 100%; border: 0&quot; src=&quot;&quot;  id=&quot;iframe-dashboard-view&quot; &gt;&lt;/iframe&gt;
+  &lt;div class="card-iframe content-box"&gt;
+    &lt;iframe style="height: 100%; width: 100%; border: 0" src=""  id="iframe-dashboard-view" &gt;&lt;/iframe&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;dashboard&quot;&gt;
-import {getToken} from &quot;@/api/common&quot;;
-import {nextTick , onUnmounted} from &quot;vue&quot;;
+&lt;script setup lang="ts" name="dashboard"&gt;
+import {getToken} from "@/api/common";
+import {nextTick , onUnmounted} from "vue";
 
 # 固定写法，如 https://embedded-bi-inner.dataease.cn/#/chart-view
-let url = &quot;&quot;;
+let url = "";
 
 const params = {
     # 固定写法 Dataset 数据集模块。
-    type: &quot;Dataset&quot;,
+    type: "Dataset",
     #  JWT token 认证
-    embeddedToken: &quot;&quot;,
+    embeddedToken: "",
     #固定写法
-    &quot;de-embedded&quot;: true
+    "de-embedded": true
 }
 
 let iframe = null;
 
 onUnmounted(()=&gt;{
-    window.removeEventListener(&quot;message&quot;,onMessage,false);
+    window.removeEventListener("message",onMessage,false);
 })
 
 nextTick(()=&gt;{
-    iframe = document.getElementById(&quot;iframe-dashboard-view&quot;);
+    iframe = document.getElementById("iframe-dashboard-view");
 
     getToken().then(result =&gt; {
         params.embeddedToken = result;
         iframe.src = url;
 
-        window.addEventListener(&quot;message&quot; , onMessage , false);
+        window.addEventListener("message" , onMessage , false);
     })
 })
 
 const onMessage = function (event: any){
-    if (event.data?.msgOrigin === &quot;de-fit2cloud&quot;) {
+    if (event.data?.msgOrigin === "de-fit2cloud") {
         const contentWindow = iframe.contentWindow;
-        contentWindow.postMessage(params , &quot;*&quot;)
+        contentWindow.postMessage(params , "*")
     }
 }
 
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 </code></pre></div>
 </div>
@@ -6807,53 +6804,53 @@ const onMessage = function (event: any){
 #
 
 &lt;template&gt;
-  &lt;div class=&quot;card-iframe content-box&quot;&gt;
-    &lt;iframe style=&quot;height: 100%; width: 100%; border: 0&quot; src=&quot;&quot;  id=&quot;iframe-dashboard-view&quot; &gt;&lt;/iframe&gt;
+  &lt;div class="card-iframe content-box"&gt;
+    &lt;iframe style="height: 100%; width: 100%; border: 0" src=""  id="iframe-dashboard-view" &gt;&lt;/iframe&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;dashboard&quot;&gt;
-import {getToken} from &quot;@/api/common&quot;;
-import {nextTick , onUnmounted} from &quot;vue&quot;;
+&lt;script setup lang="ts" name="dashboard"&gt;
+import {getToken} from "@/api/common";
+import {nextTick , onUnmounted} from "vue";
 
 # 固定写法，如 https://embedded-bi-inner.dataease.cn/#/chart-view
-let url = &quot;&quot;;
+let url = "";
 
 const params = {
     # 固定写法 Datasource 数据集模块。
-    type: &quot;Datasource&quot;,
+    type: "Datasource",
     # JWT token 认证
-    embeddedToken: &quot;&quot;,
+    embeddedToken: "",
     # 固定写法
-    &quot;de-embedded&quot;: true
+    "de-embedded": true
 }
 
 let iframe = null;
 
 onUnmounted(()=&gt;{
-    window.removeEventListener(&quot;message&quot;,onMessage,false);
+    window.removeEventListener("message",onMessage,false);
 })
 
 nextTick(()=&gt;{
-    iframe = document.getElementById(&quot;iframe-dashboard-view&quot;);
+    iframe = document.getElementById("iframe-dashboard-view");
 
     getToken().then(result =&gt; {
         params.embeddedToken = result;
         iframe.src = url;
 
-        window.addEventListener(&quot;message&quot; , onMessage , false);
+        window.addEventListener("message" , onMessage , false);
     })
 })
 
 const onMessage = function (event: any){
-    if (event.data?.msgOrigin === &quot;de-fit2cloud&quot;) {
+    if (event.data?.msgOrigin === "de-fit2cloud") {
         const contentWindow = iframe.contentWindow;
-        contentWindow.postMessage(params , &quot;*&quot;)
+        contentWindow.postMessage(params , "*")
     }
 }
 
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 </code></pre></div>
 </div>
@@ -6870,53 +6867,53 @@ const onMessage = function (event: any){
 #
 
 &lt;template&gt;
-  &lt;div class=&quot;card-iframe content-box&quot;&gt;
-    &lt;iframe style=&quot;height: 100%; width: 100%; border: 0&quot; src=&quot;&quot;  id=&quot;iframe-datafilling-view&quot; &gt;&lt;/iframe&gt;
+  &lt;div class="card-iframe content-box"&gt;
+    &lt;iframe style="height: 100%; width: 100%; border: 0" src=""  id="iframe-datafilling-view" &gt;&lt;/iframe&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;dataFilling&quot;&gt;
-import {getToken} from &quot;@/api/common&quot;;
-import {nextTick , onUnmounted} from &quot;vue&quot;;
+&lt;script setup lang="ts" name="dataFilling"&gt;
+import {getToken} from "@/api/common";
+import {nextTick , onUnmounted} from "vue";
 
 # 固定写法，如 https://embedded-bi-inner.dataease.cn/#/chart-view
-let url = &quot;&quot;;
+let url = "";
 
 const params = {
     # 固定写法 DataFilling 数据填报模块。
-    type: &quot;DataFilling&quot;,
+    type: "DataFilling",
     //JWT token 认证
-    embeddedToken: &quot;&quot;,
+    embeddedToken: "",
     # 固定写法
-    &quot;de-embedded&quot;: true
+    "de-embedded": true
 }
 
 let iframe = null;
 
 onUnmounted(()=&gt;{
-    window.removeEventListener(&quot;message&quot;,onMessage,false);
+    window.removeEventListener("message",onMessage,false);
 })
 
 nextTick(()=&gt;{
-    iframe = document.getElementById(&quot;iframe-datafilling-view&quot;);
+    iframe = document.getElementById("iframe-datafilling-view");
 
     getToken().then(result =&gt; {
         params.embeddedToken = result;
         iframe.src = url;
 
-        window.addEventListener(&quot;message&quot; , onMessage , false);
+        window.addEventListener("message" , onMessage , false);
     })
 })
 
 const onMessage = function (event: any){
-    if (event.data?.msgOrigin === &quot;de-fit2cloud&quot;) {
+    if (event.data?.msgOrigin === "de-fit2cloud") {
         const contentWindow = iframe.contentWindow;
-        contentWindow.postMessage(params , &quot;*&quot;)
+        contentWindow.postMessage(params , "*")
     }
 }
 
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 </code></pre></div>
 </div>
@@ -6933,53 +6930,53 @@ const onMessage = function (event: any){
 #
 
 &lt;template&gt;
-  &lt;div class=&quot;card-iframe content-box&quot;&gt;
-    &lt;iframe style=&quot;height: 100%; width: 100%; border: 0&quot; src=&quot;&quot;  id=&quot;iframe-copilot-view&quot; &gt;&lt;/iframe&gt;
+  &lt;div class="card-iframe content-box"&gt;
+    &lt;iframe style="height: 100%; width: 100%; border: 0" src=""  id="iframe-copilot-view" &gt;&lt;/iframe&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;copilot&quot;&gt;
-import {getToken} from &quot;@/api/common&quot;;
-import {nextTick , onUnmounted} from &quot;vue&quot;;
+&lt;script setup lang="ts" name="copilot"&gt;
+import {getToken} from "@/api/common";
+import {nextTick , onUnmounted} from "vue";
 
 # 固定写法，如 https://embedded-bi-inner.dataease.cn/#/chart-view
-let url = &quot;&quot;;
+let url = "";
 
 const params = {
     # 固定写法 Copilot 模块。
-    type: &quot;Copilot&quot;,
+    type: "Copilot",
     # JWT token 认证
-    embeddedToken: &quot;&quot;,
+    embeddedToken: "",
     # 固定写法
-    &quot;de-embedded&quot;: true
+    "de-embedded": true
 }
 
 let iframe = null;
 
 onUnmounted(()=&gt;{
-    window.removeEventListener(&quot;message&quot;,onMessage,false);
+    window.removeEventListener("message",onMessage,false);
 })
 
 nextTick(()=&gt;{
-    iframe = document.getElementById(&quot;iframe-dashboard-view&quot;);
+    iframe = document.getElementById("iframe-dashboard-view");
 
     getToken().then(result =&gt; {
         params.embeddedToken = result;
         iframe.src = url;
 
-        window.addEventListener(&quot;message&quot; , onMessage , false);
+        window.addEventListener("message" , onMessage , false);
     })
 })
 
 const onMessage = function (event: any){
-    if (event.data?.msgOrigin === &quot;de-fit2cloud&quot;) {
+    if (event.data?.msgOrigin === "de-fit2cloud") {
         const contentWindow = iframe.contentWindow;
-        contentWindow.postMessage(params , &quot;*&quot;)
+        contentWindow.postMessage(params , "*")
     }
 }
 
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 </code></pre></div>
 </div>
@@ -6995,54 +6992,54 @@ const onMessage = function (event: any){
 #
 
 &lt;template&gt;
-  &lt;div class=&quot;card-iframe content-box&quot;&gt;
-    &lt;iframe style=&quot;height: 100%; width: 100%; border: 0&quot; src=&quot;&quot;  id=&quot;iframe-templatemanage-view&quot; &gt;&lt;/iframe&gt;
+  &lt;div class="card-iframe content-box"&gt;
+    &lt;iframe style="height: 100%; width: 100%; border: 0" src=""  id="iframe-templatemanage-view" &gt;&lt;/iframe&gt;
   &lt;/div&gt;
 &lt;/template&gt;
-&lt;script setup lang=&quot;ts&quot; name=&quot;templatemanage&quot;&gt;
-import {getToken} from &quot;@/api/common&quot;;
-import {nextTick , onUnmounted} from &quot;vue&quot;;
+&lt;script setup lang="ts" name="templatemanage"&gt;
+import {getToken} from "@/api/common";
+import {nextTick , onUnmounted} from "vue";
 
 # 固定写法，如 https://embedded-bi-inner.dataease.cn/#/chart-view
-let url = &quot;&quot;;
+let url = "";
 
 const params = {
     # 固定写法 模版管理 模块。
-    type: &quot;TemplateManage&quot;,
+    type: "TemplateManage",
     # JWT token 认证
-    embeddedToken: &quot;&quot;,
+    embeddedToken: "",
     # 固定写法
-    &quot;de-embedded&quot;: true,
-    busiFlag: &quot;dataV&quot;
+    "de-embedded": true,
+    busiFlag: "dataV"
 }
 
 let iframe = null;
 
 onUnmounted(()=&gt;{
-    window.removeEventListener(&quot;message&quot;,onMessage,false);
+    window.removeEventListener("message",onMessage,false);
 })
 
 nextTick(()=&gt;{
-    iframe = document.getElementById(&quot;iframe-templatemanage-view&quot;);
+    iframe = document.getElementById("iframe-templatemanage-view");
 
     getToken().then(result =&gt; {
         params.embeddedToken = result;
         iframe.src = url;
 
-        window.addEventListener(&quot;message&quot; , onMessage , false);
+        window.addEventListener("message" , onMessage , false);
     })
 })
 
 const onMessage = function (event: any){
-    if (event.data?.msgOrigin === &quot;de-fit2cloud&quot;) {
+    if (event.data?.msgOrigin === "de-fit2cloud") {
         const contentWindow = iframe.contentWindow;
-        contentWindow.postMessage(params , &quot;*&quot;)
+        contentWindow.postMessage(params , "*")
     }
 }
 
 &lt;/script&gt;
-&lt;style scoped lang=&quot;scss&quot;&gt;
-@import &quot;index&quot;;
+&lt;style scoped lang="scss"&gt;
+@import "index";
 &lt;/style&gt;
 </code></pre></div>
 </div>
