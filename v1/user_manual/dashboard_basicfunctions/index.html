@@ -60,7 +60,7 @@
     <script 
       async
       defer
-      src="https://maxkb.fit2cloud.com/api/application/embed?protocol=https&host=maxkb.fit2cloud.com&token=5baa787163381fa2">
+      src="https://maxkb-internal.fit2cloud.com/chat/api/embed?protocol=https&host=maxkb-internal.fit2cloud.com&token=5baa787163381fa2">
     </script>
 
     
@@ -6473,7 +6473,7 @@
 <p>也可进行公共链接参数组装，对传参进行 base64 处理，以下为示例：
 配置参数名为"省份"，关联了 “2021 年全国 GDP 数据” 仪表板中“今年上半年 GDP” 和 “GDP 前十强城市” 的 province
 字段，组装参数为 {"省份":"北京市"}，使用 base64 加密处理，该示例通过电脑终端进行，其它方式均可。
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;{&quot;省份&quot;:&quot;北京市&quot;}&#39;</span><span class="p">|</span>base64
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s1">'{"省份":"北京市"}'</span><span class="p">|</span>base64
 </code></pre></div>
 加密结果为：eyLnnIHku70iOiLljJfkuqzluIIifQo= ，组装规则如下:<br />
 &lt; 仪表板公共链接 &gt; + &lt; ?attachParams= &gt; + &lt; 加密后的结果 &gt;<br />
@@ -6486,14 +6486,14 @@
 <div class="admonition abstract">
 <p>公共链接外部参数支持一参多传，可通过数组形式传入多值，对组件进行多选，如下示例，对参数进行处理。<br />
 <strong>提示：</strong> 传参处理时，若拼接后的 URL 带特殊符号，需做转换处理，示例如：+ 用 %2B 替代。
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;{&quot;省份&quot;:[&quot;山东省&quot;,&quot;四川省&quot;,&quot;广东省&quot;,&quot;河南省&quot;]}&#39;</span><span class="p">|</span>base64
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s1">'{"省份":["山东省","四川省","广东省","河南省"]}'</span><span class="p">|</span>base64
 </code></pre></div>
 访问构建后的 URL 结果如下。</p>
 </div>
 <p><img alt="外部参数设置_数组" src="../../img/dashboard_generation/%E5%A4%96%E9%83%A8%E5%8F%82%E6%95%B0%E8%AE%BE%E7%BD%AE_%E6%95%B0%E7%BB%84.png" width="900px" /></p>
 <div class="admonition abstract">
 <p>公共链接外部参数支持多参数传参，将外部参数名称及过滤的数据组合成 Json 再对传参进行 base64 处理，以下为示例：</p>
-<p><div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;{&quot;省份&quot;:&quot;广东省&quot;,&quot;年份&quot;:&quot;2020&quot;}&#39;</span><span class="p">|</span>base64
+<p><div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s1">'{"省份":"广东省","年份":"2020"}'</span><span class="p">|</span>base64
 </code></pre></div>
 加密结果为：eyLnnIHku70iOiLlub/kuJznnIEiLCLlubTku70iOiIyMDIwIn0K<br />
 配置参数"省份"。</p>

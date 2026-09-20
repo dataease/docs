@@ -60,7 +60,7 @@
     <script 
       async
       defer
-      src="https://maxkb.fit2cloud.com/api/application/embed?protocol=https&host=maxkb.fit2cloud.com&token=5baa787163381fa2">
+      src="https://maxkb-internal.fit2cloud.com/chat/api/embed?protocol=https&host=maxkb-internal.fit2cloud.com&token=5baa787163381fa2">
     </script>
 
     
@@ -6019,7 +6019,7 @@
 <div class="admonition abstract">
 <p><strong>SQL 数据集带参数传递，根据过滤组件的不同，SQL 语法用法上有差异。</strong>  </p>
 <p>情况一：过滤组件为单选时，要用 = ：
-<div class="highlight"><pre><span></span><code>SELECT ORDER_ID, ORDER_DATE, PROJ_ID, ORDER_EMP FROM ORDERS WHERE ORDER_EMP = &#39;${USER_NAME}&#39;
+<div class="highlight"><pre><span></span><code>SELECT ORDER_ID, ORDER_DATE, PROJ_ID, ORDER_EMP FROM ORDERS WHERE ORDER_EMP = '${USER_NAME}'
 </code></pre></div>
 情况二：过滤组件为多选时，要用 IN （用 IN 可单选也可多选，但相反地用 = 只能单选）：
 <div class="highlight"><pre><span></span><code>SELECT ORDER_ID, ORDER_DATE, PROJ_ID, ORDER_EMP FROM ORDERS WHERE ORDER_EMP IN ${USER_NAME}  
@@ -6028,7 +6028,7 @@
 <div class="highlight"><pre><span></span><code>SELECT ORDER_ID, ORDER_DATE, PROJ_ID, ORDER_EMP FROM ORDERS WHERE (ORDER_EMP IN ${USER_NAME} AND PROJ_ID IN ${USER_PROJ_ID})
 </code></pre></div>
 情况四：日期范围：
-<div class="highlight"><pre><span></span><code>SELECT * FROM SALES WHERE 记录时间 BETWEEN &#39;${BEGINTIME}&#39; AND &#39;${ENDTIME}&#39;
+<div class="highlight"><pre><span></span><code>SELECT * FROM SALES WHERE 记录时间 BETWEEN '${BEGINTIME}' AND '${ENDTIME}'
 </code></pre></div>
 情况五：文本搜索组件，要用 Like ：
 <div class="highlight"><pre><span></span><code>SELECT * FROM SALES WHERE ORDER_EMP LIKE ${USER_NAME}  

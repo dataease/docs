@@ -60,7 +60,7 @@
     <script 
       async
       defer
-      src="https://maxkb.fit2cloud.com/api/application/embed?protocol=https&host=maxkb.fit2cloud.com&token=5baa787163381fa2">
+      src="https://maxkb-internal.fit2cloud.com/chat/api/embed?protocol=https&host=maxkb-internal.fit2cloud.com&token=5baa787163381fa2">
     </script>
 
     
@@ -6338,60 +6338,60 @@ fe.conf、be.conf、.kettle 一般情况下不需要修改，其他配置文件�
 <span class="na">logger.level</span><span class="o">=</span><span class="s">INFO</span>
 </code></pre></div></p>
 <p><strong>修改 docker-compose-kettle-doris.yml，将 ${DE_BASE} 替换为 /opt，将 doris-fe 和 kettle 的运行端口暴露出来，增加网络定义部分：</strong>
-<div class="highlight"><pre><span></span><code>version: &#39;2.1&#39;
-services:
+<div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">'2.1'</span>
+<span class="nt">services</span><span class="p">:</span>
 
-  doris-fe:
-    image: registry.cn-qingdao.aliyuncs.com/dataease/doris:0.15
-    container_name: doris-fe
-    ports:
-      - 8030:8030
-      - 9030:9030
-    environment:
-      - DORIS_ROLE=fe-leader
-    volumes:
-      - /opt/dataease/data/fe:/opt/doris/fe/doris-meta
-      - /opt/dataease/logs/fe:/opt/doris/fe/log
-      - /opt/dataease/conf/fe.conf:/opt/doris/fe/conf/fe.conf
-    networks:
-      dataease-network :
-        ipv4_address: 172.19.0.198
-    restart: always
+<span class="w">  </span><span class="nt">doris-fe</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">registry.cn-qingdao.aliyuncs.com/dataease/doris:0.15</span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">doris-fe</span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8030:8030</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9030:9030</span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DORIS_ROLE=fe-leader</span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/opt/dataease/data/fe:/opt/doris/fe/doris-meta</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/opt/dataease/logs/fe:/opt/doris/fe/log</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/opt/dataease/conf/fe.conf:/opt/doris/fe/conf/fe.conf</span>
+<span class="w">    </span><span class="nt">networks</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">dataease-network </span><span class="p">:</span>
+<span class="w">        </span><span class="nt">ipv4_address</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">172.19.0.198</span>
+<span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">always</span>
 
-  doris-be:
-    image: registry.cn-qingdao.aliyuncs.com/dataease/doris:0.15
-    container_name: doris-be
-    environment:
-      - DORIS_ROLE=be
-    volumes:
-      - /opt/dataease/data/be:/opt/doris/be/storage
-      - /opt/dataease/logs/be:/opt/doris/be/log
-      - /opt/dataease/conf/be.conf:/opt/doris/be/conf/be.conf
-    networks:
-      dataease-network :
-        ipv4_address: 172.19.0.199
-    restart: always
+<span class="w">  </span><span class="nt">doris-be</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">registry.cn-qingdao.aliyuncs.com/dataease/doris:0.15</span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">doris-be</span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DORIS_ROLE=be</span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/opt/dataease/data/be:/opt/doris/be/storage</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/opt/dataease/logs/be:/opt/doris/be/log</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/opt/dataease/conf/be.conf:/opt/doris/be/conf/be.conf</span>
+<span class="w">    </span><span class="nt">networks</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">dataease-network </span><span class="p">:</span>
+<span class="w">        </span><span class="nt">ipv4_address</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">172.19.0.199</span>
+<span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">always</span>
 
-  kettle:
-    image: registry.cn-qingdao.aliyuncs.com/dataease/kettle:8.3-v1.2
-    container_name: kettle
-    ports:
-      - 18080:18080
-    volumes:
-      - /opt/dataease/conf/:/opt/dataease/conf
-      - /opt/dataease/data/kettle:/opt/dataease/data/kettle
-    networks:
-      - dataease-network
-    restart: always
+<span class="w">  </span><span class="nt">kettle</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">registry.cn-qingdao.aliyuncs.com/dataease/kettle:8.3-v1.2</span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kettle</span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">18080:18080</span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/opt/dataease/conf/:/opt/dataease/conf</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/opt/dataease/data/kettle:/opt/dataease/data/kettle</span>
+<span class="w">    </span><span class="nt">networks</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dataease-network</span>
+<span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">always</span>
 
-networks:
-  dataease-network:
-    driver: bridge
-    ipam:
-      driver: default
-      config:
-        - subnet: 172.19.0.0/16
-          gateway: 172.19.0.1
+<span class="nt">networks</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">dataease-network</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">driver</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bridge</span>
+<span class="w">    </span><span class="nt">ipam</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">driver</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span>
+<span class="w">      </span><span class="nt">config</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">subnet</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">172.19.0.0/16</span>
+<span class="w">          </span><span class="nt">gateway</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">172.19.0.1</span>
 </code></pre></div></p>
 </div>
 <h3 id="42-kettle-doris">4.2 运行 Kettle 和 Doris 组件<a class="headerlink" href="#42-kettle-doris" title="Permanent link">&para;</a></h3>

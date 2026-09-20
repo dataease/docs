@@ -60,7 +60,7 @@
     <script 
       async
       defer
-      src="https://maxkb.fit2cloud.com/api/application/embed?protocol=https&host=maxkb.fit2cloud.com&token=5baa787163381fa2">
+      src="https://maxkb-internal.fit2cloud.com/chat/api/embed?protocol=https&host=maxkb-internal.fit2cloud.com&token=5baa787163381fa2">
     </script>
 
     
@@ -6695,7 +6695,7 @@
 </table>
 <div class="admonition abstract">
 <p>新建同步任务指定将 2022 年 8 月份数据更新到本地库（Doris），SQL 语句及操作如下。
-<div class="highlight"><pre><span></span><code><span class="k">select</span><span class="w">  </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">orders</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">DATE_FORMAT</span><span class="p">(</span><span class="n">Order_date</span><span class="p">,</span><span class="s1">&#39;%Y-%m&#39;</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;2022-08&#39;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">select</span><span class="w">  </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">orders</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">DATE_FORMAT</span><span class="p">(</span><span class="n">Order_date</span><span class="p">,</span><span class="s1">'%Y-%m'</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'2022-08'</span><span class="p">;</span>
 </code></pre></div></p>
 </div>
 <p><img alt="增量添加" src="../../img/dataset_configuration/%E5%A2%9E%E9%87%8F%E6%B7%BB%E5%8A%A01.png" width="900px" /></p>
@@ -6717,7 +6717,7 @@
 <p><img alt="增量删除" src="../../img/dataset_configuration/%E5%A2%9E%E9%87%8F%E5%88%A0%E9%99%A41.png" width="900px" /></p>
 <div class="admonition abstract">
 <p>新建同步任务指定将 2022 年 6 月份数据从本地库（Doris）删除，SQL 语句及操作如下。
-<div class="highlight"><pre><span></span><code><span class="k">select</span><span class="w">  </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">orders</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">DATE_FORMAT</span><span class="p">(</span><span class="n">Order_date</span><span class="p">,</span><span class="s1">&#39;%Y-%m&#39;</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;2022-06&#39;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">select</span><span class="w">  </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">orders</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">DATE_FORMAT</span><span class="p">(</span><span class="n">Order_date</span><span class="p">,</span><span class="s1">'%Y-%m'</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'2022-06'</span><span class="p">;</span>
 </code></pre></div></p>
 </div>
 <p><img alt="增量删除" src="../../img/dataset_configuration/%E5%A2%9E%E9%87%8F%E5%88%A0%E9%99%A42.png" width="900px" /></p>

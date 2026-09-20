@@ -60,7 +60,7 @@
     <script 
       async
       defer
-      src="https://maxkb.fit2cloud.com/api/application/embed?protocol=https&host=maxkb.fit2cloud.com&token=5baa787163381fa2">
+      src="https://maxkb-internal.fit2cloud.com/chat/api/embed?protocol=https&host=maxkb-internal.fit2cloud.com&token=5baa787163381fa2">
     </script>
 
     
@@ -5961,8 +5961,8 @@ mysql<span class="w"> </span>-uroot<span class="w"> </span>-h<span class="w"> </
 </code></pre></div>
 2. 初始化 Doris<br />
 连接上 doris-fe 后，执行下面的语句：<br />
-<div class="highlight"><pre><span></span><code><span class="k">ALTER</span><span class="w"> </span><span class="k">SYSTEM</span><span class="w"> </span><span class="k">ADD</span><span class="w"> </span><span class="n">BACKEND</span><span class="w"> </span><span class="s2">&quot;172.19.0.199:9050&quot;</span><span class="p">;</span>
-<span class="k">SET</span><span class="w"> </span><span class="k">PASSWORD</span><span class="w"> </span><span class="k">FOR</span><span class="w"> </span><span class="s1">&#39;root&#39;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">PASSWORD</span><span class="p">(</span><span class="s1">&#39;Password123@doris&#39;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="k">ALTER</span><span class="w"> </span><span class="k">SYSTEM</span><span class="w"> </span><span class="k">ADD</span><span class="w"> </span><span class="n">BACKEND</span><span class="w"> </span><span class="s2">"172.19.0.199:9050"</span><span class="p">;</span>
+<span class="k">SET</span><span class="w"> </span><span class="k">PASSWORD</span><span class="w"> </span><span class="k">FOR</span><span class="w"> </span><span class="s1">'root'</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">PASSWORD</span><span class="p">(</span><span class="s1">'Password123@doris'</span><span class="p">);</span>
 <span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">dataease</span><span class="p">;</span>
 </code></pre></div>
 执行成功后，可以新建 Excel 数据集 或 定时同步类型数据集试试。</p>
@@ -5990,8 +5990,8 @@ BE 启动后，通过下面命令动态设置配置项 streaming_load_max_mb:<br
 </code></pre></div>
 返回值如下，则说明设置成功。<br />
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">    </span><span class="s2">&quot;status&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;OK&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="s2">&quot;msg&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="w">    </span><span class="s2">"status"</span><span class="o">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">"msg"</span><span class="o">:</span><span class="w"> </span><span class="s2">""</span>
 <span class="p">}</span>
 </code></pre></div>
 BE 重启后该配置将失效。如果想持久化修改结果，使用如下命令：<br />

@@ -60,7 +60,7 @@
     <script 
       async
       defer
-      src="https://maxkb.fit2cloud.com/api/application/embed?protocol=https&host=maxkb.fit2cloud.com&token=5baa787163381fa2">
+      src="https://maxkb-internal.fit2cloud.com/chat/api/embed?protocol=https&host=maxkb-internal.fit2cloud.com&token=5baa787163381fa2">
     </script>
 
     
@@ -6154,13 +6154,13 @@
 <div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>/opt/dataease/data/kettle<span class="w"> </span>/opt/dataease/data/static-resource<span class="w"> </span>/opt/dataease/plugins/thirdpart<span class="w"> </span>/opt/dataease/custom-drivers<span class="w"> </span>/opt/dataease/data/custom<span class="w"> </span>/opt/dataease/data/business
 </code></pre></div></p>
 <p>挂载：
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;10.1.11.64:/opt/kettle /opt/dataease/data/kettle nfs defaults 0 0&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/fstab
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;10.1.11.64:/opt/plugins/thirdpart /opt/dataease/plugins/thirdpart nfs defaults 0 0&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/fstab
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;10.1.11.64:/opt/static-resource /opt/dataease/data/static-resource nfs defaults 0 0&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/fstab
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;10.1.11.64:/opt/custom-drivers /opt/dataease/custom-drivers nfs defaults 0 0&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/fstab
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;10.1.11.64:/opt/custom /opt/dataease/data/custom nfs defaults 0 0&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/fstab
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;10.1.11.64:/opt/business /opt/dataease/data/business nfs defaults 0 0&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/fstab
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;10.1.11.64:/opt/dataease/data/exportData /opt/dataease/data/business nfs defaults 0 0&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/fstab
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">"10.1.11.64:/opt/kettle /opt/dataease/data/kettle nfs defaults 0 0"</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/fstab
+<span class="nb">echo</span><span class="w"> </span><span class="s2">"10.1.11.64:/opt/plugins/thirdpart /opt/dataease/plugins/thirdpart nfs defaults 0 0"</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/fstab
+<span class="nb">echo</span><span class="w"> </span><span class="s2">"10.1.11.64:/opt/static-resource /opt/dataease/data/static-resource nfs defaults 0 0"</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/fstab
+<span class="nb">echo</span><span class="w"> </span><span class="s2">"10.1.11.64:/opt/custom-drivers /opt/dataease/custom-drivers nfs defaults 0 0"</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/fstab
+<span class="nb">echo</span><span class="w"> </span><span class="s2">"10.1.11.64:/opt/custom /opt/dataease/data/custom nfs defaults 0 0"</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/fstab
+<span class="nb">echo</span><span class="w"> </span><span class="s2">"10.1.11.64:/opt/business /opt/dataease/data/business nfs defaults 0 0"</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/fstab
+<span class="nb">echo</span><span class="w"> </span><span class="s2">"10.1.11.64:/opt/dataease/data/exportData /opt/dataease/data/business nfs defaults 0 0"</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/fstab
 mount<span class="w"> </span>-a
 </code></pre></div></p>
 </div>

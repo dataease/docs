@@ -60,7 +60,7 @@
     <script 
       async
       defer
-      src="https://maxkb.fit2cloud.com/api/application/embed?protocol=https&host=maxkb.fit2cloud.com&token=5baa787163381fa2">
+      src="https://maxkb-internal.fit2cloud.com/chat/api/embed?protocol=https&host=maxkb-internal.fit2cloud.com&token=5baa787163381fa2">
     </script>
 
     
@@ -6182,7 +6182,7 @@ yum<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </s
 mkdir<span class="w"> </span>-p<span class="w"> </span>/opt/dataease/data/kettle
 
 <span class="c1"># 修改 /etc/fstab 文件</span>
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;10.1.11.64:/opt/kettle /opt/dataease/data/kettle nfs defaults 0 0&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/fstab
+<span class="nb">echo</span><span class="w"> </span><span class="s2">"10.1.11.64:/opt/kettle /opt/dataease/data/kettle nfs defaults 0 0"</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/fstab
 </code></pre></div>
 <div class="highlight"><pre><span></span><code># 挂载
 mount -a
@@ -6213,7 +6213,7 @@ mount -a
 <div class="highlight"><pre><span></span><code><span class="na">mkdir</span><span class="w"> </span><span class="s">-p /opt/kettle/conf/.kettle</span>
 
 <span class="na">cat</span><span class="w"> </span><span class="s">&gt; /opt/kettle/conf/.kettle/repositories.xml &lt;&lt;EOF</span>
-<span class="na">&lt;?xml</span><span class="w"> </span><span class="s">version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="na">&lt;?xml</span><span class="w"> </span><span class="s">version="1.0" encoding="UTF-8"?&gt;</span>
 <span class="na">&lt;repositories&gt;</span>
 <span class="w"> </span><span class="na">&lt;repository&gt;</span>
 <span class="w"> </span><span class="na">&lt;id&gt;KettleFileRepository&lt;/id&gt;</span>
@@ -6231,7 +6231,7 @@ mount -a
 <h3 id="44">4.4 配置环境变量<a class="headerlink" href="#44" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p>设置环境变量 KETTLE_HOME：</p>
-<div class="highlight"><pre><span></span><code>echo &quot;KETTLE_HOME=/opt/kettle/conf&quot; &gt;&gt; /etc/profile
+<div class="highlight"><pre><span></span><code>echo "KETTLE_HOME=/opt/kettle/conf" &gt;&gt; /etc/profile
 source /etc/profile
 </code></pre></div>
 </div>

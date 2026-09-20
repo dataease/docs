@@ -60,7 +60,7 @@
     <script 
       async
       defer
-      src="https://maxkb.fit2cloud.com/api/application/embed?protocol=https&host=maxkb.fit2cloud.com&token=5baa787163381fa2">
+      src="https://maxkb-internal.fit2cloud.com/chat/api/embed?protocol=https&host=maxkb-internal.fit2cloud.com&token=5baa787163381fa2">
     </script>
 
     
@@ -6143,7 +6143,7 @@ Redis 服务器信息如下：</p>
 <div class="highlight"><pre><span></span><code>yum<span class="w"> </span>-y<span class="w"> </span>install<span class="w"> </span>gcc-c++<span class="w"> </span>centos-release-scl
 yum<span class="w"> </span>-y<span class="w"> </span>install<span class="w"> </span>devtoolset-9-gcc<span class="w"> </span>devtoolset-9-gcc-c++<span class="w"> </span>devtoolset-9-binutils
 scl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>devtoolset-9<span class="w"> </span>bash
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;source /opt/rh/devtoolset-9/enable&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/profile
+<span class="nb">echo</span><span class="w"> </span><span class="s2">"source /opt/rh/devtoolset-9/enable"</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/profile
 </code></pre></div>
 </div>
 <h3 id="22-redis">2.2 编译 Redis<a class="headerlink" href="#22-redis" title="Permanent link">&para;</a></h3>
@@ -6182,7 +6182,7 @@ dbfilename<span class="w"> </span>dump.rdb
 
 <span class="nb">cd</span><span class="w">  </span>/opt/redis
 mkdir<span class="w"> </span>node<span class="o">{</span><span class="m">1</span>..6<span class="o">}</span>
-<span class="k">for</span><span class="w"> </span>i<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="o">{</span><span class="m">1</span>..6<span class="o">}</span><span class="p">;</span><span class="k">do</span><span class="w"> </span><span class="se">\c</span>p<span class="w"> </span>redis.conf<span class="w"> </span>node<span class="nv">$i</span><span class="p">;</span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;port </span><span class="k">$((</span><span class="nv">$i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">6378</span><span class="k">))</span><span class="s2">&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>node<span class="nv">$i</span>/redis.conf<span class="p">;</span><span class="k">done</span>
+<span class="k">for</span><span class="w"> </span>i<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="o">{</span><span class="m">1</span>..6<span class="o">}</span><span class="p">;</span><span class="k">do</span><span class="w"> </span><span class="se">\c</span>p<span class="w"> </span>redis.conf<span class="w"> </span>node<span class="nv">$i</span><span class="p">;</span><span class="nb">echo</span><span class="w"> </span><span class="s2">"port </span><span class="k">$((</span><span class="nv">$i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">6378</span><span class="k">))</span><span class="s2">"</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>node<span class="nv">$i</span>/redis.conf<span class="p">;</span><span class="k">done</span>
 </code></pre></div></p>
 </div>
 <h3 id="25-redis">2.5 启动 Redis 服务<a class="headerlink" href="#25-redis" title="Permanent link">&para;</a></h3>

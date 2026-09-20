@@ -60,7 +60,7 @@
     <script 
       async
       defer
-      src="https://maxkb.fit2cloud.com/api/application/embed?protocol=https&host=maxkb.fit2cloud.com&token=5baa787163381fa2">
+      src="https://maxkb-internal.fit2cloud.com/chat/api/embed?protocol=https&host=maxkb-internal.fit2cloud.com&token=5baa787163381fa2">
     </script>
 
     
@@ -6383,7 +6383,7 @@ rpm -ivh mysql-community-server-5.7*.rpm
 <div class="admonition abstract">
 <p><strong>安装完成后，在 MySQL 各节点启动 MySQL，并获取 MySQL 初始化安装密码：</strong><br />
 <div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>start<span class="w"> </span>mysqld
-grep<span class="w"> </span><span class="s1">&#39;temporary password&#39;</span><span class="w"> </span>/var/log/mysqld.log
+grep<span class="w"> </span><span class="s1">'temporary password'</span><span class="w"> </span>/var/log/mysqld.log
 </code></pre></div></p>
 </div>
 <p><img alt="mysql-初始化密码" src="../../../img/installation/HA/mysql-%E5%88%9D%E5%A7%8B%E5%8C%96%E5%AF%86%E7%A0%81.png" width="900px" /></p>
@@ -6391,7 +6391,7 @@ grep<span class="w"> </span><span class="s1">&#39;temporary password&#39;</span>
 <p><strong>以初始化密码登录 MySQL 后，执行以下命令重置密码为 'Password123@mysql'。</strong></p>
 <div class="highlight"><pre><span></span><code>mysql<span class="w"> </span>-uroot<span class="w"> </span>-p
 
-mysql&gt;<span class="w"> </span>ALTER<span class="w"> </span>USER<span class="w"> </span>USER<span class="o">()</span><span class="w"> </span>IDENTIFIED<span class="w"> </span>BY<span class="w"> </span><span class="s1">&#39;Password123@mysql&#39;</span><span class="p">;</span>
+mysql&gt;<span class="w"> </span>ALTER<span class="w"> </span>USER<span class="w"> </span>USER<span class="o">()</span><span class="w"> </span>IDENTIFIED<span class="w"> </span>BY<span class="w"> </span><span class="s1">'Password123@mysql'</span><span class="p">;</span>
 </code></pre></div>
 </div>
 <h2 id="4-mysql">4 配置 MySQL 集群<a class="headerlink" href="#4-mysql" title="Permanent link">&para;</a></h2>
@@ -6400,11 +6400,11 @@ mysql&gt;<span class="w"> </span>ALTER<span class="w"> </span>USER<span class="w
 <p>添加复制用户及权限，在 MySQL-1 节点上创建用于复制数据的用户 clusteruser，并授权 MySQL-2 节点访问：</p>
 <div class="highlight"><pre><span></span><code># 开启 root 用户远程访问
 
-mysql&gt; grant all privileges on *.* to &#39;root&#39;@&#39;%&#39; identified by &#39;Password123@mysql&#39;;
+mysql&gt; grant all privileges on *.* to 'root'@'%' identified by 'Password123@mysql';
 
 # 添加 MySQL 主从复制⽤户 clusteruser，并授权 MySQL-2 节点可访问 MySQL-1 节点
 
-mysql&gt; grant replication slave,file on *.* to &#39;clusteruser&#39;@&#39;10.1.11.189&#39; identified by &#39;Replication@123&#39;;
+mysql&gt; grant replication slave,file on *.* to 'clusteruser'@'10.1.11.189' identified by 'Replication@123';
 
 # 刷新授权
 
@@ -6416,13 +6416,13 @@ mysql&gt; flush privileges;
 <h3 id="42-mysql-2">4.2 MySQL-2 节点设置<a class="headerlink" href="#42-mysql-2" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p>添加复制用户及权限，在 MySQL-2 节点上创建用于复制数据的用户 clusteruser，并授权 MySQL-1 节点访问：</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># 修改 MySQL root 用户的密码为 &quot;Password123@mysql&quot;，且 root 用户可远程访问</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># 修改 MySQL root 用户的密码为 "Password123@mysql"，且 root 用户可远程访问</span>
 
-mysql&gt;<span class="w"> </span>grant<span class="w"> </span>all<span class="w"> </span>privileges<span class="w"> </span>on<span class="w"> </span>*.*<span class="w"> </span>to<span class="w"> </span><span class="s1">&#39;root&#39;</span>@<span class="s1">&#39;%&#39;</span><span class="w"> </span>identified<span class="w"> </span>by<span class="w"> </span><span class="s1">&#39;Password123@mysql&#39;</span><span class="p">;</span>
+mysql&gt;<span class="w"> </span>grant<span class="w"> </span>all<span class="w"> </span>privileges<span class="w"> </span>on<span class="w"> </span>*.*<span class="w"> </span>to<span class="w"> </span><span class="s1">'root'</span>@<span class="s1">'%'</span><span class="w"> </span>identified<span class="w"> </span>by<span class="w"> </span><span class="s1">'Password123@mysql'</span><span class="p">;</span>
 
 <span class="c1"># 添加 MySQL 主从复制用户 clusteruser，并授权 MySQL-1 节点可访问 MySQL-2 节点</span>
 
-mysql&gt;<span class="w"> </span>grant<span class="w"> </span>replication<span class="w"> </span>slave,file<span class="w"> </span>on<span class="w"> </span>*.*<span class="w"> </span>to<span class="w"> </span><span class="s1">&#39;clusteruser&#39;</span>@<span class="s1">&#39;10.1.11.187&#39;</span><span class="w"> </span>identified<span class="w"> </span>by<span class="w"> </span><span class="s1">&#39;Replication@123&#39;</span><span class="p">;</span>
+mysql&gt;<span class="w"> </span>grant<span class="w"> </span>replication<span class="w"> </span>slave,file<span class="w"> </span>on<span class="w"> </span>*.*<span class="w"> </span>to<span class="w"> </span><span class="s1">'clusteruser'</span>@<span class="s1">'10.1.11.187'</span><span class="w"> </span>identified<span class="w"> </span>by<span class="w"> </span><span class="s1">'Replication@123'</span><span class="p">;</span>
 
 <span class="c1"># 刷新授权</span>
 
@@ -6519,7 +6519,7 @@ default-character-set=utf8
 <h3 id="61">6.1 获取各节点状态信息<a class="headerlink" href="#61" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p><strong>到各节点上获取节点状态信息：</strong></p>
-<p><div class="highlight"><pre><span></span><code><span class="na">mysql</span><span class="w"> </span><span class="s">-uroot -p&#39;Password123@mysql&#39;</span>
+<p><div class="highlight"><pre><span></span><code><span class="na">mysql</span><span class="w"> </span><span class="s">-uroot -p'Password123@mysql'</span>
 
 <span class="na">mysql&gt;</span><span class="w"> </span><span class="s">flush tables with read lock</span><span class="se">\G</span>
 <span class="na">Query</span><span class="w"> </span><span class="s">OK, 0 rows affected (0.00 sec)</span>
@@ -6532,7 +6532,7 @@ default-character-set=utf8
 <h3 id="62-mysql-1">6.2 配置 MySQL-1 节点的主从关系<a class="headerlink" href="#62-mysql-1" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p><strong>在 MySQL-1 节点上执行以下命令：</strong>
-<div class="highlight"><pre><span></span><code>mysql&gt; change master to master_host=&#39;10.1.11.189&#39;, master_user=&#39;clusteruser&#39;, master_password=&#39;Replication@123&#39;, master_log_file=&#39;mysql-bin.000001&#39;, master_log_pos=154;
+<div class="highlight"><pre><span></span><code>mysql&gt; change master to master_host='10.1.11.189', master_user='clusteruser', master_password='Replication@123', master_log_file='mysql-bin.000001', master_log_pos=154;
 mysql&gt; start slave;
 mysql&gt; show slave status\G
 </code></pre></div></p>
@@ -6548,7 +6548,7 @@ mysql&gt; show slave status\G
 <h3 id="63-mysql-2">6.3 配置 MySQL-2 节点的主从关系<a class="headerlink" href="#63-mysql-2" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p><strong>在节点 B 上 MySQL 中执行以下命令：</strong>
-<div class="highlight"><pre><span></span><code>mysql&gt; change master to master_host=&#39;10.1.11.187&#39;, master_user=&#39;clusteruser&#39;, master_password=&#39;Replication@123&#39;, master_log_file=&#39;mysql-bin.000001&#39;, master_log_pos=154;
+<div class="highlight"><pre><span></span><code>mysql&gt; change master to master_host='10.1.11.187', master_user='clusteruser', master_password='Replication@123', master_log_file='mysql-bin.000001', master_log_pos=154;
 mysql&gt; start slave;
 mysql&gt; show slave status\G
 </code></pre></div></p>

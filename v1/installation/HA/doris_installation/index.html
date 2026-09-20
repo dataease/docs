@@ -60,7 +60,7 @@
     <script 
       async
       defer
-      src="https://maxkb.fit2cloud.com/api/application/embed?protocol=https&host=maxkb.fit2cloud.com&token=5baa787163381fa2">
+      src="https://maxkb-internal.fit2cloud.com/chat/api/embed?protocol=https&host=maxkb-internal.fit2cloud.com&token=5baa787163381fa2">
     </script>
 
     
@@ -6311,10 +6311,10 @@
 <h3 id="13">1.3 操作系统参数设置<a class="headerlink" href="#13" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
 <p><strong>设置系统最大打开文件句柄数，修改 /etc/security/limits.conf</strong></p>
-<div class="highlight"><pre><span></span><code>echo &quot;* soft nofile 204800&quot; &gt;&gt; /etc/security/limits.conf
-echo &quot;* hard nofile 204800&quot; &gt;&gt; /etc/security/limits.conf
-echo &quot;* soft nproc 204800&quot; &gt;&gt; /etc/security/limits.conf
-echo &quot;* hard nproc 204800 &quot; &gt;&gt; /etc/security/limits.conf
+<div class="highlight"><pre><span></span><code>echo "* soft nofile 204800" &gt;&gt; /etc/security/limits.conf
+echo "* hard nofile 204800" &gt;&gt; /etc/security/limits.conf
+echo "* soft nproc 204800" &gt;&gt; /etc/security/limits.conf
+echo "* hard nproc 204800 " &gt;&gt; /etc/security/limits.conf
 </code></pre></div>
 <p>修改 /etc/sysctl.conf</p>
 <div class="highlight"><pre><span></span><code>echo fs.file-max = 6553560 &gt;&gt; /etc/sysctl.conf
@@ -6407,7 +6407,7 @@ echo &quot;* hard nproc 204800 &quot; &gt;&gt; /etc/security/limits.conf
 <p><strong>Doris FE 是 Java 项目，它的运行需要有 JRE 的环境支持，在 FE 节点上安装 Java 环境：</strong>
 <div class="highlight"><pre><span></span><code>yum install -y java-1.8.0-openjdk
 
-echo &quot;export JAVA_HOME=/usr/lib/jvm/jre-1.8.0-openjdk&quot; &gt;&gt; /etc/profile
+echo "export JAVA_HOME=/usr/lib/jvm/jre-1.8.0-openjdk" &gt;&gt; /etc/profile
 source /etc/profile
 </code></pre></div></p>
 </div>
@@ -6431,7 +6431,7 @@ source /etc/profile
 </code></pre></div></p>
 <p>返回结果中的 10.1.11.39/24，也可作为当前节点的 CIDR 使用。</p>
 <p>将网段信息配置到 /opt/doris/fe/conf/fe.conf 配置文件中：
-<div class="highlight"><pre><span></span><code>echo &quot;priority_networks = 10.1.11.39/24&quot; &gt;&gt; /opt/doris/fe/conf/fe.conf
+<div class="highlight"><pre><span></span><code>echo "priority_networks = 10.1.11.39/24" &gt;&gt; /opt/doris/fe/conf/fe.conf
 </code></pre></div>
 fe.conf 配置文件中很多参数默认是注释状态，可以根据实际情况来调整，例如：
 <div class="highlight"><pre><span></span><code>qe_max_connection = 65535
@@ -6460,7 +6460,7 @@ max_layout_length_per_row=10000000
 <p><strong>获取 Doris 节点所处的内网网段，此示例的内网网段的 CIDR 是 10.1.11.0/24。</strong><br />
 如不清楚，也可参考之前配置 FE 时，通过命令 ip a 获取。
 将网段信息配置到 /opt/doris/be/conf/be.conf 配置文件中：
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;priority_networks = 10.1.11.0/24&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/opt/doris/be/conf/be.conf
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">"priority_networks = 10.1.11.0/24"</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/opt/doris/be/conf/be.conf
 </code></pre></div>
 be.conf 配置文件中很多参数默认是注释状态，可根据实际情况来调整。</p>
 </div>
@@ -6482,25 +6482,25 @@ be.conf 配置文件中很多参数默认是注释状态，可根据实际情况
 </div>
 <h3 id="42-fe-be">4.2 在 FE 中添加 BE 节点<a class="headerlink" href="#42-fe-be" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<div class="highlight"><pre><span></span><code>mysql&gt; ALTER SYSTEM ADD BACKEND &#39;10.1.11.37:9050&#39;;
+<div class="highlight"><pre><span></span><code>mysql&gt; ALTER SYSTEM ADD BACKEND '10.1.11.37:9050';
 Query OK, 0 rows affected (0.06 sec)
 
-mysql&gt; ALTER SYSTEM ADD BACKEND &#39;10.1.11.27:9050&#39;;
+mysql&gt; ALTER SYSTEM ADD BACKEND '10.1.11.27:9050';
 Query OK, 0 rows affected (0.00 sec)
 
-mysql&gt; ALTER SYSTEM ADD BACKEND &#39;10.1.11.70:9050&#39;;
+mysql&gt; ALTER SYSTEM ADD BACKEND '10.1.11.70:9050';
 Query OK, 0 rows affected (0.01 sec)
 </code></pre></div>
 </div>
 <h3 id="43-be">4.3 查询 BE 是否成功添加<a class="headerlink" href="#43-be" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p><div class="highlight"><pre><span></span><code>mysql&gt; show proc &#39;/backends&#39;;
+<p><div class="highlight"><pre><span></span><code>mysql&gt; show proc '/backends';
 +-----------+-----------------+------------+------------+---------------+--------+----------+----------+---------------------+---------------------+-------+----------------------+-----------------------+-----------+------------------+---------------+---------------+---------+----------------+--------------------------+--------+--------------------+-------------------------------------------------------------------------------------------------------------------------------+
 | BackendId | Cluster         | IP         | HostName   | HeartbeatPort | BePort | HttpPort | BrpcPort | LastStartTime       | LastHeartbeat       | Alive | SystemDecommissioned | ClusterDecommissioned | TabletNum | DataUsedCapacity | AvailCapacity | TotalCapacity | UsedPct | MaxDiskUsedPct | Tag                      | ErrMsg | Version            | Status                                                                                                                        |
 +-----------+-----------------+------------+------------+---------------+--------+----------+----------+---------------------+---------------------+-------+----------------------+-----------------------+-----------+------------------+---------------+---------------+---------+----------------+--------------------------+--------+--------------------+-------------------------------------------------------------------------------------------------------------------------------+
-| 11002     | default_cluster | 10.1.11.27 | 10.1.11.27 | 9050          | 9060   | 8040     | 8060     | 2022-05-13 12:39:38 | 2022-05-13 14:19:22 | true  | false                | false                 | 7         | 2.179 KB         | 93.932 GB     | 96.941 GB     | 3.10 %  | 3.10 %         | {&quot;location&quot; : &quot;default&quot;} |        | 1.0.0-rc03-Unknown | {&quot;lastSuccessReportTabletsTime&quot;:&quot;2022-05-13 14:18:34&quot;,&quot;lastStreamLoadTime&quot;:-1,&quot;isQueryDisabled&quot;:false,&quot;isLoadDisabled&quot;:false} |
-| 11001     | default_cluster | 10.1.11.37 | 10.1.11.37 | 9050          | 9060   | 8040     | 8060     | 2022-05-13 12:46:46 | 2022-05-13 14:19:22 | true  | false                | false                 | 2         | 2.146 KB         | 93.936 GB     | 96.941 GB     | 3.10 %  | 3.10 %         | {&quot;location&quot; : &quot;default&quot;} |        | 1.0.0-rc03-Unknown | {&quot;lastSuccessReportTabletsTime&quot;:&quot;2022-05-13 14:19:11&quot;,&quot;lastStreamLoadTime&quot;:-1,&quot;isQueryDisabled&quot;:false,&quot;isLoadDisabled&quot;:false} |
-| 11003     | default_cluster | 10.1.11.70 | 10.1.11.70 | 9050          | 9060   | 8040     | 8060     | 2022-05-13 12:45:41 | 2022-05-13 14:19:22 | true  | false                | false                 | 3         | 1.063 KB         | 93.932 GB     | 96.941 GB     | 3.10 %  | 3.10 %         | {&quot;location&quot; : &quot;default&quot;} |        | 1.0.0-rc03-Unknown | {&quot;lastSuccessReportTabletsTime&quot;:&quot;2022-05-13 14:18:23&quot;,&quot;lastStreamLoadTime&quot;:-1,&quot;isQueryDisabled&quot;:false,&quot;isLoadDisabled&quot;:false} |
+| 11002     | default_cluster | 10.1.11.27 | 10.1.11.27 | 9050          | 9060   | 8040     | 8060     | 2022-05-13 12:39:38 | 2022-05-13 14:19:22 | true  | false                | false                 | 7         | 2.179 KB         | 93.932 GB     | 96.941 GB     | 3.10 %  | 3.10 %         | {"location" : "default"} |        | 1.0.0-rc03-Unknown | {"lastSuccessReportTabletsTime":"2022-05-13 14:18:34","lastStreamLoadTime":-1,"isQueryDisabled":false,"isLoadDisabled":false} |
+| 11001     | default_cluster | 10.1.11.37 | 10.1.11.37 | 9050          | 9060   | 8040     | 8060     | 2022-05-13 12:46:46 | 2022-05-13 14:19:22 | true  | false                | false                 | 2         | 2.146 KB         | 93.936 GB     | 96.941 GB     | 3.10 %  | 3.10 %         | {"location" : "default"} |        | 1.0.0-rc03-Unknown | {"lastSuccessReportTabletsTime":"2022-05-13 14:19:11","lastStreamLoadTime":-1,"isQueryDisabled":false,"isLoadDisabled":false} |
+| 11003     | default_cluster | 10.1.11.70 | 10.1.11.70 | 9050          | 9060   | 8040     | 8060     | 2022-05-13 12:45:41 | 2022-05-13 14:19:22 | true  | false                | false                 | 3         | 1.063 KB         | 93.932 GB     | 96.941 GB     | 3.10 %  | 3.10 %         | {"location" : "default"} |        | 1.0.0-rc03-Unknown | {"lastSuccessReportTabletsTime":"2022-05-13 14:18:23","lastStreamLoadTime":-1,"isQueryDisabled":false,"isLoadDisabled":false} |
 +-----------+-----------------+------------+------------+---------------+--------+----------+----------+---------------------+---------------------+-------+----------------------+-----------------------+-----------+------------------+---------------+---------------+---------+----------------+--------------------------+--------+--------------------+-------------------------------------------------------------------------------------------------------------------------------+
 3 rows in set (0.35 sec)
 </code></pre></div>
@@ -6511,7 +6511,7 @@ Query OK, 0 rows affected (0.01 sec)
 <div class="highlight"><pre><span></span><code>mysql&gt; CREATE DATABASE dataease;
 Query OK, 0 rows affected (0.02 sec)
 
-mysql&gt; SET PASSWORD FOR &#39;root&#39; = PASSWORD(&#39;Password123@doris&#39;);
+mysql&gt; SET PASSWORD FOR 'root' = PASSWORD('Password123@doris');
 Query OK, 0 rows affected (0.00 sec)
 </code></pre></div>
 </div>

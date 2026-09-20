@@ -60,7 +60,7 @@
     <script 
       async
       defer
-      src="https://maxkb.fit2cloud.com/api/application/embed?protocol=https&host=maxkb.fit2cloud.com&token=5baa787163381fa2">
+      src="https://maxkb-internal.fit2cloud.com/chat/api/embed?protocol=https&host=maxkb-internal.fit2cloud.com&token=5baa787163381fa2">
     </script>
 
     
@@ -6242,14 +6242,14 @@ mv<span class="w"> </span>/opt/dataease<span class="w"> </span>/home/test/
 <li>
 <p>修改 MeterSphere 的网段<br />
 修改 /opt/metersphere/docker-compose-base.yml，网络部分定义如下：
-<div class="highlight"><pre><span></span><code>networks:
-  ms-network:
-    driver: bridge
-    ipam:
-      driver: default
-      config:
-        - subnet: 172.20.0.0/16
-          gateway: 172.20.0.1
+<div class="highlight"><pre><span></span><code><span class="nt">networks</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">ms-network</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">driver</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bridge</span>
+<span class="w">    </span><span class="nt">ipam</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">driver</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span>
+<span class="w">      </span><span class="nt">config</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">subnet</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">172.20.0.0/16</span>
+<span class="w">          </span><span class="nt">gateway</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">172.20.0.1</span>
 </code></pre></div></p>
 </li>
 <li>
@@ -6263,40 +6263,40 @@ msctl<span class="w"> </span>reload
 <li>
 <p>修改 DataEase MySQL 容器相关配置<br />
 修改 /opt/dataease/docker-compose.yml，将 dataease 的 depends_on 里的 mysql 改为 mysql-de，例如：
-<div class="highlight"><pre><span></span><code>  dataease:
-    image: registry.cn-qingdao.aliyuncs.com/dataease/dataease:v1.0.0
-    container_name: dataease
-    ports:
-      - 80:8081
-    mem_limit: 4096m
-    volumes:
-      - dataease-conf:/opt/dataease/conf
-      - dataease-logs:/opt/dataease/logs
-      - dataease-plugins:/opt/dataease/plugins/thirdpart
-      - dataease-kettle-data:/opt/dataease/data/kettle
-    depends_on:
-      mysql-de:
-        condition: service_healthy
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nt">dataease</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">registry.cn-qingdao.aliyuncs.com/dataease/dataease:v1.0.0</span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dataease</span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">80:8081</span>
+<span class="w">    </span><span class="nt">mem_limit</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4096m</span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dataease-conf:/opt/dataease/conf</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dataease-logs:/opt/dataease/logs</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dataease-plugins:/opt/dataease/plugins/thirdpart</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dataease-kettle-data:/opt/dataease/data/kettle</span>
+<span class="w">    </span><span class="nt">depends_on</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">mysql-de</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">condition</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">service_healthy</span>
 </code></pre></div>
 修改 /opt/dataease/docker-compose-mysql.yml，将 mysql 相关的容器名改为 mysql-de，将 mysql 的运行端口改为 53306，例如：
-<div class="highlight"><pre><span></span><code>  mysql-de:
-    image: registry.cn-qingdao.aliyuncs.com/dataease/mysql:5.7.25
-    container_name: mysql-de
-    healthcheck:
-      test: [&quot;CMD&quot;, &quot;mysqladmin&quot; ,&quot;ping&quot;, &quot;-h&quot;, &quot;localhost&quot;]
-      interval: 5s
-      timeout: 3s
-      retries: 10
-    env_file:
-      - ./conf/mysql.env
-    ports:
-      - 53306:3306
-    volumes:
-      - /opt/dataease/conf/my.cnf:/etc/mysql/conf.d/my.cnf
-      - /opt/dataease/bin/mysql:/docker-entrypoint-initdb.d/
-      - dataease-mysql-data:/var/lib/mysql
-    networks:
-      - dataease-network
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nt">mysql-de</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">registry.cn-qingdao.aliyuncs.com/dataease/mysql:5.7.25</span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mysql-de</span>
+<span class="w">    </span><span class="nt">healthcheck</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">test</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">"CMD"</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">"mysqladmin"</span><span class="w"> </span><span class="p p-Indicator">,</span><span class="s">"ping"</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">"-h"</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">"localhost"</span><span class="p p-Indicator">]</span>
+<span class="w">      </span><span class="nt">interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5s</span>
+<span class="w">      </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3s</span>
+<span class="w">      </span><span class="nt">retries</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
+<span class="w">    </span><span class="nt">env_file</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./conf/mysql.env</span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">53306:3306</span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/opt/dataease/conf/my.cnf:/etc/mysql/conf.d/my.cnf</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/opt/dataease/bin/mysql:/docker-entrypoint-initdb.d/</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dataease-mysql-data:/var/lib/mysql</span>
+<span class="w">    </span><span class="nt">networks</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dataease-network</span>
 </code></pre></div>
 修改 /opt/dataease/conf/dataease.properties，将数据库 URL 信息改为如下：
 <div class="highlight"><pre><span></span><code><span class="na">spring.datasource.url</span><span class="o">=</span><span class="s">jdbc:mysql://mysql-de:3306/dataease?autoReconnect=false&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;characterSetResults=UTF-8&amp;zeroDateTimeBehavior=convertToNull&amp;useSSL=false</span>
@@ -6305,11 +6305,11 @@ msctl<span class="w"> </span>reload
 <li>
 <p>修改 DataEase 服务启动端口（可选）<br />
 修改 /opt/dataease/docker-compose.yml，将 dataease 的运行端口改为如8088（注意，后端容器运行端口8081不能修改)：
-<div class="highlight"><pre><span></span><code>  dataease:
-    image: registry.cn-qingdao.aliyuncs.com/dataease/dataease:v1.0.0
-    container_name: dataease
-    ports:
-      - 8088:8081
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nt">dataease</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">registry.cn-qingdao.aliyuncs.com/dataease/dataease:v1.0.0</span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dataease</span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8088:8081</span>
 </code></pre></div></p>
 </li>
 <li>

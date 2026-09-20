@@ -60,7 +60,7 @@
     <script 
       async
       defer
-      src="https://maxkb.fit2cloud.com/api/application/embed?protocol=https&host=maxkb.fit2cloud.com&token=5baa787163381fa2">
+      src="https://maxkb-internal.fit2cloud.com/chat/api/embed?protocol=https&host=maxkb-internal.fit2cloud.com&token=5baa787163381fa2">
     </script>
 
     
@@ -5906,21 +5906,21 @@
 <p>DataEase 使用到的 Apache Doris 组件受此漏洞影响，大家可以升级到 v1.5.2 版本，也可以手动修改 Apache Doris 对应的 docker-compose 文件来处理，具体操作如下：<br />
 v1.5.0 和 v1.5.1 版本，修改 /opt/dataease/docker-compose-doris.yml 文件；<br />
 v1.4.1 及以前版本，修改 /opt/dataease/docker-compose-kettle-doris.yml 文件，加入环境变量 FORMAT_MESSAGES_PATTERN_DISABLE_LOOKUPS。(注意 doris-fe 和 doris-be 两处修改)
-<div class="highlight"><pre><span></span><code>  doris-fe:
-    image: registry.cn-qingdao.aliyuncs.com/dataease/doris:0.15
-    container_name: doris-fe
-    environment:
-      - DORIS_ROLE=fe-leader
-      - FORMAT_MESSAGES_PATTERN_DISABLE_LOOKUPS=true
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nt">doris-fe</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">registry.cn-qingdao.aliyuncs.com/dataease/doris:0.15</span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">doris-fe</span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DORIS_ROLE=fe-leader</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FORMAT_MESSAGES_PATTERN_DISABLE_LOOKUPS=true</span>
 
-...
+<span class="nn">...</span>
 
-  doris-be:
-    image: registry.cn-qingdao.aliyuncs.com/dataease/doris:0.15
-    container_name: doris-be
-    environment:
-      - DORIS_ROLE=be
-      - FORMAT_MESSAGES_PATTERN_DISABLE_LOOKUPS=true
+<span class="w">  </span><span class="nt">doris-be</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">registry.cn-qingdao.aliyuncs.com/dataease/doris:0.15</span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">doris-be</span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DORIS_ROLE=be</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FORMAT_MESSAGES_PATTERN_DISABLE_LOOKUPS=true</span>
 </code></pre></div>
 重启服务即可。</p>
 </div>
